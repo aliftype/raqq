@@ -1,4 +1,4 @@
 Raqq
 ====
 
-Manuscript Kufic font
+Raqq (رَقّ) is a manuscript Kufic font.
