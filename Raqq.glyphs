@@ -3,6 +3,7 @@
 classes = (
 {
 code = "behDotless-ar.init
+behDotless-ar.init.reh
 hah-ar.init
 seen-ar.init
 sad-ar.init
@@ -18,6 +19,7 @@ name = init;
 },
 {
 code = "alef-ar.fina
+alef-ar.fina.meem
 behDotless-ar.fina
 hah-ar.fina
 dal-ar.fina
@@ -35,6 +37,7 @@ noonghunna-ar.fina
 heh-ar.fina
 waw-ar.fina
 waw-ar.fina.1
+wawHamzaabove-ar.fina
 alefMaksura-ar.fina
 lam_alef-ar.fina
 ";
@@ -231,11 +234,17 @@ code = "lookupflag IgnoreMarks;
 
 	sub behDotless-ar.medi' meem-ar.fina by behDotless-ar.medi.meem;
 
+	sub lam-ar.init behDotless-ar.medi' by behDotless-ar.medi.lam;
+
 	sub meem-ar.medi' [waw-ar.fina waw-ar.fina.1] by meem-ar.medi.alt;
+
+	sub [meem-ar.init meem-ar.medi] alef-ar.fina' by alef-ar.fina.meem;
 
 	sub behDotless-ar.init' reh-ar.fina by behDotless-ar.init.reh;
 
 	sub fehDotless-ar.init' alefMaksura-ar.fina' by fehDotless_alefMaksura-ar;
+
+	sub ain-ar.medi lam-ar.medi' by lam-ar.medi.ain;
 ";
 name = rlig;
 },
@@ -332,6 +341,47 @@ unicode = 0627;
 },
 {
 glyphname = "alef-ar.fina";
+layers = (
+{
+backgroundImage = {
+alpha = 100;
+imagePath = "1/image-0056.jpg";
+locked = "1";
+transform = "{10, 0, 0, 10, -4313, -4432}";
+};
+layerId = m01;
+paths = (
+{
+closed = 1;
+nodes = (
+"65 584 OFFCURVE",
+"36 550 OFFCURVE",
+"10 529 CURVE",
+"23 400 OFFCURVE",
+"16 188 OFFCURVE",
+"10 22 CURVE SMOOTH",
+"10 10 OFFCURVE",
+"23 0 OFFCURVE",
+"40 0 CURVE SMOOTH",
+"120 0 LINE",
+"112 -20 LINE",
+"113 111 LINE",
+"126 75 LINE",
+"104 76 OFFCURVE",
+"80 81 OFFCURVE",
+"78 105 CURVE SMOOTH",
+"70 208 OFFCURVE",
+"81 543 OFFCURVE",
+"77 620 CURVE"
+);
+}
+);
+width = 78;
+}
+);
+},
+{
+glyphname = "alef-ar.fina.meem";
 layers = (
 {
 layerId = m01;
@@ -553,6 +603,58 @@ nodes = (
 }
 );
 width = 100;
+}
+);
+},
+{
+glyphname = "behDotless-ar.medi.lam";
+layers = (
+{
+anchors = (
+{
+name = bottom;
+position = "{44, -21}";
+},
+{
+name = top;
+position = "{58, 213}";
+}
+);
+backgroundImage = {
+alpha = 100;
+imagePath = "1/image-0056.jpg";
+locked = "1";
+transform = "{10, 0, 0, 10, -4393, -4432}";
+};
+layerId = m01;
+paths = (
+{
+closed = 1;
+nodes = (
+"126 75 OFFCURVE",
+"92 76 OFFCURVE",
+"90 105 CURVE SMOOTH",
+"87 147 OFFCURVE",
+"89 239 OFFCURVE",
+"88 305 CURVE",
+"103 272 LINE",
+"67 214 OFFCURVE",
+"33 166 OFFCURVE",
+"-14 117 CURVE",
+"18 215 LINE",
+"23 66 LINE",
+"-73 66 LINE",
+"0 109 LINE",
+"0 -48 LINE",
+"-75 0 LINE",
+"176 0 LINE",
+"84 -45 LINE",
+"149 110 LINE",
+"160 76 LINE"
+);
+}
+);
+width = 94;
 }
 );
 },
@@ -1549,11 +1651,91 @@ width = 175;
 );
 },
 {
+glyphname = "lam-ar.medi.ain";
+layers = (
+{
+anchors = (
+{
+name = fatha;
+position = "{-86, 520}";
+}
+);
+layerId = m01;
+paths = (
+{
+closed = 1;
+nodes = (
+"38 605 OFFCURVE",
+"13 575 OFFCURVE",
+"-12 552 CURVE",
+"4 503 OFFCURVE",
+"9 375 OFFCURVE",
+"9 288 CURVE SMOOTH",
+"9 201 OFFCURVE",
+"3 115 OFFCURVE",
+"-1 28 CURVE SMOOTH",
+"-2 15 OFFCURVE",
+"9 -1 OFFCURVE",
+"46 0 CURVE",
+"186 0 LINE",
+"186 66 LINE",
+"115 66 LINE",
+"183 58 LINE",
+"144 80 OFFCURVE",
+"85 122 OFFCURVE",
+"62 150 CURVE",
+"68 282 OFFCURVE",
+"75 463 OFFCURVE",
+"56 640 CURVE"
+);
+}
+);
+width = 175;
+}
+);
+},
+{
 glyphname = "lam-ar.init";
 layers = (
 {
+backgroundImage = {
+alpha = 100;
+imagePath = "1/image-0056.jpg";
+locked = "1";
+transform = "{10, 0, 0, 10, -4490, -4432}";
+};
 layerId = m01;
-width = 600;
+paths = (
+{
+closed = 1;
+nodes = (
+"-23 67 LINE",
+"-10 90 LINE",
+"-10 -17 LINE",
+"-24 0 LINE",
+"56 0 LINE SMOOTH",
+"65 0 OFFCURVE",
+"79 6 OFFCURVE",
+"79 15 CURVE SMOOTH",
+"78 86 OFFCURVE",
+"75 196 OFFCURVE",
+"74 286 CURVE SMOOTH",
+"73 397 OFFCURVE",
+"81 509 OFFCURVE",
+"72 620 CURVE",
+"52 584 OFFCURVE",
+"32 550 OFFCURVE",
+"5 524 CURVE",
+"13 497 OFFCURVE",
+"17 467 OFFCURVE",
+"17 410 CURVE SMOOTH",
+"17 315 OFFCURVE",
+"15 191 OFFCURVE",
+"12 66 CURVE"
+);
+}
+);
+width = 89;
 }
 );
 },
@@ -1817,6 +1999,17 @@ width = 255;
 glyphname = "meem-ar.init";
 layers = (
 {
+anchors = (
+{
+name = kasra;
+position = "{175, -36}";
+}
+);
+backgroundImage = {
+alpha = 100;
+imagePath = "1/image-0056.jpg";
+transform = "{10, 0, 0, 10, -5756, -4422}";
+};
 layerId = m01;
 paths = (
 {
