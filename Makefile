@@ -31,7 +31,7 @@ all: $(NAME)-Regular.otf $(NAME)-Regular.ttf
 
 %.otf: $(NAME).glyphs #$(CONFIG)
 	$(info   BUILD  $(@F))
-	fontmake -g=$< --output-path=$@ --output=otf --verbose=WARNING --master-dir="{tmp}" --instance-dir="{tmp}"
+	fontmake -g=$< --output-path=$@ --output=otf --optimize-cff=1 --verbose=WARNING --master-dir="{tmp}" --instance-dir="{tmp}"
 
 %.ttf: $(NAME).glyphs #$(CONFIG)
 	$(info   BUILD  $(@F))
