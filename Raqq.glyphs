@@ -134,13 +134,23 @@ designerURL = "https://aliftype.com";
 familyName = Raqq;
 featurePrefixes = (
 {
-automatic = 1;
 code = "languagesystem DFLT dflt;
+languagesystem arab dflt;
 ";
 name = Languagesystems;
 }
 );
 features = (
+{
+automatic = 1;
+code = "feature rand;
+feature isol;
+feature init;
+feature medi;
+feature fina;
+";
+name = aalt;
+},
 {
 code = "sub alefHamzaabove-ar by alef-ar hamzaabove-ar;
 sub alefHamzabelow-ar by alef-ar hamzabelow-ar;
@@ -274,7 +284,11 @@ name = rlig;
 code = "lookupflag IgnoreMarks;
 	pos [@isol @fina] [@init @isol] <200 0 200 0>;
 ";
-name = dist;
+name = kern;
+},
+{
+code = "# Automatic Code";
+name = mark;
 }
 );
 fontMaster = (
@@ -627,7 +641,49 @@ width = 1188;
 glyphname = "behDotless-ar.medi";
 layers = (
 {
+anchors = (
+{
+name = bottom;
+position = "{50, -21}";
+},
+{
+name = top;
+position = "{34, 239}";
+}
+);
+backgroundImage = {
+alpha = 100;
+imagePath = "1/image-0056.jpg";
+locked = "1";
+transform = "{10, 0, 0, 10, -3573, -5331}";
+};
 layerId = m01;
+paths = (
+{
+closed = 1;
+nodes = (
+"0 66 LINE",
+"0 -18 LINE",
+"-29 0 LINE",
+"142 0 LINE",
+"90 -45 LINE",
+"155 110 LINE",
+"166 67 LINE",
+"132 66 OFFCURVE",
+"98 61 OFFCURVE",
+"84 99 CURVE SMOOTH",
+"71 135 OFFCURVE",
+"64 212 OFFCURVE",
+"62 275 CURVE",
+"43 242 OFFCURVE",
+"28 215 OFFCURVE",
+"4 186 CURVE",
+"8 145 OFFCURVE",
+"13 99 OFFCURVE",
+"18 66 CURVE"
+);
+}
+);
 width = 100;
 }
 );
@@ -3864,6 +3920,14 @@ glyphname = "dotcenter-ar";
 layers = (
 {
 layerId = m01;
+paths = (
+{
+closed = 0;
+nodes = (
+"0 1 LINE"
+);
+}
+);
 width = 600;
 }
 );
