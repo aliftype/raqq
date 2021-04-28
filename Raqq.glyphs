@@ -283,7 +283,7 @@ position = "{836, 0}";
 );
 id = m01;
 userData = {
-GSOffsetHorizontal = 5;
+GSOffsetHorizontal = 25;
 GSOffsetMakeStroke = 1;
 GSOffsetProportional = 1;
 GSOffsetVertical = 10;
@@ -2929,6 +2929,53 @@ width = 600;
 }
 );
 unicode = 0669;
+},
+{
+glyphname = .notdef;
+layers = (
+{
+layerId = m01;
+paths = (
+{
+closed = 1;
+nodes = (
+"500 -400 LINE",
+"500 600 LINE",
+"100 600 LINE",
+"100 -400 LINE"
+);
+},
+{
+closed = 1;
+nodes = (
+"474 542 LINE",
+"426 558 LINE",
+"126 -342 LINE",
+"174 -358 LINE"
+);
+},
+{
+closed = 1;
+nodes = (
+"174 558 LINE",
+"126 542 LINE",
+"426 -358 LINE",
+"474 -342 LINE"
+);
+},
+{
+closed = 1;
+nodes = (
+"150 550 LINE",
+"450 550 LINE",
+"450 -350 LINE",
+"150 -350 LINE"
+);
+}
+);
+width = 600;
+}
+);
 },
 {
 glyphname = "comma-ar";
