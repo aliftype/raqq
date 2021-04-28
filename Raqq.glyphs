@@ -68,6 +68,7 @@ lam_alef-ar
 name = isol;
 }
 );
+copyright = "Copyright 2021 The Raqq Project Authors (github.com/alif-type/raqq)";
 customParameters = (
 {
 name = "Don't use Production Names";
@@ -98,9 +99,23 @@ value = (
 "71,28,1,255"
 )
 );
+},
+{
+name = vendorID;
+value = ALIF;
+},
+{
+name = localizedDesigner;
+value = "Arabic;خالد حسني";
+},
+{
+name = description;
+value = "Raqq (رَقّ) is a manuscript Kufic typeface";
 }
 );
 date = "2021-04-25 20:10:22 +0000";
+designer = "Khaled Hosny";
+designerURL = "https://aliftype.com";
 familyName = Raqq;
 featurePrefixes = (
 {
@@ -255,6 +270,7 @@ GSOffsetMakeStroke = 1;
 GSOffsetProportional = 1;
 GSOffsetVertical = 10;
 };
+weightValue = 0;
 xHeight = 0;
 }
 );
@@ -3429,6 +3445,8 @@ subCategory = Nonspacing;
 }
 );
 keepAlternatesTogether = 1;
+manufacturer = "Alif Type";
+manufacturerURL = "https://aliftype.com";
 unitsPerEm = 1000;
 userData = {
 GSDimensionPlugin.Dimensions = {
