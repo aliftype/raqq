@@ -68,6 +68,15 @@ fehDotless_alefMaksura-ar
 lam_alef-ar
 ";
 name = isol;
+},
+{
+code = "waw-ar waw-ar.1";
+name = waw;
+},
+{
+code = "waw-ar.fina waw-ar.fina.1
+";
+name = waw.fina;
 }
 );
 copyright = "Copyright 2021 The Raqq Project Authors (github.com/alif-type/raqq)";
@@ -166,6 +175,11 @@ sub yehHamzaabove-ar by yehHamzaabove-ar;
 name = ccmp;
 },
 {
+code = "sub waw-ar from [waw-ar waw-ar.1];
+";
+name = rand;
+},
+{
 code = "sub yehFarsi-ar by alefMaksura-ar;";
 name = isol;
 },
@@ -225,6 +239,7 @@ sub meem-ar by meem-ar.fina;
 sub noonghunna-ar by noonghunna-ar.fina;
 sub heh-ar by heh-ar.fina;
 sub waw-ar by waw-ar.fina;
+sub waw-ar.1 by waw-ar.fina.1;
 sub alefMaksura-ar by alefMaksura-ar.fina;
 sub yehFarsi-ar by alefMaksura-ar.fina;
 ";
@@ -238,12 +253,14 @@ code = "lookupflag IgnoreMarks;
 	sub behDotless-ar.medi' meem-ar.fina by behDotless-ar.medi.meem;
 
 	sub lam-ar.init behDotless-ar.medi' by behDotless-ar.medi.lam;
+	sub [ain-ar.init ain-ar.init.1] behDotless-ar.medi' by behDotless-ar.medi.ain;
 
-	sub meem-ar.medi' [waw-ar.fina waw-ar.fina.1] by meem-ar.medi.alt;
+	sub meem-ar.medi' @waw.fina by meem-ar.medi.alt;
 
 	sub [meem-ar.init meem-ar.medi] alef-ar.fina' by alef-ar.fina.meem;
 
 	sub behDotless-ar.init' reh-ar.fina by behDotless-ar.init.reh;
+	sub behDotless-ar.init' ain-ar.medi by behDotless-ar.init.ain;
 
 	sub ain-ar.medi lam-ar.medi' by lam-ar.medi.ain;
 
@@ -346,6 +363,47 @@ unicode = 0627;
 },
 {
 glyphname = "alef-ar.fina";
+layers = (
+{
+backgroundImage = {
+alpha = 100;
+imagePath = "1/image-0056.jpg";
+locked = "1";
+transform = "{10, 0, 0, 10, -4313, -4432}";
+};
+layerId = m01;
+paths = (
+{
+closed = 1;
+nodes = (
+"133 82 LINE",
+"146 66 LINE",
+"94 65 OFFCURVE",
+"80 81 OFFCURVE",
+"78 105 CURVE SMOOTH",
+"70 208 OFFCURVE",
+"81 543 OFFCURVE",
+"77 620 CURVE",
+"65 584 OFFCURVE",
+"36 550 OFFCURVE",
+"10 529 CURVE",
+"23 400 OFFCURVE",
+"16 188 OFFCURVE",
+"10 22 CURVE SMOOTH",
+"10 10 OFFCURVE",
+"23 0 OFFCURVE",
+"40 0 CURVE SMOOTH",
+"140 0 LINE",
+"132 -20 LINE"
+);
+}
+);
+width = 78;
+}
+);
+},
+{
+glyphname = "alef-ar.fina.001";
 layers = (
 {
 backgroundImage = {
@@ -569,16 +627,31 @@ width = 1188;
 glyphname = "behDotless-ar.medi";
 layers = (
 {
+layerId = m01;
+width = 100;
+}
+);
+},
+{
+glyphname = "behDotless-ar.medi.ain";
+layers = (
+{
 anchors = (
 {
 name = bottom;
-position = "{50, -21}";
+position = "{50, -55}";
 },
 {
 name = top;
 position = "{34, 239}";
 }
 );
+backgroundImage = {
+alpha = 100;
+imagePath = "1/image-0056.jpg";
+locked = "1";
+transform = "{10, 0, 0, 10, -2727, -4441}";
+};
 layerId = m01;
 paths = (
 {
@@ -592,16 +665,18 @@ nodes = (
 "155 110 LINE",
 "166 67 LINE",
 "132 66 OFFCURVE",
-"98 61 OFFCURVE",
-"84 99 CURVE SMOOTH",
-"71 135 OFFCURVE",
-"64 212 OFFCURVE",
-"62 275 CURVE",
-"43 242 OFFCURVE",
-"28 215 OFFCURVE",
-"4 186 CURVE",
-"9 145 OFFCURVE",
-"13 99 OFFCURVE",
+"106 67 OFFCURVE",
+"92 105 CURVE SMOOTH",
+"77 147 OFFCURVE",
+"59 238 OFFCURVE",
+"62 307 CURVE",
+"79 292 LINE",
+"45 234 OFFCURVE",
+"29 192 OFFCURVE",
+"-18 145 CURVE",
+"0 215 LINE",
+"7 168 OFFCURVE",
+"11 107 OFFCURVE",
 "23 66 CURVE"
 );
 }
@@ -712,6 +787,64 @@ width = 100;
 },
 {
 glyphname = "behDotless-ar.init";
+layers = (
+{
+anchors = (
+{
+name = bottom;
+position = "{55, 19}";
+},
+{
+name = fatha;
+position = "{41, 304}";
+},
+{
+name = ring;
+position = "{40, 0}";
+},
+{
+name = top;
+position = "{22, 235}";
+}
+);
+backgroundImage = {
+imagePath = "1/image-0056.jpg";
+transform = "{10, 0, 0, 10, -1773, -4441}";
+};
+layerId = m01;
+paths = (
+{
+closed = 1;
+nodes = (
+"-29 0 LINE",
+"55 0 LINE",
+"66 0 OFFCURVE",
+"74 7 OFFCURVE",
+"74 18 CURVE SMOOTH",
+"74 179 OFFCURVE",
+"76 217 OFFCURVE",
+"43 335 CURVE",
+"71 306 LINE",
+"43 257 OFFCURVE",
+"14 215 OFFCURVE",
+"-21 181 CURVE",
+"-23 222 LINE",
+"12 152 OFFCURVE",
+"4 141 OFFCURVE",
+"4 42 CURVE",
+"32 66 LINE",
+"-27 66 LINE",
+"-10 121 LINE",
+"-10 -15 LINE"
+);
+}
+);
+width = 84;
+}
+);
+},
+{
+glyphname = "behDotless-ar.init.ain";
 layers = (
 {
 anchors = (
@@ -969,8 +1102,66 @@ unicode = 062F;
 glyphname = "dal-ar.fina";
 layers = (
 {
+anchors = (
+{
+name = kasra;
+position = "{479, 5}";
+}
+);
+backgroundImage = {
+alpha = 100;
+imagePath = "1/image-0056.jpg";
+locked = "1";
+transform = "{10, 0, 0, 10, -1991, -4448}";
+};
 layerId = m01;
-width = 600;
+paths = (
+{
+closed = 1;
+nodes = (
+"212 195 OFFCURVE",
+"157 138 OFFCURVE",
+"97 83 CURVE",
+"276 75 OFFCURVE",
+"455 73 OFFCURVE",
+"634 76 CURVE",
+"636 75 OFFCURVE",
+"637 73 OFFCURVE",
+"638 70 CURVE",
+"452 64 OFFCURVE",
+"284 61 OFFCURVE",
+"89 72 CURVE",
+"68 48 OFFCURVE",
+"41 26 OFFCURVE",
+"10 3 CURVE",
+"265 -3 OFFCURVE",
+"519 -5 OFFCURVE",
+"774 0 CURVE",
+"763 -15 LINE",
+"763 82 LINE",
+"776 66 LINE",
+"699 66 LINE",
+"760 39 LINE",
+"737 67 OFFCURVE",
+"730 107 OFFCURVE",
+"709 137 CURVE SMOOTH",
+"706 142 OFFCURVE",
+"700 142 OFFCURVE",
+"695 142 CURVE SMOOTH",
+"526 137 OFFCURVE",
+"360 138 OFFCURVE",
+"191 144 CURVE SMOOTH",
+"185 144 OFFCURVE",
+"184 146 OFFCURVE",
+"188 150 CURVE SMOOTH",
+"223 189 OFFCURVE",
+"245 213 OFFCURVE",
+"271 245 CURVE",
+"265 250 LINE"
+);
+}
+);
+width = 728;
 }
 );
 },
@@ -1403,6 +1594,55 @@ nodes = (
 }
 );
 width = 555;
+}
+);
+},
+{
+glyphname = "ain-ar.init.1";
+layers = (
+{
+anchors = (
+{
+name = fatha;
+position = "{72, 275}";
+}
+);
+backgroundImage = {
+alpha = 100;
+imagePath = "1/image-0056.jpg";
+locked = "1";
+transform = "{10, 0, 0, 10, -2823, -4441}";
+};
+layerId = m01;
+paths = (
+{
+closed = 1;
+nodes = (
+"14 168 LINE SMOOTH",
+"-17 133 OFFCURVE",
+"20 62 OFFCURVE",
+"69 52 CURVE",
+"85 66 LINE",
+"-28 66 LINE",
+"-10 99 LINE",
+"-10 -18 LINE",
+"-31 0 LINE",
+"141 -2 OFFCURVE",
+"300 -2 OFFCURVE",
+"472 0 CURVE",
+"566 53 LINE",
+"458 49 OFFCURVE",
+"316 54 OFFCURVE",
+"219 80 CURVE SMOOTH",
+"126 105 OFFCURVE",
+"49 191 OFFCURVE",
+"80 226 CURVE SMOOTH",
+"142 296 LINE",
+"136 302 LINE"
+);
+}
+);
+width = 556;
 }
 );
 },
@@ -2290,59 +2530,65 @@ unicode = 0648;
 glyphname = "waw-ar.1";
 layers = (
 {
+backgroundImage = {
+alpha = 100;
+imagePath = "1/image-0056.jpg";
+locked = "1";
+transform = "{10, 0, 0, 10, -5924, -1617}";
+};
 layerId = m01;
 paths = (
 {
 closed = 1;
 nodes = (
-"252 -11 OFFCURVE",
-"308 -6 OFFCURVE",
-"343 11 CURVE SMOOTH",
-"365 22 OFFCURVE",
-"378 30 OFFCURVE",
-"381 83 CURVE SMOOTH",
-"387 177 OFFCURVE",
-"304 305 OFFCURVE",
-"231 305 CURVE SMOOTH",
-"153 305 OFFCURVE",
-"95 203 OFFCURVE",
-"111 133 CURVE SMOOTH",
-"127 65 OFFCURVE",
-"229 61 OFFCURVE",
-"299 68 CURVE",
-"301 64 OFFCURVE",
-"301 63 OFFCURVE",
-"301 59 CURVE",
-"226 49 OFFCURVE",
-"149 55 OFFCURVE",
-"103 96 CURVE",
-"74 59 OFFCURVE",
-"42 49 OFFCURVE",
-"10 35 CURVE",
-"46 9 OFFCURVE",
-"133 -8 OFFCURVE",
-"208 -10 CURVE SMOOTH"
+"257 -32 OFFCURVE",
+"318 -31 OFFCURVE",
+"359 -11 CURVE SMOOTH",
+"375 -3 OFFCURVE",
+"394 10 OFFCURVE",
+"392 63 CURVE SMOOTH",
+"388 157 OFFCURVE",
+"309 285 OFFCURVE",
+"236 285 CURVE SMOOTH",
+"150 285 OFFCURVE",
+"97 183 OFFCURVE",
+"108 113 CURVE SMOOTH",
+"120 34 OFFCURVE",
+"234 36 OFFCURVE",
+"304 44 CURVE",
+"306 40 OFFCURVE",
+"306 39 OFFCURVE",
+"306 35 CURVE",
+"231 24 OFFCURVE",
+"148 28 OFFCURVE",
+"102 69 CURVE",
+"73 33 OFFCURVE",
+"38 19 OFFCURVE",
+"10 12 CURVE",
+"46 -16 OFFCURVE",
+"138 -29 OFFCURVE",
+"213 -31 CURVE SMOOTH"
 );
 },
 {
 closed = 1;
 nodes = (
-"225 179 OFFCURVE",
-"223 181 OFFCURVE",
-"223 186 CURVE SMOOTH",
-"223 190 OFFCURVE",
-"225 192 OFFCURVE",
-"230 192 CURVE SMOOTH",
-"234 192 OFFCURVE",
-"236 190 OFFCURVE",
-"236 186 CURVE SMOOTH",
-"236 181 OFFCURVE",
-"234 179 OFFCURVE",
-"230 179 CURVE SMOOTH"
+"234 156 OFFCURVE",
+"231 159 OFFCURVE",
+"231 163 CURVE SMOOTH",
+"231 166 OFFCURVE",
+"234 169 OFFCURVE",
+"238 169 CURVE SMOOTH",
+"241 169 OFFCURVE",
+"244 166 OFFCURVE",
+"244 163 CURVE SMOOTH",
+"244 159 OFFCURVE",
+"241 156 OFFCURVE",
+"238 156 CURVE SMOOTH"
 );
 }
 );
-width = 391;
+width = 402;
 }
 );
 },
