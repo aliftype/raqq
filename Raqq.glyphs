@@ -81,6 +81,10 @@ name = "Disable Subroutines";
 value = 1;
 },
 {
+name = "Propagate Anchors";
+value = 0;
+},
+{
 name = "Disable Last Change";
 value = 1;
 },
