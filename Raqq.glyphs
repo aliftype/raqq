@@ -361,7 +361,7 @@ position = "{1672, 0}";
 );
 id = m01;
 userData = {
-GSOffsetHorizontal = 25;
+GSOffsetHorizontal = 10;
 GSOffsetMakeStroke = 1;
 GSOffsetProportional = 1;
 GSOffsetVertical = 10;
@@ -2841,7 +2841,7 @@ nodes = (
 );
 }
 );
-width = 520;
+width = 530;
 }
 );
 },
@@ -4882,6 +4882,33 @@ paths = (
 {
 closed = 1;
 nodes = (
+"61 50 OFFCURVE",
+"94 95 OFFCURVE",
+"129 153 CURVE",
+"111 163 LINE",
+"78 107 OFFCURVE",
+"45 62 OFFCURVE",
+"1 12 CURVE",
+"17 -2 LINE"
+);
+}
+);
+width = 128;
+},
+{
+anchors = (
+{
+name = _top;
+position = "{90, 50}";
+}
+);
+associatedMasterId = m01;
+layerId = "1951D83C-027C-46A2-BBE7-A485E6845D98";
+name = "1 May 21, 00:30";
+paths = (
+{
+closed = 1;
+nodes = (
 "128 152 LINE",
 "112 164 LINE",
 "0 12 LINE",
@@ -4910,10 +4937,46 @@ paths = (
 {
 closed = 1;
 nodes = (
+"62 42 OFFCURVE",
+"104 91 OFFCURVE",
+"142 142 CURVE",
+"126 154 LINE",
+"88 103 OFFCURVE",
+"48 56 OFFCURVE",
+"2 13 CURVE",
+"16 -1 LINE"
+);
+}
+);
+width = 142;
+},
+{
+anchors = (
+{
+name = _top;
+position = "{90, 50}";
+}
+);
+associatedMasterId = m01;
+layerId = "54B3BE47-6985-45AE-A51D-CDE60F3B1871";
+name = "1 May 21, 00:31";
+paths = (
+{
+closed = 1;
+nodes = (
 "142 142 LINE",
 "126 154 LINE",
 "0 12 LINE",
 "16 0 LINE"
+);
+},
+{
+closed = 0;
+nodes = (
+"134 148 LINE",
+"96 97 OFFCURVE",
+"55 49 OFFCURVE",
+"9 6 CURVE"
 );
 }
 );
