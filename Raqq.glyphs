@@ -2951,6 +2951,10 @@ name = bottom_1;
 position = "{343, 17}";
 },
 {
+name = caret_1;
+position = "{272, 0}";
+},
+{
 name = fatha_1;
 position = "{323, 305}";
 },
@@ -3048,6 +3052,10 @@ anchors = (
 {
 name = bottom_1;
 position = "{425, 49}";
+},
+{
+name = caret_1;
+position = "{332, 0}";
 },
 {
 name = fatha_1;
@@ -3165,12 +3173,12 @@ layers = (
 {
 anchors = (
 {
-name = bottom_1;
-position = "{129, 47}";
-},
-{
 name = bottom_2;
 position = "{392, -126}";
+},
+{
+name = caret_1;
+position = "{95, 0}";
 },
 {
 name = fatha_1;
@@ -3257,8 +3265,8 @@ layers = (
 {
 anchors = (
 {
-name = top.hamza_1;
-position = "{272, 134}";
+name = caret_1;
+position = "{132, 0}";
 },
 {
 name = top.hamza_2;
@@ -3267,10 +3275,6 @@ position = "{177, 516}";
 {
 name = top_1;
 position = "{167, 298}";
-},
-{
-name = top_2;
-position = "{74, 87}";
 }
 );
 backgroundImage = {
@@ -3361,7 +3365,7 @@ position = "{272, -55}";
 },
 {
 name = caret_1;
-position = "{200, -5}";
+position = "{200, 0}";
 },
 {
 name = top_1;
