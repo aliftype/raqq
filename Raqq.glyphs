@@ -302,10 +302,10 @@ lookup contxtuals {
 
 	sub behDotless-ar.init' ain-ar.medi by behDotless-ar.init.ain;
 
-	sub [ain-ar.init ain-ar.init.1] behDotless-ar.medi' by behDotless-ar.medi.ain;
-
 	sub ain-ar.medi lam-ar.medi' by lam-ar.medi.ain;
 
+	sub [ain-ar.init ain-ar.init.1] behDotless-ar.medi' by behDotless-ar.medi.ain;
+	sub kaf-ar.init behDotless-ar.medi' by behDotless-ar.medi.kaf;
 	sub lam-ar.init behDotless-ar.medi' by behDotless-ar.medi.lam;
 
 	sub meem-ar.medi' @waw.fina by meem-ar.medi.alt;
@@ -388,7 +388,7 @@ layers = (
 anchors = (
 {
 name = bottom.hamza;
-position = "{498, -38}";
+position = "{498, -130}";
 }
 );
 layerId = m01;
@@ -429,7 +429,7 @@ layers = (
 anchors = (
 {
 name = bottom.hamza;
-position = "{504, -38}";
+position = "{504, -130}";
 }
 );
 layerId = m01;
@@ -666,7 +666,7 @@ position = "{2188, -60}";
 },
 {
 name = kasra;
-position = "{1930, 0}";
+position = "{1930, -92}";
 },
 {
 name = ring;
@@ -968,7 +968,7 @@ position = "{110, 38}";
 },
 {
 name = fatha;
-position = "{82, 608}";
+position = "{82, 700}";
 },
 {
 name = ring;
@@ -1022,7 +1022,7 @@ position = "{110, 38}";
 },
 {
 name = fatha;
-position = "{130, 708}";
+position = "{130, 800}";
 },
 {
 name = ring;
@@ -1204,7 +1204,7 @@ layers = (
 anchors = (
 {
 name = damma;
-position = "{104, 226}";
+position = "{12, 226}";
 }
 );
 backgroundImage = {
@@ -1272,11 +1272,11 @@ layers = (
 anchors = (
 {
 name = damma;
-position = "{74, 226}";
+position = "{-18, 226}";
 },
 {
 name = kasra;
-position = "{958, 10}";
+position = "{958, -82}";
 }
 );
 layerId = m01;
@@ -1356,7 +1356,7 @@ layers = (
 anchors = (
 {
 name = fatha;
-position = "{450, 560}";
+position = "{450, 652}";
 },
 {
 name = top;
@@ -1413,7 +1413,7 @@ layers = (
 anchors = (
 {
 name = fatha;
-position = "{460, 560}";
+position = "{460, 652}";
 },
 {
 name = top;
@@ -1475,7 +1475,7 @@ layers = (
 anchors = (
 {
 name = fatha;
-position = "{432, 280}";
+position = "{432, 372}";
 },
 {
 name = top;
@@ -1781,7 +1781,7 @@ layers = (
 anchors = (
 {
 name = fatha;
-position = "{130, 526}";
+position = "{130, 618}";
 }
 );
 layerId = m01;
@@ -1824,7 +1824,7 @@ layers = (
 anchors = (
 {
 name = fatha;
-position = "{144, 550}";
+position = "{144, 642}";
 }
 );
 layerId = m01;
@@ -2114,11 +2114,11 @@ layers = (
 anchors = (
 {
 name = fatha;
-position = "{-182, 1040}";
+position = "{-182, 1132}";
 },
 {
 name = kasra;
-position = "{110, 11}";
+position = "{110, -81}";
 }
 );
 backgroundImage = {
@@ -2171,7 +2171,7 @@ layers = (
 anchors = (
 {
 name = fatha;
-position = "{-172, 1040}";
+position = "{-172, 1132}";
 }
 );
 layerId = m01;
@@ -2516,7 +2516,7 @@ layers = (
 anchors = (
 {
 name = kasra;
-position = "{350, -72}";
+position = "{350, -164}";
 }
 );
 backgroundImage = {
@@ -2582,7 +2582,7 @@ layers = (
 anchors = (
 {
 name = kasra;
-position = "{350, -72}";
+position = "{350, -164}";
 }
 );
 backgroundImage = {
@@ -2659,7 +2659,7 @@ layers = (
 anchors = (
 {
 name = fatha;
-position = "{134, 250}";
+position = "{134, 342}";
 },
 {
 name = top;
@@ -2720,7 +2720,7 @@ layers = (
 anchors = (
 {
 name = kasra;
-position = "{321, -2}";
+position = "{321, -94}";
 }
 );
 backgroundImage = {
@@ -2785,7 +2785,7 @@ layers = (
 anchors = (
 {
 name = kasra;
-position = "{149, 26}";
+position = "{149, -66}";
 }
 );
 backgroundImage = {
@@ -2886,7 +2886,7 @@ layers = (
 anchors = (
 {
 name = fatha;
-position = "{390, 637}";
+position = "{390, 729}";
 }
 );
 backgroundImage = {
@@ -2955,7 +2955,7 @@ layers = (
 anchors = (
 {
 name = fatha;
-position = "{390, 577}";
+position = "{390, 669}";
 }
 );
 backgroundImage = {
@@ -3143,7 +3143,7 @@ layers = (
 anchors = (
 {
 name = fatha;
-position = "{424, 508}";
+position = "{424, 600}";
 }
 );
 layerId = m01;
@@ -3345,11 +3345,11 @@ position = "{544, 0}";
 },
 {
 name = fatha_1;
-position = "{646, 610}";
+position = "{646, 702}";
 },
 {
 name = fatha_2;
-position = "{426, 284}";
+position = "{426, 376}";
 },
 {
 name = top_1;
@@ -3442,15 +3442,15 @@ position = "{451, 0}";
 },
 {
 name = damma_2;
-position = "{66, 195}";
+position = "{-26, 195}";
 },
 {
 name = fatha_1;
-position = "{596, 708}";
+position = "{596, 800}";
 },
 {
 name = kasra_1;
-position = "{714, -74}";
+position = "{714, -166}";
 },
 {
 name = top_1;
@@ -3563,11 +3563,11 @@ position = "{664, 0}";
 },
 {
 name = fatha_1;
-position = "{822, 668}";
+position = "{822, 760}";
 },
 {
 name = fatha_2;
-position = "{434, 608}";
+position = "{434, 700}";
 },
 {
 name = top_1;
@@ -3638,11 +3638,11 @@ position = "{190, 0}";
 },
 {
 name = fatha_1;
-position = "{58, 1010}";
+position = "{58, 1102}";
 },
 {
 name = fatha_2;
-position = "{82, -78}";
+position = "{82, 14}";
 }
 );
 backgroundImage = {
@@ -3726,7 +3726,7 @@ position = "{208, 0}";
 },
 {
 name = top.hamza_2;
-position = "{298, 1032}";
+position = "{298, 1124}";
 },
 {
 name = top_1;
@@ -3936,11 +3936,11 @@ position = "{410, 0}";
 },
 {
 name = fatha_2;
-position = "{137, 360}";
+position = "{137, 452}";
 },
 {
 name = kasra_1;
-position = "{665, -35}";
+position = "{665, -127}";
 },
 {
 name = top_2;
@@ -4041,11 +4041,11 @@ position = "{410, -20}";
 },
 {
 name = fatha_2;
-position = "{197, 340}";
+position = "{197, 432}";
 },
 {
 name = kasra_1;
-position = "{721, 0}";
+position = "{721, -92}";
 },
 {
 name = top_2;
@@ -5015,7 +5015,7 @@ layers = (
 anchors = (
 {
 name = _top.hamza;
-position = "{92, 0}";
+position = "{92, 92}";
 }
 );
 components = (
@@ -5039,7 +5039,7 @@ layers = (
 anchors = (
 {
 name = _bottom.hamza;
-position = "{92, 184}";
+position = "{92, 92}";
 }
 );
 components = (
@@ -5089,7 +5089,7 @@ layers = (
 anchors = (
 {
 name = _kasra;
-position = "{194, 184}";
+position = "{194, 92}";
 }
 );
 components = (
@@ -5118,7 +5118,7 @@ layers = (
 anchors = (
 {
 name = _fatha;
-position = "{92, 0}";
+position = "{92, 92}";
 }
 );
 layerId = m01;
@@ -5156,7 +5156,7 @@ layers = (
 anchors = (
 {
 name = _damma;
-position = "{184, 92}";
+position = "{92, 92}";
 }
 );
 components = (
@@ -5180,7 +5180,7 @@ layers = (
 anchors = (
 {
 name = _kasra;
-position = "{92, 184}";
+position = "{92, 92}";
 }
 );
 components = (
