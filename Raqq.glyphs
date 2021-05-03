@@ -1,5 +1,5 @@
 {
-.appVersion = "3080";
+.appVersion = "3081";
 classes = (
 {
 code = "alef-ar
@@ -168,6 +168,10 @@ Location = 100;
 );
 },
 {
+name = "Variable Font File Name";
+value = Foo;
+},
+{
 name = localizedDesigner;
 value = "Arabic;خالد حسني";
 },
@@ -208,16 +212,6 @@ name = Languagesystems;
 }
 );
 features = (
-{
-automatic = 1;
-code = "feature rand;
-feature isol;
-feature init;
-feature medi;
-feature fina;
-";
-name = aalt;
-},
 {
 code = "sub alefHamzaabove-ar by alef-ar hamzaabove-ar;
 sub alefHamzabelow-ar by alef-ar hamzabelow-ar;
@@ -1384,7 +1378,7 @@ imagePath = "1/image-0056.jpg";
 transform = "{20, 0, 0, 20, -12937, -3244}";
 };
 layerId = "AD70FE29-E5CB-4DE7-9C64-68F8EB701C63";
-name = "{0}";
+name = "{0, 0}";
 paths = (
 {
 closed = 1;
