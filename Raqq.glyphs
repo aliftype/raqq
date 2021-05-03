@@ -168,10 +168,6 @@ Location = 100;
 );
 },
 {
-name = "Variable Font File Name";
-value = Foo;
-},
-{
 name = localizedDesigner;
 value = "Arabic;خالد حسني";
 },
@@ -197,6 +193,10 @@ Name = Stretch;
 Tag = ASTR;
 }
 );
+},
+{
+name = "Variable Font File Name";
+value = Raqq;
 }
 );
 date = "2021-04-25 20:10:22 +0000";
