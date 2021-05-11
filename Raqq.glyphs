@@ -58,11 +58,13 @@ fehDotless_alef-ar
 lam_alef-ar
 meem_noonghunna-ar
 lam_lam_heh-ar
+threedots-ar
 ";
 name = isol;
 },
 {
 code = "behDotless-ar.init
+behDotless-ar.init.ain
 hah-ar.init
 seen-ar.init
 sad-ar.init
@@ -4915,26 +4917,6 @@ width = 953;
 );
 },
 {
-glyphname = "decimalseparator-ar";
-layers = (
-{
-layerId = m01;
-width = 1200;
-}
-);
-unicode = 066B;
-},
-{
-glyphname = "thousandseparator-ar";
-layers = (
-{
-layerId = m01;
-width = 1200;
-}
-);
-unicode = 066C;
-},
-{
 glyphname = "zero-ar";
 layers = (
 {
@@ -5091,44 +5073,28 @@ width = 200;
 );
 },
 {
-glyphname = "comma-ar";
+glyphname = "threedots-ar";
 layers = (
 {
-layerId = m01;
-width = 1200;
-}
-);
-unicode = 060C;
+components = (
+{
+name = "dotabove-ar";
+transform = "{0.98, -0.19902, 0.19902, 0.98, 74, 45}";
 },
 {
-glyphname = "semicolon-ar";
-layers = (
-{
-layerId = m01;
-width = 1200;
-}
-);
-unicode = 061B;
+name = "dotabove-ar";
+transform = "{0.98, -0.19902, 0.19902, 0.98, 12, 123}";
 },
 {
-glyphname = "question-ar";
-layers = (
-{
-layerId = m01;
-width = 1200;
+name = "dotabove-ar";
+transform = "{0.98, -0.19902, 0.19902, 0.98, 43, 84}";
 }
 );
-unicode = 061F;
-},
-{
-glyphname = "asterisk-ar";
-layers = (
-{
 layerId = m01;
-width = 1200;
+width = 244;
 }
 );
-unicode = 066D;
+unicode = 061E;
 },
 {
 glyphname = "endofayah-ar";
@@ -5616,36 +5582,6 @@ width = 740;
 }
 );
 unicode = 06DD;
-},
-{
-glyphname = "parenleft-ar";
-layers = (
-{
-layerId = m01;
-width = 1200;
-}
-);
-unicode = FD3E;
-},
-{
-glyphname = "parenright-ar";
-layers = (
-{
-layerId = m01;
-width = 1200;
-}
-);
-unicode = FD3F;
-},
-{
-glyphname = "percent-ar";
-layers = (
-{
-layerId = m01;
-width = 1200;
-}
-);
-unicode = 066A;
 },
 {
 glyphname = "dotabove-ar";
