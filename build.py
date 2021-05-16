@@ -556,8 +556,6 @@ def buildVF(opts):
 
     print(f" MERGE   {font.familyName}")
     otf, _, _ = merge(ds)
-    #if not opts.debug:
-    #    otf["post"].formatType = 3.0
     return otf
 
 
