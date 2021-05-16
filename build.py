@@ -254,6 +254,8 @@ feature mark {{
 
 RE_DELIM = re.compile(r"(?:/(.*?.)/)")
 
+LANG_IDS = {"ARA": "0x0C01", "ENG": "0x0409"}
+
 
 def makeFeatures(instance, master, opts, glyphOrder):
     font = instance.parent
@@ -280,6 +282,12 @@ def makeFeatures(instance, master, opts, glyphOrder):
         if feature.disabled:
             continue
         code = feature.code
+        names = ""
+        for label in feature.labels:
+            names += f'name 3 1 {LANG_IDS[label["language"]]} "{label["value"]}";\n'
+        if names:
+            code = "featureNames { " + names + " };\n" + code
+
         if "# Automatic Code\n" in code:
             before, after = code.split("# Automatic Code\n", 1)
             if feature.name == "mark":

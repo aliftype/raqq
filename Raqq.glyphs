@@ -390,7 +390,7 @@ lookup contxtuals {
 tag = rlig;
 },
 {
-code = "#sub @tashkil by NULL;
+code = "sub @tashkil by NULL;
 ";
 labels = (
 {
