@@ -121,7 +121,7 @@ def draw(layer, instance, pen=None):
         erasepen = EraseOpenCornersPen(t2pen)
         for contour in ufo:
             contour.draw(erasepen)
-        return t2pen
+        return t2pen.getCharString()
 
 
 def makeKerning(font, master, glyphOrder):
@@ -420,7 +420,7 @@ def build(instance, opts, glyphOrder):
         layer = getLayer(glyph, instance)
         if getCategory(glyph) == ("Mark", "Nonspacing"):
             layer.width = 0
-        charStrings[name] = draw(layer, instance).getCharString()
+        charStrings[name] = draw(layer, instance)
         advanceWidths[name] = layer.width
 
         for layer in glyph.layers:
@@ -431,7 +431,7 @@ def build(instance, opts, glyphOrder):
                 new = name
                 if layer.layerId != master.id:
                     new += f".layer{len(colorLayers[name])}"
-                    charStrings[new] = draw(layer, instance).getCharString()
+                    charStrings[new] = draw(layer, instance)
                     advanceWidths[new] = advanceWidths[name]
 
                     glyphOrder.append(new)
