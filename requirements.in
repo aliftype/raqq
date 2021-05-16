@@ -1,5 +1,4 @@
-cffsubr
 fonttools
-ufoLib2
+skia-pathops
 git+git://github.com/simoncozens/glyphsLib.git@glyphs3-try3#egg=glyphsLib
 PyYAML

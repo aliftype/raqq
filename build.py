@@ -20,17 +20,16 @@ import datetime
 
 from fontTools.designspaceLib import DesignSpaceDocument
 from fontTools.fontBuilder import FontBuilder
-from fontTools.ttLib import TTFont, newTable, getTableModule
 from fontTools.ttLib.tables._h_e_a_d import mac_epoch_diff
 from fontTools.varLib import build as merge
-from fontTools.misc.transform import Transform
-from fontTools.pens.pointPen import ReverseContourPointPen
+from fontTools.misc.transform import Identity
+from fontTools.pens.transformPen import TransformPen
+from fontTools.pens.reverseContourPen import ReverseContourPen
 from fontTools.pens.t2CharStringPen import T2CharStringPen
-from fontTools.pens.transformPen import TransformPointPen
-from glyphsLib import GSFont, GSGlyph, GSLayer, GSComponent, GSAnchor
+from glyphsLib import GSFont
 from glyphsLib.glyphdata import get_glyph as getGlyphInfo
 from glyphsLib.filters.eraseOpenCorners import EraseOpenCornersPen
-from ufoLib2.objects import Glyph as UFOGlyph
+from pathops import Path, PathPen
 
 
 DEFAULT_TRANSFORM = [1, 0, 0, 1, 0, 0]
@@ -77,51 +76,35 @@ CODEPAGE_RANGES = {
 }
 
 
-def draw(layer, instance, pen=None):
-    ufo = None
-    if pen is None:
-        ufo = UFOGlyph()
-        pen = ufo.getPointPen()
+class DecomposePathPen(PathPen):
+    def __new__(cls, *args, **kwargs):
+        return super().__new__(cls, *args, **kwargs)
 
-    for path in layer.paths:
-        nodes = list(path.nodes)
+    def __init__(self, path, layerSet):
+        self._layerSet = layerSet
 
-        pen.beginPath()
-        if nodes:
-            if not path.closed:
-                node = nodes.pop(0)
-                assert node.type == "line", "Open path starts with off-curve points"
-                pen.addPoint(tuple(node.position), segmentType="move")
-            else:
-                # In Glyphs.app, the starting node of a closed contour is always
-                # stored at the end of the nodes list.
-                nodes.insert(0, nodes.pop())
-            for node in nodes:
-                node_type = node.type
-                if node_type not in ["line", "curve", "qcurve"]:
-                    node_type = None
-                pen.addPoint(
-                    tuple(node.position), segmentType=node_type, smooth=node.smooth
-                )
-        pen.endPath()
+    def addComponent(self, name, transform):
 
-    for component in layer.components:
-        componentLayer = getLayer(component.component, instance)
-        transform = component.transform.value
-        componentPen = pen
-        if transform != DEFAULT_TRANSFORM:
-            componentPen = TransformPointPen(pen, transform)
+        pen = self
+        if transform != Identity:
+            pen = TransformPen(pen, transform)
             xx, xy, yx, yy = transform[:4]
             if xx * yy - xy * yx < 0:
-                componentPen = ReverseContourPointPen(componentPen)
-        draw(componentLayer, instance, componentPen)
+                pen = ReverseContourPen(pen)
+        self._layerSet[name].draw(pen)
 
-    if ufo is not None:
-        t2pen = T2CharStringPen(layer.width, None)
-        erasepen = EraseOpenCornersPen(t2pen)
-        for contour in ufo:
-            contour.draw(erasepen)
-        return t2pen.getCharString()
+
+def draw(layer, layerSet):
+    # Draw glyph and remove overlaps.
+    path = Path()
+    layer.draw(DecomposePathPen(path, layerSet))
+    #path.simplify(fix_winding=True, keep_starting_points=True)
+
+    # Build CharString.
+    t2pen = T2CharStringPen(layer.width, None)
+    erasepen = EraseOpenCornersPen(t2pen)
+    path.draw(erasepen)
+    return t2pen.getCharString()
 
 
 def makeKerning(font, master, glyphOrder):
@@ -412,6 +395,8 @@ def build(instance, opts, glyphOrder):
     charStrings = {}
     colorLayers = {}
 
+    layerSet = {g.name: g.layers[master.id] for g in font.glyphs}
+
     for name in list(glyphOrder):
         glyph = font.glyphs[name]
         if not glyph.export:
@@ -420,7 +405,7 @@ def build(instance, opts, glyphOrder):
         layer = getLayer(glyph, instance)
         if getCategory(glyph) == ("Mark", "Nonspacing"):
             layer.width = 0
-        charStrings[name] = draw(layer, instance)
+        charStrings[name] = draw(layer, layerSet)
         advanceWidths[name] = layer.width
 
         for layer in glyph.layers:
@@ -432,7 +417,7 @@ def build(instance, opts, glyphOrder):
                 # XXX disable this optimization for Cairo/FreeType
                 if True or layer.layerId != master.id:
                     new += f".layer{len(colorLayers[name])}"
-                    charStrings[new] = draw(layer, instance)
+                    charStrings[new] = draw(layer, layerSet)
                     advanceWidths[new] = advanceWidths[name]
 
                     glyphOrder.append(new)
