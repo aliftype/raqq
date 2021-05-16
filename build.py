@@ -98,12 +98,16 @@ def draw(layer, layerSet):
     # Draw glyph and remove overlaps.
     path = Path()
     layer.draw(DecomposePathPen(path, layerSet))
-    #path.simplify(fix_winding=True, keep_starting_points=True)
+
+    path2 = Path()
+    erasepen = EraseOpenCornersPen(path2.getPen())
+    path.draw(erasepen)
+    path2.simplify(fix_winding=True, keep_starting_points=True)
 
     # Build CharString.
     t2pen = T2CharStringPen(layer.width, None)
-    erasepen = EraseOpenCornersPen(t2pen)
-    path.draw(erasepen)
+    path2.draw(t2pen)
+
     return t2pen.getCharString()
 
 
