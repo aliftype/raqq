@@ -452,9 +452,9 @@ def build(instance, opts, glyphOrder):
         "description": getProperty(font, "descriptions"),
         "vendorURL": font.manufacturerURL,
         "designerURL": font.designerURL,
-     #  "licenseDescription": getProperty(font, "licenses"),
-     #  "licenseInfoURL": font.customParameters["licenseURL"],
-     #  "sampleText": getProperty(font, "sampleTexts"),
+        "licenseDescription": getProperty(font, "licenses"),
+        "licenseInfoURL": getProperty(font, "licenseURL"),
+        "sampleText": getProperty(font, "sampleTexts"),
     }
 
     fb = FontBuilder(font.upm, isTTF=False)
