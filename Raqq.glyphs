@@ -6230,6 +6230,10 @@ values = (
 {
 language = dflt;
 value = "Copyright 2021 The Raqq Project Authors (github.com/alif-type/raqq)";
+},
+{
+language = ARA;
+value = "حقوق النسخ ٢٠٢١ لمؤلفي مشروع رَقّ (github.com/alif-type/raqq)";
 }
 );
 },
@@ -6256,6 +6260,10 @@ values = (
 {
 language = dflt;
 value = "Alif Type";
+},
+{
+language = ARA;
+value = "حروف ألف";
 }
 );
 },
@@ -6273,6 +6281,10 @@ values = (
 {
 language = dflt;
 value = "Raqq (رَقّ) is a manuscript Kufic typeface";
+},
+{
+language = ARA;
+value = "رَقّ هو خط كوفي مصحفي";
 }
 );
 }
