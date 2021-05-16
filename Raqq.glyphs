@@ -15,6 +15,17 @@ tag = ASTR;
 );
 classes = (
 {
+code = "dotabove-ar
+dotabove-ar.reh
+dotbelow-ar
+twodotsabove-ar
+twodotsbelow-ar
+threedotsabove-ar
+threedotsabove-ar.seen
+";
+name = tashkil;
+},
+{
 code = "alef-ar
 alef-ar.1";
 name = alef;
@@ -353,6 +364,21 @@ code = "lookupflag IgnoreMarks;
 
 	pos behDotless-ar.medi.ain dal-ar.fina <-20 0 -20 0>;";
 tag = kern;
+},
+{
+code = "#sub @tashkil by NULL;
+";
+labels = (
+{
+language = ENG;
+value = "Dot-less Letter Forms";
+},
+{
+language = ARA;
+value = "حروف مهملة (بلا نقاط)";
+}
+);
+tag = ss01;
 }
 );
 fontMaster = (
@@ -6228,7 +6254,7 @@ properties = (
 key = copyrights;
 values = (
 {
-language = dflt;
+language = ENG;
 value = "Copyright 2021 The Raqq Project Authors (github.com/alif-type/raqq)";
 },
 {
@@ -6241,7 +6267,7 @@ value = "حقوق النسخ ٢٠٢١ لمؤلفي مشروع رَقّ (github.c
 key = designers;
 values = (
 {
-language = dflt;
+language = ENG;
 value = "Khaled Hosny";
 },
 {
@@ -6258,7 +6284,7 @@ value = "https://aliftype.com";
 key = manufacturers;
 values = (
 {
-language = dflt;
+language = ENG;
 value = "Alif Type";
 },
 {
@@ -6279,7 +6305,7 @@ value = ALIF;
 key = descriptions;
 values = (
 {
-language = dflt;
+language = ENG;
 value = "Raqq (رَقّ) is a manuscript Kufic typeface";
 },
 {
