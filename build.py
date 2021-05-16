@@ -429,7 +429,8 @@ def build(instance, opts, glyphOrder):
                 colorLayers.setdefault(name, [])
 
                 new = name
-                if layer.layerId != master.id:
+                # XXX disable this optimization for Cairo/FreeType
+                if True or layer.layerId != master.id:
                     new += f".layer{len(colorLayers[name])}"
                     charStrings[new] = draw(layer, instance)
                     advanceWidths[new] = advanceWidths[name]
