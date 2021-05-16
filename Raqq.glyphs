@@ -204,6 +204,24 @@ ASTR = {
 100 = 100;
 };
 };
+},
+{
+name = unicodeRanges;
+value = (
+13
+);
+},
+{
+name = codePageRanges;
+value = (
+"1256",
+"864"
+);
+},
+{
+name = fsType;
+value = (
+);
 }
 );
 date = "2021-04-25 20:10:22 +0000";
@@ -372,13 +390,6 @@ lookup contxtuals {
 tag = rlig;
 },
 {
-code = "lookupflag IgnoreMarks;
-	pos [@isol @fina] [@init @isol] <400 0 400 0>;
-
-	pos behDotless-ar.medi.ain dal-ar.fina <-20 0 -20 0>;";
-tag = kern;
-},
-{
 code = "#sub @tashkil by NULL;
 ";
 labels = (
@@ -392,6 +403,19 @@ value = "حروف مهملة (بلا نقاط)";
 }
 );
 tag = ss01;
+},
+{
+code = "lookupflag IgnoreMarks;
+	pos [@isol @fina] [@init @isol] <400 0 400 0>;
+
+# Automatic Code
+";
+tag = kern;
+},
+{
+code = "# Automatic Code
+";
+tag = mark;
 }
 );
 fontMaster = (
@@ -746,10 +770,6 @@ name = kasra;
 pos = (1930,-92);
 },
 {
-name = ring;
-pos = (1188,0);
-},
-{
 name = top;
 pos = (2228,440);
 }
@@ -1054,10 +1074,6 @@ name = bottom;
 pos = (100,0);
 },
 {
-name = ring;
-pos = (100,0);
-},
-{
 name = top;
 pos = (48,536);
 }
@@ -1105,10 +1121,6 @@ pos = (110,38);
 {
 name = fatha;
 pos = (82,700);
-},
-{
-name = ring;
-pos = (80,0);
 },
 {
 name = top;
@@ -1159,10 +1171,6 @@ pos = (110,38);
 {
 name = fatha;
 pos = (130,800);
-},
-{
-name = ring;
-pos = (80,0);
 },
 {
 name = top;
@@ -6159,22 +6167,32 @@ name = Regular;
 },
 {
 axesValues = (
-0,
+100,
 0
-);
-customParameters = (
-{
-name = fileName;
-value = Raqq;
-}
 );
 instanceInterpolations = {
 m01 = 1;
 };
-name = Regular;
-type = variable;
+name = Shrink;
+},
+{
+axesValues = (
+0,
+100
+);
+instanceInterpolations = {
+m01 = 1;
+};
+name = Stretch;
 }
 );
+kerningRTL = {
+m01 = {
+"behDotless-ar.medi.ain" = {
+"dal-ar.fina" = -20;
+};
+};
+};
 metrics = (
 {
 type = ascender;

@@ -18,24 +18,23 @@ NAME = Raqq
 MAKEFLAGS := -sr
 SHELL = bash
 
-BUILDDIR = build
-#CONFIG = _config.yml
-#VERSION = $(shell python version.py $(CONFIG))
+CONFIG = _config.yml
+VERSION = $(shell python version.py $(CONFIG))
 DIST = $(NAME)-$(VERSION)
 
-.SECONDARY:
-.ONESHELL:
+ARGS ?= 
+
 .PHONY: all dist
 
-all: $(NAME).otf $(NAME).ttf
+all: $(NAME).otf # $(NAME).ttf
 
-%.otf: $(NAME).glyphs #$(CONFIG)
+%.otf: $(NAME).glyphs $(CONFIG)
 	$(info   BUILD  $(@F))
-	fontmake -g=$< --output-path=$@ --output=variable-cff2 --optimize-cff=1 --verbose=WARNING --master-dir="{tmp}" --instance-dir="{tmp}"
+	python build.py $< $(VERSION) $@ $(ARGS)
 
-%.ttf: $(NAME).glyphs #$(CONFIG)
+%.ttf: $(NAME).glyphs $(CONFIG)
 	$(info   BUILD  $(@F))
-	fontmake -g=$< --output-path=$@ --output=variable --verbose=WARNING --master-dir="{tmp}" --instance-dir="{tmp}"
+	python build.py $< $(VERSION) $@ $(ARGS)
 
 dist: all
 	$(info   DIST   $(DIST).zip)

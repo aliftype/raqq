@@ -1,2 +1,5 @@
-fontmake
+cffsubr
+fonttools
+ufoLib2
 git+git://github.com/simoncozens/glyphsLib.git@glyphs3-try3#egg=glyphsLib
+PyYAML
