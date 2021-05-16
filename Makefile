@@ -27,15 +27,15 @@ DIST = $(NAME)-$(VERSION)
 .ONESHELL:
 .PHONY: all dist
 
-all: $(NAME)-Regular.otf $(NAME)-Regular.ttf
+all: $(NAME).otf $(NAME).ttf
 
 %.otf: $(NAME).glyphs #$(CONFIG)
 	$(info   BUILD  $(@F))
-	fontmake -g=$< --output-path=$@ --output=otf --optimize-cff=1 --verbose=WARNING --master-dir="{tmp}" --instance-dir="{tmp}"
+	fontmake -g=$< --output-path=$@ --output=variable-cff2 --optimize-cff=1 --verbose=WARNING --master-dir="{tmp}" --instance-dir="{tmp}"
 
 %.ttf: $(NAME).glyphs #$(CONFIG)
 	$(info   BUILD  $(@F))
-	fontmake -g=$< --output-path=$@ --output=ttf --verbose=WARNING --master-dir="{tmp}" --instance-dir="{tmp}"
+	fontmake -g=$< --output-path=$@ --output=variable --verbose=WARNING --master-dir="{tmp}" --instance-dir="{tmp}"
 
 dist: all
 	$(info   DIST   $(DIST).zip)
