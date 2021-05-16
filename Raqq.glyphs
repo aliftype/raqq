@@ -217,11 +217,11 @@ features = (
 {
 code = "sub alefHamzaabove-ar by alef-ar hamzaabove-ar;
 sub alefHamzabelow-ar by alef-ar hamzabelow-ar;
-sub alefMadda-ar by alef-ar madda-ar;
-sub alefWasla-ar by alef-ar wasla-ar;
+sub alefMadda-ar by alef-ar; # madda-ar
+sub alefWasla-ar by alef-ar; # wasla-ar
 sub beh-ar by behDotless-ar dotbelow-ar;
 sub teh-ar by behDotless-ar twodotsabove-ar;
-sub theh-ar by behDotless-ar threedotsupabove-ar;
+sub theh-ar by behDotless-ar threedotsabove-ar;
 sub jeem-ar by hah-ar dotbelow-ar;
 sub khah-ar by hah-ar dotabove-ar;
 sub dal-ar by dal-ar;
@@ -229,7 +229,7 @@ sub thal-ar by dal-ar dotabove-ar;
 sub reh-ar by reh-ar;
 sub zain-ar by reh-ar dotabove-ar.reh;
 sub seen-ar by seen-ar;
-sub sheen-ar by seen-ar threedotsdownabove-ar;
+sub sheen-ar by seen-ar threedotsabove-ar.seen;
 sub sad-ar by sad-ar;
 sub dad-ar by sad-ar dotabove-ar;
 sub tah-ar by tah-ar;
@@ -237,7 +237,7 @@ sub zah-ar by tah-ar dotabove-ar;
 sub ain-ar by ain-ar;
 sub ghain-ar by ain-ar dotabove-ar;
 sub feh-ar by fehDotless-ar dotabove-ar;
-sub veh-ar by fehDotless-ar threedotsupabove-ar;
+sub veh-ar by fehDotless-ar threedotsabove-ar;
 sub qaf-ar by qafDotless-ar twodotsabove-ar;
 sub noon-ar by noonghunna-ar dotabove-ar;
 sub tehMarbuta-ar by heh-ar; #twodotsabove-ar;
@@ -669,9 +669,6 @@ layers = (
 components = (
 {
 name = "alef-ar";
-},
-{
-name = "madda-ar";
 }
 );
 layerId = m01;
@@ -688,9 +685,6 @@ layers = (
 components = (
 {
 name = "alef-ar";
-},
-{
-name = "wasla-ar";
 }
 );
 layerId = m01;
@@ -1218,7 +1212,7 @@ components = (
 name = "behDotless-ar";
 },
 {
-name = "threedotsupabove-ar";
+name = "threedotsabove-ar";
 }
 );
 layerId = m01;
@@ -1235,9 +1229,6 @@ layers = (
 components = (
 {
 name = "hah-ar";
-},
-{
-name = "dotcenter-ar";
 }
 );
 layerId = m01;
@@ -1888,7 +1879,7 @@ components = (
 name = "seen-ar";
 },
 {
-name = "threedotsupabove-ar";
+name = "threedotsabove-ar";
 }
 );
 layerId = m01;
@@ -2205,7 +2196,7 @@ components = (
 name = "fehDotless-ar";
 },
 {
-name = "threedotsupabove-ar";
+name = "threedotsabove-ar";
 }
 );
 layerId = m01;
@@ -5726,132 +5717,6 @@ category = Mark;
 subCategory = Nonspacing;
 },
 {
-glyphname = "dotcenter-ar";
-layers = (
-{
-layerId = m01;
-paths = (
-{
-closed = 0;
-nodes = (
-"0 2 LINE"
-);
-}
-);
-width = 1200;
-}
-);
-category = Mark;
-subCategory = Nonspacing;
-},
-{
-glyphname = "threedotsdownabove-ar";
-layers = (
-{
-anchors = (
-{
-name = _top;
-position = "{210, -14}";
-}
-);
-layerId = m01;
-paths = (
-{
-closed = 1;
-nodes = (
-"372 135 OFFCURVE",
-"406 189 OFFCURVE",
-"434 249 CURVE",
-"416 257 LINE",
-"388 199 OFFCURVE",
-"356 147 OFFCURVE",
-"320 98 CURVE",
-"336 86 LINE"
-);
-},
-{
-closed = 1;
-nodes = (
-"218 82 OFFCURVE",
-"253 137 OFFCURVE",
-"276 196 CURVE",
-"258 204 LINE",
-"235 147 OFFCURVE",
-"202 94 OFFCURVE",
-"162 42 CURVE",
-"178 30 LINE"
-);
-},
-{
-closed = 1;
-nodes = (
-"52 54 OFFCURVE",
-"76 110 OFFCURVE",
-"98 166 CURVE",
-"80 174 LINE",
-"58 118 OFFCURVE",
-"34 64 OFFCURVE",
-"0 12 CURVE",
-"16 0 LINE"
-);
-}
-);
-width = 434;
-}
-);
-category = Mark;
-subCategory = Nonspacing;
-},
-{
-glyphname = "threedotsupabove-ar";
-layers = (
-{
-anchors = (
-{
-name = _top;
-position = "{166, -14}";
-}
-);
-components = (
-{
-name = "dotabove-ar";
-transform = "{1, 0, 0, 1, 76, -64}";
-},
-{
-name = "dotabove-ar";
-},
-{
-name = "dotabove-ar";
-transform = "{1, 0, 0, 1, 38, -32}";
-}
-);
-layerId = m01;
-width = 204;
-}
-);
-category = Mark;
-subCategory = Nonspacing;
-},
-{
-glyphname = "wasla-ar";
-layers = (
-{
-layerId = m01;
-paths = (
-{
-closed = 0;
-nodes = (
-"0 2 LINE"
-);
-}
-);
-width = 200;
-}
-);
-category = Mark;
-subCategory = Nonspacing;
-},
-{
 glyphname = "alefabove-ar";
 layers = (
 {
@@ -6089,22 +5954,91 @@ category = Mark;
 subCategory = Nonspacing;
 },
 {
-glyphname = "madda-ar";
+glyphname = "threedotsabove-ar";
 layers = (
 {
+anchors = (
+{
+name = _top;
+position = "{166, -14}";
+}
+);
+components = (
+{
+name = "dotabove-ar";
+transform = "{1, 0, 0, 1, 76, -64}";
+},
+{
+name = "dotabove-ar";
+},
+{
+name = "dotabove-ar";
+transform = "{1, 0, 0, 1, 38, -32}";
+}
+);
+layerId = m01;
+width = 204;
+}
+);
+unicode = 06DB;
+category = Mark;
+subCategory = Nonspacing;
+},
+{
+glyphname = "threedotsabove-ar.seen";
+layers = (
+{
+anchors = (
+{
+name = _top;
+position = "{210, -14}";
+}
+);
 layerId = m01;
 paths = (
 {
-closed = 0;
+closed = 1;
 nodes = (
-"0 2 LINE"
+"372 135 OFFCURVE",
+"406 189 OFFCURVE",
+"434 249 CURVE",
+"416 257 LINE",
+"388 199 OFFCURVE",
+"356 147 OFFCURVE",
+"320 98 CURVE",
+"336 86 LINE"
+);
+},
+{
+closed = 1;
+nodes = (
+"218 82 OFFCURVE",
+"253 137 OFFCURVE",
+"276 196 CURVE",
+"258 204 LINE",
+"235 147 OFFCURVE",
+"202 94 OFFCURVE",
+"162 42 CURVE",
+"178 30 LINE"
+);
+},
+{
+closed = 1;
+nodes = (
+"52 54 OFFCURVE",
+"76 110 OFFCURVE",
+"98 166 CURVE",
+"80 174 LINE",
+"58 118 OFFCURVE",
+"34 64 OFFCURVE",
+"0 12 CURVE",
+"16 0 LINE"
 );
 }
 );
-width = 200;
+width = 434;
 }
 );
-unicode = 0653;
 category = Mark;
 subCategory = Nonspacing;
 },
