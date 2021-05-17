@@ -1,3 +1,3 @@
 fonttools
-git+git://github.com/simoncozens/glyphsLib.git@glyphs3-try3#egg=glyphsLib
+git+git://github.com/khaledhosny/glyphsLib.git@glyphs3-try3#egg=glyphsLib
 PyYAML

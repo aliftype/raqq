@@ -15,7 +15,7 @@ fonttools[ufo,unicode]==4.23.1
     #   ufolib2
 fs==2.4.13
     # via fonttools
-git+git://github.com/simoncozens/glyphsLib.git@glyphs3-try3#egg=glyphsLib
+git+git://github.com/khaledhosny/glyphsLib.git@glyphs3-try3#egg=glyphsLib
     # via -r requirements.in
 openstep-plist==0.2.2
     # via glyphslib
