@@ -25,8 +25,6 @@ pyyaml==5.4.1
     # via -r requirements.in
 six==1.16.0
     # via fs
-skia-pathops==0.6.0.post2
-    # via -r requirements.in
 ufolib2==0.11.1
     # via glyphslib
 

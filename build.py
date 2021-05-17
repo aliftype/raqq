@@ -29,7 +29,6 @@ from fontTools.pens.t2CharStringPen import T2CharStringPen
 from glyphsLib import GSFont
 from glyphsLib.glyphdata import get_glyph as getGlyphInfo
 from glyphsLib.filters.eraseOpenCorners import EraseOpenCornersPen
-from pathops import Path, PathPen
 
 
 DEFAULT_TRANSFORM = [1, 0, 0, 1, 0, 0]
@@ -76,37 +75,9 @@ CODEPAGE_RANGES = {
 }
 
 
-class DecomposePathPen(PathPen):
-    def __new__(cls, *args, **kwargs):
-        return super().__new__(cls, *args, **kwargs)
-
-    def __init__(self, path, layerSet):
-        self._layerSet = layerSet
-
-    def addComponent(self, name, transform):
-
-        pen = self
-        if transform != Identity:
-            pen = TransformPen(pen, transform)
-            xx, xy, yx, yy = transform[:4]
-            if xx * yy - xy * yx < 0:
-                pen = ReverseContourPen(pen)
-        self._layerSet[name].draw(pen)
-
-
 def draw(layer, layerSet):
-    # Draw glyph and remove overlaps.
-    path = Path()
-    layer.draw(DecomposePathPen(path, layerSet))
-
-    path2 = Path()
-    erasepen = EraseOpenCornersPen(path2.getPen())
-    path.draw(erasepen)
-    path2.simplify(fix_winding=True, keep_starting_points=True)
-
-    # Build CharString.
-    t2pen = T2CharStringPen(layer.width, None)
-    path2.draw(t2pen)
+    t2pen = T2CharStringPen(layer.width, layerSet)
+    layer.draw(t2pen)
 
     return t2pen.getCharString()
 
@@ -165,9 +136,8 @@ lookupflag IgnoreMarks;
 
 
 def getLayer(glyph, instance):
-    key = "{" + ", ".join(str(a) for a in instance.axes) + "}"
     for layer in glyph.layers:
-        if layer.name == key:
+        if layer.attr.get("coordinates") == instance.axes:
             return layer
     return glyph.layers[0]
 
@@ -525,6 +495,17 @@ def build(instance, opts, glyphOrder):
 
 def buildVF(opts):
     font = GSFont(opts.glyphs)
+
+    # Erase open corners
+    for glyph in font.glyphs:
+        for layer in glyph.layers:
+            if layer.name == "Regular" or layer.attr:
+                paths = list(layer.paths)
+                layer.paths = []
+                pen = EraseOpenCornersPen(layer.getPen())
+                for path in paths:
+                    path.draw(pen)
+
     glyphOrder = [g.name for g in font.glyphs]
 
     for instance in font.instances:
