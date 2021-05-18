@@ -5885,8 +5885,6 @@ nodes = (
 width = 128;
 }
 );
-sortName = ardot1a;
-sortNameKeep = ar2802;
 subCategory = Nonspacing;
 },
 {
@@ -5951,8 +5949,6 @@ nodes = (
 width = 142;
 }
 );
-sortName = ardot1a.reh;
-sortNameKeep = ar2802.reh;
 subCategory = Nonspacing;
 },
 {
@@ -5976,8 +5972,6 @@ ref = "dotabove-ar";
 width = 128;
 }
 );
-sortName = ardot1b;
-sortNameKeep = ar2805;
 subCategory = Nonspacing;
 },
 {
@@ -6261,8 +6255,6 @@ ref = "dotabove-ar";
 width = 204;
 }
 );
-sortName = ardot3a;
-sortNameKeep = ar3081;
 subCategory = Nonspacing;
 unicode = 1755;
 },
@@ -6322,8 +6314,6 @@ nodes = (
 width = 434;
 }
 );
-sortName = ardot3a.seen;
-sortNameKeep = ar3081.seen;
 subCategory = Nonspacing;
 },
 {
@@ -6362,7 +6352,6 @@ ref = "dotabove-ar";
 width = 166;
 }
 );
-sortName = ardot2a;
 subCategory = Nonspacing;
 },
 {
@@ -6385,7 +6374,6 @@ ref = "twodotsabove-ar";
 width = 166;
 }
 );
-sortName = ardot2b;
 subCategory = Nonspacing;
 }
 );
