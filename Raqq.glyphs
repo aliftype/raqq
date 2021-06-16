@@ -1,5 +1,5 @@
 {
-.appVersion = "3083";
+.appVersion = "3087";
 .formatVersion = 3;
 axes = (
 {
@@ -496,6 +496,14 @@ anchors = (
 {
 name = bottom.hamza;
 pos = (498,-130);
+},
+{
+name = top.hamza;
+pos = (282,997);
+},
+{
+name = top.madda;
+pos = (-101,997);
 }
 );
 layerId = m01;
@@ -537,6 +545,14 @@ anchors = (
 {
 name = bottom.hamza;
 pos = (504,-130);
+},
+{
+name = top.hamza;
+pos = (282,997);
+},
+{
+name = top.madda;
+pos = (-101,997);
 }
 );
 layerId = m01;
@@ -686,6 +702,7 @@ shapes = (
 ref = "alef-ar";
 },
 {
+pos = (190,905);
 ref = "hamzaabove-ar";
 }
 );
@@ -723,6 +740,10 @@ layerId = m01;
 shapes = (
 {
 ref = "alef-ar";
+},
+{
+pos = (-193,905);
+ref = "madda-ar";
 }
 );
 width = 1050;
@@ -6226,6 +6247,30 @@ width = 1200;
 );
 subCategory = Nonspacing;
 unicode = 1618;
+},
+{
+glyphname = "madda-ar";
+layers = (
+{
+anchors = (
+{
+name = _top.madda;
+pos = (92,92);
+}
+);
+attr = {
+colorPalette = 0;
+};
+layerId = m01;
+shapes = (
+{
+ref = "fatha-ar";
+}
+);
+width = 184;
+}
+);
+unicode = 1619;
 },
 {
 category = Mark;
