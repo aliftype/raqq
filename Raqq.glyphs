@@ -1,5 +1,5 @@
 {
-.appVersion = "3087";
+.appVersion = "3088";
 .formatVersion = 3;
 axes = (
 {
@@ -236,6 +236,17 @@ name = Languagesystems;
 );
 features = (
 {
+code = "sub alef-ar from @alef;
+sub waw-ar from @waw;
+";
+tag = rand;
+},
+{
+code = "sub hamza-ar @alef by alefHamzaabove-ar;
+";
+tag = ccmp;
+},
+{
 code = "sub alefHamzaabove-ar by alef-ar hamzaabove-ar;
 sub alefHamzabelow-ar by alef-ar hamzabelow-ar;
 sub alefMadda-ar by alef-ar; # madda-ar
@@ -272,12 +283,6 @@ sub hamzabelow-ar kasra-ar by hamzabelow-ar;
 sub space' space by space.alt;
 ";
 tag = ccmp;
-},
-{
-code = "sub alef-ar from @alef;
-sub waw-ar from @waw;
-";
-tag = rand;
 },
 {
 code = "sub yehFarsi-ar by alefMaksura-ar;";
