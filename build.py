@@ -137,7 +137,7 @@ lookupflag IgnoreMarks;
 
 def getLayer(glyph, instance):
     for layer in glyph.layers:
-        if layer.attr.get("coordinates") == instance.axes:
+        if layer.attributes.get("coordinates") == instance.axes:
             return layer
     return glyph.layers[0]
 
@@ -383,7 +383,7 @@ def build(instance, opts, glyphOrder):
         advanceWidths[name] = layer.width
 
         for layer in glyph.layers:
-            paletteIdx = layer.attr.get("colorPalette", None)
+            paletteIdx = layer.attributes.get("colorPalette", None)
             if paletteIdx is not None:
                 colorLayers.setdefault(name, [])
 
@@ -499,7 +499,7 @@ def buildVF(opts):
     # Erase open corners
     for glyph in font.glyphs:
         for layer in glyph.layers:
-            if layer.name == "Regular" or layer.attr:
+            if layer.name == "Regular" or layer.attributes:
                 paths = list(layer.paths)
                 layer.paths = []
                 pen = EraseOpenCornersPen(layer.getPen())
