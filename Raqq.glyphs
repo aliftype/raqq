@@ -504,13 +504,19 @@ pos = (498,-130);
 },
 {
 name = top.hamza;
-pos = (282,997);
+pos = (268,1076);
 },
 {
 name = top.madda;
-pos = (-101,997);
+pos = (-75,1076);
 }
 );
+backgroundImage = {
+imagePath = "images/alef-ar.jpg";
+locked = 1;
+pos = (-201,-294);
+scale = (20,20);
+};
 layerId = m01;
 shapes = (
 {
@@ -553,11 +559,11 @@ pos = (504,-130);
 },
 {
 name = top.hamza;
-pos = (282,997);
+pos = (268,1038);
 },
 {
 name = top.madda;
-pos = (-101,997);
+pos = (-75,1038);
 }
 );
 layerId = m01;
@@ -707,7 +713,7 @@ shapes = (
 ref = "alef-ar";
 },
 {
-pos = (190,905);
+pos = (176,984);
 ref = "hamzaabove-ar";
 }
 );
@@ -747,7 +753,7 @@ shapes = (
 ref = "alef-ar";
 },
 {
-pos = (-193,905);
+pos = (-167,984);
 ref = "madda-ar";
 }
 );
