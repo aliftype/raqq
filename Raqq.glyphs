@@ -1,5 +1,5 @@
 {
-.appVersion = "3131";
+.appVersion = "3132";
 .formatVersion = 3;
 axes = (
 {
@@ -512,6 +512,7 @@ pos = (-75,1076);
 }
 );
 backgroundImage = {
+alpha = 80;
 imagePath = "images/alef-ar.jpg";
 locked = 1;
 pos = (-201,-294);
@@ -782,11 +783,146 @@ unicode = 1649;
 glyphname = "behDotless-ar";
 layers = (
 {
-layerId = m01;
-width = 1200;
+anchors = (
+{
+name = bottom;
+pos = (2198,47);
+},
+{
+name = kasra;
+pos = (1930,-82);
+},
+{
+name = top;
+pos = (1908,313);
 }
 );
+backgroundImage = {
+alpha = 80;
+imagePath = "images/behDotless-ar.jpg";
+locked = 1;
+pos = (-152,-400);
+scale = (20,20);
+};
+layerId = m01;
+shapes = (
+{
+closed = 1;
+nodes = (
+(1941,311,o),
+(1887,253,o),
+(1839,212,c),
+(1938,186,o),
+(1991,160,o),
+(1997,131,c),
+(1997,126,o),
+(1987,122,o),
+(1957,121,cs),
+(1690,111,o),
+(1410,109,o),
+(1130,109,cs),
+(834,109,o),
+(538,114,o),
+(256,125,cs),
+(238,126,o),
+(184,130,o),
+(175,157,c),
+(129,91,o),
+(76,37,o),
+(20,13,c),
+(570,3,o),
+(1282,0,o),
+(1879,0,cs),
+(1978,0,o),
+(2069,0,o),
+(2151,0,cs),
+(2180,0,o),
+(2239,7,o),
+(2237,39,cs),
+(2229,174,o),
+(2120,362,o),
+(1995,381,c)
+);
+}
+);
+width = 2237;
+}
+);
+metricLeft = "=20";
+metricRight = "=0";
 unicode = 1646;
+},
+{
+glyphname = "behDotless-ar.1";
+layers = (
+{
+anchors = (
+{
+name = bottom;
+pos = (2452,47);
+},
+{
+name = kasra;
+pos = (2184,-82);
+},
+{
+name = top;
+pos = (2162,313);
+}
+);
+backgroundImage = {
+alpha = 80;
+imagePath = "images/behDotless-ar.1.jpg";
+locked = 1;
+pos = (-87,-342);
+scale = (20,20);
+};
+layerId = m01;
+shapes = (
+{
+closed = 1;
+nodes = (
+(2206,350,o),
+(2098,239,o),
+(2061,191,c),
+(2104,157,o),
+(2164,144,o),
+(2241,144,c),
+(2246,141,o),
+(2251,125,o),
+(2251,118,c),
+(1675,102,o),
+(901,118,o),
+(350,134,cs),
+(332,135,o),
+(244,140,o),
+(172,164,c),
+(130,103,o),
+(67,49,o),
+(20,24,c),
+(356,4,o),
+(845,2,o),
+(1310,-2,cs),
+(1608,-5,o),
+(1895,-6,o),
+(2128,-11,cs),
+(2227,-13,o),
+(2322,-14,o),
+(2404,-14,cs),
+(2462,-14,o),
+(2492,13,o),
+(2492,45,cs),
+(2492,180,o),
+(2404,304,o),
+(2273,412,c)
+);
+}
+);
+width = 2492;
+}
+);
+metricLeft = "=20";
+metricRight = "=0";
 },
 {
 glyphname = "behDotless-ar.fina";
@@ -1299,10 +1435,11 @@ shapes = (
 ref = "behDotless-ar";
 },
 {
+pos = (2172,-73);
 ref = "dotbelow-ar";
 }
 );
-width = 1200;
+width = 2237;
 }
 );
 unicode = 1576;
@@ -1318,10 +1455,11 @@ shapes = (
 ref = "behDotless-ar";
 },
 {
+pos = (1781,295);
 ref = "twodotsabove-ar";
 }
 );
-width = 1200;
+width = 2237;
 }
 );
 unicode = 1578;
@@ -1337,10 +1475,11 @@ shapes = (
 ref = "behDotless-ar";
 },
 {
+pos = (1742,327);
 ref = "threedotsabove-ar";
 }
 );
-width = 1200;
+width = 2237;
 }
 );
 unicode = 1579;
