@@ -1564,6 +1564,18 @@ anchors = (
 {
 name = damma;
 pos = (12,226);
+},
+{
+name = fatha;
+pos = (736,446);
+},
+{
+name = kasra;
+pos = (868,-82);
+},
+{
+name = top;
+pos = (1044,403);
 }
 );
 backgroundImage = {
@@ -1634,8 +1646,16 @@ name = damma;
 pos = (-18,226);
 },
 {
+name = fatha;
+pos = (736,446);
+},
+{
 name = kasra;
 pos = (958,-82);
+},
+{
+name = top;
+pos = (1044,403);
 }
 );
 layerId = m01;
@@ -1709,8 +1729,16 @@ name = damma;
 pos = (-318,226);
 },
 {
+name = fatha;
+pos = (686,446);
+},
+{
 name = kasra;
 pos = (658,-82);
+},
+{
+name = top;
+pos = (914,403);
 }
 );
 associatedMasterId = m01;
@@ -1805,6 +1833,7 @@ shapes = (
 ref = "dal-ar";
 },
 {
+pos = (954,353);
 ref = "dotabove-ar";
 }
 );
