@@ -3817,14 +3817,12 @@ anchors = (
 {
 name = fatha;
 pos = (390,729);
+},
+{
+name = top.hamza;
+pos = (99,427);
 }
 );
-backgroundImage = {
-alpha = 100;
-imagePath = "1/image-0056.jpg";
-pos = (-15140,-5096);
-scale = (20,20);
-};
 layerId = m01;
 shapes = (
 {
@@ -3887,14 +3885,12 @@ anchors = (
 {
 name = fatha;
 pos = (390,669);
+},
+{
+name = top.hamza;
+pos = (129,407);
 }
 );
-backgroundImage = {
-alpha = 100;
-imagePath = "1/image-0056.jpg";
-pos = (-15140,-5156);
-scale = (20,20);
-};
 layerId = m01;
 shapes = (
 {
@@ -3955,6 +3951,12 @@ width = 804;
 glyphname = "waw-ar.fina";
 layers = (
 {
+anchors = (
+{
+name = top.hamza;
+pos = (123,313);
+}
+);
 layerId = m01;
 shapes = (
 {
@@ -4015,6 +4017,12 @@ width = 756;
 glyphname = "waw-ar.fina.1";
 layers = (
 {
+anchors = (
+{
+name = top.hamza;
+pos = (111,306);
+}
+);
 layerId = m01;
 shapes = (
 {
@@ -4165,6 +4173,7 @@ shapes = (
 ref = "waw-ar";
 },
 {
+pos = (7,335);
 ref = "hamzaabove-ar";
 }
 );
