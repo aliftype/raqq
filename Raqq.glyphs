@@ -4671,6 +4671,7 @@ width = 1200;
 );
 },
 {
+color = 0;
 glyphname = "yeh-ar";
 layers = (
 {
@@ -4690,6 +4691,7 @@ width = 496;
 unicode = 1610;
 },
 {
+color = 0;
 glyphname = "yehHamzaabove-ar";
 layers = (
 {
@@ -4705,6 +4707,7 @@ width = 496;
 unicode = 1574;
 },
 {
+color = 0;
 glyphname = "yehFarsi-ar";
 layers = (
 {
