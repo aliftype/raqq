@@ -2200,6 +2200,24 @@ metricRight = "=0";
 glyphname = "hah-ar.fina";
 layers = (
 {
+anchors = (
+{
+name = center;
+pos = (1227,-112);
+},
+{
+name = damma;
+pos = (-118,91);
+},
+{
+name = kasra;
+pos = (1517,-144);
+},
+{
+name = top;
+pos = (479,394);
+}
+);
 layerId = m01;
 shapes = (
 {
@@ -2214,6 +2232,16 @@ width = 1813;
 glyphname = "hah-ar.medi";
 layers = (
 {
+anchors = (
+{
+name = bottom;
+pos = (591,-73);
+},
+{
+name = top;
+pos = (53,304);
+}
+);
 layerId = m01;
 shapes = (
 {
