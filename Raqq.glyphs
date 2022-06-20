@@ -4631,10 +4631,39 @@ metricRight = "=0";
 glyphname = "noonghunna-ar.fina";
 layers = (
 {
-layerId = m01;
-width = 1200;
+anchors = (
+{
+name = fatha;
+pos = (114,342);
+},
+{
+name = kasra;
+pos = (538,-413);
+},
+{
+name = top;
+pos = (58,210);
 }
 );
+layerId = m01;
+shapes = (
+{
+closed = 1;
+nodes = (
+(419,0,l),
+(419,150,l),
+(327,150,l),
+(327,0,l)
+);
+},
+{
+ref = "noonghunna-ar";
+}
+);
+width = 419;
+}
+);
+metricLeft = "=noonghunna-ar";
 },
 {
 glyphname = "heh-ar";
