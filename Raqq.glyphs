@@ -230,127 +230,116 @@ featurePrefixes = (
 {
 code = "languagesystem DFLT dflt;
 languagesystem arab dflt;
-";
-name = Languagesystems;
-}
-);
-features = (
-{
-code = "sub alef-ar from @alef;
-sub waw-ar from @waw;
-";
-tag = rand;
-},
-{
-code = "sub hamza-ar @alef by alefHamzaabove-ar;
-";
-tag = ccmp;
-},
-{
-code = "sub alefHamzaabove-ar by alef-ar hamzaabove-ar;
-sub alefHamzabelow-ar by alef-ar hamzabelow-ar;
-sub alefMadda-ar by alef-ar; # madda-ar
-sub alefWasla-ar by alef-ar; # wasla-ar
-sub beh-ar by behDotless-ar dotbelow-ar;
-sub teh-ar by behDotless-ar twodotsabove-ar;
-sub theh-ar by behDotless-ar threedotsabove-ar;
-sub jeem-ar by hah-ar dotbelow-ar;
-sub khah-ar by hah-ar dotabove-ar;
-sub dal-ar by dal-ar;
-sub thal-ar by dal-ar dotabove-ar;
-sub reh-ar by reh-ar;
-sub zain-ar by reh-ar dotabove-ar.reh;
-sub seen-ar by seen-ar;
-sub sheen-ar by seen-ar threedotsabove-ar.seen;
-sub sad-ar by sad-ar;
-sub dad-ar by sad-ar dotabove-ar;
-sub tah-ar by tah-ar;
-sub zah-ar by tah-ar dotabove-ar;
-sub ain-ar by ain-ar;
-sub ghain-ar by ain-ar dotabove-ar;
-sub feh-ar by fehDotless-ar dotabove-ar;
-sub veh-ar by fehDotless-ar threedotsabove-ar;
-sub qaf-ar by qafDotless-ar twodotsabove-ar;
-sub noon-ar by noonghunna-ar dotabove-ar;
-sub tehMarbuta-ar by heh-ar; #twodotsabove-ar;
-sub wawHamzaabove-ar by waw-ar hamzaabove-ar;
-sub yeh-ar by alefMaksura-ar twodotsbelow-ar;
-sub yehHamzaabove-ar by alefMaksura-ar;
 
-sub hamzaabove-ar fatha-ar by hamzaabove-ar;
-sub hamzabelow-ar kasra-ar by hamzabelow-ar;
+feature rand {
+	sub alef-ar from @alef;
+	sub waw-ar from @waw;
+} rand;
 
-sub space' space by space.alt;
-";
-tag = ccmp;
-},
-{
-code = "sub yehFarsi-ar by alefMaksura-ar;";
-tag = isol;
-},
-{
-code = "sub behDotless-ar by behDotless-ar.init;
-sub hah-ar by hah-ar.init;
-sub seen-ar by seen-ar.init;
-sub sad-ar by sad-ar.init;
-sub tah-ar by tah-ar.init;
-sub ain-ar by ain-ar.init;
-sub fehDotless-ar by fehDotless-ar.init;
-sub qafDotless-ar by fehDotless-ar.init;
-sub kaf-ar by kaf-ar.init;
-sub lam-ar by lam-ar.init;
-sub meem-ar by meem-ar.init;
-sub noonghunna-ar by behDotless-ar.init;
-sub heh-ar by heh-ar.init;
-sub alefMaksura-ar by behDotless-ar.init;
-sub yehFarsi-ar by behDotless-ar.init twodotsbelow-ar;
-";
-tag = init;
-},
-{
-code = "sub behDotless-ar by behDotless-ar.medi;
-sub hah-ar by hah-ar.medi;
-sub seen-ar by seen-ar.medi;
-sub sad-ar by sad-ar.medi;
-sub tah-ar by tah-ar.medi;
-sub ain-ar by ain-ar.medi;
-sub fehDotless-ar by fehDotless-ar.medi;
-sub qafDotless-ar by fehDotless-ar.medi;
-sub kaf-ar by kaf-ar.medi;
-sub lam-ar by lam-ar.medi;
-sub meem-ar by meem-ar.medi;
-sub noonghunna-ar by behDotless-ar.medi;
-sub heh-ar by heh-ar.medi;
-sub alefMaksura-ar by behDotless-ar.medi;
-sub yehFarsi-ar by behDotless-ar.medi twodotsbelow-ar;
-";
-tag = medi;
-},
-{
-code = "sub @alef by @alef.fina;
-sub behDotless-ar by behDotless-ar.fina;
-sub hah-ar by hah-ar.fina;
-sub dal-ar by dal-ar.fina;
-sub reh-ar by reh-ar.fina;
-sub seen-ar by seen-ar.fina;
-sub sad-ar by sad-ar.fina;
-sub tah-ar by tah-ar.fina;
-sub ain-ar by ain-ar.fina;
-sub fehDotless-ar by fehDotless-ar.fina;
-sub qafDotless-ar by qafDotless-ar.fina;
-sub kaf-ar by kaf-ar.fina;
-sub lam-ar by lam-ar.fina;
-sub meem-ar by meem-ar.fina;
-sub noonghunna-ar by noonghunna-ar.fina;
-sub heh-ar by heh-ar.fina;
-sub @waw by @waw.fina;
-sub alefMaksura-ar by alefMaksura-ar.fina;
-sub yehFarsi-ar by alefMaksura-ar.fina;
-";
-tag = fina;
-},
-{
-code = "lookup ligatures {
+feature ccmp {
+	sub hamza-ar @alef by alefHamzaabove-ar;
+} ccmp;
+
+feature ccmp {
+	sub alefHamzaabove-ar by alef-ar hamzaabove-ar;
+	sub alefHamzabelow-ar by alef-ar hamzabelow-ar;
+	sub alefMadda-ar by alef-ar; # madda-ar
+	sub alefWasla-ar by alef-ar; # wasla-ar
+	sub beh-ar by behDotless-ar dotbelow-ar;
+	sub teh-ar by behDotless-ar twodotsabove-ar;
+	sub theh-ar by behDotless-ar threedotsabove-ar;
+	sub jeem-ar by hah-ar dotbelow-ar;
+	sub khah-ar by hah-ar dotabove-ar;
+	sub dal-ar by dal-ar;
+	sub thal-ar by dal-ar dotabove-ar;
+	sub reh-ar by reh-ar;
+	sub zain-ar by reh-ar dotabove-ar.reh;
+	sub seen-ar by seen-ar;
+	sub sheen-ar by seen-ar threedotsabove-ar.seen;
+	sub sad-ar by sad-ar;
+	sub dad-ar by sad-ar dotabove-ar;
+	sub tah-ar by tah-ar;
+	sub zah-ar by tah-ar dotabove-ar;
+	sub ain-ar by ain-ar;
+	sub ghain-ar by ain-ar dotabove-ar;
+	sub feh-ar by fehDotless-ar dotabove-ar;
+	sub veh-ar by fehDotless-ar threedotsabove-ar;
+	sub qaf-ar by qafDotless-ar twodotsabove-ar;
+	sub noon-ar by noonghunna-ar dotabove-ar;
+	sub tehMarbuta-ar by heh-ar; #twodotsabove-ar;
+	sub wawHamzaabove-ar by waw-ar hamzaabove-ar;
+	sub yeh-ar by alefMaksura-ar twodotsbelow-ar;
+	sub yehHamzaabove-ar by alefMaksura-ar;
+
+	sub hamzaabove-ar fatha-ar by hamzaabove-ar;
+	sub hamzabelow-ar kasra-ar by hamzabelow-ar;
+
+	sub space' space by space.alt;
+} ccmp;
+
+feature isol {
+	sub yehFarsi-ar by alefMaksura-ar;
+} isol;
+
+feature init {
+	sub behDotless-ar by behDotless-ar.init;
+	sub hah-ar by hah-ar.init;
+	sub seen-ar by seen-ar.init;
+	sub sad-ar by sad-ar.init;
+	sub tah-ar by tah-ar.init;
+	sub ain-ar by ain-ar.init;
+	sub fehDotless-ar by fehDotless-ar.init;
+	sub qafDotless-ar by fehDotless-ar.init;
+	sub kaf-ar by kaf-ar.init;
+	sub lam-ar by lam-ar.init;
+	sub meem-ar by meem-ar.init;
+	sub noonghunna-ar by behDotless-ar.init;
+	sub heh-ar by heh-ar.init;
+	sub alefMaksura-ar by behDotless-ar.init;
+	sub yehFarsi-ar by behDotless-ar.init twodotsbelow-ar;
+} init;
+
+feature medi {
+	sub behDotless-ar by behDotless-ar.medi;
+	sub hah-ar by hah-ar.medi;
+	sub seen-ar by seen-ar.medi;
+	sub sad-ar by sad-ar.medi;
+	sub tah-ar by tah-ar.medi;
+	sub ain-ar by ain-ar.medi;
+	sub fehDotless-ar by fehDotless-ar.medi;
+	sub qafDotless-ar by fehDotless-ar.medi;
+	sub kaf-ar by kaf-ar.medi;
+	sub lam-ar by lam-ar.medi;
+	sub meem-ar by meem-ar.medi;
+	sub noonghunna-ar by behDotless-ar.medi;
+	sub heh-ar by heh-ar.medi;
+	sub alefMaksura-ar by behDotless-ar.medi;
+	sub yehFarsi-ar by behDotless-ar.medi twodotsbelow-ar;
+} medi;
+
+feature fina {
+	sub @alef by @alef.fina;
+	sub behDotless-ar by behDotless-ar.fina;
+	sub hah-ar by hah-ar.fina;
+	sub dal-ar by dal-ar.fina;
+	sub reh-ar by reh-ar.fina;
+	sub seen-ar by seen-ar.fina;
+	sub sad-ar by sad-ar.fina;
+	sub tah-ar by tah-ar.fina;
+	sub ain-ar by ain-ar.fina;
+	sub fehDotless-ar by fehDotless-ar.fina;
+	sub qafDotless-ar by qafDotless-ar.fina;
+	sub kaf-ar by kaf-ar.fina;
+	sub lam-ar by lam-ar.fina;
+	sub meem-ar by meem-ar.fina;
+	sub noonghunna-ar by noonghunna-ar.fina;
+	sub heh-ar by heh-ar.fina;
+	sub @waw by @waw.fina;
+	sub alefMaksura-ar by alefMaksura-ar.fina;
+	sub yehFarsi-ar by alefMaksura-ar.fina;
+} fina;
+
+lookup ligatures {
 	lookupflag IgnoreMarks;
 
 	sub lam-ar.init @alef.fina by lam_alef-ar; # XXX rand lam_alef
@@ -392,9 +381,15 @@ lookup contxtuals {
 
 	sub [meem-ar.init meem-ar.medi] @alef.fina' by alef-ar.fina.meem; # XXX rand
 } contxtuals;
-";
-tag = rlig;
-},
+
+feature rlig {
+	lookup ligatures;
+	lookup contxtuals;
+} rlig;";
+name = Languagesystems;
+}
+);
+features = (
 {
 code = "sub @tashkil by NULL;
 ";
