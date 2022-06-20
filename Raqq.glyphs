@@ -3850,6 +3850,12 @@ unicode = 1605;
 glyphname = "meem-ar.fina";
 layers = (
 {
+anchors = (
+{
+name = kasra;
+pos = (700,-104);
+}
+);
 layerId = m01;
 shapes = (
 {
@@ -4011,6 +4017,12 @@ metricRight = "=0";
 glyphname = "meem-ar.fina.alt";
 layers = (
 {
+anchors = (
+{
+name = kasra;
+pos = (700,-114);
+}
+);
 layerId = m01;
 shapes = (
 {
@@ -4161,6 +4173,12 @@ width = 950;
 glyphname = "meem-ar.medi";
 layers = (
 {
+anchors = (
+{
+name = kasra;
+pos = (310,-134);
+}
+);
 backgroundImage = {
 alpha = 80;
 angle = -2.5;
@@ -4223,6 +4241,12 @@ width = 539;
 glyphname = "meem-ar.medi.alt";
 layers = (
 {
+anchors = (
+{
+name = kasra;
+pos = (300,-134);
+}
+);
 background = {
 backgroundImage = {
 imagePath = "1/image-0056.jpg";
@@ -4276,6 +4300,12 @@ width = 510;
 glyphname = "meem-ar.medi.alt2";
 layers = (
 {
+anchors = (
+{
+name = kasra;
+pos = (350,-164);
+}
+);
 layerId = m01;
 shapes = (
 {
