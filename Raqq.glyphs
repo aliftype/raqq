@@ -360,6 +360,11 @@ lookup ligatures {
 	sub lam-ar.init lam-ar.medi heh-ar.fina by lam_lam_heh-ar;
 } ligatures;
 
+lookup meem_meem {
+	sub meem-ar.init by meem-ar.init.alt;
+	sub meem-ar.medi by meem-ar.medi.alt2;
+} meem_meem;
+
 lookup contxtuals {
 	lookupflag IgnoreMarks;
 
@@ -376,8 +381,7 @@ lookup contxtuals {
 	sub lam-ar.init behDotless-ar.medi' by behDotless-ar.medi.lam;
 
 	sub meem-ar.medi' @waw.fina by meem-ar.medi.alt;
-	sub meem-ar.init' meem-ar.medi by meem-ar.init.alt;
-	sub meem-ar.init.alt meem-ar.medi' by meem-ar.medi.alt2;
+	sub meem-ar.init' lookup meem_meem meem-ar.medi' lookup meem_meem;
 
 	sub [meem-ar.init meem-ar.medi] @alef.fina' by alef-ar.fina.meem; # XXX rand
 } contxtuals;
@@ -385,8 +389,9 @@ lookup contxtuals {
 feature rlig {
 	lookup ligatures;
 	lookup contxtuals;
-} rlig;";
-name = Languagesystems;
+} rlig;
+";
+name = features;
 }
 );
 features = (
