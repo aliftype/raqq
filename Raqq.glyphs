@@ -1396,7 +1396,7 @@ nodes = (
 );
 }
 );
-width = 257;
+width = 239;
 },
 {
 anchors = (
@@ -1465,6 +1465,8 @@ nodes = (
 width = 1848;
 }
 );
+metricLeft = "=-20";
+metricRight = "=0";
 },
 {
 glyphname = "behDotless-ar.medi.ain";
