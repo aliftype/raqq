@@ -388,10 +388,19 @@ def build(instance, opts, glyphOrder):
                 colorLayers.setdefault(name, [])
 
                 new = name
-                # XXX disable this optimization for Cairo/FreeType
-                if True or layer.layerId != master.id:
+                if layer.layerId != master.id:
+                    colorLayerSet = {}
+                    for g in font.glyphs:
+                        colorLayerSet[g.name] = g.layers[master.id]
+                        for l in g.layers:
+                            if (
+                                l.associatedMasterId != l.layerId
+                                and l.attributes.get("colorPalette", None) == paletteIdx
+                            ):
+                                colorLayerSet[g.name] = l
+
                     new += f".layer{len(colorLayers[name])}"
-                    charStrings[new] = draw(layer, layerSet)
+                    charStrings[new] = draw(layer, colorLayerSet)
                     advanceWidths[new] = advanceWidths[name]
 
                     glyphOrder.append(new)
