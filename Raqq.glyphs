@@ -371,7 +371,7 @@ feature rlig {
 
 lookup meem_meem {
 	sub meem-ar.init by meem-ar.init.alt;
-	sub meem-ar.medi by meem-ar.medi.alt2;
+	sub meem-ar.medi by meem-ar.init;
 } meem_meem;
 
 lookup beh_meem {
@@ -5171,6 +5171,7 @@ metricLeft = "=-20";
 },
 {
 glyphname = "meem-ar";
+kernRight = meem;
 layers = (
 {
 anchors = (
@@ -5565,19 +5566,20 @@ width = 539;
 },
 {
 glyphname = "meem-ar.medi.alt";
+kernRight = meem;
 layers = (
 {
 anchors = (
 {
 name = kasra;
-pos = (300,-134);
+pos = (302,-134);
 }
 );
 background = {
 backgroundImage = {
 imagePath = "1/image-0056.jpg";
 locked = 1;
-pos = (-5497,-4420);
+pos = (-5495,-4420);
 scale = (10,10);
 };
 };
@@ -5586,47 +5588,128 @@ shapes = (
 {
 closed = 1;
 nodes = (
-(470,-26,o),
-(516,8,o),
-(516,126,cs),
-(516,288,o),
-(406,484,o),
-(264,484,cs),
-(120,484,o),
-(-2,322,o),
-(-2,112,cs),
-(-2,6,o),
-(86,-26,o),
-(264,-26,cs)
+(472,-26,o),
+(518,8,o),
+(518,126,cs),
+(518,288,o),
+(408,484,o),
+(266,484,cs),
+(122,484,o),
+(0,322,o),
+(0,112,cs),
+(0,6,o),
+(88,-26,o),
+(266,-26,cs)
 );
 },
 {
 closed = 1;
 nodes = (
-(264,208,o),
-(258,214,o),
-(258,221,cs),
-(258,228,o),
-(264,234,o),
-(271,234,cs),
-(278,234,o),
-(284,228,o),
-(284,221,cs),
-(284,214,o),
-(278,208,o),
-(271,208,cs)
+(266,208,o),
+(260,214,o),
+(260,221,cs),
+(260,228,o),
+(266,234,o),
+(273,234,cs),
+(280,234,o),
+(286,228,o),
+(286,221,cs),
+(286,214,o),
+(280,208,o),
+(273,208,cs)
 );
 }
 );
-width = 510;
+width = 518;
 }
 );
+metricLeft = "=0";
+metricRight = "=0";
 },
 {
-glyphname = "meem-ar.medi.alt2";
+glyphname = "meem-ar.init";
+kernRight = meem;
 layers = (
 {
 anchors = (
+{
+name = fatha;
+pos = (289,640);
+},
+{
+name = kasra;
+pos = (350,-164);
+}
+);
+backgroundImage = {
+alpha = 100;
+imagePath = "1/image-0056.jpg";
+locked = 1;
+pos = (-6741,-7014);
+scale = (20,20);
+};
+layerId = m01;
+shapes = (
+{
+closed = 1;
+nodes = (
+(504,0,o),
+(516,34,o),
+(516,117,cs),
+(516,314,o),
+(390,529,o),
+(268,529,cs),
+(128,529,o),
+(-16,348,o),
+(-2,164,cs),
+(6,56,o),
+(100,0,o),
+(302,0,cs)
+);
+},
+{
+closed = 1;
+nodes = (
+(269,248,o),
+(263,254,o),
+(263,261,cs),
+(263,268,o),
+(269,274,o),
+(276,274,cs),
+(283,274,o),
+(289,268,o),
+(289,261,cs),
+(289,254,o),
+(283,248,o),
+(276,248,cs)
+);
+},
+{
+closed = 1;
+nodes = (
+(-20,0,l),
+(302,0,l),
+(302,150,l),
+(-20,150,l)
+);
+}
+);
+width = 516;
+}
+);
+metricLeft = "=-20";
+metricRight = "=0";
+},
+{
+glyphname = "meem-ar.init.1";
+kernRight = meem;
+layers = (
+{
+anchors = (
+{
+name = fatha;
+pos = (289,574);
+},
 {
 name = kasra;
 pos = (350,-164);
@@ -5668,77 +5751,10 @@ nodes = (
 );
 }
 );
-width = 518;
+width = 528;
 }
 );
-},
-{
-glyphname = "meem-ar.init";
-layers = (
-{
-anchors = (
-{
-name = kasra;
-pos = (350,-164);
-}
-);
-backgroundImage = {
-alpha = 100;
-imagePath = "1/image-0056.jpg";
-locked = 1;
-pos = (-6741,-7014);
-scale = (20,20);
-};
-layerId = m01;
-shapes = (
-{
-closed = 1;
-nodes = (
-(504,-6,o),
-(516,28,o),
-(516,111,cs),
-(516,308,o),
-(390,523,o),
-(268,523,cs),
-(128,523,o),
-(-16,342,o),
-(-2,158,cs),
-(6,50,o),
-(100,-6,o),
-(302,-6,cs)
-);
-},
-{
-closed = 1;
-nodes = (
-(269,242,o),
-(263,248,o),
-(263,255,cs),
-(263,262,o),
-(269,268,o),
-(276,268,cs),
-(283,268,o),
-(289,262,o),
-(289,255,cs),
-(289,248,o),
-(283,242,o),
-(276,242,cs)
-);
-},
-{
-closed = 1;
-nodes = (
-(-20,0,l),
-(302,0,l),
-(302,150,l),
-(-20,150,l)
-);
-}
-);
-width = 516;
-}
-);
-metricLeft = "=-20";
+metricLeft = "=0";
 metricRight = "=0";
 },
 {
@@ -9599,6 +9615,9 @@ m01 = {
 };
 "behDotless-ar.medi.ain" = {
 "dal-ar.fina" = -20;
+};
+"meem-ar.medi.alt" = {
+"@MMK_L_meem" = -5;
 };
 };
 };
