@@ -5771,6 +5771,7 @@ metricRight = "=0";
 },
 {
 glyphname = "meem-ar.init.alt";
+kernRight = meem;
 layers = (
 {
 anchors = (
@@ -9627,6 +9628,13 @@ m01 = {
 };
 "behDotless-ar.medi.ain" = {
 "dal-ar.fina" = -20;
+};
+"lam-ar.medi.ain" = {
+"@MMK_L_meem" = -6;
+};
+"meem-ar.init.alt" = {
+"waw-ar.fina" = -10;
+"waw-ar.fina.1" = -10;
 };
 "meem-ar.medi.alt" = {
 "@MMK_L_meem" = -5;
