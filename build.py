@@ -214,7 +214,7 @@ RE_DELIM = re.compile(r"(?:/(.*?.)/)")
 LANG_IDS = {"ARA": "0x0C01", "ENG": "0x0409"}
 
 
-def makeFeatures(instance, master, opts, glyphOrder, glyphData):
+def makeFeatures(instance, master, opts, glyphOrder):
     font = instance.parent
 
     def repl(match):
@@ -279,9 +279,9 @@ def makeFeatures(instance, master, opts, glyphOrder, glyphData):
         if glyph is None or not glyph.export:
             continue
 
-        if getCategory(glyph, glyphData) == ("Mark", "Nonspacing"):
+        if getCategory(glyph, opts.data) == ("Mark", "Nonspacing"):
             marks.add(name)
-        elif getCategory(glyph, glyphData) == ("Letter", "Ligature"):
+        elif getCategory(glyph, opts.data) == ("Letter", "Ligature"):
             ligatures.add(name)
         else:
             layer = getLayer(glyph, instance)
@@ -370,8 +370,6 @@ def build(instance, opts, glyphOrder):
     colorLayers = {}
 
     layerSet = {g.name: g.layers[master.id] for g in font.glyphs}
-    with open(opts.data) as f:
-        glyphData = GlyphData.from_files(f)
 
     for name in list(glyphOrder):
         glyph = font.glyphs[name]
@@ -379,7 +377,7 @@ def build(instance, opts, glyphOrder):
             continue
 
         layer = getLayer(glyph, instance)
-        if getCategory(glyph, glyphData) == ("Mark", "Nonspacing"):
+        if getCategory(glyph, opts.data) == ("Mark", "Nonspacing"):
             layer.width = 0
         charStrings[name] = draw(layer, layerSet)
         advanceWidths[name] = layer.width
@@ -489,7 +487,7 @@ def build(instance, opts, glyphOrder):
         ulCodePageRange1=calcBits(codePages, 0, 32),
     )
 
-    fea = makeFeatures(instance, master, opts, glyphOrder, glyphData)
+    fea = makeFeatures(instance, master, opts, glyphOrder)
     fb.addOpenTypeFeatures(fea)
 
     palettes = font.customParameters["Color Palettes"]
@@ -551,6 +549,11 @@ def buildVF(opts):
     return otf
 
 
+def data(path):
+    with open(path) as f:
+        return GlyphData.from_files(f)
+
+
 def main():
     from pathlib import Path
 
@@ -559,7 +562,7 @@ def main():
     parser.add_argument("version", help="font version")
     parser.add_argument("otf", help="output OTF file", type=Path)
     parser.add_argument("--debug", help="Save debug files", action="store_true")
-    parser.add_argument("--data", help="GlyphData.xml file", type=Path)
+    parser.add_argument("--data", help="GlyphData.xml file", type=data)
     args = parser.parse_args()
 
     otf = buildVF(args)
