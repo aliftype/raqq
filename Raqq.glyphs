@@ -18,9 +18,9 @@ classes = (
 code = "dotabove-ar
 dotabove-ar.reh
 dotbelow-ar
-twodotsabove-ar
-twodotsbelow-ar
-threedotsabove-ar
+twodotsverticalabove-ar
+twodotsverticalbelow-ar
+threedotsupabove-ar
 threedotshorizontalabove-ar
 threedotshorizontalabove-ar.alt
 ";
@@ -252,8 +252,8 @@ feature ccmp {
 	sub alefMadda-ar by alef-ar; # madda-ar
 	sub alefWasla-ar by alef-ar; # wasla-ar
 	sub beh-ar by behDotless-ar dotbelow-ar;
-	sub teh-ar by behDotless-ar twodotsabove-ar;
-	sub theh-ar by behDotless-ar threedotsabove-ar;
+	sub teh-ar by behDotless-ar twodotsverticalabove-ar;
+	sub theh-ar by behDotless-ar threedotsupabove-ar;
 	sub jeem-ar by hah-ar dotbelow-ar;
 	sub khah-ar by hah-ar dotabove-ar;
 	sub dal-ar by dal-ar;
@@ -268,12 +268,12 @@ feature ccmp {
 	sub ain-ar by ain-ar;
 	sub ghain-ar by ain-ar dotabove-ar;
 	sub feh-ar by fehDotless-ar dotabove-ar;
-	sub veh-ar by fehDotless-ar threedotsabove-ar;
-	sub qaf-ar by qafDotless-ar twodotsabove-ar;
+	sub veh-ar by fehDotless-ar threedotsupabove-ar;
+	sub qaf-ar by qafDotless-ar twodotsverticalabove-ar;
 	sub noon-ar by noonghunna-ar dotabove-ar;
-	sub tehMarbuta-ar by heh-ar; #twodotsabove-ar;
+	sub tehMarbuta-ar by heh-ar; #twodotsverticalabove-ar;
 	sub wawHamzaabove-ar by waw-ar hamzaabove-ar;
-	sub yeh-ar by alefMaksura-ar twodotsbelow-ar;
+	sub yeh-ar by alefMaksura-ar twodotsverticalbelow-ar;
 	sub yehHamzaabove-ar by alefMaksura-ar;
 
 	sub hamzaabove-ar fatha-ar by hamzaabove-ar;
@@ -303,7 +303,7 @@ feature init {
 	sub noonghunna-ar by behDotless-ar.init;
 	sub heh-ar by heh-ar.init;
 	sub alefMaksura-ar by behDotless-ar.init;
-	sub yehFarsi-ar by behDotless-ar.init twodotsbelow-ar;
+	sub yehFarsi-ar by behDotless-ar.init twodotsverticalbelow-ar;
 } init;
 
 feature medi {
@@ -322,7 +322,7 @@ feature medi {
 	sub noonghunna-ar by behDotless-ar.medi;
 	sub heh-ar by heh-ar.medi;
 	sub alefMaksura-ar by behDotless-ar.medi;
-	sub yehFarsi-ar by behDotless-ar.medi twodotsbelow-ar;
+	sub yehFarsi-ar by behDotless-ar.medi twodotsverticalbelow-ar;
 } medi;
 
 feature fina {
@@ -1939,7 +1939,7 @@ ref = "behDotless-ar";
 },
 {
 pos = (1768,295);
-ref = "twodotsabove-ar";
+ref = "twodotsverticalabove-ar";
 }
 );
 width = 2224;
@@ -1959,7 +1959,7 @@ ref = "behDotless-ar";
 },
 {
 pos = (1729,327);
-ref = "threedotsabove-ar";
+ref = "threedotsupabove-ar";
 }
 );
 width = 2224;
@@ -4595,7 +4595,7 @@ ref = "fehDotless-ar";
 },
 {
 pos = (3672,601);
-ref = "threedotsabove-ar";
+ref = "threedotsupabove-ar";
 }
 );
 width = 4443;
@@ -5248,7 +5248,7 @@ ref = "qafDotless-ar";
 },
 {
 pos = (-52,476);
-ref = "twodotsabove-ar";
+ref = "twodotsverticalabove-ar";
 }
 );
 width = 842;
@@ -7660,7 +7660,7 @@ ref = "alefMaksura-ar";
 },
 {
 pos = (603,-522);
-ref = "twodotsbelow-ar";
+ref = "twodotsverticalbelow-ar";
 }
 );
 width = 496;
@@ -9638,6 +9638,84 @@ subCategory = Nonspacing;
 },
 {
 category = Mark;
+glyphname = "twodotsverticalabove-ar";
+layers = (
+{
+anchors = (
+{
+name = _top;
+pos = (127,18);
+}
+);
+layerId = m01;
+shapes = (
+{
+ref = "dotabove-ar";
+},
+{
+pos = (38,-32);
+ref = "dotabove-ar";
+}
+);
+width = 166;
+}
+);
+subCategory = Nonspacing;
+},
+{
+category = Mark;
+glyphname = "twodotsverticalbelow-ar";
+layers = (
+{
+anchors = (
+{
+name = _bottom;
+pos = (26,120);
+}
+);
+layerId = m01;
+shapes = (
+{
+ref = "twodotsverticalabove-ar";
+}
+);
+width = 166;
+}
+);
+subCategory = Nonspacing;
+},
+{
+category = Mark;
+glyphname = "threedotsupabove-ar";
+layers = (
+{
+anchors = (
+{
+name = _top;
+pos = (166,-14);
+}
+);
+layerId = m01;
+shapes = (
+{
+pos = (76,-64);
+ref = "dotabove-ar";
+},
+{
+ref = "dotabove-ar";
+},
+{
+pos = (38,-32);
+ref = "dotabove-ar";
+}
+);
+width = 204;
+}
+);
+subCategory = Nonspacing;
+},
+{
+category = Mark;
 glyphname = "threedotshorizontalabove-ar";
 layers = (
 {
@@ -10338,37 +10416,6 @@ unicode = 1619;
 },
 {
 category = Mark;
-glyphname = "threedotsabove-ar";
-layers = (
-{
-anchors = (
-{
-name = _top;
-pos = (166,-14);
-}
-);
-layerId = m01;
-shapes = (
-{
-pos = (76,-64);
-ref = "dotabove-ar";
-},
-{
-ref = "dotabove-ar";
-},
-{
-pos = (38,-32);
-ref = "dotabove-ar";
-}
-);
-width = 204;
-}
-);
-subCategory = Nonspacing;
-unicode = 1755;
-},
-{
-category = Mark;
 glyphname = space;
 layers = (
 {
@@ -10378,54 +10425,6 @@ width = 200;
 );
 subCategory = Nonspacing;
 unicode = (32,160);
-},
-{
-category = Mark;
-glyphname = "twodotsabove-ar";
-layers = (
-{
-anchors = (
-{
-name = _top;
-pos = (127,18);
-}
-);
-layerId = m01;
-shapes = (
-{
-ref = "dotabove-ar";
-},
-{
-pos = (38,-32);
-ref = "dotabove-ar";
-}
-);
-width = 166;
-}
-);
-subCategory = Nonspacing;
-},
-{
-category = Mark;
-glyphname = "twodotsbelow-ar";
-layers = (
-{
-anchors = (
-{
-name = _bottom;
-pos = (26,120);
-}
-);
-layerId = m01;
-shapes = (
-{
-ref = "twodotsabove-ar";
-}
-);
-width = 166;
-}
-);
-subCategory = Nonspacing;
 }
 );
 instances = (
