@@ -27,7 +27,7 @@ from fontTools.pens.transformPen import TransformPen
 from fontTools.pens.reverseContourPen import ReverseContourPen
 from fontTools.pens.t2CharStringPen import T2CharStringPen
 from glyphsLib import GSFont
-from glyphsLib.glyphdata import get_glyph as getGlyphInfo
+from glyphsLib.glyphdata import get_glyph as getGlyphInfo, GlyphData
 from glyphsLib.filters.eraseOpenCorners import EraseOpenCornersPen
 
 
@@ -214,7 +214,7 @@ RE_DELIM = re.compile(r"(?:/(.*?.)/)")
 LANG_IDS = {"ARA": "0x0C01", "ENG": "0x0409"}
 
 
-def makeFeatures(instance, master, opts, glyphOrder):
+def makeFeatures(instance, master, opts, glyphOrder, glyphData):
     font = instance.parent
 
     def repl(match):
@@ -279,9 +279,9 @@ def makeFeatures(instance, master, opts, glyphOrder):
         if glyph is None or not glyph.export:
             continue
 
-        if getCategory(glyph) == ("Mark", "Nonspacing"):
+        if getCategory(glyph, glyphData) == ("Mark", "Nonspacing"):
             marks.add(name)
-        elif getCategory(glyph) == ("Letter", "Ligature"):
+        elif getCategory(glyph, glyphData) == ("Letter", "Ligature"):
             ligatures.add(name)
         else:
             layer = getLayer(glyph, instance)
@@ -349,10 +349,10 @@ def getProperty(font, name):
             return prop.value
 
 
-def getCategory(glyph):
+def getCategory(glyph, glyphData):
     category, subCategory = glyph.category, glyph.subCategory
     if not category or not subCategory:
-        info = getGlyphInfo(glyph.name)
+        info = getGlyphInfo(glyph.name, data=glyphData)
         category = category or info.category
         subCategory = subCategory or info.subCategory
 
@@ -370,6 +370,8 @@ def build(instance, opts, glyphOrder):
     colorLayers = {}
 
     layerSet = {g.name: g.layers[master.id] for g in font.glyphs}
+    with open(opts.data) as f:
+        glyphData = GlyphData.from_files(f)
 
     for name in list(glyphOrder):
         glyph = font.glyphs[name]
@@ -377,7 +379,7 @@ def build(instance, opts, glyphOrder):
             continue
 
         layer = getLayer(glyph, instance)
-        if getCategory(glyph) == ("Mark", "Nonspacing"):
+        if getCategory(glyph, glyphData) == ("Mark", "Nonspacing"):
             layer.width = 0
         charStrings[name] = draw(layer, layerSet)
         advanceWidths[name] = layer.width
@@ -487,7 +489,7 @@ def build(instance, opts, glyphOrder):
         ulCodePageRange1=calcBits(codePages, 0, 32),
     )
 
-    fea = makeFeatures(instance, master, opts, glyphOrder)
+    fea = makeFeatures(instance, master, opts, glyphOrder, glyphData)
     fb.addOpenTypeFeatures(fea)
 
     palettes = font.customParameters["Color Palettes"]
@@ -557,6 +559,7 @@ def main():
     parser.add_argument("version", help="font version")
     parser.add_argument("otf", help="output OTF file", type=Path)
     parser.add_argument("--debug", help="Save debug files", action="store_true")
+    parser.add_argument("--data", help="GlyphData.xml file", type=Path)
     args = parser.parse_args()
 
     otf = buildVF(args)

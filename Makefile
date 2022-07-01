@@ -28,13 +28,13 @@ ARGS ?=
 
 all: $(NAME).otf # $(NAME).ttf
 
-%.otf: $(NAME).glyphs $(CONFIG)
+%.otf: $(NAME).glyphs $(CONFIG) GlyphData.xml
 	$(info   BUILD  $(@F))
-	python build.py $< $(VERSION) $@ $(ARGS)
+	python build.py $< $(VERSION) $@ --data=GlyphData.xml $(ARGS)
 
-%.ttf: $(NAME).glyphs $(CONFIG)
+%.ttf: $(NAME).glyphs $(CONFIG) GlyphData.xml
 	$(info   BUILD  $(@F))
-	python build.py $< $(VERSION) $@ $(ARGS)
+	python build.py $< $(VERSION) $@ --data=GlyphData.xml $(ARGS)
 
 dist: all
 	$(info   DIST   $(DIST).zip)
