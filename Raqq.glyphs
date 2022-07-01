@@ -6318,6 +6318,10 @@ layers = (
 {
 anchors = (
 {
+name = damma;
+pos = (186,-326);
+},
+{
 name = fatha;
 pos = (114,342);
 },
@@ -6381,6 +6385,10 @@ glyphname = "noonghunna-ar.1";
 layers = (
 {
 anchors = (
+{
+name = damma;
+pos = (186,-326);
+},
 {
 name = fatha;
 pos = (120,342);
@@ -6449,6 +6457,10 @@ glyphname = "noonghunna-ar.fina";
 layers = (
 {
 anchors = (
+{
+name = damma;
+pos = (186,-326);
+},
 {
 name = fatha;
 pos = (114,342);
@@ -8588,8 +8600,16 @@ name = caret_1;
 pos = (396,0);
 },
 {
+name = damma;
+pos = (186,-326);
+},
+{
 name = fatha_2;
 pos = (123,452);
+},
+{
+name = kasra;
+pos = (528,-413);
 },
 {
 name = kasra_1;
@@ -8696,8 +8716,16 @@ name = caret_1;
 pos = (354,-20);
 },
 {
+name = damma;
+pos = (186,-326);
+},
+{
 name = fatha_2;
 pos = (141,432);
+},
+{
+name = kasra;
+pos = (498,-413);
 },
 {
 name = kasra_1;
