@@ -237,10 +237,10 @@ featurePrefixes = (
 code = "languagesystem DFLT dflt;
 languagesystem arab dflt;
 
-feature rand {
-	sub alef-ar from @alef;
-	sub waw-ar from @waw;
-} rand;
+#feature rand {
+#	sub alef-ar from @alef;
+#	sub waw-ar from @waw;
+#} rand;
 
 feature ccmp {
 	sub hamza-ar @alef by alefHamzaabove-ar;
