@@ -16,22 +16,22 @@
   <glyph name="behDotless-ar" unicode="066E" category="Letter" script="arabic"
          sortName="arL0008"
          anchors="top, bottom, fatha, damma, kasra"
-         accents="fatha-ar, fathatan-ar, damma-ar, dammatan-ar, kasra-ar, kasratan-ar, dotabove-ar, twodotsverticalabove-ar, dotbelow-ar, twodotsverticalbelow-ar"
+         accents="fatha-ar, fathatan-ar, damma-ar, dammatan-ar, kasra-ar, kasratan-ar, dotabove-ar, twodotsverticalabove-ar, dotbelow-ar, twodotsverticalbelow-ar, threedotsupabove-ar"
   />
   <glyph name="behDotless-ar.fina" category="Letter" script="arabic"
          sortName="arL0009"
          anchors="top, bottom, fatha, damma, kasra"
-         accents="fatha-ar, fathatan-ar, damma-ar, dammatan-ar, kasra-ar, kasratan-ar, dotabove-ar, twodotsverticalabove-ar, dotbelow-ar, twodotsverticalbelow-ar"
+         accents="fatha-ar, fathatan-ar, damma-ar, dammatan-ar, kasra-ar, kasratan-ar, dotabove-ar, twodotsverticalabove-ar, dotbelow-ar, twodotsverticalbelow-ar, threedotsupabove-ar"
   />
   <glyph name="behDotless-ar.medi" category="Letter" script="arabic"
          sortName="arL0010"
          anchors="top, bottom, fatha, damma, kasra"
-         accents="fatha-ar, fathatan-ar, damma-ar, dammatan-ar, kasra-ar, kasratan-ar, dotabove-ar, twodotsverticalabove-ar, dotbelow-ar, twodotsverticalbelow-ar"
+         accents="fatha-ar, fathatan-ar, damma-ar, dammatan-ar, kasra-ar, kasratan-ar, dotabove-ar, twodotsverticalabove-ar, dotbelow-ar, twodotsverticalbelow-ar, threedotsupabove-ar"
   />
   <glyph name="behDotless-ar.init" category="Letter" script="arabic"
          sortName="arL0011"
          anchors="top, bottom, fatha, damma, kasra"
-         accents="fatha-ar, fathatan-ar, damma-ar, dammatan-ar, kasra-ar, kasratan-ar, dotabove-ar, twodotsverticalabove-ar, dotbelow-ar, twodotsverticalbelow-ar"
+         accents="fatha-ar, fathatan-ar, damma-ar, dammatan-ar, kasra-ar, kasratan-ar, dotabove-ar, twodotsverticalabove-ar, dotbelow-ar, twodotsverticalbelow-ar, threedotsupabove-ar"
   />
   <glyph name="hah-ar" unicode="062D" category="Letter" script="arabic"
          sortName="arL0014"
