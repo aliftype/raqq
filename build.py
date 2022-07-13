@@ -82,7 +82,7 @@ def draw(layer, layerSet):
     return t2pen.getCharString()
 
 
-def makeKerning(font, master, glyphOrder):
+def makeKern(font, master, glyphOrder):
     fea = ""
 
     groups = {}
@@ -146,12 +146,8 @@ def makeMark(instance, glyphOrder):
     font = instance.parent
 
     fea = ""
-    mark = ""
-    curs = ""
-    liga = ""
+    classes = ""
 
-    exit = {}
-    entry = {}
     lig = {}
 
     for gname in glyphOrder:
@@ -166,27 +162,52 @@ def makeMark(instance, glyphOrder):
         for anchor in layer.anchors:
             name, x, y = anchor.name, anchor.position.x, anchor.position.y
             if name.startswith("_"):
-                fea += f"markClass {gname} <anchor {x} {y}> @mark_{name[1:]};\n"
-            elif name.startswith("caret_"):
+                classes += f"markClass {gname} <anchor {x} {y}> @mark_{name[1:]};\n"
+            elif name.startswith("caret_") or name in ("exit", "entry"):
                 pass
             elif "_" in name:
                 name, index = name.split("_")
                 lig[gname][int(index)].append((name, (x, y)))
-            elif name == "exit":
+            else:
+                fea += f"pos base {gname} <anchor {x} {y}> mark @mark_{name};\n"
+
+    for name, components in lig.items():
+        fea += f"pos ligature {name}"
+        for component, anchors in components.items():
+            if component != 1:
+                fea += " ligComponent"
+            for anchor, (x, y) in anchors:
+                fea += f" <anchor {x} {y}> mark @mark_{anchor}"
+        fea += ";\n"
+
+    return f"""
+{classes}
+feature mark {{
+{fea}
+}} mark;
+"""
+
+
+def makeCurs(instance, glyphOrder):
+    font = instance.parent
+
+    fea = ""
+
+    exit = {}
+    entry = {}
+
+    for gname in glyphOrder:
+        glyph = font.glyphs[gname]
+        if glyph is None or not glyph.export:
+            continue
+
+        layer = getLayer(glyph, instance)
+        for anchor in layer.anchors:
+            name, x, y = anchor.name, anchor.position.x, anchor.position.y
+            if name == "exit":
                 exit[gname] = (x, y)
             elif name == "entry":
                 entry[gname] = (x, y)
-            else:
-                mark += f"pos base {gname} <anchor {x} {y}> mark @mark_{name};\n"
-
-    for name, components in lig.items():
-        mark += f"pos ligature {name}"
-        for component, anchors in components.items():
-            if component != 1:
-                mark += " ligComponent"
-            for anchor, (x, y) in anchors:
-                mark += f" <anchor {x} {y}> mark @mark_{anchor}"
-        mark += ";\n"
 
     for name in glyphOrder:
         if name in exit or name in entry:
@@ -194,19 +215,14 @@ def makeMark(instance, glyphOrder):
             pos2 = exit.get(name)
             anchor1 = pos1 and f"{pos1[0]} {pos1[1]}" or "NULL"
             anchor2 = pos2 and f"{pos2[0]} {pos2[1]}" or "NULL"
-            curs += f"pos cursive {name} <anchor {anchor1}> <anchor {anchor2}>;\n"
+            fea += f"pos cursive {name} <anchor {anchor1}> <anchor {anchor2}>;\n"
 
-    fea += f"""
+    return f"""
 feature curs {{
 lookupflag IgnoreMarks RightToLeft;
-{curs}
+{fea}
 }} curs;
-feature mark {{
-{mark}
-}} mark;
 """
-
-    return fea
 
 
 RE_DELIM = re.compile(r"(?:/(.*?.)/)")
@@ -249,8 +265,10 @@ def makeFeatures(instance, master, opts, glyphOrder):
             before, after = code.split("# Automatic Code\n", 1)
             if feature.name == "mark":
                 auto = makeMark(instance, glyphOrder)
+            elif feature.name == "curs":
+                auto = makeCurs(instance, glyphOrder)
             elif feature.name == "kern":
-                auto = makeKerning(font, master, glyphOrder)
+                auto = makeKern(font, master, glyphOrder)
             if before:
                 fea += f"""
                     feature {feature.name} {{

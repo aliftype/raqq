@@ -413,6 +413,11 @@ value = "حروف مهملة (بلا نقاط)";
 tag = ss01;
 },
 {
+code = "# Automatic Code
+";
+tag = curs;
+},
+{
 code = "lookupflag IgnoreMarks;
 	pos [@isol @fina] [@init @isol] <440 0 440 0>;
 
@@ -1108,56 +1113,72 @@ layers = (
 anchors = (
 {
 name = bottom;
-pos = (152,38);
+pos = (137,38);
+},
+{
+name = entry;
+pos = (175,0);
+},
+{
+name = exit;
+pos = (-15,0);
 },
 {
 name = fatha;
-pos = (153,830);
+pos = (138,830);
 },
 {
 name = top;
-pos = (103,609);
+pos = (88,609);
 }
 );
 layerId = m01;
+metricLeft = "=20@492";
 shapes = (
 {
 closed = 1;
 nodes = (
 (50,0,o),
-(120,0,o),
-(190,0,c),
-(190,150,l),
-(184,150,l),
-(177,278,o),
-(174,454,o),
-(166,663,cs),
-(166,672,o),
-(159,672,o),
-(154,664,cs),
-(120,609,o),
-(75,545,o),
-(42,515,cs),
-(35,508,o),
-(34,502,o),
-(35,492,cs),
-(49,389,o),
-(51,257,o),
-(51,150,c),
-(27,150,o),
+(105,0,o),
+(175,0,c),
+(175,150,l),
+(169,150,l),
+(162,278,o),
+(159,454,o),
+(151,663,cs),
+(151,672,o),
+(144,672,o),
+(139,664,cs),
+(105,609,o),
+(60,545,o),
+(27,515,cs),
+(20,508,o),
+(19,502,o),
+(20,492,cs),
+(34,389,o),
+(36,257,o),
+(36,150,c),
+(12,150,o),
 (4,150,o),
 (-20,150,c),
 (-20,0,l)
 );
 }
 );
-width = 190;
+width = 175;
 },
 {
 anchors = (
 {
 name = bottom;
 pos = (1740,-110);
+},
+{
+name = entry;
+pos = (1815,0);
+},
+{
+name = exit;
 },
 {
 name = fatha;
@@ -1183,6 +1204,7 @@ pos = (-341,-119);
 scale = (20,20);
 };
 layerId = "86E49FB5-E58F-46D6-9294-1FA5FA1F9D58";
+metricLeft = "=-20";
 name = "{0, 100}";
 shapes = (
 {
@@ -1219,7 +1241,7 @@ visible = 1;
 width = 1815;
 }
 );
-metricLeft = "=-20";
+metricLeft = "=20@492";
 metricRight = "=0";
 },
 {
@@ -1230,6 +1252,13 @@ anchors = (
 {
 name = bottom;
 pos = (100,-110);
+},
+{
+name = entry;
+pos = (190,0);
+},
+{
+name = exit;
 },
 {
 name = top;
@@ -1292,6 +1321,13 @@ name = bottom;
 pos = (100,-42);
 },
 {
+name = entry;
+pos = (180,0);
+},
+{
+name = exit;
+},
+{
 name = top;
 pos = (65,493);
 }
@@ -1351,6 +1387,13 @@ name = bottom;
 pos = (68,-42);
 },
 {
+name = entry;
+pos = (164,0);
+},
+{
+name = exit;
+},
+{
 name = top;
 pos = (86,430);
 }
@@ -1406,6 +1449,13 @@ anchors = (
 {
 name = bottom;
 pos = (94,0);
+},
+{
+name = entry;
+pos = (174,0);
+},
+{
+name = exit;
 },
 {
 name = top;
@@ -1467,6 +1517,10 @@ name = bottom;
 pos = (152,38);
 },
 {
+name = exit;
+pos = (0,4);
+},
+{
 name = fatha;
 pos = (153,730);
 },
@@ -1508,8 +1562,7 @@ nodes = (
 (51,248,o),
 (51,84,c),
 (87,150,l),
-(-51,150,l),
-(-20,192,l),
+(-20,150,l),
 (-20,-30,l)
 );
 }
@@ -1528,6 +1581,9 @@ anchors = (
 {
 name = bottom;
 pos = (120,38);
+},
+{
+name = exit;
 },
 {
 name = fatha;
@@ -1583,6 +1639,9 @@ anchors = (
 {
 name = bottom;
 pos = (125,38);
+},
+{
+name = exit;
 },
 {
 name = fatha;
@@ -1641,6 +1700,9 @@ anchors = (
 {
 name = bottom;
 pos = (2950,38);
+},
+{
+name = exit;
 },
 {
 name = fatha;
@@ -2010,6 +2072,10 @@ name = damma;
 pos = (-118,91);
 },
 {
+name = entry;
+pos = (692,185);
+},
+{
 name = kasra;
 pos = (1517,-144);
 },
@@ -2038,6 +2104,13 @@ name = bottom;
 pos = (591,-73);
 },
 {
+name = entry;
+pos = (154,185);
+},
+{
+name = exit;
+},
+{
 name = top;
 pos = (53,304);
 }
@@ -2060,6 +2133,9 @@ anchors = (
 {
 name = bottom;
 pos = (591,-73);
+},
+{
+name = exit;
 },
 {
 name = top;
@@ -2741,6 +2817,13 @@ layers = (
 {
 anchors = (
 {
+name = entry;
+pos = (428,0);
+},
+{
+name = exit;
+},
+{
 name = top;
 pos = (189,263);
 }
@@ -2822,6 +2905,9 @@ anchors = (
 {
 name = damma;
 pos = (-2,255);
+},
+{
+name = exit;
 },
 {
 name = top;
@@ -3085,6 +3171,13 @@ layers = (
 {
 anchors = (
 {
+name = entry;
+pos = (1600,0);
+},
+{
+name = exit;
+},
+{
 name = fatha;
 pos = (749,394);
 },
@@ -3173,6 +3266,9 @@ glyphname = "sad-ar.init";
 layers = (
 {
 anchors = (
+{
+name = exit;
+},
 {
 name = fatha;
 pos = (833,434);
@@ -3517,6 +3613,13 @@ name = damma;
 pos = (-50,301);
 },
 {
+name = entry;
+pos = (1720,0);
+},
+{
+name = exit;
+},
+{
 name = fatha;
 pos = (1000,385);
 },
@@ -3616,6 +3719,9 @@ anchors = (
 {
 name = damma;
 pos = (-58,364);
+},
+{
+name = exit;
 },
 {
 name = fatha;
@@ -3945,6 +4051,13 @@ name = damma;
 pos = (27,317);
 },
 {
+name = entry;
+pos = (480,0);
+},
+{
+name = exit;
+},
+{
 name = fatha;
 pos = (275,627);
 },
@@ -4017,6 +4130,9 @@ name = damma;
 pos = (7,263);
 },
 {
+name = exit;
+},
+{
 name = fatha;
 pos = (184,600);
 },
@@ -4079,6 +4195,9 @@ glyphname = "ain-ar.init.1";
 layers = (
 {
 anchors = (
+{
+name = exit;
+},
 {
 name = fatha;
 pos = (174,627);
@@ -4361,6 +4480,13 @@ name = damma;
 pos = (-5,334);
 },
 {
+name = entry;
+pos = (462,0);
+},
+{
+name = exit;
+},
+{
 name = fatha;
 pos = (242,728);
 },
@@ -4439,6 +4565,9 @@ anchors = (
 {
 name = bottom;
 pos = (505,50);
+},
+{
+name = exit;
 },
 {
 name = fatha;
@@ -4978,6 +5107,15 @@ metricRight = "=0";
 glyphname = "kaf-ar.medi";
 layers = (
 {
+anchors = (
+{
+name = entry;
+pos = (2251,0);
+},
+{
+name = exit;
+}
+);
 backgroundImage = {
 alpha = 80;
 angle = -1.7;
@@ -5046,6 +5184,11 @@ metricRight = "=0";
 glyphname = "kaf-ar.init";
 layers = (
 {
+anchors = (
+{
+name = exit;
+}
+);
 backgroundImage = {
 alpha = 80;
 angle = -0.3;
@@ -5111,6 +5254,11 @@ nodes = (
 width = 1834;
 },
 {
+anchors = (
+{
+name = exit;
+}
+);
 associatedMasterId = m01;
 attr = {
 coordinates = (
@@ -5356,6 +5504,13 @@ name = damma;
 pos = (-23,270);
 },
 {
+name = entry;
+pos = (153,0);
+},
+{
+name = exit;
+},
+{
 name = fatha;
 pos = (-104,1056);
 },
@@ -5418,6 +5573,13 @@ layers = (
 {
 anchors = (
 {
+name = entry;
+pos = (352,0);
+},
+{
+name = exit;
+},
+{
 name = fatha;
 pos = (-170,1132);
 }
@@ -5472,6 +5634,13 @@ anchors = (
 {
 name = damma;
 pos = (-23,270);
+},
+{
+name = entry;
+pos = (258,0);
+},
+{
+name = exit;
 },
 {
 name = fatha;
@@ -5536,6 +5705,9 @@ anchors = (
 {
 name = damma;
 pos = (7,270);
+},
+{
+name = exit;
 },
 {
 name = fatha;
@@ -5941,6 +6113,13 @@ layers = (
 {
 anchors = (
 {
+name = entry;
+pos = (539,0);
+},
+{
+name = exit;
+},
+{
 name = kasra;
 pos = (310,-134);
 }
@@ -6010,6 +6189,13 @@ layers = (
 {
 anchors = (
 {
+name = entry;
+pos = (518,0);
+},
+{
+name = exit;
+},
+{
 name = kasra;
 pos = (302,-134);
 }
@@ -6071,6 +6257,9 @@ kernRight = meem;
 layers = (
 {
 anchors = (
+{
+name = exit;
+},
 {
 name = fatha;
 pos = (289,640);
@@ -6146,6 +6335,9 @@ layers = (
 {
 anchors = (
 {
+name = exit;
+},
+{
 name = fatha;
 pos = (289,574);
 },
@@ -6202,6 +6394,9 @@ kernRight = meem;
 layers = (
 {
 anchors = (
+{
+name = exit;
+},
 {
 name = kasra;
 pos = (363,-164);
@@ -6622,6 +6817,13 @@ layers = (
 {
 anchors = (
 {
+name = entry;
+pos = (442,0);
+},
+{
+name = exit;
+},
+{
 name = fatha;
 pos = (161,665);
 },
@@ -6728,6 +6930,13 @@ layers = (
 {
 anchors = (
 {
+name = entry;
+pos = (485,0);
+},
+{
+name = exit;
+},
+{
 name = fatha;
 pos = (159,618);
 },
@@ -6831,6 +7040,11 @@ metricRight = "=0@150";
 glyphname = "heh-ar.init";
 layers = (
 {
+anchors = (
+{
+name = exit;
+}
+);
 backgroundImage = {
 alpha = 80;
 angle = 1.5;
@@ -8425,6 +8639,9 @@ pos = (476,0);
 {
 name = damma_2;
 pos = (-1,245);
+},
+{
+name = exit;
 },
 {
 name = fatha_1;
