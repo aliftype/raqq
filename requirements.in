@@ -1,3 +1,4 @@
+PyYAML
 fonttools
 glyphsLib >= 6.0.0b1
-PyYAML
+ufo2ft
