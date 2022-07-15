@@ -130,8 +130,7 @@ class FFont(BFont):
                 category=category,
                 exported=glyph.export,
             )
-            # layer = getLayer(glyph, ref)
-            layer = glyph.layers[0]
+            layer = getLayer(glyph, ref)
             l = BLayer(
                 name=layer.name,
                 width=layer.width,
@@ -570,7 +569,7 @@ def buildInstance(instance, opts, glyphOrder):
         lineGap=master.customParameters["hheaLineGap"] or 0,
     )
 
-    if opts.debug:
+    if opts.debug or not opts.variable:
         fb.setupCFF(names["psName"], {}, charStrings, {})
         fb.font["CFF "].compile(fb.font)
     else:
@@ -613,7 +612,7 @@ def buildInstance(instance, opts, glyphOrder):
     fb.setupCOLR(colorLayers)
 
     instance.font = fb.font
-    if opts.debug:
+    if opts.debug and opts.variable:
         fb.font.save(f"{instance.fontName}.otf")
 
     return fb.font
@@ -666,7 +665,10 @@ def buildFont(opts):
 
     glyphOrder = [g.name for g in font.glyphs]
 
-    return buildVariable(font, glyphOrder, opts)
+    if opts.variable:
+        return buildVariable(font, glyphOrder, opts)
+    else:
+        return buildInstance(font.instances[0], opts, glyphOrder)
 
 
 def data(path):
@@ -681,8 +683,9 @@ def main():
     parser.add_argument("glyphs", help="input Glyphs source file", type=Path)
     parser.add_argument("version", help="font version")
     parser.add_argument("otf", help="output OTF file", type=Path)
-    parser.add_argument("--debug", help="Save debug files", action="store_true")
     parser.add_argument("--data", help="GlyphData.xml file", type=data)
+    parser.add_argument("--debug", help="Save debug files", action="store_true")
+    parser.add_argument("--variable", help="Build variable font", action="store_true")
     args = parser.parse_args()
 
     otf = buildFont(args)
