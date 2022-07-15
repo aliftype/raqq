@@ -476,7 +476,7 @@ def getCategory(glyph, glyphData):
     return category, subCategory
 
 
-def build(instance, opts, glyphOrder):
+def buildInstance(instance, opts, glyphOrder):
     font = instance.parent
     master = font.masters[0]
     glyphOrder = list(glyphOrder)
@@ -619,24 +619,10 @@ def build(instance, opts, glyphOrder):
     return fb.font
 
 
-def buildVF(opts):
-    font = GSFont(opts.glyphs)
-
-    # Erase open corners
-    for glyph in font.glyphs:
-        for layer in glyph.layers:
-            if layer.name == "Regular" or layer.attributes:
-                paths = list(layer.paths)
-                layer.paths = []
-                pen = EraseOpenCornersPen(layer.getPen())
-                for path in paths:
-                    path.draw(pen)
-
-    glyphOrder = [g.name for g in font.glyphs]
-
+def buildVariable(font, glyphOrder, opts):
     for instance in font.instances:
         print(f" MASTER  {instance.name}")
-        build(instance, opts, glyphOrder)
+        buildInstance(instance, opts, glyphOrder)
         if instance.name == "Regular":
             regular = instance
 
@@ -666,6 +652,23 @@ def buildVF(opts):
     return otf
 
 
+def buildFont(opts):
+    font = GSFont(opts.glyphs)
+    # Erase open corners
+    for glyph in font.glyphs:
+        for layer in glyph.layers:
+            if layer.name == "Regular" or layer.attributes:
+                paths = list(layer.paths)
+                layer.paths = []
+                pen = EraseOpenCornersPen(layer.getPen())
+                for path in paths:
+                    path.draw(pen)
+
+    glyphOrder = [g.name for g in font.glyphs]
+
+    return buildVariable(font, glyphOrder, opts)
+
+
 def data(path):
     with open(path) as f:
         return GlyphData.from_files(f)
@@ -682,7 +685,7 @@ def main():
     parser.add_argument("--data", help="GlyphData.xml file", type=data)
     args = parser.parse_args()
 
-    otf = buildVF(args)
+    otf = buildFont(args)
     otf.save(args.otf)
 
 
