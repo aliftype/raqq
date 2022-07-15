@@ -328,7 +328,7 @@ RE_DELIM = re.compile(r"(?:/(.*?.)/)")
 LANG_IDS = {"ARA": "0x0C01", "ENG": "0x0409"}
 
 
-def makeFeatures(instance, master, opts, glyphOrder):
+def makeFeatures(instance, master, args, glyphOrder):
     font = instance.parent
 
     def repl(match):
@@ -395,9 +395,9 @@ def makeFeatures(instance, master, opts, glyphOrder):
         if glyph is None or not glyph.export:
             continue
 
-        if getCategory(glyph, opts.data) == ("Mark", "Nonspacing"):
+        if getCategory(glyph, args.data) == ("Mark", "Nonspacing"):
             marks.add(name)
-        elif getCategory(glyph, opts.data) == ("Letter", "Ligature"):
+        elif getCategory(glyph, args.data) == ("Letter", "Ligature"):
             ligatures.add(name)
         else:
             layer = getLayer(glyph, instance)
@@ -427,7 +427,7 @@ table GDEF {{
 }} GDEF;
 """
 
-    if opts.debug:
+    if args.debug:
         with open(f"{instance.fontName}.fea", "w") as f:
             f.write(fea)
     return fea
@@ -475,7 +475,7 @@ def getCategory(glyph, glyphData):
     return category, subCategory
 
 
-def buildInstance(instance, opts, glyphOrder):
+def buildInstance(instance, args, glyphOrder):
     font = instance.parent
     master = font.masters[0]
     glyphOrder = list(glyphOrder)
@@ -493,7 +493,7 @@ def buildInstance(instance, opts, glyphOrder):
             continue
 
         layer = getLayer(glyph, instance)
-        if getCategory(glyph, opts.data) == ("Mark", "Nonspacing"):
+        if getCategory(glyph, args.data) == ("Mark", "Nonspacing"):
             layer.width = 0
         charStrings[name] = draw(layer, layerSet)
         advanceWidths[name] = layer.width
@@ -531,7 +531,7 @@ def buildInstance(instance, opts, glyphOrder):
     glyphOrder.insert(0, ".notdef")
     glyphOrder.insert(1, "space")
 
-    version = float(opts.version)
+    version = float(args.version)
 
     vendor = getProperty(font, "vendorID")
     names = {
@@ -554,7 +554,7 @@ def buildInstance(instance, opts, glyphOrder):
 
     fb = FontBuilder(font.upm, isTTF=False)
     date = font.date.replace(tzinfo=datetime.timezone.utc)
-    stat = opts.glyphs.stat()
+    stat = args.glyphs.stat()
     fb.updateHead(
         fontRevision=version,
         created=int(date.timestamp()) - mac_epoch_diff,
@@ -569,7 +569,7 @@ def buildInstance(instance, opts, glyphOrder):
         lineGap=master.customParameters["hheaLineGap"] or 0,
     )
 
-    if opts.debug or not opts.variable:
+    if args.debug or not args.variable:
         fb.setupCFF(names["psName"], {}, charStrings, {})
         fb.font["CFF "].compile(fb.font)
     else:
@@ -603,7 +603,7 @@ def buildInstance(instance, opts, glyphOrder):
         ulCodePageRange1=calcBits(codePages, 0, 32),
     )
 
-    fea = makeFeatures(instance, master, opts, glyphOrder)
+    fea = makeFeatures(instance, master, args, glyphOrder)
     fb.addOpenTypeFeatures(fea)
 
     palettes = font.customParameters["Color Palettes"]
@@ -612,16 +612,16 @@ def buildInstance(instance, opts, glyphOrder):
     fb.setupCOLR(colorLayers)
 
     instance.font = fb.font
-    if opts.debug and opts.variable:
+    if args.debug and args.variable:
         fb.font.save(f"{instance.fontName}.otf")
 
     return fb.font
 
 
-def buildVariable(font, glyphOrder, opts):
+def buildVariable(font, glyphOrder, args):
     for instance in font.instances:
         print(f" MASTER  {instance.name}")
-        buildInstance(instance, opts, glyphOrder)
+        buildInstance(instance, args, glyphOrder)
         if instance.name == "Regular":
             regular = instance
 
@@ -651,8 +651,8 @@ def buildVariable(font, glyphOrder, opts):
     return otf
 
 
-def buildFont(opts):
-    font = GSFont(opts.glyphs)
+def buildFont(args):
+    font = GSFont(args.glyphs)
     # Erase open corners
     for glyph in font.glyphs:
         for layer in glyph.layers:
@@ -665,10 +665,10 @@ def buildFont(opts):
 
     glyphOrder = [g.name for g in font.glyphs]
 
-    if opts.variable:
-        return buildVariable(font, glyphOrder, opts)
+    if args.variable:
+        return buildVariable(font, glyphOrder, args)
     else:
-        return buildInstance(font.instances[0], opts, glyphOrder)
+        return buildInstance(font.instances[0], args, glyphOrder)
 
 
 def data(path):
