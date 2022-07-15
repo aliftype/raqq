@@ -22,17 +22,19 @@ CONFIG = _config.yml
 VERSION = $(shell python version.py $(CONFIG))
 DIST = $(NAME)-$(VERSION)
 
+FEZ = $(wildcard *.fez)
+
 ARGS ?= 
 
 .PHONY: all dist
 
 all: $(NAME).otf # $(NAME).ttf
 
-%.otf: $(NAME).glyphs $(CONFIG) GlyphData.xml
+%.otf: $(NAME).glyphs $(CONFIG) GlyphData.xml $(FEZ)
 	$(info   BUILD  $(@F))
 	python build.py $< $(VERSION) $@ --data=GlyphData.xml $(ARGS)
 
-%.ttf: $(NAME).glyphs $(CONFIG) GlyphData.xml
+%.ttf: $(NAME).glyphs $(CONFIG) GlyphData.xml $(FEZ)
 	$(info   BUILD  $(@F))
 	python build.py $< $(VERSION) $@ --data=GlyphData.xml $(ARGS)
 

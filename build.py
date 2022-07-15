@@ -29,6 +29,16 @@ from fontTools.pens.t2CharStringPen import T2CharStringPen
 from glyphsLib import GSFont
 from glyphsLib.glyphdata import get_glyph as getGlyphInfo, GlyphData
 from glyphsLib.filters.eraseOpenCorners import EraseOpenCornersPen
+from babelfont.Font import Font as BFont
+from babelfont.Glyph import Glyph as BGlyph
+from babelfont.Layer import Layer as BLayer
+from babelfont.Master import Master as BMaster
+from babelfont.Instance import Instance as BInstance
+from babelfont.Axis import Axis as BAxis
+from babelfont.Anchor import Anchor as BAnchor
+from babelfont.Shape import Shape as BShape
+from babelfont.Node import Node as BNode
+from fez import FezParser
 
 
 DEFAULT_TRANSFORM = [1, 0, 0, 1, 0, 0]
@@ -75,6 +85,94 @@ CODEPAGE_RANGES = {
 }
 
 
+class FFont(BFont):
+    def __init__(self, font, ref):
+        super().__init__()
+
+        for axis in font.axes:
+            a = BAxis(
+                name=axis.name,
+                tag=axis.axisTag,
+                min=0,
+                max=1000,
+                default=0,
+            )
+            self.axes.append(a)
+
+        for master in font.masters:
+            location = {k.tag: v for k, v in zip(self.axes, master.axes)}
+            m = BMaster(
+                name=master.name,
+                id=master.id,
+                font=self,
+                location=location,
+            )
+            self.masters.append(m)
+
+        for instance in font.instances:
+            location = {k.tag: v for k, v in zip(self.axes, instance.axes)}
+            i = BInstance(
+                name=instance.name,
+                styleName=instance.name,
+                location=location,
+            )
+            self.instances.append(i)
+
+        for glyph in font.glyphs:
+            category = "base"
+            if glyph.subCategory == "Ligature":
+                category = "ligature"
+            elif glyph.category == "Mark" and glyph.subCategory == "Nonspacong":
+                category = "mark"
+            g = BGlyph(
+                name=glyph.name,
+                codepoints=[int(u, 16) for u in glyph.unicodes],
+                category=category,
+                exported=glyph.export,
+            )
+            # layer = getLayer(glyph, ref)
+            layer = glyph.layers[0]
+            l = BLayer(
+                name=layer.name,
+                width=layer.width,
+                id=layer.layerId,
+                _font=self,
+                _master=layer.associatedMasterId,
+                anchors=[
+                    BAnchor(name=a.name, x=a.position.x, y=a.position.y)
+                    for a in layer.anchors
+                ],
+            )
+            for path in layer.paths:
+                p = BShape(
+                    nodes=[
+                        BNode(n.position.x, n.position.y, n.type[0]) for n in path.nodes
+                    ],
+                    closed=path.closed,
+                )
+                l.shapes.append(p)
+            for component in layer.components:
+                c = BShape(
+                    ref=component.componentName,
+                    transform=component.transform,
+                )
+                l.shapes.append(c)
+            g.layers = [l]
+            self.glyphs.append(g)
+
+
+def parseFez(fez, font):
+    import warnings
+
+    p = FezParser(font)
+    with warnings.catch_warnings():
+        warnings.simplefilter("ignore")
+        p.parseFile(fez)
+    fea = p.fontfeatures.asFea(do_gdef=False)
+
+    return fea
+
+
 def draw(layer, layerSet):
     t2pen = T2CharStringPen(layer.width, layerSet)
     layer.draw(t2pen)
@@ -82,7 +180,7 @@ def draw(layer, layerSet):
     return t2pen.getCharString()
 
 
-def makeKern(font, master, glyphOrder):
+def makeKern(font, master, instance, glyphOrder):
     fea = ""
 
     groups = {}
@@ -131,6 +229,7 @@ lookupflag IgnoreMarks;
 {classes}
 }} kern;
 """
+    fea += parseFez("hah.fez", FFont(font, instance))
 
     return fea
 
@@ -268,7 +367,7 @@ def makeFeatures(instance, master, opts, glyphOrder):
             elif feature.name == "curs":
                 auto = makeCurs(instance, glyphOrder)
             elif feature.name == "kern":
-                auto = makeKern(font, master, glyphOrder)
+                auto = makeKern(font, master, instance, glyphOrder)
             if before:
                 fea += f"""
                     feature {feature.name} {{
