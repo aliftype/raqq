@@ -1,9 +1,6 @@
 LoadPlugin BariYe;
 LoadAnchors;
 
-DefineClass @inits = /.*\.init/;
-DefineClass @medis = /.*\.medi/;
-
 Feature kern {
-  BYFixOverhang 0 100 /hah-ar\.(medi|fina)/;
+  BYFixOverhang 0 100 /hah-ar\.(medi|fina)/ /.*\.medi/ /.*\.init/;
 };
