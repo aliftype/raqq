@@ -20,24 +20,26 @@ import datetime
 
 from fontTools.designspaceLib import DesignSpaceDocument
 from fontTools.fontBuilder import FontBuilder
-from fontTools.ttLib.tables._h_e_a_d import mac_epoch_diff
-from fontTools.varLib import build as merge
 from fontTools.misc.transform import Identity
-from fontTools.pens.transformPen import TransformPen
 from fontTools.pens.reverseContourPen import ReverseContourPen
 from fontTools.pens.t2CharStringPen import T2CharStringPen
+from fontTools.pens.transformPen import TransformPen
+from fontTools.ttLib.tables._h_e_a_d import mac_epoch_diff
+from fontTools.varLib import build as merge
+
 from glyphsLib import GSFont
 from glyphsLib.glyphdata import get_glyph as getGlyphInfo, GlyphData
-from glyphsLib.filters.eraseOpenCorners import EraseOpenCornersPen
+
+from babelfont.Anchor import Anchor as BAnchor
+from babelfont.Axis import Axis as BAxis
 from babelfont.Font import Font as BFont
 from babelfont.Glyph import Glyph as BGlyph
+from babelfont.Instance import Instance as BInstance
 from babelfont.Layer import Layer as BLayer
 from babelfont.Master import Master as BMaster
-from babelfont.Instance import Instance as BInstance
-from babelfont.Axis import Axis as BAxis
-from babelfont.Anchor import Anchor as BAnchor
-from babelfont.Shape import Shape as BShape
 from babelfont.Node import Node as BNode
+from babelfont.Shape import Shape as BShape
+
 from fez import FezParser
 
 
@@ -653,16 +655,6 @@ def buildVariable(font, glyphOrder, args):
 
 def buildFont(args):
     font = GSFont(args.glyphs)
-    # Erase open corners
-    for glyph in font.glyphs:
-        for layer in glyph.layers:
-            if layer.name == "Regular" or layer.attributes:
-                paths = list(layer.paths)
-                layer.paths = []
-                pen = EraseOpenCornersPen(layer.getPen())
-                for path in paths:
-                    path.draw(pen)
-
     glyphOrder = [g.name for g in font.glyphs]
 
     if args.variable:
