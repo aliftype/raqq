@@ -232,11 +232,11 @@ languagesystem arab dflt;
 #	sub waw-ar from @waw;
 #} rand;
 
-feature ccmp {
+lookup ccmp_1 {
 	sub hamza-ar alef-ar by alefHamzaabove-ar;
-} ccmp;
+} ccmp_1;
 
-feature ccmp {
+lookup ccmp_2 {
 	sub alefHamzaabove-ar by alef-ar hamzaabove-ar;
 	sub alefHamzabelow-ar by alef-ar hamzabelow-ar;
 	sub alefMadda-ar by alef-ar madda-ar;
@@ -270,22 +270,24 @@ feature ccmp {
 	# we make the base glyph 0 width, and the replcae it with the real
 	# kashida so that manual insertion works.
 	sub kashida-ar by kashida-ar.real;
+} ccmp_2;
 
+lookup ccmp_3 {
 	sub hamzaabove-ar fatha-ar by hamzaabove-ar;
 	sub hamzaabove-ar damma-ar by damma-ar;
 	sub hamzabelow-ar kasra-ar by hamzabelow-ar;
-} ccmp;
+} ccmp_3;
 
-feature ccmp {
+lookup ccmp_4 {
 	sub alef-ar hamza-ar' by madda-ar;
-} ccmp;
+} ccmp_4;
 
-feature isol {
+lookup isol {
 	sub sheen-ar by seen-ar threedotshorizontalabove-ar;
 	sub yehFarsi-ar by alefMaksura-ar;
 } isol;
 
-feature init {
+lookup init {
 	sub behDotless-ar by behDotless-ar.init;
 	sub hah-ar by hah-ar.init;
 	sub seen-ar by seen-ar.init;
@@ -304,7 +306,7 @@ feature init {
 	sub yehFarsi-ar by behDotless-ar.init twodotsverticalbelow-ar;
 } init;
 
-feature medi {
+lookup medi {
 	sub behDotless-ar by behDotless-ar.medi;
 	sub hah-ar by hah-ar.medi;
 	sub seen-ar by seen-ar.medi;
@@ -323,7 +325,7 @@ feature medi {
 	sub yehFarsi-ar by behDotless-ar.medi twodotsverticalbelow-ar;
 } medi;
 
-feature fina {
+lookup fina {
 	sub alef-ar by alef-ar.fina;
 	sub behDotless-ar by behDotless-ar.fina;
 	sub hah-ar by hah-ar.fina;
@@ -346,7 +348,7 @@ feature fina {
 	sub yehFarsi-ar by alefMaksura-ar.fina;
 } fina;
 
-feature rlig {
+lookup rlig_1 {
 	lookupflag IgnoreMarks;
 
 	sub lam-ar.init alef-ar.fina by lam_alef-ar;
@@ -365,7 +367,7 @@ feature rlig {
 	sub meem-ar.init noonghunna-ar.fina by meem_noonghunna-ar;
 
 	sub lam-ar.init lam-ar.medi heh-ar.fina by lam_lam_heh-ar;
-} rlig;
+} rlig_1;
 
 lookup meem_meem {
 	sub meem-ar.init by meem-ar.init.alt;
@@ -377,7 +379,7 @@ lookup beh_meem {
 	sub meem-ar.fina by meem-ar;
 } beh_meem;
 
-feature rlig {
+lookup rlig_2 {
 	lookupflag IgnoreMarks;
 
 	sub behDotless_seen-ar.init @waw.fina' by waw-ar.fina.alt;
@@ -399,12 +401,42 @@ feature rlig {
 	sub meem-ar.init' lookup meem_meem meem-ar.medi' lookup meem_meem;
 
 	sub [meem-ar.init meem-ar.medi] alef-ar.fina' by alef-ar.fina.meem;
-} rlig;
+} rlig_2;
 ";
-name = features;
+name = Lookups;
 }
 );
 features = (
+{
+code = "lookup ccmp_1;
+lookup ccmp_2;
+lookup ccmp_3;
+lookup ccmp_4;
+";
+tag = ccmp;
+},
+{
+code = "lookup isol;";
+tag = isol;
+},
+{
+code = "lookup init;";
+tag = init;
+},
+{
+code = "lookup medi;";
+tag = medi;
+},
+{
+code = "lookup fina;";
+tag = fina;
+},
+{
+code = "lookup rlig_1;
+lookup rlig_2;
+";
+tag = rlig;
+},
 {
 code = "sub @tashkil by NULL;
 ";
