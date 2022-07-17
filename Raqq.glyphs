@@ -269,7 +269,7 @@ feature ccmp {
 	sub hamzaabove-ar fatha-ar by hamzaabove-ar;
 	sub hamzabelow-ar kasra-ar by hamzabelow-ar;
 
-	sub space' space by space.alt;
+	#sub space' space by space.alt;
 } ccmp;
 
 feature isol {
@@ -9558,6 +9558,16 @@ width = 1200;
 );
 },
 {
+glyphname = space;
+layers = (
+{
+layerId = m01;
+width = 440;
+}
+);
+unicode = (32,160);
+},
+{
 glyphname = space.alt;
 layers = (
 {
@@ -10952,18 +10962,6 @@ width = 1200;
 }
 );
 unicode = 1622;
-},
-{
-category = Mark;
-glyphname = space;
-layers = (
-{
-layerId = m01;
-width = 200;
-}
-);
-subCategory = Nonspacing;
-unicode = (32,160);
 }
 );
 instances = (
