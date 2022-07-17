@@ -266,10 +266,13 @@ feature ccmp {
 	sub yeh-ar by alefMaksura-ar twodotsverticalbelow-ar;
 	sub yehHamzaabove-ar by alefMaksura-ar;
 
+	# Hack. To proven LibreOffice from inserting automatic kashida,
+	# we make the base glyph 0 width, and the replcae it with the real
+	# kashida so that manual insertion works.
+	sub kashida-ar by kashida-ar.real;
+
 	sub hamzaabove-ar fatha-ar by hamzaabove-ar;
 	sub hamzabelow-ar kasra-ar by hamzabelow-ar;
-
-	#sub space' space by space.alt;
 } ccmp;
 
 feature isol {
@@ -7695,6 +7698,18 @@ glyphname = "kashida-ar";
 layers = (
 {
 layerId = m01;
+width = 0;
+}
+);
+metricLeft = "=0";
+metricRight = "=-20";
+unicode = 1600;
+},
+{
+glyphname = "kashida-ar.real";
+layers = (
+{
+layerId = m01;
 shapes = (
 {
 closed = 1;
@@ -7711,7 +7726,6 @@ width = 200;
 );
 metricLeft = "=0";
 metricRight = "=-20";
-unicode = 1600;
 },
 {
 color = 0;
