@@ -239,7 +239,7 @@ feature ccmp {
 feature ccmp {
 	sub alefHamzaabove-ar by alef-ar hamzaabove-ar;
 	sub alefHamzabelow-ar by alef-ar hamzabelow-ar;
-	sub alefMadda-ar by alef-ar; # madda-ar
+	sub alefMadda-ar by alef-ar madda-ar;
 	sub alefWasla-ar by alef-ar; # wasla-ar
 	sub beh-ar by behDotless-ar dotbelow-ar;
 	sub teh-ar by behDotless-ar twodotsverticalabove-ar;
@@ -272,7 +272,12 @@ feature ccmp {
 	sub kashida-ar by kashida-ar.real;
 
 	sub hamzaabove-ar fatha-ar by hamzaabove-ar;
+	sub hamzaabove-ar damma-ar by damma-ar;
 	sub hamzabelow-ar kasra-ar by hamzabelow-ar;
+} ccmp;
+
+feature ccmp {
+	sub alef-ar hamza-ar' by madda-ar;
 } ccmp;
 
 feature isol {
@@ -518,6 +523,10 @@ name = bottom.hamza;
 pos = (477,-130);
 },
 {
+name = damma;
+pos = (-43,152);
+},
+{
 name = top.hamza;
 pos = (247,1076);
 },
@@ -639,6 +648,12 @@ unicode = 1575;
 glyphname = "alef-ar.fina";
 layers = (
 {
+anchors = (
+{
+name = damma;
+pos = (-83,152);
+}
+);
 backgroundImage = {
 alpha = 80;
 imagePath = "images/alef-ar.fina.jpg";
@@ -723,6 +738,12 @@ metricLeft = "=0@44";
 glyphname = "alef-ar.fina.meem";
 layers = (
 {
+anchors = (
+{
+name = damma;
+pos = (-33,182);
+}
+);
 backgroundImage = {
 alpha = 80;
 imagePath = "images/alef-ar.fina.meem.jpg";
@@ -5317,11 +5338,11 @@ layers = (
 anchors = (
 {
 name = damma;
-pos = (70,-155);
+pos = (95,-138);
 },
 {
 name = fatha;
-pos = (72,872);
+pos = (120,1157);
 },
 {
 name = kasra;
@@ -5398,6 +5419,20 @@ unicode = 1604;
 glyphname = "lam-ar.fina";
 layers = (
 {
+anchors = (
+{
+name = damma;
+pos = (112,-85);
+},
+{
+name = fatha;
+pos = (120,1218);
+},
+{
+name = kasra;
+pos = (155,-637);
+}
+);
 backgroundImage = {
 alpha = 80;
 angle = -0.6;
@@ -5488,7 +5523,7 @@ name = exit;
 },
 {
 name = fatha;
-pos = (-104,1056);
+pos = (-81,1160);
 },
 {
 name = kasra;
@@ -5547,6 +5582,10 @@ layers = (
 {
 anchors = (
 {
+name = damma;
+pos = (-37,214);
+},
+{
 name = entry;
 pos = (352,0);
 },
@@ -5555,7 +5594,11 @@ name = exit;
 },
 {
 name = fatha;
-pos = (-170,1132);
+pos = (-107,1179);
+},
+{
+name = kasra;
+pos = (105,-104);
 }
 );
 layerId = m01;
@@ -5618,7 +5661,7 @@ name = exit;
 },
 {
 name = fatha;
-pos = (-104,1056);
+pos = (-57,1177);
 },
 {
 name = kasra;
@@ -5683,7 +5726,7 @@ name = exit;
 },
 {
 name = fatha;
-pos = (-74,1056);
+pos = (-28,1141);
 },
 {
 name = kasra;
@@ -6627,7 +6670,7 @@ pos = (211,783);
 },
 {
 name = kasra;
-pos = (304,-94);
+pos = (284,-94);
 }
 );
 backgroundImage = {
@@ -7616,6 +7659,12 @@ metricLeft = "=20@127";
 glyphname = "alefMaksura-ar.fina";
 layers = (
 {
+anchors = (
+{
+name = bottom;
+pos = (466,-624);
+}
+);
 backgroundImage = {
 alpha = 80;
 angle = 1.1;
@@ -8204,12 +8253,28 @@ pos = (594,-252);
 name = caret_1;
 },
 {
+name = damma_1;
+pos = (-96,139);
+},
+{
+name = damma_2;
+pos = (-253,-226);
+},
+{
 name = fatha_1;
-pos = (-132,1102);
+pos = (-77,1135);
 },
 {
 name = fatha_2;
-pos = (-108,14);
+pos = (94,115);
+},
+{
+name = kasra_1;
+pos = (94,115);
+},
+{
+name = kasra_2;
+pos = (36,-416);
 }
 );
 layerId = m01;
@@ -8283,7 +8348,7 @@ layers = (
 anchors = (
 {
 name = bottom.hamza_2;
-pos = (562,-117);
+pos = (102,-117);
 },
 {
 name = caret_1;
@@ -8384,11 +8449,15 @@ layers = (
 anchors = (
 {
 name = bottom.hamza_2;
-pos = (562,-90);
+pos = (102,-90);
 },
 {
 name = caret_1;
 pos = (329,0);
+},
+{
+name = fatha_1;
+pos = (-138,1124);
 },
 {
 name = top.hamza_2;
@@ -9067,12 +9136,16 @@ name = caret_2;
 pos = (629,0);
 },
 {
+name = damma_3;
+pos = (-90,140);
+},
+{
 name = fatha_2;
 pos = (373,1013);
 },
 {
 name = kasra_1;
-pos = (634,112);
+pos = (751,-72);
 },
 {
 name = kasra_3;
