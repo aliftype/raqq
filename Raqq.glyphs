@@ -280,6 +280,7 @@ lookup ccmp_3 {
 
 lookup ccmp_4 {
 	sub alef-ar hamza-ar' by madda-ar;
+	sub alef-ar fathatan-ar' by fathatan-ar.alt;
 } ccmp_4;
 
 lookup isol {
@@ -559,6 +560,10 @@ name = damma;
 pos = (-43,152);
 },
 {
+name = fatha;
+pos = (247,1076);
+},
+{
 name = top.hamza;
 pos = (247,1076);
 },
@@ -684,6 +689,10 @@ anchors = (
 {
 name = damma;
 pos = (-83,152);
+},
+{
+name = fatha;
+pos = (247,1036);
 }
 );
 backgroundImage = {
@@ -774,6 +783,10 @@ anchors = (
 {
 name = damma;
 pos = (-33,182);
+},
+{
+name = fatha;
+pos = (257,1106);
 }
 );
 backgroundImage = {
@@ -1805,6 +1818,10 @@ name = damma;
 pos = (-118,91);
 },
 {
+name = fatha;
+pos = (601,552);
+},
+{
 name = kasra;
 pos = (1517,-144);
 },
@@ -1919,6 +1936,10 @@ name = damma;
 pos = (-133,42);
 },
 {
+name = fatha;
+pos = (591,530);
+},
+{
 name = kasra;
 pos = (1475,-144);
 },
@@ -2012,6 +2033,10 @@ pos = (1204,-107);
 {
 name = damma;
 pos = (-133,42);
+},
+{
+name = fatha;
+pos = (1100,552);
 },
 {
 name = kasra;
@@ -2119,6 +2144,10 @@ name = entry;
 pos = (692,185);
 },
 {
+name = fatha;
+pos = (521,534);
+},
+{
 name = kasra;
 pos = (1517,-144);
 },
@@ -2148,10 +2177,14 @@ pos = (591,-73);
 },
 {
 name = entry;
-pos = (154,185);
+pos = (165,156);
 },
 {
 name = exit;
+},
+{
+name = fatha;
+pos = (106,440);
 },
 {
 name = top;
@@ -2179,6 +2212,10 @@ pos = (591,-73);
 },
 {
 name = exit;
+},
+{
+name = fatha;
+pos = (234,488);
 },
 {
 name = top;
@@ -2512,8 +2549,16 @@ layers = (
 {
 anchors = (
 {
+name = damma;
+pos = (19,212);
+},
+{
 name = fatha;
 pos = (430,652);
+},
+{
+name = kasra;
+pos = (359,-88);
 },
 {
 name = top;
@@ -2571,8 +2616,16 @@ layers = (
 {
 anchors = (
 {
+name = damma;
+pos = (53,132);
+},
+{
 name = fatha;
 pos = (440,652);
+},
+{
+name = kasra;
+pos = (348,-161);
 },
 {
 name = top;
@@ -2636,8 +2689,16 @@ layers = (
 {
 anchors = (
 {
+name = damma;
+pos = (33,12);
+},
+{
 name = fatha;
 pos = (412,372);
+},
+{
+name = kasra;
+pos = (359,-261);
 },
 {
 name = top;
@@ -2692,6 +2753,10 @@ glyphname = "seen-ar";
 layers = (
 {
 anchors = (
+{
+name = damma;
+pos = (246,-406);
+},
 {
 name = fatha;
 pos = (369,497);
@@ -2812,6 +2877,10 @@ glyphname = "seen-ar.fina";
 layers = (
 {
 anchors = (
+{
+name = damma;
+pos = (246,-406);
+},
 {
 name = fatha;
 pos = (362,495);
@@ -3035,6 +3104,10 @@ layers = (
 {
 anchors = (
 {
+name = damma;
+pos = (186,-228);
+},
+{
 name = fatha;
 pos = (1108,369);
 },
@@ -3165,6 +3238,10 @@ glyphname = "sad-ar.fina";
 layers = (
 {
 anchors = (
+{
+name = damma;
+pos = (186,-228);
+},
 {
 name = fatha;
 pos = (1108,373);
@@ -5370,7 +5447,7 @@ layers = (
 anchors = (
 {
 name = damma;
-pos = (95,-138);
+pos = (94,-152);
 },
 {
 name = fatha;
@@ -5454,7 +5531,7 @@ layers = (
 anchors = (
 {
 name = damma;
-pos = (112,-85);
+pos = (94,-152);
 },
 {
 name = fatha;
@@ -8970,8 +9047,36 @@ name = caret_1;
 pos = (188,0);
 },
 {
+name = damma_1;
+pos = (137,340);
+},
+{
+name = damma_2;
+pos = (-88,58);
+},
+{
+name = fatha_1;
+pos = (408,746);
+},
+{
+name = fatha_2;
+pos = (278,1124);
+},
+{
+name = kasra_1;
+pos = (524,-99);
+},
+{
+name = kasra_2;
+pos = (74,-96);
+},
+{
 name = top.hamza_2;
 pos = (278,1124);
+},
+{
+name = top.madda_2;
+pos = (-96,1076);
 },
 {
 name = top_1;

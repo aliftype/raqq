@@ -6,12 +6,12 @@
   <glyph name="alef-ar" unicode="0627" category="Letter" script="arabic"
          sortName="arL0004"
          anchors="top, bottom, fatha, damma, kasra, top.hamza, bottom.hamza"
-         accents="fatha-ar, fathatan-ar, damma-ar, dammatan-ar, kasra-ar, kasratan-ar, hamzaabove-ar, hamzabelow-ar, madda-ar, shadda-ar"
+         accents="fatha-ar, fathatan-ar.alt, damma-ar, dammatan-ar, kasra-ar, kasratan-ar, hamzaabove-ar, hamzabelow-ar, madda-ar, shadda-ar"
   />
   <glyph name="alef-ar.fina" category="Letter" script="arabic"
          sortName="arL0005"
          anchors="top, bottom, fatha, damma, kasra, top.hamza, bottom.hamza"
-         accents="fatha-ar, fathatan-ar, damma-ar, dammatan-ar, kasra-ar, kasratan-ar, hamzaabove-ar, hamzabelow-ar, madda-ar, shadda-ar"
+         accents="fatha-ar, fathatan-ar.alt, damma-ar, dammatan-ar, kasra-ar, kasratan-ar, hamzaabove-ar, hamzabelow-ar, madda-ar, shadda-ar"
   />
   <glyph name="behDotless-ar" unicode="066E" category="Letter" script="arabic"
          sortName="arL0008"
