@@ -46,8 +46,7 @@ ain-ar.init
 name = ain.init;
 },
 {
-code = "hamza-ar
-alef-ar
+code = "alef-ar
 behDotless-ar
 hah-ar
 dal-ar
@@ -542,7 +541,7 @@ glyphname = "hamza-ar";
 layers = (
 {
 layerId = m01;
-width = 1200;
+width = 0;
 }
 );
 unicode = 1569;
