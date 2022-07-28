@@ -650,4 +650,7 @@
   <glyph name="alefbelow-ar" unicode="0656" category="Mark" subCategory="Nonspacing" script="arabic"
          sortName="arM1083"
   />
+
+  <glyph name="hyphen" unicode="2010"  category="Punctuation" subCategory="Spacing Combining" case="lower" />
+
 </glyphData>
