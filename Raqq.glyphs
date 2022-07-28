@@ -4763,6 +4763,10 @@ name = bottom;
 pos = (505,50);
 },
 {
+name = damma;
+pos = (14,340);
+},
+{
 name = exit;
 },
 {
