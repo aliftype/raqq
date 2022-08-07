@@ -11357,6 +11357,10 @@ m01 = {
 "lam-ar.medi.ain" = {
 "@MMK_L_meem" = -6;
 };
+"meem-ar.init" = {
+"alef-ar.fina.meem" = -30;
+"lam_alefMaksura-ar.fina" = -20;
+};
 "meem-ar.init.alt" = {
 "waw-ar.fina" = -10;
 "waw-ar.fina.1" = -10;
