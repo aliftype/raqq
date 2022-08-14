@@ -346,6 +346,7 @@ lookup fina {
 	sub @waw by @waw.fina;
 	sub alefMaksura-ar by alefMaksura-ar.fina;
 	sub yehFarsi-ar by alefMaksura-ar.fina;
+	sub yehbarree-ar by yehbarree-ar.fina;
 } fina;
 
 lookup rlig_1 {
@@ -7946,6 +7947,83 @@ width = 514;
 );
 metricLeft = "=0@60";
 metricRight = "=0";
+},
+{
+glyphname = "yehbarree-ar";
+layers = (
+{
+layerId = m01;
+width = 1200;
+}
+);
+unicode = 1746;
+},
+{
+glyphname = "yehbarree-ar.fina";
+layers = (
+{
+anchors = (
+{
+name = entry;
+pos = (439,131);
+}
+);
+backgroundImage = {
+alpha = 80;
+imagePath = "images/yehbarree-ar.fina.jpg";
+locked = 1;
+pos = (-418,-293);
+scale = (20,20);
+};
+layerId = m01;
+shapes = (
+{
+closed = 1;
+nodes = (
+(397,343,o),
+(324,437,o),
+(239,437,cs),
+(119,437,o),
+(0,272,o),
+(0,148,cs),
+(0,-21,o),
+(259,-12,o),
+(460,-20,cs),
+(942,-39,o),
+(1503,-45,o),
+(1905,-32,cs),
+(1919,-32,o),
+(1938,-27,o),
+(1952,-12,cs),
+(1982,20,o),
+(1992,48,o),
+(2038,48,cs),
+(2058,48,o),
+(2058,76,o),
+(2036,75,cs),
+(1816,64,o),
+(1478,72,o),
+(1196,70,cs),
+(903,68,o),
+(496,96,o),
+(390,112,cs),
+(219,137,o),
+(185,182,o),
+(163,216,cs),
+(157,226,o),
+(171,235,o),
+(178,226,cs),
+(218,175,o),
+(276,141,o),
+(419,131,c),
+(477,131,l),
+(477,274,l)
+);
+}
+);
+width = 2053;
+}
+);
 },
 {
 glyphname = "kashida-ar";

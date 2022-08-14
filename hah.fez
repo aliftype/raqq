@@ -2,5 +2,5 @@ LoadPlugin BariYe;
 LoadAnchors;
 
 Feature kern {
-  BYFixOverhang 0 100 /hah-ar\.(medi|fina)/ /.*\.medi/ /.*\.init/;
+  BYFixOverhang 0 100 /hah-ar\.(medi|fina)|yehbarree-ar.fina/ /.*\.medi/ /.*\.init/;
 };
