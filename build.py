@@ -37,8 +37,6 @@ from babelfont.Glyph import Glyph as BGlyph
 from babelfont.Instance import Instance as BInstance
 from babelfont.Layer import Layer as BLayer
 from babelfont.Master import Master as BMaster
-from babelfont.Node import Node as BNode
-from babelfont.Shape import Shape as BShape
 
 from fez import FezParser
 
@@ -144,20 +142,6 @@ class FFont(BFont):
                     for a in layer.anchors
                 ],
             )
-            for path in layer.paths:
-                p = BShape(
-                    nodes=[
-                        BNode(n.position.x, n.position.y, n.type[0]) for n in path.nodes
-                    ],
-                    closed=path.closed,
-                )
-                l.shapes.append(p)
-            for component in layer.components:
-                c = BShape(
-                    ref=component.componentName,
-                    transform=component.transform,
-                )
-                l.shapes.append(c)
             g.layers = [l]
             self.glyphs.append(g)
 

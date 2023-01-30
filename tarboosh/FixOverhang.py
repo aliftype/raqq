@@ -25,7 +25,7 @@ sequence, and will drop any adjustment bellow 100.
 
 
 import fontFeatures
-from glyphtools import categorize_glyph, get_glyph_metrics, bin_glyphs_by_metric
+from glyphtools import bin_glyphs_by_metric
 import warnings
 
 from fez import FEZVerb
@@ -33,12 +33,6 @@ from fez import FEZVerb
 PARSEOPTS = dict(use_helpers=True)
 
 GRAMMAR = ""
-
-BYMoveDots_GRAMMAR = """
-?start: action
-action: STRATEGY glyphselector
-STRATEGY: "AlwaysDrop" | "TryToFit"
-"""
 
 FixOverhang_GRAMMAR = """
 ?start: action
@@ -55,25 +49,23 @@ failsafe_min_run = 100
 class FixOverhang(FEZVerb):
     def action(self, args):
         parser = self.parser
+        font = parser.font
 
         overhang_padding, adjustment_threshold, glyphs, medis, inits = args
         overhang_padding = overhang_padding.resolve_as_integer()
         adjustment_threshold = adjustment_threshold.resolve_as_integer()
-        overhangers = glyphs.resolve(parser.fontfeatures, parser.font)
-        medis = medis.resolve(parser.fontfeatures, parser.font)
-        inits = inits.resolve(parser.fontfeatures, parser.font)
+        overhangers = glyphs.resolve(parser.fontfeatures, font)
+        medis = medis.resolve(parser.fontfeatures, font)
+        inits = inits.resolve(parser.fontfeatures, font)
 
-        binned_medis = bin_glyphs_by_metric(parser.font, medis, "run", bincount=8)
-        binned_inits = bin_glyphs_by_metric(parser.font, inits, "run", bincount=8)
+        binned_medis = bin_glyphs_by_metric(font, medis, "run", bincount=8)
+        binned_inits = bin_glyphs_by_metric(font, inits, "run", bincount=8)
         rules = []
         maxchainlength = 0
         longeststring = []
         for yb in overhangers:
             entry_anchor = parser.fontfeatures.anchors[yb]["entry"]
-            overhang = max(
-                -get_glyph_metrics(parser.font, yb)["rsb"],
-                get_glyph_metrics(parser.font, yb)["xMax"] - entry_anchor[0],
-            )
+            overhang = font.glyphs[yb].layers[0].width - entry_anchor[0]
 
             workqueue = [[x] for x in binned_inits]
             while workqueue:
