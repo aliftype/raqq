@@ -6,13 +6,13 @@
 #
 appdirs==1.4.4
     # via fs
-attrs==21.4.0
+attrs==22.2.0
     # via ufolib2
-babelfont==3.0.0a9
+babelfont==3.0.0
     # via
     #   fez-language
     #   glyphtools
-beziers==0.4.0
+beziers==0.5.0
     # via
     #   fez-language
     #   fontfeatures
@@ -21,17 +21,17 @@ booleanoperations==0.9.0
     # via ufo2ft
 cffsubr==0.2.9.post1
     # via ufo2ft
-cu2qu==1.6.7.post1
+cu2qu==1.6.7.post2
     # via
     #   babelfont
     #   ufo2ft
-fez-language==1.3.2
+fez-language==1.3.4
     # via -r requirements.in
-fontfeatures==1.7.2
+fontfeatures==1.7.4
     # via
     #   babelfont
     #   fez-language
-fonttools[ufo,unicode]==4.34.4
+fonttools[ufo,unicode]==4.38.0
     # via
     #   -r requirements.in
     #   babelfont
@@ -47,7 +47,7 @@ fs==2.4.16
     # via
     #   fontfeatures
     #   fonttools
-glyphslib==6.0.6
+glyphslib==6.1.0
     # via
     #   -r requirements.in
     #   babelfont
@@ -56,21 +56,21 @@ glyphtools==0.8.0
     # via
     #   fez-language
     #   fontfeatures
-lark==1.1.2
+lark==1.1.5
     # via fez-language
-lxml==4.9.1
+lxml==4.9.2
     # via fontfeatures
-more-itertools==8.13.0
+more-itertools==9.0.0
     # via fez-language
-numpy==1.23.1
+numpy==1.24.1
     # via glyphtools
-openstep-plist==0.3.0
+openstep-plist==0.3.0.post1
     # via
     #   babelfont
     #   glyphslib
-orjson==3.7.7
+orjson==3.8.5
     # via babelfont
-pyclipper==1.3.0.post3
+pyclipper==1.3.0.post4
     # via
     #   beziers
     #   booleanoperations
@@ -80,13 +80,13 @@ six==1.16.0
     # via fs
 skia-pathops==0.7.4
     # via -r requirements.in
-ufo2ft==2.28.0
+ufo2ft==2.30.0
     # via -r requirements.in
-ufolib2==0.13.1
+ufolib2==0.14.0
     # via
     #   babelfont
     #   glyphslib
-unicodedata2==14.0.0
+unicodedata2==15.0.0
     # via fonttools
 
 # The following packages are considered to be unsafe in a requirements file:
