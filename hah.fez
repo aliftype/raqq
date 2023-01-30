@@ -1,6 +1,6 @@
-LoadPlugin BariYe;
+LoadPlugin tarboosh.FixOverhang;
 LoadAnchors;
 
 Feature kern {
-  BYFixOverhang 0 100 /hah-ar\.(medi|fina)|yehbarree-ar.fina/ /.*\.medi/ /.*\.init/;
+  FixOverhang 0 100 /hah-ar\.(medi|fina)|yehbarree-ar.fina/ /.*\.medi/ /.*\.init/;
 };
