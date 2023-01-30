@@ -30,16 +30,6 @@ from fontTools.varLib import build as merge
 from glyphsLib import GSFont
 from glyphsLib.glyphdata import get_glyph as getGlyphInfo, GlyphData
 
-from babelfont.Anchor import Anchor as BAnchor
-from babelfont.Axis import Axis as BAxis
-from babelfont.Font import Font as BFont
-from babelfont.Glyph import Glyph as BGlyph
-from babelfont.Instance import Instance as BInstance
-from babelfont.Layer import Layer as BLayer
-from babelfont.Master import Master as BMaster
-
-from fez import FezParser
-
 
 DEFAULT_TRANSFORM = [1, 0, 0, 1, 0, 0]
 
@@ -83,79 +73,6 @@ CODEPAGE_RANGES = {
     850: 62,
     437: 63,
 }
-
-
-class FFont(BFont):
-    def __init__(self, font, ref):
-        super().__init__()
-
-        for axis in font.axes:
-            a = BAxis(
-                name=axis.name,
-                tag=axis.axisTag,
-                min=0,
-                max=1000,
-                default=0,
-            )
-            self.axes.append(a)
-
-        for master in font.masters:
-            location = {k.tag: v for k, v in zip(self.axes, master.axes)}
-            m = BMaster(
-                name=master.name,
-                id=master.id,
-                font=self,
-                location=location,
-            )
-            self.masters.append(m)
-
-        for instance in font.instances:
-            location = {k.tag: v for k, v in zip(self.axes, instance.axes)}
-            i = BInstance(
-                name=instance.name,
-                styleName=instance.name,
-                location=location,
-            )
-            self.instances.append(i)
-
-        for glyph in font.glyphs:
-            category = "base"
-            if glyph.subCategory == "Ligature":
-                category = "ligature"
-            elif glyph.category == "Mark" and glyph.subCategory == "Nonspacong":
-                category = "mark"
-            g = BGlyph(
-                name=glyph.name,
-                codepoints=[int(u, 16) for u in glyph.unicodes],
-                category=category,
-                exported=glyph.export,
-            )
-            layer = getLayer(glyph, ref)
-            l = BLayer(
-                name=layer.name,
-                width=layer.width,
-                id=layer.layerId,
-                _font=self,
-                _master=layer.associatedMasterId,
-                anchors=[
-                    BAnchor(name=a.name, x=a.position.x, y=a.position.y)
-                    for a in layer.anchors
-                ],
-            )
-            g.layers = [l]
-            self.glyphs.append(g)
-
-
-def parseFez(fez, font):
-    import warnings
-
-    p = FezParser(font)
-    with warnings.catch_warnings():
-        warnings.simplefilter("ignore")
-        p.parseFile(fez)
-    fea = p.fontfeatures.asFea(do_gdef=False)
-
-    return fea
 
 
 def draw(layer, layerSet, removeOverlap):
@@ -222,7 +139,7 @@ lookupflag IgnoreMarks;
 {classes}
 }} kern;
 """
-    fea += parseFez("hah.fez", FFont(font, instance))
+    fea += "include(hah.fea)"
 
     return fea
 

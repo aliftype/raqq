@@ -23,24 +23,31 @@ VERSION = $(shell python version.py $(CONFIG))
 DIST = $(NAME)-$(VERSION)
 
 FEZ = $(wildcard *.fez)
+FEA = $(FEZ:%.fez=%.fea)
 
 ARGS ?= 
+
+.SECONDARY:
 
 .PHONY: all dist
 
 all: $(NAME).otf # $(NAME).ttf
 
-%.otf: $(NAME).glyphs $(CONFIG) GlyphData.xml $(FEZ)
+%.fea: %.fez $(NAME).glyphs
+	$(info   GEN    $(@F))
+	python fez-to-fea.py $(NAME).glyphs $< -o $@
+
+%.otf: $(NAME).glyphs $(CONFIG) GlyphData.xml $(FEA)
 	$(info   BUILD  $(@F))
 	python build.py $< $(VERSION) $@ --data=GlyphData.xml $(ARGS)
 
-%.ttf: $(NAME).glyphs $(CONFIG) GlyphData.xml $(FEZ)
+%.ttf: $(NAME).glyphs $(CONFIG) GlyphData.xml $(FEA)
 	$(info   BUILD  $(@F))
 	python build.py $< $(VERSION) $@ --data=GlyphData.xml $(ARGS)
 
 dist: all
 	$(info   DIST   $(DIST).zip)
-	install -Dm644 -t $(DIST) $(NAME)-Regular.otf
+	install -Dm644 -t $(DIST) $(NAME).otf
 	#install -Dm644 -t $(DIST) {README,README-Arabic}.txt
 	#install -Dm644 -t $(DIST) OFL.txt
 	zip -rq $(DIST).zip $(DIST)
