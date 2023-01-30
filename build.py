@@ -174,9 +174,17 @@ def parseFez(fez, font):
     return fea
 
 
-def draw(layer, layerSet):
+def draw(layer, layerSet, removeOverlap):
     t2pen = T2CharStringPen(layer.width, layerSet)
-    layer.draw(t2pen)
+    if removeOverlap and layer.paths:
+        from pathops import Path
+
+        path = Path()
+        layer.draw(path.getPen(glyphSet=layerSet))
+        path.simplify(fix_winding=True, keep_starting_points=True)
+        path.draw(t2pen)
+    else:
+        layer.draw(t2pen)
 
     return t2pen.getCharString()
 
@@ -497,7 +505,7 @@ def buildInstance(instance, args, glyphOrder):
         layer = getLayer(glyph, instance)
         if getCategory(glyph, args.data) == ("Mark", "Nonspacing"):
             layer.width = 0
-        charStrings[name] = draw(layer, layerSet)
+        charStrings[name] = draw(layer, layerSet, not args.variable)
         advanceWidths[name] = layer.width
 
         for layer in glyph.layers:
@@ -518,7 +526,7 @@ def buildInstance(instance, args, glyphOrder):
                                 colorLayerSet[g.name] = l
 
                     new += f".layer{len(colorLayers[name])}"
-                    charStrings[new] = draw(layer, colorLayerSet)
+                    charStrings[new] = draw(layer, colorLayerSet, not args.variable)
                     advanceWidths[new] = advanceWidths[name]
 
                     glyphOrder.append(new)
