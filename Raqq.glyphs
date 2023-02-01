@@ -7937,7 +7937,7 @@ metricRight = "=0";
 },
 {
 export = 0;
-glyphname = "hah-ar.x";
+glyphname = "hah-ar.long";
 layers = (
 {
 anchors = (
