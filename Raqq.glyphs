@@ -167,6 +167,13 @@ value = (
 name = fsType;
 value = (
 );
+},
+{
+name = glyphOrder;
+value = (
+.notdef,
+space
+);
 }
 );
 date = "2021-04-25 20:10:22 +0000";
@@ -487,6 +494,63 @@ visible = 1;
 }
 );
 glyphs = (
+{
+glyphname = .notdef;
+layers = (
+{
+layerId = m01;
+shapes = (
+{
+closed = 1;
+nodes = (
+(1000,-800,l),
+(1000,1200,l),
+(200,1200,l),
+(200,-800,l)
+);
+},
+{
+closed = 1;
+nodes = (
+(948,1084,l),
+(852,1116,l),
+(252,-684,l),
+(348,-716,l)
+);
+},
+{
+closed = 1;
+nodes = (
+(348,1116,l),
+(252,1084,l),
+(852,-716,l),
+(948,-684,l)
+);
+},
+{
+closed = 1;
+nodes = (
+(300,1100,l),
+(900,1100,l),
+(900,-700,l),
+(300,-700,l)
+);
+}
+);
+width = 1200;
+}
+);
+},
+{
+glyphname = space;
+layers = (
+{
+layerId = m01;
+width = 440;
+}
+);
+unicode = (32,160);
+},
 {
 glyphname = "hamza-ar";
 layers = (
@@ -9988,63 +10052,6 @@ width = 1200;
 }
 );
 unicode = 1641;
-},
-{
-glyphname = .notdef;
-layers = (
-{
-layerId = m01;
-shapes = (
-{
-closed = 1;
-nodes = (
-(1000,-800,l),
-(1000,1200,l),
-(200,1200,l),
-(200,-800,l)
-);
-},
-{
-closed = 1;
-nodes = (
-(948,1084,l),
-(852,1116,l),
-(252,-684,l),
-(348,-716,l)
-);
-},
-{
-closed = 1;
-nodes = (
-(348,1116,l),
-(252,1084,l),
-(852,-716,l),
-(948,-684,l)
-);
-},
-{
-closed = 1;
-nodes = (
-(300,1100,l),
-(900,1100,l),
-(900,-700,l),
-(300,-700,l)
-);
-}
-);
-width = 1200;
-}
-);
-},
-{
-glyphname = space;
-layers = (
-{
-layerId = m01;
-width = 440;
-}
-);
-unicode = (32,160);
 },
 {
 glyphname = space.alt;

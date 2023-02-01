@@ -437,12 +437,6 @@ def buildInstance(instance, args, glyphOrder):
         for uni in glyph.unicodes:
             characterMap[int(uni, 16)] = name
 
-    # XXX
-    exportGlyphOrder.pop(exportGlyphOrder.index(".notdef"))
-    exportGlyphOrder.pop(exportGlyphOrder.index("space"))
-    exportGlyphOrder.insert(0, ".notdef")
-    exportGlyphOrder.insert(1, "space")
-
     version = float(args.version)
 
     vendor = getProperty(font, "vendorID")
