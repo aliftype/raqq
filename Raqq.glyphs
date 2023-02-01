@@ -1,18 +1,6 @@
 {
 .appVersion = "3151";
 .formatVersion = 3;
-axes = (
-{
-hidden = 1;
-name = Shrink;
-tag = ASHR;
-},
-{
-hidden = 1;
-name = Stretch;
-tag = ASTR;
-}
-);
 classes = (
 {
 code = "dotabove-ar
@@ -161,45 +149,6 @@ value = (
 (71,28,1,255)
 )
 );
-},
-{
-name = "Virtual Master";
-value = (
-{
-Axis = Shrink;
-Location = 100;
-},
-{
-Axis = Stretch;
-Location = 0;
-}
-);
-},
-{
-name = "Virtual Master";
-value = (
-{
-Axis = Shrink;
-Location = 0;
-},
-{
-Axis = Stretch;
-Location = 100;
-}
-);
-},
-{
-name = "Axis Mappings";
-value = {
-ASHR = {
-0 = 0;
-100 = 100;
-};
-ASTR = {
-0 = 0;
-100 = 100;
-};
-};
 },
 {
 name = unicodeRanges;
@@ -479,10 +428,6 @@ tag = mark;
 );
 fontMaster = (
 {
-axesValues = (
-0,
-0
-);
 customParameters = (
 {
 name = typoAscender;
@@ -1165,87 +1110,6 @@ nodes = (
 }
 );
 width = 159;
-},
-{
-anchors = (
-{
-name = bottom;
-pos = (1740,-110);
-},
-{
-name = damma;
-pos = (1629,260);
-},
-{
-name = entry;
-pos = (1815,0);
-},
-{
-name = exit;
-},
-{
-name = fatha;
-pos = (1743,830);
-},
-{
-name = kasra;
-pos = (1741,-100);
-},
-{
-name = top;
-pos = (1672,553);
-}
-);
-associatedMasterId = m01;
-attr = {
-coordinates = (
-0,
-100
-);
-};
-backgroundImage = {
-alpha = 80;
-imagePath = "images/behDotless-ar.medi.jpg";
-locked = 1;
-pos = (-341,-119);
-scale = (20,20);
-};
-layerId = "86E49FB5-E58F-46D6-9294-1FA5FA1F9D58";
-metricLeft = "=-20";
-name = "{0, 100}";
-shapes = (
-{
-closed = 1;
-nodes = (
-(592,-23,o),
-(1203,-28,o),
-(1815,-1,c),
-(1815,150,l),
-(1809,150,l),
-(1785,359,o),
-(1774,540,o),
-(1764,662,cs),
-(1763,677,o),
-(1750,679,o),
-(1747,664,cs),
-(1732,595,o),
-(1681,500,o),
-(1634,455,cs),
-(1628,449,o),
-(1628,439,o),
-(1631,430,cs),
-(1652,365,o),
-(1662,235,o),
-(1661,153,c),
-(1098,123,o),
-(474,137,o),
-(-20,159,c),
-(-20,-1,l)
-);
-}
-);
-visible = 1;
-width = 1815;
 }
 );
 metricLeft = "=20@492";
@@ -2243,102 +2107,6 @@ nodes = (
 }
 );
 width = 1456;
-},
-{
-anchors = (
-{
-name = damma;
-pos = (-338,226);
-},
-{
-name = fatha;
-pos = (666,446);
-},
-{
-name = kasra;
-pos = (638,-82);
-},
-{
-name = top;
-pos = (894,403);
-}
-);
-associatedMasterId = m01;
-attr = {
-coordinates = (
-100,
-0
-);
-};
-backgroundImage = {
-alpha = 100;
-imagePath = "1/image-0056.jpg";
-locked = 1;
-pos = (-5659,-5176);
-scale = (20,20);
-};
-layerId = "A9B502D6-BD98-4899-95D2-8C8C92379346";
-name = "{100, 0}";
-shapes = (
-{
-closed = 1;
-nodes = (
-(871,-6,o),
-(1018,-4,o),
-(1206,0,c),
-(1206,132,l),
-(1078,132,l),
-(1200,78,l),
-(1154,134,o),
-(1140,214,o),
-(1098,274,cs),
-(1092,284,o),
-(1080,284,o),
-(1070,284,cs),
-(924,280,o),
-(835,278,o),
-(754,278,cs),
-(647,278,o),
-(554,281,o),
-(362,288,cs),
-(355,288,o),
-(351,289,o),
-(351,292,cs),
-(351,294,o),
-(353,297,o),
-(356,300,cs),
-(426,378,o),
-(470,426,o),
-(522,490,c),
-(510,500,l),
-(404,390,o),
-(294,276,o),
-(174,166,c),
-(428,155,o),
-(531,149,o),
-(697,149,cs),
-(765,149,o),
-(844,150,o),
-(948,152,c),
-(952,150,o),
-(954,146,o),
-(956,140,c),
-(765,134,o),
-(662,129,o),
-(555,129,cs),
-(453,129,o),
-(347,133,o),
-(158,144,c),
-(116,96,o),
-(62,52,o),
-(0,6,c),
-(311,-1,o),
-(510,-6,o),
-(734,-6,cs)
-);
-}
-);
-width = 1156;
 }
 );
 metricLeft = "=0";
@@ -5014,83 +4782,6 @@ nodes = (
 }
 );
 width = 1834;
-},
-{
-anchors = (
-{
-name = exit;
-}
-);
-associatedMasterId = m01;
-attr = {
-coordinates = (
-100,
-0
-);
-};
-backgroundImage = {
-alpha = 80;
-imagePath = "images/kaf-ar.init.x.jpg";
-locked = 1;
-pos = (-783,-451);
-scale = (20,20);
-};
-layerId = "87B636CB-598E-4C8A-BDCD-2800221277DF";
-name = "{100, 0} 3 Jul 22, 18:43";
-shapes = (
-{
-closed = 1;
-nodes = (
-(127,2,o),
-(251,2,o),
-(379,3,cs),
-(495,3,o),
-(614,3,o),
-(754,3,cs),
-(788,3,o),
-(837,8,o),
-(837,42,cs),
-(837,94,o),
-(823,206,o),
-(783,275,cs),
-(772,293,o),
-(761,313,o),
-(751,313,cs),
-(657,313,o),
-(331,308,o),
-(262,308,cs),
-(207,308,o),
-(153,311,o),
-(179,344,cs),
-(225,410,o),
-(268,466,o),
-(312,533,cs),
-(325,553,o),
-(319,568,o),
-(302,546,cs),
-(198,414,o),
-(111,303,o),
-(5,168,cs),
-(-1,160,o),
-(4,155,o),
-(15,155,cs),
-(60,155,o),
-(137,158,o),
-(183,158,cs),
-(235,158,o),
-(519,170,o),
-(597,170,cs),
-(604,170,o),
-(604,153,o),
-(597,152,cs),
-(451,141,o),
-(162,134,o),
-(-20,132,c),
-(-20,1,l)
-);
-}
-);
-width = 837;
 }
 );
 metricLeft = "=-20";
@@ -7837,6 +7528,87 @@ metricRight = "=0";
 },
 {
 export = 0;
+glyphname = "behDotless-ar.medi.long";
+layers = (
+{
+anchors = (
+{
+name = bottom;
+pos = (1740,-110);
+},
+{
+name = damma;
+pos = (1629,260);
+},
+{
+name = entry;
+pos = (1815,0);
+},
+{
+name = exit;
+},
+{
+name = fatha;
+pos = (1743,830);
+},
+{
+name = kasra;
+pos = (1741,-100);
+},
+{
+name = top;
+pos = (1672,553);
+}
+);
+backgroundImage = {
+alpha = 80;
+imagePath = "images/behDotless-ar.medi.jpg";
+locked = 1;
+pos = (-341,-119);
+scale = (20,20);
+};
+layerId = m01;
+metricLeft = "=-20";
+name = Regular;
+shapes = (
+{
+closed = 1;
+nodes = (
+(592,-23,o),
+(1203,-28,o),
+(1815,-1,c),
+(1815,150,l),
+(1809,150,l),
+(1785,359,o),
+(1774,540,o),
+(1764,662,cs),
+(1763,677,o),
+(1750,679,o),
+(1747,664,cs),
+(1732,595,o),
+(1681,500,o),
+(1634,455,cs),
+(1628,449,o),
+(1628,439,o),
+(1631,430,cs),
+(1652,365,o),
+(1662,235,o),
+(1661,153,c),
+(1098,123,o),
+(474,137,o),
+(-20,159,c),
+(-20,-1,l)
+);
+}
+);
+width = 1815;
+}
+);
+metricLeft = "=20@492";
+metricRight = "=0";
+},
+{
+export = 0;
 glyphname = "hah-ar.1";
 layers = (
 {
@@ -8040,6 +7812,102 @@ width = 2237;
 );
 metricLeft = "=0";
 metricRight = "=0";
+},
+{
+export = 0;
+glyphname = "dal-ar.fina.short";
+layers = (
+{
+anchors = (
+{
+name = damma;
+pos = (-338,226);
+},
+{
+name = fatha;
+pos = (666,446);
+},
+{
+name = kasra;
+pos = (638,-82);
+},
+{
+name = top;
+pos = (894,403);
+}
+);
+backgroundImage = {
+alpha = 100;
+imagePath = "1/image-0056.jpg";
+locked = 1;
+pos = (-5659,-5176);
+scale = (20,20);
+};
+layerId = m01;
+name = Regular;
+shapes = (
+{
+closed = 1;
+nodes = (
+(871,-6,o),
+(1018,-4,o),
+(1206,0,c),
+(1206,132,l),
+(1078,132,l),
+(1200,78,l),
+(1154,134,o),
+(1140,214,o),
+(1098,274,cs),
+(1092,284,o),
+(1080,284,o),
+(1070,284,cs),
+(924,280,o),
+(835,278,o),
+(754,278,cs),
+(647,278,o),
+(554,281,o),
+(362,288,cs),
+(355,288,o),
+(351,289,o),
+(351,292,cs),
+(351,294,o),
+(353,297,o),
+(356,300,cs),
+(426,378,o),
+(470,426,o),
+(522,490,c),
+(510,500,l),
+(404,390,o),
+(294,276,o),
+(174,166,c),
+(428,155,o),
+(531,149,o),
+(697,149,cs),
+(765,149,o),
+(844,150,o),
+(948,152,c),
+(952,150,o),
+(954,146,o),
+(956,140,c),
+(765,134,o),
+(662,129,o),
+(555,129,cs),
+(453,129,o),
+(347,133,o),
+(158,144,c),
+(116,96,o),
+(62,52,o),
+(0,6,c),
+(311,-1,o),
+(510,-6,o),
+(734,-6,cs)
+);
+}
+);
+width = 1156;
+}
+);
+metricLeft = "=0";
 },
 {
 export = 0;
@@ -8289,6 +8157,84 @@ width = 4443;
 }
 );
 metricLeft = "=0";
+metricRight = "=0";
+},
+{
+export = 0;
+glyphname = "kaf-ar.init.short";
+layers = (
+{
+anchors = (
+{
+name = exit;
+}
+);
+backgroundImage = {
+alpha = 80;
+imagePath = "images/kaf-ar.init.x.jpg";
+locked = 1;
+pos = (-783,-451);
+scale = (20,20);
+};
+layerId = m01;
+name = Regular;
+shapes = (
+{
+closed = 1;
+nodes = (
+(127,2,o),
+(251,2,o),
+(379,3,cs),
+(495,3,o),
+(614,3,o),
+(754,3,cs),
+(788,3,o),
+(837,8,o),
+(837,42,cs),
+(837,94,o),
+(823,206,o),
+(783,275,cs),
+(772,293,o),
+(761,313,o),
+(751,313,cs),
+(657,313,o),
+(331,308,o),
+(262,308,cs),
+(207,308,o),
+(153,311,o),
+(179,344,cs),
+(225,410,o),
+(268,466,o),
+(312,533,cs),
+(325,553,o),
+(319,568,o),
+(302,546,cs),
+(198,414,o),
+(111,303,o),
+(5,168,cs),
+(-1,160,o),
+(4,155,o),
+(15,155,cs),
+(60,155,o),
+(137,158,o),
+(183,158,cs),
+(235,158,o),
+(519,170,o),
+(597,170,cs),
+(604,170,o),
+(604,153,o),
+(597,152,cs),
+(451,141,o),
+(162,134,o),
+(-20,132,c),
+(-20,1,l)
+);
+}
+);
+width = 837;
+}
+);
+metricLeft = "=-20";
 metricRight = "=0";
 },
 {
@@ -11509,30 +11455,18 @@ unicode = 1622;
 );
 instances = (
 {
-axesValues = (
-0,
-0
-);
 instanceInterpolations = {
 m01 = 1;
 };
 name = Regular;
 },
 {
-axesValues = (
-100,
-0
-);
 instanceInterpolations = {
 m01 = 1;
 };
 name = Shrink;
 },
 {
-axesValues = (
-0,
-100
-);
 instanceInterpolations = {
 m01 = 1;
 };

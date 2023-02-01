@@ -75,9 +75,9 @@ CODEPAGE_RANGES = {
 }
 
 
-def draw(layer, layerSet, removeOverlap):
+def draw(layer, layerSet):
     t2pen = T2CharStringPen(layer.width, layerSet)
-    if removeOverlap and layer.paths:
+    if layer.paths:
         from pathops import Path
 
         path = Path()
@@ -407,7 +407,7 @@ def buildInstance(instance, args, glyphOrder):
         layer = getLayer(glyph, instance)
         if getCategory(glyph, args.data) == ("Mark", "Nonspacing"):
             layer.width = 0
-        charStrings[name] = draw(layer, layerSet, not args.variable)
+        charStrings[name] = draw(layer, layerSet)
         advanceWidths[name] = layer.width
 
         for layer in glyph.layers:
@@ -428,7 +428,7 @@ def buildInstance(instance, args, glyphOrder):
                                 colorLayerSet[g.name] = l
 
                     new += f".layer{len(colorLayers[name])}"
-                    charStrings[new] = draw(layer, colorLayerSet, not args.variable)
+                    charStrings[new] = draw(layer, colorLayerSet)
                     advanceWidths[new] = advanceWidths[name]
 
                     exportGlyphOrder.append(new)
@@ -481,11 +481,8 @@ def buildInstance(instance, args, glyphOrder):
         lineGap=master.customParameters["hheaLineGap"] or 0,
     )
 
-    if args.debug or not args.variable:
-        fb.setupCFF(names["psName"], {}, charStrings, {})
-        fb.font["CFF "].compile(fb.font)
-    else:
-        fb.setupCFF2(charStrings)
+    fb.setupCFF(names["psName"], {}, charStrings, {})
+    fb.font["CFF "].compile(fb.font)
 
     metrics = {}
     for name, width in advanceWidths.items():
@@ -524,53 +521,15 @@ def buildInstance(instance, args, glyphOrder):
     fb.setupCOLR(colorLayers)
 
     instance.font = fb.font
-    if args.debug and args.variable:
-        fb.font.save(f"{instance.fontName}.otf")
 
     return fb.font
-
-
-def buildVariable(font, glyphOrder, args):
-    for instance in font.instances:
-        print(f" MASTER  {instance.name}")
-        buildInstance(instance, args, glyphOrder)
-        if instance.name == "Regular":
-            regular = instance
-
-    ds = DesignSpaceDocument()
-
-    for i, axisDef in enumerate(font.axes):
-        axis = ds.newAxisDescriptor()
-        axis.tag = axisDef.axisTag
-        axis.name = axisDef.name
-        axis.hidden = axisDef.hidden
-        axis.maximum = max(x.axes[i] for x in font.instances)
-        axis.minimum = min(x.axes[i] for x in font.instances)
-        axis.default = regular.axes[i]
-        ds.addAxis(axis)
-
-    for instance in font.instances:
-        source = ds.newSourceDescriptor()
-        source.font = instance.font
-        source.familyName = instance.familyName
-        source.styleName = instance.name
-        source.name = instance.fullName
-        source.location = {a.name: instance.axes[i] for i, a in enumerate(ds.axes)}
-        ds.addSource(source)
-
-    print(f" MERGE   {font.familyName}")
-    otf, _, _ = merge(ds)
-    return otf
 
 
 def buildFont(args):
     font = GSFont(args.glyphs)
     glyphOrder = [g.name for g in font.glyphs]
 
-    if args.variable:
-        return buildVariable(font, glyphOrder, args)
-    else:
-        return buildInstance(font.instances[0], args, glyphOrder)
+    return buildInstance(font.instances[0], args, glyphOrder)
 
 
 def data(path):
@@ -587,7 +546,6 @@ def main():
     parser.add_argument("otf", help="output OTF file", type=Path)
     parser.add_argument("--data", help="GlyphData.xml file", type=data)
     parser.add_argument("--debug", help="Save debug files", action="store_true")
-    parser.add_argument("--variable", help="Build variable font", action="store_true")
     args = parser.parse_args()
 
     otf = buildFont(args)
