@@ -427,7 +427,7 @@ def buildInstance(instance, args, glyphOrder):
                             ):
                                 colorLayerSet[g.name] = l
 
-                    new += f".layer{len(colorLayers[name])}"
+                    new += f".color{len(colorLayers[name])}"
                     charStrings[new] = draw(layer, colorLayerSet)
                     advanceWidths[new] = advanceWidths[name]
 
