@@ -397,11 +397,13 @@ def buildInstance(instance, args, glyphOrder):
     colorLayers = {}
 
     layerSet = {g.name: g.layers[master.id] for g in font.glyphs}
+    exportGlyphOrder = []
 
-    for name in list(glyphOrder):
+    for name in glyphOrder:
         glyph = font.glyphs[name]
         if not glyph.export:
             continue
+        exportGlyphOrder.append(name)
 
         layer = getLayer(glyph, instance)
         if getCategory(glyph, args.data) == ("Mark", "Nonspacing"):
@@ -430,17 +432,17 @@ def buildInstance(instance, args, glyphOrder):
                     charStrings[new] = draw(layer, colorLayerSet, not args.variable)
                     advanceWidths[new] = advanceWidths[name]
 
-                    glyphOrder.append(new)
+                    exportGlyphOrder.append(new)
                 colorLayers[name].append((new, paletteIdx))
 
         for uni in glyph.unicodes:
             characterMap[int(uni, 16)] = name
 
     # XXX
-    glyphOrder.pop(glyphOrder.index(".notdef"))
-    glyphOrder.pop(glyphOrder.index("space"))
-    glyphOrder.insert(0, ".notdef")
-    glyphOrder.insert(1, "space")
+    exportGlyphOrder.pop(exportGlyphOrder.index(".notdef"))
+    exportGlyphOrder.pop(exportGlyphOrder.index("space"))
+    exportGlyphOrder.insert(0, ".notdef")
+    exportGlyphOrder.insert(1, "space")
 
     version = float(args.version)
 
@@ -471,7 +473,7 @@ def buildInstance(instance, args, glyphOrder):
         created=int(date.timestamp()) - mac_epoch_diff,
         modified=int(stat.st_mtime) - mac_epoch_diff,
     )
-    fb.setupGlyphOrder(glyphOrder)
+    fb.setupGlyphOrder(exportGlyphOrder)
     fb.setupCharacterMap(characterMap)
     fb.setupNameTable(names, mac=False)
     fb.setupHorizontalHeader(
