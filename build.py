@@ -139,7 +139,6 @@ lookupflag IgnoreMarks;
 {classes}
 }} kern;
 """
-    fea += "include(hah.fea)"
 
     return fea
 

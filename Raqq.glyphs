@@ -460,10 +460,14 @@ code = "# Automatic Code
 tag = curs;
 },
 {
-code = "lookupflag IgnoreMarks;
+code = "lookup spacing {
+lookupflag IgnoreMarks;
 	pos [@isol @fina] [@init @isol] <440 0 440 0>;
+} spacing;
 
 # Automatic Code
+
+include(hah.fea)
 ";
 tag = kern;
 },

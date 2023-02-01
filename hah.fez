@@ -1,6 +1,6 @@
 LoadPlugin tarboosh.FixOverhang;
 LoadAnchors;
 
-Feature kern {
+Routine overhang {
   FixOverhang 0 100 /hah-ar\.(medi|fina)|yehbarree-ar.fina/ /.*\.medi/ /.*\.init/;
-};
+} IgnoreMarks;
