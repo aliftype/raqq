@@ -23,7 +23,7 @@ VERSION = $(shell python version.py $(CONFIG))
 DIST = $(NAME)-$(VERSION)
 
 FEZ = $(wildcard *.fez)
-FEA = $(FEZ:%.fez=%.fea)
+FEA = $(FEZ:%.fez=$(NAME)-%.fea)
 
 ARGS ?= 
 
@@ -33,7 +33,7 @@ ARGS ?=
 
 all: $(NAME).otf # $(NAME).ttf
 
-%.fea: %.fez $(NAME).glyphs
+$(NAME)-%.fea: %.fez $(NAME).glyphs
 	$(info   GEN    $(@F))
 	touch $@
 	python fez-to-fea.py $(NAME).glyphs $< -o $@ || (rm -rf $@ && false)
