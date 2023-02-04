@@ -111,7 +111,7 @@ def makeKern(font, master, instance, glyphOrder):
     for group, glyphs in groups.items():
         fea += f"{group} = [{' '.join(glyphs)}];\n"
 
-    kerning = font.kerningRTL[master.id]
+    kerning = font.kerningRTL.get(master.id, [])
     pairs = ""
     classes = ""
     enums = ""
