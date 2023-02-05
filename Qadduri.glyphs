@@ -203,7 +203,7 @@ lookup init {
 	sub behDotless-ar by behDotless-ar.init;
 	sub hah-ar by hah-ar.init;
 	sub seen-ar by seen-ar.init;
-	sub sheen-ar by seen-ar.init threedotshorizontalabove-ar.alt;
+	sub sheen-ar by seen-ar.init threedotshorizontalabove-ar;
 	sub sad-ar by sad-ar.init;
 	sub tah-ar by tah-ar.init;
 	sub ain-ar by ain-ar.init;
@@ -222,7 +222,7 @@ lookup medi {
 	sub behDotless-ar by behDotless-ar.medi;
 	sub hah-ar by hah-ar.medi;
 	sub seen-ar by seen-ar.medi;
-	sub sheen-ar by seen-ar.medi threedotshorizontalabove-ar.alt;
+	sub sheen-ar by seen-ar.medi threedotshorizontalabove-ar;
 	sub sad-ar by sad-ar.medi;
 	sub tah-ar by tah-ar.medi;
 	sub ain-ar by ain-ar.medi;
@@ -292,10 +292,18 @@ lookup meem_meem {
 #	sub meem-ar.fina by meem-ar;
 #} beh_meem;
 
+lookup high_beh {
+	sub behDotless-ar.init by behDotless-ar.init.high;
+	sub behDotless-ar.medi by behDotless-ar.init.high;
+} high_beh;
+
 lookup rlig_2 {
 	lookupflag IgnoreMarks;
-	sub behDotless-ar.init' [behDotless-ar.medi behDotless-ar.fina] by behDotless-ar.init.high;
-	sub behDotless-ar.medi' [behDotless-ar.medi behDotless-ar.fina] by behDotless-ar.medi.high;
+
+	sub	[behDotless-ar.init behDotless-ar.medi]' lookup high_beh
+		[behDotless-ar.medi behDotless-ar.fina
+		 seen-ar.medi seen-ar.fina]
+	;
 
 #	sub behDotless_seen-ar.init waw-ar.fina' by waw-ar.fina.alt;
 
@@ -1896,80 +1904,84 @@ layers = (
 anchors = (
 {
 name = entry;
-pos = (428,0);
+pos = (398,0);
 },
 {
 name = exit;
 },
 {
 name = top;
-pos = (189,263);
+pos = (183,212);
 }
 );
 backgroundImage = {
-alpha = 80;
-angle = -0.1;
-imagePath = "images/seen-ar.medi.jpg";
+angle = -1;
+imagePath = "images/MS-ADD-01116-000-00021.jpg";
 locked = 1;
-pos = (-850,-297);
-scale = (20,20);
+pos = (-3918,-2680);
+scale = (5,5);
 };
 layerId = m01;
 shapes = (
 {
 closed = 1;
 nodes = (
-(428,0,l),
-(-20,0,l),
-(-19,150,l),
-(77,150,l),
-(67,141,o),
-(57,125,o),
-(47,116,c),
-(32,145,o),
-(23,175,o),
-(3,203,cs),
-(-1,208,o),
-(-1,216,o),
-(3,220,cs),
-(30,247,o),
-(67,332,o),
-(83,376,cs),
-(88,390,o),
-(99,390,o),
-(103,379,cs),
-(131,304,o),
-(162,242,o),
-(195,184,c),
-(147,228,l),
-(208,278,o),
-(237,367,o),
-(244,402,cs),
-(246,411,o),
-(260,412,o),
-(263,398,cs),
-(274,345,o),
-(290,285,o),
-(313,251,c),
-(270,263,l),
-(339,337,o),
-(379,404,o),
-(398,446,cs),
-(402,454,o),
-(415,455,o),
-(416,441,cs),
-(421,375,o),
-(425,301,o),
-(426,233,cs),
-(426,192,o),
-(426,154,o),
-(423,120,c),
-(385,150,l),
-(428,150,l)
+(365,332,o),
+(349,332,o),
+(347,313,cs),
+(342,278,o),
+(323,249,o),
+(285,236,cs),
+(274,233,o),
+(270,227,o),
+(273,214,cs),
+(278,186,o),
+(281,152,o),
+(295,119,c),
+(314,127,l),
+(275,144,o),
+(247,201,o),
+(224,270,cs),
+(221,280,o),
+(216,278,o),
+(213,269,cs),
+(193,214,o),
+(171,196,o),
+(145,183,cs),
+(138,179,o),
+(134,178,o),
+(136,169,cs),
+(140,149,o),
+(149,122,o),
+(159,96,c),
+(165,126,l),
+(138,128,o),
+(114,152,o),
+(95,242,cs),
+(92,257,o),
+(83,256,o),
+(76,244,cs),
+(54,208,o),
+(40,179,o),
+(14,167,cs),
+(3,162,o),
+(-1,157,o),
+(3,144,cs),
+(8,129,o),
+(13,116,o),
+(20,101,c),
+(24,110,l),
+(-20,110,l),
+(-20,1,l),
+(397,0,l),
+(398,110,l),
+(396,185,o),
+(379,261,o),
+(369,313,cs)
 );
 }
 );
-width = 428;
+width = 398;
 }
 );
 metricLeft = "=-20";
@@ -6655,7 +6667,7 @@ ref = "seen-ar";
 },
 {
 pos = (86,405);
-ref = "threedotshorizontalabove-ar";
+ref = "threedotshorizontalabove-ar.alt";
 }
 );
 width = 726;
@@ -8485,6 +8497,38 @@ layers = (
 anchors = (
 {
 name = _top;
+pos = (241,67);
+}
+);
+layerId = m01;
+shapes = (
+{
+angle = 4;
+pos = (317,99);
+ref = "dotabove-ar";
+},
+{
+angle = 3;
+pos = (31,15);
+ref = "dotabove-ar";
+},
+{
+angle = 6;
+pos = (173,46);
+ref = "dotabove-ar";
+}
+);
+width = 434;
+}
+);
+},
+{
+glyphname = "threedotshorizontalabove-ar.alt";
+layers = (
+{
+anchors = (
+{
+name = _top;
 pos = (397,-14);
 }
 );
@@ -8535,62 +8579,6 @@ width = 615;
 );
 metricLeft = "=0";
 metricRight = "=0";
-},
-{
-glyphname = "threedotshorizontalabove-ar.alt";
-layers = (
-{
-anchors = (
-{
-name = _top;
-pos = (210,-14);
-}
-);
-layerId = m01;
-shapes = (
-{
-closed = 1;
-nodes = (
-(372,135,o),
-(406,189,o),
-(434,249,c),
-(416,257,l),
-(388,199,o),
-(356,147,o),
-(320,98,c),
-(336,86,l)
-);
-},
-{
-closed = 1;
-nodes = (
-(218,82,o),
-(253,137,o),
-(276,196,c),
-(258,204,l),
-(235,147,o),
-(202,94,o),
-(162,42,c),
-(178,30,l)
-);
-},
-{
-closed = 1;
-nodes = (
-(52,54,o),
-(76,110,o),
-(98,166,c),
-(80,174,l),
-(58,118,o),
-(34,64,o),
-(0,12,c),
-(16,0,l)
-);
-}
-);
-width = 434;
-}
-);
 },
 {
 glyphname = "hamzaabove-ar";

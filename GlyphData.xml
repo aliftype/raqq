@@ -86,12 +86,12 @@
   <glyph name="seen-ar.medi" category="Letter" script="arabic"
          sortName="arL0025"
          anchors="top, fatha, damma, kasra"
-         accents="fatha-ar, fathatan-ar, damma-ar, dammatan-ar, kasra-ar, kasratan-ar, threedotshorizontalabove-ar.alt"
+         accents="fatha-ar, fathatan-ar, damma-ar, dammatan-ar, kasra-ar, kasratan-ar, threedotshorizontalabove-ar"
   />
   <glyph name="seen-ar.init" category="Letter" script="arabic"
          sortName="arL0026"
          anchors="top, fatha, damma, kasra"
-         accents="fatha-ar, fathatan-ar, damma-ar, dammatan-ar, kasra-ar, kasratan-ar, threedotshorizontalabove-ar.alt"
+         accents="fatha-ar, fathatan-ar, damma-ar, dammatan-ar, kasra-ar, kasratan-ar, threedotshorizontalabove-ar"
   />
   <glyph name="sad-ar" unicode="0635" category="Letter" script="arabic"
          sortName="arL0027"
