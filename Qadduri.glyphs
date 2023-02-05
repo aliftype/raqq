@@ -9175,18 +9175,6 @@ instanceInterpolations = {
 m01 = 1;
 };
 name = Regular;
-},
-{
-instanceInterpolations = {
-m01 = 1;
-};
-name = Shrink;
-},
-{
-instanceInterpolations = {
-m01 = 1;
-};
-name = Stretch;
 }
 );
 metrics = (
