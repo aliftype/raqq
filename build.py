@@ -20,14 +20,14 @@ import datetime
 
 from fontTools.designspaceLib import DesignSpaceDocument
 from fontTools.fontBuilder import FontBuilder
-from fontTools.misc.transform import Identity
+from fontTools.misc.transform import Identity, Transform
 from fontTools.pens.reverseContourPen import ReverseContourPen
 from fontTools.pens.t2CharStringPen import T2CharStringPen
 from fontTools.pens.transformPen import TransformPen
 from fontTools.ttLib.tables._h_e_a_d import mac_epoch_diff
 from fontTools.varLib import build as merge
 
-from glyphsLib import GSFont
+from glyphsLib import GSFont, GSAnchor
 from glyphsLib.glyphdata import get_glyph as getGlyphInfo, GlyphData
 
 
@@ -522,9 +522,35 @@ def buildInstance(instance, args, glyphOrder):
     return fb.font
 
 
+def propagateAnchors(layer):
+    for component in layer.components:
+        clayer = component.layer or component.component.layers[0]
+        propagateAnchors(clayer)
+        for anchor in clayer.anchors:
+            names = [a.name for a in layer.anchors]
+            name = anchor.name
+            if name.startswith("_") or name in names:
+                continue
+            if name in ("entry", "exit"):
+                continue
+            x, y = anchor.position.x, anchor.position.y
+            if component.transform != Identity:
+                t = Transform(*component.transform.value)
+                x, y = t.transformPoint((x, y))
+            new = GSAnchor(name)
+            new.position.x, new.position.y = (x, y)
+            layer.anchors[name] = new
+
+
 def buildFont(args):
     font = GSFont(args.glyphs)
     glyphOrder = [g.name for g in font.glyphs]
+
+    for glyph in font.glyphs:
+        if glyph.subCategory == "Nonspacing":
+            continue
+        for layer in glyph.layers:
+            propagateAnchors(layer)
 
     return buildInstance(font.instances[0], args, glyphOrder)
 
