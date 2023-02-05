@@ -397,6 +397,7 @@ def buildInstance(instance, args, glyphOrder):
 
     layerSet = {g.name: g.layers[master.id] for g in font.glyphs}
     exportGlyphOrder = []
+    newGlyphs = []
 
     for name in glyphOrder:
         glyph = font.glyphs[name]
@@ -431,11 +432,13 @@ def buildInstance(instance, args, glyphOrder):
                     charStrings[new] = draw(layer, colorLayerSet)
                     advanceWidths[new] = advanceWidths[name]
 
-                    exportGlyphOrder.append(new)
+                    newGlyphs.append(new)
                 colorLayers[name].append((new, paletteIdx))
 
         for uni in glyph.unicodes:
             characterMap[int(uni, 16)] = name
+
+    exportGlyphOrder += sorted(newGlyphs)
 
     version = float(args.version)
 
