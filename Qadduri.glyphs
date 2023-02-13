@@ -300,7 +300,7 @@ lookup beh_meem {
 
 lookup high_beh {
 	sub behDotless-ar.init by behDotless-ar.init.high;
-	sub behDotless-ar.medi by behDotless-ar.init.high;
+	sub behDotless-ar.medi by behDotless-ar.medi.high;
 } high_beh;
 
 lookup short_lam {
@@ -871,38 +871,37 @@ layers = (
 anchors = (
 {
 name = bottom;
-pos = (35,-38);
+pos = (51,-38);
 },
 {
 name = damma;
-pos = (-1,190);
+pos = (15,190);
 },
 {
 name = entry;
-pos = (134,0);
+pos = (150,0);
 },
 {
 name = exit;
-pos = (-1,0);
 },
 {
 name = fatha;
-pos = (56,468);
+pos = (72,468);
 },
 {
 name = kasra;
-pos = (68,-77);
+pos = (84,-77);
 },
 {
 name = top;
-pos = (52,352);
+pos = (68,352);
 }
 );
 backgroundImage = {
 alpha = 80;
 imagePath = "images/MS-ADD-01116-000-00008.jpg";
 locked = 1;
-pos = (-3900,-2823);
+pos = (-3884,-2823);
 scale = (5,5);
 };
 layerId = m01;
@@ -910,32 +909,32 @@ shapes = (
 {
 closed = 1;
 nodes = (
-(134,0,l),
-(134,110,l),
-(122,110,o),
-(120,134,o),
-(118,157,cs),
-(112,234,o),
-(107,309,o),
-(103,381,cs),
-(102,400,o),
-(88,399,o),
-(82,391,cs),
-(51,345,o),
-(28,315,o),
-(9,309,cs),
-(-4,305,o),
-(-7,292,o),
-(-6,282,cs),
-(-1,231,o),
-(0,174,o),
-(2,110,c),
+(150,0,l),
+(150,110,l),
+(138,110,o),
+(136,134,o),
+(134,157,cs),
+(128,234,o),
+(123,309,o),
+(119,381,cs),
+(118,400,o),
+(104,399,o),
+(98,391,cs),
+(67,345,o),
+(44,315,o),
+(25,309,cs),
+(12,305,o),
+(9,292,o),
+(10,282,cs),
+(15,231,o),
+(16,174,o),
+(18,110,c),
 (-20,110,l),
 (-20,0,l)
 );
 }
 );
-width = 134;
+width = 150;
 }
 );
 metricLeft = "=-20@0";
@@ -948,31 +947,30 @@ layers = (
 anchors = (
 {
 name = bottom;
-pos = (35,-38);
+pos = (50,-38);
 },
 {
 name = damma;
-pos = (-1,190);
+pos = (14,190);
 },
 {
 name = entry;
-pos = (125,0);
+pos = (140,0);
 },
 {
 name = exit;
-pos = (-1,0);
 },
 {
 name = fatha;
-pos = (42,510);
+pos = (57,510);
 },
 {
 name = kasra;
-pos = (68,-77);
+pos = (83,-77);
 },
 {
 name = top;
-pos = (38,394);
+pos = (53,394);
 }
 );
 backgroundImage = {
@@ -980,7 +978,7 @@ alpha = 80;
 angle = -0.4;
 imagePath = "images/MS-ADD-01116-000-00025.jpg";
 locked = 1;
-pos = (-3514,-2714);
+pos = (-3499,-2714);
 scale = (5,5);
 };
 layerId = m01;
@@ -988,32 +986,32 @@ shapes = (
 {
 closed = 1;
 nodes = (
-(125,0,l),
-(125,110,l),
-(113,110,o),
-(111,134,o),
-(109,157,cs),
-(103,234,o),
-(86,350,o),
-(77,419,cs),
-(75,438,o),
-(56,436,o),
-(52,423,cs),
-(44,394,o),
-(14,352,o),
-(-5,346,cs),
-(-18,342,o),
-(-22,334,o),
-(-20,324,cs),
-(-11,273,o),
-(0,174,o),
-(2,110,c),
+(140,0,l),
+(140,110,l),
+(128,110,o),
+(126,134,o),
+(124,157,cs),
+(118,234,o),
+(101,350,o),
+(92,419,cs),
+(90,438,o),
+(71,436,o),
+(67,423,cs),
+(59,394,o),
+(29,352,o),
+(10,346,cs),
+(-3,342,o),
+(-7,334,o),
+(-5,324,cs),
+(4,273,o),
+(15,174,o),
+(17,110,c),
 (-20,110,l),
 (-20,0,l)
 );
 }
 );
-width = 125;
+width = 140;
 }
 );
 metricLeft = "=-20@0";
