@@ -547,7 +547,7 @@ def buildFont(args):
     glyphOrder = [g.name for g in font.glyphs]
 
     for glyph in font.glyphs:
-        if glyph.subCategory == "Nonspacing":
+        if getCategory(glyph, args.data) == ("Mark", "Nonspacing"):
             continue
         for layer in glyph.layers:
             propagateAnchors(layer)
