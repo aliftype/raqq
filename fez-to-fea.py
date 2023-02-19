@@ -1,12 +1,20 @@
 from fez import FezParser
 from fontFeatures.optimizer import Optimizer
-from babelfont import load
+from babelfont.convertors import Convert
+from babelfont.convertors.glyphs import GlyphsThree
 from pathlib import Path
 import warnings
 
 
+class GlyphsDummy(GlyphsThree):
+    def _load_features(self):
+        pass
+
+
 def fez2fea(args):
-    font = load(str(args.font))
+    convert = Convert(str(args.font))
+    convert.convertors = [GlyphsDummy]
+    font = convert.load()
     parser = FezParser(font)
     parser.parseFile(args.fez)
     Optimizer(parser.fontfeatures).optimize(level=args.O)

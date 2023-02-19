@@ -35,9 +35,7 @@ all: $(NAME).otf # $(NAME).ttf
 
 $(NAME)-%.fea: %.fez $(NAME).glyphs
 	$(info   GEN    $(@F))
-	rm -rf $@
-	touch $@
-	python fez-to-fea.py $(NAME).glyphs $< -o $@ || (rm -rf $@ && false)
+	python fez-to-fea.py $(NAME).glyphs $< -o $@
 
 %.otf: $(NAME).glyphs $(CONFIG) GlyphData.xml $(FEA)
 	$(info   BUILD  $(@F))
