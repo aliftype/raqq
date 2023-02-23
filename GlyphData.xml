@@ -35,13 +35,13 @@
   />
   <glyph name="hah-ar" unicode="062D" category="Letter" script="arabic"
          sortName="arL0014"
-         anchors="top, center, fatha, damma, kasra"
-         accents="fatha-ar, fathatan-ar, damma-ar, dammatan-ar, kasra-ar, kasratan-ar, dotabove-ar, dotcenter-ar"
+         anchors="top, bottom, fatha, damma, kasra"
+         accents="fatha-ar, fathatan-ar, damma-ar, dammatan-ar, kasra-ar, kasratan-ar, dotabove-ar, dotbelow-ar"
   />
   <glyph name="hah-ar.fina" category="Letter" script="arabic"
          sortName="arL0015"
-         anchors="top, center, fatha, damma, kasra"
-         accents="fatha-ar, fathatan-ar, damma-ar, dammatan-ar, kasra-ar, kasratan-ar, dotabove-ar, dotcenter-ar"
+         anchors="top, bottom, fatha, damma, kasra"
+         accents="fatha-ar, fathatan-ar, damma-ar, dammatan-ar, kasra-ar, kasratan-ar, dotabove-ar, dotbelow-ar"
   />
   <glyph name="hah-ar.medi" category="Letter" script="arabic"
          sortName="arL0016"
@@ -331,13 +331,13 @@
   <glyph name="peh-ar" unicode="067E" category="Letter" script="arabic" decompose="behDotless-ar, threedotsdownbelow-ar"
          sortName="arL0126"
   />
-  <glyph name="jeem-ar" unicode="062C" category="Letter" script="arabic" decompose="hah-ar, dotcenter-ar"
+  <glyph name="jeem-ar" unicode="062C" category="Letter" script="arabic" decompose="hah-ar, dotbelow-ar"
          sortName="arL0144"
   />
   <glyph name="khah-ar" unicode="062E" category="Letter" script="arabic" decompose="hah-ar, dotabove-ar"
          sortName="arL0145"
   />
-  <glyph name="tcheh-ar" unicode="0686" category="Letter" script="arabic" decompose="hah-ar, threedotsdowncenter-ar"
+  <glyph name="tcheh-ar" unicode="0686" category="Letter" script="arabic" decompose="hah-ar, threedotsdownbelow-ar"
          sortName="arL0151"
   />
   <glyph name="thal-ar" unicode="0630" category="Letter" script="arabic" decompose="dal-ar, dotabove-ar"
@@ -562,10 +562,6 @@
   <glyph name="dotbelow-ar" category="Mark" subCategory="Nonspacing" script="arabic"
          sortName="arM1061"
          anchors="_bottom"
-  />
-  <glyph name="dotcenter-ar" category="Mark" subCategory="Nonspacing" script="arabic"
-         sortName="arM1062"
-         anchors="_center"
   />
 
   <glyph name="twodotshorizontalabove-ar" category="Mark" subCategory="Nonspacing" script="arabic"
