@@ -54,7 +54,7 @@ fehDotless-ar.init
 kaf-ar.init
 lam-ar.init
 meem-ar.init
-meem-ar.init.alt
+meem-ar.init.round
 heh-ar.init
 ";
 name = init;
@@ -287,21 +287,22 @@ lookup rlig_1 {
 } rlig_1;
 
 lookup rounded {
-	sub meem-ar.init	by meem-ar.init.alt;
-	sub meem-ar.medi	by meem-ar.medi.alt;
-	sub meem-ar.fina	by meem-ar.fina.alt;
+	sub meem-ar.init	by meem-ar.init.round;
+	sub meem-ar.medi	by meem-ar.medi.round;
+	sub meem-ar.fina	by meem-ar.fina.round;
 	sub waw-ar.fina		by waw-ar.fina.alt;
-	sub heh-ar.init		by heh-ar.init.alt;
+	sub heh-ar.init		by heh-ar.init.round;
 } rounded;
 
 lookup rounded2 {
-	sub meem-ar.medi		by meem-ar.medi.alt2;
-	sub meem-ar.medi.alt	by meem-ar.medi.alt3;
-	sub heh-ar.medi			by heh-ar.medi.alt;
+	sub meem-ar.medi		by meem-ar.medi.round2;
+	sub meem-ar.medi.round	by meem-ar.medi.round3;
+	sub heh-ar.medi			by heh-ar.medi.round;
 } rounded2;
 
 lookup beh_meem {
-	sub behDotless-ar.medi by behDotless-ar.medi.meem;
+	sub behDotless-ar.medi	by behDotless-ar.medi.round;
+	sub lam-ar.medi			by lam-ar.medi.round;
 } beh_meem;
 
 lookup high_beh {
@@ -312,6 +313,7 @@ lookup high_beh {
 lookup short_lam {
 	sub lam-ar.fina		by lam-ar.fina.short;
 	sub lam-ar.medi		by lam-ar.medi.short;
+	sub lam-ar.medi.round	by lam-ar.medi.round.short;
 	sub alef-ar.fina	by alef-ar.fina.short;
 } short_lam;
 
@@ -323,7 +325,7 @@ lookup rlig_2 {
 		 seen-ar.medi seen-ar.fina]
 	;
 
-	sub [behDotless-ar.medi]' lookup beh_meem
+	sub [behDotless-ar.medi lam-ar.medi]' lookup beh_meem
 		[meem-ar.medi meem-ar.fina]' lookup rounded
 	;
 
@@ -335,20 +337,20 @@ lookup rlig_2 {
 		 @aftermeem' lookup rounded
 	;
 
-	sub [lam-ar.init lam-ar.medi tah-ar.init tah-ar.medi]
-		[lam-ar.medi lam-ar.fina alef-ar.fina]' lookup short_lam
-	;
-
 } rlig_2;
 
 lookup rlig_3 {
 	lookupflag IgnoreMarks;
 
+	sub [lam-ar.init lam-ar.medi tah-ar.init tah-ar.medi]
+		[lam-ar.medi lam-ar.medi.round lam-ar.fina alef-ar.fina]' lookup short_lam
+	;
+
 	sub [meem-ar.init meem-ar.medi]' lookup rounded2
 		[hah-ar.medi hah-ar.fina]
 	;
 
-	sub [meem-ar.medi.alt]' lookup rounded2
+	sub [meem-ar.medi.round]' lookup rounded2
 		 @aftermeem' lookup rounded;
 	;
 } rlig_3;
@@ -557,6 +559,15 @@ nodes = (
 {
 closed = 1;
 nodes = (
+(98,576,l),
+(342,576,l),
+(342,49,l),
+(98,49,l)
+);
+},
+{
+closed = 1;
+nodes = (
 (122,49,l),
 (366,576,l),
 (318,576,l),
@@ -566,19 +577,10 @@ nodes = (
 {
 closed = 1;
 nodes = (
-(73,576,l),
-(122,576,l),
+(318,49,l),
 (366,49,l),
-(318,49,l)
-);
-},
-{
-closed = 1;
-nodes = (
-(98,576,l),
-(342,576,l),
-(342,49,l),
-(98,49,l)
+(122,576,l),
+(73,576,l)
 );
 }
 );
@@ -1158,7 +1160,7 @@ metricLeft = "=-20@0";
 metricRight = "=-15";
 },
 {
-glyphname = "behDotless-ar.medi.meem";
+glyphname = "behDotless-ar.medi.round";
 layers = (
 {
 anchors = (
@@ -4291,6 +4293,58 @@ metricLeft = "=-20";
 metricRight = "=0";
 },
 {
+glyphname = "lam-ar.medi.round";
+layers = (
+{
+anchors = (
+{
+name = damma;
+pos = (-44,166);
+},
+{
+name = fatha;
+pos = (-93,559);
+}
+);
+layerId = m01;
+shapes = (
+{
+ref = "alef-ar.fina";
+}
+);
+width = 111;
+}
+);
+metricLeft = "=0@55";
+metricRight = "=0";
+},
+{
+glyphname = "lam-ar.medi.round.short";
+layers = (
+{
+anchors = (
+{
+name = damma;
+pos = (-44,166);
+},
+{
+name = fatha;
+pos = (-99,511);
+}
+);
+layerId = m01;
+shapes = (
+{
+ref = "alef-ar.fina.short";
+}
+);
+width = 105;
+}
+);
+metricLeft = "=0@55";
+metricRight = "=0";
+},
+{
 glyphname = "lam-ar.medi.short";
 layers = (
 {
@@ -4778,7 +4832,7 @@ metricLeft = "=0";
 metricRight = "=0";
 },
 {
-glyphname = "meem-ar.fina.alt";
+glyphname = "meem-ar.fina.round";
 layers = (
 {
 layerId = m01;
@@ -4971,7 +5025,7 @@ metricLeft = "=-20";
 metricRight = "=0";
 },
 {
-glyphname = "meem-ar.medi.alt";
+glyphname = "meem-ar.medi.round";
 layers = (
 {
 anchors = (
@@ -5004,7 +5058,7 @@ metricLeft = "=0";
 metricRight = "=0";
 },
 {
-glyphname = "meem-ar.medi.alt2";
+glyphname = "meem-ar.medi.round2";
 kernLeft = meem.alt;
 layers = (
 {
@@ -5091,7 +5145,7 @@ metricLeft = "=-10";
 metricRight = "=0";
 },
 {
-glyphname = "meem-ar.medi.alt3";
+glyphname = "meem-ar.medi.round3";
 kernLeft = meem.alt;
 layers = (
 {
@@ -5108,7 +5162,7 @@ pos = (0,-20);
 layerId = m01;
 shapes = (
 {
-ref = "meem-ar.init.alt";
+ref = "meem-ar.init.round";
 }
 );
 width = 398;
@@ -5199,7 +5253,7 @@ metricLeft = "=-20";
 metricRight = "=0";
 },
 {
-glyphname = "meem-ar.init.alt";
+glyphname = "meem-ar.init.round";
 kernLeft = meem.alt;
 layers = (
 {
@@ -5567,7 +5621,7 @@ ref = "kashida-ar.real";
 },
 {
 pos = (24,0);
-ref = "heh-ar.medi.alt";
+ref = "heh-ar.medi.round";
 }
 );
 width = 351;
@@ -5577,7 +5631,7 @@ metricLeft = "=-20";
 metricRight = "=0";
 },
 {
-glyphname = "heh-ar.medi.alt";
+glyphname = "heh-ar.medi.round";
 layers = (
 {
 anchors = (
@@ -5719,7 +5773,7 @@ nodes = (
 },
 {
 pos = (24,0);
-ref = "heh-ar.init.alt";
+ref = "heh-ar.init.round";
 }
 );
 width = 351;
@@ -5729,7 +5783,7 @@ metricLeft = "=-20";
 metricRight = "=0";
 },
 {
-glyphname = "heh-ar.init.alt";
+glyphname = "heh-ar.init.round";
 layers = (
 {
 anchors = (
