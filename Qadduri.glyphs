@@ -605,34 +605,34 @@ layers = (
 anchors = (
 {
 name = bottom.hamza;
-pos = (60,-76);
+pos = (49,-76);
 },
 {
 name = damma;
-pos = (-80,66);
+pos = (-91,66);
 },
 {
 name = fatha;
-pos = (162,511);
+pos = (151,511);
 },
 {
 name = kasra;
-pos = (60,-76);
+pos = (49,-76);
 },
 {
 name = top.hamza;
-pos = (162,511);
+pos = (151,511);
 },
 {
 name = top.madda;
-pos = (-99,511);
+pos = (-110,511);
 }
 );
 backgroundImage = {
 alpha = 80;
-imagePath = "images/MS-ADD-01116-000-00005.jpg";
+imagePath = "images/MS-ADD-01116-000-00019.jpg";
 locked = 1;
-pos = (-4010,-2810);
+pos = (-3626,-1830);
 scale = (5,5);
 };
 layerId = m01;
@@ -640,37 +640,37 @@ shapes = (
 {
 closed = 1;
 nodes = (
-(105,0,l),
-(105,110,l),
-(97,110,o),
-(92,140,o),
-(91,159,cs),
-(86,328,o),
-(82,502,o),
-(81,604,cs),
-(81,624,o),
-(66,624,o),
-(60,613,cs),
-(40,577,o),
-(15,556,o),
-(-11,540,cs),
-(-28,529,o),
-(-12,512,o),
-(-9,444,cs),
-(-6,382,o),
-(-3,239,o),
+(109,0,l),
+(109,120,l),
+(101,120,o),
+(88,128,o),
+(88,159,cs),
+(88,422,o),
+(93,540,o),
+(70,604,cs),
+(63,624,o),
+(53,624,o),
+(47,613,cs),
+(27,577,o),
+(4,543,o),
+(-22,532,cs),
+(-40,524,o),
+(-15,511,o),
+(-12,443,cs),
+(-9,381,o),
+(0,179,o),
 (0,55,cs),
-(1,20,o),
-(9,0,o),
-(58,0,cs)
+(0,20,o),
+(-2,0,o),
+(47,0,cs)
 );
 }
 );
-width = 105;
+width = 89;
 }
 );
 metricLeft = "=0@55";
-metricRight = "=0";
+metricRight = "=-20";
 },
 {
 glyphname = "alef-ar";
@@ -4294,28 +4294,31 @@ metricRight = "=0";
 },
 {
 glyphname = "lam-ar.medi.round";
+kernLeft = meem.alt;
 layers = (
 {
 anchors = (
 {
 name = damma;
-pos = (-44,166);
+pos = (-49,166);
 },
 {
 name = fatha;
-pos = (-93,559);
+pos = (-98,559);
 }
 );
 layerId = m01;
 shapes = (
 {
+alignment = -1;
+pos = (-5,0);
 ref = "alef-ar.fina";
 }
 );
-width = 111;
+width = 106;
 }
 );
-metricLeft = "=0@55";
+metricLeft = "=-5@55";
 metricRight = "=0";
 },
 {
@@ -4325,24 +4328,26 @@ layers = (
 anchors = (
 {
 name = damma;
-pos = (-44,166);
+pos = (-49,166);
 },
 {
 name = fatha;
-pos = (-99,511);
+pos = (-104,511);
 }
 );
 layerId = m01;
 shapes = (
 {
+alignment = -1;
+pos = (-5,0);
 ref = "alef-ar.fina.short";
 }
 );
-width = 105;
+width = 84;
 }
 );
-metricLeft = "=0@55";
-metricRight = "=0";
+metricLeft = "=-5@55";
+metricRight = "=-20";
 },
 {
 glyphname = "lam-ar.medi.short";
@@ -5457,8 +5462,11 @@ pos = (263,433);
 }
 );
 backgroundImage = {
-imagePath = "images/MS-ADD-01116-000-00031.jpg";
-pos = (0,-115);
+alpha = 80;
+imagePath = "images/MS-ADD-01116-000-00012.jpg";
+locked = 1;
+pos = (-3021,-3639);
+scale = (5,5);
 };
 layerId = m01;
 shapes = (
