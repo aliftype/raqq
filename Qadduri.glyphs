@@ -481,6 +481,14 @@ value = 805;
 {
 name = hheaDescender;
 value = -115;
+},
+{
+name = winAscent;
+value = 900;
+},
+{
+name = winDescent;
+value = 500;
 }
 );
 guides = (
@@ -9854,7 +9862,7 @@ You should have received a copy of the GNU Affero General Public License along w
 settings = {
 keepAlternatesTogether = 1;
 };
-unitsPerEm = 1000;
+unitsPerEm = 800;
 userData = {
 GSDimensionPlugin.Dimensions = {
 m01 = {
