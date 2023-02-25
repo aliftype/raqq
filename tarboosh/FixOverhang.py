@@ -58,8 +58,8 @@ class FixOverhang(FEZVerb):
         medis = medis.resolve(parser.fontfeatures, font)
         inits = inits.resolve(parser.fontfeatures, font)
 
-        binned_medis = bin_glyphs_by_metric(font, medis, "run", bincount=8)
-        binned_inits = bin_glyphs_by_metric(font, inits, "run", bincount=8)
+        binned_medis = bin_glyphs_by_metric(font, medis, "run", bincount=5)
+        binned_inits = bin_glyphs_by_metric(font, inits, "run", bincount=5)
         rules = []
         maxchainlength = 0
         longeststring = []
