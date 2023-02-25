@@ -66,7 +66,7 @@
   <glyph name="reh-ar" unicode="0631" category="Letter" script="arabic"
          sortName="arL0020"
          anchors="top, fatha, damma, kasra"
-         accents="fatha-ar, fathatan-ar, damma-ar, dammatan-ar, kasra-ar, kasratan-ar, dotabove-ar"
+         accents="fatha-ar, fathatan-ar, damma-ar, dammatan-ar, kasra-ar, kasratan-ar, dotabove-ar.reh"
   />
   <glyph name="reh-ar.fina" category="Letter" script="arabic"
          sortName="arL0021"
@@ -343,7 +343,7 @@
   <glyph name="thal-ar" unicode="0630" category="Letter" script="arabic" decompose="dal-ar, dotabove-ar"
          sortName="arL0165"
   />
-  <glyph name="zain-ar" unicode="0632" category="Letter" script="arabic" decompose="reh-ar, dotabove-ar"
+  <glyph name="zain-ar" unicode="0632" category="Letter" script="arabic" decompose="reh-ar, dotabove-ar.reh"
          sortName="arL0179"
   />
   <glyph name="sheen-ar" unicode="0634" category="Letter" script="arabic" decompose="seen-ar, threedotsupabove-ar"

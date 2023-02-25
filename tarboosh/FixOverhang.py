@@ -75,10 +75,7 @@ class FixOverhang(FEZVerb):
                     continue
 
                 adjustment = overhang - totalwidth + int(overhang_padding)
-                if (
-                    adjustment_threshold is not None
-                    and adjustment < adjustment_threshold
-                ):
+                if adjustment < adjustment_threshold:
                     continue
                 postcontext = [x[0] for x in string[:-1]] + [[yb]]
                 input_ = string[-1]
