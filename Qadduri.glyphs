@@ -405,6 +405,15 @@ lookup rlig_4 {
 		 @aftermeem' lookup rounded;
 	;
 } rlig_4;
+
+lookup rlig_c {
+	lookupflag IgnoreMarks;
+
+	sub	 fehDotless-ar.medi'
+		[dal-ar.fina sad-ar.medi sad-ar.fina tah-ar.medi tah-ar.fina kaf-ar.medi kaf-ar.fina]
+	by	 fehDotless-ar.medi connector.1
+	;
+} rlig_c;
 ";
 name = Lookups;
 }
@@ -439,6 +448,7 @@ lookup rlig_1;
 lookup rlig_2;
 lookup rlig_3;
 lookup rlig_4;
+lookup rlig_c;
 ";
 tag = rlig;
 },
@@ -1800,6 +1810,7 @@ unicode = 1583;
 },
 {
 glyphname = "dal-ar.fina";
+kernRight = sad;
 layers = (
 {
 layerId = m01;
@@ -1808,9 +1819,9 @@ shapes = (
 closed = 1;
 nodes = (
 (619,-16,o),
-(748,-11,o),
-(867,0,c),
-(867,110,l),
+(754,-11,o),
+(873,0,c),
+(873,110,l),
 (822,110,l),
 (482,-16,l)
 );
@@ -1819,11 +1830,11 @@ nodes = (
 ref = "dal-ar";
 }
 );
-width = 867;
+width = 873;
 }
 );
 metricLeft = "=0";
-metricRight = "=kaf-ar.fina";
+metricRight = "=0@110";
 },
 {
 glyphname = "reh-ar";
@@ -2484,23 +2495,18 @@ unicode = 1589;
 },
 {
 glyphname = "sad-ar.fina";
+kernRight = sad;
 layers = (
 {
-anchors = (
-{
-name = entry;
-pos = (882,0);
-}
-);
 layerId = m01;
 shapes = (
 {
 closed = 1;
 nodes = (
 (627,-4,o),
-(763,-2,o),
-(882,0,c),
-(882,110,l),
+(772,-2,o),
+(891,0,c),
+(891,110,l),
 (833,110,l),
 (490,-4,l)
 );
@@ -2509,35 +2515,42 @@ nodes = (
 ref = "sad-ar";
 }
 );
-width = 883;
+width = 891;
 }
 );
 metricLeft = "=sad-ar";
-metricRight = "=sad-ar.medi";
+metricRight = "=0@110";
 },
 {
 glyphname = "sad-ar.medi";
+kernLeft = sad;
+kernRight = sad;
 layers = (
 {
 anchors = (
 {
 name = entry;
-pos = (749,0);
+pos = (758,0);
 },
 {
 name = exit;
-pos = (-20,0);
 }
 );
+backgroundImage = {
+alpha = 80;
+imagePath = "images/MS-ADD-01116-000-00003.jpg";
+pos = (-5087,-3738);
+scale = (5,5);
+};
 layerId = m01;
 shapes = (
 {
 closed = 1;
 nodes = (
 (494,-4,o),
-(630,-2,o),
-(749,0,c),
-(749,110,l),
+(639,-2,o),
+(758,0,c),
+(758,110,l),
 (700,110,l),
 (357,-4,l)
 );
@@ -2546,14 +2559,15 @@ nodes = (
 ref = "sad-ar.init";
 }
 );
-width = 750;
+width = 758;
 }
 );
 metricLeft = "=sad-ar.init";
-metricRight = "=kaf-ar.fina";
+metricRight = "=0@110";
 },
 {
 glyphname = "sad-ar.init";
+kernLeft = sad;
 layers = (
 {
 anchors = (
@@ -2769,6 +2783,7 @@ unicode = 1591;
 },
 {
 glyphname = "tah-ar.fina";
+kernRight = sad;
 layers = (
 {
 layerId = m01;
@@ -2777,9 +2792,9 @@ shapes = (
 closed = 1;
 nodes = (
 (542,-14,o),
-(671,-11,o),
-(790,0,c),
-(790,110,l),
+(677,-11,o),
+(796,0,c),
+(796,110,l),
 (745,110,l),
 (405,-14,l)
 );
@@ -2789,20 +2804,22 @@ alignment = -1;
 ref = "tah-ar";
 }
 );
-width = 790;
+width = 796;
 }
 );
 metricLeft = "=tah-ar";
-metricRight = "=kaf-ar.fina";
+metricRight = "=0@110";
 },
 {
 glyphname = "tah-ar.medi";
+kernLeft = sad;
+kernRight = sad;
 layers = (
 {
 anchors = (
 {
 name = entry;
-pos = (745,0);
+pos = (753,0);
 },
 {
 name = exit;
@@ -2814,9 +2831,9 @@ shapes = (
 closed = 1;
 nodes = (
 (494,-4,o),
-(626,-2,o),
-(745,0,c),
-(745,110,l),
+(634,-2,o),
+(753,0,c),
+(753,110,l),
 (700,110,l),
 (357,-4,l)
 );
@@ -2825,14 +2842,15 @@ nodes = (
 ref = "tah-ar.init";
 }
 );
-width = 745;
+width = 753;
 }
 );
 metricLeft = "=tah-ar.init";
-metricRight = "=kaf-ar.fina";
+metricRight = "=0@110";
 },
 {
 glyphname = "tah-ar.init";
+kernLeft = sad;
 layers = (
 {
 anchors = (
@@ -4042,9 +4060,9 @@ shapes = (
 closed = 1;
 nodes = (
 (633,-16,o),
-(762,-11,o),
-(881,0,c),
-(881,110,l),
+(768,-11,o),
+(887,0,c),
+(887,110,l),
 (836,110,l),
 (496,-16,l)
 );
@@ -4053,17 +4071,22 @@ nodes = (
 ref = "kaf-ar";
 }
 );
-width = 881;
+width = 887;
 }
 );
 metricLeft = "=kaf-ar";
-metricRight = "=0@10";
+metricRight = "=0@110";
 },
 {
 glyphname = "kaf-ar.medi";
+kernRight = sad;
 layers = (
 {
 anchors = (
+{
+name = entry;
+pos = (747,0);
+},
 {
 name = exit;
 }
@@ -4073,8 +4096,8 @@ shapes = (
 {
 closed = 1;
 nodes = (
-(745,0,l),
-(745,110,l),
+(747,0,l),
+(747,110,l),
 (701,110,l),
 (0,0,l)
 );
@@ -4083,11 +4106,11 @@ nodes = (
 ref = "kaf-ar.init";
 }
 );
-width = 745;
+width = 747;
 }
 );
 metricLeft = "=-20";
-metricRight = "=0@2";
+metricRight = "=0@110";
 },
 {
 glyphname = "kaf-ar.init";
@@ -9898,6 +9921,38 @@ width = 1200;
 }
 );
 unicode = 1622;
+},
+{
+category = Connector;
+glyphname = connector.1;
+layers = (
+{
+anchors = (
+{
+name = _entry;
+}
+);
+layerId = m01;
+shapes = (
+{
+closed = 1;
+nodes = (
+(-115,0,l),
+(71,0,l),
+(71,104,l),
+(32,134,o),
+(-4,169,o),
+(-32,212,cs),
+(-56,247,o),
+(-49,247,o),
+(-115,244,c)
+);
+}
+);
+width = 71;
+}
+);
+metricRight = "=0";
 }
 );
 instances = (
@@ -9912,6 +9967,9 @@ kerningRTL = {
 m01 = {
 "@MMK_R_meem.alt" = {
 "reh-ar.fina" = 20;
+};
+"@MMK_R_sad" = {
+"@MMK_L_sad" = -9;
 };
 };
 };
