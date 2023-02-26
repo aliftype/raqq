@@ -413,6 +413,11 @@ lookup rlig_c {
 		[dal-ar.fina sad-ar.medi sad-ar.fina tah-ar.medi tah-ar.fina kaf-ar.medi kaf-ar.fina]
 	by	 fehDotless-ar.medi connector.1
 	;
+
+	sub	 ain-ar.medi'
+		 reh-ar.fina
+	by	 ain-ar.medi connector.2
+	;
 } rlig_c;
 ";
 name = Lookups;
@@ -605,7 +610,7 @@ over = -10;
 },
 {
 over = -10;
-pos = -115;
+pos = -500;
 }
 );
 name = Regular;
@@ -1926,7 +1931,7 @@ layers = (
 anchors = (
 {
 name = damma;
-pos = (-49,-13);
+pos = (-9,67);
 },
 {
 name = fatha;
@@ -1963,8 +1968,11 @@ nodes = (
 (450,71,o),
 (380,169,o),
 (315,213,cs),
-(298,225,o),
-(295,219,o),
+(308,218,o),
+(304,220,o),
+(300,220,cs),
+(295,220,o),
+(292,216,o),
 (287,211,cs),
 (260,184,o),
 (185,100,o),
@@ -2372,7 +2380,7 @@ layers = (
 anchors = (
 {
 name = damma;
-pos = (63,0);
+pos = (33,60);
 },
 {
 name = fatha;
@@ -6258,7 +6266,7 @@ layers = (
 anchors = (
 {
 name = damma;
-pos = (-20,40);
+pos = (-20,50);
 },
 {
 name = fatha;
@@ -10086,6 +10094,36 @@ nodes = (
 }
 );
 width = 71;
+}
+);
+metricRight = "=0";
+},
+{
+category = Connector;
+glyphname = connector.2;
+layers = (
+{
+anchors = (
+{
+name = entry;
+pos = (-42,0);
+}
+);
+layerId = m01;
+shapes = (
+{
+closed = 1;
+nodes = (
+(30,6,l),
+(30,109,l),
+(-8,146,o),
+(-37,182,o),
+(-78,213,c),
+(-78,6,l)
+);
+}
+);
+width = 30;
 }
 );
 metricRight = "=0";
