@@ -8506,15 +8506,6 @@ width = 1200;
 unicode = 1641;
 },
 {
-glyphname = space.alt;
-layers = (
-{
-layerId = m01;
-width = 200;
-}
-);
-},
-{
 glyphname = "threedots-ar";
 layers = (
 {
