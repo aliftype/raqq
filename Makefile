@@ -57,6 +57,6 @@ $(FONTDIR)/%.ttf: $(SOURCEDIR)/%.glyphs $(CONFIG) $(GLYPHDATA) $(SOURCEDIR)/%.fe
 dist: all
 	$(info   DIST   $(DIST).zip)
 	install -Dm644 -t $(DIST) $(FONTS)
-	#install -Dm644 -t $(DIST) {README,README-Arabic}.txt
-	#install -Dm644 -t $(DIST) OFL.txt
+	install -Dm644 -t $(DIST) README.md
+	install -Dm644 -t $(DIST) LICENSE
 	zip -rq $(DIST).zip $(DIST)
