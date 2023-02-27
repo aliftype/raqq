@@ -13,7 +13,7 @@
 # You should have received a copy of the GNU Affero General Public License
 # along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
-NAME = RaqqText
+NAME = Raqq
 
 MAKEFLAGS := -sr
 SHELL = bash
@@ -22,6 +22,10 @@ CONFIG = _config.yml
 VERSION = $(shell python version.py $(CONFIG))
 DIST = $(NAME)-$(VERSION)
 
+STYLES = Text Display
+OTF = $(STYLES:%=$(NAME)%.otf)
+TTF = $(STYLES:%=$(NAME)%.ttf)
+FONTS = $(OTF) # $(TTF)
 FEZ = Raqq.fez
 
 ARGS ?= 
@@ -30,7 +34,7 @@ ARGS ?=
 
 .PHONY: all dist
 
-all: $(NAME).otf # $(NAME).ttf
+all: $(FONTS)
 
 %.fea: %.glyphs $(FEZ)
 	$(info   GEN    $(@F))
@@ -46,7 +50,7 @@ all: $(NAME).otf # $(NAME).ttf
 
 dist: all
 	$(info   DIST   $(DIST).zip)
-	install -Dm644 -t $(DIST) $(NAME).otf
+	install -Dm644 -t $(DIST) $(FONTS)
 	#install -Dm644 -t $(DIST) {README,README-Arabic}.txt
 	#install -Dm644 -t $(DIST) OFL.txt
 	zip -rq $(DIST).zip $(DIST)
