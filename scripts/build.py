@@ -21,8 +21,9 @@ import datetime
 from fontTools.designspaceLib import DesignSpaceDocument
 from fontTools.fontBuilder import FontBuilder
 from fontTools.misc.transform import Identity, Transform
+from fontTools.pens.boundsPen import BoundsPen
+from fontTools.pens.recordingPen import RecordingPen
 from fontTools.pens.reverseContourPen import ReverseContourPen
-from fontTools.pens.t2CharStringPen import T2CharStringPen
 from fontTools.pens.transformPen import TransformPen
 from fontTools.ttLib.tables._h_e_a_d import mac_epoch_diff
 from fontTools.varLib import build as merge
@@ -75,19 +76,37 @@ CODEPAGE_RANGES = {
 }
 
 
-def draw(layer, layerSet):
-    t2pen = T2CharStringPen(layer.width, layerSet)
+def draw(layer, layerSet, isTTF):
+    pen = RecordingPen()
     if layer.paths:
         from pathops import Path
 
         path = Path()
         layer.draw(path.getPen(glyphSet=layerSet))
         path.simplify(fix_winding=True, keep_starting_points=True)
-        path.draw(t2pen)
+        path.draw(pen)
     else:
-        layer.draw(t2pen)
+        layer.draw(pen)
 
-    return t2pen.getCharString()
+    if isTTF:
+        from fontTools.pens.ttGlyphPen import TTGlyphPen
+        from fontTools.pens.cu2quPen import Cu2QuPen
+
+        ttpen = TTGlyphPen(layerSet)
+        pen.replay(Cu2QuPen(ttpen, 1.0, reverse_direction=True))
+        glyph = ttpen.glyph()
+    else:
+        from fontTools.pens.t2CharStringPen import T2CharStringPen
+
+        t2pen = T2CharStringPen(layer.width, layerSet)
+        pen.replay(t2pen)
+        glyph = t2pen.getCharString()
+
+    bpen = BoundsPen(layerSet)
+    pen.replay(bpen)
+    bounds = bpen.bounds or [0, 0, 0, 0]
+
+    return glyph, bounds
 
 
 def makeKern(font, master, instance, glyphOrder):
@@ -96,7 +115,7 @@ def makeKern(font, master, instance, glyphOrder):
     groups = {}
     for name in glyphOrder:
         glyph = font.glyphs[name]
-        if glyph is None or not glyph.export:
+        if glyph is None:
             continue
         if glyph.leftKerningGroup:
             group = f"@MMK_R_{glyph.leftKerningGroup}"
@@ -160,7 +179,7 @@ def makeMark(instance, glyphOrder):
 
     for gname in glyphOrder:
         glyph = font.glyphs[gname]
-        if glyph is None or not glyph.export:
+        if glyph is None:
             continue
 
         if "_" in gname:
@@ -206,7 +225,7 @@ def makeCurs(instance, glyphOrder):
 
     for gname in glyphOrder:
         glyph = font.glyphs[gname]
-        if glyph is None or not glyph.export:
+        if glyph is None:
             continue
 
         layer = getLayer(glyph, instance)
@@ -302,7 +321,7 @@ def makeFeatures(instance, master, args, glyphOrder):
     carets = ""
     for name in glyphOrder:
         glyph = font.glyphs[name]
-        if glyph is None or not glyph.export:
+        if glyph is None:
             continue
 
         if (glyph.category, glyph.subCategory) == ("Mark", "Nonspacing"):
@@ -372,33 +391,27 @@ def getProperty(font, name):
             return prop.value
 
 
-def buildInstance(instance, args, glyphOrder):
+def build(instance, isTTF, args):
     font = instance.parent
     master = font.masters[0]
-    glyphOrder = list(glyphOrder)
 
-    advanceWidths = {}
+    glyphOrder = list(font.glyphOrder)
+
     characterMap = {}
-    charStrings = {}
     colorLayers = {}
 
     layerSet = {g.name: g.layers[master.id] for g in font.glyphs}
-    exportGlyphOrder = []
-    newGlyphs = []
 
+    layers = {}
     for name in glyphOrder:
         glyph = font.glyphs[name]
-        if not glyph.export:
-            continue
-        exportGlyphOrder.append(name)
-
         layer = getLayer(glyph, instance)
-        if (glyph.category, glyph.subCategory) == ("Mark", "Nonspacing"):
-            layer.width = 0
-        charStrings[name] = draw(layer, layerSet)
-        advanceWidths[name] = layer.width
+        layers[name] = (layer, layerSet)
 
         for layer in glyph.layers:
+            if (glyph.category, glyph.subCategory) == ("Mark", "Nonspacing"):
+                layer.width = 0
+
             paletteIdx = layer.attributes.get("colorPalette", None)
             if paletteIdx is not None:
                 colorLayers.setdefault(name, [])
@@ -416,16 +429,13 @@ def buildInstance(instance, args, glyphOrder):
                                 colorLayerSet[g.name] = l
 
                     new += f".color{len(colorLayers[name])}"
-                    charStrings[new] = draw(layer, colorLayerSet)
-                    advanceWidths[new] = advanceWidths[name]
+                    layers[new] = (layer, colorLayerSet)
+                    font.glyphOrder.append(new)
 
-                    newGlyphs.append(new)
                 colorLayers[name].append((new, paletteIdx))
 
         for uni in glyph.unicodes:
             characterMap[int(uni, 16)] = name
-
-    exportGlyphOrder += sorted(newGlyphs)
 
     version = float(args.version)
 
@@ -448,15 +458,15 @@ def buildInstance(instance, args, glyphOrder):
         "sampleText": getProperty(font, "sampleTexts"),
     }
 
-    fb = FontBuilder(font.upm, isTTF=False)
+    fb = FontBuilder(font.upm, isTTF=isTTF)
     date = font.date.replace(tzinfo=datetime.timezone.utc)
-    stat = args.glyphs.stat()
+    stat = args.input.stat()
     fb.updateHead(
         fontRevision=version,
         created=int(date.timestamp()) - mac_epoch_diff,
         modified=int(stat.st_mtime) - mac_epoch_diff,
     )
-    fb.setupGlyphOrder(exportGlyphOrder)
+    fb.setupGlyphOrder(font.glyphOrder)
     fb.setupCharacterMap(characterMap)
     fb.setupNameTable(names, mac=False)
     fb.setupHorizontalHeader(
@@ -465,13 +475,17 @@ def buildInstance(instance, args, glyphOrder):
         lineGap=master.customParameters["hheaLineGap"] or 0,
     )
 
-    fb.setupCFF(names["psName"], {}, charStrings, {})
-    fb.font["CFF "].compile(fb.font)
-
     metrics = {}
-    for name, width in advanceWidths.items():
-        bounds = charStrings[name].calcBounds(None) or [0]
-        metrics[name] = (width, bounds[0])
+    glyphs = {}
+    for name, (layer, layerSet) in layers.items():
+        glyphs[name], bounds = draw(layer, layerSet, isTTF)
+        metrics[name] = (layer.width, bounds[0])
+
+    if isTTF:
+        fb.setupGlyf(glyphs)
+    else:
+        fb.setupCFF(names["psName"], {}, glyphs, {})
+
     fb.setupHorizontalMetrics(metrics)
 
     fb.setupPost(
@@ -497,7 +511,7 @@ def buildInstance(instance, args, glyphOrder):
     )
 
     fea = makeFeatures(instance, master, args, glyphOrder)
-    fb.addOpenTypeFeatures(fea, filename=args.glyphs)
+    fb.addOpenTypeFeatures(fea, filename=args.input)
 
     palettes = font.customParameters["Color Palettes"]
     palettes = [[tuple(v / 255 for v in c) for c in p] for p in palettes]
@@ -529,9 +543,9 @@ def propagateAnchors(layer):
             layer.anchors[name] = new
 
 
-def buildFont(args):
-    font = GSFont(args.glyphs)
-    glyphOrder = [g.name for g in font.glyphs]
+def prepare(args):
+    font = GSFont(args.input)
+    font.glyphOrder = [g.name for g in font.glyphs if g.export]
 
     for glyph in font.glyphs:
         info = getGlyphInfo(glyph.name, data=args.data)
@@ -544,7 +558,7 @@ def buildFont(args):
         for layer in glyph.layers:
             propagateAnchors(layer)
 
-    return buildInstance(font.instances[0], args, glyphOrder)
+    return font
 
 
 def data(path):
@@ -555,15 +569,22 @@ def data(path):
 def main():
     from pathlib import Path
 
-    parser = argparse.ArgumentParser(description="Build Rana Kufi.")
-    parser.add_argument("glyphs", help="input Glyphs source file", type=Path)
-    parser.add_argument("version", help="font version")
-    parser.add_argument("otf", help="output OTF file", type=Path)
+    parser = argparse.ArgumentParser(description="Build Raqq font.")
+    parser.add_argument("input", help="input Glyphs source file", type=Path)
+    parser.add_argument("version", help="font version", type=str)
+    parser.add_argument("output", help="output OTF file", type=Path)
     parser.add_argument("--data", help="GlyphData.xml file", type=data)
     args = parser.parse_args()
 
-    otf = buildFont(args)
-    otf.save(args.otf)
+    isTTF = False
+    if args.output.suffix == ".ttf":
+        isTTF = True
+
+    font = prepare(args)
+    instance = font.instances[0]  # XXX
+
+    otf = build(instance, isTTF, args)
+    otf.save(args.output)
 
 
 main()

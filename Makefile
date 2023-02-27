@@ -30,7 +30,7 @@ BUILDDIR = build
 STYLES = Text Display
 OTF = $(STYLES:%=$(FONTDIR)/$(NAME)%.otf)
 TTF = $(STYLES:%=$(FONTDIR)/$(NAME)%.ttf)
-FONTS = $(OTF) # $(TTF)
+FONTS = $(TTF) # $(TTF)
 FEZ = $(SOURCEDIR)/Raqq.fez
 GLYPHDATA = $(SOURCEDIR)/GlyphData.xml
 
