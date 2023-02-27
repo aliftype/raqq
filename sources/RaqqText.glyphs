@@ -8506,6 +8506,26 @@ width = 1200;
 unicode = 1641;
 },
 {
+glyphname = hairspace;
+layers = (
+{
+layerId = m01;
+width = 36;
+}
+);
+unicode = 8202;
+},
+{
+glyphname = thinspace;
+layers = (
+{
+layerId = m01;
+width = 120;
+}
+);
+unicode = (8201,8239);
+},
+{
 glyphname = "threedots-ar";
 layers = (
 {
