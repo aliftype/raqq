@@ -305,9 +305,9 @@ def makeFeatures(instance, master, args, glyphOrder):
         if glyph is None or not glyph.export:
             continue
 
-        if getCategory(glyph, args.data) == ("Mark", "Nonspacing"):
+        if (glyph.category, glyph.subCategory) == ("Mark", "Nonspacing"):
             marks.add(name)
-        elif getCategory(glyph, args.data) == ("Letter", "Ligature"):
+        elif (glyph.category, glyph.subCategory) == ("Letter", "Ligature"):
             ligatures.add(name)
         else:
             layer = getLayer(glyph, instance)
@@ -375,16 +375,6 @@ def getProperty(font, name):
             return prop.value
 
 
-def getCategory(glyph, glyphData):
-    category, subCategory = glyph.category, glyph.subCategory
-    if not category or not subCategory:
-        info = getGlyphInfo(glyph.name, data=glyphData)
-        category = category or info.category
-        subCategory = subCategory or info.subCategory
-
-    return category, subCategory
-
-
 def buildInstance(instance, args, glyphOrder):
     font = instance.parent
     master = font.masters[0]
@@ -406,7 +396,7 @@ def buildInstance(instance, args, glyphOrder):
         exportGlyphOrder.append(name)
 
         layer = getLayer(glyph, instance)
-        if getCategory(glyph, args.data) == ("Mark", "Nonspacing"):
+        if (glyph.category, glyph.subCategory) == ("Mark", "Nonspacing"):
             layer.width = 0
         charStrings[name] = draw(layer, layerSet)
         advanceWidths[name] = layer.width
@@ -547,7 +537,12 @@ def buildFont(args):
     glyphOrder = [g.name for g in font.glyphs]
 
     for glyph in font.glyphs:
-        if getCategory(glyph, args.data) == ("Mark", "Nonspacing"):
+        info = getGlyphInfo(glyph.name, data=args.data)
+        if glyph.category is None:
+            glyph.category = info.category
+        if glyph.subCategory is None:
+            glyph.subCategory = info.subCategory
+        if (glyph.category, glyph.subCategory) == ("Mark", "Nonspacing"):
             continue
         for layer in glyph.layers:
             propagateAnchors(layer)
