@@ -76,13 +76,25 @@ CODEPAGE_RANGES = {
 }
 
 
-def draw(layer, layerSet, isTTF):
+def draw(layer, glyphSet, isTTF):
     pen = RecordingPen()
+    if layer.attributes.get("colorPalette") is not None:
+        # If we are drawing a color layer, and it has components, we need to
+        # remap the component to point to the new color glyphs we created. We
+        # match Glyphs’s app by using the first layer in the component glyph
+        # with the same color index.
+        for component in layer.components:
+            for componentLayer in component.component.layers:
+                if layer.attributes.get(
+                    "colorPalette"
+                ) == componentLayer.attributes.get("colorPalette"):
+                    component.componentName = componentLayer.name
+
     if layer.paths:
         from pathops import Path
 
         path = Path()
-        layer.draw(path.getPen(glyphSet=layerSet))
+        layer.draw(path.getPen(glyphSet=glyphSet))
         path.simplify(fix_winding=True, keep_starting_points=True)
         path.draw(pen)
     else:
@@ -92,17 +104,17 @@ def draw(layer, layerSet, isTTF):
         from fontTools.pens.ttGlyphPen import TTGlyphPen
         from fontTools.pens.cu2quPen import Cu2QuPen
 
-        ttpen = TTGlyphPen(layerSet)
+        ttpen = TTGlyphPen(glyphSet)
         pen.replay(Cu2QuPen(ttpen, 1.0, reverse_direction=True))
         glyph = ttpen.glyph()
     else:
         from fontTools.pens.t2CharStringPen import T2CharStringPen
 
-        t2pen = T2CharStringPen(layer.width, layerSet)
+        t2pen = T2CharStringPen(layer.width, glyphSet)
         pen.replay(t2pen)
         glyph = t2pen.getCharString()
 
-    bpen = BoundsPen(layerSet)
+    bpen = BoundsPen(glyphSet)
     pen.replay(bpen)
     bounds = bpen.bounds or [0, 0, 0, 0]
 
@@ -400,13 +412,11 @@ def build(instance, isTTF, args):
     characterMap = {}
     colorLayers = {}
 
-    layerSet = {g.name: g.layers[master.id] for g in font.glyphs}
-
-    layers = {}
+    glyphSet = {}
     for name in glyphOrder:
         glyph = font.glyphs[name]
         layer = getLayer(glyph, instance)
-        layers[name] = (layer, layerSet)
+        glyphSet[name] = layer
 
         for layer in glyph.layers:
             if (glyph.category, glyph.subCategory) == ("Mark", "Nonspacing"):
@@ -415,24 +425,13 @@ def build(instance, isTTF, args):
             paletteIdx = layer.attributes.get("colorPalette", None)
             if paletteIdx is not None:
                 colorLayers.setdefault(name, [])
-
-                new = name
                 if layer.layerId != master.id:
-                    colorLayerSet = {}
-                    for g in font.glyphs:
-                        colorLayerSet[g.name] = g.layers[master.id]
-                        for l in g.layers:
-                            if (
-                                l.associatedMasterId != l.layerId
-                                and l.attributes.get("colorPalette", None) == paletteIdx
-                            ):
-                                colorLayerSet[g.name] = l
-
-                    new += f".color{len(colorLayers[name])}"
-                    layers[new] = (layer, colorLayerSet)
-                    font.glyphOrder.append(new)
-
-                colorLayers[name].append((new, paletteIdx))
+                    layer.name = f"{name}.color{len(colorLayers[name])}"
+                    glyphSet[layer.name] = layer
+                    font.glyphOrder.append(layer.name)
+                    colorLayers[name].append((layer.name, paletteIdx))
+                else:
+                    colorLayers[name].append((name, paletteIdx))
 
         for uni in glyph.unicodes:
             characterMap[int(uni, 16)] = name
@@ -477,8 +476,8 @@ def build(instance, isTTF, args):
 
     metrics = {}
     glyphs = {}
-    for name, (layer, layerSet) in layers.items():
-        glyphs[name], bounds = draw(layer, layerSet, isTTF)
+    for name, layer in glyphSet.items():
+        glyphs[name], bounds = draw(layer, glyphSet, isTTF)
         metrics[name] = (layer.width, bounds[0])
 
     if isTTF:
