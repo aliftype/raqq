@@ -501,7 +501,7 @@ lookupflag IgnoreMarks;
 
 # Automatic Code
 
-include(RaqqText-hah.fea)
+include(RaqqText.fea)
 ";
 tag = kern;
 },

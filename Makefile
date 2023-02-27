@@ -22,8 +22,7 @@ CONFIG = _config.yml
 VERSION = $(shell python version.py $(CONFIG))
 DIST = $(NAME)-$(VERSION)
 
-FEZ = $(wildcard *.fez)
-FEA = $(FEZ:%.fez=$(NAME)-%.fea)
+FEZ = Raqq.fez
 
 ARGS ?= 
 
@@ -33,15 +32,15 @@ ARGS ?=
 
 all: $(NAME).otf # $(NAME).ttf
 
-$(NAME)-%.fea: %.fez $(NAME).glyphs
+%.fea: %.glyphs $(FEZ)
 	$(info   GEN    $(@F))
-	python fez-to-fea.py $(NAME).glyphs $< -o $@
+	python fez-to-fea.py $+ -o $@
 
-%.otf: $(NAME).glyphs $(CONFIG) GlyphData.xml $(FEA)
+%.otf: %.glyphs $(CONFIG) GlyphData.xml %.fea
 	$(info   BUILD  $(@F))
 	python build.py $< $(VERSION) $@ --data=GlyphData.xml $(ARGS)
 
-%.ttf: $(NAME).glyphs $(CONFIG) GlyphData.xml $(FEA)
+%.ttf: %.glyphs $(CONFIG) GlyphData.xml %.fea
 	$(info   BUILD  $(@F))
 	python build.py $< $(VERSION) $@ --data=GlyphData.xml $(ARGS)
 
