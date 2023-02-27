@@ -177,7 +177,7 @@ space
 }
 );
 date = "2021-04-25 20:10:22 +0000";
-familyName = Raqq;
+familyName = "Raqq Display";
 featurePrefixes = (
 {
 code = "languagesystem DFLT dflt;
@@ -423,7 +423,7 @@ lookupflag IgnoreMarks;
 
 # Automatic Code
 
-include(Raqq-hah.fea)
+include(RaqqDisplay.fea)
 ";
 tag = kern;
 },
@@ -451,6 +451,14 @@ value = 1300;
 {
 name = hheaDescender;
 value = -540;
+},
+{
+name = winAscent;
+value = 1400;
+},
+{
+name = winDescent;
+value = 1000;
 }
 );
 guides = (
