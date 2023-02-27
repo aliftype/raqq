@@ -337,9 +337,6 @@ table GDEF {{
 }} GDEF;
 """
 
-    if args.debug:
-        with open(f"{instance.fontName}.fea", "w") as f:
-            f.write(fea)
     return fea
 
 
@@ -563,7 +560,6 @@ def main():
     parser.add_argument("version", help="font version")
     parser.add_argument("otf", help="output OTF file", type=Path)
     parser.add_argument("--data", help="GlyphData.xml file", type=data)
-    parser.add_argument("--debug", help="Save debug files", action="store_true")
     args = parser.parse_args()
 
     otf = buildFont(args)
