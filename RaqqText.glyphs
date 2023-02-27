@@ -168,7 +168,7 @@ space
 }
 );
 date = "2021-04-25 20:10:22 +0000";
-familyName = Qadduri;
+familyName = "Raqq Text";
 featurePrefixes = (
 {
 code = "languagesystem DFLT dflt;
@@ -501,7 +501,7 @@ lookupflag IgnoreMarks;
 
 # Automatic Code
 
-include(Qadduri-hah.fea)
+include(RaqqText-hah.fea)
 ";
 tag = kern;
 },
@@ -10317,11 +10317,11 @@ key = descriptions;
 values = (
 {
 language = ENG;
-value = "Qadduri (قَدُّوري) is a manuscript Kufic typeface";
+value = "Raqq (رَقّ) is a manuscript Kufic typeface";
 },
 {
 language = ARA;
-value = "قَدُّوري هو خط كوفي مصحفي";
+value = "رَقّ هو خط كوفي مصحفي";
 }
 );
 },
@@ -10330,7 +10330,7 @@ key = sampleTexts;
 values = (
 {
 language = ENG;
-value = "بسمِ الله الرَحمنِ الرحيمِ ؞";
+value = "بسمِ الله الرَحمنِ الرحيمِ";
 }
 );
 },
