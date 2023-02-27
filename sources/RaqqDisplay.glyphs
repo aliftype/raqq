@@ -2040,7 +2040,7 @@ pos = (1024,403);
 );
 backgroundImage = {
 alpha = 100;
-imagePath = "1/image-0056.jpg";
+imagePath = "images/image-0056.jpg";
 pos = (-12957,-3244);
 scale = (20,20);
 };
@@ -5743,7 +5743,7 @@ pos = (302,-134);
 );
 background = {
 backgroundImage = {
-imagePath = "1/image-0056.jpg";
+imagePath = "images/image-0056.jpg";
 locked = 1;
 pos = (-5495,-4420);
 scale = (10,10);
@@ -5971,7 +5971,7 @@ pos = (58,210);
 );
 backgroundImage = {
 alpha = 100;
-imagePath = "1/image-0056.jpg";
+imagePath = "images/image-0056.jpg";
 pos = (-11099,-3240);
 scale = (20,20);
 };
@@ -6693,7 +6693,7 @@ pos = (424,600);
 );
 backgroundImage = {
 alpha = 100;
-imagePath = "1/image-0056.jpg";
+imagePath = "images/image-0056.jpg";
 pos = (-9512,-5199);
 scale = (20,20);
 };
@@ -7910,7 +7910,7 @@ pos = (894,403);
 );
 backgroundImage = {
 alpha = 100;
-imagePath = "1/image-0056.jpg";
+imagePath = "images/image-0056.jpg";
 locked = 1;
 pos = (-5659,-5176);
 scale = (20,20);
@@ -8006,7 +8006,7 @@ pos = (324,382);
 );
 backgroundImage = {
 alpha = 100;
-imagePath = "1/image-0056.jpg";
+imagePath = "images/image-0056.jpg";
 locked = 1;
 pos = (-10008,-7023);
 scale = (20,20);
@@ -8395,7 +8395,7 @@ pos = (64,250);
 );
 backgroundImage = {
 alpha = 100;
-imagePath = "1/image-0056.jpg";
+imagePath = "images/image-0056.jpg";
 locked = 1;
 pos = (-11093,-3240);
 scale = (20,20);
@@ -8887,7 +8887,7 @@ pos = (541,611);
 );
 backgroundImage = {
 alpha = 100;
-imagePath = "1/image-0056.jpg";
+imagePath = "images/image-0056.jpg";
 locked = 1;
 pos = (-11673,-7050);
 scale = (20,20);
@@ -9418,7 +9418,7 @@ pos = (47,266);
 );
 backgroundImage = {
 alpha = 100;
-imagePath = "1/image-0056.jpg";
+imagePath = "images/image-0056.jpg";
 locked = 1;
 pos = (-7742,-7014);
 scale = (20,20);
@@ -9530,7 +9530,7 @@ pos = (51,226);
 );
 backgroundImage = {
 alpha = 100;
-imagePath = "1/image-0056.jpg";
+imagePath = "images/image-0056.jpg";
 pos = (-14843,-3234);
 scale = (20,20);
 };
