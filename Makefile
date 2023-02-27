@@ -22,11 +22,17 @@ CONFIG = _config.yml
 VERSION = $(shell python version.py $(CONFIG))
 DIST = $(NAME)-$(VERSION)
 
+SOURCEDIR = sources
+SCRIPTDIR = scripts
+FONTDIR = fonts
+BUILDDIR = build
+
 STYLES = Text Display
-OTF = $(STYLES:%=$(NAME)%.otf)
-TTF = $(STYLES:%=$(NAME)%.ttf)
+OTF = $(STYLES:%=$(FONTDIR)/$(NAME)%.otf)
+TTF = $(STYLES:%=$(FONTDIR)/$(NAME)%.ttf)
 FONTS = $(OTF) # $(TTF)
-FEZ = Raqq.fez
+FEZ = $(SOURCEDIR)/Raqq.fez
+GLYPHDATA = $(SOURCEDIR)/GlyphData.xml
 
 ARGS ?= 
 
@@ -38,15 +44,15 @@ all: $(FONTS)
 
 %.fea: %.glyphs $(FEZ)
 	$(info   GEN    $(@F))
-	python fez-to-fea.py $+ -o $@
+	python $(SCRIPTDIR)/fez-to-fea.py $+ -o $@
 
-%.otf: %.glyphs $(CONFIG) GlyphData.xml %.fea
+$(FONTDIR)/%.otf: $(SOURCEDIR)/%.glyphs $(CONFIG) $(GLYPHDATA) $(SOURCEDIR)/%.fea
 	$(info   BUILD  $(@F))
-	python build.py $< $(VERSION) $@ --data=GlyphData.xml $(ARGS)
+	python $(SCRIPTDIR)/build.py $< $(VERSION) $@ --data=$(GLYPHDATA) $(ARGS)
 
-%.ttf: %.glyphs $(CONFIG) GlyphData.xml %.fea
+$(FONTDIR)/%.ttf: $(SOURCEDIR)/%.glyphs $(CONFIG) $(GLYPHDATA) $(SOURCEDIR)/%.fea
 	$(info   BUILD  $(@F))
-	python build.py $< $(VERSION) $@ --data=GlyphData.xml $(ARGS)
+	python $(SCRIPTDIR)/build.py $< $(VERSION) $@ --data=$(GLYPHDATA) $(ARGS)
 
 dist: all
 	$(info   DIST   $(DIST).zip)

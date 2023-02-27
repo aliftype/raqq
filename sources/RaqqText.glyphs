@@ -5333,14 +5333,6 @@ pos = (425,0);
 name = exit;
 }
 );
-background = {
-backgroundImage = {
-imagePath = "1/image-0056.jpg";
-locked = 1;
-pos = (-5495,-4420);
-scale = (10,10);
-};
-};
 layerId = m01;
 shapes = (
 {
@@ -5379,14 +5371,6 @@ name = kasra;
 pos = (262,-96);
 }
 );
-background = {
-backgroundImage = {
-imagePath = "1/image-0056.jpg";
-locked = 1;
-pos = (-5515,-4420);
-scale = (10,10);
-};
-};
 layerId = m01;
 shapes = (
 {

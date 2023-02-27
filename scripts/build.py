@@ -510,7 +510,7 @@ def buildInstance(instance, args, glyphOrder):
     )
 
     fea = makeFeatures(instance, master, args, glyphOrder)
-    fb.addOpenTypeFeatures(fea)
+    fb.addOpenTypeFeatures(fea, filename=args.glyphs)
 
     palettes = font.customParameters["Color Palettes"]
     palettes = [[tuple(v / 255 for v in c) for c in p] for p in palettes]
