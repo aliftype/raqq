@@ -36,7 +36,7 @@ GRAMMAR = ""
 
 FixOverhang_GRAMMAR = """
 ?start: action
-action: integer_container integer_container glyphselector glyphselector glyphselector
+action: integer_container integer_container glyphselector glyphselector glyphselector?
 """
 
 VERBS = ["FixOverhang"]
@@ -51,18 +51,20 @@ class FixOverhang(FEZVerb):
         parser = self.parser
         font = parser.font
 
-        overhang_padding, adjustment_threshold, glyphs, medis, inits = args
+        binned_medis = []
+        if len(args) == 4:
+            overhang_padding, adjustment_threshold, glyphs, inits = args
+        else:
+            overhang_padding, adjustment_threshold, glyphs, medis, inits = args
+            medis = medis.resolve(parser.fontfeatures, font)
+            binned_medis = bin_glyphs_by_metric(font, medis, "run", bincount=5)
         overhang_padding = overhang_padding.resolve_as_integer()
         adjustment_threshold = adjustment_threshold.resolve_as_integer()
         overhangers = glyphs.resolve(parser.fontfeatures, font)
-        medis = medis.resolve(parser.fontfeatures, font)
         inits = inits.resolve(parser.fontfeatures, font)
 
-        binned_medis = bin_glyphs_by_metric(font, medis, "run", bincount=5)
         binned_inits = bin_glyphs_by_metric(font, inits, "run", bincount=5)
         rules = []
-        maxchainlength = 0
-        longeststring = []
         for yb in overhangers:
             entry_anchor = parser.fontfeatures.anchors[yb]["entry"]
             overhang = font.glyphs[yb].layers[0].width - entry_anchor[0]
@@ -79,11 +81,6 @@ class FixOverhang(FEZVerb):
                     continue
                 postcontext = [x[0] for x in string[:-1]] + [[yb]]
                 input_ = string[-1]
-                example = [input_[0][0]] + [x[0] for x in postcontext]
-                warnings.warn(
-                    f"For glyphs in {example}, {overhang=} {totalwidth=} {adjustment=}"
-                )
-                maxchainlength = max(maxchainlength, len(string))
 
                 rules.append(
                     fontFeatures.Positioning(
@@ -94,7 +91,4 @@ class FixOverhang(FEZVerb):
                 )
                 for medi in binned_medis:
                     workqueue.append([medi] + string)
-        warnings.warn(
-            f"Bari Ye collision maximum chain length was {maxchainlength} glyphs"
-        )
         return [fontFeatures.Routine(rules=rules, flags=8)]
