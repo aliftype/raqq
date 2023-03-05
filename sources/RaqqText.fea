@@ -52,5 +52,5 @@ lookup overhang {
     pos [heh-ar.init heh-ar.init.round]' 493 yehbarree-ar.fina.alt;
     pos [fehDotless-ar.init meem-ar.init meem-ar.init.round seen-ar.init]' 433 yehbarree-ar.fina.alt;
     pos [ain-ar.init hah-ar.init]' 136 yehbarree-ar.fina.alt;
-    pos [kaf-ar.init kaf-ar.init.kashida sad-ar.init tah-ar.init]' 69 yehbarree-ar.fina.alt;
+    pos [kaf-ar.init sad-ar.init tah-ar.init]' 69 yehbarree-ar.fina.alt;
 } overhang;
