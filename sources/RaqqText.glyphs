@@ -500,8 +500,11 @@ lookupflag IgnoreMarks;
 } spacing;
 
 # Automatic Code
-
-include(RaqqText.fea)
+";
+tag = kern;
+},
+{
+code = "include(RaqqText.fea)
 ";
 tag = kern;
 },
