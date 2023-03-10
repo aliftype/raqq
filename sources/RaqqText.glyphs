@@ -81,14 +81,14 @@ meem-ar.fina.round
 noonghunna-ar.fina
 heh-ar.fina
 waw-ar.fina
-waw-ar.fina.alt
+waw-ar.fina.round
 alefMaksura-ar.fina
 alefMaksura-ar.fina.salt
 alefMaksura-ar.fina.tooth
 alefMaksura-ar.fina.tooth2
 alefMaksura-ar.fina.tooth2.salt
 yehbarree-ar.fina
-yehbarree-ar.fina.alt
+yehbarree-ar.fina.baseline
 lam_alef-ar.fina
 ";
 name = fina;
@@ -328,7 +328,7 @@ lookup rlig_1 {
 
 	sub @init
 		 yehbarree-ar.fina'
-	by	 yehbarree-ar.fina.alt
+	by	 yehbarree-ar.fina.baseline
 	;
 
 	sub [behDotless-ar.medi lam-ar.medi]' lookup tooth_rounded
@@ -356,7 +356,7 @@ lookup rounded {
 	sub meem-ar.init	by meem-ar.init.round;
 	sub meem-ar.medi	by meem-ar.medi.round;
 	sub meem-ar.fina	by meem-ar.fina.round;
-	sub waw-ar.fina		by waw-ar.fina.alt;
+	sub waw-ar.fina		by waw-ar.fina.round;
 	sub heh-ar.init		by heh-ar.init.round;
 } rounded;
 
@@ -6489,7 +6489,7 @@ metricLeft = "=waw-ar";
 metricRight = "=-50";
 },
 {
-glyphname = "waw-ar.fina.alt";
+glyphname = "waw-ar.fina.round";
 layers = (
 {
 layerId = m01;
@@ -7320,7 +7320,7 @@ metricLeft = "=0";
 metricRight = "=0";
 },
 {
-glyphname = "yehbarree-ar.fina.alt";
+glyphname = "yehbarree-ar.fina.baseline";
 layers = (
 {
 anchors = (
@@ -7668,7 +7668,7 @@ shapes = (
 ref = "seen-ar";
 },
 {
-pos = (-12,222);
+pos = (-18,222);
 ref = "threedotshorizontalabove-ar.alt";
 }
 );
@@ -9448,8 +9448,8 @@ ref = "dotabove-ar";
 width = 110;
 }
 );
-metricLeft = "=0";
-metricRight = "=0";
+metricLeft = "=dotabove-ar";
+metricRight = "=dotabove-ar";
 },
 {
 glyphname = "twodotsverticalabove-ar";
@@ -9475,8 +9475,8 @@ ref = "dotabove-ar";
 width = 140;
 }
 );
-metricLeft = "=0";
-metricRight = "=0";
+metricLeft = "=dotabove-ar";
+metricRight = "=dotabove-ar";
 },
 {
 glyphname = "twodotsverticalbelow-ar";
@@ -9497,7 +9497,8 @@ ref = "twodotsverticalabove-ar";
 width = 140;
 }
 );
-metricRight = "=0";
+metricLeft = "=dotabove-ar";
+metricRight = "=dotabove-ar";
 },
 {
 glyphname = "threedotsupabove-ar";
@@ -9527,8 +9528,8 @@ ref = "dotabove-ar";
 width = 174;
 }
 );
-metricLeft = "=0";
-metricRight = "=0";
+metricLeft = "=dotabove-ar";
+metricRight = "=dotabove-ar";
 },
 {
 glyphname = "threedotshorizontalabove-ar";
@@ -9537,32 +9538,32 @@ layers = (
 anchors = (
 {
 name = _top;
-pos = (205,67);
+pos = (199,67);
 }
 );
 layerId = m01;
 shapes = (
 {
 angle = 9.4;
-pos = (267,109);
+pos = (261,109);
 ref = "dotabove-ar";
 },
 {
 angle = 3;
-pos = (7,15);
+pos = (1,15);
 ref = "dotabove-ar";
 },
 {
 angle = 6;
-pos = (137,46);
+pos = (131,46);
 ref = "dotabove-ar";
 }
 );
-width = 379;
+width = 353;
 }
 );
-metricLeft = "=0";
-metricRight = "=0";
+metricLeft = "=dotabove-ar";
+metricRight = "=dotabove-ar";
 },
 {
 glyphname = "threedotshorizontalabove-ar.alt";
@@ -9571,32 +9572,32 @@ layers = (
 anchors = (
 {
 name = _top;
-pos = (294,-14);
+pos = (300,-14);
 }
 );
 layerId = m01;
 shapes = (
 {
 angle = 6;
-pos = (363,36);
+pos = (369,36);
 ref = "dotabove-ar";
 },
 {
 angle = 6;
-pos = (-3,-119);
+pos = (3,-119);
 ref = "dotabove-ar";
 },
 {
 angle = 6;
-pos = (224,-31);
+pos = (230,-31);
 ref = "dotabove-ar";
 }
 );
-width = 457;
+width = 467;
 }
 );
-metricLeft = "=0";
-metricRight = "=0";
+metricLeft = "=dotabove-ar";
+metricRight = "=dotabove-ar";
 },
 {
 glyphname = "hamzaabove-ar";

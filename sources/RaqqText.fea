@@ -48,9 +48,9 @@ lookup overhang {
     pos [behDotless-ar.init behDotless-ar.init.high lam-ar.init]' 98 [behDotless-ar.medi behDotless-ar.medi.high behDotless-ar.medi.round hah-ar.medi lam-ar.medi lam-ar.medi.round lam-ar.medi.round.short lam-ar.medi.short] [ain-ar.medi heh-ar.medi.round] [behDotless-ar.medi behDotless-ar.medi.high behDotless-ar.medi.round hah-ar.medi lam-ar.medi lam-ar.medi.round lam-ar.medi.round.short lam-ar.medi.short] yehbarree-ar.fina;
     pos [behDotless-ar.init behDotless-ar.init.high lam-ar.init]' 98 [behDotless-ar.medi behDotless-ar.medi.high behDotless-ar.medi.round hah-ar.medi lam-ar.medi lam-ar.medi.round lam-ar.medi.round.short lam-ar.medi.short] [behDotless-ar.medi behDotless-ar.medi.high behDotless-ar.medi.round hah-ar.medi lam-ar.medi lam-ar.medi.round lam-ar.medi.round.short lam-ar.medi.short] [ain-ar.medi heh-ar.medi.round] yehbarree-ar.fina;
     pos [heh-ar.init heh-ar.init.round]' 70 [behDotless-ar.medi behDotless-ar.medi.high behDotless-ar.medi.round hah-ar.medi lam-ar.medi lam-ar.medi.round lam-ar.medi.round.short lam-ar.medi.short] [behDotless-ar.medi behDotless-ar.medi.high behDotless-ar.medi.round hah-ar.medi lam-ar.medi lam-ar.medi.round lam-ar.medi.round.short lam-ar.medi.short] [behDotless-ar.medi behDotless-ar.medi.high behDotless-ar.medi.round hah-ar.medi lam-ar.medi lam-ar.medi.round lam-ar.medi.round.short lam-ar.medi.short] yehbarree-ar.fina;
-    pos [behDotless-ar.init behDotless-ar.init.high lam-ar.init]' 705 yehbarree-ar.fina.alt;
-    pos [heh-ar.init heh-ar.init.round]' 493 yehbarree-ar.fina.alt;
-    pos [fehDotless-ar.init meem-ar.init meem-ar.init.round seen-ar.init]' 433 yehbarree-ar.fina.alt;
-    pos [ain-ar.init hah-ar.init]' 136 yehbarree-ar.fina.alt;
-    pos [kaf-ar.init kaf-ar.init.kashida sad-ar.init tah-ar.init]' 69 yehbarree-ar.fina.alt;
+    pos [behDotless-ar.init behDotless-ar.init.high lam-ar.init]' 705 yehbarree-ar.fina.baseline;
+    pos [heh-ar.init heh-ar.init.round]' 493 yehbarree-ar.fina.baseline;
+    pos [fehDotless-ar.init meem-ar.init meem-ar.init.round seen-ar.init]' 433 yehbarree-ar.fina.baseline;
+    pos [ain-ar.init hah-ar.init]' 136 yehbarree-ar.fina.baseline;
+    pos [kaf-ar.init kaf-ar.init.kashida sad-ar.init tah-ar.init]' 69 yehbarree-ar.fina.baseline;
 } overhang;
