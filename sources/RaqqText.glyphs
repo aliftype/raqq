@@ -477,6 +477,13 @@ lookup rlig_c {
 		 behDotless-ar.medi behDotless-ar.medi.high behDotless-ar.medi.round behDotless-ar.fina]
 	by	 ain-ar.init connector.3
 	;
+
+	sub	 fehDotless-ar.init'
+		[behDotless-ar.medi behDotless-ar.medi.med behDotless-ar.medi.high
+		 behDotless-ar.medi.round behDotless-ar.fina
+		 lam-ar.medi lam-ar.medi.round lam-ar.fina]
+	by	 fehDotless-ar.init connector.4
+	;
 } rlig_c;
 ";
 name = Lookups;
@@ -3969,7 +3976,7 @@ shapes = (
 {
 closed = 1;
 nodes = (
-(84,0,o),
+(84,-2,o),
 (234,12,o),
 (267,17,cs),
 (381,34,o),
@@ -10569,6 +10576,36 @@ width = 99;
 }
 );
 metricRight = "=0";
+},
+{
+category = Connector;
+glyphname = connector.4;
+layers = (
+{
+anchors = (
+{
+name = entry;
+pos = (-2,0);
+}
+);
+layerId = m01;
+shapes = (
+{
+closed = 1;
+nodes = (
+(-27,16,l),
+(99,16,l),
+(177,110,l),
+(63,108,o),
+(-1,164,o),
+(-4,264,c),
+(-27,264,l)
+);
+}
+);
+width = 99;
+}
+);
 }
 );
 instances = (
@@ -10597,6 +10634,13 @@ connector.3 = {
 "behDotless-ar.fina" = -6;
 "behDotless-ar.medi" = -4;
 "behDotless-ar.medi.high" = -8;
+"behDotless-ar.medi.round" = -4;
+};
+connector.4 = {
+"behDotless-ar.fina" = -6;
+"behDotless-ar.medi" = -4;
+"behDotless-ar.medi.high" = -8;
+"behDotless-ar.medi.med" = -10;
 "behDotless-ar.medi.round" = -4;
 };
 "fehDotless-ar.medi" = {

@@ -318,3 +318,21 @@ input = "بنٍ"
 
 [[tests]]
 input ="بيننا"
+
+[[tests]]
+input = "قل"
+
+[[tests]]
+input = "قلنا"
+
+[[tests]]
+input = "قلم"
+
+[[tests]]
+input = "فب"
+
+[[tests]]
+input = "فبيا"
+
+[[tests]]
+input = "فبم"
