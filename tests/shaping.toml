@@ -270,3 +270,48 @@ input = "مم"
 
 [[tests]]
 input = "عليم"
+
+[[tests]]
+input = "أ"
+
+[[tests]]
+input = "أَ"
+
+[[tests]]
+input = "إ"
+
+[[tests]]
+input = "إِ"
+
+[[tests]]
+input = "أُ"
+
+[[tests]]
+input = "ا"
+
+[[tests]]
+input = "اَ"
+
+[[tests]]
+input = "أ"
+
+[[tests]]
+input = "آ"
+
+[[tests]]
+input = "اء"
+
+[[tests]]
+input = "سٍ"
+
+[[tests]]
+input = "صٍ"
+
+[[tests]]
+input = "نٍ"
+
+[[tests]]
+input = "بسٍ"
+
+[[tests]]
+input = "بنٍ"
