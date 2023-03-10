@@ -1,3 +1,98 @@
 [[tests]]
 input = "ا"
 
+[[tests]]
+input = "بب"
+
+[[tests]]
+input = "ببب"
+
+[[tests]]
+input = "بببا"
+
+[[tests]]
+input = "بببببببب"
+
+[[tests]]
+input = "حنيفا"
+
+[[tests]]
+input = "اتبعو"
+
+[[tests]]
+input = "النبي"
+
+[[tests]]
+input = "يشعر"
+
+[[tests]]
+input = "يلبسون"
+
+[[tests]]
+input = "تبع"
+
+[[tests]]
+input = "تيــتم"
+
+[[tests]]
+input = "به"
+
+[[tests]]
+input = "منه"
+
+[[tests]]
+input = "منهم"
+
+[[tests]]
+input = "مبنيه"
+
+[[tests]]
+input = "بنيهم"
+
+[[tests]]
+input = "نهم"
+
+[[tests]]
+input = "ليس"
+
+[[tests]]
+input = "سبيل"
+
+[[tests]]
+input = "لسنتهم"
+
+[[tests]]
+input = "لتحسبو"
+
+[[tests]]
+input = "لبشر"
+
+[[tests]]
+input = "سيا"
+
+[[tests]]
+input = "ببا"
+
+[[tests]]
+input = "بنيه"
+
+[[tests]]
+input = "بنين"
+
+[[tests]]
+input = "بين"
+
+[[tests]]
+input = "لنبين"
+
+[[tests]]
+input = "عيسى"
+
+[[tests]]
+input = "منين"
+
+[[tests]]
+input = "ئفة"
+
+[[tests]]
+input = "نين"
