@@ -4490,7 +4490,7 @@ name = exit;
 },
 {
 name = fatha;
-pos = (419,306);
+pos = (191,364);
 },
 {
 name = kasra;
@@ -4577,7 +4577,7 @@ name = exit;
 },
 {
 name = fatha;
-pos = (418,308);
+pos = (191,364);
 },
 {
 name = kasra;
