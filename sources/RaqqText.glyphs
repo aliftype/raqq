@@ -327,6 +327,11 @@ lookup rlig_1 {
 	by	 lam-ar.init.hah
 	;
 
+	sub	[fehDotless-ar.medi meem-ar.init meem-ar.medi]
+		 seen-ar.medi'
+	by	 seen-ar.medi.short
+	;
+
 	sub	[behDotless-ar.init behDotless-ar.medi]' lookup high_beh
 		[seen-ar.medi seen-ar.fina
 		 ain-ar.medi ain-ar.fina heh-ar.fina]
@@ -2301,6 +2306,110 @@ width = 393;
 );
 metricLeft = "=-20";
 metricRight = "=-2@157";
+},
+{
+glyphname = "seen-ar.medi.short";
+kernLeft = seen;
+layers = (
+{
+anchors = (
+{
+name = damma;
+pos = (-8,185);
+},
+{
+name = entry;
+pos = (414,0);
+},
+{
+name = exit;
+},
+{
+name = fatha;
+pos = (222,324);
+},
+{
+name = kasra;
+pos = (217,-70);
+},
+{
+name = top;
+pos = (186,243);
+}
+);
+backgroundImage = {
+alpha = 80;
+angle = -0.4;
+imagePath = "images/MS-ADD-01116-000-00021.jpg";
+locked = 1;
+pos = (-3094,-3699);
+scale = (5,5);
+};
+layerId = m01;
+shapes = (
+{
+closed = 1;
+nodes = (
+(484,0,l),
+(484,110,l),
+(456,110,o),
+(420,138,o),
+(400,271,cs),
+(397,290,o),
+(387,289,o),
+(377,271,cs),
+(360,241,o),
+(350,207,o),
+(312,195,cs),
+(301,191,o),
+(299,185,o),
+(300,172,cs),
+(302,126,o),
+(308,122,o),
+(330,83,c),
+(332,111,l),
+(301,146,o),
+(271,197,o),
+(251,258,cs),
+(248,268,o),
+(240,266,o),
+(237,257,cs),
+(217,202,o),
+(195,180,o),
+(169,167,cs),
+(162,163,o),
+(159,158,o),
+(163,149,cs),
+(187,94,o),
+(198,76,o),
+(215,51,c),
+(189,128,l),
+(158,140,o),
+(140,160,o),
+(114,244,cs),
+(109,259,o),
+(102,258,o),
+(95,246,cs),
+(73,210,o),
+(59,186,o),
+(33,174,cs),
+(22,169,o),
+(18,164,o),
+(22,151,cs),
+(29,129,o),
+(43,86,o),
+(56,64,c),
+(61,110,l),
+(-20,110,l),
+(-20,0,l)
+);
+}
+);
+width = 414;
+}
+);
+metricLeft = "=-20";
+metricRight = "=-70";
 },
 {
 glyphname = "seen-ar.init";
@@ -5304,6 +5413,7 @@ metricRight = "=0";
 },
 {
 glyphname = "meem-ar.medi";
+kernLeft = meem;
 layers = (
 {
 anchors = (
@@ -5518,6 +5628,7 @@ width = 398;
 },
 {
 glyphname = "meem-ar.init";
+kernLeft = meem;
 layers = (
 {
 anchors = (
@@ -10291,6 +10402,9 @@ name = Regular;
 );
 kerningRTL = {
 m01 = {
+"@MMK_R_meem" = {
+"seen-ar.medi.short" = 30;
+};
 "@MMK_R_meem.alt" = {
 "reh-ar.fina" = 20;
 };
