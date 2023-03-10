@@ -44,6 +44,7 @@ name = isol;
 },
 {
 code = "behDotless-ar.init
+behDotless-ar.init.med
 behDotless-ar.init.high
 hah-ar.init
 seen-ar.init
@@ -286,29 +287,62 @@ lookup rlig_0 {
 } rlig_0;
 
 lookup high_beh {
-	sub behDotless-ar.init by behDotless-ar.init.high;
-	sub behDotless-ar.medi by behDotless-ar.medi.high;
+	sub behDotless-ar.init	by behDotless-ar.init.high;
+	sub behDotless-ar.medi	by behDotless-ar.medi.high;
 } high_beh;
 
-lookup rlig_r {
+lookup med_beh {
+	sub behDotless-ar.init	by behDotless-ar.init.med;
+	sub behDotless-ar.medi	by behDotless-ar.medi.med;
+} med_beh;
+
+lookup short_seen {
+	sub seen-ar.medi	by seen-ar.medi.short;
+} short_seen;
+
+lookup rlig_teeth {
 	lookupflag IgnoreMarks;
 
-	rsub [behDotless-ar.init behDotless-ar.medi]
-		 [behDotless-ar.medi]'
-		 [noonghunna-ar.fina]
-	by	 [behDotless-ar.medi.high]
+	sub	[behDotless-ar.init behDotless-ar.medi]' #lookup med_beh
+		[behDotless-ar.medi]' lookup high_beh
+		[behDotless-ar.medi behDotless-ar.fina]
 	;
 
-	rsub [behDotless-ar.init behDotless-ar.medi]'
-		 [behDotless-ar.fina]
-	by	 [behDotless-ar.init.high behDotless-ar.medi.high]
+	sub	[behDotless-ar.init behDotless-ar.medi]'
+		[behDotless-ar.medi]' lookup high_beh
+		[noonghunna-ar.fina]
 	;
-	
-	rsub [behDotless-ar.init behDotless-ar.medi]'
-		 [behDotless-ar.medi]
-	by	 [behDotless-ar.init.high behDotless-ar.medi.high]
+
+	sub	[behDotless-ar.init]' lookup high_beh
+		[behDotless-ar.medi behDotless-ar.fina]
 	;
-} rlig_r;
+
+
+	sub	[behDotless-ar.medi]' lookup high_beh
+		[behDotless-ar.medi behDotless-ar.fina]
+	;
+
+	ignore
+	sub [behDotless-ar.init.high behDotless-ar.medi.high]
+		[behDotless-ar.init behDotless-ar.medi]'
+		[seen-ar.fina ain-ar.medi ain-ar.fina heh-ar.fina heh-ar.medi]
+	;
+	sub	[behDotless-ar.init behDotless-ar.medi]' lookup high_beh
+		[seen-ar.fina ain-ar.medi ain-ar.fina]
+	;
+
+	sub	 behDotless-ar.init' lookup high_beh
+		 heh-ar.fina
+	;
+
+	sub	[behDotless-ar.init behDotless-ar.medi]' lookup med_beh
+		[heh-ar.medi heh-ar.fina]
+	;
+
+	sub [behDotless-ar.init behDotless-ar.medi]' lookup med_beh
+		[seen-ar.medi]' lookup short_seen
+	;
+} rlig_teeth;
 
 lookup tooth_rounded {
 	sub behDotless-ar.medi	by behDotless-ar.medi.round;
@@ -328,13 +362,7 @@ lookup rlig_1 {
 	;
 
 	sub	[fehDotless-ar.medi meem-ar.init meem-ar.medi]
-		 seen-ar.medi'
-	by	 seen-ar.medi.short
-	;
-
-	sub	[behDotless-ar.init behDotless-ar.medi]' lookup high_beh
-		[seen-ar.medi seen-ar.fina
-		 ain-ar.medi ain-ar.fina heh-ar.fina]
+		 seen-ar.medi' lookup short_seen
 	;
 
 	sub @init
@@ -475,7 +503,7 @@ tag = fina;
 },
 {
 code = "lookup rlig_0;
-lookup rlig_r;
+lookup rlig_teeth;
 lookup rlig_1;
 lookup rlig_2;
 lookup rlig_3;
@@ -1227,7 +1255,7 @@ pos = (82,-77);
 },
 {
 name = top;
-pos = (52,394);
+pos = (57,423);
 }
 );
 backgroundImage = {
@@ -1275,6 +1303,83 @@ metricLeft = "=-20@0";
 metricRight = "=0@130";
 },
 {
+glyphname = "behDotless-ar.medi.med";
+layers = (
+{
+anchors = (
+{
+name = bottom;
+pos = (49,-38);
+},
+{
+name = damma;
+pos = (13,190);
+},
+{
+name = entry;
+pos = (126,0);
+},
+{
+name = exit;
+},
+{
+name = fatha;
+pos = (56,460);
+},
+{
+name = kasra;
+pos = (82,-77);
+},
+{
+name = top;
+pos = (57,373);
+}
+);
+backgroundImage = {
+alpha = 80;
+angle = -0.4;
+imagePath = "images/MS-ADD-01116-000-00025.jpg";
+locked = 1;
+pos = (-3500,-2714);
+scale = (5,5);
+};
+layerId = m01;
+shapes = (
+{
+closed = 1;
+nodes = (
+(139,0,l),
+(139,110,l),
+(127,110,o),
+(125,134,o),
+(123,157,cs),
+(117,234,o),
+(105,330,o),
+(96,399,cs),
+(94,418,o),
+(75,416,o),
+(71,403,cs),
+(63,374,o),
+(33,332,o),
+(14,326,cs),
+(1,322,o),
+(-2,314,o),
+(-1,304,cs),
+(4,253,o),
+(14,174,o),
+(19,110,c),
+(-20,110,l),
+(-20,0,l)
+);
+}
+);
+width = 126;
+}
+);
+metricLeft = "=-20@0";
+metricRight = "=0@130";
+},
+{
 glyphname = "behDotless-ar.medi.round";
 layers = (
 {
@@ -1293,7 +1398,6 @@ pos = (111,0);
 },
 {
 name = exit;
-pos = (-5,0);
 },
 {
 name = fatha;
@@ -1378,7 +1482,7 @@ pos = (57,-76);
 },
 {
 name = top;
-pos = (63,323);
+pos = (69,325);
 }
 );
 backgroundImage = {
@@ -1449,7 +1553,7 @@ pos = (66,-76);
 },
 {
 name = top;
-pos = (63,428);
+pos = (63,430);
 }
 );
 backgroundImage = {
@@ -1492,6 +1596,78 @@ width = 130;
 }
 );
 metricLeft = "=-20@0";
+metricRight = "=0";
+},
+{
+glyphname = "behDotless-ar.init.med";
+layers = (
+{
+anchors = (
+{
+name = bottom;
+pos = (109,26);
+},
+{
+name = damma;
+pos = (-21,212);
+},
+{
+name = exit;
+pos = (5,0);
+},
+{
+name = fatha;
+pos = (56,476);
+},
+{
+name = kasra;
+pos = (57,-76);
+},
+{
+name = top;
+pos = (66,368);
+}
+);
+backgroundImage = {
+angle = 1.4;
+imagePath = "images/MS-ADD-01116-000-00006.jpg";
+locked = 1;
+pos = (-4570,-1748);
+scale = (5,5);
+};
+layerId = m01;
+shapes = (
+{
+closed = 1;
+nodes = (
+(56,0,ls),
+(95,0,o),
+(131,37,o),
+(130,72,cs),
+(128,172,o),
+(109,303,o),
+(109,403,cs),
+(109,412,o),
+(102,416,o),
+(95,405,cs),
+(75,374,o),
+(47,345,o),
+(18,326,cs),
+(4,317,o),
+(7,300,o),
+(9,269,cs),
+(11,236,o),
+(17,166,o),
+(19,110,c),
+(-20,110,l),
+(-20,0,l)
+);
+}
+);
+width = 130;
+}
+);
+metricLeft = "=-20";
 metricRight = "=0";
 },
 {
@@ -2319,7 +2495,7 @@ pos = (-8,185);
 },
 {
 name = entry;
-pos = (414,0);
+pos = (424,0);
 },
 {
 name = exit;
@@ -2405,11 +2581,11 @@ nodes = (
 );
 }
 );
-width = 414;
+width = 424;
 }
 );
 metricLeft = "=-20";
-metricRight = "=-70";
+metricRight = "=-60";
 },
 {
 glyphname = "seen-ar.init";
@@ -4695,7 +4871,6 @@ metricRight = "=0@159";
 },
 {
 glyphname = "lam-ar.medi.round";
-kernLeft = meem.alt;
 layers = (
 {
 anchors = (
@@ -4705,7 +4880,6 @@ pos = (-49,166);
 },
 {
 name = exit;
-pos = (-5,0);
 },
 {
 name = fatha;
@@ -4737,7 +4911,6 @@ pos = (-49,166);
 },
 {
 name = exit;
-pos = (-5,0);
 },
 {
 name = fatha;
@@ -7076,6 +7249,7 @@ pos = (-88,-82);
 },
 {
 name = entry;
+pos = (5,0);
 },
 {
 name = fatha;
@@ -10403,7 +10577,7 @@ name = Regular;
 kerningRTL = {
 m01 = {
 "@MMK_R_meem" = {
-"seen-ar.medi.short" = 30;
+"seen-ar.medi.short" = 20;
 };
 "@MMK_R_meem.alt" = {
 "reh-ar.fina" = 20;
@@ -10419,6 +10593,9 @@ connector.3 = {
 "behDotless-ar.medi" = -4;
 "behDotless-ar.medi.high" = -8;
 "behDotless-ar.medi.round" = -4;
+};
+"fehDotless-ar.medi" = {
+"seen-ar.medi.short" = -10;
 };
 };
 };
