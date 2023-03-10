@@ -317,7 +317,11 @@ lookup rlig_teeth {
 		[behDotless-ar.medi behDotless-ar.fina]
 	;
 
-
+	ignore
+	sub	[behDotless-ar.init.high behDotless-ar.medi.high]
+		[behDotless-ar.medi]'
+		[behDotless-ar.medi behDotless-ar.fina]
+	;
 	sub	[behDotless-ar.medi]' lookup high_beh
 		[behDotless-ar.medi behDotless-ar.fina]
 	;

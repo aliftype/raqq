@@ -315,3 +315,6 @@ input = "بسٍ"
 
 [[tests]]
 input = "بنٍ"
+
+[[tests]]
+input ="بيننا"
