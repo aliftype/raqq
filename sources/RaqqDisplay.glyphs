@@ -11535,11 +11535,11 @@ key = copyrights;
 values = (
 {
 language = ENG;
-value = "Copyright 2021 The Raqq Project Authors (github.com/aliftype/raqq)";
+value = "Copyright 2021–2023 The Raqq Project Authors (github.com/aliftype/raqq)";
 },
 {
 language = ARA;
-value = "حقوق النسخ ٢٠٢١ لمؤلفي مشروع رَقّ (github.com/aliftype/raqq)";
+value = "حقوق النسخ ٢٠٢١–٢٠٢٣ لمؤلفي مشروع رَقّ (github.com/aliftype/raqq)";
 }
 );
 },
