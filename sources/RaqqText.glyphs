@@ -1629,6 +1629,7 @@ pos = (66,368);
 }
 );
 backgroundImage = {
+alpha = 80;
 angle = 1.4;
 imagePath = "images/MS-ADD-01116-000-00006.jpg";
 locked = 1;
