@@ -53,6 +53,7 @@ ain-ar.init
 fehDotless-ar.init
 kaf-ar.init
 lam-ar.init
+lam-ar.init.hah
 meem-ar.init
 meem-ar.init.round
 heh-ar.init
@@ -320,6 +321,11 @@ lookup tooth_yeh {
 
 lookup rlig_1 {
 	lookupflag IgnoreMarks;
+
+	sub	 lam-ar.init'
+		[hah-ar.medi hah-ar.fina]
+	by	 lam-ar.init.hah
+	;
 
 	sub	[behDotless-ar.init behDotless-ar.medi]' lookup high_beh
 		[seen-ar.medi seen-ar.fina
@@ -4774,6 +4780,66 @@ width = 123;
 }
 );
 metricLeft = "=-20@0";
+metricRight = "=0";
+},
+{
+glyphname = "lam-ar.init.hah";
+layers = (
+{
+anchors = (
+{
+name = damma;
+pos = (0,217);
+},
+{
+name = exit;
+pos = (-63,135);
+},
+{
+name = fatha;
+pos = (-101,604);
+},
+{
+name = kasra;
+pos = (163,-67);
+}
+);
+backgroundImage = {
+alpha = 80;
+angle = -1.1;
+imagePath = "images/MS-ADD-01116-000-00003.jpg";
+locked = 1;
+pos = (-2756,-3780);
+scale = (5,5);
+};
+layerId = m01;
+shapes = (
+{
+closed = 1;
+nodes = (
+(105,135,l),
+(100,281,o),
+(89,483,o),
+(81,671,cs),
+(80,694,o),
+(66,700,o),
+(56,681,cs),
+(44,658,o),
+(5,624,o),
+(-13,610,cs),
+(-28,597,o),
+(-22,584,o),
+(-21,574,cs),
+(-11,423,o),
+(-2,261,o),
+(0,135,c)
+);
+}
+);
+width = 105;
+}
+);
+metricLeft = "=0@145";
 metricRight = "=0";
 },
 {
