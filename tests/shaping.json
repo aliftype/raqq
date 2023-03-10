@@ -1,0 +1,17 @@
+{
+  "tests": [
+    {
+      "input": "ا",
+      "expectation": {
+        "default": "alef-ar=0+578",
+        "RaqqDisplay.ttf": "alef-ar=0+1024"
+      }
+    }
+  ],
+  "configuration": {
+    "defaults": {
+      "direction": "rtl",
+      "script": "arab"
+    }
+  }
+}

@@ -25,12 +25,16 @@ DIST = $(NAME)-$(VERSION)
 SOURCEDIR = sources
 SCRIPTDIR = scripts
 FONTDIR = fonts
+TESTDIR = tests
 BUILDDIR = build
 
 STYLES = Text Display
 OTF = $(STYLES:%=$(FONTDIR)/$(NAME)%.otf)
 TTF = $(STYLES:%=$(FONTDIR)/$(NAME)%.ttf)
-FONTS = $(TTF) # $(TTF)
+TOML = $(wildcard $(TESTDIR)/*.toml)
+JSON = $(TOML:%.toml=%.json)
+HTML = $(STYLES:%=$(TESTDIR)/$(NAME)%.html)
+FONTS = $(TTF) # $(OTF)
 FEZ = $(SOURCEDIR)/Raqq.fez
 GLYPHDATA = $(SOURCEDIR)/GlyphData.xml
 
@@ -41,6 +45,8 @@ ARGS ?=
 .PHONY: all dist
 
 all: $(FONTS)
+test: $(HTML)
+update-test: $(JSON)
 
 %.fea: %.glyphs $(FEZ)
 	$(info   GEN    $(@F))
@@ -53,6 +59,14 @@ $(FONTDIR)/%.otf: $(SOURCEDIR)/%.glyphs $(CONFIG) $(GLYPHDATA) $(SOURCEDIR)/%.fe
 $(FONTDIR)/%.ttf: $(SOURCEDIR)/%.glyphs $(CONFIG) $(GLYPHDATA) $(SOURCEDIR)/%.fea
 	$(info   BUILD  $(@F))
 	python $(SCRIPTDIR)/build.py $< $(VERSION) $@ --data=$(GLYPHDATA) $(ARGS)
+
+$(TESTDIR)/%.html: $(FONTDIR)/%.ttf
+	$(info   TEST   $(@F))
+	fontbakery check-profile --config=$(TESTDIR)/fontbakery.yml \
+                   fontbakery.profiles.shaping $< --html=$@
+
+$(TESTDIR)/%.json: $(TESTDIR)/%.toml $(TTF)
+	python $(SCRIPTDIR)/update-test-data.py $@ $+
 
 dist: all
 	$(info   DIST   $(DIST).zip)
