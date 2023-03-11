@@ -399,3 +399,6 @@ input = "بكم"
 
 [[tests]]
 input = "بكمم"
+
+[[tests]]
+input = "فلا"
