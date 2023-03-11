@@ -283,7 +283,7 @@
     {
       "input": "عبم",
       "expectation": {
-        "default": "meem-ar.fina.round=2+554|dotbelow-ar=1@-9,-110+0|behDotless-ar.medi.round=1+110|connector.3=0@-4,0+44|ain-ar.init=0@-15,0+690",
+        "default": "meem-ar.fina.round=2+554|dotbelow-ar=1@-9,-110+0|behDotless-ar.medi.round=1+111|connector.3=0@-4,0+44|ain-ar.init=0@-15,0+690",
         "RaqqDisplay.ttf": "meem-ar=2+922|dotbelow-ar=1@68,-120+0|behDotless-ar.medi.meem=1+174|ain-ar.init=0+1100"
       }
     },
@@ -787,8 +787,43 @@
     {
       "input": "فبم",
       "expectation": {
-        "default": "meem-ar.fina.round=2+554|dotbelow-ar=1@-9,-110+0|behDotless-ar.medi.round=1+110|dotabove-ar=0@-7,373+0|connector.4=0@-4,0+-6|fehDotless-ar.init=0+397",
+        "default": "meem-ar.fina.round=2+554|dotbelow-ar=1@-9,-110+0|behDotless-ar.medi.round=1+111|dotabove-ar=0@-7,373+0|connector.4=0@-4,0+-6|fehDotless-ar.init=0+397",
         "RaqqDisplay.ttf": "meem-ar=2+922|dotbelow-ar=1@68,-120+0|behDotless-ar.medi.meem=1+174|dotabove-ar=0@-8,520+0|fehDotless-ar.init=0+552"
+      }
+    },
+    {
+      "input": "فتح",
+      "expectation": {
+        "default": "hah-ar.fina=2+407|twodotsverticalabove-ar=1@-43,412+0|behDotless-ar.medi=1@0,130+126|dotabove-ar=0@-7,503+0|connector.4=0@-4,130+-6|fehDotless-ar.init=0@0,130+397",
+        "RaqqDisplay.ttf": "hah-ar.fina=2+692|twodotsverticalabove-ar=1@-55,776+0|behDotless-ar.medi=1@0,185+159|dotabove-ar=0@-8,705+0|fehDotless-ar.init=0@0,185+956"
+      }
+    },
+    {
+      "input": "مفصح",
+      "expectation": {
+        "default": "hah-ar.fina=3+407|sad-ar.medi=2@0,130+758|dotabove-ar=1@-10,463+0|connector.1=1@0,130+0|fehDotless-ar.medi=1@0,130+377|meem-ar.init=0@0,130+425",
+        "RaqqDisplay.ttf": "hah-ar.fina=3+692|sad-ar.medi=2@0,185+1600|dotabove-ar=1@4,696+0|fehDotless-ar.medi=1@0,185+462|meem-ar.init=0@0,185+555"
+      }
+    },
+    {
+      "input": "ثغر",
+      "expectation": {
+        "default": "reh-ar.fina=2+393|dotabove-ar=1@83,301+0|connector.2=1+-42|ain-ar.medi=1+280|threedotsupabove-ar=0@-80,400+0|behDotless-ar.init.high=0+130",
+        "RaqqDisplay.ttf": "reh-ar.fina=2+548|dotabove-ar=1@272,448+0|ain-ar.medi=1+480|threedotsupabove-ar=0@-106,616+0|behDotless-ar.init.ain=0+178"
+      }
+    },
+    {
+      "input": "علج",
+      "expectation": {
+        "default": "dotbelow-ar=2@611,-122+0|hah-ar.fina=2+407|lam-ar.medi=1@0,130+121|connector.3=0@0,130+48|ain-ar.init=0@-15,130+690",
+        "RaqqDisplay.ttf": "dotbelow-ar=2+0|hah-ar.fina=2+692|lam-ar.medi=1@0,185+153|ain-ar.init=0@0,185+1100"
+      }
+    },
+    {
+      "input": "علم",
+      "expectation": {
+        "default": "meem-ar.fina.round=2+554|lam-ar.medi.round=1+92|connector.3=0+48|ain-ar.init=0@-15,0+690",
+        "RaqqDisplay.ttf": "meem-ar.fina=2+928|lam-ar.medi=1+153|ain-ar.init=0+1100"
       }
     }
   ],

@@ -336,3 +336,18 @@ input = "فبيا"
 
 [[tests]]
 input = "فبم"
+
+[[tests]]
+input = "فتح"
+
+[[tests]]
+input = "مفصح"
+
+[[tests]]
+input = "ثغر"
+
+[[tests]]
+input = "علج"
+
+[[tests]]
+input = "علم"

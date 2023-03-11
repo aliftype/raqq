@@ -10492,6 +10492,9 @@ layers = (
 anchors = (
 {
 name = entry;
+},
+{
+name = exit;
 }
 );
 layerId = m01;
@@ -10525,6 +10528,9 @@ anchors = (
 {
 name = entry;
 pos = (-42,0);
+},
+{
+name = exit;
 }
 );
 layerId = m01;
@@ -10555,6 +10561,9 @@ anchors = (
 {
 name = entry;
 pos = (48,0);
+},
+{
+name = exit;
 }
 );
 layerId = m01;
@@ -10586,6 +10595,9 @@ anchors = (
 {
 name = entry;
 pos = (-2,0);
+},
+{
+name = exit;
 }
 );
 layerId = m01;
