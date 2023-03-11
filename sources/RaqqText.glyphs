@@ -452,6 +452,7 @@ lookup rlig_4 {
 lookup connector_1 {
 	sub hah-ar.init			by hah-ar.init connector.1;
 	sub hah-ar.medi			by hah-ar.medi connector.1;
+	sub ain-ar.medi			by ain-ar.medi connector.1;
 	sub fehDotless-ar.medi	by fehDotless-ar.medi connector.1;
 } connector_1;
 
@@ -463,7 +464,7 @@ lookup rlig_c {
 	by	[kaf-ar.init.kashida kaf-ar.medi.kashida]
 	;
 
-	sub	[fehDotless-ar.medi hah-ar.init hah-ar.medi]' lookup connector_1
+	sub	[hah-ar.init hah-ar.medi ain-ar.medi fehDotless-ar.medi]' lookup connector_1
 		[dal-ar.fina sad-ar.medi sad-ar.fina tah-ar.medi tah-ar.fina kaf-ar.medi kaf-ar.fina]
 	;
 
@@ -10750,15 +10751,15 @@ shapes = (
 {
 closed = 1;
 nodes = (
-(-115,0,l),
-(71,0,l),
+(71,10,l),
 (71,104,l),
 (32,134,o),
 (-4,169,o),
 (-32,212,cs),
 (-56,247,o),
 (-49,247,o),
-(-115,244,c)
+(-115,244,c),
+(-115,10,l)
 );
 }
 );
@@ -10933,6 +10934,9 @@ m01 = {
 };
 "@MMK_R_seen" = {
 "@MMK_L_sad" = -15;
+};
+"ain-ar.medi" = {
+connector.1 = -12;
 };
 connector.3 = {
 "behDotless-ar.fina" = -6;

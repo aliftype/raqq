@@ -402,3 +402,24 @@ input = "بكمم"
 
 [[tests]]
 input = "فلا"
+
+[[tests]]
+input = "بعض"
+
+[[tests]]
+input = "نقد"
+
+[[tests]]
+input = "بعد"
+
+[[tests]]
+input = "يعظ"
+
+[[tests]]
+input = "يقظ"
+
+[[tests]]
+input = "حد"
+
+[[tests]]
+input = "لحد"
