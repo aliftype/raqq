@@ -647,35 +647,35 @@
     {
       "input": "أ",
       "expectation": {
-        "default": "hamzaabove-ar=0@103,461+0|alef-ar=0+578",
+        "default": "hamzaabove-ar=0@83,461+0|alef-ar=0+578",
         "RaqqDisplay.ttf": "hamzaabove-ar=0@155,984+0|alef-ar=0+1024"
       }
     },
     {
       "input": "أَ",
       "expectation": {
-        "default": "fatha-ar=0@103,461+0|hamzaabove-ar=0@103,461+0|alef-ar=0+578",
+        "default": "fatha-ar=0@83,461+0|hamzaabove-ar=0@83,461+0|alef-ar=0+578",
         "RaqqDisplay.ttf": "hamzaabove-ar=0@155,984+0|alef-ar=0+1024"
       }
     },
     {
       "input": "إ",
       "expectation": {
-        "default": "hamzabelow-ar=0@185,-188+0|alef-ar=0+578",
+        "default": "hamzabelow-ar=0@185,-158+0|alef-ar=0+578",
         "RaqqDisplay.ttf": "hamzabelow-ar=0@385,-222+0|alef-ar=0+1024"
       }
     },
     {
       "input": "إِ",
       "expectation": {
-        "default": "kasra-ar=0@185,-188+0|hamzabelow-ar=0@185,-188+0|alef-ar=0+578",
+        "default": "kasra-ar=0@185,-158+0|hamzabelow-ar=0@185,-158+0|alef-ar=0+578",
         "RaqqDisplay.ttf": "hamzabelow-ar=0@385,-222+0|alef-ar=0+1024"
       }
     },
     {
       "input": "أُ",
       "expectation": {
-        "default": "damma-ar=0@-127,-16+0|hamzaabove-ar=0@103,461+0|alef-ar=0+578",
+        "default": "damma-ar=0@-117,-16+0|hamzaabove-ar=0@83,461+0|alef-ar=0+578",
         "RaqqDisplay.ttf": "damma-ar=0@-135,60+0|alef-ar=0+1024"
       }
     },
@@ -689,21 +689,21 @@
     {
       "input": "اَ",
       "expectation": {
-        "default": "fatha-ar=0@103,461+0|alef-ar=0+578",
+        "default": "fatha-ar=0@83,461+0|alef-ar=0+578",
         "RaqqDisplay.ttf": "fatha-ar=0@155,984+0|alef-ar=0+1024"
       }
     },
     {
       "input": "أ",
       "expectation": {
-        "default": "hamzaabove-ar=0@103,461+0|alef-ar=0+578",
+        "default": "hamzaabove-ar=0@83,461+0|alef-ar=0+578",
         "RaqqDisplay.ttf": "hamzaabove-ar=0@155,984+0|alef-ar=0+1024"
       }
     },
     {
       "input": "آ",
       "expectation": {
-        "default": "madda-ar=0@-147,461+0|alef-ar=0+578",
+        "default": "madda-ar=0@-127,461+0|alef-ar=0+578",
         "RaqqDisplay.ttf": "madda-ar=0@-188,984+0|alef-ar=0+1024"
       }
     },
@@ -717,35 +717,35 @@
     {
       "input": "سٍ",
       "expectation": {
-        "default": "kasratan-ar.alt=0@274,-401+0|seen-ar=0+492",
+        "default": "kasratan-ar.alt=0@254,-381+0|seen-ar=0+492",
         "RaqqDisplay.ttf": "kasratan-ar=0@410,-237+0|seen-ar=0+726"
       }
     },
     {
       "input": "صٍ",
       "expectation": {
-        "default": "kasratan-ar=0@369,-149+0|sad-ar=0+898",
+        "default": "kasratan-ar=0@369,-129+0|sad-ar=0+898",
         "RaqqDisplay.ttf": "kasratan-ar=0@831,-189+0|sad-ar=0+2153"
       }
     },
     {
       "input": "نٍ",
       "expectation": {
-        "default": "kasratan-ar.alt=0@274,-213+0|dotabove-ar=0@-9,191+0|noonghunna-ar=0+281",
+        "default": "kasratan-ar.alt=0@254,-193+0|dotabove-ar=0@-9,191+0|noonghunna-ar=0+281",
         "RaqqDisplay.ttf": "kasratan-ar=0@344,-505+0|dotabove-ar=0@-32,160+0|noonghunna-ar=0+419"
       }
     },
     {
       "input": "بسٍ",
       "expectation": {
-        "default": "kasratan-ar.alt=1@274,-403+0|seen-ar.fina=1+490|dotbelow-ar=0@81,-46+0|behDotless-ar.init.high=0+130",
+        "default": "kasratan-ar.alt=1@254,-383+0|seen-ar.fina=1+490|dotbelow-ar=0@81,-46+0|behDotless-ar.init.high=0+130",
         "RaqqDisplay.ttf": "kasratan-ar=1@410,-239+0|seen-ar.fina=1+726|dotbelow-ar=0@126,-82+0|behDotless-ar.init=0+190"
       }
     },
     {
       "input": "بنٍ",
       "expectation": {
-        "default": "kasratan-ar.alt=1@274,-381+0|dotabove-ar=1@-9,141+0|noonghunna-ar.fina=1+243|dotbelow-ar=0@72,-46+0|behDotless-ar.init=0+130",
+        "default": "kasratan-ar.alt=1@254,-361+0|dotabove-ar=1@-9,141+0|noonghunna-ar.fina=1+243|dotbelow-ar=0@72,-46+0|behDotless-ar.init=0+130",
         "RaqqDisplay.ttf": "kasratan-ar=1@344,-505+0|dotabove-ar=1@-32,160+0|noonghunna-ar.fina=1+419|dotbelow-ar=0@126,-82+0|behDotless-ar.init=0+190"
       }
     },
