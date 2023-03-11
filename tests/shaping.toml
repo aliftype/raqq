@@ -423,3 +423,115 @@ input = "حد"
 
 [[tests]]
 input = "لحد"
+
+[[tests]]
+input = "۝١٥"
+direction= "ltr"
+
+[[tests]]
+input = "۝٢٥"
+direction= "ltr"
+
+[[tests]]
+input = "۝٣٥"
+direction= "ltr"
+
+[[tests]]
+input = "۝٤٥"
+direction= "ltr"
+
+[[tests]]
+input = "۝٥٥"
+direction= "ltr"
+
+[[tests]]
+input = "۝٦٥"
+direction= "ltr"
+
+[[tests]]
+input = "۝٧٥"
+direction= "ltr"
+
+[[tests]]
+input = "۝٨٥"
+direction= "ltr"
+
+[[tests]]
+input = "۝٩٥"
+direction= "ltr"
+
+[[tests]]
+input = "۝١٠٥"
+direction= "ltr"
+
+[[tests]]
+input = "۝١١٥"
+direction= "ltr"
+
+[[tests]]
+input = "۝١٢٥"
+direction= "ltr"
+
+[[tests]]
+input = "۝١٣٥"
+direction= "ltr"
+
+[[tests]]
+input = "۝١٤٥"
+direction= "ltr"
+
+[[tests]]
+input = "۝١٥٥"
+direction= "ltr"
+
+[[tests]]
+input = "۝١٦٥"
+direction= "ltr"
+
+[[tests]]
+input = "۝١٧٥"
+direction= "ltr"
+
+[[tests]]
+input = "۝١٨٥"
+direction= "ltr"
+
+[[tests]]
+input = "۝١٩٥"
+direction= "ltr"
+
+[[tests]]
+input = "۝٢٠٥"
+direction= "ltr"
+
+[[tests]]
+input = "۝٢١٥"
+direction= "ltr"
+
+[[tests]]
+input = "۝٢٢٥"
+direction= "ltr"
+
+[[tests]]
+input = "۝٢٣٥"
+direction= "ltr"
+
+[[tests]]
+input = "۝٢٤٥"
+direction= "ltr"
+
+[[tests]]
+input = "۝٢٥٥"
+direction= "ltr"
+
+[[tests]]
+input = "۝٢٦٥"
+direction= "ltr"
+
+[[tests]]
+input = "۝٢٧٥"
+direction= "ltr"
+
+[[tests]]
+input = "۝٢٨٥"
+direction= "ltr"

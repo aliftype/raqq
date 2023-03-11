@@ -419,7 +419,7 @@ def build(instance, isTTF, args):
         glyphSet[name] = layer
 
         for layer in glyph.layers:
-            if (glyph.category, glyph.subCategory) == ("Mark", "Nonspacing"):
+            if glyph.subCategory == "Nonspacing":
                 layer.width = 0
 
             paletteIdx = layer.attributes.get("colorPalette", None)

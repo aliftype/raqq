@@ -993,6 +993,230 @@
         "default": "dal-ar.fina=2+875|connector.1=1+0|hah-ar.medi=1+135|lam-ar.init.hah=0@63,0+601",
         "RaqqDisplay.ttf": "dal-ar.fina=2+1456|hah-ar.medi=1+165|lam-ar.init=0@0,156+1231"
       }
+    },
+    {
+      "input": "۝١٥",
+      "direction": "ltr",
+      "expectation": {
+        "default": "endofayah-ar.five=0+0",
+        "RaqqDisplay.ttf": "endofayah-ar=0+740|one-ar=1+1200|five-ar=2+1200"
+      }
+    },
+    {
+      "input": "۝٢٥",
+      "direction": "ltr",
+      "expectation": {
+        "default": "endofayah-ar.five=0+0",
+        "RaqqDisplay.ttf": "endofayah-ar=0+740|two-ar=1+1200|five-ar=2+1200"
+      }
+    },
+    {
+      "input": "۝٣٥",
+      "direction": "ltr",
+      "expectation": {
+        "default": "endofayah-ar.five=0+0",
+        "RaqqDisplay.ttf": "endofayah-ar=0+740|three-ar=1+1200|five-ar=2+1200"
+      }
+    },
+    {
+      "input": "۝٤٥",
+      "direction": "ltr",
+      "expectation": {
+        "default": "endofayah-ar.five=0+0",
+        "RaqqDisplay.ttf": "endofayah-ar=0+740|four-ar=1+1200|five-ar=2+1200"
+      }
+    },
+    {
+      "input": "۝٥٥",
+      "direction": "ltr",
+      "expectation": {
+        "default": "endofayah-ar.five=0+0",
+        "RaqqDisplay.ttf": "endofayah-ar=0+740|five-ar=1+1200|five-ar=2+1200"
+      }
+    },
+    {
+      "input": "۝٦٥",
+      "direction": "ltr",
+      "expectation": {
+        "default": "endofayah-ar.five=0+0",
+        "RaqqDisplay.ttf": "endofayah-ar=0+740|six-ar=1+1200|five-ar=2+1200"
+      }
+    },
+    {
+      "input": "۝٧٥",
+      "direction": "ltr",
+      "expectation": {
+        "default": "endofayah-ar.five=0+0",
+        "RaqqDisplay.ttf": "endofayah-ar=0+740|seven-ar=1+1200|five-ar=2+1200"
+      }
+    },
+    {
+      "input": "۝٨٥",
+      "direction": "ltr",
+      "expectation": {
+        "default": "endofayah-ar.five=0+0",
+        "RaqqDisplay.ttf": "endofayah-ar=0+740|eight-ar=1+1200|five-ar=2+1200"
+      }
+    },
+    {
+      "input": "۝٩٥",
+      "direction": "ltr",
+      "expectation": {
+        "default": "endofayah-ar.five=0+0",
+        "RaqqDisplay.ttf": "endofayah-ar=0+740|nine-ar=1+1200|five-ar=2+1200"
+      }
+    },
+    {
+      "input": "۝١٠٥",
+      "direction": "ltr",
+      "expectation": {
+        "default": "endofayah-ar.five=0+0",
+        "RaqqDisplay.ttf": "endofayah-ar=0+740|one-ar=1+1200|zero-ar=2+1200|five-ar=3+1200"
+      }
+    },
+    {
+      "input": "۝١١٥",
+      "direction": "ltr",
+      "expectation": {
+        "default": "endofayah-ar.five=0+0",
+        "RaqqDisplay.ttf": "endofayah-ar=0+740|one-ar=1+1200|one-ar=2+1200|five-ar=3+1200"
+      }
+    },
+    {
+      "input": "۝١٢٥",
+      "direction": "ltr",
+      "expectation": {
+        "default": "endofayah-ar.five=0+0",
+        "RaqqDisplay.ttf": "endofayah-ar=0+740|one-ar=1+1200|two-ar=2+1200|five-ar=3+1200"
+      }
+    },
+    {
+      "input": "۝١٣٥",
+      "direction": "ltr",
+      "expectation": {
+        "default": "endofayah-ar.five=0+0",
+        "RaqqDisplay.ttf": "endofayah-ar=0+740|one-ar=1+1200|three-ar=2+1200|five-ar=3+1200"
+      }
+    },
+    {
+      "input": "۝١٤٥",
+      "direction": "ltr",
+      "expectation": {
+        "default": "endofayah-ar.five=0+0",
+        "RaqqDisplay.ttf": "endofayah-ar=0+740|one-ar=1+1200|four-ar=2+1200|five-ar=3+1200"
+      }
+    },
+    {
+      "input": "۝١٥٥",
+      "direction": "ltr",
+      "expectation": {
+        "default": "endofayah-ar.five=0+0|five-ar=3+1200",
+        "RaqqDisplay.ttf": "endofayah-ar=0+740|one-ar=1+1200|five-ar=2+1200|five-ar=3+1200"
+      }
+    },
+    {
+      "input": "۝١٦٥",
+      "direction": "ltr",
+      "expectation": {
+        "default": "endofayah-ar.five=0+0",
+        "RaqqDisplay.ttf": "endofayah-ar=0+740|one-ar=1+1200|six-ar=2+1200|five-ar=3+1200"
+      }
+    },
+    {
+      "input": "۝١٧٥",
+      "direction": "ltr",
+      "expectation": {
+        "default": "endofayah-ar.five=0+0",
+        "RaqqDisplay.ttf": "endofayah-ar=0+740|one-ar=1+1200|seven-ar=2+1200|five-ar=3+1200"
+      }
+    },
+    {
+      "input": "۝١٨٥",
+      "direction": "ltr",
+      "expectation": {
+        "default": "endofayah-ar.five=0+0",
+        "RaqqDisplay.ttf": "endofayah-ar=0+740|one-ar=1+1200|eight-ar=2+1200|five-ar=3+1200"
+      }
+    },
+    {
+      "input": "۝١٩٥",
+      "direction": "ltr",
+      "expectation": {
+        "default": "endofayah-ar.five=0+0",
+        "RaqqDisplay.ttf": "endofayah-ar=0+740|one-ar=1+1200|nine-ar=2+1200|five-ar=3+1200"
+      }
+    },
+    {
+      "input": "۝٢٠٥",
+      "direction": "ltr",
+      "expectation": {
+        "default": "endofayah-ar.five=0+0",
+        "RaqqDisplay.ttf": "endofayah-ar=0+740|two-ar=1+1200|zero-ar=2+1200|five-ar=3+1200"
+      }
+    },
+    {
+      "input": "۝٢١٥",
+      "direction": "ltr",
+      "expectation": {
+        "default": "endofayah-ar.five=0+0",
+        "RaqqDisplay.ttf": "endofayah-ar=0+740|two-ar=1+1200|one-ar=2+1200|five-ar=3+1200"
+      }
+    },
+    {
+      "input": "۝٢٢٥",
+      "direction": "ltr",
+      "expectation": {
+        "default": "endofayah-ar.five=0+0",
+        "RaqqDisplay.ttf": "endofayah-ar=0+740|two-ar=1+1200|two-ar=2+1200|five-ar=3+1200"
+      }
+    },
+    {
+      "input": "۝٢٣٥",
+      "direction": "ltr",
+      "expectation": {
+        "default": "endofayah-ar.five=0+0",
+        "RaqqDisplay.ttf": "endofayah-ar=0+740|two-ar=1+1200|three-ar=2+1200|five-ar=3+1200"
+      }
+    },
+    {
+      "input": "۝٢٤٥",
+      "direction": "ltr",
+      "expectation": {
+        "default": "endofayah-ar.five=0+0",
+        "RaqqDisplay.ttf": "endofayah-ar=0+740|two-ar=1+1200|four-ar=2+1200|five-ar=3+1200"
+      }
+    },
+    {
+      "input": "۝٢٥٥",
+      "direction": "ltr",
+      "expectation": {
+        "default": "endofayah-ar.five=0+0|five-ar=3+1200",
+        "RaqqDisplay.ttf": "endofayah-ar=0+740|two-ar=1+1200|five-ar=2+1200|five-ar=3+1200"
+      }
+    },
+    {
+      "input": "۝٢٦٥",
+      "direction": "ltr",
+      "expectation": {
+        "default": "endofayah-ar.five=0+0",
+        "RaqqDisplay.ttf": "endofayah-ar=0+740|two-ar=1+1200|six-ar=2+1200|five-ar=3+1200"
+      }
+    },
+    {
+      "input": "۝٢٧٥",
+      "direction": "ltr",
+      "expectation": {
+        "default": "endofayah-ar.five=0+0",
+        "RaqqDisplay.ttf": "endofayah-ar=0+740|two-ar=1+1200|seven-ar=2+1200|five-ar=3+1200"
+      }
+    },
+    {
+      "input": "۝٢٨٥",
+      "direction": "ltr",
+      "expectation": {
+        "default": "endofayah-ar.five=0+0",
+        "RaqqDisplay.ttf": "endofayah-ar=0+740|two-ar=1+1200|eight-ar=2+1200|five-ar=3+1200"
+      }
     }
   ],
   "configuration": {
