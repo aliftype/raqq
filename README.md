@@ -1,5 +1,6 @@
 Raqq
 ====
+![sample page](sample.svg)
 
 *Raqq* (رَقّ) is a manuscript *Kufic* typeface, that intends to replicate (as
 faithfully as possible) the third century AH (early Abbasid) style of *Kufic*
