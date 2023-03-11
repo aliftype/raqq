@@ -6526,7 +6526,7 @@ layers = (
 anchors = (
 {
 name = damma;
-pos = (-12,189);
+pos = (-2,189);
 },
 {
 name = exit;
@@ -6536,7 +6536,7 @@ backgroundImage = {
 alpha = 80;
 imagePath = "images/MS-ADD-01116-000-00012.jpg";
 locked = 1;
-pos = (-2476,-2736);
+pos = (-2466,-2736);
 scale = (5,5);
 };
 layerId = m01;
@@ -6544,18 +6544,18 @@ shapes = (
 {
 closed = 1;
 nodes = (
-(201,0,l),
-(58,110,l),
+(211,0,l),
+(68,110,l),
 (-20,110,l),
 (-20,0,l)
 );
 },
 {
-pos = (24,0);
+pos = (34,0);
 ref = "heh-ar.init.round";
 }
 );
-width = 351;
+width = 361;
 }
 );
 metricLeft = "=-20";
