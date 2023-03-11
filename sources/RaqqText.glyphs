@@ -138,7 +138,7 @@ value = (
 (144,41,0,255),
 (212,175,55,255),
 (71,28,1,255),
-(144,41,0,242),
+(144,41,0,230),
 (154,115,18,255)
 )
 );
@@ -10148,7 +10148,7 @@ width = 150;
 {
 associatedMasterId = m01;
 attr = {
-colorPalette = 0;
+colorPalette = 3;
 };
 layerId = "7AFB0887-D8D9-481C-81E1-5E6720F61C9F";
 name = "Regular 25 Jun 22, 20:51";
@@ -10199,7 +10199,7 @@ width = 324;
 {
 associatedMasterId = m01;
 attr = {
-colorPalette = 0;
+colorPalette = 3;
 };
 layerId = "B1CF235A-D426-403E-AC5F-FAE0BFC820A1";
 name = "Regular 25 Jun 22, 20:50";
@@ -10236,7 +10236,7 @@ width = 150;
 {
 associatedMasterId = m01;
 attr = {
-colorPalette = 0;
+colorPalette = 3;
 };
 layerId = "94F5A0C7-0133-4DD7-A780-4D7DBEF662F0";
 name = "Regular 25 Jun 22, 20:50";
@@ -10272,7 +10272,7 @@ width = 150;
 {
 associatedMasterId = m01;
 attr = {
-colorPalette = 0;
+colorPalette = 3;
 };
 layerId = "557AD2D8-7DD0-46C9-898C-BFF5D01578A7";
 name = "Regular 25 Jun 22, 20:51";
@@ -10314,7 +10314,7 @@ width = 324;
 {
 associatedMasterId = m01;
 attr = {
-colorPalette = 0;
+colorPalette = 3;
 };
 layerId = "93F08398-69CF-41D4-8750-0A9275A491D4";
 name = "Regular 25 Jun 22, 20:51";
@@ -10356,7 +10356,7 @@ width = 150;
 {
 associatedMasterId = m01;
 attr = {
-colorPalette = 0;
+colorPalette = 3;
 };
 layerId = "95BC5585-F924-4AAC-B205-D7D219410245";
 name = "Regular 25 Jun 22, 20:51";
@@ -10392,7 +10392,7 @@ width = 150;
 {
 associatedMasterId = m01;
 attr = {
-colorPalette = 0;
+colorPalette = 3;
 };
 layerId = "93F172D7-A510-49C9-8463-B87CFE29C250";
 name = "Regular 25 Jun 22, 20:51";
@@ -10433,7 +10433,7 @@ width = 150;
 {
 associatedMasterId = m01;
 attr = {
-colorPalette = 0;
+colorPalette = 3;
 };
 layerId = "CDCF1E84-7251-4EF5-B909-E7186DCEAE9B";
 name = "Regular 25 Jun 22, 20:50";
