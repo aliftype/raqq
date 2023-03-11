@@ -131,7 +131,10 @@ input = "بهبا"
 input = "بع"
 
 [[tests]]
-input = "بعابيت"
+input = "بعا"
+
+[[tests]]
+input = "بيت"
 
 [[tests]]
 input = "بببببببب"
@@ -351,3 +354,30 @@ input = "علج"
 
 [[tests]]
 input = "علم"
+
+[[tests]]
+input = "تعا"
+
+[[tests]]
+input = "تعل"
+
+[[tests]]
+input = "تعلو"
+
+[[tests]]
+input = "تعب"
+
+[[tests]]
+input = "تعبت"
+
+[[tests]]
+input = "تعبا"
+
+[[tests]]
+input = "تعبه"
+
+[[tests]]
+input = "تغنم"
+
+[[tests]]
+input = "تعلم"
