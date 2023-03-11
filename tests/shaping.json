@@ -895,6 +895,48 @@
         "default": "meem-ar.fina.round=3+554|lam-ar.medi.round=2+92|connector.5=1+20|ain-ar.medi=1+280|twodotsverticalabove-ar=0@-46,400+0|behDotless-ar.init.high=0+130",
         "RaqqDisplay.ttf": "meem-ar.fina=3+928|lam-ar.medi.ain=2+352|ain-ar.medi=1@-220,0+260|twodotsverticalabove-ar=0@-67,584+0|behDotless-ar.init.ain=0+178"
       }
+    },
+    {
+      "input": "كم",
+      "expectation": {
+        "default": "meem-ar.fina=1+567|kaf-ar.init=0@-12,0+753",
+        "RaqqDisplay.ttf": "meem-ar.fina=1+928|kaf-ar.init=0+1834"
+      }
+    },
+    {
+      "input": "كما",
+      "expectation": {
+        "default": "alef-ar.fina=2+97|meem-ar.medi=1+380|kaf-ar.init=0@-5,0+760",
+        "RaqqDisplay.ttf": "alef-ar.fina.meem=2+139|meem-ar.medi=1+539|kaf-ar.init=0+1834"
+      }
+    },
+    {
+      "input": "كمم",
+      "expectation": {
+        "default": "meem-ar.fina.round=2+554|meem-ar.medi.round2=1+398|kaf-ar.init=0@-5,0+760",
+        "RaqqDisplay.ttf": "meem-ar.fina=2+928|meem-ar.medi=1+539|kaf-ar.init=0+1834"
+      }
+    },
+    {
+      "input": "بكم",
+      "expectation": {
+        "default": "meem-ar.fina=2+567|kaf-ar.medi=1@-12,0+743|dotbelow-ar=0@72,-46+0|behDotless-ar.init=0+130",
+        "RaqqDisplay.ttf": "meem-ar.fina=2+928|kaf-ar.medi=1+2251|dotbelow-ar=0@126,-82+0|behDotless-ar.init=0+190"
+      }
+    },
+    {
+      "input": "بكم",
+      "expectation": {
+        "default": "meem-ar.fina=2+567|kaf-ar.medi=1@-12,0+743|dotbelow-ar=0@72,-46+0|behDotless-ar.init=0+130",
+        "RaqqDisplay.ttf": "meem-ar.fina=2+928|kaf-ar.medi=1+2251|dotbelow-ar=0@126,-82+0|behDotless-ar.init=0+190"
+      }
+    },
+    {
+      "input": "بكمم",
+      "expectation": {
+        "default": "meem-ar.fina.round=3+554|meem-ar.medi.round2=2+398|kaf-ar.medi=1@-5,0+750|dotbelow-ar=0@72,-46+0|behDotless-ar.init=0+130",
+        "RaqqDisplay.ttf": "meem-ar.fina=3+928|meem-ar.medi=2+539|kaf-ar.medi=1+2251|dotbelow-ar=0@126,-82+0|behDotless-ar.init=0+190"
+      }
     }
   ],
   "configuration": {

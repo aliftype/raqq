@@ -381,3 +381,21 @@ input = "تغنم"
 
 [[tests]]
 input = "تعلم"
+
+[[tests]]
+input = "كم"
+
+[[tests]]
+input = "كما"
+
+[[tests]]
+input = "كمم"
+
+[[tests]]
+input = "بكم"
+
+[[tests]]
+input = "بكم"
+
+[[tests]]
+input = "بكمم"

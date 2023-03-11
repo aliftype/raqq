@@ -4421,6 +4421,7 @@ metricRight = "=0@110";
 },
 {
 glyphname = "kaf-ar.medi";
+kernLeft = kaf;
 kernRight = sad;
 layers = (
 {
@@ -4492,6 +4493,7 @@ metricRight = "=0@110";
 },
 {
 glyphname = "kaf-ar.init";
+kernLeft = kaf;
 layers = (
 {
 anchors = (
@@ -10710,6 +10712,11 @@ connector.5 = {
 };
 "fehDotless-ar.medi" = {
 "seen-ar.medi.short" = -10;
+};
+"@MMK_R_kaf" = {
+"meem-ar.medi" = -5;
+"meem-ar.medi.round2" = -5;
+"meem-ar.fina" = -12;
 };
 };
 };
