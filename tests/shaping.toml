@@ -535,3 +535,54 @@ direction= "ltr"
 [[tests]]
 input = "۝٢٨٥"
 direction= "ltr"
+
+[[tests]]
+input = "وفے"
+
+[[tests]]
+input = "ولح"
+
+[[tests]]
+input = "ولجا"
+
+[[tests]]
+input = "وبخا"
+
+[[tests]]
+input = "الحا"
+
+[[tests]]
+input = "ريحا"
+
+[[tests]]
+input = "وقح لا"
+
+[[tests]]
+input = "يــــتخذ"
+
+[[tests]]
+input = "لم تحاجون"
+
+[[tests]]
+input = "حاججتم"
+
+[[tests]]
+input = "وسے"
+
+[[tests]]
+input = "وفے"
+
+[[tests]]
+input = "وصے"
+
+[[tests]]
+input = "الے"
+
+[[tests]]
+input = "الحجارة"
+
+[[tests]]
+input = "افنے"
+
+[[tests]]
+input = "ايعنے"
