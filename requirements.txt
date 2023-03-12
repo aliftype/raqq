@@ -11,15 +11,12 @@ attrs==22.2.0
 axisregistry==0.3.11
     # via fontbakery
 babelfont==3.0.0
-    # via
-    #   fez-language
-    #   glyphtools
+    # via glyphtools
 beautifulsoup4==4.11.2
     # via fontbakery
 beziers==0.5.0
     # via
     #   collidoscope
-    #   fez-language
     #   fontbakery
     #   fontfeatures
     #   glyphtools
@@ -49,16 +46,12 @@ defcon==0.10.2
     #   glyphsets
 dehinter==4.0.0
     # via fontbakery
-fez-language==1.3.4
-    # via -r requirements.in
 font-v==2.1.0
     # via fontbakery
 fontbakery==0.8.11
     # via -r requirements.in
 fontfeatures==1.7.4
-    # via
-    #   babelfont
-    #   fez-language
+    # via babelfont
 fonttools[lxml,ufo,unicode]==4.38.0
     # via
     #   -r requirements.in
@@ -70,7 +63,6 @@ fonttools[lxml,ufo,unicode]==4.38.0
     #   cu2qu
     #   defcon
     #   dehinter
-    #   fez-language
     #   font-v
     #   fontbakery
     #   fontfeatures
@@ -101,12 +93,9 @@ glyphslib==6.1.0
 glyphtools==0.8.0
     # via
     #   collidoscope
-    #   fez-language
     #   fontfeatures
 idna==3.4
     # via requests
-lark==1.1.5
-    # via fez-language
 lxml==4.9.2
     # via
     #   fontbakery
@@ -116,8 +105,6 @@ markdown-it-py==2.2.0
     # via rich
 mdurl==0.1.2
     # via markdown-it-py
-more-itertools==9.0.0
-    # via fez-language
 munkres==1.1.4
     # via fontbakery
 numpy==1.24.1
@@ -187,6 +174,7 @@ ufolint==1.2.0
     # via fontbakery
 uharfbuzz==0.34.0
     # via
+    #   -r requirements.in
     #   collidoscope
     #   vharfbuzz
 unicodedata2==15.0.0

@@ -28,14 +28,14 @@ FONTDIR = fonts
 TESTDIR = tests
 BUILDDIR = build
 
-STYLES = Text Display
+STYLES = Text # Display
 OTF = $(STYLES:%=$(FONTDIR)/$(NAME)%.otf)
 TTF = $(STYLES:%=$(FONTDIR)/$(NAME)%.ttf)
+FEA = $(STYLES:%=$(SOURCEDIR)/$(NAME)%.fea)
 TOML = $(wildcard $(TESTDIR)/*.toml)
 JSON = $(TOML:%.toml=%.json)
 HTML = $(STYLES:%=$(TESTDIR)/$(NAME)%.html)
 FONTS = $(TTF) # $(OTF)
-FEZ = $(SOURCEDIR)/Raqq.fez
 GLYPHDATA = $(SOURCEDIR)/GlyphData.xml
 
 ARGS ?= 
@@ -47,10 +47,11 @@ ARGS ?=
 all: $(FONTS)
 test: $(HTML)
 update-test: $(JSON)
+update-fea: $(FEA)
 
-%.fea: %.glyphs $(FEZ)
+$(SOURCEDIR)/%.fea:
 	$(info   GEN    $(@F))
-	python $(SCRIPTDIR)/fez-to-fea.py $+ -o $@
+	python $(SCRIPTDIR)/update-overhang-fea.py $(FONTDIR)/$(*F).ttf $@
 
 $(FONTDIR)/%.otf: $(SOURCEDIR)/%.glyphs $(CONFIG) $(GLYPHDATA) $(SOURCEDIR)/%.fea
 	$(info   BUILD  $(@F))

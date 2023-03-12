@@ -1,7 +1,0 @@
-LoadPlugin tarboosh.FixOverhang;
-LoadAnchors;
-
-Routine overhang {
-  FixOverhang 0 50 /hah-ar\.(medi|fina)|yehbarree-ar.fina$/ /.*\.medi/ /.*\.init/;
-  FixOverhang 0 50 yehbarree-ar.fina.baseline /.*\.init/;
-} IgnoreMarks;
