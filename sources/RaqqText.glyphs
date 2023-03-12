@@ -475,6 +475,10 @@ lookup connector_1 {
 	sub fehDotless-ar.medi	by fehDotless-ar.medi connector.1;
 } connector_1;
 
+lookup connector_6 {
+	sub fehDotless-ar.medi	by fehDotless-ar.medi connector.6;
+} connector_6;
+
 lookup rlig_c {
 	lookupflag IgnoreMarks;
 
@@ -511,6 +515,16 @@ lookup rlig_c {
 		 lam-ar.medi lam-ar.medi.round lam-ar.fina]
 	by	 ain-ar.medi connector.5
 	;
+
+
+	sub	 fehDotless-ar.medi' lookup connector_6
+		 waw-ar.fina
+	;
+
+	sub	 connector.6
+		 waw-ar.fina' lookup rounded
+	;
+
 } rlig_c;
 ";
 name = Lookups;
@@ -10992,6 +11006,40 @@ nodes = (
 width = 92;
 }
 );
+},
+{
+category = Connector;
+glyphname = connector.6;
+layers = (
+{
+anchors = (
+{
+name = entry;
+pos = (-25,0);
+},
+{
+name = exit;
+}
+);
+layerId = m01;
+shapes = (
+{
+closed = 1;
+nodes = (
+(36,10,l),
+(36,104,l),
+(-3,134,o),
+(-19,169,o),
+(-47,212,c),
+(-150,212,l),
+(-150,10,l)
+);
+}
+);
+width = 36;
+}
+);
+metricRight = "=0";
 }
 );
 instances = (
@@ -11048,7 +11096,9 @@ connector.5 = {
 "lam_alef-ar.fina" = -130;
 };
 "fehDotless-ar.medi" = {
+connector.2 = 15;
 "seen-ar.medi.short" = -10;
+"waw-ar.fina.round" = -30;
 };
 };
 };
