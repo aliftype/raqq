@@ -4966,21 +4966,48 @@ name = exit;
 {
 name = fatha;
 pos = (-74,441);
+},
+{
+name = kasra;
+pos = (44,-56);
 }
 );
 layerId = m01;
 shapes = (
 {
-alignment = -1;
-pos = (-5,0);
-ref = "alef-ar.fina.short";
+closed = 1;
+nodes = (
+(104,0,l),
+(104,110,l),
+(96,110,o),
+(91,124,o),
+(90,159,cs),
+(81,413,o),
+(71,535,o),
+(65,604,cs),
+(63,625,o),
+(48,624,o),
+(42,613,cs),
+(22,577,o),
+(-1,543,o),
+(-27,532,cs),
+(-45,524,o),
+(-20,511,o),
+(-17,443,cs),
+(-14,381,o),
+(-5,179,o),
+(-5,55,cs),
+(-5,20,o),
+(-7,0,o),
+(42,0,cs)
+);
 }
 );
-width = 83;
+width = 90;
 }
 );
 metricLeft = "=-5@55";
-metricRight = "=alef-ar.fina.short";
+metricRight = "=0@159";
 },
 {
 glyphname = "lam-ar.medi.short";
