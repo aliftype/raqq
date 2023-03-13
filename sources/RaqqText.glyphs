@@ -90,8 +90,8 @@ waw-ar.fina.round
 alefMaksura-ar.fina
 alefMaksura-ar.fina.salt
 alefMaksura-ar.fina.tooth
-alefMaksura-ar.fina.tooth2
-alefMaksura-ar.fina.tooth2.salt
+alefMaksura-ar.fina.wide
+alefMaksura-ar.fina.wide.salt
 yehbarree-ar.fina
 yehbarree-ar.fina.baseline
 lam_alef-ar.fina
@@ -399,7 +399,7 @@ lookup rlig_1 {
 
 	sub [behDotless-ar.init lam-ar.init]
 		 alefMaksura-ar.fina'
-	by	 alefMaksura-ar.fina.tooth2
+	by	 alefMaksura-ar.fina.wide
 	;
 } rlig_1;
 
@@ -415,11 +415,11 @@ lookup rlig_2 {
 } rlig_2;
 
 lookup rounded {
-	sub meem-ar.init	by meem-ar.init.round;
-	sub meem-ar.medi	by meem-ar.medi.round;
-	sub meem-ar.fina	by meem-ar.fina.round;
-	sub waw-ar.fina		by waw-ar.fina.round;
-	sub heh-ar.init		by heh-ar.init.round;
+	sub meem-ar.init		by meem-ar.init.round;
+	sub meem-ar.medi		by meem-ar.medi.round;
+	sub meem-ar.fina		by meem-ar.fina.round;
+	sub waw-ar.fina			by waw-ar.fina.round;
+	sub heh-ar.init			by heh-ar.init.round;
 } rounded;
 
 lookup rounded2 {
@@ -429,10 +429,10 @@ lookup rounded2 {
 } rounded2;
 
 lookup short_lam {
-	sub lam-ar.fina		by lam-ar.fina.short;
-	sub lam-ar.medi		by lam-ar.medi.short;
+	sub lam-ar.fina			by lam-ar.fina.short;
+	sub lam-ar.medi			by lam-ar.medi.short;
 	sub lam-ar.medi.round	by lam-ar.medi.round.short;
-	sub alef-ar.fina	by alef-ar.fina.short;
+	sub alef-ar.fina		by alef-ar.fina.short;
 } short_lam;
 
 lookup rlig_3 {
@@ -608,7 +608,7 @@ tag = mark;
 automatic = 1;
 code = "sub alefMaksura-ar by alefMaksura-ar.salt;
 sub alefMaksura-ar.fina by alefMaksura-ar.fina.salt;
-sub alefMaksura-ar.fina.tooth2 by alefMaksura-ar.fina.tooth2.salt;
+sub alefMaksura-ar.fina.wide by alefMaksura-ar.fina.wide.salt;
 ";
 tag = salt;
 }
@@ -7399,7 +7399,7 @@ metricLeft = "=0@0";
 metricRight = "=0";
 },
 {
-glyphname = "alefMaksura-ar.fina.tooth2";
+glyphname = "alefMaksura-ar.fina.wide";
 layers = (
 {
 anchors = (
@@ -7489,7 +7489,7 @@ metricLeft = "=0@0";
 metricRight = "=-15@0";
 },
 {
-glyphname = "alefMaksura-ar.fina.tooth2.salt";
+glyphname = "alefMaksura-ar.fina.wide.salt";
 layers = (
 {
 anchors = (
