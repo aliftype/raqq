@@ -77,8 +77,8 @@ def main(args):
                 found = True
 
                 match = glyphs[0]
-                lookahead = " ".join(glyphs[1:])
-                rules.append(f"\tpos {match}' {adjustment} {lookahead};")
+                lookahead = "' ".join(glyphs[1:])
+                rules.append(f"\tpos {match}' {adjustment} {lookahead}';")
             if not found:
                 break
             i += 1
