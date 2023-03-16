@@ -509,6 +509,8 @@ def build(instance, isTTF, args):
         ulCodePageRange1=calcBits(codePages, 0, 32),
     )
 
+    fb.font.cfg["fontTools.otlLib.builder:WRITE_GPOS7"] = True
+
     fea = makeFeatures(instance, master, args, glyphOrder)
     fb.addOpenTypeFeatures(fea, filename=args.input)
 
@@ -516,8 +518,6 @@ def build(instance, isTTF, args):
     palettes = [[tuple(v / 255 for v in c) for c in p] for p in palettes]
     fb.setupCPAL(palettes)
     fb.setupCOLR(colorLayers)
-
-    instance.font = fb.font
 
     return fb.font
 
