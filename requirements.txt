@@ -52,7 +52,7 @@ fontbakery==0.8.11
     # via -r requirements.in
 fontfeatures==1.7.4
     # via babelfont
-fonttools[lxml,ufo,unicode]==4.38.0
+fonttools[lxml,ufo,unicode]==4.39.1
     # via
     #   -r requirements.in
     #   axisregistry
@@ -84,7 +84,7 @@ gitpython==3.1.31
     # via font-v
 glyphsets==0.5.4
     # via fontbakery
-glyphslib==6.1.0
+glyphslib==6.2.0
     # via
     #   -r requirements.in
     #   babelfont
@@ -107,7 +107,7 @@ mdurl==0.1.2
     # via markdown-it-py
 munkres==1.1.4
     # via fontbakery
-numpy==1.24.1
+numpy==1.24.2
     # via glyphtools
 openstep-plist==0.3.0.post1
     # via
@@ -117,7 +117,7 @@ opentype-sanitizer==9.0.0
     # via fontbakery
 opentypespec==1.9.1
     # via fontbakery
-orjson==3.8.5
+orjson==3.8.7
     # via babelfont
 packaging==23.0
     # via fontbakery
@@ -172,7 +172,7 @@ ufolib2==0.14.0
     #   glyphslib
 ufolint==1.2.0
     # via fontbakery
-uharfbuzz==0.34.0
+uharfbuzz==0.35.0
     # via
     #   -r requirements.in
     #   collidoscope
@@ -181,7 +181,7 @@ unicodedata2==15.0.0
     # via
     #   fontbakery
     #   fonttools
-urllib3==1.26.14
+urllib3==1.26.15
     # via requests
 vharfbuzz==0.2.0
     # via fontbakery
