@@ -1051,7 +1051,7 @@
     {
       "input": "وفے",
       "expectation": {
-        "default": "yehbarree-ar.fina.baseline=2+267|dotabove-ar=1@-67,488+0|fehDotless-ar.init.narrow=1@0,115+867|waw-ar=0@400,0+909"
+        "default": "yehbarree-ar.fina.baseline=2+267|dotabove-ar=1@-67,488+0|fehDotless-ar.init.yeh=1@0,115+867|waw-ar=0@400,0+909"
       }
     },
     {
@@ -1117,7 +1117,7 @@
     {
       "input": "وفے",
       "expectation": {
-        "default": "yehbarree-ar.fina.baseline=2+267|dotabove-ar=1@-67,488+0|fehDotless-ar.init.narrow=1@0,115+867|waw-ar=0@400,0+909"
+        "default": "yehbarree-ar.fina.baseline=2+267|dotabove-ar=1@-67,488+0|fehDotless-ar.init.yeh=1@0,115+867|waw-ar=0@400,0+909"
       }
     },
     {

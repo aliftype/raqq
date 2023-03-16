@@ -181,7 +181,7 @@ lookup overhang {
 	pos sad-ar.init' 102 yehbarree-ar.fina.baseline';
 	pos tah-ar.init' 107 yehbarree-ar.fina.baseline';
 	pos ain-ar.init' 177 yehbarree-ar.fina.baseline';
-	pos fehDotless-ar.init.narrow' 539 yehbarree-ar.fina.baseline';
+	pos fehDotless-ar.init.yeh' 539 yehbarree-ar.fina.baseline';
 	pos kaf-ar.init' 102 yehbarree-ar.fina.baseline';
 	pos lam-ar.init' 744 yehbarree-ar.fina.baseline';
 	pos meem-ar.init' 442 yehbarree-ar.fina.baseline';

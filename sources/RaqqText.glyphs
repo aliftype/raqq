@@ -55,7 +55,7 @@ sad-ar.init
 tah-ar.init
 ain-ar.init
 fehDotless-ar.init
-fehDotless-ar.init.narrow
+fehDotless-ar.init.yeh
 kaf-ar.init
 lam-ar.init
 lam-ar.init.hah
@@ -379,7 +379,7 @@ lookup tooth_yeh {
 
 lookup wide_yeh {
 	sub alefMaksura-ar.fina	by alefMaksura-ar.fina.wide;
-	sub fehDotless-ar.init	by fehDotless-ar.init.narrow;
+	sub fehDotless-ar.init	by fehDotless-ar.init.yeh;
 } wide_yeh;
 
 lookup rlig_1 {
@@ -4071,7 +4071,7 @@ metricLeft = "=-20";
 metricRight = "=0";
 },
 {
-glyphname = "fehDotless-ar.init.narrow";
+glyphname = "fehDotless-ar.init.yeh";
 layers = (
 {
 anchors = (
