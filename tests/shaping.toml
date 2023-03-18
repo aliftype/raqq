@@ -586,3 +586,90 @@ input = "افنے"
 
 [[tests]]
 input = "ايعنے"
+
+[[tests]]
+input = "فا"
+
+[[tests]]
+input = "فل"
+
+[[tests]]
+input = "فب"
+
+[[tests]]
+input = "فبا"
+
+[[tests]]
+input = "فبب"
+
+[[tests]]
+input = "فبم"
+
+[[tests]]
+input = "فس"
+
+[[tests]]
+input = "فسا"
+
+[[tests]]
+input = "فص"
+
+[[tests]]
+input = "فصا"
+
+[[tests]]
+input = "فد"
+
+[[tests]]
+input = "فك"
+
+[[tests]]
+input = "فكا"
+
+[[tests]]
+input = "فط"
+
+[[tests]]
+input = "فطا"
+
+[[tests]]
+input = "فه"
+
+[[tests]]
+input = "فها"
+
+[[tests]]
+input = "فهم"
+
+[[tests]]
+input = "فعا"
+
+[[tests]]
+input = "فع"
+
+[[tests]]
+input = "ففا"
+
+[[tests]]
+input = "فف"
+
+[[tests]]
+input = "فم"
+
+[[tests]]
+input = "فما"
+
+[[tests]]
+input = "فمم"
+
+[[tests]]
+input = "فر"
+
+[[tests]]
+input = "فو"
+
+[[tests]]
+input = "فق"
+
+[[tests]]
+input = "فن"
