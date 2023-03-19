@@ -66,8 +66,13 @@ $(TESTDIR)/%.html: $(FONTDIR)/%.ttf $(TESTDIR)/fontbakery.yml
 	fontbakery check-universal --config=$(TESTDIR)/fontbakery.yml \
                    fontbakery.profiles.shaping $< --html=$@ &> /dev/null
 
+$(TESTDIR)/decomposition.toml: $(SOURCEDIR)/$(NAME)Text.glyphs
+	$(info   GEN    $(@F))
+	python $(SCRIPTDIR)/update-decomposition-test.py $@ $<
+
 $(TESTDIR)/%.json: $(TESTDIR)/%.toml $(TTF)
-	python $(SCRIPTDIR)/update-test-data.py $@ $+
+	$(info   GEN    $(@F))
+	python $(SCRIPTDIR)/update-test-data.py $@ $(NAME)Text $+
 
 dist: all
 	$(info   DIST   $(DIST).zip)

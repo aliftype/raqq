@@ -1,0 +1,172 @@
+{
+  "configuration": {
+    "forbidden_glyphs": [
+      "kashida-ar",
+      "alefHamzaabove-ar",
+      "alefHamzabelow-ar",
+      "alefMadda-ar",
+      "alefWasla-ar",
+      "beh-ar",
+      "teh-ar",
+      "theh-ar",
+      "jeem-ar",
+      "khah-ar",
+      "thal-ar",
+      "zain-ar",
+      "sheen-ar",
+      "dad-ar",
+      "zah-ar",
+      "ghain-ar",
+      "feh-ar",
+      "veh-ar",
+      "qaf-ar",
+      "noon-ar",
+      "tehMarbuta-ar",
+      "wawHamzaabove-ar",
+      "yeh-ar",
+      "yehFarsi-ar",
+      "yehHamzaabove-ar"
+    ],
+    "defaults": {
+      "direction": "rtl",
+      "script": "arab"
+    }
+  },
+  "tests": [
+    {
+      "input": "ء ء‍ ‍ء‍ ‍ء"
+    },
+    {
+      "input": "آ آ‍ ‍آ‍ ‍آ"
+    },
+    {
+      "input": "أ أ‍ ‍أ‍ ‍أ"
+    },
+    {
+      "input": "ؤ ؤ‍ ‍ؤ‍ ‍ؤ"
+    },
+    {
+      "input": "إ إ‍ ‍إ‍ ‍إ"
+    },
+    {
+      "input": "ئ ئ‍ ‍ئ‍ ‍ئ"
+    },
+    {
+      "input": "ا ا‍ ‍ا‍ ‍ا"
+    },
+    {
+      "input": "ب ب‍ ‍ب‍ ‍ب"
+    },
+    {
+      "input": "ة ة‍ ‍ة‍ ‍ة"
+    },
+    {
+      "input": "ت ت‍ ‍ت‍ ‍ت"
+    },
+    {
+      "input": "ث ث‍ ‍ث‍ ‍ث"
+    },
+    {
+      "input": "ج ج‍ ‍ج‍ ‍ج"
+    },
+    {
+      "input": "ح ح‍ ‍ح‍ ‍ح"
+    },
+    {
+      "input": "خ خ‍ ‍خ‍ ‍خ"
+    },
+    {
+      "input": "د د‍ ‍د‍ ‍د"
+    },
+    {
+      "input": "ذ ذ‍ ‍ذ‍ ‍ذ"
+    },
+    {
+      "input": "ر ر‍ ‍ر‍ ‍ر"
+    },
+    {
+      "input": "ز ز‍ ‍ز‍ ‍ز"
+    },
+    {
+      "input": "س س‍ ‍س‍ ‍س"
+    },
+    {
+      "input": "ش ش‍ ‍ش‍ ‍ش"
+    },
+    {
+      "input": "ص ص‍ ‍ص‍ ‍ص"
+    },
+    {
+      "input": "ض ض‍ ‍ض‍ ‍ض"
+    },
+    {
+      "input": "ط ط‍ ‍ط‍ ‍ط"
+    },
+    {
+      "input": "ظ ظ‍ ‍ظ‍ ‍ظ"
+    },
+    {
+      "input": "ع ع‍ ‍ع‍ ‍ع"
+    },
+    {
+      "input": "غ غ‍ ‍غ‍ ‍غ"
+    },
+    {
+      "input": "ـ ـ‍ ‍ـ‍ ‍ـ"
+    },
+    {
+      "input": "ف ف‍ ‍ف‍ ‍ف"
+    },
+    {
+      "input": "ق ق‍ ‍ق‍ ‍ق"
+    },
+    {
+      "input": "ك ك‍ ‍ك‍ ‍ك"
+    },
+    {
+      "input": "ل ل‍ ‍ل‍ ‍ل"
+    },
+    {
+      "input": "م م‍ ‍م‍ ‍م"
+    },
+    {
+      "input": "ن ن‍ ‍ن‍ ‍ن"
+    },
+    {
+      "input": "ه ه‍ ‍ه‍ ‍ه"
+    },
+    {
+      "input": "و و‍ ‍و‍ ‍و"
+    },
+    {
+      "input": "ى ى‍ ‍ى‍ ‍ى"
+    },
+    {
+      "input": "ي ي‍ ‍ي‍ ‍ي"
+    },
+    {
+      "input": "ٮ ٮ‍ ‍ٮ‍ ‍ٮ"
+    },
+    {
+      "input": "ٯ ٯ‍ ‍ٯ‍ ‍ٯ"
+    },
+    {
+      "input": "ٱ ٱ‍ ‍ٱ‍ ‍ٱ"
+    },
+    {
+      "input": "ڡ ڡ‍ ‍ڡ‍ ‍ڡ"
+    },
+    {
+      "input": "ڤ ڤ‍ ‍ڤ‍ ‍ڤ"
+    },
+    {
+      "input": "ں ں‍ ‍ں‍ ‍ں"
+    },
+    {
+      "input": "ی ی‍ ‍ی‍ ‍ی"
+    },
+    {
+      "input": "ے ے‍ ‍ے‍ ‍ے"
+    }
+  ]
+}

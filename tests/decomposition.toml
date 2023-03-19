@@ -1,0 +1,2 @@
+[configuration]
+forbidden_glyphs = [ "kashida-ar", "alefHamzaabove-ar", "alefHamzabelow-ar", "alefMadda-ar", "alefWasla-ar", "beh-ar", "teh-ar", "theh-ar", "jeem-ar", "khah-ar", "thal-ar", "zain-ar", "sheen-ar", "dad-ar", "zah-ar", "ghain-ar", "feh-ar", "veh-ar", "qaf-ar", "noon-ar", "tehMarbuta-ar", "wawHamzaabove-ar", "yeh-ar", "yehFarsi-ar", "yehHamzaabove-ar",]

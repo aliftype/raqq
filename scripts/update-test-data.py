@@ -50,22 +50,20 @@ def open_font(path):
     return font
 
 
-def main(rags):
-    doc = toml.load(args.toml)
-    tests = doc["tests"]
-    configuration = doc.setdefault("configuration", {})
-    defaults = configuration.setdefault("defaults", {})
-    direction = defaults.setdefault("direction", "rtl")
-    script = defaults.setdefault("script", "arab")
+def update_shaping_tests(doc, fonts, default):
+    configuration = doc["configuration"]
+
+    defaults = configuration["defaults"]
+    direction = defaults["direction"]
+    script = defaults["script"]
     language = defaults.get("language")
     features = defaults.get("features")
 
-    fonts = {f: open_font(f) for f in args.fonts}
-
+    tests = doc["tests"]
     for test in tests:
         expectation = {}
-        for path in args.fonts:
-            name = "default" if path.name == "RaqqText.ttf" else path.name
+        for path in fonts:
+            name = "default" if path.stem == default else path.name
             expectation[name] = shape(
                 fonts[path],
                 test.get("input"),
@@ -76,6 +74,45 @@ def main(rags):
             )
         test["expectation"] = expectation
 
+
+def update_decomposition_tests(doc, fonts, default):
+    configuration = doc["configuration"]
+
+    defaults = configuration["defaults"]
+    direction = defaults["direction"]
+    script = defaults["script"]
+    language = defaults.get("language")
+    features = defaults.get("features")
+
+    tests = doc.setdefault("tests", [])
+
+    for path in fonts:
+        if path.stem != default:
+            continue
+
+        font = fonts[path]
+        unicodes = font.face.unicodes
+        for u in unicodes:
+            c = chr(u)
+            if c.isalpha():
+                test = {"input": f"{c} {c}\u200D \u200D{c}\u200D \u200D{c}"}
+                tests.append(test)
+
+
+def main(rags):
+    doc = toml.load(args.toml)
+    configuration = doc.setdefault("configuration", {})
+    defaults = configuration.setdefault("defaults", {})
+    defaults.setdefault("direction", "rtl")
+    defaults.setdefault("script", "arab")
+
+    fonts = {f: open_font(f) for f in args.fonts}
+
+    if "forbidden_glyphs" in configuration:
+        update_decomposition_tests(doc, fonts, args.default)
+    else:
+        update_shaping_tests(doc, fonts, args.default)
+
     args.json.write_text(json.dumps(doc, indent=2, ensure_ascii=False))
 
 
@@ -85,6 +122,7 @@ if __name__ == "__main__":
 
     parser = ArgumentParser()
     parser.add_argument("json", type=Path, help="output .json file path.")
+    parser.add_argument("default", help="default font’s file name")
     parser.add_argument("toml", type=Path, help="input .toml file path.")
     parser.add_argument("fonts", nargs="+", type=Path, help="fonts to update with.")
 
