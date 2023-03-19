@@ -1,2 +1,11 @@
+vendor_id: ALIF
+
 com.google.fonts/check/shaping:
   test_directory: tests
+
+exclude_checks:
+  - com.google.fonts/check/valid_glyphnames
+  - com.google.fonts/check/gpos7
+  - com.google.fonts/check/unitsperem
+  - com.google.fonts/check/outline_alignment_miss
+  - com.google.fonts/check/contour_count

@@ -48,7 +48,7 @@ dehinter==4.0.0
     # via fontbakery
 font-v==2.1.0
     # via fontbakery
-fontbakery==0.8.11
+fontbakery[freetype]==0.8.11
     # via -r requirements.in
 fontfeatures==1.7.4
     # via babelfont
@@ -72,6 +72,8 @@ fonttools[lxml,ufo,unicode]==4.39.2
     #   ufolib2
     #   ufolint
     #   vharfbuzz
+freetype-py==2.3.0
+    # via fontbakery
 fs==2.4.16
     # via
     #   fontfeatures

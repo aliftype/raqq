@@ -4,5 +4,5 @@ glyphsLib >= 6.0.0b1
 ufo2ft
 skia-pathops
 toml
-fontbakery
+fontbakery[freetype]
 uharfbuzz

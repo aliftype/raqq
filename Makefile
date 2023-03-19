@@ -61,9 +61,9 @@ $(FONTDIR)/%.ttf: $(SOURCEDIR)/%.glyphs $(CONFIG) $(GLYPHDATA) $(SOURCEDIR)/%.fe
 	$(info   BUILD  $(@F))
 	python $(SCRIPTDIR)/build.py $< $(VERSION) $@ --data=$(GLYPHDATA) $(ARGS)
 
-$(TESTDIR)/%.html: $(FONTDIR)/%.ttf
+$(TESTDIR)/%.html: $(FONTDIR)/%.ttf $(TESTDIR)/fontbakery.yml
 	$(info   TEST   $(<F))
-	fontbakery check-profile --config=$(TESTDIR)/fontbakery.yml \
+	fontbakery check-universal --config=$(TESTDIR)/fontbakery.yml \
                    fontbakery.profiles.shaping $< --html=$@ &> /dev/null
 
 $(TESTDIR)/%.json: $(TESTDIR)/%.toml $(TTF)
