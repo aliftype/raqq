@@ -700,3 +700,99 @@ input = "◌ٕ"
 
 [[tests]]
 input = "◌ٓ"
+
+[[tests]]
+input = "نفا"
+
+[[tests]]
+input = "نفل"
+
+[[tests]]
+input = " نفلن"
+
+[[tests]]
+input = "نفلا"
+
+[[tests]]
+input = "نفب"
+
+[[tests]]
+input = "نفبا"
+
+[[tests]]
+input = "نفبب"
+
+[[tests]]
+input = "نقيم"
+
+[[tests]]
+input = "نفد"
+
+[[tests]]
+input = "نفض"
+
+[[tests]]
+input = "نفضا"
+
+[[tests]]
+input = "نفط"
+
+[[tests]]
+input = "نفطا"
+
+[[tests]]
+input = "نفك"
+
+[[tests]]
+input = "نفكا"
+
+[[tests]]
+input = "نفر"
+
+[[tests]]
+input = "نفس"
+
+[[tests]]
+input = "نفسا"
+
+[[tests]]
+input = "نفع"
+
+[[tests]]
+input = "نفعا"
+
+[[tests]]
+input = "نفف"
+
+[[tests]]
+input = "نفق"
+
+[[tests]]
+input = "نفم"
+
+[[tests]]
+input = "نفما"
+
+[[tests]]
+input = "نفمم"
+
+[[tests]]
+input = "نفن"
+
+[[tests]]
+input = "نفه"
+
+[[tests]]
+input = "نفهم"
+
+[[tests]]
+input = "نفها"
+
+[[tests]]
+input = "نفو"
+
+[[tests]]
+input = "نفى"
+
+[[tests]]
+input = "نفے"
