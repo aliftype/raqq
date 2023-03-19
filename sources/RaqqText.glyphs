@@ -10463,29 +10463,6 @@ width = 0;
 unicode = 8208;
 },
 {
-glyphname = "dotcenter-ar";
-layers = (
-{
-anchors = (
-{
-name = _center;
-pos = (70,73);
-}
-);
-layerId = m01;
-shapes = (
-{
-alignment = -1;
-angle = -17;
-pos = (-17,17);
-ref = "dotabove-ar";
-}
-);
-width = 128;
-}
-);
-},
-{
 category = Mark;
 glyphname = "hamza-ar";
 layers = (
