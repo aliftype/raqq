@@ -818,6 +818,16 @@ width = 400;
 unicode = (32,160);
 },
 {
+glyphname = "hamza-ar";
+layers = (
+{
+layerId = m01;
+width = 0;
+}
+);
+unicode = 1569;
+},
+{
 glyphname = "alef-ar";
 layers = (
 {
@@ -10631,18 +10641,6 @@ width = 578;
 );
 metricWidth = "=alef-ar";
 unicode = 9676;
-},
-{
-category = Mark;
-glyphname = "hamza-ar";
-layers = (
-{
-layerId = m01;
-width = 0;
-}
-);
-subCategory = Nonspacing;
-unicode = 1569;
 },
 {
 glyphname = "dotabove-ar";
