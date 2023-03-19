@@ -1323,6 +1323,60 @@
       "expectation": {
         "default": "dotabove-ar=1@-9,141+0|noonghunna-ar.fina=1+243|dotabove-ar=0@-39,373+0|fehDotless-ar.init.yeh=0@28,0+356"
       }
+    },
+    {
+      "input": "◌َ",
+      "expectation": {
+        "default": "fatha-ar=0@215,615+0|dottedCircle=0+578"
+      }
+    },
+    {
+      "input": "◌ِ",
+      "expectation": {
+        "default": "kasra-ar=0@215,-190+0|dottedCircle=0+578"
+      }
+    },
+    {
+      "input": "◌ُ",
+      "expectation": {
+        "default": "damma-ar=0@-175,215+0|dottedCircle=0+578"
+      }
+    },
+    {
+      "input": "◌ً",
+      "expectation": {
+        "default": "fathatan-ar=0@148,615+0|dottedCircle=0+578"
+      }
+    },
+    {
+      "input": "◌ٍ",
+      "expectation": {
+        "default": "kasratan-ar=0@148,-190+0|dottedCircle=0+578"
+      }
+    },
+    {
+      "input": "◌ٌ",
+      "expectation": {
+        "default": "dammatan-ar=0@-175,148+0|dottedCircle=0+578"
+      }
+    },
+    {
+      "input": "◌ٔ",
+      "expectation": {
+        "default": "hamzaabove-ar=0@533,429+0|dottedCircle=0+578"
+      }
+    },
+    {
+      "input": "◌ٕ",
+      "expectation": {
+        "default": "hamzabelow-ar=0@215,-190+0|dottedCircle=0+578"
+      }
+    },
+    {
+      "input": "◌ٓ",
+      "expectation": {
+        "default": "madda-ar=0@-105,429+0|dottedCircle=0+578"
+      }
     }
   ],
   "configuration": {
