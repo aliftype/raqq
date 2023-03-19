@@ -9970,23 +9970,25 @@ layerId = m01;
 shapes = (
 {
 angle = -11.47961;
-pos = (59,45);
+pos = (52,45);
 ref = "dotabove-ar";
 },
 {
 angle = -11.47961;
-pos = (-3,123);
+pos = (-10,123);
 ref = "dotabove-ar";
 },
 {
 angle = -11.47961;
-pos = (28,84);
+pos = (21,84);
 ref = "dotabove-ar";
 }
 );
-width = 216;
+width = 177;
 }
 );
+metricLeft = "=0";
+metricRight = "=0";
 unicode = 1566;
 },
 {
