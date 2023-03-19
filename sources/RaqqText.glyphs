@@ -10453,16 +10453,6 @@ width = 740;
 unicode = 1757;
 },
 {
-glyphname = hyphen;
-layers = (
-{
-layerId = m01;
-width = 0;
-}
-);
-unicode = 8208;
-},
-{
 category = Mark;
 glyphname = "hamza-ar";
 layers = (
