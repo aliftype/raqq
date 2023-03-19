@@ -10813,7 +10813,7 @@ layerId = "057221C3-A498-4D61-8B14-F8267A46D106";
 name = "Regular 25 Jun 22, 20:50";
 shapes = (
 {
-ref = "hamzabelow-ar";
+ref = dot.circle;
 }
 );
 width = 150;
@@ -10850,21 +10850,7 @@ layerId = "BF707C9A-F0E2-4E2C-95C3-19D70D58E014";
 name = "Regular 25 Jun 22, 20:50";
 shapes = (
 {
-closed = 1;
-nodes = (
-(108,14,o),
-(136,43,o),
-(136,75,cs),
-(136,108,o),
-(108,136,o),
-(75,136,cs),
-(43,136,o),
-(14,108,o),
-(14,75,cs),
-(14,43,o),
-(43,14,o),
-(75,14,cs)
-);
+ref = dot.circle;
 }
 );
 width = 150;
@@ -10901,7 +10887,7 @@ layerId = "5F06B904-653D-4E6E-B5AD-10ADD89F84DB";
 name = "Regular 25 Jun 22, 20:51";
 shapes = (
 {
-ref = "hamzabelow-ar";
+ref = dot.circle;
 }
 );
 width = 150;
@@ -10969,21 +10955,7 @@ layerId = "7AFB0887-D8D9-481C-81E1-5E6720F61C9F";
 name = "Regular 25 Jun 22, 20:51";
 shapes = (
 {
-closed = 1;
-nodes = (
-(108,14,o),
-(136,43,o),
-(136,75,cs),
-(136,108,o),
-(108,136,o),
-(75,136,cs),
-(43,136,o),
-(14,108,o),
-(14,75,cs),
-(14,43,o),
-(43,14,o),
-(75,14,cs)
-);
+ref = dot.circle;
 }
 );
 width = 150;
@@ -11020,6 +10992,7 @@ layerId = "B1CF235A-D426-403E-AC5F-FAE0BFC820A1";
 name = "Regular 25 Jun 22, 20:50";
 shapes = (
 {
+alignment = 1;
 ref = "kasratan-ar";
 }
 );
@@ -11057,6 +11030,7 @@ layerId = "94F5A0C7-0133-4DD7-A780-4D7DBEF662F0";
 name = "Regular 25 Jun 22, 20:50";
 shapes = (
 {
+alignment = 1;
 ref = "dammatan-ar";
 }
 );
@@ -11093,7 +11067,7 @@ layerId = "557AD2D8-7DD0-46C9-898C-BFF5D01578A7";
 name = "Regular 25 Jun 22, 20:51";
 shapes = (
 {
-ref = "fatha-ar";
+ref = dot.circle;
 }
 );
 width = 150;
@@ -11136,11 +11110,11 @@ name = "Regular 25 Jun 22, 20:51";
 shapes = (
 {
 alignment = -1;
-ref = "fatha-ar";
+ref = dot.circle;
 },
 {
 pos = (134,0);
-ref = "fatha-ar";
+ref = dot.circle;
 }
 );
 width = 284;
@@ -11213,7 +11187,7 @@ layerId = "93F172D7-A510-49C9-8463-B87CFE29C250";
 name = "Regular 25 Jun 22, 20:51";
 shapes = (
 {
-ref = "fatha-ar";
+ref = dot.circle;
 }
 );
 width = 150;
@@ -11254,11 +11228,13 @@ layerId = "CDCF1E84-7251-4EF5-B909-E7186DCEAE9B";
 name = "Regular 25 Jun 22, 20:50";
 shapes = (
 {
-ref = "damma-ar";
+alignment = -1;
+ref = dot.circle;
 },
 {
+alignment = -1;
 pos = (0,134);
-ref = "damma-ar";
+ref = dot.circle;
 }
 );
 width = 150;
@@ -11482,6 +11458,37 @@ width = 36;
 }
 );
 metricRight = "=0";
+},
+{
+glyphname = dot.circle;
+layers = (
+{
+layerId = m01;
+name = Regular;
+shapes = (
+{
+closed = 1;
+nodes = (
+(108,14,o),
+(136,43,o),
+(136,75,cs),
+(136,108,o),
+(108,136,o),
+(75,136,cs),
+(43,136,o),
+(14,108,o),
+(14,75,cs),
+(14,43,o),
+(43,14,o),
+(75,14,cs)
+);
+}
+);
+width = 150;
+}
+);
+metricLeft = "=14";
+metricRight = "=14";
 }
 );
 instances = (
