@@ -552,8 +552,6 @@ def prepare(args):
             glyph.category = info.category
         if glyph.subCategory is None:
             glyph.subCategory = info.subCategory
-        if (glyph.category, glyph.subCategory) == ("Mark", "Nonspacing"):
-            continue
         for layer in glyph.layers:
             propagateAnchors(layer)
 
