@@ -823,10 +823,6 @@ layers = (
 {
 anchors = (
 {
-name = bottom.hamza;
-pos = (260,-83);
-},
-{
 name = damma;
 pos = (-42,59);
 },
@@ -835,15 +831,19 @@ name = fatha;
 pos = (158,536);
 },
 {
+name = hamzaabove;
+pos = (158,536);
+},
+{
+name = hamzabelow;
+pos = (260,-83);
+},
+{
 name = kasra;
 pos = (260,-83);
 },
 {
-name = top.hamza;
-pos = (158,536);
-},
-{
-name = top.madda;
+name = madda;
 pos = (-52,536);
 }
 );
@@ -905,10 +905,6 @@ layers = (
 {
 anchors = (
 {
-name = bottom.hamza;
-pos = (66,-56);
-},
-{
 name = damma;
 pos = (-54,66);
 },
@@ -917,15 +913,19 @@ name = fatha;
 pos = (148,559);
 },
 {
+name = hamzaabove;
+pos = (148,559);
+},
+{
+name = hamzabelow;
+pos = (66,-56);
+},
+{
 name = kasra;
 pos = (66,-56);
 },
 {
-name = top.hamza;
-pos = (148,559);
-},
-{
-name = top.madda;
+name = madda;
 pos = (-73,559);
 }
 );
@@ -979,10 +979,6 @@ layers = (
 {
 anchors = (
 {
-name = bottom.hamza;
-pos = (49,-56);
-},
-{
 name = damma;
 pos = (-71,66);
 },
@@ -991,15 +987,19 @@ name = fatha;
 pos = (131,511);
 },
 {
+name = hamzaabove;
+pos = (131,511);
+},
+{
+name = hamzabelow;
+pos = (49,-56);
+},
+{
 name = kasra;
 pos = (49,-56);
 },
 {
-name = top.hamza;
-pos = (131,511);
-},
-{
-name = top.madda;
+name = madda;
 pos = (-90,511);
 }
 );
@@ -7147,12 +7147,12 @@ name = fatha;
 pos = (281,459);
 },
 {
-name = kasra;
-pos = (259,-104);
+name = hamzaabove;
+pos = (63,284);
 },
 {
-name = top.hamza;
-pos = (63,284);
+name = kasra;
+pos = (259,-104);
 }
 );
 backgroundImage = {
@@ -7241,12 +7241,12 @@ name = fatha;
 pos = (283,385);
 },
 {
-name = kasra;
-pos = (261,-188);
+name = hamzaabove;
+pos = (77,215);
 },
 {
-name = top.hamza;
-pos = (77,215);
+name = kasra;
+pos = (261,-188);
 }
 );
 backgroundImage = {
@@ -8962,10 +8962,6 @@ layers = (
 {
 anchors = (
 {
-name = bottom.hamza_2;
-pos = (134,-56);
-},
-{
 name = caret_1;
 pos = (126,0);
 },
@@ -8986,6 +8982,14 @@ name = fatha_2;
 pos = (166,599);
 },
 {
+name = hamzaabove_2;
+pos = (166,599);
+},
+{
+name = hamzabelow_2;
+pos = (134,-56);
+},
+{
 name = kasra_1;
 pos = (468,-49);
 },
@@ -8994,11 +8998,7 @@ name = kasra_2;
 pos = (133,-56);
 },
 {
-name = top.hamza_2;
-pos = (166,599);
-},
-{
-name = top.madda_2;
+name = madda_2;
 pos = (-45,549);
 },
 {
@@ -9089,10 +9089,6 @@ layers = (
 {
 anchors = (
 {
-name = bottom.hamza_2;
-pos = (94,-84);
-},
-{
 name = caret_1;
 pos = (277,0);
 },
@@ -9113,16 +9109,20 @@ name = fatha_2;
 pos = (467,584);
 },
 {
+name = hamzaabove_2;
+pos = (467,584);
+},
+{
+name = hamzabelow_2;
+pos = (94,-84);
+},
+{
 name = kasra_1;
 pos = (480,-79);
 },
 {
 name = kasra_2;
 pos = (94,-84);
-},
-{
-name = top.hamza_2;
-pos = (467,584);
 }
 );
 backgroundImage = {
@@ -9225,10 +9225,6 @@ width = 521;
 {
 anchors = (
 {
-name = bottom.hamza_2;
-pos = (109,-104);
-},
-{
 name = caret_1;
 pos = (281,0);
 },
@@ -9241,16 +9237,20 @@ name = fatha_2;
 pos = (482,697);
 },
 {
+name = hamzaabove_2;
+pos = (482,697);
+},
+{
+name = hamzabelow_2;
+pos = (109,-104);
+},
+{
 name = kasra_1;
 pos = (495,-99);
 },
 {
 name = kasra_2;
 pos = (109,-104);
-},
-{
-name = top.hamza_2;
-pos = (482,697);
 }
 );
 associatedMasterId = m01;
@@ -9344,10 +9344,6 @@ layers = (
 {
 anchors = (
 {
-name = bottom.hamza_2;
-pos = (96,-43);
-},
-{
 name = caret_1;
 pos = (217,0);
 },
@@ -9360,16 +9356,20 @@ name = fatha_2;
 pos = (390,605);
 },
 {
+name = hamzaabove_2;
+pos = (390,605);
+},
+{
+name = hamzabelow_2;
+pos = (96,-43);
+},
+{
 name = kasra_1;
 pos = (412,-58);
 },
 {
 name = kasra_2;
 pos = (96,-43);
-},
-{
-name = top.hamza_2;
-pos = (390,605);
 }
 );
 backgroundImage = {
@@ -9455,10 +9455,6 @@ width = 510;
 {
 anchors = (
 {
-name = bottom.hamza_2;
-pos = (104,-68);
-},
-{
 name = caret_1;
 pos = (247,0);
 },
@@ -9471,16 +9467,20 @@ name = fatha_2;
 pos = (438,580);
 },
 {
+name = hamzaabove_2;
+pos = (438,580);
+},
+{
+name = hamzabelow_2;
+pos = (104,-68);
+},
+{
 name = kasra_1;
 pos = (420,-63);
 },
 {
 name = kasra_2;
 pos = (104,-68);
-},
-{
-name = top.hamza_2;
-pos = (438,580);
 }
 );
 associatedMasterId = m01;
@@ -10459,10 +10459,6 @@ layers = (
 {
 anchors = (
 {
-name = bottom.hamza;
-pos = (290,-115);
-},
-{
 name = damma;
 pos = (-100,290);
 },
@@ -10471,15 +10467,19 @@ name = fatha;
 pos = (290,690);
 },
 {
+name = hamzaabove;
+pos = (608,504);
+},
+{
+name = hamzabelow;
+pos = (290,-115);
+},
+{
 name = kasra;
 pos = (290,-115);
 },
 {
-name = top.hamza;
-pos = (608,504);
-},
-{
-name = top.madda;
+name = madda;
 pos = (-30,504);
 }
 );
@@ -10972,7 +10972,7 @@ layers = (
 {
 anchors = (
 {
-name = _top.hamza;
+name = _hamzaabove;
 pos = (75,75);
 }
 );
@@ -11009,7 +11009,7 @@ layers = (
 {
 anchors = (
 {
-name = _bottom.hamza;
+name = _hamzabelow;
 pos = (75,75);
 }
 );
@@ -11046,7 +11046,7 @@ layers = (
 {
 anchors = (
 {
-name = _top.madda;
+name = _madda;
 pos = (75,75);
 }
 );

@@ -5,17 +5,17 @@
 
   <glyph name="alef-ar" unicode="0627" category="Letter" script="arabic"
          sortName="arL0004"
-         anchors="fatha, damma, kasra, top.hamza, bottom.hamza"
+         anchors="fatha, damma, kasra, hamzaabove, hamzabelow, madda"
          accents="fatha-ar, fathatan-ar.alt, damma-ar, dammatan-ar, kasra-ar, kasratan-ar, hamzaabove-ar, hamzabelow-ar, madda-ar, shadda-ar"
   />
   <glyph name="alef-ar.fina" category="Letter" script="arabic"
          sortName="arL0005"
-         anchors="fatha, damma, kasra, top.hamza, bottom.hamza"
+         anchors="fatha, damma, kasra, hamzaabove, hamzabelow, madda"
          accents="fatha-ar, fathatan-ar.alt, damma-ar, dammatan-ar, kasra-ar, kasratan-ar, hamzaabove-ar, hamzabelow-ar, madda-ar, shadda-ar"
   />
   <glyph name="alef-ar.fina.short" category="Letter" script="arabic"
          sortName="arL0005.short"
-         anchors="fatha, damma, kasra, top.hamza, bottom.hamza"
+         anchors="fatha, damma, kasra, hamzaabove, hamzabelow, madda"
          accents="fatha-ar, fathatan-ar.alt, damma-ar, dammatan-ar, kasra-ar, kasratan-ar, hamzaabove-ar, hamzabelow-ar, madda-ar, shadda-ar"
   />
   <glyph name="behDotless-ar" unicode="066E" category="Letter" script="arabic"
@@ -280,42 +280,42 @@
   />
   <glyph name="waw-ar" unicode="0648" category="Letter" script="arabic"
          sortName="arL0076"
-         anchors="top.hamza, fatha, damma, kasra"
+         anchors="hamzaabove, fatha, damma, kasra"
          accents="fatha-ar, damma-ar, dammatan-ar, kasra-ar, kasratan-ar, hamzaabove-ar"
   />
   <glyph name="waw-ar.fina" category="Letter" script="arabic"
          sortName="arL0077"
-         anchors="top.hamza, fatha, damma, kasra"
+         anchors="hamzaabove, fatha, damma, kasra"
          accents="fatha-ar, damma-ar, dammatan-ar, kasra-ar, kasratan-ar, hamzaabove-ar"
   />
   <glyph name="alefMaksura-ar" unicode="0649" category="Letter" script="arabic"
          sortName="arL0079"
-         anchors="top.hamza, bottom, fatha, damma, kasra"
+         anchors="hamzaabove, bottom, fatha, damma, kasra"
          accents="fatha-ar, fathatan-ar, damma-ar, dammatan-ar, kasra-ar, kasratan-ar, hamzaabove-ar, twodotsverticalbelow-ar"
   />
   <glyph name="alefMaksura-ar.alt" unicode="0649" category="Letter" script="arabic"
          sortName="arL0079"
-         anchors="top.hamza, bottom, fatha, damma, kasra"
+         anchors="hamzaabove, bottom, fatha, damma, kasra"
          accents="fatha-ar, fathatan-ar, damma-ar, dammatan-ar, kasra-ar, kasratan-ar.alt, hamzaabove-ar, twodotsverticalbelow-ar"
   />
   <glyph name="alefMaksura-ar.fina" category="Letter" script="arabic"
          sortName="arL0080.alt"
-         anchors="top.hamza, bottom, fatha, damma, kasra"
+         anchors="hamzaabove, bottom, fatha, damma, kasra"
          accents="fatha-ar, fathatan-ar, damma-ar, dammatan-ar, kasra-ar, kasratan-ar, hamzaabove-ar, twodotsverticalbelow-ar"
   />
   <glyph name="alefMaksura-ar.fina.alt" category="Letter" script="arabic"
          sortName="arL0080.alt"
-         anchors="top.hamza, bottom, fatha, damma, kasra"
+         anchors="hamzaabove, bottom, fatha, damma, kasra"
          accents="fatha-ar, fathatan-ar, damma-ar, dammatan-ar, kasra-ar, kasratan-ar.alt, hamzaabove-ar, twodotsverticalbelow-ar"
   />
   <glyph name="yehbarree-ar" unicode="06D2" category="Letter" script="arabic"
          sortName="arL0081"
-         anchors="top.hamza, bottom, fatha, damma, kasra"
+         anchors="hamzaabove, bottom, fatha, damma, kasra"
          accents="fatha-ar, fathatan-ar, damma-ar, dammatan-ar, kasra-ar, kasratan-ar, hamzaabove-ar, twodotsverticalbelow-ar"
   />
   <glyph name="yehbarree-ar.fina" category="Letter" script="arabic" decompose="yehbarree-ar"
          sortName="arL0082"
-         anchors="top.hamza, bottom, fatha, damma, kasra"
+         anchors="hamzaabove, bottom, fatha, damma, kasra"
          accents="fatha-ar, fathatan-ar, damma-ar, dammatan-ar, kasra-ar, kasratan-ar, hamzaabove-ar, twodotsverticalbelow-ar"
   />
   <glyph name="kashida-ar" unicode="0640" category="Letter" script="arabic"
@@ -424,19 +424,19 @@
 
   <glyph name="fehDotless_alef-ar" category="Letter" subCategory="Ligature" script="arabic"
          sortName="arL0400"
-         anchors="fatha_1, damma_1, kasra_1, fatha_2, damma_2, kasra_2, top.hamza_2, bottom.hamza_2"
+         anchors="fatha_1, damma_1, kasra_1, fatha_2, damma_2, kasra_2, hamzaabove_2, hamzabelow_2, madda_2"
          accents="fatha-ar, fathatan-ar.alt, damma-ar, dammatan-ar, kasra-ar, kasratan-ar, hamzaabove-ar, hamzabelow-ar, madda-ar, shadda-ar"
   />
 
   <glyph name="lam_alef-ar" category="Letter" subCategory="Ligature" script="arabic"
          sortName="arL0401"
-         anchors="fatha_1, damma_1, kasra_1, fatha_2, damma_2, kasra_2, top.hamza_2, bottom.hamza_2"
+         anchors="fatha_1, damma_1, kasra_1, fatha_2, damma_2, kasra_2, hamzaabove_2, hamzabelow_2, madda_2"
          accents="fatha-ar, fathatan-ar.alt, damma-ar, dammatan-ar, kasra-ar, kasratan-ar, hamzaabove-ar, hamzabelow-ar, madda-ar, shadda-ar"
   />
 
   <glyph name="lam_alef-ar.fina" category="Letter" subCategory="Ligature" script="arabic"
          sortName="arL0402"
-         anchors="fatha_1, damma_1, kasra_1, fatha_2, damma_2, kasra_2, top.hamza_2, bottom.hamza_2"
+         anchors="fatha_1, damma_1, kasra_1, fatha_2, damma_2, kasra_2, hamzaabove_2, hamzabelow_2, madda_2"
          accents="fatha-ar, fathatan-ar.alt, damma-ar, dammatan-ar, kasra-ar, kasratan-ar, hamzaabove-ar, hamzabelow-ar, madda-ar, shadda-ar"
   />
 
@@ -617,18 +617,18 @@
 
   <glyph name="hamzaabove-ar" unicode="0654" category="Mark" subCategory="Nonspacing" script="arabic"
          sortName="arM1070"
-         anchors="_top.hamza"
+         anchors="_hamzaabove"
   />
   <glyph name="hamzabelow-ar" unicode="0655" category="Mark" subCategory="Nonspacing" script="arabic"
          sortName="arM1071"
-         anchors="_bottom.hamza"
+         anchors="_hamzabelow"
   />
   <glyph name="wasla-ar" category="Mark" subCategory="Nonspacing" script="arabic"
          sortName="arM1072"
   />
   <glyph name="madda-ar" unicode="0653" category="Mark" subCategory="Nonspacing" script="arabic"
          sortName="arM1073"
-         anchors="_top.madda"
+         anchors="_madda"
   />
 
   <glyph name="fatha-ar" unicode="064E" category="Mark" subCategory="Nonspacing" script="arabic"
