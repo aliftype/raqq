@@ -295,7 +295,7 @@ lookup fina {
 	sub yehbarree-ar by yehbarree-ar.fina;
 } fina;
 
-# Disallow kashida after letters than can themselves elongate.
+# Disallow kashida after letters that can themselves elongate.
 lookup rlig_kashida {
 	lookupflag IgnoreMarks;
 
@@ -311,6 +311,20 @@ lookup rlig_kashida {
 	by	 kashida-ar.real
 	;
 } rlig_kashida;
+
+# Disallow kashida before letters that can themselves elongate.
+lookup rlig_kashida_2 {
+	lookupflag IgnoreMarks;
+
+	rsub kashida-ar.real'
+		[kashida-ar dal-ar.fina
+		 sad-ar.medi sad-ar.fina
+		 tah-ar.medi tah-ar.fina
+		 kaf-ar.medi kaf-ar.fina]
+	by	 kashida-ar
+	;
+
+} rlig_kashida_2;
 
 lookup rlig_0 {
 	lookupflag UseMarkFilteringSet [kasratan-ar];
@@ -610,6 +624,7 @@ tag = fina;
 },
 {
 code = "lookup rlig_kashida;
+lookup rlig_kashida_2;
 lookup rlig_0;
 lookup rlig_teeth;
 lookup rlig_1;

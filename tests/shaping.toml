@@ -811,3 +811,18 @@ input = "صــا"
 
 [[tests]]
 input = "بكـا"
+
+[[tests]]
+input = "بـك"
+
+[[tests]]
+input = "بــك"
+
+[[tests]]
+input = "بـد"
+
+[[tests]]
+input = "ـد"
+
+[[tests]]
+input = "ــد"

@@ -1599,6 +1599,36 @@
       "expectation": {
         "default": "alef-ar.fina=3+97|kashida-ar=2+0|kaf-ar.medi=1+758|dotbelow-ar=0@72,-46+0|behDotless-ar.init=0+130"
       }
+    },
+    {
+      "input": "بـك",
+      "expectation": {
+        "default": "kaf-ar.fina=2+889|kashida-ar=1+0|dotbelow-ar=0@72,-46+0|behDotless-ar.init=0+130"
+      }
+    },
+    {
+      "input": "بــك",
+      "expectation": {
+        "default": "kaf-ar.fina=3+889|kashida-ar=2+0|kashida-ar=1+0|dotbelow-ar=0@72,-46+0|behDotless-ar.init=0+130"
+      }
+    },
+    {
+      "input": "بـد",
+      "expectation": {
+        "default": "dal-ar.fina=2+875|kashida-ar=1+0|dotbelow-ar=0@72,-46+0|behDotless-ar.init=0+130"
+      }
+    },
+    {
+      "input": "ـد",
+      "expectation": {
+        "default": "dal-ar.fina=1+875|kashida-ar=0+0"
+      }
+    },
+    {
+      "input": "ــد",
+      "expectation": {
+        "default": "dal-ar.fina=2+875|kashida-ar=1+0|kashida-ar=0+0"
+      }
     }
   ],
   "configuration": {
