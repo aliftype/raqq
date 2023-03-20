@@ -323,7 +323,6 @@ lookup rlig_kashida_2 {
 		 kaf-ar.medi kaf-ar.fina]
 	by	 kashida-ar
 	;
-
 } rlig_kashida_2;
 
 lookup rlig_0 {
@@ -1527,7 +1526,7 @@ pos = (-8,170);
 },
 {
 name = entry;
-pos = (111,0);
+pos = (110,0);
 },
 {
 name = exit;
@@ -1746,7 +1745,6 @@ pos = (9,172);
 },
 {
 name = exit;
-pos = (5,0);
 },
 {
 name = fatha;
@@ -3531,7 +3529,6 @@ pos = (10,171);
 },
 {
 name = exit;
-pos = (5,0);
 },
 {
 name = fatha;
@@ -3916,30 +3913,29 @@ layers = (
 anchors = (
 {
 name = damma;
-pos = (19,171);
+pos = (4,171);
 },
 {
 name = exit;
-pos = (15,0);
 },
 {
 name = fatha;
-pos = (197,403);
+pos = (182,403);
 },
 {
 name = kasra;
-pos = (377,-54);
+pos = (362,-54);
 },
 {
 name = top;
-pos = (105,304);
+pos = (90,304);
 }
 );
 backgroundImage = {
 alpha = 80;
 imagePath = "images/MS-ADD-01116-000-00032.jpg";
 locked = 1;
-pos = (-4083,-3629);
+pos = (-4098,-3629);
 scale = (5,5);
 };
 layerId = m01;
@@ -3948,42 +3944,42 @@ shapes = (
 closed = 1;
 nodes = (
 (218,-3,o),
-(357,0,o),
-(596,8,cs),
-(602,8,o),
-(609,12,o),
-(616,17,cs),
-(638,33,o),
-(673,72,o),
-(699,91,cs),
-(707,97,o),
-(709,108,o),
-(692,107,cs),
-(549,100,o),
-(474,94,o),
-(335,129,cs),
-(199,162,o),
-(110,230,o),
-(138,277,cs),
-(148,294,o),
-(179,342,o),
-(191,356,cs),
-(201,368,o),
-(192,383,o),
-(177,368,cs),
-(162,353,o),
-(66,262,o),
-(40,234,cs),
-(-5,186,o),
-(55,90,o),
-(127,75,c),
-(143,110,l),
+(342,0,o),
+(581,8,cs),
+(587,8,o),
+(594,12,o),
+(601,17,cs),
+(623,33,o),
+(658,72,o),
+(684,91,cs),
+(692,97,o),
+(694,108,o),
+(677,107,cs),
+(534,100,o),
+(459,94,o),
+(320,129,cs),
+(184,162,o),
+(95,230,o),
+(123,277,cs),
+(133,294,o),
+(164,342,o),
+(176,356,cs),
+(186,368,o),
+(177,383,o),
+(162,368,cs),
+(147,353,o),
+(51,262,o),
+(25,234,cs),
+(-20,186,o),
+(40,90,o),
+(112,75,c),
+(128,110,l),
 (-20,110,l),
 (-20,0,l)
 );
 }
 );
-width = 705;
+width = 690;
 }
 );
 metricLeft = "=-20";
@@ -4286,7 +4282,6 @@ pos = (379,0);
 },
 {
 name = exit;
-pos = (-1,0);
 }
 );
 backgroundImage = {
@@ -11876,14 +11871,14 @@ connector.3 = {
 "behDotless-ar.fina" = -6;
 "behDotless-ar.medi" = -4;
 "behDotless-ar.medi.high" = -8;
-"behDotless-ar.medi.round" = -4;
+"behDotless-ar.medi.round" = -3;
 };
 connector.5 = {
 "behDotless-ar.fina" = -5;
 "behDotless-ar.medi" = -5;
 "behDotless-ar.medi.high" = -5;
 "behDotless-ar.medi.med" = -5;
-"behDotless-ar.medi.round" = -5;
+"behDotless-ar.medi.round" = -4;
 };
 "fehDotless-ar.init" = {
 "lam_alef-ar.fina" = -130;
@@ -11895,7 +11890,7 @@ connector.5 = {
 "behDotless-ar.medi" = -4;
 "behDotless-ar.medi.high" = -8;
 "behDotless-ar.medi.med" = -10;
-"behDotless-ar.medi.round" = -4;
+"behDotless-ar.medi.round" = -3;
 "fehDotless-ar.fina" = -5;
 "heh-ar.fina" = -6;
 "heh-ar.medi" = -7;
@@ -11927,7 +11922,7 @@ connector.2 = 15;
 "behDotless-ar.fina" = -4;
 "behDotless-ar.medi" = -4;
 "behDotless-ar.medi.high" = -7;
-"behDotless-ar.medi.round" = -4;
+"behDotless-ar.medi.round" = -3;
 "heh-ar.fina" = -5;
 "heh-ar.medi" = -4;
 "heh-ar.medi.round" = -3;
