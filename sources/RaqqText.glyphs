@@ -220,11 +220,6 @@ lookup ccmp_1 {
 	sub wawHamzaabove-ar by waw-ar hamzaabove-ar;
 	sub yeh-ar by alefMaksura-ar twodotsverticalbelow-ar;
 	sub yehHamzaabove-ar by alefMaksura-ar;
-
-	# Hack. To proven LibreOffice from inserting automatic kashida,
-	# we make the base glyph 0 width, and the replcae it with the real
-	# kashida so that manual insertion works.
-	sub kashida-ar by kashida-ar.real;
 } ccmp_1;
 
 lookup ccmp_2 {
@@ -299,6 +294,23 @@ lookup fina {
 	sub yehFarsi-ar by alefMaksura-ar.fina;
 	sub yehbarree-ar by yehbarree-ar.fina;
 } fina;
+
+# Disallow kashida after letters than can themselves elongate.
+lookup rlig_kashida {
+	lookupflag IgnoreMarks;
+
+	ignore
+	sub [sad-ar.init sad-ar.medi
+		 tah-ar.init tah-ar.medi
+		 kaf-ar.init kaf-ar.medi
+		 kashida-ar]
+		 kashida-ar'
+	;
+
+	sub	 kashida-ar'
+	by	 kashida-ar.real
+	;
+} rlig_kashida;
 
 lookup rlig_0 {
 	lookupflag UseMarkFilteringSet [kasratan-ar];
@@ -499,11 +511,6 @@ lookup connector_6 {
 lookup rlig_c {
 	lookupflag IgnoreMarks;
 
-	sub	[kaf-ar.init kaf-ar.medi]'
-		 kashida-ar.real
-	by	[kaf-ar.init.kashida kaf-ar.medi.kashida]
-	;
-
 	sub	[hah-ar.init hah-ar.medi ain-ar.medi]' lookup connector_1
 		[dal-ar.fina sad-ar.medi sad-ar.fina tah-ar.medi tah-ar.fina kaf-ar.medi kaf-ar.fina]
 	;
@@ -530,14 +537,14 @@ lookup rlig_c {
 
 	sub	[fehDotless-ar.init]' lookup feh_dal
 		[dal-ar.fina sad-ar.medi sad-ar.fina tah-ar.medi tah-ar.fina
-		 kaf-ar.medi kaf-ar.medi.kashida kaf-ar.fina
+		 kaf-ar.medi kaf-ar.fina
 		 qafDotless-ar.fina waw-ar.fina
 		 meem-ar.medi meem-ar.medi.round2 meem-ar.fina]
 	;
 
 	sub	[fehDotless-ar.medi]' lookup feh_dal
 		[dal-ar.fina sad-ar.medi sad-ar.fina tah-ar.medi tah-ar.fina
-		 kaf-ar.medi kaf-ar.medi.kashida kaf-ar.fina]
+		 kaf-ar.medi kaf-ar.fina]
 	;
 
 	sub	[fehDotless-ar.medi]'
@@ -602,7 +609,8 @@ code = "lookup fina;";
 tag = fina;
 },
 {
-code = "lookup rlig_0;
+code = "lookup rlig_kashida;
+lookup rlig_0;
 lookup rlig_teeth;
 lookup rlig_1;
 lookup rlig_2;
@@ -5174,42 +5182,6 @@ metricLeft = "=-10";
 metricRight = "=sad-ar.medi";
 },
 {
-glyphname = "kaf-ar.medi.kashida";
-kernRight = sad;
-layers = (
-{
-anchors = (
-{
-name = entry;
-pos = (755,0);
-},
-{
-name = exit;
-}
-);
-layerId = m01;
-shapes = (
-{
-closed = 1;
-nodes = (
-(755,0,l),
-(755,110,l),
-(709,110,l),
-(8,0,l)
-);
-},
-{
-pos = (-1,0);
-ref = "kaf-ar.init.kashida";
-}
-);
-width = 756;
-}
-);
-metricLeft = "=-21";
-metricRight = "=0@110";
-},
-{
 glyphname = "kaf-ar.init";
 kernLeft = kaf;
 layers = (
@@ -5295,89 +5267,6 @@ width = 765;
 }
 );
 metricLeft = "=-10";
-metricRight = "=0";
-},
-{
-glyphname = "kaf-ar.init.kashida";
-layers = (
-{
-anchors = (
-{
-name = damma;
-pos = (23,174);
-},
-{
-name = exit;
-},
-{
-name = fatha;
-pos = (191,354);
-},
-{
-name = kasra;
-pos = (590,-51);
-}
-);
-backgroundImage = {
-alpha = 80;
-angle = 0.6;
-imagePath = "images/MS-ADD-01116-000-00016.jpg";
-locked = 1;
-pos = (-2090,-3415);
-scale = (5,5);
-};
-layerId = m01;
-shapes = (
-{
-closed = 1;
-nodes = (
-(-20,0,l),
-(15,0,l),
-(178,1,o),
-(465,-1,o),
-(720,0,cs),
-(754,0,o),
-(765,17,o),
-(765,45,cs),
-(765,101,o),
-(742,176,o),
-(712,230,cs),
-(706,241,o),
-(698,245,o),
-(691,245,cs),
-(502,240,o),
-(291,240,o),
-(123,248,c),
-(174,334,ls),
-(182,348,o),
-(169,348,o),
-(161,337,cs),
-(22,146,ls),
-(19,142,o),
-(19,138,o),
-(24,135,cs),
-(31,131,o),
-(53,126,o),
-(100,124,cs),
-(181,121,o),
-(335,122,o),
-(607,125,cs),
-(611,125,o),
-(618,125,o),
-(620,121,cs),
-(624,115,o),
-(618,110,o),
-(596,110,cs),
-(439,107,o),
-(169,105,o),
-(-20,110,c)
-);
-}
-);
-width = 765;
-}
-);
-metricLeft = "=-20";
 metricRight = "=0";
 },
 {

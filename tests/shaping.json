@@ -1569,6 +1569,36 @@
       "expectation": {
         "default": "yehbarree-ar.fina=2+312|dotabove-ar=1@-56,333+0|fehDotless-ar.medi.reh=1@-22,0+331|dotabove-ar=0@-10,287+0|behDotless-ar.init=0+130"
       }
+    },
+    {
+      "input": "نـا",
+      "expectation": {
+        "default": "alef-ar.fina=2+97|kashida-ar.real=1+100|dotabove-ar=0@-10,287+0|behDotless-ar.init=0+130"
+      }
+    },
+    {
+      "input": "نــا",
+      "expectation": {
+        "default": "alef-ar.fina=3+97|kashida-ar.real=2+100|kashida-ar.real=1+100|dotabove-ar=0@-10,287+0|behDotless-ar.init=0+130"
+      }
+    },
+    {
+      "input": "كـا",
+      "expectation": {
+        "default": "alef-ar.fina=2+97|kashida-ar=1+0|kaf-ar.init=0+765"
+      }
+    },
+    {
+      "input": "صــا",
+      "expectation": {
+        "default": "alef-ar.fina=3+97|kashida-ar=2+0|kashida-ar=1+0|sad-ar.init=0+765"
+      }
+    },
+    {
+      "input": "بكـا",
+      "expectation": {
+        "default": "alef-ar.fina=3+97|kashida-ar=2+0|kaf-ar.medi=1+758|dotbelow-ar=0@72,-46+0|behDotless-ar.init=0+130"
+      }
     }
   ],
   "configuration": {

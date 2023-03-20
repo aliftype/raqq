@@ -796,3 +796,18 @@ input = "نفى"
 
 [[tests]]
 input = "نفے"
+
+[[tests]]
+input = "نـا"
+
+[[tests]]
+input = "نــا"
+
+[[tests]]
+input = "كـا"
+
+[[tests]]
+input = "صــا"
+
+[[tests]]
+input = "بكـا"
