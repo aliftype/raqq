@@ -529,7 +529,7 @@ def propagateAnchors(glyph, layer):
             if ".init" in glyph.name or ".medi" in glyph.name:
                 layer.anchors["exit"] = GSAnchor()
         if "entry" not in anchors:
-            if ".medi" in glyph.name:
+            if ".fina" in glyph.name or ".medi" in glyph.name:
                 layer.anchors["entry"] = GSAnchor()
                 layer.anchors["entry"].position.x = layer.width
 
