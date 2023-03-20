@@ -522,10 +522,20 @@ def build(instance, isTTF, args):
     return fb.font
 
 
-def propagateAnchors(layer):
+def propagateAnchors(glyph, layer):
+    if glyph is not None:
+        anchors = {a.name for a in layer.anchors}
+        if "exit" not in anchors:
+            if ".init" in glyph.name or ".medi" in glyph.name:
+                layer.anchors["exit"] = GSAnchor()
+        if "entry" not in anchors:
+            if ".medi" in glyph.name:
+                layer.anchors["entry"] = GSAnchor()
+                layer.anchors["entry"].position.x = layer.width
+
     for component in layer.components:
         clayer = component.layer or component.component.layers[0]
-        propagateAnchors(clayer)
+        propagateAnchors(None, clayer)
         for anchor in clayer.anchors:
             names = [a.name for a in layer.anchors]
             name = anchor.name
@@ -553,7 +563,7 @@ def prepare(args):
         if glyph.subCategory is None:
             glyph.subCategory = info.subCategory
         for layer in glyph.layers:
-            propagateAnchors(layer)
+            propagateAnchors(glyph, layer)
 
     return font
 

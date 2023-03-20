@@ -1295,13 +1295,6 @@ name = damma;
 pos = (-2,170);
 },
 {
-name = entry;
-pos = (126,0);
-},
-{
-name = exit;
-},
-{
 name = fatha;
 pos = (65,403);
 },
@@ -1369,13 +1362,6 @@ pos = (49,-38);
 {
 name = damma;
 pos = (13,170);
-},
-{
-name = entry;
-pos = (126,0);
-},
-{
-name = exit;
 },
 {
 name = fatha;
@@ -1448,13 +1434,6 @@ name = damma;
 pos = (13,170);
 },
 {
-name = entry;
-pos = (126,0);
-},
-{
-name = exit;
-},
-{
 name = fatha;
 pos = (56,460);
 },
@@ -1523,13 +1502,6 @@ pos = (28,-38);
 {
 name = damma;
 pos = (-8,170);
-},
-{
-name = entry;
-pos = (110,0);
-},
-{
-name = exit;
 },
 {
 name = fatha;
@@ -1602,9 +1574,6 @@ name = damma;
 pos = (-1,173);
 },
 {
-name = exit;
-},
-{
 name = fatha;
 pos = (62,416);
 },
@@ -1673,9 +1642,6 @@ name = damma;
 pos = (7,168);
 },
 {
-name = exit;
-},
-{
 name = fatha;
 pos = (66,527);
 },
@@ -1742,9 +1708,6 @@ pos = (109,26);
 {
 name = damma;
 pos = (9,172);
-},
-{
-name = exit;
 },
 {
 name = fatha;
@@ -1943,9 +1906,6 @@ name = entry;
 pos = (135,135);
 },
 {
-name = exit;
-},
-{
 name = fatha;
 pos = (81,337);
 }
@@ -1980,9 +1940,6 @@ pos = (250,-40);
 {
 name = damma;
 pos = (0,174);
-},
-{
-name = exit;
 },
 {
 name = fatha;
@@ -2519,13 +2476,6 @@ name = damma;
 pos = (5,171);
 },
 {
-name = entry;
-pos = (393,0);
-},
-{
-name = exit;
-},
-{
 name = fatha;
 pos = (197,339);
 },
@@ -2626,13 +2576,6 @@ name = damma;
 pos = (7,172);
 },
 {
-name = entry;
-pos = (424,0);
-},
-{
-name = exit;
-},
-{
 name = fatha;
 pos = (222,324);
 },
@@ -2728,9 +2671,6 @@ anchors = (
 {
 name = damma;
 pos = (12,171);
-},
-{
-name = exit;
 },
 {
 name = fatha;
@@ -2980,15 +2920,6 @@ kernLeft = sad;
 kernRight = sad;
 layers = (
 {
-anchors = (
-{
-name = entry;
-pos = (758,0);
-},
-{
-name = exit;
-}
-);
 backgroundImage = {
 alpha = 80;
 imagePath = "images/MS-ADD-01116-000-00003.jpg";
@@ -3019,13 +2950,6 @@ anchors = (
 {
 name = damma;
 pos = (-4,171);
-},
-{
-name = entry;
-pos = (758,0);
-},
-{
-name = exit;
 },
 {
 name = fatha;
@@ -3137,9 +3061,6 @@ anchors = (
 {
 name = damma;
 pos = (-4,171);
-},
-{
-name = exit;
 },
 {
 name = fatha;
@@ -3380,15 +3301,6 @@ kernLeft = sad;
 kernRight = sad;
 layers = (
 {
-anchors = (
-{
-name = entry;
-pos = (758,0);
-},
-{
-name = exit;
-}
-);
 layerId = m01;
 shapes = (
 {
@@ -3413,13 +3325,6 @@ anchors = (
 {
 name = damma;
 pos = (-4,171);
-},
-{
-name = entry;
-pos = (758,0);
-},
-{
-name = exit;
 },
 {
 name = fatha;
@@ -3526,9 +3431,6 @@ anchors = (
 {
 name = damma;
 pos = (10,171);
-},
-{
-name = exit;
 },
 {
 name = fatha;
@@ -3833,13 +3735,6 @@ name = damma;
 pos = (5,167);
 },
 {
-name = entry;
-pos = (280,0);
-},
-{
-name = exit;
-},
-{
 name = fatha;
 pos = (225,427);
 },
@@ -3914,9 +3809,6 @@ anchors = (
 {
 name = damma;
 pos = (4,171);
-},
-{
-name = exit;
 },
 {
 name = fatha;
@@ -4194,13 +4086,6 @@ name = damma;
 pos = (3,172);
 },
 {
-name = entry;
-pos = (377,0);
-},
-{
-name = exit;
-},
-{
 name = fatha;
 pos = (201,461);
 },
@@ -4275,15 +4160,6 @@ glyphname = "fehDotless-ar.medi.beh";
 kernRight = feh.medi;
 layers = (
 {
-anchors = (
-{
-name = entry;
-pos = (379,0);
-},
-{
-name = exit;
-}
-);
 backgroundImage = {
 alpha = 80;
 imagePath = "images/MS-ADD-01116-000-00012.jpg";
@@ -4322,15 +4198,6 @@ glyphname = "fehDotless-ar.medi.dal";
 kernRight = feh.medi;
 layers = (
 {
-anchors = (
-{
-name = entry;
-pos = (370,0);
-},
-{
-name = exit;
-}
-);
 backgroundImage = {
 alpha = 80;
 imagePath = "images/MS-ADD-01116-000-00012.jpg";
@@ -4372,15 +4239,6 @@ glyphname = "fehDotless-ar.medi.meem";
 kernRight = feh.medi;
 layers = (
 {
-anchors = (
-{
-name = entry;
-pos = (353,0);
-},
-{
-name = exit;
-}
-);
 backgroundImage = {
 alpha = 80;
 imagePath = "images/MS-ADD-01116-000-00012.jpg";
@@ -4423,13 +4281,6 @@ anchors = (
 {
 name = damma;
 pos = (-21,172);
-},
-{
-name = entry;
-pos = (353,0);
-},
-{
-name = exit;
 },
 {
 name = fatha;
@@ -4527,9 +4378,6 @@ name = damma;
 pos = (23,172);
 },
 {
-name = exit;
-},
-{
 name = fatha;
 pos = (193,513);
 },
@@ -4605,11 +4453,6 @@ metricRight = "=0";
 glyphname = "fehDotless-ar.init.beh";
 layers = (
 {
-anchors = (
-{
-name = exit;
-}
-);
 backgroundImage = {
 alpha = 80;
 imagePath = "images/MS-ADD-01116-000-00012.jpg";
@@ -4644,11 +4487,6 @@ metricRight = "=fehDotless-ar.init";
 glyphname = "fehDotless-ar.init.dal";
 layers = (
 {
-anchors = (
-{
-name = exit;
-}
-);
 backgroundImage = {
 alpha = 80;
 imagePath = "images/MS-ADD-01116-000-00012.jpg";
@@ -4692,9 +4530,6 @@ pos = (284,50);
 {
 name = damma;
 pos = (-43,172);
-},
-{
-name = exit;
 },
 {
 name = fatha;
@@ -5161,15 +4996,6 @@ kernLeft = kaf;
 kernRight = sad;
 layers = (
 {
-anchors = (
-{
-name = entry;
-pos = (758,0);
-},
-{
-name = exit;
-}
-);
 layerId = m01;
 shapes = (
 {
@@ -5200,9 +5026,6 @@ anchors = (
 {
 name = damma;
 pos = (18,177);
-},
-{
-name = exit;
 },
 {
 name = fatha;
@@ -5477,15 +5300,6 @@ metricRight = "=0@0";
 glyphname = "lam-ar.medi";
 layers = (
 {
-anchors = (
-{
-name = entry;
-pos = (121,0);
-},
-{
-name = exit;
-}
-);
 layerId = m01;
 shapes = (
 {
@@ -5517,9 +5331,6 @@ name = damma;
 pos = (-29,166);
 },
 {
-name = exit;
-},
-{
 name = fatha;
 pos = (-78,509);
 }
@@ -5546,9 +5357,6 @@ anchors = (
 {
 name = damma;
 pos = (-29,166);
-},
-{
-name = exit;
 },
 {
 name = fatha;
@@ -5604,13 +5412,6 @@ anchors = (
 {
 name = damma;
 pos = (5,169);
-},
-{
-name = entry;
-pos = (123,0);
-},
-{
-name = exit;
 },
 {
 name = fatha;
@@ -5673,9 +5474,6 @@ anchors = (
 {
 name = damma;
 pos = (5,173);
-},
-{
-name = exit;
 },
 {
 name = fatha;
@@ -6260,13 +6058,6 @@ name = damma;
 pos = (7,171);
 },
 {
-name = entry;
-pos = (380,0);
-},
-{
-name = exit;
-},
-{
 name = fatha;
 pos = (190,402);
 },
@@ -6341,15 +6132,6 @@ metricRight = "=0";
 glyphname = "meem-ar.medi.round";
 layers = (
 {
-anchors = (
-{
-name = entry;
-pos = (425,0);
-},
-{
-name = exit;
-}
-);
 layerId = m01;
 shapes = (
 {
@@ -6371,13 +6153,6 @@ anchors = (
 {
 name = damma;
 pos = (-14,174);
-},
-{
-name = entry;
-pos = (398,0);
-},
-{
-name = exit;
 },
 {
 name = fatha;
@@ -6445,15 +6220,6 @@ glyphname = "meem-ar.medi.round3";
 kernLeft = meem.alt;
 layers = (
 {
-anchors = (
-{
-name = entry;
-pos = (398,0);
-},
-{
-name = exit;
-}
-);
 layerId = m01;
 shapes = (
 {
@@ -6473,9 +6239,6 @@ anchors = (
 {
 name = damma;
 pos = (13,167);
-},
-{
-name = exit;
 },
 {
 name = fatha;
@@ -6557,9 +6320,6 @@ anchors = (
 {
 name = damma;
 pos = (-21,181);
-},
-{
-name = exit;
 },
 {
 name = fatha;
@@ -6970,15 +6730,6 @@ metricRight = "=0@157";
 glyphname = "heh-ar.medi";
 layers = (
 {
-anchors = (
-{
-name = entry;
-pos = (354,0);
-},
-{
-name = exit;
-}
-);
 layerId = m01;
 shapes = (
 {
@@ -7010,13 +6761,6 @@ anchors = (
 {
 name = damma;
 pos = (-35,168);
-},
-{
-name = entry;
-pos = (320,0);
-},
-{
-name = exit;
 },
 {
 name = fatha;
@@ -7110,63 +6854,6 @@ nodes = (
 }
 );
 width = 320;
-},
-{
-anchors = (
-{
-name = damma;
-pos = (-35,199);
-},
-{
-name = entry;
-pos = (320,0);
-},
-{
-name = exit;
-},
-{
-name = fatha;
-pos = (233,540);
-},
-{
-name = kasra;
-pos = (145,-81);
-}
-);
-associatedMasterId = m01;
-layerId = "9AA13603-34E1-49F7-8FA7-C1EEADDAF280";
-name = "26 Feb 23 at 02:03";
-shapes = (
-{
-closed = 1;
-nodes = (
-(336,0,l),
-(336,110,l),
-(324,110,o),
-(322,134,o),
-(320,157,cs),
-(314,234,o),
-(302,380,o),
-(293,449,cs),
-(291,468,o),
-(272,466,o),
-(268,453,cs),
-(260,424,o),
-(230,382,o),
-(211,376,cs),
-(198,372,o),
-(195,364,o),
-(196,354,cs),
-(201,303,o),
-(211,174,o),
-(216,110,c),
-(177,110,l),
-(177,0,l)
-);
-}
-);
-visible = 1;
-width = 319;
 }
 );
 metricLeft = "=meem-ar.medi.round";
@@ -7180,9 +6867,6 @@ anchors = (
 {
 name = damma;
 pos = (8,169);
-},
-{
-name = exit;
 }
 );
 backgroundImage = {
@@ -7222,9 +6906,6 @@ anchors = (
 {
 name = damma;
 pos = (-33,169);
-},
-{
-name = exit;
 },
 {
 name = fatha;
