@@ -426,115 +426,115 @@ input = "لحد"
 
 [[tests]]
 input = "۝١٥"
-direction= "ltr"
+direction = "ltr"
 
 [[tests]]
 input = "۝٢٥"
-direction= "ltr"
+direction = "ltr"
 
 [[tests]]
 input = "۝٣٥"
-direction= "ltr"
+direction = "ltr"
 
 [[tests]]
 input = "۝٤٥"
-direction= "ltr"
+direction = "ltr"
 
 [[tests]]
 input = "۝٥٥"
-direction= "ltr"
+direction = "ltr"
 
 [[tests]]
 input = "۝٦٥"
-direction= "ltr"
+direction = "ltr"
 
 [[tests]]
 input = "۝٧٥"
-direction= "ltr"
+direction = "ltr"
 
 [[tests]]
 input = "۝٨٥"
-direction= "ltr"
+direction = "ltr"
 
 [[tests]]
 input = "۝٩٥"
-direction= "ltr"
+direction = "ltr"
 
 [[tests]]
 input = "۝١٠٥"
-direction= "ltr"
+direction = "ltr"
 
 [[tests]]
 input = "۝١١٥"
-direction= "ltr"
+direction = "ltr"
 
 [[tests]]
 input = "۝١٢٥"
-direction= "ltr"
+direction = "ltr"
 
 [[tests]]
 input = "۝١٣٥"
-direction= "ltr"
+direction = "ltr"
 
 [[tests]]
 input = "۝١٤٥"
-direction= "ltr"
+direction = "ltr"
 
 [[tests]]
 input = "۝١٥٥"
-direction= "ltr"
+direction = "ltr"
 
 [[tests]]
 input = "۝١٦٥"
-direction= "ltr"
+direction = "ltr"
 
 [[tests]]
 input = "۝١٧٥"
-direction= "ltr"
+direction = "ltr"
 
 [[tests]]
 input = "۝١٨٥"
-direction= "ltr"
+direction = "ltr"
 
 [[tests]]
 input = "۝١٩٥"
-direction= "ltr"
+direction = "ltr"
 
 [[tests]]
 input = "۝٢٠٥"
-direction= "ltr"
+direction = "ltr"
 
 [[tests]]
 input = "۝٢١٥"
-direction= "ltr"
+direction = "ltr"
 
 [[tests]]
 input = "۝٢٢٥"
-direction= "ltr"
+direction = "ltr"
 
 [[tests]]
 input = "۝٢٣٥"
-direction= "ltr"
+direction = "ltr"
 
 [[tests]]
 input = "۝٢٤٥"
-direction= "ltr"
+direction = "ltr"
 
 [[tests]]
 input = "۝٢٥٥"
-direction= "ltr"
+direction = "ltr"
 
 [[tests]]
 input = "۝٢٦٥"
-direction= "ltr"
+direction = "ltr"
 
 [[tests]]
 input = "۝٢٧٥"
-direction= "ltr"
+direction = "ltr"
 
 [[tests]]
 input = "۝٢٨٥"
-direction= "ltr"
+direction = "ltr"
 
 [[tests]]
 input = "وفے"
@@ -826,3 +826,99 @@ input = "ـد"
 
 [[tests]]
 input = "ــد"
+
+[[tests]]
+input = "نعا"
+
+[[tests]]
+input = "نعل"
+
+[[tests]]
+input = "نعلن"
+
+[[tests]]
+input = "نعلا"
+
+[[tests]]
+input = "نعب"
+
+[[tests]]
+input = "نعبا"
+
+[[tests]]
+input = "نعبب"
+
+[[tests]]
+input = "نعيم"
+
+[[tests]]
+input = "نعد"
+
+[[tests]]
+input = "نعض"
+
+[[tests]]
+input = "نعضا"
+
+[[tests]]
+input = "نعط"
+
+[[tests]]
+input = "نعطا"
+
+[[tests]]
+input = "نعك"
+
+[[tests]]
+input = "نعكا"
+
+[[tests]]
+input = "نعر"
+
+[[tests]]
+input = "نعس"
+
+[[tests]]
+input = "نعسا"
+
+[[tests]]
+input = "نعع"
+
+[[tests]]
+input = "نععا"
+
+[[tests]]
+input = "نعف"
+
+[[tests]]
+input = "نعق"
+
+[[tests]]
+input = "نعم"
+
+[[tests]]
+input = "نعما"
+
+[[tests]]
+input = "نعمم"
+
+[[tests]]
+input = "نعن"
+
+[[tests]]
+input = "نعه"
+
+[[tests]]
+input = "نعهم"
+
+[[tests]]
+input = "نعها"
+
+[[tests]]
+input = "نعو"
+
+[[tests]]
+input = "نعى"
+
+[[tests]]
+input = "نعے"
