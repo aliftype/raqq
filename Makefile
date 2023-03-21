@@ -64,7 +64,7 @@ $(FONTDIR)/%.ttf: $(SOURCEDIR)/%.glyphs $(CONFIG) $(GLYPHDATA) $(SOURCEDIR)/%.fe
 $(TESTDIR)/%.html: $(FONTDIR)/%.ttf $(TESTDIR)/fontbakery.yml
 	$(info   TEST   $(<F))
 	fontbakery check-universal --config=$(TESTDIR)/fontbakery.yml \
-                   fontbakery.profiles.shaping $< --html=$@ &> /dev/null
+                   fontbakery.profiles.shaping $< --html=$@ -l WARN &> /dev/null
 
 $(TESTDIR)/decomposition.toml: $(SOURCEDIR)/$(NAME)Text.glyphs
 	$(info   GEN    $(@F))
