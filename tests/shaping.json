@@ -1243,7 +1243,7 @@
     {
       "input": "فطا",
       "expectation": {
-        "default": "alef-ar.fina.short=2+88|tah-ar.medi=1+758|dotabove-ar=0@-41,373+0|fehDotless-ar.init.dal=0+354"
+        "default": "alef-ar.fina.short=2+95|tah-ar.medi=1+758|dotabove-ar=0@-41,373+0|fehDotless-ar.init.dal=0+354"
       }
     },
     {
@@ -1459,7 +1459,7 @@
     {
       "input": "نفطا",
       "expectation": {
-        "default": "alef-ar.fina.short=3+88|tah-ar.medi=2+758|dotabove-ar=1@-17,333+0|fehDotless-ar.medi.dal=1+370|dotabove-ar=0@-10,287+0|behDotless-ar.init=0+130"
+        "default": "alef-ar.fina.short=3+95|tah-ar.medi=2+758|dotabove-ar=1@-17,333+0|fehDotless-ar.medi.dal=1+370|dotabove-ar=0@-10,287+0|behDotless-ar.init=0+130"
       }
     },
     {
@@ -1711,7 +1711,7 @@
     {
       "input": "نعطا",
       "expectation": {
-        "default": "alef-ar.fina.short=3+88|tah-ar.medi=2+758|ain-ar.medi.dal=1+273|dotabove-ar=0@-16,392+0|behDotless-ar.init.high=0+130"
+        "default": "alef-ar.fina.short=3+95|tah-ar.medi=2+758|ain-ar.medi.dal=1+273|dotabove-ar=0@-16,392+0|behDotless-ar.init.high=0+130"
       }
     },
     {
