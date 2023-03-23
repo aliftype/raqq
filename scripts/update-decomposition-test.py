@@ -14,14 +14,12 @@
 # You should have received a copy of the GNU Affero General Public License
 # along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
-import toml
+import json
+import uharfbuzz as hb
 from glyphsLib import GSFont
 
 
 def main(rags):
-    doc = toml.load(args.toml)
-    configuration = doc["configuration"]
-
     font = GSFont(args.glyphs)
 
     forbidden_glyphs = ["kashida-ar"]
@@ -29,9 +27,28 @@ def main(rags):
         if glyph.color == 0:
             forbidden_glyphs.append(glyph.name)
 
-    configuration["forbidden_glyphs"] = forbidden_glyphs
+    blob = hb.Blob.from_file_path(args.font)
+    face = hb.Face(blob)
+    unicodes = face.unicodes
+    tests = []
+    for u in unicodes:
+        c = chr(u)
+        if c.isalpha():
+            test = {"input": f"{c} {c}\u200D \u200D{c}\u200D \u200D{c}"}
+            tests.append(test)
 
-    args.toml.write_text(toml.dumps(doc))
+    doc = {
+        "configuration": {
+            "defaults": {
+                "script": "arab",
+                "direction": "rtl",
+            },
+            "forbidden_glyphs": forbidden_glyphs,
+        },
+        "tests": tests,
+    }
+
+    args.json.write_text(json.dumps(doc, indent=2, ensure_ascii=False))
 
 
 if __name__ == "__main__":
@@ -39,8 +56,9 @@ if __name__ == "__main__":
     from pathlib import Path
 
     parser = ArgumentParser()
-    parser.add_argument("toml", type=Path, help="input .toml file path.")
+    parser.add_argument("json", type=Path, help="output .json file path.")
     parser.add_argument("glyphs", type=Path, help="input .glyphs file path.")
+    parser.add_argument("font", type=Path, help="input .ttf file path.")
 
     args = parser.parse_args()
     main(args)

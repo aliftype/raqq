@@ -161,9 +161,7 @@ sre-yield==1.2
 stringbrewer==0.0.1
     # via fontbakery
 toml==0.10.2
-    # via
-    #   -r requirements.in
-    #   fontbakery
+    # via fontbakery
 ufo2ft==2.30.0
     # via
     #   -r requirements.in

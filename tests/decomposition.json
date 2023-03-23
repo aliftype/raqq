@@ -1,5 +1,9 @@
 {
   "configuration": {
+    "defaults": {
+      "script": "arab",
+      "direction": "rtl"
+    },
     "forbidden_glyphs": [
       "kashida-ar",
       "alefHamzaabove-ar",
@@ -26,11 +30,7 @@
       "yeh-ar",
       "yehFarsi-ar",
       "yehHamzaabove-ar"
-    ],
-    "defaults": {
-      "direction": "rtl",
-      "script": "arab"
-    }
+    ]
   },
   "tests": [
     {

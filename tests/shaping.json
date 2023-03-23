@@ -1,4 +1,10 @@
 {
+  "configuration": {
+    "defaults": {
+      "script": "arab",
+      "direction": "rtl"
+    }
+  },
   "tests": [
     {
       "input": "ا",
@@ -1822,11 +1828,5 @@
         "default": "yehbarree-ar.fina=2+312|ain-ar.medi.yeh=1@7,0+232|dotabove-ar=0@-16,392+0|behDotless-ar.init.high=0+532"
       }
     }
-  ],
-  "configuration": {
-    "defaults": {
-      "direction": "rtl",
-      "script": "arab"
-    }
-  }
+  ]
 }

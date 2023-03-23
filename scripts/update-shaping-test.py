@@ -14,7 +14,7 @@
 # You should have received a copy of the GNU Affero General Public License
 # along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
-import toml
+import csv
 import json
 import uharfbuzz as hb
 
@@ -50,68 +50,36 @@ def open_font(path):
     return font
 
 
-def update_shaping_tests(doc, fonts, default):
-    configuration = doc["configuration"]
-
-    defaults = configuration["defaults"]
-    direction = defaults["direction"]
-    script = defaults["script"]
-    language = defaults.get("language")
-    features = defaults.get("features")
-
-    tests = doc["tests"]
-    for test in tests:
-        expectation = {}
-        for path in fonts:
-            name = "default" if path.stem == default else path.name
-            expectation[name] = shape(
-                fonts[path],
-                test.get("input"),
-                test.get("direction", direction),
-                test.get("script", script),
-                test.get("language", language),
-                test.get("features", features),
-            )
-        test["expectation"] = expectation
-
-
-def update_decomposition_tests(doc, fonts, default):
-    configuration = doc["configuration"]
-
-    defaults = configuration["defaults"]
-    direction = defaults["direction"]
-    script = defaults["script"]
-    language = defaults.get("language")
-    features = defaults.get("features")
-
-    tests = doc.setdefault("tests", [])
-
-    for path in fonts:
-        if path.stem != default:
-            continue
-
-        font = fonts[path]
-        unicodes = font.face.unicodes
-        for u in unicodes:
-            c = chr(u)
-            if c.isalpha():
-                test = {"input": f"{c} {c}\u200D \u200D{c}\u200D \u200D{c}"}
-                tests.append(test)
-
-
 def main(rags):
-    doc = toml.load(args.toml)
-    configuration = doc.setdefault("configuration", {})
-    defaults = configuration.setdefault("defaults", {})
-    defaults.setdefault("direction", "rtl")
-    defaults.setdefault("script", "arab")
-
     fonts = {f: open_font(f) for f in args.fonts}
+    tests = []
+    with open(args.csv) as f:
+        reader = csv.DictReader(f, delimiter=";", lineterminator="\n")
+        for test in reader:
+            test = {k: v for k, v in test.items() if v}
+            expectation = {}
+            for path in fonts:
+                name = "default" if path.stem == args.default else path.name
+                expectation[name] = shape(
+                    fonts[path],
+                    test.get("input"),
+                    test.get("direction", "rtl"),
+                    test.get("script", "arab"),
+                    test.get("language"),
+                    test.get("features"),
+                )
+            test["expectation"] = expectation
+            tests.append(test)
 
-    if "forbidden_glyphs" in configuration:
-        update_decomposition_tests(doc, fonts, args.default)
-    else:
-        update_shaping_tests(doc, fonts, args.default)
+    doc = {
+        "configuration": {
+            "defaults": {
+                "script": "arab",
+                "direction": "rtl",
+            },
+        },
+        "tests": tests,
+    }
 
     args.json.write_text(json.dumps(doc, indent=2, ensure_ascii=False))
 
@@ -123,7 +91,7 @@ if __name__ == "__main__":
     parser = ArgumentParser()
     parser.add_argument("json", type=Path, help="output .json file path.")
     parser.add_argument("default", help="default font’s file name")
-    parser.add_argument("toml", type=Path, help="input .toml file path.")
+    parser.add_argument("csv", type=Path, help="input .csv file path.")
     parser.add_argument("fonts", nargs="+", type=Path, help="fonts to update with.")
 
     args = parser.parse_args()
