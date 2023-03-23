@@ -22,7 +22,7 @@ from glyphsLib import GSFont
 def main(rags):
     font = GSFont(args.glyphs)
 
-    forbidden_glyphs = ["kashida-ar"]
+    forbidden_glyphs = []
     for glyph in font.glyphs:
         if glyph.color == 0:
             forbidden_glyphs.append(glyph.name)
