@@ -50,6 +50,10 @@ def shape(font, text, direction="rtl", script="arab", features=None):
     overhang = font.get_glyph_h_advance(infos[-1].codepoint)
     adjustment = overhang - advance
 
+    # Round adjustment values to the nearest 10 units to reduce the number of
+    # lookups.
+    adjustment = round(adjustment / 10) * 10
+
     return glyphs, adjustment
 
 
