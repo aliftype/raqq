@@ -524,6 +524,9 @@ def build(instance, isTTF, args):
 
 def propagateAnchors(glyph, layer):
     if glyph is not None:
+        if glyph.color == 0:
+            return
+
         anchors = {a.name for a in layer.anchors}
         if "exit" not in anchors:
             if ".init" in glyph.name or ".medi" in glyph.name:
