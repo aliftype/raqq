@@ -194,7 +194,7 @@ def makeMark(instance, glyphOrder):
         if glyph is None:
             continue
 
-        if "_" in gname:
+        if (glyph.category, glyph.subCategory) == ("Letter", "Ligature"):
             lig[gname] = {i + 1: [] for i in range(gname.count("_") + 1)}
 
         layer = getLayer(glyph, instance)
