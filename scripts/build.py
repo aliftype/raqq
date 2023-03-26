@@ -527,6 +527,9 @@ def propagateAnchors(glyph, layer):
         if glyph.color == 0:
             return
 
+        if glyph.name.startswith("_"):
+            return
+
         anchors = {a.name for a in layer.anchors}
         if "exit" not in anchors:
             if ".init" in glyph.name or ".medi" in glyph.name:
