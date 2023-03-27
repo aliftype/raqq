@@ -531,10 +531,10 @@ lookup rlig_4 {
 lookup before_beh {
 	sub fehDotless-ar.init	by fehDotless-ar.init.beh;
 	sub fehDotless-ar.medi	by fehDotless-ar.medi.beh;
-	sub ain-ar.init			by ain-ar.init connector.3;
+	sub ain-ar.init			by ain-ar.init _c.ain.init.beh;
 	sub ain-ar.medi			by ain-ar.medi.beh;
-	sub	hah-ar.init			by hah-ar.init connector.4;
-	sub	hah-ar.medi			by hah-ar.medi connector.4;
+	sub	hah-ar.init			by hah-ar.init _c.hah.beh;
+	sub	hah-ar.medi			by hah-ar.medi _c.hah.beh;
 	sub seen-ar.init		by seen-ar.init.beh;
 	sub seen-ar.medi		by seen-ar.medi.beh;
 	sub seen-ar.medi.short	by seen-ar.medi.short.beh;
@@ -550,6 +550,7 @@ lookup before_dal {
 
 lookup before_meem {
 	sub fehDotless-ar.medi	by fehDotless-ar.medi.meem;
+	sub ain-ar.init			by ain-ar.init _c.ain.meem;
 	sub ain-ar.medi			by ain-ar.medi.meem;
 	sub seen-ar.init		by seen-ar.init.meem;
 	sub seen-ar.medi		by seen-ar.medi.meem;
@@ -562,6 +563,12 @@ lookup before_waw {
 	sub fehDotless-ar.medi	by fehDotless-ar.medi connector.6;
 } before_waw;
 
+lookup before_yeh {
+	sub fehDotless-ar.init	by fehDotless-ar.init.yeh;
+	sub ain-ar.init			by ain-ar.init _c.ain.yeh;
+	sub ain-ar.medi			by ain-ar.medi.yeh;
+} before_yeh;
+
 lookup rlig_c {
 	lookupflag IgnoreMarks;
 
@@ -573,11 +580,15 @@ lookup rlig_c {
 	sub	[hah-ar.init hah-ar.medi ain-ar.init]' lookup before_beh
 		[alef-ar.fina lam-ar.medi lam-ar.medi.round lam-ar.fina
 		 behDotless-ar.medi behDotless-ar.medi.high behDotless-ar.medi.round behDotless-ar.fina
-		 qafDotless-ar.fina heh-ar.medi heh-ar.medi.round heh-ar.fina
+		 heh-ar.medi heh-ar.medi.round heh-ar.fina
 		 @seen.after @ain.after @feh.after]
 	;
 
-	sub	[hah-ar.init hah-ar.medi ain-ar.init]' lookup before_meem
+	sub	[hah-ar.init hah-ar.medi]' lookup before_beh
+		[qafDotless-ar.fina]
+	;
+
+	sub	[hah-ar.init hah-ar.medi]' lookup before_meem
 		[meem-ar.fina meem-ar.medi meem-ar.medi.round2 qafDotless-ar.fina
 		 noonghunna-ar.fina waw-ar.fina reh-ar.fina
 		 alefMaksura-ar.fina yehbarree-ar.fina yehbarree-ar.fina.baseline]
@@ -614,9 +625,8 @@ lookup rlig_c {
 	by	 fehDotless-ar.medi.reh
 	;
 
-	sub	 fehDotless-ar.init'
+	sub	[fehDotless-ar.init]' lookup before_yeh
 		[reh-ar.fina noonghunna-ar.fina]
-	by	 fehDotless-ar.init.yeh
 	;
 
 	sub	 ain-ar.medi' lookup before_beh
@@ -627,7 +637,7 @@ lookup rlig_c {
 		 heh-ar.medi heh-ar.medi.round heh-ar.fina]
 	;
 
-	sub	 ain-ar.medi' lookup before_meem
+	sub	[ain-ar.init ain-ar.medi]' lookup before_meem
 		[qafDotless-ar.fina meem-ar.medi meem-ar.medi.round2 meem-ar.fina waw-ar.fina]
 	;
 
@@ -635,9 +645,8 @@ lookup rlig_c {
 		[qafDotless-ar.fina meem-ar.medi meem-ar.medi.round2 meem-ar.fina noonghunna-ar.fina]
 	;
 
-	sub	 ain-ar.medi'
+	sub	[ain-ar.init ain-ar.medi]' lookup before_yeh
 		[alefMaksura-ar.fina yehbarree-ar.fina noonghunna-ar.fina]
-	by	 ain-ar.medi.yeh
 	;
 
 	sub	 ain-ar.medi'
@@ -649,7 +658,7 @@ lookup rlig_c {
 		 waw-ar.fina
 	;
 
-	sub	[connector.5 connector.6 ain-ar.medi.meem]
+	sub	[connector.5 connector.6 ain-ar.medi.meem _c.ain.meem]
 		 waw-ar.fina' lookup rounded
 	;
 
@@ -4082,6 +4091,7 @@ metricRight = "=0@120";
 },
 {
 glyphname = "ain-ar.medi.meem";
+kernLeft = ain.meem;
 kernRight = ain;
 layers = (
 {
@@ -4102,7 +4112,7 @@ ref = "ain-ar.medi";
 },
 {
 alignment = -1;
-ref = _c.ain.medi.meem;
+ref = _c.ain.meem;
 }
 );
 width = 265;
@@ -4144,6 +4154,7 @@ metricRight = "=0@120";
 },
 {
 glyphname = "ain-ar.medi.yeh";
+kernLeft = ain.yeh;
 kernRight = ain;
 layers = (
 {
@@ -4164,7 +4175,7 @@ ref = "ain-ar.medi";
 },
 {
 alignment = -1;
-ref = _c.ain.medi.yeh;
+ref = _c.ain.yeh;
 }
 );
 width = 225;
@@ -4352,6 +4363,7 @@ unicode = 1697;
 },
 {
 glyphname = "fehDotless-ar.fina";
+kernRight = feh.medi;
 layers = (
 {
 anchors = (
@@ -8083,14 +8095,17 @@ shapes = (
 closed = 1;
 nodes = (
 (278,0,l),
-(190,-3,o),
-(159,10,o),
+(249,-1,o),
+(226,-1,o),
+(208,0,cs),
+(167,2,o),
+(148,17,o),
 (125,33,cs),
 (118,38,o),
-(109,32,o),
+(108,32,o),
 (119,22,cs),
-(155,-17,o),
-(263,-19,o),
+(160,-17,o),
+(194,-19,o),
 (349,-19,cs),
 (371,-19,o),
 (377,-39,o),
@@ -11640,73 +11655,6 @@ metricRight = "=0";
 },
 {
 category = Connector;
-glyphname = connector.3;
-layers = (
-{
-anchors = (
-{
-name = entry;
-pos = (48,0);
-},
-{
-name = exit;
-}
-);
-layerId = m01;
-shapes = (
-{
-closed = 1;
-nodes = (
-(-27,0,l),
-(99,0,l),
-(99,110,l),
-(50,119,o),
-(-1,164,o),
-(-4,264,c),
-(-27,264,l)
-);
-}
-);
-width = 99;
-}
-);
-metricRight = "=0";
-},
-{
-category = Connector;
-glyphname = connector.4;
-layers = (
-{
-anchors = (
-{
-name = entry;
-pos = (8,0);
-},
-{
-name = exit;
-}
-);
-layerId = m01;
-shapes = (
-{
-closed = 1;
-nodes = (
-(-20,192,l),
-(-20,0,l),
-(133,59,l),
-(133,104,l),
-(53,111,o),
-(-2,142,o),
-(-1,192,c)
-);
-}
-);
-width = 8;
-}
-);
-},
-{
-category = Connector;
 glyphname = connector.5;
 layers = (
 {
@@ -11773,6 +11721,30 @@ width = 36;
 metricRight = "=0";
 },
 {
+glyphname = _c.ain.init.beh;
+layers = (
+{
+layerId = m01;
+shapes = (
+{
+closed = 1;
+nodes = (
+(-20,0,l),
+(99,0,l),
+(99,110,l),
+(55,118,o),
+(0,155,o),
+(-2,234,c),
+(-20,234,l)
+);
+}
+);
+width = 99;
+}
+);
+metricRight = "=0";
+},
+{
 glyphname = _c.ain.medi.beh;
 layers = (
 {
@@ -11823,30 +11795,6 @@ width = 76;
 metricRight = "=0";
 },
 {
-glyphname = _c.ain.medi.meem;
-layers = (
-{
-layerId = m01;
-shapes = (
-{
-closed = 1;
-nodes = (
-(87,0,l),
-(87,110,l),
-(53,110,o),
-(-5,141,o),
-(-28,192,c),
-(-38,192,l),
-(-38,0,l)
-);
-}
-);
-width = 87;
-}
-);
-metricRight = "=0";
-},
-{
 glyphname = _c.ain.medi.reh;
 layers = (
 {
@@ -11871,7 +11819,33 @@ width = 34;
 metricRight = "=0";
 },
 {
-glyphname = _c.ain.medi.yeh;
+glyphname = _c.ain.meem;
+kernLeft = ain.meem;
+layers = (
+{
+layerId = m01;
+shapes = (
+{
+closed = 1;
+nodes = (
+(87,0,l),
+(87,110,l),
+(53,110,o),
+(-5,141,o),
+(-28,192,c),
+(-38,192,l),
+(-38,0,l)
+);
+}
+);
+width = 87;
+}
+);
+metricRight = "=0";
+},
+{
+glyphname = _c.ain.yeh;
+kernLeft = ain.yeh;
 layers = (
 {
 layerId = m01;
@@ -12042,6 +12016,38 @@ width = 47;
 metricRight = "=0";
 },
 {
+glyphname = _c.hah.beh;
+layers = (
+{
+anchors = (
+{
+name = entry;
+pos = (8,0);
+},
+{
+name = exit;
+}
+);
+layerId = m01;
+shapes = (
+{
+closed = 1;
+nodes = (
+(-20,192,l),
+(-20,0,l),
+(133,59,l),
+(133,104,l),
+(53,111,o),
+(-2,142,o),
+(-1,192,c)
+);
+}
+);
+width = 8;
+}
+);
+},
+{
 glyphname = _c.sad;
 layers = (
 {
@@ -12193,6 +12199,17 @@ m01 = {
 "qafDotless-ar.fina" = 7;
 "seen-ar.fina" = -2;
 };
+"ain-ar.init" = {
+_c.ain.init.beh = -50;
+_c.ain.meem = -50;
+_c.ain.yeh = -50;
+"alefMaksura-ar.fina" = -49;
+"alefMaksura-ar.fina.salt" = -52;
+"alefMaksura-ar.fina.wide" = -34;
+"alefMaksura-ar.fina.wide.salt" = -50;
+"lam_alef-ar.fina" = -47;
+"yehbarree-ar.fina.baseline" = -25;
+};
 "ain-ar.medi" = {
 connector.1 = -12;
 "lam_alef-ar.fina" = -80;
@@ -12208,30 +12225,26 @@ connector.1 = -12;
 "behDotless-ar.medi" = -4;
 "behDotless-ar.medi.high" = -8;
 "behDotless-ar.medi.round" = -4;
-"fehDotless-ar.fina" = -3;
 "heh-ar.fina" = -6;
 "lam-ar.fina" = -1;
 "lam-ar.medi" = -1;
 "seen-ar.fina" = -4;
 };
-"ain-ar.medi.meem" = {
-"meem-ar.medi" = 13;
-"meem-ar.medi.round2" = 8;
-"noonghunna-ar" = -8;
-"qafDotless-ar.fina" = 8;
-"waw-ar.fina.round" = -3;
-};
-"ain-ar.medi.yeh" = {
-"noonghunna-ar.fina" = 43;
-"yehbarree-ar.fina" = 7;
-};
-connector.3 = {
+_c.ain.init.beh = {
+"@MMK_L_ain" = -4;
+"@MMK_L_feh.medi" = -6;
+"@MMK_L_heh.medi" = -7;
+"@MMK_L_seen" = -2;
+"@MMK_L_seen.short" = -19;
+"ain-ar.fina" = -4;
 "behDotless-ar.fina" = -6;
 "behDotless-ar.medi" = -4;
 "behDotless-ar.medi.high" = -8;
 "behDotless-ar.medi.round" = -3;
+"heh-ar.fina" = -6;
+"seen-ar.fina" = -4;
 };
-connector.4 = {
+_c.hah.beh = {
 "@MMK_L_ain" = -3;
 "@MMK_L_seen.short" = -6;
 "ain-ar.fina" = -3;
@@ -12241,6 +12254,17 @@ connector.4 = {
 "behDotless-ar.medi.round" = -2;
 "qafDotless-ar.fina" = -18;
 "seen-ar.fina" = -2;
+};
+connector.5 = {
+"@MMK_L_heh.medi" = 18;
+"alefMaksura-ar.fina" = -36;
+"heh-ar.fina" = 18;
+"meem-ar.medi" = 10;
+"meem-ar.medi.round2" = 6;
+"noonghunna-ar.fina" = 5;
+"reh-ar.fina" = -10;
+"yehbarree-ar.fina" = -27;
+"yehbarree-ar.fina.baseline" = -19;
 };
 "fehDotless-ar.init" = {
 "lam_alef-ar.fina" = -130;
@@ -12254,7 +12278,6 @@ connector.4 = {
 "behDotless-ar.medi.high" = -8;
 "behDotless-ar.medi.med" = -10;
 "behDotless-ar.medi.round" = -3;
-"fehDotless-ar.fina" = -5;
 "heh-ar.fina" = -6;
 "heh-ar.medi" = -7;
 "heh-ar.medi.round" = -4;
@@ -12305,16 +12328,16 @@ connector.4 = {
 "hah-ar.init" = {
 "lam_alef-ar.fina" = -69;
 };
-connector.5 = {
-"@MMK_L_heh.medi" = 18;
-"alefMaksura-ar.fina" = -36;
-"heh-ar.fina" = 18;
-"meem-ar.medi" = 10;
-"meem-ar.medi.round2" = 6;
-"noonghunna-ar.fina" = 5;
-"reh-ar.fina" = -10;
-"yehbarree-ar.fina" = -27;
-"yehbarree-ar.fina.baseline" = -19;
+"@MMK_R_ain.meem" = {
+"meem-ar.medi" = 13;
+"meem-ar.medi.round2" = 8;
+"noonghunna-ar" = -8;
+"qafDotless-ar.fina" = 8;
+"waw-ar.fina.round" = -3;
+};
+"@MMK_R_ain.yeh" = {
+"noonghunna-ar.fina" = 43;
+"yehbarree-ar.fina" = 7;
 };
 };
 };

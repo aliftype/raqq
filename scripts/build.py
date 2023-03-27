@@ -527,17 +527,21 @@ def propagateAnchors(glyph, layer):
         if glyph.color == 0:
             return
 
-        if glyph.name.startswith("_"):
-            return
+        exit_ = entry_ = False
+        if glyph.name.startswith("_c.") or ".medi" in glyph.name:
+            exit_ = entry_ = True
+
+        if ".init" in glyph.name:
+            exit_ = True
+        if ".fina" in glyph.name:
+            entry_ = True
 
         anchors = {a.name for a in layer.anchors}
-        if "exit" not in anchors:
-            if ".init" in glyph.name or ".medi" in glyph.name:
-                layer.anchors["exit"] = GSAnchor()
-        if "entry" not in anchors:
-            if ".fina" in glyph.name or ".medi" in glyph.name:
-                layer.anchors["entry"] = GSAnchor()
-                layer.anchors["entry"].position.x = layer.width
+        if exit_ and "exit" not in anchors:
+            layer.anchors["exit"] = GSAnchor()
+        if entry_ and "entry" not in anchors:
+            layer.anchors["entry"] = GSAnchor()
+            layer.anchors["entry"].position.x = layer.width
 
     for component in layer.components:
         clayer = component.layer or component.component.layers[0]
