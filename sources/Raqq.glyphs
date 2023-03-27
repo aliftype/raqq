@@ -218,7 +218,7 @@ space
 }
 );
 date = "2021-04-25 20:10:22 +0000";
-familyName = "Raqq Text";
+familyName = Raqq;
 featurePrefixes = (
 {
 code = "languagesystem DFLT dflt;
@@ -734,7 +734,7 @@ lookupflag IgnoreMarks;
 tag = kern;
 },
 {
-code = "include(RaqqText.fea)
+code = "include(Raqq.fea)
 ";
 tag = kern;
 },
@@ -12161,6 +12161,17 @@ name = Regular;
 );
 kerningRTL = {
 m01 = {
+"@MMK_R_ain.meem" = {
+"meem-ar.medi" = 13;
+"meem-ar.medi.round2" = 8;
+"noonghunna-ar" = -8;
+"qafDotless-ar.fina" = 8;
+"waw-ar.fina.round" = -3;
+};
+"@MMK_R_ain.yeh" = {
+"noonghunna-ar.fina" = 43;
+"yehbarree-ar.fina" = 7;
+};
 "@MMK_R_kaf" = {
 "meem-ar.fina" = -12;
 "meem-ar.medi" = -5;
@@ -12199,6 +12210,31 @@ m01 = {
 "qafDotless-ar.fina" = 7;
 "seen-ar.fina" = -2;
 };
+_c.ain.init.beh = {
+"@MMK_L_ain" = -4;
+"@MMK_L_feh.medi" = -6;
+"@MMK_L_heh.medi" = -7;
+"@MMK_L_seen" = -2;
+"@MMK_L_seen.short" = -19;
+"ain-ar.fina" = -4;
+"behDotless-ar.fina" = -6;
+"behDotless-ar.medi" = -4;
+"behDotless-ar.medi.high" = -8;
+"behDotless-ar.medi.round" = -3;
+"heh-ar.fina" = -6;
+"seen-ar.fina" = -4;
+};
+_c.hah.beh = {
+"@MMK_L_ain" = -3;
+"@MMK_L_seen.short" = -6;
+"ain-ar.fina" = -3;
+"behDotless-ar.fina" = -3;
+"behDotless-ar.medi" = -2;
+"behDotless-ar.medi.high" = -5;
+"behDotless-ar.medi.round" = -2;
+"qafDotless-ar.fina" = -18;
+"seen-ar.fina" = -2;
+};
 "ain-ar.init" = {
 _c.ain.init.beh = -50;
 _c.ain.meem = -50;
@@ -12229,31 +12265,6 @@ connector.1 = -12;
 "lam-ar.fina" = -1;
 "lam-ar.medi" = -1;
 "seen-ar.fina" = -4;
-};
-_c.ain.init.beh = {
-"@MMK_L_ain" = -4;
-"@MMK_L_feh.medi" = -6;
-"@MMK_L_heh.medi" = -7;
-"@MMK_L_seen" = -2;
-"@MMK_L_seen.short" = -19;
-"ain-ar.fina" = -4;
-"behDotless-ar.fina" = -6;
-"behDotless-ar.medi" = -4;
-"behDotless-ar.medi.high" = -8;
-"behDotless-ar.medi.round" = -3;
-"heh-ar.fina" = -6;
-"seen-ar.fina" = -4;
-};
-_c.hah.beh = {
-"@MMK_L_ain" = -3;
-"@MMK_L_seen.short" = -6;
-"ain-ar.fina" = -3;
-"behDotless-ar.fina" = -3;
-"behDotless-ar.medi" = -2;
-"behDotless-ar.medi.high" = -5;
-"behDotless-ar.medi.round" = -2;
-"qafDotless-ar.fina" = -18;
-"seen-ar.fina" = -2;
 };
 connector.5 = {
 "@MMK_L_heh.medi" = 18;
@@ -12327,17 +12338,6 @@ connector.5 = {
 };
 "hah-ar.init" = {
 "lam_alef-ar.fina" = -69;
-};
-"@MMK_R_ain.meem" = {
-"meem-ar.medi" = 13;
-"meem-ar.medi.round2" = 8;
-"noonghunna-ar" = -8;
-"qafDotless-ar.fina" = 8;
-"waw-ar.fina.round" = -3;
-};
-"@MMK_R_ain.yeh" = {
-"noonghunna-ar.fina" = 43;
-"yehbarree-ar.fina" = 7;
 };
 };
 };

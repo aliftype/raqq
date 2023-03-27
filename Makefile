@@ -28,12 +28,11 @@ FONTDIR = fonts
 TESTDIR = tests
 BUILDDIR = build
 
-STYLES = Text
-OTF = $(STYLES:%=$(FONTDIR)/$(NAME)%.otf)
-TTF = $(STYLES:%=$(FONTDIR)/$(NAME)%.ttf)
-FEA = $(STYLES:%=$(SOURCEDIR)/$(NAME)%.fea)
+OTF = $(FONTDIR)/$(NAME).otf
+TTF = $(FONTDIR)/$(NAME).ttf
+FEA = $(SOURCEDIR)/$(NAME).fea
 JSON = $(TESTDIR)/shaping.json $(TESTDIR)/decomposition.json
-HTML = $(STYLES:%=$(TESTDIR)/$(NAME)%.html)
+HTML = $(TESTDIR)/$(NAME).html
 FONTS = $(TTF) # $(OTF)
 GLYPHDATA = $(SOURCEDIR)/GlyphData.xml
 
@@ -65,13 +64,13 @@ $(TESTDIR)/%.html: $(FONTDIR)/%.ttf $(TESTDIR)/fontbakery.yml
 	fontbakery check-universal --config=$(TESTDIR)/fontbakery.yml \
                    fontbakery.profiles.shaping $< --html=$@ -l WARN &> /dev/null
 
-$(TESTDIR)/decomposition.json: $(SOURCEDIR)/$(NAME)Text.glyphs $(FONTDIR)/$(NAME)Text.ttf
+$(TESTDIR)/decomposition.json: $(SOURCEDIR)/$(NAME).glyphs $(FONTDIR)/$(NAME).ttf
 	$(info   GEN    $(@F))
 	python $(SCRIPTDIR)/update-decomposition-test.py $@ $+
 
 $(TESTDIR)/shaping.json: $(TESTDIR)/shaping.csv $(TTF)
 	$(info   GEN    $(@F))
-	python $(SCRIPTDIR)/update-shaping-test.py $@ $(NAME)Text $+
+	python $(SCRIPTDIR)/update-shaping-test.py $@ $(NAME) $+
 
 dist: all
 	$(info   DIST   $(DIST).zip)
