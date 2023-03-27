@@ -52,8 +52,7 @@ def main(rags):
         reader = csv.DictReader(f, delimiter=";", lineterminator="\n")
         for test in reader:
             test = {k: v for k, v in test.items() if v}
-            expectation = {}
-            expectation["default"] = shape(
+            test["expectation"] = shape(
                 font,
                 test.get("input"),
                 test.get("direction", "rtl"),
@@ -61,7 +60,6 @@ def main(rags):
                 test.get("language"),
                 test.get("features"),
             )
-            test["expectation"] = expectation
             tests.append(test)
 
     doc = {
