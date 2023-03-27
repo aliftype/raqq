@@ -28,7 +28,7 @@ FONTDIR = fonts
 TESTDIR = tests
 BUILDDIR = build
 
-STYLES = Text # Display
+STYLES = Text
 OTF = $(STYLES:%=$(FONTDIR)/$(NAME)%.otf)
 TTF = $(STYLES:%=$(FONTDIR)/$(NAME)%.ttf)
 FEA = $(STYLES:%=$(SOURCEDIR)/$(NAME)%.fea)
