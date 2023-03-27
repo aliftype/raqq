@@ -14,7 +14,7 @@ scholarly texts) as it has large to body letter forms and a sturdy feel.
 
 _Raqq_ design is based mostly on [MS Add.1116][1] Quranic manuscript.
 
-_Raqq_ is Arabic for Parchment.
+_Raqq_ is Arabic for parchment.
 
 [1]: https://cudl.lib.cam.ac.uk/view/MS-ADD-01116
 [2]: https://gallica.bnf.fr/ark:/12148/btv1b8415221r
