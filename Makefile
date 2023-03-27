@@ -49,7 +49,7 @@ update-fea: $(FEA)
 
 $(SOURCEDIR)/%.fea:
 	$(info   GEN    $(@F))
-	python $(SCRIPTDIR)/update-overhang-fea.py $(FONTDIR)/$(*F).ttf $@
+	python $(SCRIPTDIR)/update-overhang-fea.py $(TTF) $@
 
 $(FONTDIR)/%.otf: $(SOURCEDIR)/%.glyphs $(CONFIG) $(GLYPHDATA) $(SOURCEDIR)/%.fea
 	$(info   BUILD  $(@F))
@@ -64,13 +64,13 @@ $(TESTDIR)/%.html: $(FONTDIR)/%.ttf $(TESTDIR)/fontbakery.yml
 	fontbakery check-universal --config=$(TESTDIR)/fontbakery.yml \
                    fontbakery.profiles.shaping $< --html=$@ -l WARN &> /dev/null
 
-$(TESTDIR)/decomposition.json: $(SOURCEDIR)/$(NAME).glyphs $(FONTDIR)/$(NAME).ttf
+$(TESTDIR)/decomposition.json: $(SOURCEDIR)/$(NAME).glyphs $(TTF)
 	$(info   GEN    $(@F))
 	python $(SCRIPTDIR)/update-decomposition-test.py $@ $+
 
 $(TESTDIR)/shaping.json: $(TESTDIR)/shaping.csv $(TTF)
 	$(info   GEN    $(@F))
-	python $(SCRIPTDIR)/update-shaping-test.py $@ $(NAME) $+
+	python $(SCRIPTDIR)/update-shaping-test.py $@ $+
 
 dist: all
 	$(info   DIST   $(DIST).zip)

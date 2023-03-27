@@ -43,31 +43,24 @@ def shape(font, text, direction, script, language, features):
     return "|".join(output)
 
 
-def open_font(path):
-    blob = hb.Blob.from_file_path(path)
+def main(rags):
+    blob = hb.Blob.from_file_path(args.font)
     face = hb.Face(blob)
     font = hb.Font(face)
-    return font
-
-
-def main(rags):
-    fonts = {f: open_font(f) for f in args.fonts}
     tests = []
     with open(args.csv) as f:
         reader = csv.DictReader(f, delimiter=";", lineterminator="\n")
         for test in reader:
             test = {k: v for k, v in test.items() if v}
             expectation = {}
-            for path in fonts:
-                name = "default" if path.stem == args.default else path.name
-                expectation[name] = shape(
-                    fonts[path],
-                    test.get("input"),
-                    test.get("direction", "rtl"),
-                    test.get("script", "arab"),
-                    test.get("language"),
-                    test.get("features"),
-                )
+            expectation["default"] = shape(
+                font,
+                test.get("input"),
+                test.get("direction", "rtl"),
+                test.get("script", "arab"),
+                test.get("language"),
+                test.get("features"),
+            )
             test["expectation"] = expectation
             tests.append(test)
 
@@ -90,9 +83,8 @@ if __name__ == "__main__":
 
     parser = ArgumentParser()
     parser.add_argument("json", type=Path, help="output .json file path.")
-    parser.add_argument("default", help="default font’s file name")
     parser.add_argument("csv", type=Path, help="input .csv file path.")
-    parser.add_argument("fonts", nargs="+", type=Path, help="fonts to update with.")
+    parser.add_argument("font", type=Path, help="font to update with.")
 
     args = parser.parse_args()
     main(args)
