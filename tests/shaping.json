@@ -1869,6 +1869,34 @@
     {
       "input": "عے",
       "expectation": "yehbarree-ar.fina.baseline=1+267|ain-ar.init=0@-25,115+845"
+    },
+    {
+      "input": "لِ",
+      "expectation": "kasra-ar=0@171,-210+0|lam-ar=0+186"
+    },
+    {
+      "input": "بلِ",
+      "expectation": "kasra-ar=1@171,-210+0|lam-ar.fina=1+176|dotbelow-ar=0@72,-46+0|behDotless-ar.init=0+130"
+    },
+    {
+      "input": " نِ",
+      "expectation": "kasra-ar=1@254,-126+0|dotabove-ar=1@-9,191+0|noonghunna-ar=1+281|space=0+400"
+    },
+    {
+      "input": "لٍ",
+      "expectation": "kasratan-ar.alt=0@171,-277+0|lam-ar=0+186"
+    },
+    {
+      "input": "بلٍ",
+      "expectation": "kasratan-ar.alt=1@171,-277+0|lam-ar.fina=1+176|dotbelow-ar=0@72,-46+0|behDotless-ar.init=0+130"
+    },
+    {
+      "input": "بللٍ",
+      "expectation": "kasratan-ar.alt=2@171,-277+0|lam-ar.fina.short=2+180|lam-ar.medi=1+121|dotbelow-ar=0@72,-46+0|behDotless-ar.init=0+130"
+    },
+    {
+      "input": "نٍ",
+      "expectation": "kasratan-ar.alt=0@254,-193+0|dotabove-ar=0@-9,191+0|noonghunna-ar=0+281"
     }
   ]
 }

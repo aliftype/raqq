@@ -211,12 +211,12 @@
   <glyph name="lam-ar" unicode="0644" category="Letter" script="arabic"
          sortName="arL0053"
          anchors="fatha, damma, kasra"
-         accents="fatha-ar, damma-ar, dammatan-ar, kasra-ar, kasratan-ar"
+         accents="fatha-ar, damma-ar, dammatan-ar, kasra-ar, kasratan-ar.alt"
   />
   <glyph name="lam-ar.fina" category="Letter" script="arabic"
          sortName="arL0054"
          anchors="fatha, damma, kasra"
-         accents="fatha-ar, damma-ar, dammatan-ar, kasra-ar, kasratan-ar"
+         accents="fatha-ar, damma-ar, dammatan-ar, kasra-ar, kasratan-ar.alt"
   />
   <glyph name="lam-ar.medi" category="Letter" script="arabic"
          sortName="arL0055"

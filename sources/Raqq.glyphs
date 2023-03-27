@@ -355,7 +355,9 @@ lookup rlig_kashida_2 {
 lookup rlig_0 {
 	lookupflag UseMarkFilteringSet [kasratan-ar];
 
-	sub [seen-ar seen-ar.fina noonghunna-ar noonghunna-ar.fina]
+	sub [seen-ar seen-ar.fina
+		 noonghunna-ar noonghunna-ar.fina
+		 lam-ar lam-ar.fina]
 		 kasratan-ar'
 	by	 kasratan-ar.alt
 	;
@@ -5452,7 +5454,7 @@ pos = (3,509);
 },
 {
 name = kasra;
-pos = (78,-323);
+pos = (246,-135);
 }
 );
 backgroundImage = {
@@ -5559,7 +5561,7 @@ pos = (13,439);
 },
 {
 name = kasra;
-pos = (78,-323);
+pos = (246,-135);
 }
 );
 backgroundImage = {
