@@ -45,11 +45,10 @@ ARGS ?=
 all: $(FONTS)
 test: $(HTML)
 update-test: $(JSON)
-update-fea: $(FEA)
 
-$(SOURCEDIR)/%.fea:
+update-fea: $(TTF)
 	$(info   GEN    $(@F))
-	python $(SCRIPTDIR)/update-overhang-fea.py $(TTF) $@
+	python $(SCRIPTDIR)/update-overhang-fea.py $< $(FEA)
 
 $(FONTDIR)/%.otf: $(SOURCEDIR)/%.glyphs $(CONFIG) $(GLYPHDATA) $(SOURCEDIR)/%.fea
 	$(info   BUILD  $(@F))
