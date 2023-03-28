@@ -341,7 +341,7 @@ lookup med_beh {
 } med_beh;
 
 lookup short_seen {
-	sub seen-ar.medi	by seen-ar.medi.short;
+	sub seen-ar.medi		by seen-ar.medi.low;
 } short_seen;
 
 lookup rlig_teeth {
@@ -525,7 +525,7 @@ lookup before_beh {
 
 	sub seen-ar.init		by seen-ar.init _c.seen.beh;
 	sub seen-ar.medi		by seen-ar.medi _c.seen.beh;
-	sub seen-ar.medi.short	by seen-ar.medi.short _c.seen.beh;
+	sub seen-ar.medi.low	by seen-ar.medi.low _c.seen.beh;
 } before_beh;
 
 lookup before_dal {
@@ -542,7 +542,7 @@ lookup before_meem {
 	sub ain-ar.medi			by ain-ar.medi _c.ain.meem;
 	sub seen-ar.init		by seen-ar.init _c.seen.meem;
 	sub seen-ar.medi		by seen-ar.medi _c.seen.meem;
-	sub seen-ar.medi.short	by seen-ar.medi.short _c.seen.meem;
+	sub seen-ar.medi.low	by seen-ar.medi.low _c.seen.meem;
 	sub hah-ar.init			by hah-ar.init _c.hah.meem;
 	sub hah-ar.medi			by hah-ar.medi _c.hah.meem;
 } before_meem;
@@ -579,7 +579,7 @@ lookup rlig_c {
 		 heh-ar.medi.round
 		 heh-ar.fina
 		 seen-ar.medi
-		 seen-ar.medi.short
+		 seen-ar.medi.low
 		 seen-ar.fina
 		 ain-ar.medi
 		 ain-ar.fina
@@ -620,7 +620,7 @@ lookup rlig_c {
 		 fehDotless-ar.medi
 		 seen-ar.init
 		 seen-ar.medi
-		 seen-ar.medi.short]' lookup before_beh
+		 seen-ar.medi.low]' lookup before_beh
 		[alef-ar.fina
 		 behDotless-ar.medi
 		 behDotless-ar.medi.med
@@ -677,7 +677,7 @@ lookup rlig_c {
 		 behDotless-ar.medi.round
 		 behDotless-ar.fina
 		 seen-ar.medi
-		 seen-ar.medi.short
+		 seen-ar.medi.low
 		 seen-ar.fina
 		 ain-ar.medi
 		 ain-ar.fina
@@ -696,7 +696,7 @@ lookup rlig_c {
 		[qafDotless-ar.fina meem-ar.medi meem-ar.medi.round2 meem-ar.fina waw-ar.fina]
 	;
 
-	sub	[seen-ar.init seen-ar.medi seen-ar.medi.short]' lookup before_meem
+	sub	[seen-ar.init seen-ar.medi seen-ar.medi.low]' lookup before_meem
 		[qafDotless-ar.fina meem-ar.medi meem-ar.medi.round2 meem-ar.fina noonghunna-ar.fina]
 	;
 
@@ -2690,7 +2690,7 @@ metricLeft = "=-20";
 metricRight = "=-2@157";
 },
 {
-glyphname = "seen-ar.medi.short";
+glyphname = "seen-ar.medi.low";
 kernLeft = seen;
 kernRight = seen.short;
 layers = (
