@@ -498,12 +498,31 @@ lookup rlig_4 {
 } rlig_4;
 
 lookup before_beh {
+	sub behDotless-ar.init		by behDotless-ar.init _c.seen.beh;
+	sub behDotless-ar.init.med	by behDotless-ar.init.med _c.seen.beh;
+	sub behDotless-ar.init.high	by behDotless-ar.init.high _c.seen.beh;
+
+	sub behDotless-ar.medi		by behDotless-ar.medi _c.seen.beh;
+	sub behDotless-ar.medi.med	by behDotless-ar.medi.med _c.seen.beh;
+	sub behDotless-ar.medi.high	by behDotless-ar.medi.high _c.seen.beh;
+
+	sub sad-ar.init				by sad-ar.init _c.seen.beh;
+	sub sad-ar.medi				by sad-ar.medi _c.seen.beh;
+	sub tah-ar.init				by tah-ar.init _c.seen.beh;
+	sub tah-ar.medi				by tah-ar.medi _c.seen.beh;
+	sub lam-ar.init				by lam-ar.init _c.seen.beh;
+	sub lam-ar.medi				by lam-ar.medi _c.seen.beh;
+	sub lam-ar.medi.short		by lam-ar.medi.short _c.seen.beh;
+
 	sub fehDotless-ar.init	by fehDotless-ar.init _c.feh.init.beh;
 	sub fehDotless-ar.medi	by fehDotless-ar.medi _c.feh.medi.beh;
+
 	sub ain-ar.init			by ain-ar.init _c.ain.init.beh;
 	sub ain-ar.medi			by ain-ar.medi _c.ain.medi.beh;
+
 	sub	hah-ar.init			by hah-ar.init _c.hah.beh;
 	sub	hah-ar.medi			by hah-ar.medi _c.hah.beh;
+
 	sub seen-ar.init		by seen-ar.init _c.seen.beh;
 	sub seen-ar.medi		by seen-ar.medi _c.seen.beh;
 	sub seen-ar.medi.short	by seen-ar.medi.short _c.seen.beh;
@@ -584,23 +603,42 @@ lookup rlig_c {
 		 yehbarree-ar.fina.baseline]
 	;
 
-	sub	[fehDotless-ar.init fehDotless-ar.medi
-		 seen-ar.init seen-ar.medi seen-ar.medi.short]' lookup before_beh
-		[behDotless-ar.medi
+	sub	[behDotless-ar.init
+		 behDotless-ar.init.med
+		 behDotless-ar.init.high
+		 behDotless-ar.medi
+		 behDotless-ar.medi.med
+		 behDotless-ar.medi.high
+		 sad-ar.init
+		 sad-ar.medi
+		 tah-ar.init
+		 tah-ar.medi
+		 lam-ar.init
+		 lam-ar.medi
+		 lam-ar.medi.short
+		 fehDotless-ar.init
+		 fehDotless-ar.medi
+		 seen-ar.init
+		 seen-ar.medi
+		 seen-ar.medi.short]' lookup before_beh
+		[alef-ar.fina
+		 behDotless-ar.medi
 		 behDotless-ar.medi.med
 		 behDotless-ar.medi.high
 		 behDotless-ar.medi.round
 		 behDotless-ar.fina
 		 seen-ar.medi
-		 seen-ar.medi.short
 		 seen-ar.fina
 		 ain-ar.medi
 		 ain-ar.fina
 		 fehDotless-ar.medi
 		 fehDotless-ar.fina
 		 lam-ar.medi
+		 lam-ar.medi.short
 		 lam-ar.medi.round
-		 lam-ar.fina alef-ar.fina
+		 lam-ar.medi.round.short
+		 lam-ar.fina
+		 lam-ar.fina.short
 		 heh-ar.medi
 		 heh-ar.medi.round
 		 heh-ar.fina]
