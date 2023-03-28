@@ -2024,6 +2024,7 @@ width = 983;
 },
 {
 glyphname = "hah-ar.medi";
+kernLeft = hah;
 layers = (
 {
 anchors = (
@@ -2056,6 +2057,7 @@ width = 703;
 },
 {
 glyphname = "hah-ar.init";
+kernLeft = hah;
 layers = (
 {
 anchors = (
@@ -11785,6 +11787,7 @@ m01 = {
 "seen-ar.fina" = -2;
 };
 "@MMK_R_kaf" = {
+"lam_alef-ar.fina" = -85;
 "meem-ar.fina" = -12;
 "meem-ar.medi" = -5;
 "meem-ar.medi.round2" = -5;
@@ -11904,9 +11907,10 @@ _c.feh.init.dal = -177;
 _c.feh.medi.dal = -78;
 _c.feh.medi.meem = -71;
 _c.feh.medi.reh = -70;
+"lam_alef-ar.fina" = -80;
 "waw-ar.fina.round" = -30;
 };
-"hah-ar.init" = {
+"@MMK_R_hah" = {
 "lam_alef-ar.fina" = -69;
 };
 };
