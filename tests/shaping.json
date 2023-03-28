@@ -575,6 +575,11 @@
       "expectation": "dal-ar.fina=2+875|_c.hah.dal=1+0|hah-ar.medi=1+135|lam-ar.init.hah=0@63,0+568"
     },
     {
+      "input": "۝٥",
+      "direction": "ltr",
+      "expectation": "endofayah-ar.five=0+0"
+    },
+    {
       "input": "۝١٥",
       "direction": "ltr",
       "expectation": "endofayah-ar.five=0+0"
@@ -647,7 +652,7 @@
     {
       "input": "۝١٥٥",
       "direction": "ltr",
-      "expectation": "endofayah-ar.five=0+0|five-ar=3+1200"
+      "expectation": "endofayah-ar.five=0+0"
     },
     {
       "input": "۝١٦٥",
@@ -697,7 +702,7 @@
     {
       "input": "۝٢٥٥",
       "direction": "ltr",
-      "expectation": "endofayah-ar.five=0+0|five-ar=3+1200"
+      "expectation": "endofayah-ar.five=0+0"
     },
     {
       "input": "۝٢٦٥",

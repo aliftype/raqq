@@ -218,8 +218,9 @@ lookup ccmp_1 {
 
 lookup ccmp_2 {
 	sub alef-ar fathatan-ar' by fathatan-ar.alt;
-	sub endofayah-ar' @numbers' [five-ar]' by endofayah-ar.five;
-	sub endofayah-ar' @numbers' @numbers' [five-ar]' by endofayah-ar.five;
+	sub endofayah-ar' @numbers' @numbers' five-ar' by endofayah-ar.five;
+	sub endofayah-ar' @numbers' five-ar' by endofayah-ar.five;
+	sub endofayah-ar' five-ar' by endofayah-ar.five;
 } ccmp_2;
 
 lookup isol {
