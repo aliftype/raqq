@@ -12,7 +12,7 @@ of red, yellow and green dots used in these early Quranic manuscripts.
 _Raqq_ is intended more for use in smaller font sizes (possibly inline in
 scholarly texts) as it has large to body letter forms and a sturdy feel.
 
-_Raqq_ design is based mostly on [MS Add.1116][1] Quranic manuscript.
+_Raqq_ design is based mostly on the [MS Add.1116][1] Quranic manuscript.
 
 _Raqq_ is Arabic for parchment.
 
