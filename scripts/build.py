@@ -15,8 +15,9 @@
 
 import argparse
 import copy
-import re
 import datetime
+import os
+import re
 
 from fontTools.designspaceLib import DesignSpaceDocument
 from fontTools.fontBuilder import FontBuilder
@@ -513,6 +514,10 @@ def build(instance, isTTF, args):
 
     fea = makeFeatures(instance, master, args, glyphOrder)
     fb.addOpenTypeFeatures(fea, filename=args.input)
+
+    if os.environ.get("FONTTOOLS_LOOKUP_DEBUGGING"):
+        with open("debug.fea", "w") as f:
+            f.write(fea)
 
     palettes = font.customParameters["Color Palettes"]
     palettes = [[tuple(v / 255 for v in c) for c in p] for p in palettes]
