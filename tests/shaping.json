@@ -420,7 +420,7 @@
     },
     {
       "input": "صٍ",
-      "expectation": "kasratan-ar=0@369,-129+0|sad-ar=0+898"
+      "expectation": "kasratan-ar=0@302,-129+0|sad-ar=0+898"
     },
     {
       "input": "نٍ",
@@ -921,7 +921,7 @@
     },
     {
       "input": "◌ٍ",
-      "expectation": "kasratan-ar=0@148,-190+0|dottedCircle=0+578"
+      "expectation": "kasratan-ar=0@81,-190+0|dottedCircle=0+578"
     },
     {
       "input": "◌ٌ",
