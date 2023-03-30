@@ -81,17 +81,22 @@
   <glyph name="seen-ar" unicode="0633" category="Letter" script="arabic"
          sortName="arL0023"
          anchors="top, fatha, damma, kasra"
-         accents="fatha-ar, damma-ar, dammatan-ar, kasra-ar, kasratan-ar.alt, threedotshorizontalabove-ar.alt"
+         accents="fatha-ar, damma-ar, dammatan-ar, kasra-ar, kasratan-ar.alt, threedotshorizontalabove-ar.4"
   />
   <glyph name="seen-ar.fina" category="Letter" script="arabic"
          sortName="arL0024"
          anchors="top, fatha, damma, kasra"
-         accents="fatha-ar, damma-ar, dammatan-ar, kasra-ar, kasratan-ar.alt, threedotshorizontalabove-ar.alt"
+         accents="fatha-ar, damma-ar, dammatan-ar, kasra-ar, kasratan-ar.alt, threedotshorizontalabove-ar.4"
   />
   <glyph name="seen-ar.medi" category="Letter" script="arabic"
-         sortName="arL0025"
+         sortName="arL0025a"
          anchors="top, fatha, damma, kasra"
-         accents="fatha-ar, damma-ar, dammatan-ar, kasra-ar, kasratan-ar, threedotshorizontalabove-ar"
+         accents="fatha-ar, damma-ar, dammatan-ar, kasra-ar, kasratan-ar, threedotshorizontalabove-ar.1"
+  />
+  <glyph name="seen-ar.medi.low" category="Letter" script="arabic"
+         sortName="arL0025b"
+         anchors="top, fatha, damma, kasra"
+         accents="fatha-ar, damma-ar, dammatan-ar, kasra-ar, kasratan-ar, threedotshorizontalabove-ar.2"
   />
   <glyph name="seen-ar.init" category="Letter" script="arabic"
          sortName="arL0026"
@@ -443,13 +448,13 @@
   <glyph name="seen_alefMaksura-ar" category="Letter" subCategory="Ligature" script="arabic"
          sortName="arL0404"
          anchors="fatha_1, damma_1, kasra_1, fatha_2, damma_2, kasra_2, caret_1"
-         accents="fatha-ar, fathatan-ar, damma-ar, dammatan-ar, kasra-ar, kasratan-ar, shadda-ar, threedotshorizontalabove-ar.alt, twodotsverticalbelow-ar"
+         accents="fatha-ar, fathatan-ar, damma-ar, dammatan-ar, kasra-ar, kasratan-ar, shadda-ar, threedotshorizontalabove-ar.3, twodotsverticalbelow-ar"
   />
 
   <glyph name="seen_alefMaksura-ar.fina" category="Letter" subCategory="Ligature" script="arabic"
          sortName="arL0405"
          anchors="fatha_1, damma_1, kasra_1, fatha_2, damma_2, kasra_2, caret_1"
-         accents="fatha-ar, fathatan-ar, damma-ar, dammatan-ar, kasra-ar, kasratan-ar, shadda-ar, threedotshorizontalabove-ar.alt, twodotsverticalbelow-ar"
+         accents="fatha-ar, fathatan-ar, damma-ar, dammatan-ar, kasra-ar, kasratan-ar, shadda-ar, threedotshorizontalabove-ar.3, twodotsverticalbelow-ar"
   />
 
   <glyph name="zero" unicode="0030" category="Number" subCategory="Decimal Digit" script="arabic"
