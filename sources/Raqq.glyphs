@@ -290,6 +290,16 @@ lookup fina {
 	sub yehbarree-ar by yehbarree-ar.fina;
 } fina;
 
+lookup rlig_vertical_dots {
+	lookupflag UseMarkFilteringSet [twodotsverticalabove-ar threedotsupabove-ar];
+
+	sub [behDotless-ar.init behDotless-ar.medi]
+		[twodotsverticalabove-ar threedotsupabove-ar]'
+		[alef-ar.fina lam-ar.medi lam-ar.fina]
+	by	[twodotsverticalabove-ar.1 threedotsupabove-ar.1]
+	;
+} rlig_vertical_dots;
+
 # Disallow kashida after letters that can themselves elongate.
 lookup rlig_kashida {
 	lookupflag IgnoreMarks;
@@ -790,7 +800,8 @@ code = "lookup fina;";
 tag = fina;
 },
 {
-code = "lookup rlig_kashida;
+code = "lookup rlig_vertical_dots;
+lookup rlig_kashida;
 lookup rlig_kashida_2;
 lookup rlig_0;
 lookup rlig_teeth_1;
@@ -10665,6 +10676,34 @@ metricLeft = "=dotabove-ar";
 metricRight = "=dotabove-ar";
 },
 {
+glyphname = "twodotsverticalabove-ar.1";
+layers = (
+{
+anchors = (
+{
+name = _top;
+pos = (69,11);
+}
+);
+layerId = m01;
+shapes = (
+{
+angle = 3;
+pos = (6,33);
+ref = "dotabove-ar";
+},
+{
+pos = (0,-17);
+ref = "dotabove-ar";
+}
+);
+width = 110;
+}
+);
+metricLeft = "=dotabove-ar";
+metricRight = "=dotabove-ar";
+},
+{
 glyphname = "twodotsverticalbelow-ar";
 layers = (
 {
@@ -10712,6 +10751,39 @@ ref = "dotabove-ar";
 }
 );
 width = 174;
+}
+);
+metricLeft = "=dotabove-ar";
+metricRight = "=dotabove-ar";
+},
+{
+glyphname = "threedotsupabove-ar.1";
+layers = (
+{
+anchors = (
+{
+name = _top;
+pos = (69,11);
+}
+);
+layerId = m01;
+shapes = (
+{
+angle = 7;
+pos = (12,85);
+ref = "dotabove-ar";
+},
+{
+angle = 3;
+pos = (6,33);
+ref = "dotabove-ar";
+},
+{
+pos = (0,-17);
+ref = "dotabove-ar";
+}
+);
+width = 110;
 }
 );
 metricLeft = "=dotabove-ar";

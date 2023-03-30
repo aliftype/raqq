@@ -2110,6 +2110,22 @@
     {
       "input": "بشي",
       "expectation": "twodotsverticalbelow-ar=1@339,-337+0|threedotshorizontalabove-ar.3=1@-35,167+0|seen_alefMaksura-ar.fina=1+341|dotbelow-ar=0@78,-46+0|_c.seen.beh=0@-3,0+-3|behDotless-ar.init.high=0+130"
+    },
+    {
+      "input": "ثا",
+      "expectation": "alef-ar.fina=1+97|threedotsupabove-ar.1=0@0,314+0|_c.seen.beh=0+0|behDotless-ar.init=0+130"
+    },
+    {
+      "input": "مثا",
+      "expectation": "alef-ar.fina=2+97|threedotsupabove-ar.1=1@-3,301+0|_c.seen.beh=1+0|behDotless-ar.medi=1+126|meem-ar.init=0+425"
+    },
+    {
+      "input": "تا",
+      "expectation": "alef-ar.fina=1+97|twodotsverticalabove-ar.1=0@0,314+0|_c.seen.beh=0+0|behDotless-ar.init=0+130"
+    },
+    {
+      "input": "متا",
+      "expectation": "alef-ar.fina=2+97|twodotsverticalabove-ar.1=1@-3,301+0|_c.seen.beh=1+0|behDotless-ar.medi=1+126|meem-ar.init=0+425"
     }
   ]
 }
