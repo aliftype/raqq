@@ -330,7 +330,7 @@ lookup rlig_kashida_2 {
 	;
 } rlig_kashida_2;
 
-lookup rlig_0 {
+lookup rlig_kasratan {
 	lookupflag UseMarkFilteringSet [kasratan-ar];
 
 	sub [seen-ar seen-ar.fina
@@ -339,7 +339,7 @@ lookup rlig_0 {
 		 kasratan-ar'
 	by	 kasratan-ar.alt
 	;
-} rlig_0;
+} rlig_kasratan;
 
 lookup rlig_ligatures {
 	lookupflag IgnoreMarks;
@@ -803,7 +803,7 @@ tag = fina;
 code = "lookup rlig_vertical_dots;
 lookup rlig_kashida;
 lookup rlig_kashida_2;
-lookup rlig_0;
+lookup rlig_kasratan;
 lookup rlig_teeth_1;
 lookup rlig_teeth_2;
 lookup rlig_1;
