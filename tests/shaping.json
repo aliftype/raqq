@@ -116,7 +116,7 @@
     },
     {
       "input": "بين",
-      "expectation": "dotabove-ar=2@-9,141+0|noonghunna-ar.fina=2+243|twodotsverticalbelow-ar=1@12,-137+0|behDotless-ar.medi.high=1+126|dotbelow-ar=0@67,-46+0|_c.seen.beh=0@-5,0+-5|behDotless-ar.init=0+130"
+      "expectation": "dotabove-ar=2@-9,141+0|noonghunna-ar.fina=2+243|twodotsverticalbelow-ar=1@7,-137+0|behDotless-ar.medi=1+126|dotbelow-ar=0@78,-46+0|_c.seen.beh=0@-3,0+-3|behDotless-ar.init.high=0+130"
     },
     {
       "input": "لنبين",
@@ -128,7 +128,7 @@
     },
     {
       "input": "منين",
-      "expectation": "dotabove-ar=3@-9,141+0|noonghunna-ar.fina=3+243|twodotsverticalbelow-ar=2@12,-137+0|behDotless-ar.medi.high=2+126|dotabove-ar=1@-18,274+0|_c.seen.beh=1@-5,0+-5|behDotless-ar.medi=1+126|meem-ar.init=0+425"
+      "expectation": "dotabove-ar=3@-9,141+0|noonghunna-ar.fina=3+243|twodotsverticalbelow-ar=2@7,-137+0|behDotless-ar.medi=2+126|dotabove-ar=1@-25,385+0|_c.seen.beh=1@-3,0+-3|behDotless-ar.medi.high=1+126|meem-ar.init=0+425"
     },
     {
       "input": "ئفة",
@@ -136,7 +136,7 @@
     },
     {
       "input": "نين",
-      "expectation": "dotabove-ar=2@-9,141+0|noonghunna-ar.fina=2+243|twodotsverticalbelow-ar=1@12,-137+0|behDotless-ar.medi.high=1+126|dotabove-ar=0@-15,287+0|_c.seen.beh=0@-5,0+-5|behDotless-ar.init=0+130"
+      "expectation": "dotabove-ar=2@-9,141+0|noonghunna-ar.fina=2+243|twodotsverticalbelow-ar=1@7,-137+0|behDotless-ar.medi=1+126|dotabove-ar=0@-19,392+0|_c.seen.beh=0@-3,0+-3|behDotless-ar.init.high=0+130"
     },
     {
       "input": "عا",
@@ -204,7 +204,7 @@
     },
     {
       "input": "ببن",
-      "expectation": "dotabove-ar=2@-9,141+0|noonghunna-ar.fina=2+243|dotbelow-ar=1@12,-110+0|behDotless-ar.medi.high=1+126|dotbelow-ar=0@67,-46+0|_c.seen.beh=0@-5,0+-5|behDotless-ar.init=0+130"
+      "expectation": "dotabove-ar=2@-9,141+0|noonghunna-ar.fina=2+243|dotbelow-ar=1@7,-110+0|behDotless-ar.medi=1+126|dotbelow-ar=0@78,-46+0|_c.seen.beh=0@-3,0+-3|behDotless-ar.init.high=0+130"
     },
     {
       "input": "ببب",
@@ -2126,6 +2126,10 @@
     {
       "input": "متا",
       "expectation": "alef-ar.fina=2+97|twodotsverticalabove-ar.1=1@-3,301+0|_c.seen.beh=1+0|behDotless-ar.medi=1+126|meem-ar.init=0+425"
+    },
+    {
+      "input": "بيبن",
+      "expectation": "dotabove-ar=3@-9,141+0|noonghunna-ar.fina=3+243|dotbelow-ar=2@7,-110+0|behDotless-ar.medi=2+126|twodotsverticalbelow-ar=1@9,-137+0|_c.seen.beh=1@-3,0+-3|behDotless-ar.medi.high=1+126|dotbelow-ar=0@67,-46+0|_c.seen.beh=0@-5,0+-5|behDotless-ar.init=0+130"
     }
   ]
 }

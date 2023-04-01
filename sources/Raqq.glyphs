@@ -390,11 +390,6 @@ lookup rlig_teeth_2 {
 		[behDotless-ar.medi behDotless-ar.fina]
 	;
 
-	sub	[behDotless-ar.init behDotless-ar.medi]'
-		[behDotless-ar.medi]' lookup high_beh
-		[noonghunna-ar.fina]
-	;
-
 	sub	[behDotless-ar.init]' lookup high_beh
 		[behDotless-ar.medi behDotless-ar.fina]
 	;
