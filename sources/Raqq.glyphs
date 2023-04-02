@@ -5,12 +5,22 @@ classes = (
 {
 code = "dotabove-ar
 dotabove-ar.reh
+dotabove-ar.beh
 dotbelow-ar
 twodotsverticalabove-ar
+twodotsverticalabove-ar.beh
+twodotsverticalabove-ar.vert
+twodotsverticalabove-ar.vert.beh
 twodotsverticalbelow-ar
 threedotsupabove-ar
+threedotsupabove-ar.beh
+threedotsupabove-ar.vert
+threedotsupabove-ar.vert.beh
 threedotshorizontalabove-ar
-#threedotshorizontalabove-ar
+threedotshorizontalabove-ar.1
+threedotshorizontalabove-ar.2
+threedotshorizontalabove-ar.3
+threedotshorizontalabove-ar.4
 ";
 name = dots;
 },
@@ -295,8 +305,9 @@ lookup rlig_vertical_dots {
 
 	sub [behDotless-ar.init behDotless-ar.medi]
 		[twodotsverticalabove-ar threedotsupabove-ar]'
-		[alef-ar.fina lam-ar.medi lam-ar.fina]
-	by	[twodotsverticalabove-ar.1 threedotsupabove-ar.1]
+		[alef-ar.fina lam-ar.medi lam-ar.fina
+		 heh-ar.fina heh-ar.medi heh-ar.medi.round]
+	by	[twodotsverticalabove-ar.vert threedotsupabove-ar.vert]
 	;
 } rlig_vertical_dots;
 
@@ -579,7 +590,7 @@ lookup before_yeh {
 	sub ain-ar.medi			by ain-ar.medi _c.ain.yeh;
 } before_yeh;
 
-lookup rlig_sheen {
+lookup rlig_sheen_dots {
 	lookupflag UseMarkFilteringSet [threedotshorizontalabove-ar];
 
 	sub [seen-ar.medi]
@@ -601,7 +612,21 @@ lookup rlig_sheen {
 		[threedotshorizontalabove-ar]'
 	by	[threedotshorizontalabove-ar.4]
 	;
-} rlig_sheen;
+} rlig_sheen_dots;
+
+@beh1_dots = [dotabove-ar twodotsverticalabove-ar threedotsupabove-ar
+			  twodotsverticalabove-ar.vert threedotsupabove-ar.vert];
+
+lookup rlig_beh_dots {
+	lookupflag UseMarkFilteringSet @beh1_dots;
+
+	sub [behDotless-ar.medi behDotless-ar.medi.med behDotless-ar.medi.high behDotless-ar.medi.round
+		 behDotless-ar.init.high]
+		@beh1_dots'
+	by	[dotabove-ar.beh twodotsverticalabove-ar.beh threedotsupabove-ar.beh
+		 twodotsverticalabove-ar.vert.beh threedotsupabove-ar.vert.beh]
+	;
+} rlig_beh_dots;
 
 lookup rlig_connection {
 	lookupflag IgnoreMarks;
@@ -767,6 +792,10 @@ lookup rlig_connection {
 	;
 } rlig_connection;
 
+lookup pos_dot_before_noon {
+	pos dotbelow-ar <35 0 0 0>;
+	pos twodotsverticalbelow-ar <15 0 0 0>;
+} pos_dot_before_noon;
 ";
 name = Lookups;
 }
@@ -806,7 +835,8 @@ lookup rlig_ligatures;
 lookup rlig_3;
 lookup rlig_4;
 lookup rlig_connection;
-lookup rlig_sheen;
+lookup rlig_sheen_dots;
+lookup rlig_beh_dots;
 ";
 tag = rlig;
 },
@@ -847,6 +877,15 @@ tag = kern;
 },
 {
 code = "# Automatic Code
+
+lookup noon_dots {
+	lookupflag UseMarkFilteringSet [dotbelow-ar twodotsverticalbelow-ar];
+
+	pos [behDotless-ar.medi]
+		[dotbelow-ar twodotsverticalbelow-ar]' lookup pos_dot_before_noon
+		[noonghunna-ar.fina]
+	;
+}  noon_dots;
 ";
 tag = mark;
 },
@@ -1482,7 +1521,7 @@ pos = (77,-57);
 },
 {
 name = top;
-pos = (66,312);
+pos = (76,328);
 }
 );
 backgroundImage = {
@@ -1529,77 +1568,6 @@ metricLeft = "=-20@0";
 metricRight = "=0@157";
 },
 {
-glyphname = "behDotless-ar.medi.high";
-kernRight = beh.high;
-layers = (
-{
-anchors = (
-{
-name = bottom;
-pos = (49,-38);
-},
-{
-name = damma;
-pos = (13,170);
-},
-{
-name = fatha;
-pos = (56,510);
-},
-{
-name = kasra;
-pos = (82,-57);
-},
-{
-name = top;
-pos = (57,423);
-}
-);
-backgroundImage = {
-alpha = 80;
-angle = -0.4;
-imagePath = "images/MS-ADD-01116-000-00025.jpg";
-locked = 1;
-pos = (-3500,-2714);
-scale = (5,5);
-};
-layerId = m01;
-shapes = (
-{
-closed = 1;
-nodes = (
-(139,0,l),
-(139,110,l),
-(127,110,o),
-(125,134,o),
-(123,157,cs),
-(117,234,o),
-(105,380,o),
-(96,449,cs),
-(94,468,o),
-(75,466,o),
-(71,453,cs),
-(63,424,o),
-(33,382,o),
-(14,376,cs),
-(1,372,o),
-(-2,364,o),
-(-1,354,cs),
-(4,303,o),
-(14,174,o),
-(19,110,c),
-(-20,110,l),
-(-20,0,l)
-);
-}
-);
-width = 126;
-}
-);
-metricLeft = "=-20@0";
-metricRight = "=0@130";
-},
-{
 glyphname = "behDotless-ar.medi.med";
 kernRight = beh.high;
 layers = (
@@ -1623,7 +1591,7 @@ pos = (82,-57);
 },
 {
 name = top;
-pos = (57,373);
+pos = (62,379);
 }
 );
 backgroundImage = {
@@ -1742,6 +1710,77 @@ metricLeft = "=-5@58";
 metricRight = "=0@157";
 },
 {
+glyphname = "behDotless-ar.medi.high";
+kernRight = beh.high;
+layers = (
+{
+anchors = (
+{
+name = bottom;
+pos = (49,-38);
+},
+{
+name = damma;
+pos = (13,170);
+},
+{
+name = fatha;
+pos = (56,510);
+},
+{
+name = kasra;
+pos = (82,-57);
+},
+{
+name = top;
+pos = (57,423);
+}
+);
+backgroundImage = {
+alpha = 80;
+angle = -0.4;
+imagePath = "images/MS-ADD-01116-000-00025.jpg";
+locked = 1;
+pos = (-3500,-2714);
+scale = (5,5);
+};
+layerId = m01;
+shapes = (
+{
+closed = 1;
+nodes = (
+(139,0,l),
+(139,110,l),
+(127,110,o),
+(125,134,o),
+(123,157,cs),
+(117,234,o),
+(105,380,o),
+(96,449,cs),
+(94,468,o),
+(75,466,o),
+(71,453,cs),
+(63,424,o),
+(33,382,o),
+(14,376,cs),
+(1,372,o),
+(-2,364,o),
+(-1,354,cs),
+(4,303,o),
+(14,174,o),
+(19,110,c),
+(-20,110,l),
+(-20,0,l)
+);
+}
+);
+width = 126;
+}
+);
+metricLeft = "=-20@0";
+metricRight = "=0@130";
+},
+{
 glyphname = "behDotless-ar.init";
 layers = (
 {
@@ -1764,7 +1803,7 @@ pos = (57,-56);
 },
 {
 name = top;
-pos = (69,325);
+pos = (81,337);
 }
 );
 backgroundImage = {
@@ -1796,6 +1835,75 @@ nodes = (
 (13,260,o),
 (15,229,cs),
 (17,196,o),
+(17,166,o),
+(19,110,c),
+(-20,110,l),
+(-20,0,l)
+);
+}
+);
+width = 130;
+}
+);
+metricLeft = "=-20";
+metricRight = "=0";
+},
+{
+glyphname = "behDotless-ar.init.med";
+layers = (
+{
+anchors = (
+{
+name = bottom;
+pos = (109,26);
+},
+{
+name = damma;
+pos = (9,172);
+},
+{
+name = fatha;
+pos = (56,456);
+},
+{
+name = kasra;
+pos = (57,-56);
+},
+{
+name = top;
+pos = (75,377);
+}
+);
+backgroundImage = {
+alpha = 80;
+angle = 1.4;
+imagePath = "images/MS-ADD-01116-000-00006.jpg";
+locked = 1;
+pos = (-4570,-1748);
+scale = (5,5);
+};
+layerId = m01;
+shapes = (
+{
+closed = 1;
+nodes = (
+(56,0,ls),
+(95,0,o),
+(131,37,o),
+(130,72,cs),
+(128,172,o),
+(109,303,o),
+(109,403,cs),
+(109,412,o),
+(102,416,o),
+(95,405,cs),
+(75,374,o),
+(47,345,o),
+(18,326,cs),
+(4,317,o),
+(7,300,o),
+(9,269,cs),
+(11,236,o),
 (17,166,o),
 (19,110,c),
 (-20,110,l),
@@ -1875,75 +1983,6 @@ width = 130;
 }
 );
 metricLeft = "=-20@0";
-metricRight = "=0";
-},
-{
-glyphname = "behDotless-ar.init.med";
-layers = (
-{
-anchors = (
-{
-name = bottom;
-pos = (109,26);
-},
-{
-name = damma;
-pos = (9,172);
-},
-{
-name = fatha;
-pos = (56,456);
-},
-{
-name = kasra;
-pos = (57,-56);
-},
-{
-name = top;
-pos = (66,368);
-}
-);
-backgroundImage = {
-alpha = 80;
-angle = 1.4;
-imagePath = "images/MS-ADD-01116-000-00006.jpg";
-locked = 1;
-pos = (-4570,-1748);
-scale = (5,5);
-};
-layerId = m01;
-shapes = (
-{
-closed = 1;
-nodes = (
-(56,0,ls),
-(95,0,o),
-(131,37,o),
-(130,72,cs),
-(128,172,o),
-(109,303,o),
-(109,403,cs),
-(109,412,o),
-(102,416,o),
-(95,405,cs),
-(75,374,o),
-(47,345,o),
-(18,326,cs),
-(4,317,o),
-(7,300,o),
-(9,269,cs),
-(11,236,o),
-(17,166,o),
-(19,110,c),
-(-20,110,l),
-(-20,0,l)
-);
-}
-);
-width = 130;
-}
-);
-metricLeft = "=-20";
 metricRight = "=0";
 },
 {
@@ -4223,7 +4262,7 @@ pos = (830,-53);
 },
 {
 name = top;
-pos = (683,362);
+pos = (688,357);
 }
 );
 backgroundImage = {
@@ -4321,7 +4360,7 @@ pos = (230,-51);
 },
 {
 name = top;
-pos = (69,371);
+pos = (80,367);
 }
 );
 backgroundImage = {
@@ -10572,6 +10611,84 @@ metricLeft = "=0";
 metricRight = "=0";
 },
 {
+glyphname = "dotabove-ar.beh";
+layers = (
+{
+anchors = (
+{
+name = _top;
+pos = (74,38);
+}
+);
+layerId = m01;
+shapes = (
+{
+angle = 9;
+pos = (4,-9);
+ref = "dotabove-ar";
+}
+);
+width = 96;
+},
+{
+anchors = (
+{
+name = _top;
+pos = (90,50);
+}
+);
+associatedMasterId = m01;
+layerId = "1951D83C-027C-46A2-BBE7-A485E6845D98";
+name = "1 May 21, 00:30";
+shapes = (
+{
+closed = 1;
+nodes = (
+(128,152,l),
+(112,164,l),
+(0,12,l),
+(16,0,l)
+);
+}
+);
+width = 128;
+},
+{
+anchors = (
+{
+name = _top;
+pos = (79,38);
+}
+);
+associatedMasterId = m01;
+layerId = "35FFA398-3489-4430-A27C-01EFA9C459D5";
+name = "25 Feb 23 at 15:48";
+shapes = (
+{
+closed = 1;
+nodes = (
+(52,38,o),
+(81,71,o),
+(106,100,cs),
+(117,113,o),
+(101,126,o),
+(91,113,cs),
+(67,84,o),
+(36,52,o),
+(6,27,cs),
+(-8,14,o),
+(4,1,o),
+(19,13,cs)
+);
+}
+);
+width = 110;
+}
+);
+metricLeft = "=dotabove-ar";
+metricRight = "=dotabove-ar";
+},
+{
 glyphname = "dotabove-ar.reh";
 layers = (
 {
@@ -10671,28 +10788,83 @@ metricLeft = "=dotabove-ar";
 metricRight = "=dotabove-ar";
 },
 {
-glyphname = "twodotsverticalabove-ar.1";
+glyphname = "twodotsverticalabove-ar.beh";
 layers = (
 {
 anchors = (
 {
 name = _top;
-pos = (69,11);
+pos = (104,30);
+}
+);
+layerId = m01;
+shapes = (
+{
+pos = (0,19);
+ref = "dotabove-ar.beh";
+},
+{
+pos = (30,-8);
+ref = "dotabove-ar.beh";
+}
+);
+width = 126;
+}
+);
+metricLeft = "=dotabove-ar";
+metricRight = "=dotabove-ar";
+},
+{
+glyphname = "twodotsverticalabove-ar.vert";
+layers = (
+{
+anchors = (
+{
+name = _top;
+pos = (77,17);
 }
 );
 layerId = m01;
 shapes = (
 {
 angle = 3;
-pos = (6,33);
+pos = (6,37);
 ref = "dotabove-ar";
 },
 {
-pos = (0,-17);
+pos = (0,-13);
 ref = "dotabove-ar";
 }
 );
 width = 110;
+}
+);
+metricLeft = "=dotabove-ar";
+metricRight = "=dotabove-ar";
+},
+{
+glyphname = "twodotsverticalabove-ar.vert.beh";
+layers = (
+{
+anchors = (
+{
+name = _top;
+pos = (77,34);
+}
+);
+layerId = m01;
+shapes = (
+{
+angle = 4;
+pos = (2,50);
+ref = "dotabove-ar.beh";
+},
+{
+pos = (0,-6);
+ref = "dotabove-ar.beh";
+}
+);
+width = 96;
 }
 );
 metricLeft = "=dotabove-ar";
@@ -10752,7 +10924,34 @@ metricLeft = "=dotabove-ar";
 metricRight = "=dotabove-ar";
 },
 {
-glyphname = "threedotsupabove-ar.1";
+glyphname = "threedotsupabove-ar.beh";
+layers = (
+{
+anchors = (
+{
+name = _top;
+pos = (134,30);
+}
+);
+layerId = m01;
+shapes = (
+{
+pos = (30,0);
+ref = "twodotsverticalabove-ar.beh";
+},
+{
+pos = (0,46);
+ref = "dotabove-ar.beh";
+}
+);
+width = 156;
+}
+);
+metricLeft = "=dotabove-ar";
+metricRight = "=dotabove-ar";
+},
+{
+glyphname = "threedotsupabove-ar.vert";
 layers = (
 {
 anchors = (
@@ -10765,20 +10964,41 @@ layerId = m01;
 shapes = (
 {
 angle = 7;
-pos = (12,85);
+pos = (12,89);
 ref = "dotabove-ar";
 },
 {
-angle = 3;
-pos = (6,33);
-ref = "dotabove-ar";
-},
-{
-pos = (0,-17);
-ref = "dotabove-ar";
+ref = "twodotsverticalabove-ar.vert";
 }
 );
 width = 110;
+}
+);
+metricLeft = "=dotabove-ar";
+metricRight = "=dotabove-ar";
+},
+{
+glyphname = "threedotsupabove-ar.vert.beh";
+layers = (
+{
+anchors = (
+{
+name = _top;
+pos = (77,34);
+}
+);
+layerId = m01;
+shapes = (
+{
+angle = 8;
+pos = (3,109);
+ref = "dotabove-ar.beh";
+},
+{
+ref = "twodotsverticalabove-ar.vert.beh";
+}
+);
+width = 96;
 }
 );
 metricLeft = "=dotabove-ar";
