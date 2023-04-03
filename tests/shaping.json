@@ -2154,6 +2154,10 @@
     {
       "input": "ثثثا",
       "expectation": "alef-ar.fina=3+97|threedotsupabove-ar.vert.beh=2@-1,294+0|_c.seen.beh=2+0|behDotless-ar.medi=2+126|threedotsupabove-ar.beh=1@-80,393+0|_c.seen.beh=1@-3,0+-3|behDotless-ar.medi.high=1+126|threedotsupabove-ar=0@-67,307+0|_c.seen.beh=0@-5,0+-5|behDotless-ar.init=0+130"
+    },
+    {
+      "input": "ٮٮسـٰها",
+      "expectation": "alef-ar.fina=6+97|heh-ar.medi=5+354|alefabove-ar.medi=3+0|_c.seen.beh=2@-2,0+-2|seen-ar.medi.low=2+424|behDotless-ar.medi.med=1+126|_c.seen.beh=0@-5,0+-5|behDotless-ar.init.high=0+130"
     }
   ]
 }
