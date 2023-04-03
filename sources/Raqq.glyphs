@@ -203,8 +203,11 @@ featurePrefixes = (
 {
 code = "languagesystem DFLT dflt;
 languagesystem arab dflt;
-
-lookup ccmp_1 {
+";
+name = Languagesystems;
+},
+{
+code = "lookup ccmp_1 {
 	sub alefHamzaabove-ar by alef-ar hamzaabove-ar;
 	sub alefHamzabelow-ar by alef-ar hamzabelow-ar;
 	sub alefMadda-ar by alef-ar madda-ar;
@@ -791,13 +794,16 @@ lookup rlig_connection {
 		 waw-ar.fina' lookup rounded
 	;
 } rlig_connection;
-
-lookup pos_dot_before_noon {
+";
+name = GSUB;
+},
+{
+code = "lookup pos_dot_before_noon {
 	pos dotbelow-ar <35 0 0 0>;
 	pos twodotsverticalbelow-ar <15 0 0 0>;
 } pos_dot_before_noon;
 ";
-name = Lookups;
+name = GPOS;
 }
 );
 features = (
