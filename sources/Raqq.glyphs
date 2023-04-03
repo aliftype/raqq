@@ -438,6 +438,11 @@ lookup rlig_teeth_2 {
 		[heh-ar.medi heh-ar.fina]
 	;
 
+	sub	 behDotless-ar.medi
+		 behDotless-ar.medi'
+	by	behDotless-ar.medi.semi
+	;
+
 	sub [behDotless-ar.init behDotless-ar.medi]' lookup med_beh
 		[seen-ar.medi]' lookup low_seen
 	;
@@ -543,6 +548,7 @@ lookup before_beh {
 	sub behDotless-ar.init.high	by behDotless-ar.init.high _c.seen.beh;
 
 	sub behDotless-ar.medi		by behDotless-ar.medi _c.seen.beh;
+	sub behDotless-ar.medi.semi	by behDotless-ar.medi.semi _c.seen.beh;
 	sub behDotless-ar.medi.med	by behDotless-ar.medi.med _c.seen.beh;
 	sub behDotless-ar.medi.high	by behDotless-ar.medi.high _c.seen.beh;
 
@@ -627,7 +633,11 @@ lookup rlig_sheen_dots {
 lookup rlig_beh_dots {
 	lookupflag UseMarkFilteringSet @beh1_dots;
 
-	sub [behDotless-ar.medi behDotless-ar.medi.med behDotless-ar.medi.high behDotless-ar.medi.round
+	sub [behDotless-ar.medi
+		 behDotless-ar.medi.semi
+		 behDotless-ar.medi.med
+		 behDotless-ar.medi.high
+		 behDotless-ar.medi.round
 		 behDotless-ar.init.high]
 		@beh1_dots'
 	by	[dotabove-ar.beh twodotsverticalabove-ar.beh threedotsupabove-ar.beh
@@ -649,6 +659,7 @@ lookup rlig_connection {
 		 lam-ar.medi.round
 		 lam-ar.fina
 		 behDotless-ar.medi
+		 behDotless-ar.medi.semi
 		 behDotless-ar.medi.med
 		 behDotless-ar.medi.high
 		 behDotless-ar.medi.round
@@ -686,6 +697,7 @@ lookup rlig_connection {
 		 behDotless-ar.init.med
 		 behDotless-ar.init.high
 		 behDotless-ar.medi
+		 behDotless-ar.medi.semi
 		 behDotless-ar.medi.med
 		 behDotless-ar.medi.high
 		 sad-ar.init
@@ -702,6 +714,7 @@ lookup rlig_connection {
 		 seen-ar.medi.low]' lookup before_beh
 		[alef-ar.fina
 		 behDotless-ar.medi
+		 behDotless-ar.medi.semi
 		 behDotless-ar.medi.med
 		 behDotless-ar.medi.high
 		 behDotless-ar.medi.round
@@ -752,6 +765,7 @@ lookup rlig_connection {
 
 	sub	 ain-ar.medi' lookup before_beh
 		[behDotless-ar.medi
+		 behDotless-ar.medi.semi
 		 behDotless-ar.medi.med
 		 behDotless-ar.medi.high
 		 behDotless-ar.medi.round
@@ -1723,6 +1737,77 @@ width = 110;
 );
 metricLeft = "=-5@58";
 metricRight = "=0@157";
+},
+{
+glyphname = "behDotless-ar.medi.semi";
+kernRight = beh.high;
+layers = (
+{
+anchors = (
+{
+name = bottom;
+pos = (54,-38);
+},
+{
+name = damma;
+pos = (18,170);
+},
+{
+name = fatha;
+pos = (65,440);
+},
+{
+name = kasra;
+pos = (87,-57);
+},
+{
+name = top;
+pos = (69,347);
+}
+);
+backgroundImage = {
+alpha = 80;
+angle = -0.4;
+imagePath = "images/MS-ADD-01116-000-00025.jpg";
+locked = 1;
+pos = (-3499,-2714);
+scale = (5,5);
+};
+layerId = m01;
+shapes = (
+{
+closed = 1;
+nodes = (
+(144,0,l),
+(144,110,l),
+(132,110,o),
+(130,134,o),
+(128,157,cs),
+(122,234,o),
+(114,296,o),
+(106,365,cs),
+(103,394,o),
+(92,392,o),
+(79,369,cs),
+(63,340,o),
+(43,314,o),
+(23,298,cs),
+(12,289,o),
+(7,290,o),
+(9,270,cs),
+(14,219,o),
+(19,174,o),
+(24,110,c),
+(-20,110,l),
+(-20,0,l)
+);
+}
+);
+width = 127;
+}
+);
+metricLeft = "=-20@0";
+metricRight = "=0@130";
 },
 {
 glyphname = "behDotless-ar.medi.high";
