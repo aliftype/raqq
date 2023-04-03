@@ -897,7 +897,11 @@ lookup noon_dots {
 		[noonghunna-ar.fina]
 	;
 }  noon_dots;
-";
+
+lookup heh_dots {
+	lookupflag UseMarkFilteringSet [kasratan-ar];
+	pos heh-ar.fina kasratan-ar' <-67 0 0 0>;
+} heh_dots;";
 tag = mark;
 },
 {
@@ -11455,7 +11459,7 @@ layers = (
 anchors = (
 {
 name = _kasra;
-pos = (209,75);
+pos = (142,75);
 }
 );
 layerId = m01;

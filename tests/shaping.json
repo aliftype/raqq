@@ -420,7 +420,7 @@
     },
     {
       "input": "صٍ",
-      "expectation": "kasratan-ar=0@302,-129+0|sad-ar=0+898"
+      "expectation": "kasratan-ar=0@369,-129+0|sad-ar=0+898"
     },
     {
       "input": "نٍ",
@@ -921,7 +921,7 @@
     },
     {
       "input": "◌ٍ",
-      "expectation": "kasratan-ar=0@81,-190+0|dottedCircle=0+578"
+      "expectation": "kasratan-ar=0@148,-190+0|dottedCircle=0+578"
     },
     {
       "input": "◌ٌ",
@@ -2158,6 +2158,10 @@
     {
       "input": "ٮٮسـٰها",
       "expectation": "alef-ar.fina=6+97|heh-ar.medi=5+354|alefabove-ar.medi=3+0|_c.seen.beh=2@-2,0+-2|seen-ar.medi.low=2+424|behDotless-ar.medi.med=1+126|_c.seen.beh=0@-5,0+-5|behDotless-ar.init.high=0+130"
+    },
+    {
+      "input": "كَلِمةٍ",
+      "expectation": "kasratan-ar=5@94,-127+0|heh-ar.fina=5+335|meem-ar.medi.round=4+425|kasra-ar=2@-14,-131+0|lam-ar.medi.round=2+92|fatha-ar=0@116,279+0|kaf-ar.init=0+765"
     }
   ]
 }
