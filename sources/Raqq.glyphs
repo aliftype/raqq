@@ -240,6 +240,10 @@ lookup ccmp_2 {
 	sub endofayah-ar' five-ar' by endofayah-ar.five;
 } ccmp_2;
 
+lookup ccmp_3 {
+	sub kashida-ar alefabove-ar by alefabove-ar.medi;
+} ccmp_3;
+
 lookup isol {
 	sub yehFarsi-ar by alefMaksura-ar;
 } isol;
@@ -810,6 +814,7 @@ features = (
 {
 code = "lookup ccmp_1;
 lookup ccmp_2;
+lookup ccmp_3;
 ";
 tag = ccmp;
 },
@@ -11636,6 +11641,109 @@ width = 1200;
 }
 );
 unicode = 1648;
+},
+{
+glyphname = "alefabove-ar.medi";
+layers = (
+{
+annotations = (
+{
+pos = (-200,655);
+text = "https://corpuscoranicum.de/en/manuscripts/594/page/148r";
+type = Text;
+width = 270;
+}
+);
+backgroundImage = {
+alpha = 80;
+imagePath = "images/alefabove-ar.medi.png";
+pos = (-844,-97);
+scale = (0.6,0.6);
+};
+layerId = m01;
+metricLeft = "=0";
+shapes = (
+{
+closed = 1;
+nodes = (
+(47,273,o),
+(28,273,o),
+(27,297,cs),
+(23,418,o),
+(17,510,o),
+(1,590,cs),
+(-3,608,o),
+(2,607,o),
+(7,614,cs),
+(22,637,o),
+(38,661,o),
+(43,686,cs),
+(46,700,o),
+(59,708,o),
+(57,681,cs),
+(46,550,o),
+(47,456,o),
+(47,298,cs)
+);
+}
+);
+width = 0;
+},
+{
+associatedMasterId = m01;
+attr = {
+colorPalette = 0;
+};
+backgroundImage = {
+alpha = 80;
+imagePath = "images/alefabove-ar.medi.png";
+locked = 1;
+pos = (-809,-97);
+scale = (0.6,0.6);
+};
+layerId = "A57FEEC8-30F7-4C38-95EF-53FD5B79DDC0";
+metricLeft = "=-60";
+name = "Regular 3 Apr 23 at 16:42";
+shapes = (
+{
+closed = 1;
+nodes = (
+(1,139,o),
+(-5,186,o),
+(-7,231,cs),
+(-11,328,o),
+(6,418,o),
+(-26,514,cs),
+(-39,553,o),
+(-52,575,o),
+(-57,590,cs),
+(-63,607,o),
+(-59,608,o),
+(-53,614,cs),
+(-30,637,o),
+(-20,657,o),
+(-6,686,cs),
+(0,699,o),
+(11,703,o),
+(15,676,cs),
+(23,621,o),
+(23,569,o),
+(25,518,cs),
+(28,450,o),
+(18,333,o),
+(33,231,cs),
+(40,186,o),
+(51,145,o),
+(71,111,c),
+(17,81,l)
+);
+}
+);
+width = 0;
+}
+);
+metricLeft = "=-60";
+metricWidth = "=0";
 },
 {
 glyphname = "alefbelow-ar";

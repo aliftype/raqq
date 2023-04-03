@@ -233,8 +233,8 @@ def makeCurs(instance, glyphOrder):
 
     fea = ""
 
-    exit = {}
-    entry = {}
+    exit_ = {}
+    entry_ = {}
 
     for gname in glyphOrder:
         glyph = font.glyphs[gname]
@@ -245,14 +245,14 @@ def makeCurs(instance, glyphOrder):
         for anchor in layer.anchors:
             name, x, y = anchor.name, anchor.position.x, anchor.position.y
             if name == "exit":
-                exit[gname] = (x, y)
+                exit_[gname] = (x, y)
             elif name == "entry":
-                entry[gname] = (x, y)
+                entry_[gname] = (x, y)
 
     for name in glyphOrder:
-        if name in exit or name in entry:
-            pos1 = entry.get(name)
-            pos2 = exit.get(name)
+        if name in exit_ or name in entry_:
+            pos1 = entry_.get(name)
+            pos2 = exit_.get(name)
             anchor1 = pos1 and f"{pos1[0]} {pos1[1]}" or "NULL"
             anchor2 = pos2 and f"{pos2[0]} {pos2[1]}" or "NULL"
             fea += f"pos cursive {name} <anchor {anchor1}> <anchor {anchor2}>;\n"
@@ -527,26 +527,33 @@ def build(instance, isTTF, args):
     return fb.font
 
 
+def addCursiveAnchors(glyph, layer):
+    if (glyph.category, glyph.subCategory) == ("Mark", "Nonspacing"):
+        return
+
+    exit_ = entry_ = False
+    if glyph.name.startswith("_c.") or ".medi" in glyph.name:
+        exit_ = entry_ = True
+
+    if ".init" in glyph.name:
+        exit_ = True
+    if ".fina" in glyph.name:
+        entry_ = True
+
+    anchors = {a.name for a in layer.anchors}
+    if exit_ and "exit" not in anchors:
+        layer.anchors["exit"] = GSAnchor()
+    if entry_ and "entry" not in anchors:
+        layer.anchors["entry"] = GSAnchor()
+        layer.anchors["entry"].position.x = layer.width
+
+
 def propagateAnchors(glyph, layer):
     if glyph is not None:
         if glyph.color == 0:
             return
 
-        exit_ = entry_ = False
-        if glyph.name.startswith("_c.") or ".medi" in glyph.name:
-            exit_ = entry_ = True
-
-        if ".init" in glyph.name:
-            exit_ = True
-        if ".fina" in glyph.name:
-            entry_ = True
-
-        anchors = {a.name for a in layer.anchors}
-        if exit_ and "exit" not in anchors:
-            layer.anchors["exit"] = GSAnchor()
-        if entry_ and "entry" not in anchors:
-            layer.anchors["entry"] = GSAnchor()
-            layer.anchors["entry"].position.x = layer.width
+        addCursiveAnchors(glyph, layer)
 
     for component in layer.components:
         clayer = component.layer or component.component.layers[0]

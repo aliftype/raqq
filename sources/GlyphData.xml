@@ -691,8 +691,11 @@
   <glyph name="alefabove-ar" unicode="0670" category="Mark" subCategory="Nonspacing" script="arabic"
          sortName="arM1082"
   />
-  <glyph name="alefbelow-ar" unicode="0656" category="Mark" subCategory="Nonspacing" script="arabic"
+  <glyph name="alefabove-ar.medi" category="Mark" subCategory="Nonspacing" script="arabic"
          sortName="arM1083"
+  />
+  <glyph name="alefbelow-ar" unicode="0656" category="Mark" subCategory="Nonspacing" script="arabic"
+         sortName="arM1084"
   />
 
   <glyph name="hyphen" unicode="2010"  category="Punctuation" subCategory="Spacing Combining" case="lower" />
