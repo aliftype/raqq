@@ -220,7 +220,7 @@
     },
     {
       "input": "ششش",
-      "expectation": "threedotshorizontalabove-ar.4=2@-9,220+0|seen-ar.fina=2+490|threedotshorizontalabove-ar.1=1@0,176+0|_c.seen.beh=1@-2,0+-2|seen-ar.medi=1+393|threedotshorizontalabove-ar=0@-1,174+0|_c.seen.beh=0+0|seen-ar.init=0+378"
+      "expectation": "threedotshorizontalabove-ar.4=2@-9,220+0|seen-ar.fina=2+490|threedotshorizontalabove-ar.1=1@0,176+0|_c.seen.beh=1@-2,0+-2|seen-ar.medi=1+393|threedotshorizontalabove-ar=0@3,169+0|_c.seen.beh=0+0|seen-ar.init=0+378"
     },
     {
       "input": "سببا",
@@ -2097,7 +2097,7 @@
     },
     {
       "input": "ششش",
-      "expectation": "threedotshorizontalabove-ar.4=2@-9,220+0|seen-ar.fina=2+490|threedotshorizontalabove-ar.1=1@0,176+0|_c.seen.beh=1@-2,0+-2|seen-ar.medi=1+393|threedotshorizontalabove-ar=0@-1,174+0|_c.seen.beh=0+0|seen-ar.init=0+378"
+      "expectation": "threedotshorizontalabove-ar.4=2@-9,220+0|seen-ar.fina=2+490|threedotshorizontalabove-ar.1=1@0,176+0|_c.seen.beh=1@-2,0+-2|seen-ar.medi=1+393|threedotshorizontalabove-ar=0@3,169+0|_c.seen.beh=0+0|seen-ar.init=0+378"
     },
     {
       "input": "نشا",
