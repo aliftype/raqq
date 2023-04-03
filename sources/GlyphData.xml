@@ -29,12 +29,27 @@
          accents="fatha-ar, damma-ar, dammatan-ar, kasra-ar, kasratan-ar, dotabove-ar, twodotsverticalabove-ar, dotbelow-ar, twodotsverticalbelow-ar, threedotsupabove-ar"
   />
   <glyph name="behDotless-ar.medi" category="Letter" script="arabic"
-         sortName="arL0010"
+         sortName="arL0010a"
+         anchors="top, bottom, fatha, damma, kasra"
+         accents="fatha-ar, damma-ar, kasra-ar, dotabove-ar.beh, twodotsverticalabove-ar.beh, dotbelow-ar, twodotsverticalbelow-ar, threedotsupabove-ar.beh"
+  />
+  <glyph name="behDotless-ar.medi.semi" category="Letter" script="arabic"
+         sortName="arL0010b"
+         anchors="top, bottom, fatha, damma, kasra"
+         accents="fatha-ar, damma-ar, kasra-ar, dotabove-ar.beh, twodotsverticalabove-ar.beh, dotbelow-ar, twodotsverticalbelow-ar, threedotsupabove-ar.beh"
+  />
+  <glyph name="behDotless-ar.medi.med" category="Letter" script="arabic"
+         sortName="arL0010c"
          anchors="top, bottom, fatha, damma, kasra"
          accents="fatha-ar, damma-ar, kasra-ar, dotabove-ar.beh, twodotsverticalabove-ar.beh, dotbelow-ar, twodotsverticalbelow-ar, threedotsupabove-ar.beh"
   />
   <glyph name="behDotless-ar.medi.high" category="Letter" script="arabic"
-         sortName="arL0011"
+         sortName="arL0010d"
+         anchors="top, bottom, fatha, damma, kasra"
+         accents="fatha-ar, damma-ar, kasra-ar, dotabove-ar.beh, twodotsverticalabove-ar.beh, dotbelow-ar, twodotsverticalbelow-ar, threedotsupabove-ar.beh"
+  />
+  <glyph name="behDotless-ar.medi.round" category="Letter" script="arabic"
+         sortName="arL0010e"
          anchors="top, bottom, fatha, damma, kasra"
          accents="fatha-ar, damma-ar, kasra-ar, dotabove-ar.beh, twodotsverticalabove-ar.beh, dotbelow-ar, twodotsverticalbelow-ar, threedotsupabove-ar.beh"
   />
