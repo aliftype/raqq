@@ -5286,6 +5286,7 @@ metricRight = "=0@0";
 },
 {
 glyphname = "lam-ar.medi";
+kernLeft = lam;
 layers = (
 {
 layerId = m01;
@@ -5368,6 +5369,7 @@ metricRight = "=0@159";
 },
 {
 glyphname = "lam-ar.medi.short";
+kernLeft = lam;
 layers = (
 {
 anchors = (
@@ -5430,6 +5432,7 @@ metricRight = "=0";
 },
 {
 glyphname = "lam-ar.init";
+kernLeft = lam;
 layers = (
 {
 anchors = (
@@ -12426,6 +12429,9 @@ m01 = {
 "meem-ar.fina" = -12;
 "meem-ar.medi" = -5;
 "meem-ar.medi.round2" = -5;
+};
+"@MMK_R_lam" = {
+"@MMK_L_sad" = -23;
 };
 "@MMK_R_meem" = {
 "@MMK_L_seen.short" = 20;
