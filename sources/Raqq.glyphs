@@ -4,8 +4,8 @@
 classes = (
 {
 code = "dotabove-ar
-dotabove-ar.reh
 dotabove-ar.beh
+dotabove-ar.reh
 dotbelow-ar
 twodotsverticalabove-ar
 twodotsverticalabove-ar.beh
@@ -16,6 +16,7 @@ threedotsupabove-ar
 threedotsupabove-ar.beh
 threedotsupabove-ar.vert
 threedotsupabove-ar.vert.beh
+threedotsdownbelow-ar
 threedotshorizontalabove-ar
 threedotshorizontalabove-ar.1
 threedotshorizontalabove-ar.2
