@@ -472,7 +472,7 @@
     },
     {
       "input": "لم تحاجون",
-      "expectation": "dotabove-ar=8@-9,191+0|noonghunna-ar=8+281|waw-ar.fina.round=7@400,0+892|dotbelow-ar=6@193,-112+0|_c.hah.meem=6+-20|hah-ar.init=6+703|alef-ar.fina=5@400,0+500|_c.hah.beh=4@4,0+8|hah-ar.medi=4+135|twodotsverticalabove-ar=3@-28,442+0|behDotless-ar.init=3@0,135+570|space=2+400|meem-ar.fina=1+567|lam-ar.init=0+123"
+      "expectation": "dotabove-ar=8@-9,191+0|noonghunna-ar=8+281|waw-ar.fina.round=7@400,0+892|dotbelow-ar=6@193,-112+0|_c.hah.meem=6+-20|hah-ar.init=6+703|alef-ar.fina=5@400,0+500|_c.hah.beh=4@4,0+8|hah-ar.medi=4+135|twodotsverticalabove-ar=3@-28,442+0|behDotless-ar.init=3@0,135+570|space=2+400|meem-ar.fina=1+567|lam-ar.init=0@-25,0+98"
     },
     {
       "input": "۝٥",
@@ -1642,7 +1642,7 @@
     },
     {
       "input": "لمهم",
-      "expectation": "meem-ar.fina.round=3+554|heh-ar.medi.round=2+323|meem-ar.medi=1+380|lam-ar.init=0+123"
+      "expectation": "meem-ar.fina.round=3+554|heh-ar.medi.round=2+323|meem-ar.medi=1+380|lam-ar.init=0@-20,0+103"
     },
     {
       "input": "مفصح",

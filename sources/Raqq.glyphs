@@ -13043,6 +13043,11 @@ _c.feh.medi.reh = -70;
 "seen-ar.medi.low" = -10;
 "waw-ar.fina.round" = -30;
 };
+"lam-ar.init" = {
+"meem-ar.fina" = -25;
+"meem-ar.medi" = -20;
+"meem-ar.medi.round2" = -22;
+};
 };
 };
 metrics = (
