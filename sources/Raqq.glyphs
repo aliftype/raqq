@@ -835,7 +835,7 @@ code = "lookup spacing {
 tag = kern;
 },
 {
-code = "include(Raqq.fea)
+code = "include(overhang.fea)
 ";
 tag = kern;
 },

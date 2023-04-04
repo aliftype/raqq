@@ -30,7 +30,7 @@ BUILDDIR = build
 
 OTF = $(FONTDIR)/$(NAME).otf
 TTF = $(FONTDIR)/$(NAME).ttf
-FEA = $(SOURCEDIR)/$(NAME).fea
+FEA = $(SOURCEDIR)/overhang.fea
 JSON = $(TESTDIR)/shaping.json $(TESTDIR)/decomposition.json
 HTML = $(TESTDIR)/$(NAME).html
 FONTS = $(TTF) # $(OTF)
@@ -50,11 +50,11 @@ update-fea: $(TTF)
 	$(info   GEN    $(@F))
 	python $(SCRIPTDIR)/update-overhang-fea.py $< $(FEA)
 
-$(FONTDIR)/%.otf: $(SOURCEDIR)/%.glyphs $(CONFIG) $(GLYPHDATA) $(SOURCEDIR)/%.fea
+$(FONTDIR)/%.otf: $(SOURCEDIR)/%.glyphs $(CONFIG) $(GLYPHDATA) $(FEA)
 	$(info   BUILD  $(@F))
 	python $(SCRIPTDIR)/build.py $< $(VERSION) $@ --data=$(GLYPHDATA) $(ARGS)
 
-$(FONTDIR)/%.ttf: $(SOURCEDIR)/%.glyphs $(CONFIG) $(GLYPHDATA) $(SOURCEDIR)/%.fea
+$(FONTDIR)/%.ttf: $(SOURCEDIR)/%.glyphs $(CONFIG) $(GLYPHDATA) $(FEA)
 	$(info   BUILD  $(@F))
 	python $(SCRIPTDIR)/build.py $< $(VERSION) $@ --data=$(GLYPHDATA) $(ARGS)
 

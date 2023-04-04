@@ -516,10 +516,12 @@ def build(instance, isTTF, args):
     fb.font.cfg["fontTools.otlLib.builder:WRITE_GPOS7"] = True
 
     fea = makeFeatures(instance, master, args, glyphOrder)
+    feapath = args.input
     if os.environ.get("FONTTOOLS_LOOKUP_DEBUGGING"):
-        with open("debug.fea", "w") as f:
+        feapath = feapath.with_suffix(".fea")
+        with open(feapath, "w") as f:
             f.write(fea)
-    fb.addOpenTypeFeatures(fea, filename=args.input)
+    fb.addOpenTypeFeatures(fea, filename=feapath)
 
     palettes = font.customParameters["Color Palettes"]
     palettes = [[tuple(v / 255 for v in c) for c in p] for p in palettes]
