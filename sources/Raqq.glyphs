@@ -831,11 +831,8 @@ code = "lookup spacing {
 } spacing;
 
 # Automatic Code
-";
-tag = kern;
-},
-{
-code = "include(overhang.fea)
+
+include(overhang.fea)
 ";
 tag = kern;
 },

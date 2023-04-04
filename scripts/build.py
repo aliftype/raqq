@@ -123,8 +123,6 @@ def draw(layer, glyphSet, isTTF):
 
 
 def makeKern(font, master, instance):
-    fea = ""
-
     kerning = font.kerningRTL.get(master.id, [])
     pairs = ""
     classes = ""
@@ -145,16 +143,14 @@ def makeKern(font, master, instance):
             else:
                 pairs += f"pos {left} {right} {kern};\n"
 
-    fea += f"""
-feature kern {{
+    return f"""
+lookup kern_auto {{
 lookupflag IgnoreMarks;
 {pairs}
 {enums}
 {classes}
-}} kern;
+}} kern_auto;
 """
-
-    return fea
 
 
 def getLayer(glyph, instance):
@@ -167,10 +163,11 @@ def getLayer(glyph, instance):
 def makeMark(instance, glyphOrder):
     font = instance.parent
 
-    fea = ""
     classes = ""
+    mark2base = ""
+    mark2liga = ""
 
-    lig = {}
+    ligatures = {}
 
     for gname in glyphOrder:
         glyph = font.glyphs[gname]
@@ -178,7 +175,7 @@ def makeMark(instance, glyphOrder):
             continue
 
         if (glyph.category, glyph.subCategory) == ("Letter", "Ligature"):
-            lig[gname] = {i + 1: [] for i in range(gname.count("_") + 1)}
+            ligatures[gname] = {i + 1: [] for i in range(gname.count("_") + 1)}
 
         layer = getLayer(glyph, instance)
         for anchor in layer.anchors:
@@ -189,24 +186,27 @@ def makeMark(instance, glyphOrder):
                 pass
             elif "_" in name:
                 name, index = name.split("_")
-                lig[gname][int(index)].append((name, (x, y)))
+                ligatures[gname][int(index)].append((name, (x, y)))
             else:
-                fea += f"pos base {gname} <anchor {x} {y}> mark @mark_{name};\n"
+                mark2base += f"pos base {gname} <anchor {x} {y}> mark @mark_{name};\n"
 
-    for name, components in lig.items():
-        fea += f"pos ligature {name}"
+    for name, components in ligatures.items():
+        mark2liga += f"pos ligature {name}"
         for component, anchors in components.items():
             if component != 1:
-                fea += " ligComponent"
+                mark2liga += " ligComponent"
             for anchor, (x, y) in anchors:
-                fea += f" <anchor {x} {y}> mark @mark_{anchor}"
-        fea += ";\n"
+                mark2liga += f" <anchor {x} {y}> mark @mark_{anchor}"
+        mark2liga += ";\n"
 
     return f"""
 {classes}
-feature mark {{
-{fea}
-}} mark;
+lookup mark2base_auto {{
+{mark2base}
+}} mark2base_auto;
+lookup mark2liga_auto {{
+{mark2liga}
+}} mark2liga_auto;
 """
 
 
@@ -240,10 +240,10 @@ def makeCurs(instance, glyphOrder):
             fea += f"pos cursive {name} <anchor {anchor1}> <anchor {anchor2}>;\n"
 
     return f"""
-feature curs {{
+lookup curs_auto {{
 lookupflag IgnoreMarks RightToLeft;
 {fea}
-}} curs;
+}} curs_auto;
 """
 
 
@@ -312,25 +312,12 @@ def makeFeatures(instance, master, args, glyphOrder):
                 auto = makeCurs(instance, glyphOrder)
             elif feature.name == "kern":
                 auto = makeKern(font, master, instance)
-            if before:
-                fea += f"""
-                    feature {feature.name} {{
-                    {before}
-                    }} {feature.name};
-                """
-            fea += auto
-            if after:
-                fea += f"""
-                    feature {feature.name} {{
-                    {after}
-                    }} {feature.name};
-                """
-        else:
-            fea += f"""
-                feature {feature.name} {{
-                {code}
-                }} {feature.name};
-            """
+            code = "\n".join([before, auto, after])
+        fea += f"""
+            feature {feature.name} {{
+            {code}
+            }} {feature.name};
+        """
 
     marks = set()
     ligatures = set()
