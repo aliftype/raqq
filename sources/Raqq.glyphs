@@ -227,7 +227,7 @@ code = "lookup ccmp_1 {
 	sub veh-ar by fehDotless-ar threedotsupabove-ar;
 	sub qaf-ar by qafDotless-ar twodotsverticalabove-ar;
 	sub noon-ar by noonghunna-ar dotabove-ar;
-	sub tehMarbuta-ar by heh-ar; #twodotsverticalabove-ar;
+	sub tehMarbuta-ar by heh-ar twodotsverticalabove-ar;
 	sub wawHamzaabove-ar by waw-ar hamzaabove-ar;
 	sub yeh-ar by alefMaksura-ar twodotsverticalbelow-ar;
 	sub yehHamzaabove-ar by alefMaksura-ar;

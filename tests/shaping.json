@@ -132,7 +132,7 @@
     },
     {
       "input": "ئفة",
-      "expectation": "heh-ar.fina=2+339|dotabove-ar=1@1,329+0|_c.feh.medi.beh=1+0|fehDotless-ar.medi=1+377|_c.seen.beh=0+0|behDotless-ar.init=0+130"
+      "expectation": "twodotsverticalabove-ar=2@159,377+0|heh-ar.fina=2+339|dotabove-ar=1@1,329+0|_c.feh.medi.beh=1+0|fehDotless-ar.medi=1+377|_c.seen.beh=0+0|behDotless-ar.init=0+130"
     },
     {
       "input": "نين",
@@ -268,7 +268,7 @@
     },
     {
       "input": "كلمة",
-      "expectation": "heh-ar.fina=3+339|meem-ar.medi.round=2+425|lam-ar.medi.round=1+95|kaf-ar.init=0+765"
+      "expectation": "twodotsverticalabove-ar=3@159,377+0|heh-ar.fina=3+339|meem-ar.medi.round=2+425|lam-ar.medi.round=1+95|kaf-ar.init=0+765"
     },
     {
       "input": "طلم",
@@ -777,7 +777,7 @@
     },
     {
       "input": "الحجارة",
-      "expectation": "heh-ar=6+356|reh-ar=5@400,0+850|alef-ar.fina=4@400,0+500|dotbelow-ar=3@221,-112+0|_c.hah.beh=3@4,0+8|hah-ar.medi=3+135|hah-ar.medi=2@0,135+135|lam-ar.init.hah=1@63,135+568|alef-ar=0@400,0+978"
+      "expectation": "twodotsverticalabove-ar=6@154,403+0|heh-ar=6+356|reh-ar=5@400,0+850|alef-ar.fina=4@400,0+500|dotbelow-ar=3@221,-112+0|_c.hah.beh=3@4,0+8|hah-ar.medi=3+135|hah-ar.medi=2@0,135+135|lam-ar.init.hah=1@63,135+568|alef-ar=0@400,0+978"
     },
     {
       "input": "افنے",
@@ -2161,7 +2161,7 @@
     },
     {
       "input": "كَلِمةٍ",
-      "expectation": "kasratan-ar=5@94,-127+0|heh-ar.fina=5+339|meem-ar.medi.round=4+425|kasra-ar=2@-14,-131+0|lam-ar.medi.round=2+95|fatha-ar=0@116,279+0|kaf-ar.init=0+765"
+      "expectation": "kasratan-ar=5@94,-127+0|twodotsverticalabove-ar=5@159,377+0|heh-ar.fina=5+339|meem-ar.medi.round=4+425|kasra-ar=2@-14,-131+0|lam-ar.medi.round=2+95|fatha-ar=0@116,279+0|kaf-ar.init=0+765"
     }
   ]
 }
