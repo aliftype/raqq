@@ -122,26 +122,8 @@ def draw(layer, glyphSet, isTTF):
     return glyph, bounds
 
 
-def makeKern(font, master, instance, glyphOrder):
+def makeKern(font, master, instance):
     fea = ""
-
-    groups = {}
-    for name in glyphOrder:
-        glyph = font.glyphs[name]
-        if glyph is None:
-            continue
-        if glyph.leftKerningGroup:
-            group = f"@MMK_R_{glyph.leftKerningGroup}"
-            if group not in groups:
-                groups[group] = []
-            groups[group].append(name)
-        if glyph.rightKerningGroup:
-            group = f"@MMK_L_{glyph.rightKerningGroup}"
-            if group not in groups:
-                groups[group] = []
-            groups[group].append(name)
-    for group, glyphs in groups.items():
-        fea += f"{group} = [{' '.join(glyphs)}];\n"
 
     kerning = font.kerningRTL.get(master.id, [])
     pairs = ""
@@ -280,11 +262,32 @@ def makeFeatures(instance, master, args, glyphOrder):
     for x in list(font.featurePrefixes) + list(font.classes) + list(font.features):
         x.code = RE_DELIM.sub(repl, x.code)
 
-    fea = ""
+    groups = {}
     for gclass in font.classes:
         if gclass.disabled:
             continue
-        fea += f"@{gclass.name} = [{gclass.code}];\n"
+        groups[gclass.name] = gclass.code
+
+    for name in glyphOrder:
+        glyph = font.glyphs[name]
+        if glyph is None:
+            continue
+        if glyph.leftKerningGroup:
+            group = f"MMK_R_{glyph.leftKerningGroup}"
+            if group not in groups:
+                groups[group] = []
+            groups[group].append(name)
+        if glyph.rightKerningGroup:
+            group = f"MMK_L_{glyph.rightKerningGroup}"
+            if group not in groups:
+                groups[group] = []
+            groups[group].append(name)
+
+    fea = ""
+    for name, code in groups.items():
+        if not isinstance(code, str):
+            code = " ".join(code)
+        fea += f"@{name} = [{code}];\n"
 
     for prefix in font.featurePrefixes:
         if prefix.disabled:
@@ -308,7 +311,7 @@ def makeFeatures(instance, master, args, glyphOrder):
             elif feature.name == "curs":
                 auto = makeCurs(instance, glyphOrder)
             elif feature.name == "kern":
-                auto = makeKern(font, master, instance, glyphOrder)
+                auto = makeKern(font, master, instance)
             if before:
                 fea += f"""
                     feature {feature.name} {{
@@ -513,11 +516,10 @@ def build(instance, isTTF, args):
     fb.font.cfg["fontTools.otlLib.builder:WRITE_GPOS7"] = True
 
     fea = makeFeatures(instance, master, args, glyphOrder)
-    fb.addOpenTypeFeatures(fea, filename=args.input)
-
     if os.environ.get("FONTTOOLS_LOOKUP_DEBUGGING"):
         with open("debug.fea", "w") as f:
             f.write(fea)
+    fb.addOpenTypeFeatures(fea, filename=args.input)
 
     palettes = font.customParameters["Color Palettes"]
     palettes = [[tuple(v / 255 for v in c) for c in p] for p in palettes]
