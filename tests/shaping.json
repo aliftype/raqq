@@ -577,147 +577,147 @@
     {
       "input": "۝٥",
       "direction": "ltr",
-      "expectation": "endofayah-ar.five=0+0"
+      "expectation": "endofayah-ar.5=0+0"
     },
     {
       "input": "۝١٥",
       "direction": "ltr",
-      "expectation": "endofayah-ar.five=0+0"
+      "expectation": "endofayah-ar.5=0+0"
     },
     {
       "input": "۝٢٥",
       "direction": "ltr",
-      "expectation": "endofayah-ar.five=0+0"
+      "expectation": "endofayah-ar.5=0+0"
     },
     {
       "input": "۝٣٥",
       "direction": "ltr",
-      "expectation": "endofayah-ar.five=0+0"
+      "expectation": "endofayah-ar.5=0+0"
     },
     {
       "input": "۝٤٥",
       "direction": "ltr",
-      "expectation": "endofayah-ar.five=0+0"
+      "expectation": "endofayah-ar.5=0+0"
     },
     {
       "input": "۝٥٥",
       "direction": "ltr",
-      "expectation": "endofayah-ar.five=0+0"
+      "expectation": "endofayah-ar.5=0+0"
     },
     {
       "input": "۝٦٥",
       "direction": "ltr",
-      "expectation": "endofayah-ar.five=0+0"
+      "expectation": "endofayah-ar.5=0+0"
     },
     {
       "input": "۝٧٥",
       "direction": "ltr",
-      "expectation": "endofayah-ar.five=0+0"
+      "expectation": "endofayah-ar.5=0+0"
     },
     {
       "input": "۝٨٥",
       "direction": "ltr",
-      "expectation": "endofayah-ar.five=0+0"
+      "expectation": "endofayah-ar.5=0+0"
     },
     {
       "input": "۝٩٥",
       "direction": "ltr",
-      "expectation": "endofayah-ar.five=0+0"
+      "expectation": "endofayah-ar.5=0+0"
     },
     {
       "input": "۝١٠٥",
       "direction": "ltr",
-      "expectation": "endofayah-ar.five=0+0"
+      "expectation": "endofayah-ar.5=0+0"
     },
     {
       "input": "۝١١٥",
       "direction": "ltr",
-      "expectation": "endofayah-ar.five=0+0"
+      "expectation": "endofayah-ar.5=0+0"
     },
     {
       "input": "۝١٢٥",
       "direction": "ltr",
-      "expectation": "endofayah-ar.five=0+0"
+      "expectation": "endofayah-ar.5=0+0"
     },
     {
       "input": "۝١٣٥",
       "direction": "ltr",
-      "expectation": "endofayah-ar.five=0+0"
+      "expectation": "endofayah-ar.5=0+0"
     },
     {
       "input": "۝١٤٥",
       "direction": "ltr",
-      "expectation": "endofayah-ar.five=0+0"
+      "expectation": "endofayah-ar.5=0+0"
     },
     {
       "input": "۝١٥٥",
       "direction": "ltr",
-      "expectation": "endofayah-ar.five=0+0"
+      "expectation": "endofayah-ar.5=0+0"
     },
     {
       "input": "۝١٦٥",
       "direction": "ltr",
-      "expectation": "endofayah-ar.five=0+0"
+      "expectation": "endofayah-ar.5=0+0"
     },
     {
       "input": "۝١٧٥",
       "direction": "ltr",
-      "expectation": "endofayah-ar.five=0+0"
+      "expectation": "endofayah-ar.5=0+0"
     },
     {
       "input": "۝١٨٥",
       "direction": "ltr",
-      "expectation": "endofayah-ar.five=0+0"
+      "expectation": "endofayah-ar.5=0+0"
     },
     {
       "input": "۝١٩٥",
       "direction": "ltr",
-      "expectation": "endofayah-ar.five=0+0"
+      "expectation": "endofayah-ar.5=0+0"
     },
     {
       "input": "۝٢٠٥",
       "direction": "ltr",
-      "expectation": "endofayah-ar.five=0+0"
+      "expectation": "endofayah-ar.5=0+0"
     },
     {
       "input": "۝٢١٥",
       "direction": "ltr",
-      "expectation": "endofayah-ar.five=0+0"
+      "expectation": "endofayah-ar.5=0+0"
     },
     {
       "input": "۝٢٢٥",
       "direction": "ltr",
-      "expectation": "endofayah-ar.five=0+0"
+      "expectation": "endofayah-ar.5=0+0"
     },
     {
       "input": "۝٢٣٥",
       "direction": "ltr",
-      "expectation": "endofayah-ar.five=0+0"
+      "expectation": "endofayah-ar.5=0+0"
     },
     {
       "input": "۝٢٤٥",
       "direction": "ltr",
-      "expectation": "endofayah-ar.five=0+0"
+      "expectation": "endofayah-ar.5=0+0"
     },
     {
       "input": "۝٢٥٥",
       "direction": "ltr",
-      "expectation": "endofayah-ar.five=0+0"
+      "expectation": "endofayah-ar.5=0+0"
     },
     {
       "input": "۝٢٦٥",
       "direction": "ltr",
-      "expectation": "endofayah-ar.five=0+0"
+      "expectation": "endofayah-ar.5=0+0"
     },
     {
       "input": "۝٢٧٥",
       "direction": "ltr",
-      "expectation": "endofayah-ar.five=0+0"
+      "expectation": "endofayah-ar.5=0+0"
     },
     {
       "input": "۝٢٨٥",
       "direction": "ltr",
-      "expectation": "endofayah-ar.five=0+0"
+      "expectation": "endofayah-ar.5=0+0"
     },
     {
       "input": "وفے",
