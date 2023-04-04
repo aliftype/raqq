@@ -190,23 +190,23 @@
   />
   <glyph name="fehDotless-ar" unicode="06A1" category="Letter" script="arabic"
          sortName="arL0039"
-         anchors="top, fatha, damma, kasra"
-         accents="fatha-ar, damma-ar, dammatan-ar, kasra-ar, kasratan-ar, dotabove-ar, twodotsverticalabove-ar, threedotsupabove-ar"
+         anchors="top, bottom, fatha, damma, kasra"
+         accents="fatha-ar, damma-ar, dammatan-ar, kasra-ar, kasratan-ar, dotabove-ar, twodotsverticalabove-ar, threedotsupabove-ar, dotbelow-ar"
   />
   <glyph name="fehDotless-ar.fina" category="Letter" script="arabic"
          sortName="arL0040"
-         anchors="top, fatha, damma, kasra"
-         accents="fatha-ar, damma-ar, dammatan-ar, kasra-ar, kasratan-ar, dotabove-ar, twodotsverticalabove-ar, threedotsupabove-ar"
+         anchors="top, bottom, fatha, damma, kasra"
+         accents="fatha-ar, damma-ar, dammatan-ar, kasra-ar, kasratan-ar, dotabove-ar, twodotsverticalabove-ar, threedotsupabove-ar, dotbelow-ar"
   />
   <glyph name="fehDotless-ar.medi" category="Letter" script="arabic"
          sortName="arL0041"
-         anchors="top, fatha, damma, kasra"
-         accents="fatha-ar, damma-ar, dammatan-ar, kasra-ar, kasratan-ar, dotabove-ar, twodotsverticalabove-ar, threedotsupabove-ar"
+         anchors="top, bottom, fatha, damma, kasra"
+         accents="fatha-ar, damma-ar, dammatan-ar, kasra-ar, kasratan-ar, dotabove-ar, twodotsverticalabove-ar, threedotsupabove-ar, dotbelow-ar"
   />
   <glyph name="fehDotless-ar.init" category="Letter" script="arabic"
          sortName="arL0042"
-         anchors="top, fatha, damma, kasra"
-         accents="fatha-ar, damma-ar, dammatan-ar, kasra-ar, kasratan-ar, dotabove-ar, twodotsverticalabove-ar, threedotsupabove-ar"
+         anchors="top, bottom, fatha, damma, kasra"
+         accents="fatha-ar, damma-ar, dammatan-ar, kasra-ar, kasratan-ar, dotabove-ar, twodotsverticalabove-ar, threedotsupabove-ar, dotbelow-ar"
   />
   <glyph name="qafDotless-ar" unicode="066F" category="Letter" script="arabic"
          sortName="arL0043"
@@ -220,23 +220,23 @@
   />
   <glyph name="kaf-ar" unicode="0643" category="Letter" script="arabic"
          sortName="arL0046"
-         anchors="fatha, damma, kasra"
-         accents="fatha-ar, damma-ar, dammatan-ar, kasra-ar, kasratan-ar"
+         anchors="fatha, damma, kasra, gaf"
+         accents="fatha-ar, damma-ar, dammatan-ar, kasra-ar, kasratan-ar, gafsarkashabove-ar"
   />
   <glyph name="kaf-ar.fina" category="Letter" script="arabic"
          sortName="arL0047"
-         anchors="fatha, damma, kasra"
-         accents="fatha-ar, damma-ar, dammatan-ar, kasra-ar, kasratan-ar"
+         anchors="fatha, damma, kasra, gaf"
+         accents="fatha-ar, damma-ar, dammatan-ar, kasra-ar, kasratan-ar, gafsarkashabove-ar"
   />
   <glyph name="kaf-ar.medi" category="Letter" script="arabic"
          sortName="arL0048"
-         anchors="fatha, damma, kasra"
-         accents="fatha-ar, damma-ar, dammatan-ar, kasra-ar, kasratan-ar"
+         anchors="fatha, damma, kasra, gaf"
+         accents="fatha-ar, damma-ar, dammatan-ar, kasra-ar, kasratan-ar, gafsarkashabove-ar"
   />
   <glyph name="kaf-ar.init" category="Letter" script="arabic"
          sortName="arL0049"
-         anchors="fatha, damma, kasra"
-         accents="fatha-ar, damma-ar, dammatan-ar, kasra-ar, kasratan-ar"
+         anchors="fatha, damma, kasra, gaf"
+         accents="fatha-ar, damma-ar, dammatan-ar, kasra-ar, kasratan-ar, gafsarkashabove-ar"
   />
   <glyph name="lam-ar" unicode="0644" category="Letter" script="arabic"
          sortName="arL0053"
@@ -391,6 +391,9 @@
   <glyph name="zain-ar" unicode="0632" category="Letter" script="arabic" decompose="reh-ar, dotabove-ar.reh"
          sortName="arL0179"
   />
+  <glyph name="jeh-ar" unicode="0698" category="Letter" script="arabic" decompose="reh-ar, threedotsupabove-ar"
+         sortName="arL0180"
+  />
   <glyph name="sheen-ar" unicode="0634" category="Letter" script="arabic" decompose="seen-ar, threedotsupabove-ar"
          sortName="arL0196"
   />
@@ -423,6 +426,12 @@
   />
   <glyph name="qafAfrican-ar" unicode="08BC" category="Letter" script="arabic" decompose="qafDotless-ar"
          sortName="arL0238"
+  />
+  <glyph name="keheh-ar" unicode="06A9" category="Letter" script="arabic" decompose="kaf-ar"
+         sortName="arL0239"
+  />
+  <glyph name="gaf-ar" unicode="06AF" category="Letter" script="arabic" decompose="kaf-ar, gafsarkashabove-ar"
+         sortName="arL0240"
   />
   <glyph name="noon-ar" unicode="0646" category="Letter" script="arabic" decompose="noonghunna-ar, dotabove-ar"
          sortName="arL0273"
@@ -645,8 +654,12 @@
   />
 
   <glyph name="threedotsupabove-ar" category="Mark" subCategory="Nonspacing" script="arabic"
-         sortName="arM1067"
+         sortName="arM1067a"
          anchors="_top"
+  />
+  <glyph name="threedotsdownbelow-ar" category="Mark" subCategory="Nonspacing" script="arabic"
+         sortName="arM1067b"
+         anchors="_bottom"
   />
   <glyph name="threedotshorizontalabove-ar" category="Mark" subCategory="Nonspacing" script="arabic"
          sortName="arM1068"
@@ -713,6 +726,10 @@
          sortName="arM1084"
   />
 
+  <glyph name="gafsarkashabove-ar" category="Mark" subCategory="Nonspacing" script="arabic"
+         sortName="arM1085"
+         anchors="_gaf"
+  />
   <glyph name="hyphen" unicode="2010"  category="Punctuation" subCategory="Spacing Combining" case="lower" />
 
 </glyphData>

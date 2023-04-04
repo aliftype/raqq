@@ -12,18 +12,26 @@
       "beh-ar",
       "teh-ar",
       "theh-ar",
+      "peh-ar",
       "jeem-ar",
       "khah-ar",
+      "tcheh-ar",
       "thal-ar",
       "zain-ar",
+      "jeh-ar",
       "sheen-ar",
       "dad-ar",
       "zah-ar",
       "ghain-ar",
       "feh-ar",
       "veh-ar",
+      "fehAfrican-ar",
       "qaf-ar",
+      "qafAfrican-ar",
+      "keheh-ar",
+      "gaf-ar",
       "noon-ar",
+      "noonAfrican-ar",
       "tehMarbuta-ar",
       "wawHamzaabove-ar",
       "yeh-ar",
@@ -153,10 +161,25 @@
       "input": "ٱ ٱ‍ ‍ٱ‍ ‍ٱ"
     },
     {
+      "input": "پ پ‍ ‍پ‍ ‍پ"
+    },
+    {
+      "input": "چ چ‍ ‍چ‍ ‍چ"
+    },
+    {
+      "input": "ژ ژ‍ ‍ژ‍ ‍ژ"
+    },
+    {
       "input": "ڡ ڡ‍ ‍ڡ‍ ‍ڡ"
     },
     {
       "input": "ڤ ڤ‍ ‍ڤ‍ ‍ڤ"
+    },
+    {
+      "input": "ک ک‍ ‍ک‍ ‍ک"
+    },
+    {
+      "input": "گ گ‍ ‍گ‍ ‍گ"
     },
     {
       "input": "ں ں‍ ‍ں‍ ‍ں"
@@ -166,6 +189,15 @@
     },
     {
       "input": "ے ے‍ ‍ے‍ ‍ے"
+    },
+    {
+      "input": "ࢻ ࢻ‍ ‍ࢻ‍ ‍ࢻ"
+    },
+    {
+      "input": "ࢼ ࢼ‍ ‍ࢼ‍ ‍ࢼ"
+    },
+    {
+      "input": "ࢽ ࢽ‍ ‍ࢽ‍ ‍ࢽ"
     }
   ]
 }
