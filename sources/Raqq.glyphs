@@ -12782,6 +12782,12 @@ _c.hah.meem = {
 "yehbarree-ar.fina" = -27;
 "yehbarree-ar.fina.baseline" = -19;
 };
+_c.seen.meem = {
+"meem-ar.medi" = 11;
+"meem-ar.medi.round2" = 7;
+"noonghunna-ar.fina" = 2;
+"qafDotless-ar.fina" = 7;
+};
 "ain-ar.init" = {
 _c.ain.init.beh = -50;
 _c.ain.yeh = 0;
@@ -12810,14 +12816,8 @@ _c.feh.medi.dal = -78;
 _c.feh.medi.meem = -71;
 _c.feh.medi.reh = -70;
 "lam_alef-ar.fina" = -80;
-"waw-ar.fina.round" = -30;
 "seen-ar.medi.low" = -10;
-};
-_c.seen.meem = {
-"meem-ar.medi" = 11;
-"meem-ar.medi.round2" = 7;
-"noonghunna-ar.fina" = 2;
-"qafDotless-ar.fina" = 7;
+"waw-ar.fina.round" = -30;
 };
 };
 };
