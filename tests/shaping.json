@@ -320,11 +320,11 @@
     },
     {
       "input": "فب",
-      "expectation": "dotbelow-ar=1@834,-111+0|behDotless-ar.fina=1+984|dotabove-ar=0@-1,373+0|_c.feh.init.beh=0+174|fehDotless-ar.init=0@-174,0+220"
+      "expectation": "dotbelow-ar=1@834,-111+0|behDotless-ar.fina=1+984|dotabove-ar=0@-1,373+0|_c.feh.init.beh=0+174|fehDotless-ar.init=0@-114,0+220"
     },
     {
       "input": "فد",
-      "expectation": "dal-ar.fina=1+875|dotabove-ar=0@-41,373+0|_c.feh.init.dal=0+137|fehDotless-ar.init=0@-177,0+217"
+      "expectation": "dal-ar.fina=1+875|dotabove-ar=0@-41,373+0|_c.feh.init.dal=0+137|fehDotless-ar.init=0@-117,0+217"
     },
     {
       "input": "فر",
@@ -332,55 +332,55 @@
     },
     {
       "input": "فس",
-      "expectation": "seen-ar.fina=1+406|dotabove-ar=0@-1,373+0|_c.feh.init.beh=0+174|fehDotless-ar.init=0@-174,0+220"
+      "expectation": "seen-ar.fina=1+406|dotabove-ar=0@-1,373+0|_c.feh.init.beh=0+174|fehDotless-ar.init=0@-114,0+220"
     },
     {
       "input": "فص",
-      "expectation": "sad-ar.fina=1+891|dotabove-ar=0@-41,373+0|_c.feh.init.dal=0+137|fehDotless-ar.init=0@-177,0+217"
+      "expectation": "sad-ar.fina=1+891|dotabove-ar=0@-41,373+0|_c.feh.init.dal=0+137|fehDotless-ar.init=0@-117,0+217"
     },
     {
       "input": "فط",
-      "expectation": "tah-ar.fina=1+798|dotabove-ar=0@-41,373+0|_c.feh.init.dal=0+137|fehDotless-ar.init=0@-177,0+217"
+      "expectation": "tah-ar.fina=1+798|dotabove-ar=0@-41,373+0|_c.feh.init.dal=0+137|fehDotless-ar.init=0@-117,0+217"
     },
     {
       "input": "فع",
-      "expectation": "ain-ar.fina=1+267|dotabove-ar=0@-1,373+0|_c.feh.init.beh=0+174|fehDotless-ar.init=0@-174,0+220"
+      "expectation": "ain-ar.fina=1+267|dotabove-ar=0@-1,373+0|_c.feh.init.beh=0+174|fehDotless-ar.init=0@-114,0+220"
     },
     {
       "input": "فف",
-      "expectation": "dotabove-ar=1@609,319+0|fehDotless-ar.fina=1+997|dotabove-ar=0@-6,373+0|_c.feh.init.beh=0@-5,0+169|fehDotless-ar.init=0@-174,0+220"
+      "expectation": "dotabove-ar=1@609,319+0|fehDotless-ar.fina=1+997|dotabove-ar=0@-6,373+0|_c.feh.init.beh=0@-5,0+169|fehDotless-ar.init=0@-114,0+220"
     },
     {
       "input": "فق",
-      "expectation": "twodotsverticalabove-ar=1@-62,265+0|qafDotless-ar.fina=1+373|dotabove-ar=0@-32,373+0|_c.feh.init.dal=0@9,0+146|fehDotless-ar.init=0@-177,0+217"
+      "expectation": "twodotsverticalabove-ar=1@-62,265+0|qafDotless-ar.fina=1+373|dotabove-ar=0@-32,373+0|_c.feh.init.dal=0@9,0+146|fehDotless-ar.init=0@-117,0+217"
     },
     {
       "input": "فك",
-      "expectation": "kaf-ar.fina=1+889|dotabove-ar=0@-41,373+0|_c.feh.init.dal=0+137|fehDotless-ar.init=0@-177,0+217"
+      "expectation": "kaf-ar.fina=1+889|dotabove-ar=0@-41,373+0|_c.feh.init.dal=0+137|fehDotless-ar.init=0@-117,0+217"
     },
     {
       "input": "فل",
-      "expectation": "lam-ar.fina=1+178|dotabove-ar=0@-1,373+0|_c.feh.init.beh=0+174|fehDotless-ar.init=0@-174,0+220"
+      "expectation": "lam-ar.fina=1+178|dotabove-ar=0@-1,373+0|_c.feh.init.beh=0+174|fehDotless-ar.init=0@-114,0+220"
     },
     {
       "input": "فم",
-      "expectation": "meem-ar.fina=1+567|dotabove-ar=0@-41,373+0|_c.feh.init.dal=0+137|fehDotless-ar.init=0@-177,0+217"
+      "expectation": "meem-ar.fina=1+567|dotabove-ar=0@-41,373+0|_c.feh.init.dal=0+137|fehDotless-ar.init=0@-117,0+217"
     },
     {
       "input": "فن",
-      "expectation": "dotabove-ar=1@-62,101+0|noonghunna-ar.fina=1+191|dotabove-ar=0@-81,373+0|_c.hah.noon=0+-20|fehDotless-ar.init=0@-60,0+334"
+      "expectation": "dotabove-ar=1@-62,101+0|noonghunna-ar.fina=1+191|dotabove-ar=0@-81,373+0|_c.hah.noon=0+-20|fehDotless-ar.init=0+334"
     },
     {
       "input": "فه",
-      "expectation": "heh-ar.fina=1+339|dotabove-ar=0@-1,373+0|_c.feh.init.beh=0+174|fehDotless-ar.init=0@-174,0+220"
+      "expectation": "heh-ar.fina=1+339|dotabove-ar=0@-1,373+0|_c.feh.init.beh=0+174|fehDotless-ar.init=0@-114,0+220"
     },
     {
       "input": "فو",
-      "expectation": "waw-ar.fina=1+472|dotabove-ar=0@-14,373+0|_c.feh.init.dal=0@27,0+164|fehDotless-ar.init=0@-177,0+217"
+      "expectation": "waw-ar.fina=1+472|dotabove-ar=0@-14,373+0|_c.feh.init.dal=0@27,0+164|fehDotless-ar.init=0@-117,0+217"
     },
     {
       "input": "قل",
-      "expectation": "lam-ar.fina=1+178|twodotsverticalabove-ar=0@-31,381+0|_c.feh.init.beh=0+174|fehDotless-ar.init=0@-174,0+220"
+      "expectation": "lam-ar.fina=1+178|twodotsverticalabove-ar=0@-31,381+0|_c.feh.init.beh=0+174|fehDotless-ar.init=0@-114,0+220"
     },
     {
       "input": "كم",
@@ -857,75 +857,75 @@
     },
     {
       "input": "فبا",
-      "expectation": "alef-ar.fina=2+100|dotbelow-ar=1@9,-110+0|_c.seen.beh=1+0|behDotless-ar.medi=1+128|dotabove-ar=0@-1,373+0|_c.feh.init.beh=0+174|fehDotless-ar.init=0@-174,0+220"
+      "expectation": "alef-ar.fina=2+100|dotbelow-ar=1@9,-110+0|_c.seen.beh=1+0|behDotless-ar.medi=1+128|dotabove-ar=0@-1,373+0|_c.feh.init.beh=0+174|fehDotless-ar.init=0@-114,0+220"
     },
     {
       "input": "فبب",
-      "expectation": "dotbelow-ar=2@834,-111+0|behDotless-ar.fina=2+984|dotbelow-ar=1@14,-110+0|_c.seen.beh=1+0|behDotless-ar.medi.high=1+128|dotabove-ar=0@-1,373+0|_c.feh.init.beh=0+174|fehDotless-ar.init=0@-174,0+220"
+      "expectation": "dotbelow-ar=2@834,-111+0|behDotless-ar.fina=2+984|dotbelow-ar=1@14,-110+0|_c.seen.beh=1+0|behDotless-ar.medi.high=1+128|dotabove-ar=0@-1,373+0|_c.feh.init.beh=0+174|fehDotless-ar.init=0@-114,0+220"
     },
     {
       "input": "فبم",
-      "expectation": "meem-ar.fina.round=2+554|dotbelow-ar=1@-13,-110+0|behDotless-ar.medi.round=1+110|dotabove-ar=0@-1,373+0|_c.feh.init.beh=0+174|fehDotless-ar.init=0@-174,0+220"
+      "expectation": "meem-ar.fina.round=2+554|dotbelow-ar=1@-13,-110+0|behDotless-ar.medi.round=1+110|dotabove-ar=0@-1,373+0|_c.feh.init.beh=0+174|fehDotless-ar.init=0@-114,0+220"
     },
     {
       "input": "فبه",
-      "expectation": "heh-ar.fina=2+339|dotbelow-ar=1@17,-110+0|_c.seen.beh=1+0|behDotless-ar.medi.med=1+128|dotabove-ar=0@-1,373+0|_c.feh.init.beh=0+174|fehDotless-ar.init=0@-174,0+220"
+      "expectation": "heh-ar.fina=2+339|dotbelow-ar=1@17,-110+0|_c.seen.beh=1+0|behDotless-ar.medi.med=1+128|dotabove-ar=0@-1,373+0|_c.feh.init.beh=0+174|fehDotless-ar.init=0@-114,0+220"
     },
     {
       "input": "فتح",
-      "expectation": "hah-ar.fina=2+407|twodotsverticalabove-ar.beh=1@-22,432+0|behDotless-ar.medi=1@0,130+128|dotabove-ar=0@-1,503+0|_c.feh.init.beh=0@0,130+174|fehDotless-ar.init=0@-174,130+220"
+      "expectation": "hah-ar.fina=2+407|twodotsverticalabove-ar.beh=1@-22,432+0|behDotless-ar.medi=1@0,130+128|dotabove-ar=0@-1,503+0|_c.feh.init.beh=0@0,130+174|fehDotless-ar.init=0@-114,130+220"
     },
     {
       "input": "فسا",
-      "expectation": "alef-ar.fina=2+100|_c.seen.beh=1+0|seen-ar.medi=1+389|dotabove-ar=0@-1,373+0|_c.feh.init.beh=0+174|fehDotless-ar.init=0@-174,0+220"
+      "expectation": "alef-ar.fina=2+100|_c.seen.beh=1+0|seen-ar.medi=1+389|dotabove-ar=0@-1,373+0|_c.feh.init.beh=0+174|fehDotless-ar.init=0@-114,0+220"
     },
     {
       "input": "فسي",
-      "expectation": "twodotsverticalbelow-ar=1@339,-337+0|seen_alefMaksura-ar.fina=1+343|dotabove-ar=0@-1,373+0|_c.feh.init.beh=0+174|fehDotless-ar.init=0@-174,0+220"
+      "expectation": "twodotsverticalbelow-ar=1@339,-337+0|seen_alefMaksura-ar.fina=1+343|dotabove-ar=0@-1,373+0|_c.feh.init.beh=0+174|fehDotless-ar.init=0@-114,0+220"
     },
     {
       "input": "فصا",
-      "expectation": "alef-ar.fina=2+100|_c.seen.beh=1+0|sad-ar.medi=1+758|dotabove-ar=0@-41,373+0|_c.feh.init.dal=0+137|fehDotless-ar.init=0@-177,0+217"
+      "expectation": "alef-ar.fina=2+100|_c.seen.beh=1+0|sad-ar.medi=1+758|dotabove-ar=0@-41,373+0|_c.feh.init.dal=0+137|fehDotless-ar.init=0@-117,0+217"
     },
     {
       "input": "فطا",
-      "expectation": "alef-ar.fina.short=2+95|tah-ar.medi=1+758|dotabove-ar=0@-41,373+0|_c.feh.init.dal=0+137|fehDotless-ar.init=0@-177,0+217"
+      "expectation": "alef-ar.fina.short=2+95|tah-ar.medi=1+758|dotabove-ar=0@-41,373+0|_c.feh.init.dal=0+137|fehDotless-ar.init=0@-117,0+217"
     },
     {
       "input": "فعا",
-      "expectation": "alef-ar.fina=2+100|_c.ain.medi.beh=1+66|ain-ar.medi=1+220|dotabove-ar=0@-1,373+0|_c.feh.init.beh=0+174|fehDotless-ar.init=0@-174,0+220"
+      "expectation": "alef-ar.fina=2+100|_c.ain.medi.beh=1+66|ain-ar.medi=1+220|dotabove-ar=0@-1,373+0|_c.feh.init.beh=0+174|fehDotless-ar.init=0@-114,0+220"
     },
     {
       "input": "ففا",
-      "expectation": "alef-ar.fina=2+100|dotabove-ar=1@1,329+0|_c.feh.medi.beh=1+0|fehDotless-ar.medi=1+377|dotabove-ar=0@-6,373+0|_c.feh.init.beh=0@-5,0+169|fehDotless-ar.init=0@-174,0+220"
+      "expectation": "alef-ar.fina=2+100|dotabove-ar=1@1,329+0|_c.feh.medi.beh=1+0|fehDotless-ar.medi=1+377|dotabove-ar=0@-6,373+0|_c.feh.init.beh=0@-5,0+169|fehDotless-ar.init=0@-114,0+220"
     },
     {
       "input": "فكا",
-      "expectation": "alef-ar.fina=2+100|kaf-ar.medi=1+758|dotabove-ar=0@-41,373+0|_c.feh.init.dal=0+137|fehDotless-ar.init=0@-177,0+217"
+      "expectation": "alef-ar.fina=2+100|kaf-ar.medi=1+758|dotabove-ar=0@-41,373+0|_c.feh.init.dal=0+137|fehDotless-ar.init=0@-117,0+217"
     },
     {
       "input": "فلا",
-      "expectation": "lam_alef-ar.fina=1+510|dotabove-ar=0@-131,373+0|fehDotless-ar.init=0@-130,0+264"
+      "expectation": "lam_alef-ar.fina=1+510|dotabove-ar=0@-131,373+0|fehDotless-ar.init=0@-70,0+264"
     },
     {
       "input": "فما",
-      "expectation": "alef-ar.fina=2+100|meem-ar.medi=1+380|dotabove-ar=0@-26,373+0|_c.feh.init.dal=0@15,0+152|fehDotless-ar.init=0@-177,0+217"
+      "expectation": "alef-ar.fina=2+100|meem-ar.medi=1+380|dotabove-ar=0@-26,373+0|_c.feh.init.dal=0@15,0+152|fehDotless-ar.init=0@-117,0+217"
     },
     {
       "input": "فمم",
-      "expectation": "meem-ar.fina.round=2+554|meem-ar.medi.round2=1+398|dotabove-ar=0@-32,373+0|_c.feh.init.dal=0@9,0+146|fehDotless-ar.init=0@-177,0+217"
+      "expectation": "meem-ar.fina.round=2+554|meem-ar.medi.round2=1+398|dotabove-ar=0@-32,373+0|_c.feh.init.dal=0@9,0+146|fehDotless-ar.init=0@-117,0+217"
     },
     {
       "input": "فها",
-      "expectation": "alef-ar.fina=2+100|heh-ar.medi=1+357|dotabove-ar=0@-1,373+0|_c.feh.init.beh=0+174|fehDotless-ar.init=0@-174,0+220"
+      "expectation": "alef-ar.fina=2+100|heh-ar.medi=1+357|dotabove-ar=0@-1,373+0|_c.feh.init.beh=0+174|fehDotless-ar.init=0@-114,0+220"
     },
     {
       "input": "فهم",
-      "expectation": "meem-ar.fina.round=2+554|heh-ar.medi.round=1+323|dotabove-ar=0@-1,373+0|_c.feh.init.beh=0+174|fehDotless-ar.init=0@-174,0+220"
+      "expectation": "meem-ar.fina.round=2+554|heh-ar.medi.round=1+323|dotabove-ar=0@-1,373+0|_c.feh.init.beh=0+174|fehDotless-ar.init=0@-114,0+220"
     },
     {
       "input": "قلم",
-      "expectation": "meem-ar.fina.round=2+554|lam-ar.medi.round=1+95|twodotsverticalabove-ar=0@-31,381+0|_c.feh.init.beh=0+174|fehDotless-ar.init=0@-174,0+220"
+      "expectation": "meem-ar.fina.round=2+554|lam-ar.medi.round=1+95|twodotsverticalabove-ar=0@-31,381+0|_c.feh.init.beh=0+174|fehDotless-ar.init=0@-114,0+220"
     },
     {
       "input": "كسي",
@@ -1333,7 +1333,7 @@
     },
     {
       "input": "وقح لا",
-      "expectation": "lam_alef-ar=4+521|space=3+400|hah-ar.fina=2+407|twodotsverticalabove-ar=1@-31,511+0|fehDotless-ar.init=1@0,130+574|waw-ar=0@400,0+909"
+      "expectation": "lam_alef-ar=4+521|space=3+400|hah-ar.fina=2+407|twodotsverticalabove-ar=1@-91,511+0|fehDotless-ar.init=1@0,130+574|waw-ar=0@400,0+909"
     },
     {
       "input": "۝١٥",
@@ -1382,7 +1382,7 @@
     },
     {
       "input": "افنے",
-      "expectation": "yehbarree-ar.fina=3+312|dotabove-ar.beh=2@8,294+0|behDotless-ar.medi=2+128|dotabove-ar=1@-1,373+0|_c.feh.init.beh=1+174|fehDotless-ar.init=1@-174,0+280|alef-ar=0@400,0+978"
+      "expectation": "yehbarree-ar.fina=3+312|dotabove-ar.beh=2@8,294+0|behDotless-ar.medi=2+128|dotabove-ar=1@-1,373+0|_c.feh.init.beh=1+174|fehDotless-ar.init=1@-114,0+340|alef-ar=0@400,0+978"
     },
     {
       "input": "الحا",
@@ -1558,11 +1558,11 @@
     },
     {
       "input": "فبيا",
-      "expectation": "alef-ar.fina=3+100|twodotsverticalbelow-ar=2@9,-137+0|_c.seen.beh=2+0|behDotless-ar.medi=2+128|dotbelow-ar=1@14,-110+0|_c.seen.beh=1+0|behDotless-ar.medi.high=1+128|dotabove-ar=0@-1,373+0|_c.feh.init.beh=0+174|fehDotless-ar.init=0@-174,0+220"
+      "expectation": "alef-ar.fina=3+100|twodotsverticalbelow-ar=2@9,-137+0|_c.seen.beh=2+0|behDotless-ar.medi=2+128|dotbelow-ar=1@14,-110+0|_c.seen.beh=1+0|behDotless-ar.medi.high=1+128|dotabove-ar=0@-1,373+0|_c.feh.init.beh=0+174|fehDotless-ar.init=0@-114,0+220"
     },
     {
       "input": "قلنا",
-      "expectation": "alef-ar.fina=3+100|dotabove-ar.beh=2@8,294+0|_c.seen.beh=2+0|behDotless-ar.medi=2+128|_c.seen.beh=1+0|lam-ar.medi=1+125|twodotsverticalabove-ar=0@-31,381+0|_c.feh.init.beh=0+174|fehDotless-ar.init=0@-174,0+220"
+      "expectation": "alef-ar.fina=3+100|dotabove-ar.beh=2@8,294+0|_c.seen.beh=2+0|behDotless-ar.medi=2+128|_c.seen.beh=1+0|lam-ar.medi=1+125|twodotsverticalabove-ar=0@-31,381+0|_c.feh.init.beh=0+174|fehDotless-ar.init=0@-114,0+220"
     },
     {
       "input": "كلمة",
@@ -2033,7 +2033,7 @@
     },
     {
       "input": "فسنيسرك",
-      "expectation": "kaf-ar=6+896|reh-ar.fina=5@400,0+793|seen-ar.medi.low=4+424|twodotsverticalbelow-ar=3@17,-137+0|behDotless-ar.medi.med=3+128|dotabove-ar.beh=2@-7,385+0|_c.seen.beh=2+0|behDotless-ar.medi.high=2+128|_c.seen.beh=1+0|seen-ar.medi=1+389|dotabove-ar=0@-1,373+0|_c.feh.init.beh=0+174|fehDotless-ar.init=0@-174,0+220"
+      "expectation": "kaf-ar=6+896|reh-ar.fina=5@400,0+793|seen-ar.medi.low=4+424|twodotsverticalbelow-ar=3@17,-137+0|behDotless-ar.medi.med=3+128|dotabove-ar.beh=2@-7,385+0|_c.seen.beh=2+0|behDotless-ar.medi.high=2+128|_c.seen.beh=1+0|seen-ar.medi=1+389|dotabove-ar=0@-1,373+0|_c.feh.init.beh=0+174|fehDotless-ar.init=0@-114,0+220"
     },
     {
       "input": "كَلِمةٍ",
