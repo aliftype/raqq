@@ -548,6 +548,10 @@
       "expectation": "meem-ar.fina=2+567|kaf-ar.medi=1@-12,0+746|dotbelow-ar=0@72,-46+0|behDotless-ar.init=0+130"
     },
     {
+      "input": "بلا",
+      "expectation": "lam_alef-ar.fina=1+510|dotbelow-ar=0@12,-46+0|behDotless-ar.init=0@-60,0+70"
+    },
+    {
       "input": "بلٍ",
       "expectation": "kasratan-ar.alt=1@171,-277+0|lam-ar.fina=1+178|dotbelow-ar=0@72,-46+0|_c.seen.beh=0+0|behDotless-ar.init=0+130"
     },
@@ -2014,6 +2018,10 @@
     {
       "input": "حنيفا",
       "expectation": "alef-ar.fina=4+100|dotabove-ar=3@1,329+0|_c.feh.medi.beh=3+0|fehDotless-ar.medi=3+377|twodotsverticalbelow-ar=2@9,-137+0|_c.seen.beh=2+0|behDotless-ar.medi=2+128|dotabove-ar.beh=1@-7,385+0|_c.seen.beh=1+0|behDotless-ar.medi.high=1+128|_c.hah.beh=0@4,0+8|hah-ar.init=0+703"
+    },
+    {
+      "input": "قليلا",
+      "expectation": "lam_alef-ar.fina=3+510|twodotsverticalbelow-ar=2@-51,-137+0|behDotless-ar.medi=2@-60,0+68|_c.seen.beh=1+0|lam-ar.medi=1+125|twodotsverticalabove-ar=0@-31,381+0|_c.feh.init.beh=0+174|fehDotless-ar.init=0@-114,0+220"
     },
     {
       "input": "لنبين",

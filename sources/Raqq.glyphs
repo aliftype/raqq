@@ -13223,9 +13223,11 @@ _c.hah.dal = -12;
 "lam_alef-ar.fina" = -80;
 };
 "behDotless-ar.init" = {
+"lam_alef-ar.fina" = -60;
 "noonghunna-ar.fina" = -34;
 };
 "behDotless-ar.medi" = {
+"lam_alef-ar.fina" = -60;
 "noonghunna-ar.fina" = -34;
 };
 "fehDotless-ar.init" = {
