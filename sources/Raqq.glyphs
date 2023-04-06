@@ -9469,6 +9469,10 @@ pos = (480,-79);
 {
 name = kasra_2;
 pos = (94,-84);
+},
+{
+name = madda_2;
+pos = (248,560);
 }
 );
 backgroundImage = {
@@ -9724,6 +9728,10 @@ pos = (412,-58);
 {
 name = kasra_2;
 pos = (96,-43);
+},
+{
+name = madda_2;
+pos = (174,600);
 }
 );
 backgroundImage = {
