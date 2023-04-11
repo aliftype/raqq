@@ -684,7 +684,7 @@ lookup rlig_connection {
 	lookupflag IgnoreMarks;
 
 	sub	[hah-ar.init hah-ar.medi]' lookup before_beh
-		[qafDotless-ar.fina seen-ar.medi.low]
+		[seen-ar.medi.low]
 	;
 
 	sub	[behDotless-ar.init
@@ -12834,48 +12834,30 @@ metricRight = "=0";
 glyphname = _c.hah.beh;
 layers = (
 {
-anchors = (
-{
-name = entry;
-pos = (4,0);
-},
-{
-name = exit;
-pos = (-4,0);
-}
-);
 layerId = m01;
 shapes = (
 {
 closed = 1;
 nodes = (
-(129,59,l),
-(129,104,l),
-(49,111,o),
-(-6,142,o),
-(-5,192,c),
-(-24,192,l),
-(-24,0,l)
+(130,59,l),
+(130,104,l),
+(50,111,o),
+(-5,142,o),
+(-4,192,c),
+(-23,192,l),
+(-23,0,l)
 );
 }
 );
-width = 4;
+width = 7;
 }
 );
-metricLeft = "=-24";
+metricLeft = "=-23";
 },
 {
 glyphname = _c.hah.dal;
 layers = (
 {
-anchors = (
-{
-name = entry;
-},
-{
-name = exit;
-}
-);
 layerId = m01;
 shapes = (
 {
@@ -12902,15 +12884,6 @@ metricRight = "=0";
 glyphname = _c.hah.meem;
 layers = (
 {
-anchors = (
-{
-name = entry;
-pos = (-20,0);
-},
-{
-name = exit;
-}
-);
 layerId = m01;
 shapes = (
 {
@@ -12926,9 +12899,10 @@ nodes = (
 );
 }
 );
-width = 0;
+width = 111;
 }
 );
+metricRight = "=0";
 },
 {
 glyphname = _c.hah.noon;
@@ -12938,9 +12912,6 @@ anchors = (
 {
 name = entry;
 pos = (-20,0);
-},
-{
-name = exit;
 }
 );
 layerId = m01;
@@ -13130,6 +13101,8 @@ m01 = {
 "@MMK_L_feh.medi" = -5;
 };
 "@MMK_R_hah" = {
+_c.hah.dal = -71;
+_c.hah.meem = -131;
 _c.hah.noon = -20;
 "lam_alef-ar.fina" = -69;
 };
@@ -13192,13 +13165,14 @@ _c.feh.medi.reh = {
 "yehbarree-ar.fina" = -22;
 };
 _c.hah.beh = {
-"qafDotless-ar.fina" = -18;
+"@MMK_L_feh.medi" = 3;
 "seen-ar.medi.low" = -6;
 };
 _c.hah.meem = {
 "alefMaksura-ar.fina" = -36;
 "meem-ar.medi" = 10;
 "meem-ar.medi.round2" = 6;
+"qafDotless-ar.fina" = 7;
 "reh-ar.fina" = -10;
 "yehbarree-ar.fina" = -27;
 "yehbarree-ar.fina.baseline" = -19;
