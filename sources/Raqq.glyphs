@@ -2017,7 +2017,7 @@ pos = (62,416);
 },
 {
 name = kasra;
-pos = (57,-56);
+pos = (130,-36);
 },
 {
 name = top;
@@ -2085,7 +2085,7 @@ pos = (58,456);
 },
 {
 name = kasra;
-pos = (57,-56);
+pos = (130,-36);
 },
 {
 name = top;
@@ -2154,7 +2154,7 @@ pos = (68,527);
 },
 {
 name = kasra;
-pos = (66,-56);
+pos = (130,-40);
 },
 {
 name = top;
@@ -5802,7 +5802,7 @@ pos = (-54,524);
 },
 {
 name = kasra;
-pos = (80,-47);
+pos = (123,-36);
 }
 );
 backgroundImage = {
