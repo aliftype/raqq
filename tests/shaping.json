@@ -733,7 +733,7 @@
     },
     {
       "input": "حسا",
-      "expectation": "alef-ar.fina=2+100|_c.seen.beh=1+0|seen-ar.medi.low=1+424|_c.hah.beh=0@-6,0+1|hah-ar.init=0+703"
+      "expectation": "alef-ar.fina=2+100|_c.seen.beh=1+0|seen-ar.medi.low=1+424|hah-ar.init=0@5,0+708"
     },
     {
       "input": "حضا",
@@ -2261,7 +2261,7 @@
     },
     {
       "input": "لتحسبو",
-      "expectation": "waw-ar.fina=5+472|dotbelow-ar=4@9,-110+0|behDotless-ar.medi=4+128|_c.seen.beh=3+0|seen-ar.medi.low=3+424|_c.hah.beh=2@-6,0+1|hah-ar.medi=2+135|twodotsverticalabove-ar.beh=1@-22,437+0|behDotless-ar.medi=1@0,135+128|_c.seen.beh=0@0,135+0|lam-ar.init=0@0,135+443"
+      "expectation": "waw-ar.fina=5+472|dotbelow-ar=4@9,-110+0|behDotless-ar.medi=4+128|_c.seen.beh=3+0|seen-ar.medi.low=3+424|hah-ar.medi=2@5,0+140|twodotsverticalabove-ar.beh=1@-22,437+0|behDotless-ar.medi=1@0,135+128|_c.seen.beh=0@0,135+0|lam-ar.init=0@0,135+443"
     },
     {
       "input": "لسنتهم",
