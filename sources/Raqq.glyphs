@@ -628,6 +628,9 @@ lookup before_beh {
 	sub fehDotless-ar.init	by fehDotless-ar.init _c.feh.init.beh;
 	sub fehDotless-ar.medi	by fehDotless-ar.medi _c.feh.medi.beh;
 
+	sub heh-ar.init			by heh-ar.init _c.feh.medi.beh;
+	sub heh-ar.medi			by heh-ar.medi _c.feh.medi.beh;
+
 	sub ain-ar.init			by ain-ar.init _c.ain.init.beh;
 	sub ain-ar.medi			by ain-ar.medi _c.ain.medi.beh;
 
@@ -708,6 +711,8 @@ lookup rlig_connection {
 		 lam-ar.medi.short
 		 fehDotless-ar.init
 		 fehDotless-ar.medi
+		 heh-ar.init
+		 heh-ar.medi
 		 seen-ar.init
 		 seen-ar.medi
 		 seen-ar.medi.low]' lookup before_beh
