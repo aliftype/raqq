@@ -11891,7 +11891,7 @@ width = 150;
 {
 associatedMasterId = m01;
 attr = {
-colorPalette = 1;
+colorPalette = 3;
 };
 layerId = "057221C3-A498-4D61-8B14-F8267A46D106";
 name = "Regular 25 Jun 22, 20:50";
@@ -11928,7 +11928,7 @@ width = 150;
 {
 associatedMasterId = m01;
 attr = {
-colorPalette = 1;
+colorPalette = 3;
 };
 layerId = "BF707C9A-F0E2-4E2C-95C3-19D70D58E014";
 name = "Regular 25 Jun 22, 20:50";
@@ -11965,7 +11965,7 @@ width = 150;
 {
 associatedMasterId = m01;
 attr = {
-colorPalette = 1;
+colorPalette = 3;
 };
 layerId = "5F06B904-653D-4E6E-B5AD-10ADD89F84DB";
 name = "Regular 25 Jun 22, 20:51";
