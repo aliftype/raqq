@@ -62,6 +62,7 @@ name = isol;
 code = "behDotless-ar.init
 behDotless-ar.init.med
 behDotless-ar.init.high
+behDotless-ar.init.l1
 hah-ar.init
 seen-ar.init
 sad-ar.init
@@ -71,7 +72,7 @@ fehDotless-ar.init
 fehDotless-ar.init.yeh
 kaf-ar.init
 lam-ar.init
-lam-ar.init.hah
+lam-ar.init.l1
 meem-ar.init
 meem-ar.init.round
 heh-ar.init
@@ -480,12 +481,16 @@ lookup wide_yeh {
 	sub fehDotless-ar.init	by fehDotless-ar.init.yeh;
 } wide_yeh;
 
+lookup level_1 {
+	sub lam-ar.init			by lam-ar.init.l1;
+	sub behDotless-ar.init	by behDotless-ar.init.l1;
+} level_1;
+
 lookup rlig_1 {
 	lookupflag IgnoreMarks;
 
-	sub	 lam-ar.init'
+	sub	[behDotless-ar.init lam-ar.init]' lookup level_1
 		[hah-ar.medi hah-ar.fina]
-	by	 lam-ar.init.hah
 	;
 
 	sub	[fehDotless-ar.medi meem-ar.init meem-ar.medi hah-ar.init hah-ar.medi]
@@ -2060,6 +2065,72 @@ width = 130;
 }
 );
 metricLeft = "=-20";
+metricRight = "=0";
+},
+{
+glyphname = "behDotless-ar.init.l1";
+layers = (
+{
+anchors = (
+{
+name = bottom;
+pos = (530,68);
+},
+{
+name = damma;
+pos = (-1,286);
+},
+{
+name = exit;
+pos = (-28,135);
+},
+{
+name = fatha;
+pos = (49,516);
+},
+{
+name = kasra;
+pos = (117,64);
+},
+{
+name = top;
+pos = (68,437);
+}
+);
+backgroundImage = {
+imagePath = "images/MS-ADD-01116-000-00010.jpg";
+locked = 1;
+pos = (-2715,-2709);
+scale = (5,5);
+};
+layerId = m01;
+shapes = (
+{
+closed = 1;
+nodes = (
+(117,135,l),
+(118,247,o),
+(102,353,o),
+(102,463,cs),
+(102,472,o),
+(95,476,o),
+(88,465,cs),
+(68,434,o),
+(40,405,o),
+(11,386,cs),
+(-3,377,o),
+(0,360,o),
+(2,329,cs),
+(4,296,o),
+(5,266,o),
+(8,135,c)
+);
+}
+);
+width = 117;
+}
+);
+metricLeft = "=0";
 metricRight = "=0";
 },
 {
@@ -5845,7 +5916,7 @@ metricLeft = "=-20@0";
 metricRight = "=0";
 },
 {
-glyphname = "lam-ar.init.hah";
+glyphname = "lam-ar.init.l1";
 layers = (
 {
 anchors = (
