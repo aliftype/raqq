@@ -1569,7 +1569,7 @@ pos = (46,-38);
 },
 {
 name = damma;
-pos = (0,170);
+pos = (17,170);
 },
 {
 name = fatha;
@@ -2005,7 +2005,7 @@ pos = (109,26);
 },
 {
 name = damma;
-pos = (-1,173);
+pos = (12,173);
 },
 {
 name = fatha;
@@ -13193,10 +13193,12 @@ _c.hah.dal = -12;
 "lam_alef-ar.fina" = -80;
 };
 "behDotless-ar.init" = {
+"@MMK_L_sad" = -21;
 "lam_alef-ar.fina" = -60;
 "noonghunna-ar.fina" = -34;
 };
 "behDotless-ar.medi" = {
+"@MMK_L_sad" = -24;
 "lam_alef-ar.fina" = -60;
 "noonghunna-ar.fina" = -34;
 };
