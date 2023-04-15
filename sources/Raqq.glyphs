@@ -12956,7 +12956,7 @@ layers = (
 anchors = (
 {
 name = entry;
-pos = (43,0);
+pos = (47,0);
 },
 {
 name = exit;
@@ -12979,11 +12979,11 @@ nodes = (
 );
 }
 );
-width = 43;
+width = 47;
 }
 );
 metricLeft = "=-110";
-metricRight = "=-33";
+metricRight = "=-29";
 },
 {
 glyphname = _c.ain.medi.reh;
