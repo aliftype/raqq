@@ -203,7 +203,9 @@ date = "2021-04-25 20:10:22 +0000";
 familyName = Raqq;
 featurePrefixes = (
 {
+automatic = 1;
 code = "languagesystem DFLT dflt;
+
 languagesystem arab dflt;
 ";
 name = Languagesystems;

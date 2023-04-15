@@ -22,7 +22,7 @@ import re
 from fontTools.designspaceLib import DesignSpaceDocument
 from fontTools.fontBuilder import FontBuilder
 from fontTools.misc.transform import Identity, Transform
-from fontTools.pens.boundsPen import BoundsPen
+from fontTools.pens.boundsPen import ControlBoundsPen
 from fontTools.pens.recordingPen import RecordingPen
 from fontTools.pens.reverseContourPen import ReverseContourPen
 from fontTools.pens.transformPen import TransformPen
@@ -78,6 +78,7 @@ CODEPAGE_RANGES = {
 
 
 def draw(layer, glyphSet, isTTF):
+    xMin = None
     pen = RecordingPen()
     if layer.attributes.get("colorPalette") is not None:
         # If we are drawing a color layer, and it has components, we need to
@@ -115,11 +116,7 @@ def draw(layer, glyphSet, isTTF):
         pen.replay(t2pen)
         glyph = t2pen.getCharString()
 
-    bpen = BoundsPen(glyphSet)
-    pen.replay(bpen)
-    bounds = bpen.bounds or [0, 0, 0, 0]
-
-    return glyph, bounds
+    return glyph
 
 
 def makeKern(font, master, instance):
@@ -468,13 +465,22 @@ def build(instance, isTTF, args):
     metrics = {}
     glyphs = {}
     for name, layer in glyphSet.items():
-        glyphs[name], bounds = draw(layer, glyphSet, isTTF)
-        metrics[name] = (layer.width, bounds[0])
+        glyphs[name] = draw(layer, glyphSet, isTTF)
+        metrics[name] = [layer.width, 0]
 
     if isTTF:
         fb.setupGlyf(glyphs)
+        glyf = fb.font["glyf"]
+        for name, glyph in glyphs.items():
+            glyph.recalcBounds(glyf)
+            metrics[name][1] = glyph.xMin
     else:
         fb.setupCFF(names["psName"], {}, glyphs, {})
+        for name, charString in glyphs.items():
+            pen = ControlBoundsPen(glyphSet)
+            charString.draw(pen)
+            if pen.bounds:
+                metrics[name][1] = pen.bounds[0]
 
     fb.setupHorizontalMetrics(metrics)
 
