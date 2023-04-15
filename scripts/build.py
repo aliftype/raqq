@@ -518,33 +518,9 @@ def build(instance, isTTF, args):
     return fb.font
 
 
-def addCursiveAnchors(glyph, layer):
-    if (glyph.category, glyph.subCategory) == ("Mark", "Nonspacing"):
-        return
-
-    exit_ = entry_ = False
-    if glyph.name.startswith("_c.") or ".medi" in glyph.name:
-        exit_ = entry_ = True
-
-    if ".init" in glyph.name:
-        exit_ = True
-    if ".fina" in glyph.name:
-        entry_ = True
-
-    anchors = {a.name for a in layer.anchors}
-    if exit_ and "exit" not in anchors:
-        layer.anchors["exit"] = GSAnchor()
-    if entry_ and "entry" not in anchors:
-        layer.anchors["entry"] = GSAnchor()
-        layer.anchors["entry"].position.x = layer.width
-
-
 def propagateAnchors(glyph, layer):
-    if glyph is not None:
-        if glyph.color == 0:
-            return
-
-        addCursiveAnchors(glyph, layer)
+    if glyph is not None and glyph.color == 0:
+        return
 
     for component in layer.components:
         clayer = component.layer or component.component.layers[0]
