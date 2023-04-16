@@ -3853,10 +3853,10 @@ shapes = (
 {
 closed = 1;
 nodes = (
-(253,-4,o),
-(489,-10,o),
+(253,0,o),
+(489,-4,o),
 (713,7,cs),
-(737,9,o),
+(737,8,o),
 (766,30,o),
 (765,57,cs),
 (763,122,o),
@@ -13208,15 +13208,6 @@ metricRight = "=-52";
 glyphname = _c.dal;
 layers = (
 {
-anchors = (
-{
-name = entry;
-pos = (393,0);
-},
-{
-name = exit;
-}
-);
 layerId = m01;
 shapes = (
 {
@@ -13612,26 +13603,15 @@ metricRight = "=0";
 glyphname = _c.sad;
 layers = (
 {
-anchors = (
-{
-name = entry;
-pos = (401,0);
-},
-{
-name = exit;
-}
-);
 layerId = m01;
 shapes = (
 {
 closed = 1;
 nodes = (
-(137,-4,o),
-(282,-2,o),
-(401,0,c),
+(401,0,l),
 (401,110,l),
 (343,110,l),
-(0,-4,l)
+(0,0,l)
 );
 }
 );
