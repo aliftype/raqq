@@ -1718,7 +1718,7 @@
     },
     {
       "input": "تعلو",
-      "expectation": "waw-ar.fina=3+472|lam-ar.medi=2+125|_c.ain.medi.beh=1+66|ain-ar.medi=1+220|twodotsverticalabove-ar.beh=0@-39,400+0|_c.seen.beh=0+0|behDotless-ar.init.high=0+130"
+      "expectation": "waw-ar.fina=3+472|lam-ar.medi=2@-10,0+115|_c.ain.medi.beh=1+66|ain-ar.medi=1+220|twodotsverticalabove-ar.beh=0@-39,400+0|_c.seen.beh=0+0|behDotless-ar.init.high=0+130"
     },
     {
       "input": "تغنم",
@@ -2273,7 +2273,7 @@
     },
     {
       "input": "لتحسبو",
-      "expectation": "waw-ar.fina=5+472|dotbelow-ar=4@9,-110+0|behDotless-ar.medi=4+128|_c.seen.beh=3+0|seen-ar.medi.low=3+424|hah-ar.medi=2@5,0+140|twodotsverticalabove-ar.beh=1@-22,437+0|behDotless-ar.medi=1@0,135+128|_c.seen.beh=0@0,135+0|lam-ar.init=0@0,135+443"
+      "expectation": "waw-ar.fina=5+472|dotbelow-ar=4@-1,-110+0|behDotless-ar.medi=4@-10,0+118|_c.seen.beh=3+0|seen-ar.medi.low=3+424|hah-ar.medi=2@5,0+140|twodotsverticalabove-ar.beh=1@-22,437+0|behDotless-ar.medi=1@0,135+128|_c.seen.beh=0@0,135+0|lam-ar.init=0@0,135+443"
     },
     {
       "input": "لسنتهم",

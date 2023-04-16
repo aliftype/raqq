@@ -13700,6 +13700,7 @@ _c.hah.reh = -131;
 "meem-ar.medi" = -20;
 "meem-ar.medi.round2" = -22;
 "noonghunna-ar.fina" = -34;
+"waw-ar.fina" = -10;
 };
 "@MMK_R_meem" = {
 "seen-ar.medi.low" = 20;
@@ -13788,11 +13789,13 @@ _c.hah.reh = -88;
 "@MMK_L_sad" = -21;
 "lam_alef-ar.fina" = -60;
 "noonghunna-ar.fina" = -34;
+"waw-ar.fina" = -10;
 };
 "behDotless-ar.medi" = {
 "@MMK_L_sad" = -24;
 "lam_alef-ar.fina" = -60;
 "noonghunna-ar.fina" = -34;
+"waw-ar.fina" = -10;
 };
 "fehDotless-ar.init" = {
 _c.feh.init.beh = -114;
