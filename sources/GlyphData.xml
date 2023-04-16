@@ -319,22 +319,37 @@
          accents="fatha-ar, damma-ar, dammatan-ar, kasra-ar, kasratan-ar, hamzaabove-ar"
   />
   <glyph name="alefMaksura-ar" unicode="0649" category="Letter" script="arabic"
-         sortName="arL0079"
+         sortName="arL0079a"
          anchors="hamzaabove, bottom, fatha, damma, kasra"
          accents="fatha-ar, fathatan-ar, damma-ar, dammatan-ar, kasra-ar, kasratan-ar, hamzaabove-ar, twodotsverticalbelow-ar"
   />
-  <glyph name="alefMaksura-ar.alt" unicode="0649" category="Letter" script="arabic"
-         sortName="arL0079"
+  <glyph name="alefMaksura-ar.salt" category="Letter" script="arabic"
+         sortName="arL0079b"
          anchors="hamzaabove, bottom, fatha, damma, kasra"
          accents="fatha-ar, fathatan-ar, damma-ar, dammatan-ar, kasra-ar, kasratan-ar.alt, hamzaabove-ar, twodotsverticalbelow-ar"
   />
   <glyph name="alefMaksura-ar.fina" category="Letter" script="arabic"
-         sortName="arL0080.alt"
+         sortName="arL0080a"
          anchors="hamzaabove, bottom, fatha, damma, kasra"
          accents="fatha-ar, fathatan-ar, damma-ar, dammatan-ar, kasra-ar, kasratan-ar, hamzaabove-ar, twodotsverticalbelow-ar"
   />
-  <glyph name="alefMaksura-ar.fina.alt" category="Letter" script="arabic"
-         sortName="arL0080.alt"
+  <glyph name="alefMaksura-ar.fina.salt" category="Letter" script="arabic"
+         sortName="arL0080b"
+         anchors="hamzaabove, bottom, fatha, damma, kasra"
+         accents="fatha-ar, fathatan-ar, damma-ar, dammatan-ar, kasra-ar, kasratan-ar.alt, hamzaabove-ar, twodotsverticalbelow-ar"
+  />
+  <glyph name="alefMaksura-ar.fina.wide" category="Letter" script="arabic"
+         sortName="arL0080c"
+         anchors="hamzaabove, bottom, fatha, damma, kasra"
+         accents="fatha-ar, fathatan-ar, damma-ar, dammatan-ar, kasra-ar, kasratan-ar.alt, hamzaabove-ar, twodotsverticalbelow-ar"
+  />
+  <glyph name="alefMaksura-ar.fina.wide.salt" category="Letter" script="arabic"
+         sortName="arL0080d"
+         anchors="hamzaabove, bottom, fatha, damma, kasra"
+         accents="fatha-ar, fathatan-ar, damma-ar, dammatan-ar, kasra-ar, kasratan-ar.alt, hamzaabove-ar, twodotsverticalbelow-ar"
+  />
+  <glyph name="alefMaksura-ar.fina.tooth" category="Letter" script="arabic"
+         sortName="arL0080e"
          anchors="hamzaabove, bottom, fatha, damma, kasra"
          accents="fatha-ar, fathatan-ar, damma-ar, dammatan-ar, kasra-ar, kasratan-ar.alt, hamzaabove-ar, twodotsverticalbelow-ar"
   />

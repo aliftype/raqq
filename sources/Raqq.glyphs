@@ -203,7 +203,6 @@ date = "2021-04-25 20:10:22 +0000";
 familyName = Raqq;
 featurePrefixes = (
 {
-automatic = 1;
 code = "languagesystem DFLT dflt;
 
 languagesystem arab dflt;
@@ -8445,92 +8444,6 @@ metricLeft = "=0@11";
 metricRight = "=0@0";
 },
 {
-glyphname = "alefMaksura-ar.fina.tooth";
-layers = (
-{
-anchors = (
-{
-name = bottom;
-pos = (348,-230);
-},
-{
-name = damma;
-pos = (-88,-82);
-},
-{
-name = entry;
-pos = (5,0);
-},
-{
-name = fatha;
-pos = (-83,272);
-},
-{
-name = kasra;
-pos = (197,-308);
-}
-);
-backgroundImage = {
-alpha = 80;
-imagePath = "images/MS-ADD-01116-000-00018.jpg";
-locked = 1;
-pos = (-3154,-2556);
-scale = (5,5);
-};
-layerId = m01;
-shapes = (
-{
-closed = 1;
-nodes = (
-(353,-240,o),
-(364,-205,o),
-(355,-148,cs),
-(346,-95,o),
-(334,-62,o),
-(320,-36,cs),
-(313,-24,o),
-(312,-20,o),
-(289,-21,cs),
-(177,-26,o),
-(157,-20,o),
-(138,-17,cs),
-(119,-14,o),
-(119,-5,o),
-(119,0,c),
-(119,57,l),
-(0,57,l),
-(0,0,l),
-(0,-107,o),
-(19,-151,o),
-(221,-142,cs),
-(235,-141,o),
-(234,-149,o),
-(237,-154,c),
-(144,-166,o),
-(56,-156,o),
-(6,-127,cs),
-(-6,-120,o),
-(-14,-130,o),
-(-21,-141,cs),
-(-37,-168,o),
-(-67,-198,o),
-(-84,-198,cs),
-(-102,-198,o),
-(-105,-211,o),
-(-93,-223,cs),
-(-34,-279,o),
-(205,-276,o),
-(313,-250,cs)
-);
-}
-);
-width = 358;
-}
-);
-metricLeft = "=0@0";
-metricRight = "=0";
-},
-{
 glyphname = "alefMaksura-ar.fina.wide";
 layers = (
 {
@@ -8724,6 +8637,92 @@ width = 282;
 );
 metricLeft = "=0@11";
 metricRight = "=0@10";
+},
+{
+glyphname = "alefMaksura-ar.fina.tooth";
+layers = (
+{
+anchors = (
+{
+name = bottom;
+pos = (348,-230);
+},
+{
+name = damma;
+pos = (-88,-82);
+},
+{
+name = entry;
+pos = (5,0);
+},
+{
+name = fatha;
+pos = (-83,272);
+},
+{
+name = kasra;
+pos = (197,-308);
+}
+);
+backgroundImage = {
+alpha = 80;
+imagePath = "images/MS-ADD-01116-000-00018.jpg";
+locked = 1;
+pos = (-3154,-2556);
+scale = (5,5);
+};
+layerId = m01;
+shapes = (
+{
+closed = 1;
+nodes = (
+(353,-240,o),
+(364,-205,o),
+(355,-148,cs),
+(346,-95,o),
+(334,-62,o),
+(320,-36,cs),
+(313,-24,o),
+(312,-20,o),
+(289,-21,cs),
+(177,-26,o),
+(157,-20,o),
+(138,-17,cs),
+(119,-14,o),
+(119,-5,o),
+(119,0,c),
+(119,57,l),
+(0,57,l),
+(0,0,l),
+(0,-107,o),
+(19,-151,o),
+(221,-142,cs),
+(235,-141,o),
+(234,-149,o),
+(237,-154,c),
+(144,-166,o),
+(56,-156,o),
+(6,-127,cs),
+(-6,-120,o),
+(-14,-130,o),
+(-21,-141,cs),
+(-37,-168,o),
+(-67,-198,o),
+(-84,-198,cs),
+(-102,-198,o),
+(-105,-211,o),
+(-93,-223,cs),
+(-34,-279,o),
+(205,-276,o),
+(313,-250,cs)
+);
+}
+);
+width = 358;
+}
+);
+metricLeft = "=0@0";
+metricRight = "=0";
 },
 {
 glyphname = "yehbarree-ar";
@@ -10949,16 +10948,6 @@ width = 1200;
 unicode = 1641;
 },
 {
-glyphname = hairspace;
-layers = (
-{
-layerId = m01;
-width = 36;
-}
-);
-unicode = 8202;
-},
-{
 glyphname = thinspace;
 layers = (
 {
@@ -10967,6 +10956,16 @@ width = 120;
 }
 );
 unicode = (8201,8239);
+},
+{
+glyphname = hairspace;
+layers = (
+{
+layerId = m01;
+width = 36;
+}
+);
+unicode = 8202;
 },
 {
 glyphname = zerowidthspace;
@@ -13700,10 +13699,10 @@ _c.hah.noon = -20;
 };
 "@MMK_R_lam" = {
 "@MMK_L_sad" = -23;
-"noonghunna-ar.fina" = -34;
-"meem-ar.medi.round2" = -22;
 "meem-ar.fina" = -25;
 "meem-ar.medi" = -20;
+"meem-ar.medi.round2" = -22;
+"noonghunna-ar.fina" = -34;
 };
 "@MMK_R_meem" = {
 "seen-ar.medi.low" = 20;
