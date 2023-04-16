@@ -13802,10 +13802,22 @@ _c.hah.reh = -131;
 "seen-ar.medi.low" = 5;
 };
 "@MMK_R_kaf" = {
+"@MMK_L_beh" = -5;
+"@MMK_L_feh.medi" = -4;
+"@MMK_L_sad" = -10;
+"alefMaksura-ar.fina" = -36;
+"alefMaksura-ar.fina.salt" = -47;
+"hah-ar.fina" = -20;
+"hah-ar.medi" = -22;
+"hah-ar.medi.l1" = -24;
 "lam_alef-ar.fina" = -85;
 "meem-ar.fina" = -12;
 "meem-ar.medi" = -5;
 "meem-ar.medi.round2" = -8;
+"noonghunna-ar.fina" = -30;
+"qafDotless-ar.fina" = -7;
+"reh-ar.fina" = -5;
+"yehbarree-ar.fina.baseline" = -21;
 };
 "@MMK_R_lam" = {
 "@MMK_L_sad" = -23;
