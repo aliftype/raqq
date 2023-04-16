@@ -482,14 +482,15 @@ lookup wide_yeh {
 lookup level_1 {
 	sub behDotless-ar.init	by behDotless-ar.init.l1;
 	sub hah-ar.init			by hah-ar.init.l1;
+	sub hah-ar.medi			by hah-ar.medi.l1;
 	sub lam-ar.init			by lam-ar.init.l1;
 } level_1;
 
 lookup rlig_1 {
 	lookupflag IgnoreMarks;
 
-	sub	[behDotless-ar.init hah-ar.init lam-ar.init]' lookup level_1
-		[hah-ar.medi hah-ar.fina]
+	sub	[behDotless-ar.init hah-ar.init hah-ar.medi lam-ar.init]' lookup level_1
+		[hah-ar.medi hah-ar.medi.l1 hah-ar.fina]
 	;
 
 	sub	[fehDotless-ar.medi meem-ar.init meem-ar.medi hah-ar.init hah-ar.medi]
@@ -2496,6 +2497,34 @@ ref = "hah-ar.init";
 }
 );
 width = 703;
+}
+);
+},
+{
+glyphname = "hah-ar.medi.l1";
+kernLeft = hah;
+layers = (
+{
+anchors = (
+{
+name = entry;
+pos = (109,120);
+},
+{
+name = exit;
+},
+{
+name = fatha;
+pos = (58,309);
+}
+);
+layerId = m01;
+shapes = (
+{
+ref = "hah-ar.init.l1";
+}
+);
+width = 643;
 }
 );
 },

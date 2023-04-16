@@ -736,6 +736,10 @@
       "expectation": "heh-ar.fina=2+339|dotbelow-ar=1@17,-110+0|_c.seen.beh=1+0|behDotless-ar.medi.med=1+128|_c.hah.beh=0+7|hah-ar.init=0+703"
     },
     {
+      "input": "حجج",
+      "expectation": "dotbelow-ar=2@611,-122+0|hah-ar.fina=2+407|dotbelow-ar=1@521,-10+0|hah-ar.medi.l1=1@0,130+109|hah-ar.init.l1=0@0,250+643"
+    },
+    {
       "input": "حسا",
       "expectation": "alef-ar.fina=2+100|_c.seen.beh=1+0|seen-ar.medi.low=1+424|hah-ar.init=0@5,0+708"
     },
@@ -2297,7 +2301,7 @@
     },
     {
       "input": "الحجارة",
-      "expectation": "twodotsverticalabove-ar=6@154,403+0|heh-ar=6+356|reh-ar=5@400,0+850|alef-ar.fina=4@400,0+500|dotbelow-ar=3@220,-112+0|_c.hah.beh=3+7|hah-ar.medi=3+135|hah-ar.medi=2@0,135+135|lam-ar.init.l1=1@63,270+568|alef-ar=0@400,0+978"
+      "expectation": "twodotsverticalabove-ar=6@154,403+0|heh-ar=6+356|reh-ar=5@400,0+850|alef-ar.fina=4@400,0+500|dotbelow-ar=3@220,-112+0|_c.hah.beh=3+7|hah-ar.medi=3+135|hah-ar.medi.l1=2@0,135+109|lam-ar.init.l1=1@63,255+568|alef-ar=0@400,0+978"
     },
     {
       "input": "فسنيسرك",
@@ -2313,7 +2317,7 @@
     },
     {
       "input": "الحجَارة",
-      "expectation": "twodotsverticalabove-ar=7@154,403+0|heh-ar=7+356|reh-ar=6@400,0+850|alef-ar.fina=5@400,0+500|fatha-ar=3@13,262+0|dotbelow-ar=3@220,-112+0|_c.hah.beh=3+7|hah-ar.medi=3+135|hah-ar.medi=2@0,135+135|lam-ar.init.l1=1@63,270+568|alef-ar=0@400,0+978"
+      "expectation": "twodotsverticalabove-ar=7@154,403+0|heh-ar=7+356|reh-ar=6@400,0+850|alef-ar.fina=5@400,0+500|fatha-ar=3@13,262+0|dotbelow-ar=3@220,-112+0|_c.hah.beh=3+7|hah-ar.medi=3+135|hah-ar.medi.l1=2@0,135+109|lam-ar.init.l1=1@63,255+568|alef-ar=0@400,0+978"
     },
     {
       "input": "بببببببب",

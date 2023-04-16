@@ -54,11 +54,17 @@ lookup overhang {
 	pos lam-ar.init' 80 _c.seen.beh' lam-ar.medi.short' _c.seen.beh' lam-ar.medi' _c.seen.beh' behDotless-ar.medi' hah-ar.fina';
 	pos lam-ar.init' 80 _c.seen.beh' lam-ar.medi.short' _c.seen.beh' lam-ar.medi' _c.seen.beh' lam-ar.medi.short' hah-ar.fina';
 	pos behDotless-ar.init.l1' 420 hah-ar.medi';
+	pos behDotless-ar.init.l1' 420 hah-ar.medi.l1';
 	pos seen-ar.init' 190 hah-ar.medi';
+	pos seen-ar.init' 190 hah-ar.medi.l1';
 	pos fehDotless-ar.init' 230 hah-ar.medi';
+	pos fehDotless-ar.init' 230 hah-ar.medi.l1';
 	pos lam-ar.init.l1' 400 hah-ar.medi';
+	pos lam-ar.init.l1' 400 hah-ar.medi.l1';
 	pos meem-ar.init.round' 170 hah-ar.medi';
+	pos meem-ar.init.round' 170 hah-ar.medi.l1';
 	pos heh-ar.init.round' 240 hah-ar.medi';
+	pos heh-ar.init.round' 240 hah-ar.medi.l1';
 	pos behDotless-ar.init.high' 310 _c.seen.beh' behDotless-ar.medi' hah-ar.medi';
 	pos behDotless-ar.init.high' 220 _c.seen.beh' ain-ar.medi' hah-ar.medi';
 	pos behDotless-ar.init' 60 _c.seen.beh' fehDotless-ar.medi' hah-ar.medi';
