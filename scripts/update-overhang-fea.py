@@ -75,6 +75,18 @@ def main(args):
             found = False
             for string in itertools.product(*sequence):
                 text = "".join(string)
+
+                # If text has a hah followed by any other letter then yeh bari,
+                # then the adjustment for the hah is enough and the rule here
+                # is pointless.
+                if "ح" in text and text.endswith("ے") and not text.endswith("حے"):
+                    continue
+
+                # If we have more than one hah, then the adjustment for the
+                # first one is enough and the rule here is pointless.
+                if text.count("ح") > 1:
+                    continue
+
                 glyphs, adjustment = shape(font, text, features={"kern": False})
                 if adjustment < THRESHOLD:
                     continue
