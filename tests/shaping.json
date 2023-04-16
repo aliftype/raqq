@@ -172,7 +172,7 @@
     },
     {
       "input": "حو",
-      "expectation": "waw-ar.fina.round=1+492|_c.hah.meem=0+111|hah-ar.init=0@-131,0+572"
+      "expectation": "waw-ar.fina.round=1+492|_c.hah.meem=0@-4,0+107|hah-ar.init=0@-131,0+572"
     },
     {
       "input": "حى",
@@ -560,7 +560,7 @@
     },
     {
       "input": "لم تحاجون",
-      "expectation": "dotabove-ar=8@-62,191+0|noonghunna-ar=8+228|waw-ar.fina.round=7@400,0+892|dotbelow-ar=6@193,-112+0|_c.hah.meem=6+111|hah-ar.init=6@-131,0+572|alef-ar.fina=5@400,0+500|_c.hah.beh=4+7|hah-ar.medi=4+135|twodotsverticalabove-ar=3@-13,407+0|behDotless-ar.init.l1=3@28,0+565|space=2+400|meem-ar.fina=1+567|lam-ar.init=0@-25,0+98"
+      "expectation": "dotabove-ar=8@-62,191+0|noonghunna-ar=8+228|waw-ar.fina.round=7@400,0+892|dotbelow-ar=6@189,-112+0|_c.hah.meem=6@-4,0+107|hah-ar.init=6@-131,0+572|alef-ar.fina=5@400,0+500|_c.hah.beh=4+7|hah-ar.medi=4+135|twodotsverticalabove-ar=3@-13,407+0|behDotless-ar.init.l1=3@28,0+565|space=2+400|meem-ar.fina=1+567|lam-ar.init=0@-25,0+98"
     },
     {
       "input": "۝٥",

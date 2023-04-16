@@ -1,5 +1,5 @@
 {
-.appVersion = "3186";
+.appVersion = "3187";
 .formatVersion = 3;
 classes = (
 {
@@ -13754,6 +13754,7 @@ _c.hah.meem = {
 "meem-ar.medi.round2" = 6;
 "qafDotless-ar.fina" = 7;
 "reh-ar.fina" = -10;
+"waw-ar.fina.round" = -4;
 "yehbarree-ar.fina" = -27;
 "yehbarree-ar.fina.baseline" = -18;
 };
