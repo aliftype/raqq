@@ -625,6 +625,10 @@ lookup before_beh {
 	sub lam-ar.medi				by lam-ar.medi _c.seen.beh;
 	sub lam-ar.medi.short		by lam-ar.medi.short _c.seen.beh;
 
+	sub meem-ar.init			by meem-ar.init _c.seen.beh;
+	sub meem-ar.medi			by meem-ar.medi _c.seen.beh;
+	sub meem-ar.medi.round		by meem-ar.medi.round _c.seen.beh;
+
 	sub fehDotless-ar.init	by fehDotless-ar.init _c.feh.init.beh;
 	sub fehDotless-ar.medi	by fehDotless-ar.medi _c.feh.medi.beh;
 
@@ -714,6 +718,9 @@ lookup rlig_connection {
 		 lam-ar.init
 		 lam-ar.medi
 		 lam-ar.medi.short
+		 meem-ar.init
+		 meem-ar.medi
+		 meem-ar.medi.round
 		 fehDotless-ar.init
 		 fehDotless-ar.medi
 		 heh-ar.init
@@ -13937,6 +13944,9 @@ _c.feh.medi.reh = -70;
 _c.hah.noon = -25;
 "lam_alef-ar.fina" = -80;
 "seen-ar.medi.low" = -10;
+};
+"heh-ar.init" = {
+"@MMK_L_sad" = -28;
 };
 };
 };
