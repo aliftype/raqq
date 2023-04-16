@@ -240,9 +240,9 @@ code = "lookup ccmp_1 {
 
 lookup ccmp_2 {
 	sub alef-ar fathatan-ar' by fathatan-ar.alt;
-	sub endofayah-ar' @numbers' @numbers' five-ar' by endofayah-ar.5;
-	sub endofayah-ar' @numbers' five-ar' by endofayah-ar.5;
-	sub endofayah-ar' five-ar' by endofayah-ar.5;
+	sub endofayah-ar' @numbers @numbers five-ar by endofayah-ar.05;
+	sub endofayah-ar' @numbers five-ar by endofayah-ar.05;
+	sub endofayah-ar' five-ar by endofayah-ar.05;
 } ccmp_2;
 
 lookup ccmp_3 {
@@ -10970,7 +10970,7 @@ glyphname = "zero-ar";
 layers = (
 {
 layerId = m01;
-width = 1200;
+width = 0;
 }
 );
 unicode = 1632;
@@ -10980,7 +10980,7 @@ glyphname = "one-ar";
 layers = (
 {
 layerId = m01;
-width = 1200;
+width = 0;
 }
 );
 unicode = 1633;
@@ -10990,7 +10990,7 @@ glyphname = "two-ar";
 layers = (
 {
 layerId = m01;
-width = 1200;
+width = 0;
 }
 );
 unicode = 1634;
@@ -11000,7 +11000,7 @@ glyphname = "three-ar";
 layers = (
 {
 layerId = m01;
-width = 1200;
+width = 0;
 }
 );
 unicode = 1635;
@@ -11010,7 +11010,7 @@ glyphname = "four-ar";
 layers = (
 {
 layerId = m01;
-width = 1200;
+width = 0;
 }
 );
 unicode = 1636;
@@ -11020,7 +11020,7 @@ glyphname = "five-ar";
 layers = (
 {
 layerId = m01;
-width = 1200;
+width = 0;
 }
 );
 unicode = 1637;
@@ -11030,7 +11030,7 @@ glyphname = "six-ar";
 layers = (
 {
 layerId = m01;
-width = 1200;
+width = 0;
 }
 );
 unicode = 1638;
@@ -11040,7 +11040,7 @@ glyphname = "seven-ar";
 layers = (
 {
 layerId = m01;
-width = 1200;
+width = 0;
 }
 );
 unicode = 1639;
@@ -11050,7 +11050,7 @@ glyphname = "eight-ar";
 layers = (
 {
 layerId = m01;
-width = 1200;
+width = 0;
 }
 );
 unicode = 1640;
@@ -11060,7 +11060,7 @@ glyphname = "nine-ar";
 layers = (
 {
 layerId = m01;
-width = 1200;
+width = 0;
 }
 );
 unicode = 1641;
@@ -11326,7 +11326,7 @@ metricWidth = "=0";
 unicode = 1757;
 },
 {
-glyphname = "endofayah-ar.5";
+glyphname = "endofayah-ar.05";
 layers = (
 {
 layerId = m01;

@@ -585,7 +585,7 @@
     {
       "input": "۝٥",
       "direction": "ltr",
-      "expectation": "endofayah-ar.5=0+0"
+      "expectation": "endofayah-ar.05=0+0|five-ar=1+0"
     },
     {
       "input": "ئفة",
@@ -1542,47 +1542,47 @@
     {
       "input": "۝١٥",
       "direction": "ltr",
-      "expectation": "endofayah-ar.5=0+0"
+      "expectation": "endofayah-ar.05=0+0|one-ar=1+0|five-ar=2+0"
     },
     {
       "input": "۝٢٥",
       "direction": "ltr",
-      "expectation": "endofayah-ar.5=0+0"
+      "expectation": "endofayah-ar.05=0+0|two-ar=1+0|five-ar=2+0"
     },
     {
       "input": "۝٣٥",
       "direction": "ltr",
-      "expectation": "endofayah-ar.5=0+0"
+      "expectation": "endofayah-ar.05=0+0|three-ar=1+0|five-ar=2+0"
     },
     {
       "input": "۝٤٥",
       "direction": "ltr",
-      "expectation": "endofayah-ar.5=0+0"
+      "expectation": "endofayah-ar.05=0+0|four-ar=1+0|five-ar=2+0"
     },
     {
       "input": "۝٥٥",
       "direction": "ltr",
-      "expectation": "endofayah-ar.5=0+0"
+      "expectation": "endofayah-ar.05=0+0|five-ar=1+0|five-ar=2+0"
     },
     {
       "input": "۝٦٥",
       "direction": "ltr",
-      "expectation": "endofayah-ar.5=0+0"
+      "expectation": "endofayah-ar.05=0+0|six-ar=1+0|five-ar=2+0"
     },
     {
       "input": "۝٧٥",
       "direction": "ltr",
-      "expectation": "endofayah-ar.5=0+0"
+      "expectation": "endofayah-ar.05=0+0|seven-ar=1+0|five-ar=2+0"
     },
     {
       "input": "۝٨٥",
       "direction": "ltr",
-      "expectation": "endofayah-ar.5=0+0"
+      "expectation": "endofayah-ar.05=0+0|eight-ar=1+0|five-ar=2+0"
     },
     {
       "input": "۝٩٥",
       "direction": "ltr",
-      "expectation": "endofayah-ar.5=0+0"
+      "expectation": "endofayah-ar.05=0+0|nine-ar=1+0|five-ar=2+0"
     },
     {
       "input": "افنے",
@@ -2115,97 +2115,97 @@
     {
       "input": "۝١٠٥",
       "direction": "ltr",
-      "expectation": "endofayah-ar.5=0+0"
+      "expectation": "endofayah-ar.05=0+0|one-ar=1+0|zero-ar=2+0|five-ar=3+0"
     },
     {
       "input": "۝١١٥",
       "direction": "ltr",
-      "expectation": "endofayah-ar.5=0+0"
+      "expectation": "endofayah-ar.05=0+0|one-ar=1+0|one-ar=2+0|five-ar=3+0"
     },
     {
       "input": "۝١٢٥",
       "direction": "ltr",
-      "expectation": "endofayah-ar.5=0+0"
+      "expectation": "endofayah-ar.05=0+0|one-ar=1+0|two-ar=2+0|five-ar=3+0"
     },
     {
       "input": "۝١٣٥",
       "direction": "ltr",
-      "expectation": "endofayah-ar.5=0+0"
+      "expectation": "endofayah-ar.05=0+0|one-ar=1+0|three-ar=2+0|five-ar=3+0"
     },
     {
       "input": "۝١٤٥",
       "direction": "ltr",
-      "expectation": "endofayah-ar.5=0+0"
+      "expectation": "endofayah-ar.05=0+0|one-ar=1+0|four-ar=2+0|five-ar=3+0"
     },
     {
       "input": "۝١٥٥",
       "direction": "ltr",
-      "expectation": "endofayah-ar.5=0+0"
+      "expectation": "endofayah-ar.05=0+0|one-ar=1+0|five-ar=2+0|five-ar=3+0"
     },
     {
       "input": "۝١٦٥",
       "direction": "ltr",
-      "expectation": "endofayah-ar.5=0+0"
+      "expectation": "endofayah-ar.05=0+0|one-ar=1+0|six-ar=2+0|five-ar=3+0"
     },
     {
       "input": "۝١٧٥",
       "direction": "ltr",
-      "expectation": "endofayah-ar.5=0+0"
+      "expectation": "endofayah-ar.05=0+0|one-ar=1+0|seven-ar=2+0|five-ar=3+0"
     },
     {
       "input": "۝١٨٥",
       "direction": "ltr",
-      "expectation": "endofayah-ar.5=0+0"
+      "expectation": "endofayah-ar.05=0+0|one-ar=1+0|eight-ar=2+0|five-ar=3+0"
     },
     {
       "input": "۝١٩٥",
       "direction": "ltr",
-      "expectation": "endofayah-ar.5=0+0"
+      "expectation": "endofayah-ar.05=0+0|one-ar=1+0|nine-ar=2+0|five-ar=3+0"
     },
     {
       "input": "۝٢٠٥",
       "direction": "ltr",
-      "expectation": "endofayah-ar.5=0+0"
+      "expectation": "endofayah-ar.05=0+0|two-ar=1+0|zero-ar=2+0|five-ar=3+0"
     },
     {
       "input": "۝٢١٥",
       "direction": "ltr",
-      "expectation": "endofayah-ar.5=0+0"
+      "expectation": "endofayah-ar.05=0+0|two-ar=1+0|one-ar=2+0|five-ar=3+0"
     },
     {
       "input": "۝٢٢٥",
       "direction": "ltr",
-      "expectation": "endofayah-ar.5=0+0"
+      "expectation": "endofayah-ar.05=0+0|two-ar=1+0|two-ar=2+0|five-ar=3+0"
     },
     {
       "input": "۝٢٣٥",
       "direction": "ltr",
-      "expectation": "endofayah-ar.5=0+0"
+      "expectation": "endofayah-ar.05=0+0|two-ar=1+0|three-ar=2+0|five-ar=3+0"
     },
     {
       "input": "۝٢٤٥",
       "direction": "ltr",
-      "expectation": "endofayah-ar.5=0+0"
+      "expectation": "endofayah-ar.05=0+0|two-ar=1+0|four-ar=2+0|five-ar=3+0"
     },
     {
       "input": "۝٢٥٥",
       "direction": "ltr",
-      "expectation": "endofayah-ar.5=0+0"
+      "expectation": "endofayah-ar.05=0+0|two-ar=1+0|five-ar=2+0|five-ar=3+0"
     },
     {
       "input": "۝٢٦٥",
       "direction": "ltr",
-      "expectation": "endofayah-ar.5=0+0"
+      "expectation": "endofayah-ar.05=0+0|two-ar=1+0|six-ar=2+0|five-ar=3+0"
     },
     {
       "input": "۝٢٧٥",
       "direction": "ltr",
-      "expectation": "endofayah-ar.5=0+0"
+      "expectation": "endofayah-ar.05=0+0|two-ar=1+0|seven-ar=2+0|five-ar=3+0"
     },
     {
       "input": "۝٢٨٥",
       "direction": "ltr",
-      "expectation": "endofayah-ar.5=0+0"
+      "expectation": "endofayah-ar.05=0+0|two-ar=1+0|eight-ar=2+0|five-ar=3+0"
     },
     {
       "input": "اتبعو",
