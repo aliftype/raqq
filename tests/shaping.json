@@ -116,7 +116,7 @@
     },
     {
       "input": "حح",
-      "expectation": "hah-ar.fina=1+407|hah-ar.init=0@0,130+703"
+      "expectation": "hah-ar.fina=1+407|hah-ar.init.l1=0@0,130+643"
     },
     {
       "input": "حد",
@@ -2265,7 +2265,7 @@
     },
     {
       "input": "حاججتم",
-      "expectation": "meem-ar.fina.round=5+554|twodotsverticalabove-ar.beh=4@-57,278+0|behDotless-ar.medi.round=4+110|dotbelow-ar=3@220,-112+0|_c.hah.beh=3+7|hah-ar.medi=3+135|dotbelow-ar=2@213,23+0|hah-ar.init=2@0,135+703|alef-ar.fina=1@400,0+500|_c.hah.beh=0+7|hah-ar.init=0+703"
+      "expectation": "meem-ar.fina.round=5+554|twodotsverticalabove-ar.beh=4@-57,278+0|behDotless-ar.medi.round=4+110|dotbelow-ar=3@220,-112+0|_c.hah.beh=3+7|hah-ar.medi=3+135|dotbelow-ar=2@521,-5+0|hah-ar.init.l1=2@0,135+643|alef-ar.fina=1@400,0+500|_c.hah.beh=0+7|hah-ar.init=0+703"
     },
     {
       "input": "رِزقاً",
