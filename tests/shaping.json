@@ -1385,7 +1385,7 @@
     },
     {
       "input": "نـا",
-      "expectation": "alef-ar.fina=2+100|kashida-ar.real=1+100|dotabove-ar=0@2,299+0|behDotless-ar.init=0+130"
+      "expectation": "alef-ar.fina=2+100|kashida-ar.1=1+100|dotabove-ar=0@2,299+0|behDotless-ar.init=0+130"
     },
     {
       "input": "نفا",
@@ -1998,7 +1998,7 @@
     },
     {
       "input": "نــا",
-      "expectation": "alef-ar.fina=3+100|kashida-ar.real=2+100|kashida-ar.real=1+100|dotabove-ar=0@2,299+0|behDotless-ar.init=0+130"
+      "expectation": "alef-ar.fina=3+100|kashida-ar.1=2+100|kashida-ar.1=1+100|dotabove-ar=0@2,299+0|behDotless-ar.init=0+130"
     },
     {
       "input": "نفبا",
@@ -2261,7 +2261,7 @@
     },
     {
       "input": "تيــتم",
-      "expectation": "meem-ar.fina.round=5+554|twodotsverticalabove-ar.beh=4@-57,278+0|behDotless-ar.medi.round=4+110|kashida-ar.real=3+100|kashida-ar.real=2+100|twodotsverticalbelow-ar=1@9,-137+0|behDotless-ar.medi=1+128|twodotsverticalabove-ar.beh=0@-39,400+0|_c.seen.beh=0+0|behDotless-ar.init.high=0+130"
+      "expectation": "meem-ar.fina.round=5+554|twodotsverticalabove-ar.beh=4@-57,278+0|behDotless-ar.medi.round=4+110|kashida-ar.1=3+100|kashida-ar.1=2+100|twodotsverticalbelow-ar=1@9,-137+0|behDotless-ar.medi=1+128|twodotsverticalabove-ar.beh=0@-39,400+0|_c.seen.beh=0+0|behDotless-ar.init.high=0+130"
     },
     {
       "input": "حاججتم",
@@ -2321,7 +2321,7 @@
     },
     {
       "input": "يــــتخذ",
-      "expectation": "dotabove-ar=7@426,249+0|dal-ar.fina=7+875|dotabove-ar=6@-22,198+0|_c.hah.dal=6+71|hah-ar.medi=6@-71,0+64|twodotsverticalabove-ar.beh=5@-22,437+0|behDotless-ar.medi=5@0,135+128|kashida-ar.real=4@0,135+100|kashida-ar.real=3@0,135+100|kashida-ar.real=2@0,135+100|kashida-ar.real=1@0,135+100|twodotsverticalbelow-ar=0@72,62+0|behDotless-ar.init=0@0,135+130"
+      "expectation": "dotabove-ar=7@426,249+0|dal-ar.fina=7+875|dotabove-ar=6@-22,198+0|_c.hah.dal=6+71|hah-ar.medi=6@-71,0+64|twodotsverticalabove-ar.beh=5@-22,437+0|behDotless-ar.medi=5@0,135+128|kashida-ar.1=4@0,135+100|kashida-ar.1=3@0,135+100|kashida-ar.1=2@0,135+100|kashida-ar.1=1@0,135+100|twodotsverticalbelow-ar=0@72,62+0|behDotless-ar.init=0@0,135+130"
     },
     {
       "input": "التمنفحمد",

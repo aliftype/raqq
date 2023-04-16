@@ -351,7 +351,7 @@ lookup rlig_kashida {
 	;
 
 	sub	 kashida-ar'
-	by	 kashida-ar.real
+	by	 kashida-ar.1
 	;
 } rlig_kashida;
 
@@ -359,7 +359,7 @@ lookup rlig_kashida {
 lookup rlig_kashida_2 {
 	lookupflag IgnoreMarks;
 
-	rsub kashida-ar.real'
+	rsub kashida-ar.1'
 		[kashida-ar dal-ar.fina
 		 sad-ar.medi sad-ar.fina
 		 tah-ar.medi tah-ar.fina
@@ -5559,7 +5559,7 @@ ref = "kaf-ar.init";
 {
 alignment = -1;
 pos = (658,0);
-ref = "kashida-ar.real";
+ref = "kashida-ar.1";
 }
 );
 width = 758;
@@ -5766,7 +5766,7 @@ ref = "lam-ar";
 {
 alignment = -1;
 pos = (130,0);
-ref = "kashida-ar.real";
+ref = "kashida-ar.1";
 scale = (0.6,1);
 }
 );
@@ -5913,7 +5913,7 @@ ref = "lam-ar.init";
 {
 alignment = -1;
 pos = (38,0);
-ref = "kashida-ar.real";
+ref = "kashida-ar.1";
 }
 );
 width = 125;
@@ -7562,7 +7562,7 @@ ref = "heh-ar.medi.round";
 {
 alignment = -1;
 pos = (20,0);
-ref = "kashida-ar.real";
+ref = "kashida-ar.1";
 scale = (2,1);
 }
 );
@@ -7730,7 +7730,7 @@ ref = "heh-ar.init.round";
 {
 alignment = -1;
 pos = (20,0);
-ref = "kashida-ar.real";
+ref = "kashida-ar.1";
 scale = (2,1);
 }
 );
@@ -9053,7 +9053,7 @@ metricRight = "=0";
 unicode = 1600;
 },
 {
-glyphname = "kashida-ar.real";
+glyphname = "kashida-ar.1";
 layers = (
 {
 anchors = (
