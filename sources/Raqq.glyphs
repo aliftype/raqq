@@ -150,10 +150,6 @@ name = "Don't use Production Names";
 value = 1;
 },
 {
-name = "Disable Subroutines";
-value = 1;
-},
-{
 name = "Write DisplayStrings";
 value = 0;
 },
@@ -13670,9 +13666,6 @@ metricRight = "=14";
 );
 instances = (
 {
-instanceInterpolations = {
-m01 = 1;
-};
 name = Regular;
 }
 );
@@ -13921,7 +13914,9 @@ You should have received a copy of the GNU Affero General Public License along w
 }
 );
 settings = {
+fontType = variable;
 keepAlternatesTogether = 1;
+previewRemoveOverlap = 0;
 };
 unitsPerEm = 800;
 userData = {
