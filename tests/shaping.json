@@ -132,7 +132,7 @@
     },
     {
       "input": "حض",
-      "expectation": "dotabove-ar=1@413,247+0|sad-ar.fina=1+891|_c.hah.dal=0+71|hah-ar.init=0@-71,0+632"
+      "expectation": "dotabove-ar=1@398,247+0|sad-ar.fina=1+877|_c.hah.dal=0+71|hah-ar.init=0@-71,0+632"
     },
     {
       "input": "حط",
@@ -208,7 +208,7 @@
     },
     {
       "input": "سض",
-      "expectation": "dotabove-ar=1@413,247+0|sad-ar.fina=1+891|seen-ar.init=0@-15,0+363"
+      "expectation": "dotabove-ar=1@398,247+0|sad-ar.fina=1+877|seen-ar.init=0@-15,0+363"
     },
     {
       "input": "سط",
@@ -276,7 +276,7 @@
     },
     {
       "input": "صٍ",
-      "expectation": "kasratan-ar=0@369,-129+0|sad-ar=0+898"
+      "expectation": "kasratan-ar=0@354,-129+0|sad-ar=0+883"
     },
     {
       "input": "صے",
@@ -312,7 +312,7 @@
     },
     {
       "input": "عض",
-      "expectation": "dotabove-ar=1@413,247+0|sad-ar.fina=1+891|ain-ar.init=0+690"
+      "expectation": "dotabove-ar=1@398,247+0|sad-ar.fina=1+877|ain-ar.init=0+690"
     },
     {
       "input": "عط",
@@ -388,7 +388,7 @@
     },
     {
       "input": "فص",
-      "expectation": "sad-ar.fina=1+891|dotabove-ar=0@-41,373+0|_c.feh.init.dal=0+137|fehDotless-ar.init=0@-117,0+217"
+      "expectation": "sad-ar.fina=1+877|dotabove-ar=0@-41,373+0|_c.feh.init.dal=0+137|fehDotless-ar.init=0@-117,0+217"
     },
     {
       "input": "فط",
@@ -682,7 +682,7 @@
     },
     {
       "input": "بعض",
-      "expectation": "dotabove-ar=2@413,247+0|sad-ar.fina=2+891|_c.ain.medi.dal=1+47|ain-ar.medi=1+220|dotbelow-ar=0@81,-46+0|_c.seen.beh=0+0|behDotless-ar.init.high=0+130"
+      "expectation": "dotabove-ar=2@398,247+0|sad-ar.fina=2+877|_c.ain.medi.dal=1+47|ain-ar.medi=1+220|dotbelow-ar=0@81,-46+0|_c.seen.beh=0+0|behDotless-ar.init.high=0+130"
     },
     {
       "input": "بعن",
@@ -1194,7 +1194,7 @@
     },
     {
       "input": "لسض",
-      "expectation": "dotabove-ar=2@413,247+0|sad-ar.fina=2+891|seen-ar.medi=1@-15,0+374|_c.seen.beh=0+0|lam-ar.init=0+123"
+      "expectation": "dotabove-ar=2@398,247+0|sad-ar.fina=2+877|seen-ar.medi=1@-15,0+374|_c.seen.beh=0+0|lam-ar.init=0+123"
     },
     {
       "input": "لسط",
@@ -1326,7 +1326,7 @@
     },
     {
       "input": "نسض",
-      "expectation": "dotabove-ar=2@413,247+0|sad-ar.fina=2+891|seen-ar.medi.low=1@-15,0+409|dotabove-ar=0@-2,339+0|behDotless-ar.init.med=0+130"
+      "expectation": "dotabove-ar=2@398,247+0|sad-ar.fina=2+877|seen-ar.medi.low=1@-15,0+409|dotabove-ar=0@-2,339+0|behDotless-ar.init.med=0+130"
     },
     {
       "input": "نسط",
@@ -1402,7 +1402,7 @@
     },
     {
       "input": "نعض",
-      "expectation": "dotabove-ar=2@413,247+0|sad-ar.fina=2+891|_c.ain.medi.dal=1+47|ain-ar.medi=1+220|dotabove-ar.beh=0@-9,392+0|_c.seen.beh=0+0|behDotless-ar.init.high=0+130"
+      "expectation": "dotabove-ar=2@398,247+0|sad-ar.fina=2+877|_c.ain.medi.dal=1+47|ain-ar.medi=1+220|dotabove-ar.beh=0@-9,392+0|_c.seen.beh=0+0|behDotless-ar.init.high=0+130"
     },
     {
       "input": "نعط",
@@ -1478,7 +1478,7 @@
     },
     {
       "input": "نفض",
-      "expectation": "dotabove-ar=2@413,247+0|sad-ar.fina=2+891|dotabove-ar=1@-6,329+0|_c.feh.medi.dal=1+71|fehDotless-ar.medi=1@-78,0+299|dotabove-ar=0@2,299+0|_c.seen.beh=0+0|behDotless-ar.init=0+130"
+      "expectation": "dotabove-ar=2@398,247+0|sad-ar.fina=2+877|dotabove-ar=1@-6,329+0|_c.feh.medi.dal=1+71|fehDotless-ar.medi=1@-78,0+299|dotabove-ar=0@2,299+0|_c.seen.beh=0+0|behDotless-ar.init=0+130"
     },
     {
       "input": "نفط",
@@ -3573,7 +3573,7 @@
     },
     {
       "input": "القصص",
-      "expectation": "sad-ar.fina=4+891|sad-ar.medi=3@-9,0+749|twodotsverticalabove-ar=2@-36,337+0|_c.feh.medi.dal=2+71|fehDotless-ar.medi=2@-78,0+299|_c.seen.beh=1+0|lam-ar.init=1+123|alef-ar=0@400,0+978"
+      "expectation": "sad-ar.fina=4+877|sad-ar.medi=3@-9,0+749|twodotsverticalabove-ar=2@-36,337+0|_c.feh.medi.dal=2+71|fehDotless-ar.medi=2@-78,0+299|_c.seen.beh=1+0|lam-ar.init=1+123|alef-ar=0@400,0+978"
     },
     {
       "input": "الكتب",
