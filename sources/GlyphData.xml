@@ -745,6 +745,12 @@
          sortName="arM1085"
          anchors="_gaf"
   />
+
+  <glyph name="ayah" category="Mark" subCategory="Nonspacing" script="arabic"
+         sortName="arM1086"
+         anchors="_top"
+  />
+
   <glyph name="hyphen" unicode="2010"  category="Punctuation" subCategory="Spacing Combining" case="lower" />
 
 </glyphData>

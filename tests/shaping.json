@@ -583,9 +583,54 @@
       "expectation": "dotabove-ar=8@-62,191+0|noonghunna-ar=8+228|waw-ar.fina.round=7@400,0+892|dotbelow-ar=6@202,-112+0|_c.ain.meem=6@-7,0+28|hah-ar.init=6@-39,0+664|alef-ar.fina=5@400,0+500|_c.hah.beh=4+7|hah-ar.medi=4+135|twodotsverticalabove-ar=3@-13,407+0|behDotless-ar.init.l1=3@36,135+565|space=2+400|meem-ar.fina=1+567|lam-ar.init=0@-25,0+98"
     },
     {
+      "input": "۝٠",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+0|zero-ar=1+0"
+    },
+    {
+      "input": "۝١",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+0|one-ar=1+0"
+    },
+    {
+      "input": "۝٢",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+0|two-ar=1+0"
+    },
+    {
+      "input": "۝٣",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+0|three-ar=1+0"
+    },
+    {
+      "input": "۝٤",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+0|four-ar=1+0"
+    },
+    {
       "input": "۝٥",
       "direction": "ltr",
       "expectation": "endofayah-ar.05=0+0|five-ar=1+0"
+    },
+    {
+      "input": "۝٦",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+0|six-ar=1+0"
+    },
+    {
+      "input": "۝٧",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+0|seven-ar=1+0"
+    },
+    {
+      "input": "۝٨",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+0|eight-ar=1+0"
+    },
+    {
+      "input": "۝٩",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+0|nine-ar=1+0"
     },
     {
       "input": "ئفة",
@@ -1540,9 +1585,79 @@
       "expectation": "lam_alef-ar=4+521|space=3+400|hah-ar.fina=2+407|twodotsverticalabove-ar=1@-91,511+0|fehDotless-ar.init=1@0,130+574|waw-ar=0@400,0+909"
     },
     {
+      "input": "۝١٠",
+      "direction": "ltr",
+      "expectation": "endofayah-ar.10=0+400|ayah.010=1@-641,-20+0"
+    },
+    {
+      "input": "۝١١",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+0|one-ar=1+0|one-ar=2+0"
+    },
+    {
+      "input": "۝١٢",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+0|one-ar=1+0|two-ar=2+0"
+    },
+    {
+      "input": "۝١٣",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+0|one-ar=1+0|three-ar=2+0"
+    },
+    {
+      "input": "۝١٤",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+0|one-ar=1+0|four-ar=2+0"
+    },
+    {
       "input": "۝١٥",
       "direction": "ltr",
       "expectation": "endofayah-ar.05=0+0|one-ar=1+0|five-ar=2+0"
+    },
+    {
+      "input": "۝١٦",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+0|one-ar=1+0|six-ar=2+0"
+    },
+    {
+      "input": "۝١٧",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+0|one-ar=1+0|seven-ar=2+0"
+    },
+    {
+      "input": "۝١٨",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+0|one-ar=1+0|eight-ar=2+0"
+    },
+    {
+      "input": "۝١٩",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+0|one-ar=1+0|nine-ar=2+0"
+    },
+    {
+      "input": "۝٢٠",
+      "direction": "ltr",
+      "expectation": "endofayah-ar.10=0+400|ayah.020=1@-661,10+0"
+    },
+    {
+      "input": "۝٢١",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+0|two-ar=1+0|one-ar=2+0"
+    },
+    {
+      "input": "۝٢٢",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+0|two-ar=1+0|two-ar=2+0"
+    },
+    {
+      "input": "۝٢٣",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+0|two-ar=1+0|three-ar=2+0"
+    },
+    {
+      "input": "۝٢٤",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+0|two-ar=1+0|four-ar=2+0"
     },
     {
       "input": "۝٢٥",
@@ -1550,9 +1665,99 @@
       "expectation": "endofayah-ar.05=0+0|two-ar=1+0|five-ar=2+0"
     },
     {
+      "input": "۝٢٦",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+0|two-ar=1+0|six-ar=2+0"
+    },
+    {
+      "input": "۝٢٧",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+0|two-ar=1+0|seven-ar=2+0"
+    },
+    {
+      "input": "۝٢٨",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+0|two-ar=1+0|eight-ar=2+0"
+    },
+    {
+      "input": "۝٢٩",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+0|two-ar=1+0|nine-ar=2+0"
+    },
+    {
+      "input": "۝٣٠",
+      "direction": "ltr",
+      "expectation": "endofayah-ar.10=0+400|ayah.030=1@-577,-17+0"
+    },
+    {
+      "input": "۝٣١",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+0|three-ar=1+0|one-ar=2+0"
+    },
+    {
+      "input": "۝٣٢",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+0|three-ar=1+0|two-ar=2+0"
+    },
+    {
+      "input": "۝٣٣",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+0|three-ar=1+0|three-ar=2+0"
+    },
+    {
+      "input": "۝٣٤",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+0|three-ar=1+0|four-ar=2+0"
+    },
+    {
       "input": "۝٣٥",
       "direction": "ltr",
       "expectation": "endofayah-ar.05=0+0|three-ar=1+0|five-ar=2+0"
+    },
+    {
+      "input": "۝٣٦",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+0|three-ar=1+0|six-ar=2+0"
+    },
+    {
+      "input": "۝٣٧",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+0|three-ar=1+0|seven-ar=2+0"
+    },
+    {
+      "input": "۝٣٨",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+0|three-ar=1+0|eight-ar=2+0"
+    },
+    {
+      "input": "۝٣٩",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+0|three-ar=1+0|nine-ar=2+0"
+    },
+    {
+      "input": "۝٤٠",
+      "direction": "ltr",
+      "expectation": "endofayah-ar.10=0+400|ayah.040=1@-555,68+0"
+    },
+    {
+      "input": "۝٤١",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+0|four-ar=1+0|one-ar=2+0"
+    },
+    {
+      "input": "۝٤٢",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+0|four-ar=1+0|two-ar=2+0"
+    },
+    {
+      "input": "۝٤٣",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+0|four-ar=1+0|three-ar=2+0"
+    },
+    {
+      "input": "۝٤٤",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+0|four-ar=1+0|four-ar=2+0"
     },
     {
       "input": "۝٤٥",
@@ -1560,9 +1765,99 @@
       "expectation": "endofayah-ar.05=0+0|four-ar=1+0|five-ar=2+0"
     },
     {
+      "input": "۝٤٦",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+0|four-ar=1+0|six-ar=2+0"
+    },
+    {
+      "input": "۝٤٧",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+0|four-ar=1+0|seven-ar=2+0"
+    },
+    {
+      "input": "۝٤٨",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+0|four-ar=1+0|eight-ar=2+0"
+    },
+    {
+      "input": "۝٤٩",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+0|four-ar=1+0|nine-ar=2+0"
+    },
+    {
+      "input": "۝٥٠",
+      "direction": "ltr",
+      "expectation": "endofayah-ar.10=0+400|ayah.050=1@-618,-10+0"
+    },
+    {
+      "input": "۝٥١",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+0|five-ar=1+0|one-ar=2+0"
+    },
+    {
+      "input": "۝٥٢",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+0|five-ar=1+0|two-ar=2+0"
+    },
+    {
+      "input": "۝٥٣",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+0|five-ar=1+0|three-ar=2+0"
+    },
+    {
+      "input": "۝٥٤",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+0|five-ar=1+0|four-ar=2+0"
+    },
+    {
       "input": "۝٥٥",
       "direction": "ltr",
       "expectation": "endofayah-ar.05=0+0|five-ar=1+0|five-ar=2+0"
+    },
+    {
+      "input": "۝٥٦",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+0|five-ar=1+0|six-ar=2+0"
+    },
+    {
+      "input": "۝٥٧",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+0|five-ar=1+0|seven-ar=2+0"
+    },
+    {
+      "input": "۝٥٨",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+0|five-ar=1+0|eight-ar=2+0"
+    },
+    {
+      "input": "۝٥٩",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+0|five-ar=1+0|nine-ar=2+0"
+    },
+    {
+      "input": "۝٦٠",
+      "direction": "ltr",
+      "expectation": "endofayah-ar.10=0+400|ayah.060=1@-583,-10+0"
+    },
+    {
+      "input": "۝٦١",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+0|six-ar=1+0|one-ar=2+0"
+    },
+    {
+      "input": "۝٦٢",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+0|six-ar=1+0|two-ar=2+0"
+    },
+    {
+      "input": "۝٦٣",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+0|six-ar=1+0|three-ar=2+0"
+    },
+    {
+      "input": "۝٦٤",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+0|six-ar=1+0|four-ar=2+0"
     },
     {
       "input": "۝٦٥",
@@ -1570,9 +1865,99 @@
       "expectation": "endofayah-ar.05=0+0|six-ar=1+0|five-ar=2+0"
     },
     {
+      "input": "۝٦٦",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+0|six-ar=1+0|six-ar=2+0"
+    },
+    {
+      "input": "۝٦٧",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+0|six-ar=1+0|seven-ar=2+0"
+    },
+    {
+      "input": "۝٦٨",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+0|six-ar=1+0|eight-ar=2+0"
+    },
+    {
+      "input": "۝٦٩",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+0|six-ar=1+0|nine-ar=2+0"
+    },
+    {
+      "input": "۝٧٠",
+      "direction": "ltr",
+      "expectation": "endofayah-ar.10=0+400|ayah.070=1@-631,-10+0"
+    },
+    {
+      "input": "۝٧١",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+0|seven-ar=1+0|one-ar=2+0"
+    },
+    {
+      "input": "۝٧٢",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+0|seven-ar=1+0|two-ar=2+0"
+    },
+    {
+      "input": "۝٧٣",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+0|seven-ar=1+0|three-ar=2+0"
+    },
+    {
+      "input": "۝٧٤",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+0|seven-ar=1+0|four-ar=2+0"
+    },
+    {
       "input": "۝٧٥",
       "direction": "ltr",
       "expectation": "endofayah-ar.05=0+0|seven-ar=1+0|five-ar=2+0"
+    },
+    {
+      "input": "۝٧٦",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+0|seven-ar=1+0|six-ar=2+0"
+    },
+    {
+      "input": "۝٧٧",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+0|seven-ar=1+0|seven-ar=2+0"
+    },
+    {
+      "input": "۝٧٨",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+0|seven-ar=1+0|eight-ar=2+0"
+    },
+    {
+      "input": "۝٧٩",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+0|seven-ar=1+0|nine-ar=2+0"
+    },
+    {
+      "input": "۝٨٠",
+      "direction": "ltr",
+      "expectation": "endofayah-ar.10=0+400|ayah.080=1@-615,-10+0"
+    },
+    {
+      "input": "۝٨١",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+0|eight-ar=1+0|one-ar=2+0"
+    },
+    {
+      "input": "۝٨٢",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+0|eight-ar=1+0|two-ar=2+0"
+    },
+    {
+      "input": "۝٨٣",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+0|eight-ar=1+0|three-ar=2+0"
+    },
+    {
+      "input": "۝٨٤",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+0|eight-ar=1+0|four-ar=2+0"
     },
     {
       "input": "۝٨٥",
@@ -1580,9 +1965,74 @@
       "expectation": "endofayah-ar.05=0+0|eight-ar=1+0|five-ar=2+0"
     },
     {
+      "input": "۝٨٦",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+0|eight-ar=1+0|six-ar=2+0"
+    },
+    {
+      "input": "۝٨٧",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+0|eight-ar=1+0|seven-ar=2+0"
+    },
+    {
+      "input": "۝٨٨",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+0|eight-ar=1+0|eight-ar=2+0"
+    },
+    {
+      "input": "۝٨٩",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+0|eight-ar=1+0|nine-ar=2+0"
+    },
+    {
+      "input": "۝٩٠",
+      "direction": "ltr",
+      "expectation": "endofayah-ar.10=0+400|ayah.090=1@-631,-10+0"
+    },
+    {
+      "input": "۝٩١",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+0|nine-ar=1+0|one-ar=2+0"
+    },
+    {
+      "input": "۝٩٢",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+0|nine-ar=1+0|two-ar=2+0"
+    },
+    {
+      "input": "۝٩٣",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+0|nine-ar=1+0|three-ar=2+0"
+    },
+    {
+      "input": "۝٩٤",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+0|nine-ar=1+0|four-ar=2+0"
+    },
+    {
       "input": "۝٩٥",
       "direction": "ltr",
       "expectation": "endofayah-ar.05=0+0|nine-ar=1+0|five-ar=2+0"
+    },
+    {
+      "input": "۝٩٦",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+0|nine-ar=1+0|six-ar=2+0"
+    },
+    {
+      "input": "۝٩٧",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+0|nine-ar=1+0|seven-ar=2+0"
+    },
+    {
+      "input": "۝٩٨",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+0|nine-ar=1+0|eight-ar=2+0"
+    },
+    {
+      "input": "۝٩٩",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+0|nine-ar=1+0|nine-ar=2+0"
     },
     {
       "input": "افنے",
@@ -2113,9 +2563,79 @@
       "expectation": "waw-ar.fina.round=3+492|meem-ar.medi.round3=2+398|meem-ar.medi.round2=1+398|twodotsverticalbelow-ar=0@72,-73+0|behDotless-ar.init=0+130"
     },
     {
+      "input": "۝١٠٠",
+      "direction": "ltr",
+      "expectation": "endofayah-ar.10=0+400|ayah.100=1@-554,10+0"
+    },
+    {
+      "input": "۝١٠١",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+0|one-ar=1+0|zero-ar=2+0|one-ar=3+0"
+    },
+    {
+      "input": "۝١٠٢",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+0|one-ar=1+0|zero-ar=2+0|two-ar=3+0"
+    },
+    {
+      "input": "۝١٠٣",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+0|one-ar=1+0|zero-ar=2+0|three-ar=3+0"
+    },
+    {
+      "input": "۝١٠٤",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+0|one-ar=1+0|zero-ar=2+0|four-ar=3+0"
+    },
+    {
       "input": "۝١٠٥",
       "direction": "ltr",
       "expectation": "endofayah-ar.05=0+0|one-ar=1+0|zero-ar=2+0|five-ar=3+0"
+    },
+    {
+      "input": "۝١٠٦",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+0|one-ar=1+0|zero-ar=2+0|six-ar=3+0"
+    },
+    {
+      "input": "۝١٠٧",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+0|one-ar=1+0|zero-ar=2+0|seven-ar=3+0"
+    },
+    {
+      "input": "۝١٠٨",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+0|one-ar=1+0|zero-ar=2+0|eight-ar=3+0"
+    },
+    {
+      "input": "۝١٠٩",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+0|one-ar=1+0|zero-ar=2+0|nine-ar=3+0"
+    },
+    {
+      "input": "۝١١٠",
+      "direction": "ltr",
+      "expectation": "endofayah-ar.10=0+400|one-ar=1+0|one-ar=2+0|zero-ar=3+0"
+    },
+    {
+      "input": "۝١١١",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+0|one-ar=1+0|one-ar=2+0|one-ar=3+0"
+    },
+    {
+      "input": "۝١١٢",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+0|one-ar=1+0|one-ar=2+0|two-ar=3+0"
+    },
+    {
+      "input": "۝١١٣",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+0|one-ar=1+0|one-ar=2+0|three-ar=3+0"
+    },
+    {
+      "input": "۝١١٤",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+0|one-ar=1+0|one-ar=2+0|four-ar=3+0"
     },
     {
       "input": "۝١١٥",
@@ -2123,9 +2643,99 @@
       "expectation": "endofayah-ar.05=0+0|one-ar=1+0|one-ar=2+0|five-ar=3+0"
     },
     {
+      "input": "۝١١٦",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+0|one-ar=1+0|one-ar=2+0|six-ar=3+0"
+    },
+    {
+      "input": "۝١١٧",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+0|one-ar=1+0|one-ar=2+0|seven-ar=3+0"
+    },
+    {
+      "input": "۝١١٨",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+0|one-ar=1+0|one-ar=2+0|eight-ar=3+0"
+    },
+    {
+      "input": "۝١١٩",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+0|one-ar=1+0|one-ar=2+0|nine-ar=3+0"
+    },
+    {
+      "input": "۝١٢٠",
+      "direction": "ltr",
+      "expectation": "endofayah-ar.10=0+400|one-ar=1+0|two-ar=2+0|zero-ar=3+0"
+    },
+    {
+      "input": "۝١٢١",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+0|one-ar=1+0|two-ar=2+0|one-ar=3+0"
+    },
+    {
+      "input": "۝١٢٢",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+0|one-ar=1+0|two-ar=2+0|two-ar=3+0"
+    },
+    {
+      "input": "۝١٢٣",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+0|one-ar=1+0|two-ar=2+0|three-ar=3+0"
+    },
+    {
+      "input": "۝١٢٤",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+0|one-ar=1+0|two-ar=2+0|four-ar=3+0"
+    },
+    {
       "input": "۝١٢٥",
       "direction": "ltr",
       "expectation": "endofayah-ar.05=0+0|one-ar=1+0|two-ar=2+0|five-ar=3+0"
+    },
+    {
+      "input": "۝١٢٦",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+0|one-ar=1+0|two-ar=2+0|six-ar=3+0"
+    },
+    {
+      "input": "۝١٢٧",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+0|one-ar=1+0|two-ar=2+0|seven-ar=3+0"
+    },
+    {
+      "input": "۝١٢٨",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+0|one-ar=1+0|two-ar=2+0|eight-ar=3+0"
+    },
+    {
+      "input": "۝١٢٩",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+0|one-ar=1+0|two-ar=2+0|nine-ar=3+0"
+    },
+    {
+      "input": "۝١٣٠",
+      "direction": "ltr",
+      "expectation": "endofayah-ar.10=0+400|one-ar=1+0|three-ar=2+0|zero-ar=3+0"
+    },
+    {
+      "input": "۝١٣١",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+0|one-ar=1+0|three-ar=2+0|one-ar=3+0"
+    },
+    {
+      "input": "۝١٣٢",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+0|one-ar=1+0|three-ar=2+0|two-ar=3+0"
+    },
+    {
+      "input": "۝١٣٣",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+0|one-ar=1+0|three-ar=2+0|three-ar=3+0"
+    },
+    {
+      "input": "۝١٣٤",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+0|one-ar=1+0|three-ar=2+0|four-ar=3+0"
     },
     {
       "input": "۝١٣٥",
@@ -2133,9 +2743,99 @@
       "expectation": "endofayah-ar.05=0+0|one-ar=1+0|three-ar=2+0|five-ar=3+0"
     },
     {
+      "input": "۝١٣٦",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+0|one-ar=1+0|three-ar=2+0|six-ar=3+0"
+    },
+    {
+      "input": "۝١٣٧",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+0|one-ar=1+0|three-ar=2+0|seven-ar=3+0"
+    },
+    {
+      "input": "۝١٣٨",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+0|one-ar=1+0|three-ar=2+0|eight-ar=3+0"
+    },
+    {
+      "input": "۝١٣٩",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+0|one-ar=1+0|three-ar=2+0|nine-ar=3+0"
+    },
+    {
+      "input": "۝١٤٠",
+      "direction": "ltr",
+      "expectation": "endofayah-ar.10=0+400|one-ar=1+0|four-ar=2+0|zero-ar=3+0"
+    },
+    {
+      "input": "۝١٤١",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+0|one-ar=1+0|four-ar=2+0|one-ar=3+0"
+    },
+    {
+      "input": "۝١٤٢",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+0|one-ar=1+0|four-ar=2+0|two-ar=3+0"
+    },
+    {
+      "input": "۝١٤٣",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+0|one-ar=1+0|four-ar=2+0|three-ar=3+0"
+    },
+    {
+      "input": "۝١٤٤",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+0|one-ar=1+0|four-ar=2+0|four-ar=3+0"
+    },
+    {
       "input": "۝١٤٥",
       "direction": "ltr",
       "expectation": "endofayah-ar.05=0+0|one-ar=1+0|four-ar=2+0|five-ar=3+0"
+    },
+    {
+      "input": "۝١٤٦",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+0|one-ar=1+0|four-ar=2+0|six-ar=3+0"
+    },
+    {
+      "input": "۝١٤٧",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+0|one-ar=1+0|four-ar=2+0|seven-ar=3+0"
+    },
+    {
+      "input": "۝١٤٨",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+0|one-ar=1+0|four-ar=2+0|eight-ar=3+0"
+    },
+    {
+      "input": "۝١٤٩",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+0|one-ar=1+0|four-ar=2+0|nine-ar=3+0"
+    },
+    {
+      "input": "۝١٥٠",
+      "direction": "ltr",
+      "expectation": "endofayah-ar.10=0+400|one-ar=1+0|five-ar=2+0|zero-ar=3+0"
+    },
+    {
+      "input": "۝١٥١",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+0|one-ar=1+0|five-ar=2+0|one-ar=3+0"
+    },
+    {
+      "input": "۝١٥٢",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+0|one-ar=1+0|five-ar=2+0|two-ar=3+0"
+    },
+    {
+      "input": "۝١٥٣",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+0|one-ar=1+0|five-ar=2+0|three-ar=3+0"
+    },
+    {
+      "input": "۝١٥٤",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+0|one-ar=1+0|five-ar=2+0|four-ar=3+0"
     },
     {
       "input": "۝١٥٥",
@@ -2143,9 +2843,99 @@
       "expectation": "endofayah-ar.05=0+0|one-ar=1+0|five-ar=2+0|five-ar=3+0"
     },
     {
+      "input": "۝١٥٦",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+0|one-ar=1+0|five-ar=2+0|six-ar=3+0"
+    },
+    {
+      "input": "۝١٥٧",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+0|one-ar=1+0|five-ar=2+0|seven-ar=3+0"
+    },
+    {
+      "input": "۝١٥٨",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+0|one-ar=1+0|five-ar=2+0|eight-ar=3+0"
+    },
+    {
+      "input": "۝١٥٩",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+0|one-ar=1+0|five-ar=2+0|nine-ar=3+0"
+    },
+    {
+      "input": "۝١٦٠",
+      "direction": "ltr",
+      "expectation": "endofayah-ar.10=0+400|one-ar=1+0|six-ar=2+0|zero-ar=3+0"
+    },
+    {
+      "input": "۝١٦١",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+0|one-ar=1+0|six-ar=2+0|one-ar=3+0"
+    },
+    {
+      "input": "۝١٦٢",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+0|one-ar=1+0|six-ar=2+0|two-ar=3+0"
+    },
+    {
+      "input": "۝١٦٣",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+0|one-ar=1+0|six-ar=2+0|three-ar=3+0"
+    },
+    {
+      "input": "۝١٦٤",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+0|one-ar=1+0|six-ar=2+0|four-ar=3+0"
+    },
+    {
       "input": "۝١٦٥",
       "direction": "ltr",
       "expectation": "endofayah-ar.05=0+0|one-ar=1+0|six-ar=2+0|five-ar=3+0"
+    },
+    {
+      "input": "۝١٦٦",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+0|one-ar=1+0|six-ar=2+0|six-ar=3+0"
+    },
+    {
+      "input": "۝١٦٧",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+0|one-ar=1+0|six-ar=2+0|seven-ar=3+0"
+    },
+    {
+      "input": "۝١٦٨",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+0|one-ar=1+0|six-ar=2+0|eight-ar=3+0"
+    },
+    {
+      "input": "۝١٦٩",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+0|one-ar=1+0|six-ar=2+0|nine-ar=3+0"
+    },
+    {
+      "input": "۝١٧٠",
+      "direction": "ltr",
+      "expectation": "endofayah-ar.10=0+400|one-ar=1+0|seven-ar=2+0|zero-ar=3+0"
+    },
+    {
+      "input": "۝١٧١",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+0|one-ar=1+0|seven-ar=2+0|one-ar=3+0"
+    },
+    {
+      "input": "۝١٧٢",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+0|one-ar=1+0|seven-ar=2+0|two-ar=3+0"
+    },
+    {
+      "input": "۝١٧٣",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+0|one-ar=1+0|seven-ar=2+0|three-ar=3+0"
+    },
+    {
+      "input": "۝١٧٤",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+0|one-ar=1+0|seven-ar=2+0|four-ar=3+0"
     },
     {
       "input": "۝١٧٥",
@@ -2153,9 +2943,99 @@
       "expectation": "endofayah-ar.05=0+0|one-ar=1+0|seven-ar=2+0|five-ar=3+0"
     },
     {
+      "input": "۝١٧٦",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+0|one-ar=1+0|seven-ar=2+0|six-ar=3+0"
+    },
+    {
+      "input": "۝١٧٧",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+0|one-ar=1+0|seven-ar=2+0|seven-ar=3+0"
+    },
+    {
+      "input": "۝١٧٨",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+0|one-ar=1+0|seven-ar=2+0|eight-ar=3+0"
+    },
+    {
+      "input": "۝١٧٩",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+0|one-ar=1+0|seven-ar=2+0|nine-ar=3+0"
+    },
+    {
+      "input": "۝١٨٠",
+      "direction": "ltr",
+      "expectation": "endofayah-ar.10=0+400|one-ar=1+0|eight-ar=2+0|zero-ar=3+0"
+    },
+    {
+      "input": "۝١٨١",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+0|one-ar=1+0|eight-ar=2+0|one-ar=3+0"
+    },
+    {
+      "input": "۝١٨٢",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+0|one-ar=1+0|eight-ar=2+0|two-ar=3+0"
+    },
+    {
+      "input": "۝١٨٣",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+0|one-ar=1+0|eight-ar=2+0|three-ar=3+0"
+    },
+    {
+      "input": "۝١٨٤",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+0|one-ar=1+0|eight-ar=2+0|four-ar=3+0"
+    },
+    {
       "input": "۝١٨٥",
       "direction": "ltr",
       "expectation": "endofayah-ar.05=0+0|one-ar=1+0|eight-ar=2+0|five-ar=3+0"
+    },
+    {
+      "input": "۝١٨٦",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+0|one-ar=1+0|eight-ar=2+0|six-ar=3+0"
+    },
+    {
+      "input": "۝١٨٧",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+0|one-ar=1+0|eight-ar=2+0|seven-ar=3+0"
+    },
+    {
+      "input": "۝١٨٨",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+0|one-ar=1+0|eight-ar=2+0|eight-ar=3+0"
+    },
+    {
+      "input": "۝١٨٩",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+0|one-ar=1+0|eight-ar=2+0|nine-ar=3+0"
+    },
+    {
+      "input": "۝١٩٠",
+      "direction": "ltr",
+      "expectation": "endofayah-ar.10=0+400|one-ar=1+0|nine-ar=2+0|zero-ar=3+0"
+    },
+    {
+      "input": "۝١٩١",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+0|one-ar=1+0|nine-ar=2+0|one-ar=3+0"
+    },
+    {
+      "input": "۝١٩٢",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+0|one-ar=1+0|nine-ar=2+0|two-ar=3+0"
+    },
+    {
+      "input": "۝١٩٣",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+0|one-ar=1+0|nine-ar=2+0|three-ar=3+0"
+    },
+    {
+      "input": "۝١٩٤",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+0|one-ar=1+0|nine-ar=2+0|four-ar=3+0"
     },
     {
       "input": "۝١٩٥",
@@ -2163,9 +3043,99 @@
       "expectation": "endofayah-ar.05=0+0|one-ar=1+0|nine-ar=2+0|five-ar=3+0"
     },
     {
+      "input": "۝١٩٦",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+0|one-ar=1+0|nine-ar=2+0|six-ar=3+0"
+    },
+    {
+      "input": "۝١٩٧",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+0|one-ar=1+0|nine-ar=2+0|seven-ar=3+0"
+    },
+    {
+      "input": "۝١٩٨",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+0|one-ar=1+0|nine-ar=2+0|eight-ar=3+0"
+    },
+    {
+      "input": "۝١٩٩",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+0|one-ar=1+0|nine-ar=2+0|nine-ar=3+0"
+    },
+    {
+      "input": "۝٢٠٠",
+      "direction": "ltr",
+      "expectation": "endofayah-ar.10=0+400|two-ar=1+0|zero-ar=2+0|zero-ar=3+0"
+    },
+    {
+      "input": "۝٢٠١",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+0|two-ar=1+0|zero-ar=2+0|one-ar=3+0"
+    },
+    {
+      "input": "۝٢٠٢",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+0|two-ar=1+0|zero-ar=2+0|two-ar=3+0"
+    },
+    {
+      "input": "۝٢٠٣",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+0|two-ar=1+0|zero-ar=2+0|three-ar=3+0"
+    },
+    {
+      "input": "۝٢٠٤",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+0|two-ar=1+0|zero-ar=2+0|four-ar=3+0"
+    },
+    {
       "input": "۝٢٠٥",
       "direction": "ltr",
       "expectation": "endofayah-ar.05=0+0|two-ar=1+0|zero-ar=2+0|five-ar=3+0"
+    },
+    {
+      "input": "۝٢٠٦",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+0|two-ar=1+0|zero-ar=2+0|six-ar=3+0"
+    },
+    {
+      "input": "۝٢٠٧",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+0|two-ar=1+0|zero-ar=2+0|seven-ar=3+0"
+    },
+    {
+      "input": "۝٢٠٨",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+0|two-ar=1+0|zero-ar=2+0|eight-ar=3+0"
+    },
+    {
+      "input": "۝٢٠٩",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+0|two-ar=1+0|zero-ar=2+0|nine-ar=3+0"
+    },
+    {
+      "input": "۝٢١٠",
+      "direction": "ltr",
+      "expectation": "endofayah-ar.10=0+400|two-ar=1+0|one-ar=2+0|zero-ar=3+0"
+    },
+    {
+      "input": "۝٢١١",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+0|two-ar=1+0|one-ar=2+0|one-ar=3+0"
+    },
+    {
+      "input": "۝٢١٢",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+0|two-ar=1+0|one-ar=2+0|two-ar=3+0"
+    },
+    {
+      "input": "۝٢١٣",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+0|two-ar=1+0|one-ar=2+0|three-ar=3+0"
+    },
+    {
+      "input": "۝٢١٤",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+0|two-ar=1+0|one-ar=2+0|four-ar=3+0"
     },
     {
       "input": "۝٢١٥",
@@ -2173,9 +3143,99 @@
       "expectation": "endofayah-ar.05=0+0|two-ar=1+0|one-ar=2+0|five-ar=3+0"
     },
     {
+      "input": "۝٢١٦",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+0|two-ar=1+0|one-ar=2+0|six-ar=3+0"
+    },
+    {
+      "input": "۝٢١٧",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+0|two-ar=1+0|one-ar=2+0|seven-ar=3+0"
+    },
+    {
+      "input": "۝٢١٨",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+0|two-ar=1+0|one-ar=2+0|eight-ar=3+0"
+    },
+    {
+      "input": "۝٢١٩",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+0|two-ar=1+0|one-ar=2+0|nine-ar=3+0"
+    },
+    {
+      "input": "۝٢٢٠",
+      "direction": "ltr",
+      "expectation": "endofayah-ar.10=0+400|two-ar=1+0|two-ar=2+0|zero-ar=3+0"
+    },
+    {
+      "input": "۝٢٢١",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+0|two-ar=1+0|two-ar=2+0|one-ar=3+0"
+    },
+    {
+      "input": "۝٢٢٢",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+0|two-ar=1+0|two-ar=2+0|two-ar=3+0"
+    },
+    {
+      "input": "۝٢٢٣",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+0|two-ar=1+0|two-ar=2+0|three-ar=3+0"
+    },
+    {
+      "input": "۝٢٢٤",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+0|two-ar=1+0|two-ar=2+0|four-ar=3+0"
+    },
+    {
       "input": "۝٢٢٥",
       "direction": "ltr",
       "expectation": "endofayah-ar.05=0+0|two-ar=1+0|two-ar=2+0|five-ar=3+0"
+    },
+    {
+      "input": "۝٢٢٦",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+0|two-ar=1+0|two-ar=2+0|six-ar=3+0"
+    },
+    {
+      "input": "۝٢٢٧",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+0|two-ar=1+0|two-ar=2+0|seven-ar=3+0"
+    },
+    {
+      "input": "۝٢٢٨",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+0|two-ar=1+0|two-ar=2+0|eight-ar=3+0"
+    },
+    {
+      "input": "۝٢٢٩",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+0|two-ar=1+0|two-ar=2+0|nine-ar=3+0"
+    },
+    {
+      "input": "۝٢٣٠",
+      "direction": "ltr",
+      "expectation": "endofayah-ar.10=0+400|two-ar=1+0|three-ar=2+0|zero-ar=3+0"
+    },
+    {
+      "input": "۝٢٣١",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+0|two-ar=1+0|three-ar=2+0|one-ar=3+0"
+    },
+    {
+      "input": "۝٢٣٢",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+0|two-ar=1+0|three-ar=2+0|two-ar=3+0"
+    },
+    {
+      "input": "۝٢٣٣",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+0|two-ar=1+0|three-ar=2+0|three-ar=3+0"
+    },
+    {
+      "input": "۝٢٣٤",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+0|two-ar=1+0|three-ar=2+0|four-ar=3+0"
     },
     {
       "input": "۝٢٣٥",
@@ -2183,9 +3243,99 @@
       "expectation": "endofayah-ar.05=0+0|two-ar=1+0|three-ar=2+0|five-ar=3+0"
     },
     {
+      "input": "۝٢٣٦",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+0|two-ar=1+0|three-ar=2+0|six-ar=3+0"
+    },
+    {
+      "input": "۝٢٣٧",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+0|two-ar=1+0|three-ar=2+0|seven-ar=3+0"
+    },
+    {
+      "input": "۝٢٣٨",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+0|two-ar=1+0|three-ar=2+0|eight-ar=3+0"
+    },
+    {
+      "input": "۝٢٣٩",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+0|two-ar=1+0|three-ar=2+0|nine-ar=3+0"
+    },
+    {
+      "input": "۝٢٤٠",
+      "direction": "ltr",
+      "expectation": "endofayah-ar.10=0+400|two-ar=1+0|four-ar=2+0|zero-ar=3+0"
+    },
+    {
+      "input": "۝٢٤١",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+0|two-ar=1+0|four-ar=2+0|one-ar=3+0"
+    },
+    {
+      "input": "۝٢٤٢",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+0|two-ar=1+0|four-ar=2+0|two-ar=3+0"
+    },
+    {
+      "input": "۝٢٤٣",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+0|two-ar=1+0|four-ar=2+0|three-ar=3+0"
+    },
+    {
+      "input": "۝٢٤٤",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+0|two-ar=1+0|four-ar=2+0|four-ar=3+0"
+    },
+    {
       "input": "۝٢٤٥",
       "direction": "ltr",
       "expectation": "endofayah-ar.05=0+0|two-ar=1+0|four-ar=2+0|five-ar=3+0"
+    },
+    {
+      "input": "۝٢٤٦",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+0|two-ar=1+0|four-ar=2+0|six-ar=3+0"
+    },
+    {
+      "input": "۝٢٤٧",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+0|two-ar=1+0|four-ar=2+0|seven-ar=3+0"
+    },
+    {
+      "input": "۝٢٤٨",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+0|two-ar=1+0|four-ar=2+0|eight-ar=3+0"
+    },
+    {
+      "input": "۝٢٤٩",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+0|two-ar=1+0|four-ar=2+0|nine-ar=3+0"
+    },
+    {
+      "input": "۝٢٥٠",
+      "direction": "ltr",
+      "expectation": "endofayah-ar.10=0+400|two-ar=1+0|five-ar=2+0|zero-ar=3+0"
+    },
+    {
+      "input": "۝٢٥١",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+0|two-ar=1+0|five-ar=2+0|one-ar=3+0"
+    },
+    {
+      "input": "۝٢٥٢",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+0|two-ar=1+0|five-ar=2+0|two-ar=3+0"
+    },
+    {
+      "input": "۝٢٥٣",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+0|two-ar=1+0|five-ar=2+0|three-ar=3+0"
+    },
+    {
+      "input": "۝٢٥٤",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+0|two-ar=1+0|five-ar=2+0|four-ar=3+0"
     },
     {
       "input": "۝٢٥٥",
@@ -2193,9 +3343,99 @@
       "expectation": "endofayah-ar.05=0+0|two-ar=1+0|five-ar=2+0|five-ar=3+0"
     },
     {
+      "input": "۝٢٥٦",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+0|two-ar=1+0|five-ar=2+0|six-ar=3+0"
+    },
+    {
+      "input": "۝٢٥٧",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+0|two-ar=1+0|five-ar=2+0|seven-ar=3+0"
+    },
+    {
+      "input": "۝٢٥٨",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+0|two-ar=1+0|five-ar=2+0|eight-ar=3+0"
+    },
+    {
+      "input": "۝٢٥٩",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+0|two-ar=1+0|five-ar=2+0|nine-ar=3+0"
+    },
+    {
+      "input": "۝٢٦٠",
+      "direction": "ltr",
+      "expectation": "endofayah-ar.10=0+400|two-ar=1+0|six-ar=2+0|zero-ar=3+0"
+    },
+    {
+      "input": "۝٢٦١",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+0|two-ar=1+0|six-ar=2+0|one-ar=3+0"
+    },
+    {
+      "input": "۝٢٦٢",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+0|two-ar=1+0|six-ar=2+0|two-ar=3+0"
+    },
+    {
+      "input": "۝٢٦٣",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+0|two-ar=1+0|six-ar=2+0|three-ar=3+0"
+    },
+    {
+      "input": "۝٢٦٤",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+0|two-ar=1+0|six-ar=2+0|four-ar=3+0"
+    },
+    {
       "input": "۝٢٦٥",
       "direction": "ltr",
       "expectation": "endofayah-ar.05=0+0|two-ar=1+0|six-ar=2+0|five-ar=3+0"
+    },
+    {
+      "input": "۝٢٦٦",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+0|two-ar=1+0|six-ar=2+0|six-ar=3+0"
+    },
+    {
+      "input": "۝٢٦٧",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+0|two-ar=1+0|six-ar=2+0|seven-ar=3+0"
+    },
+    {
+      "input": "۝٢٦٨",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+0|two-ar=1+0|six-ar=2+0|eight-ar=3+0"
+    },
+    {
+      "input": "۝٢٦٩",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+0|two-ar=1+0|six-ar=2+0|nine-ar=3+0"
+    },
+    {
+      "input": "۝٢٧٠",
+      "direction": "ltr",
+      "expectation": "endofayah-ar.10=0+400|two-ar=1+0|seven-ar=2+0|zero-ar=3+0"
+    },
+    {
+      "input": "۝٢٧١",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+0|two-ar=1+0|seven-ar=2+0|one-ar=3+0"
+    },
+    {
+      "input": "۝٢٧٢",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+0|two-ar=1+0|seven-ar=2+0|two-ar=3+0"
+    },
+    {
+      "input": "۝٢٧٣",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+0|two-ar=1+0|seven-ar=2+0|three-ar=3+0"
+    },
+    {
+      "input": "۝٢٧٤",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+0|two-ar=1+0|seven-ar=2+0|four-ar=3+0"
     },
     {
       "input": "۝٢٧٥",
@@ -2203,9 +3443,129 @@
       "expectation": "endofayah-ar.05=0+0|two-ar=1+0|seven-ar=2+0|five-ar=3+0"
     },
     {
+      "input": "۝٢٧٦",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+0|two-ar=1+0|seven-ar=2+0|six-ar=3+0"
+    },
+    {
+      "input": "۝٢٧٧",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+0|two-ar=1+0|seven-ar=2+0|seven-ar=3+0"
+    },
+    {
+      "input": "۝٢٧٨",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+0|two-ar=1+0|seven-ar=2+0|eight-ar=3+0"
+    },
+    {
+      "input": "۝٢٧٩",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+0|two-ar=1+0|seven-ar=2+0|nine-ar=3+0"
+    },
+    {
+      "input": "۝٢٨٠",
+      "direction": "ltr",
+      "expectation": "endofayah-ar.10=0+400|two-ar=1+0|eight-ar=2+0|zero-ar=3+0"
+    },
+    {
+      "input": "۝٢٨١",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+0|two-ar=1+0|eight-ar=2+0|one-ar=3+0"
+    },
+    {
+      "input": "۝٢٨٢",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+0|two-ar=1+0|eight-ar=2+0|two-ar=3+0"
+    },
+    {
+      "input": "۝٢٨٣",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+0|two-ar=1+0|eight-ar=2+0|three-ar=3+0"
+    },
+    {
+      "input": "۝٢٨٤",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+0|two-ar=1+0|eight-ar=2+0|four-ar=3+0"
+    },
+    {
       "input": "۝٢٨٥",
       "direction": "ltr",
       "expectation": "endofayah-ar.05=0+0|two-ar=1+0|eight-ar=2+0|five-ar=3+0"
+    },
+    {
+      "input": "۝٢٨٦",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+0|two-ar=1+0|eight-ar=2+0|six-ar=3+0"
+    },
+    {
+      "input": "۝٢٨٧",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+0|two-ar=1+0|eight-ar=2+0|seven-ar=3+0"
+    },
+    {
+      "input": "۝٢٨٨",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+0|two-ar=1+0|eight-ar=2+0|eight-ar=3+0"
+    },
+    {
+      "input": "۝٢٨٩",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+0|two-ar=1+0|eight-ar=2+0|nine-ar=3+0"
+    },
+    {
+      "input": "۝٢٩٠",
+      "direction": "ltr",
+      "expectation": "endofayah-ar.10=0+400|two-ar=1+0|nine-ar=2+0|zero-ar=3+0"
+    },
+    {
+      "input": "۝٢٩١",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+0|two-ar=1+0|nine-ar=2+0|one-ar=3+0"
+    },
+    {
+      "input": "۝٢٩٢",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+0|two-ar=1+0|nine-ar=2+0|two-ar=3+0"
+    },
+    {
+      "input": "۝٢٩٣",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+0|two-ar=1+0|nine-ar=2+0|three-ar=3+0"
+    },
+    {
+      "input": "۝٢٩٤",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+0|two-ar=1+0|nine-ar=2+0|four-ar=3+0"
+    },
+    {
+      "input": "۝٢٩٥",
+      "direction": "ltr",
+      "expectation": "endofayah-ar.05=0+0|two-ar=1+0|nine-ar=2+0|five-ar=3+0"
+    },
+    {
+      "input": "۝٢٩٦",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+0|two-ar=1+0|nine-ar=2+0|six-ar=3+0"
+    },
+    {
+      "input": "۝٢٩٧",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+0|two-ar=1+0|nine-ar=2+0|seven-ar=3+0"
+    },
+    {
+      "input": "۝٢٩٨",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+0|two-ar=1+0|nine-ar=2+0|eight-ar=3+0"
+    },
+    {
+      "input": "۝٢٩٩",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+0|two-ar=1+0|nine-ar=2+0|nine-ar=3+0"
+    },
+    {
+      "input": "۝٣٠٠",
+      "direction": "ltr",
+      "expectation": "endofayah-ar.10=0+400|three-ar=1+0|zero-ar=2+0|zero-ar=3+0"
     },
     {
       "input": "اتبعو",
