@@ -7720,6 +7720,7 @@ metricRight = "=3@157";
 },
 {
 glyphname = "heh-ar.medi";
+kernLeft = heh;
 kernRight = beh;
 layers = (
 {
@@ -7882,6 +7883,7 @@ metricRight = "=3@157";
 },
 {
 glyphname = "heh-ar.init";
+kernLeft = heh;
 layers = (
 {
 anchors = (
@@ -18776,6 +18778,9 @@ _c.hah.reh = -131;
 "lam_alef-ar.fina" = -69;
 "seen-ar.medi.low" = 5;
 };
+"@MMK_R_heh" = {
+"@MMK_L_sad" = -28;
+};
 "@MMK_R_kaf" = {
 "@MMK_L_beh" = -5;
 "@MMK_L_feh.medi" = -4;
@@ -18912,9 +18917,6 @@ _c.feh.medi.reh = -70;
 _c.hah.noon = -25;
 "lam_alef-ar.fina" = -80;
 "seen-ar.medi.low" = -10;
-};
-"heh-ar.init" = {
-"@MMK_L_sad" = -28;
 };
 };
 };
