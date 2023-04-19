@@ -1109,10 +1109,12 @@ userData = {
 GSOffsetCapStyle = 2;
 GSOffsetHorizontal = 5;
 GSOffsetKeepCompatible = 1;
+GSOffsetMakeStroke = 1;
 GSOffsetPosition = 1;
 GSOffsetProportional = 1;
 GSOffsetVertical = 10;
 };
+visible = 1;
 }
 );
 glyphs = (
@@ -11243,77 +11245,48 @@ layerId = m01;
 shapes = (
 {
 alignment = -1;
-pos = (-314,159);
+pos = (86,159);
 ref = _dot;
 scale = (0.3,0.3);
 },
 {
 alignment = -1;
-pos = (-223,108);
+pos = (177,108);
 ref = _dot;
 scale = (0.3,0.3);
 },
 {
 alignment = -1;
-pos = (-134,159);
+pos = (266,159);
 ref = _dot;
 scale = (0.3,0.3);
 },
 {
 alignment = -1;
-pos = (-223,3);
+pos = (177,3);
 ref = _dot;
 scale = (0.3,0.3);
 },
 {
 alignment = -1;
-pos = (-383,-18);
+pos = (17,-18);
 ref = _dot.circle;
 scale = (1.3,1.3);
 },
 {
 alignment = -1;
-pos = (-213,-18);
+pos = (187,-18);
 ref = _dot.circle;
 scale = (1.3,1.3);
 },
 {
 alignment = -1;
-pos = (-298,132);
+pos = (102,132);
 ref = _dot.circle;
 scale = (1.3,1.3);
 }
 );
-width = 0;
-},
-{
-associatedMasterId = m01;
-attr = {
-colorPalette = 1;
-};
-layerId = "3F4F4F3D-9CC5-4096-A64F-5F39718E7062";
-name = "Color 1 29 Mar 23 at 00:49";
-shapes = (
-{
-alignment = -1;
-pos = (-383,-18);
-ref = _dot;
-scale = (1.3,1.3);
-},
-{
-alignment = -1;
-pos = (-213,-18);
-ref = _dot;
-scale = (1.3,1.3);
-},
-{
-alignment = -1;
-pos = (-298,132);
-ref = _dot;
-scale = (1.3,1.3);
-}
-);
-width = 0;
+width = 400;
 },
 {
 associatedMasterId = m01;
@@ -11325,24 +11298,55 @@ name = "29 Mar 23 at 00:48";
 shapes = (
 {
 alignment = -1;
-pos = (-383,-18);
-ref = _dot.circle;
+pos = (17,-18);
+ref = _dot;
 scale = (1.3,1.3);
 },
 {
 alignment = -1;
-pos = (-213,-18);
-ref = _dot.circle;
+pos = (187,-18);
+ref = _dot;
 scale = (1.3,1.3);
 },
 {
 alignment = -1;
-pos = (-298,132);
-ref = _dot.circle;
+pos = (102,132);
+ref = _dot;
 scale = (1.3,1.3);
 }
 );
-width = 0;
+visible = 1;
+width = 400;
+},
+{
+associatedMasterId = m01;
+attr = {
+colorPalette = 1;
+};
+layerId = "3F4F4F3D-9CC5-4096-A64F-5F39718E7062";
+metricRight = "=48";
+name = "Color 1 29 Mar 23 at 00:49";
+shapes = (
+{
+alignment = -1;
+pos = (32,-3);
+ref = _dot;
+scale = (1.1,1.1);
+},
+{
+alignment = -1;
+pos = (117,147);
+ref = _dot;
+scale = (1.1,1.1);
+},
+{
+alignment = -1;
+pos = (202,-3);
+ref = _dot;
+scale = (1.1,1.1);
+}
+);
+width = 400;
 },
 {
 associatedMasterId = m01;
@@ -11355,34 +11359,34 @@ name = "29 Mar 23 at 00:48";
 shapes = (
 {
 alignment = -1;
-pos = (-314,159);
+pos = (86,159);
 ref = _dot;
 scale = (0.3,0.3);
 },
 {
 alignment = -1;
-pos = (-223,108);
+pos = (177,108);
 ref = _dot;
 scale = (0.3,0.3);
 },
 {
 alignment = -1;
-pos = (-134,159);
+pos = (266,159);
 ref = _dot;
 scale = (0.3,0.3);
 },
 {
 alignment = -1;
-pos = (-223,3);
+pos = (177,3);
 ref = _dot;
 scale = (0.3,0.3);
 }
 );
-width = 0;
+width = 400;
 }
 );
 metricRight = "=36";
-metricWidth = "=0";
+metricWidth = "=space";
 unicode = 1757;
 },
 {
@@ -11394,77 +11398,118 @@ shapes = (
 {
 closed = 1;
 nodes = (
-(-116,4,o),
-(-73,10,o),
-(-71,68,cs),
-(-71,103,o),
-(-63,308,o),
-(-84,356,cs),
-(-93,376,o),
-(-99,364,o),
-(-107,356,cs),
-(-133,330,o),
-(-151,308,o),
-(-172,292,cs),
-(-181,285,o),
-(-182,274,o),
-(-179,265,cs),
-(-177,257,o),
-(-174,248,o),
-(-173,238,c),
-(-253,225,o),
-(-331,188,o),
-(-331,106,cs),
-(-331,16,o),
-(-222,-4,o),
-(-167,0,cs)
+(284,4,o),
+(327,10,o),
+(329,68,cs),
+(329,103,o),
+(337,308,o),
+(316,356,cs),
+(307,376,o),
+(301,364,o),
+(293,356,cs),
+(267,330,o),
+(249,308,o),
+(228,292,cs),
+(219,285,o),
+(218,274,o),
+(221,265,cs),
+(223,257,o),
+(226,248,o),
+(227,238,c),
+(147,225,o),
+(69,188,o),
+(69,106,cs),
+(69,16,o),
+(178,-4,o),
+(233,0,cs)
 );
 },
 {
 closed = 1;
 nodes = (
-(-159,122,o),
-(-156,126,o),
-(-156,130,cs),
-(-156,135,o),
-(-159,138,o),
-(-164,138,cs),
-(-168,138,o),
-(-172,135,o),
-(-172,130,cs),
-(-172,126,o),
-(-168,122,o),
-(-164,122,cs)
+(241,122,o),
+(244,126,o),
+(244,130,cs),
+(244,135,o),
+(241,138,o),
+(236,138,cs),
+(232,138,o),
+(228,135,o),
+(228,130,cs),
+(228,126,o),
+(232,122,o),
+(236,122,cs)
 );
 },
 {
 closed = 1;
 nodes = (
-(-221,12,o),
-(-315,29,o),
-(-315,106,cs),
-(-315,182,o),
-(-240,213,o),
-(-157,224,c),
-(-155,243,o),
-(-161,259,o),
-(-164,269,cs),
-(-166,276,o),
-(-166,276,o),
-(-162,279,cs),
-(-140,296,o),
-(-121,318,o),
-(-97,344,c),
-(-80,290,o),
-(-87,102,o),
-(-87,68,cs),
-(-89,24,o),
-(-118,20,o),
-(-168,16,cs)
+(179,12,o),
+(85,29,o),
+(85,106,cs),
+(85,182,o),
+(160,213,o),
+(243,224,c),
+(245,243,o),
+(239,259,o),
+(236,269,cs),
+(234,276,o),
+(234,276,o),
+(238,279,cs),
+(260,296,o),
+(279,318,o),
+(303,344,c),
+(320,290,o),
+(313,102,o),
+(313,68,cs),
+(311,24,o),
+(282,20,o),
+(232,16,cs)
 );
 }
 );
-width = 0;
+width = 400;
+},
+{
+associatedMasterId = m01;
+attr = {
+colorPalette = 4;
+};
+layerId = "3C156617-8D36-4104-AFC9-5789B45D6171";
+metricRight = "=60";
+name = "24 Feb 23 at 20:06";
+shapes = (
+{
+closed = 1;
+nodes = (
+(285,-6,o),
+(337,1,o),
+(339,68,cs),
+(339,103,o),
+(347,310,o),
+(325,360,cs),
+(313,387,o),
+(300,377,o),
+(286,363,cs),
+(260,337,o),
+(242,315,o),
+(222,300,cs),
+(209,290,o),
+(208,274,o),
+(211,262,cs),
+(213,257,o),
+(214,252,o),
+(216,246,c),
+(137,231,o),
+(59,192,o),
+(59,106,cs),
+(59,7,o),
+(177,-14,o),
+(234,-10,cs)
+);
+}
+);
+width = 400;
 },
 {
 associatedMasterId = m01;
@@ -11475,7 +11520,7 @@ backgroundImage = {
 alpha = 80;
 imagePath = "images/MS-ADD-01116-000-00012.jpg";
 locked = 1;
-pos = (-3187,-2732);
+pos = (-2787,-2732);
 scale = (5,5);
 };
 layerId = "38461C08-F54E-4BE4-9620-3C6CF5840E38";
@@ -11483,121 +11528,55 @@ shapes = (
 {
 closed = 1;
 nodes = (
-(-116,4,o),
-(-73,10,o),
-(-71,68,cs),
-(-71,103,o),
-(-63,308,o),
-(-84,356,cs),
-(-93,376,o),
-(-99,364,o),
-(-107,356,cs),
-(-133,330,o),
-(-151,308,o),
-(-172,292,cs),
-(-181,285,o),
-(-182,274,o),
-(-179,265,cs),
-(-177,257,o),
-(-174,248,o),
-(-173,238,c),
-(-253,225,o),
-(-331,188,o),
-(-331,106,cs),
-(-331,16,o),
-(-222,-4,o),
-(-167,0,cs)
+(284,4,o),
+(327,10,o),
+(329,68,cs),
+(329,103,o),
+(337,308,o),
+(316,356,cs),
+(307,376,o),
+(301,364,o),
+(293,356,cs),
+(267,330,o),
+(249,308,o),
+(228,292,cs),
+(219,285,o),
+(218,274,o),
+(221,265,cs),
+(223,257,o),
+(226,248,o),
+(227,238,c),
+(147,225,o),
+(69,188,o),
+(69,106,cs),
+(69,16,o),
+(178,-4,o),
+(233,0,cs)
+);
+},
+{
+closed = 1;
+nodes = (
+(232,122,o),
+(228,126,o),
+(228,130,cs),
+(228,135,o),
+(232,138,o),
+(236,138,cs),
+(241,138,o),
+(244,135,o),
+(244,130,cs),
+(244,126,o),
+(241,122,o),
+(236,122,cs)
 );
 }
 );
-width = 0;
-},
-{
-associatedMasterId = m01;
-attr = {
-colorPalette = 4;
-};
-layerId = "3C156617-8D36-4104-AFC9-5789B45D6171";
-name = "24 Feb 23 at 20:06";
-shapes = (
-{
-closed = 1;
-nodes = (
-(-116,4,o),
-(-73,10,o),
-(-71,68,cs),
-(-71,103,o),
-(-63,308,o),
-(-84,356,cs),
-(-93,376,o),
-(-99,364,o),
-(-107,356,cs),
-(-133,330,o),
-(-151,308,o),
-(-172,292,cs),
-(-181,285,o),
-(-182,274,o),
-(-179,265,cs),
-(-177,257,o),
-(-174,248,o),
-(-173,238,c),
-(-253,225,o),
-(-331,188,o),
-(-331,106,cs),
-(-331,16,o),
-(-222,-4,o),
-(-167,0,cs)
-);
-},
-{
-closed = 1;
-nodes = (
-(-159,122,o),
-(-156,126,o),
-(-156,130,cs),
-(-156,135,o),
-(-159,138,o),
-(-164,138,cs),
-(-168,138,o),
-(-172,135,o),
-(-172,130,cs),
-(-172,126,o),
-(-168,122,o),
-(-164,122,cs)
-);
-},
-{
-closed = 1;
-nodes = (
-(-221,6,o),
-(-321,24,o),
-(-321,106,cs),
-(-321,184,o),
-(-245,218,o),
-(-163,229,c),
-(-162,245,o),
-(-167,258,o),
-(-169,268,c),
-(-172,275,o),
-(-171,280,o),
-(-166,284,cs),
-(-141,303,o),
-(-117,333,o),
-(-94,354,c),
-(-72,305,o),
-(-81,122,o),
-(-81,68,cs),
-(-83,19,o),
-(-117,14,o),
-(-168,10,cs)
-);
-}
-);
-width = 0;
+width = 400;
 }
 );
 metricRight = "=70";
-metricWidth = "=0";
+metricWidth = "=space";
 },
 {
 glyphname = "endofayah-ar.10";
@@ -11606,145 +11585,144 @@ layers = (
 anchors = (
 {
 name = top;
-pos = (7,183);
+pos = (556,183);
 }
 );
 backgroundImage = {
 alpha = 80;
 crop = (0,0,2278,1618);
 imagePath = "images/MS-ADD-01116-000-00023.jpg";
-pos = (-5169,-3779);
+pos = (-4620,-3779);
 scale = (5,5);
 };
 layerId = m01;
-metricRight = "=32";
 shapes = (
 {
 alignment = -1;
-pos = (-327,58);
+pos = (222,58);
 ref = _dot;
 scale = (0.5,0.5);
 },
 {
 alignment = -1;
 angle = 9;
-pos = (-122,370);
+pos = (427,370);
 ref = _ayah.decoration0;
 },
 {
 alignment = -1;
 angle = -32;
-pos = (6,424);
+pos = (555,424);
 ref = _ayah.decoration0;
 },
 {
 alignment = -1;
 angle = -63;
-pos = (138,367);
+pos = (687,367);
 ref = _ayah.decoration0;
 },
 {
 alignment = -1;
 angle = -101;
-pos = (220,262);
+pos = (769,262);
 ref = _ayah.decoration0;
 },
 {
 alignment = -1;
 angle = -132;
-pos = (205,128);
+pos = (754,128);
 ref = _ayah.decoration0;
 },
 {
 alignment = -1;
 angle = -170;
-pos = (136,21);
+pos = (685,21);
 ref = _ayah.decoration0;
 },
 {
 alignment = -1;
 angle = 155;
-pos = (9,-18);
+pos = (558,-18);
 ref = _ayah.decoration0;
 },
 {
 alignment = -1;
 angle = 121;
-pos = (-112,24);
+pos = (437,24);
 ref = _ayah.decoration0;
 },
 {
 alignment = -1;
 angle = 85;
-pos = (-189,125);
+pos = (360,125);
 ref = _ayah.decoration0;
 },
 {
 alignment = -1;
 angle = 43;
-pos = (-206,258);
+pos = (343,258);
 ref = _ayah.decoration0;
 },
 {
-pos = (400,0);
+pos = (949,0);
 ref = _ayah.ring0;
 },
 {
 alignment = -1;
-pos = (272,247);
+pos = (821,247);
 ref = _dot;
 scale = (0.5,0.5);
 },
 {
 alignment = -1;
-pos = (267,54);
+pos = (816,54);
 ref = _dot;
 scale = (0.5,0.5);
 },
 {
 alignment = -1;
-pos = (151,-99);
+pos = (700,-99);
 ref = _dot;
 scale = (0.5,0.5);
 },
 {
 alignment = -1;
-pos = (-31,-157);
+pos = (518,-157);
 ref = _dot;
 scale = (0.5,0.5);
 },
 {
 alignment = -1;
-pos = (-327,249);
+pos = (222,249);
 ref = _dot;
 scale = (0.5,0.5);
 },
 {
 alignment = -1;
-pos = (-211,408);
+pos = (338,408);
 ref = _dot;
 scale = (0.5,0.5);
 },
 {
 alignment = -1;
-pos = (158,404);
+pos = (707,404);
 ref = _dot;
 scale = (0.5,0.5);
 },
 {
 alignment = -1;
-pos = (-28,471);
+pos = (521,471);
 ref = _dot;
 scale = (0.5,0.5);
 },
 {
 alignment = -1;
-pos = (-215,-95);
+pos = (334,-95);
 ref = _dot;
 scale = (0.5,0.5);
 }
 );
-width = 400;
+width = 1117;
 },
 {
 associatedMasterId = m01;
@@ -11752,75 +11730,75 @@ attr = {
 colorPalette = 4;
 };
 layerId = "6B1955F4-4EB8-49E7-9A36-1486C4210796";
-metricRight = "=28";
+metricLeft = "=196";
 name = "Color 1 16 Apr 23 at 21:16";
 shapes = (
 {
 alignment = -1;
 angle = 9;
-pos = (-122,370);
+pos = (427,370);
 ref = _ayah.decoration1;
 },
 {
 alignment = -1;
 angle = -32;
-pos = (6,424);
+pos = (555,424);
 ref = _ayah.decoration1;
 },
 {
 alignment = -1;
 angle = -63;
-pos = (138,367);
+pos = (687,367);
 ref = _ayah.decoration1;
 },
 {
 alignment = -1;
 angle = -101;
-pos = (220,262);
+pos = (769,262);
 ref = _ayah.decoration1;
 },
 {
 alignment = -1;
 angle = -132;
-pos = (205,128);
+pos = (754,128);
 ref = _ayah.decoration1;
 },
 {
 alignment = -1;
 angle = -170;
-pos = (136,21);
+pos = (685,21);
 ref = _ayah.decoration1;
 },
 {
 alignment = -1;
 angle = 155;
-pos = (9,-18);
+pos = (558,-18);
 ref = _ayah.decoration1;
 },
 {
 alignment = -1;
 angle = 121;
-pos = (-112,24);
+pos = (437,24);
 ref = _ayah.decoration1;
 },
 {
 alignment = -1;
 angle = 85;
-pos = (-189,125);
+pos = (360,125);
 ref = _ayah.decoration1;
 },
 {
 alignment = -1;
 angle = 43;
-pos = (-206,258);
+pos = (343,258);
 ref = _ayah.decoration1;
 },
 {
-pos = (400,0);
+pos = (949,0);
 ref = _ayah.ring1;
 }
 );
-width = 400;
+width = 1117;
 },
 {
 associatedMasterId = m01;
@@ -11828,75 +11806,74 @@ attr = {
 colorPalette = 1;
 };
 layerId = "308DBF13-7F36-47CE-98BA-E3EADE690F6D";
-metricRight = "=32";
 name = "16 Apr 23 at 21:15";
 shapes = (
 {
 alignment = -1;
 angle = 9;
-pos = (-122,370);
+pos = (427,370);
 ref = _ayah.decoration0;
 },
 {
 alignment = -1;
 angle = -32;
-pos = (6,424);
+pos = (555,424);
 ref = _ayah.decoration0;
 },
 {
 alignment = -1;
 angle = -63;
-pos = (138,367);
+pos = (687,367);
 ref = _ayah.decoration0;
 },
 {
 alignment = -1;
 angle = -101;
-pos = (220,262);
+pos = (769,262);
 ref = _ayah.decoration0;
 },
 {
 alignment = -1;
 angle = -132;
-pos = (205,128);
+pos = (754,128);
 ref = _ayah.decoration0;
 },
 {
 alignment = -1;
 angle = -170;
-pos = (136,21);
+pos = (685,21);
 ref = _ayah.decoration0;
 },
 {
 alignment = -1;
 angle = 155;
-pos = (9,-18);
+pos = (558,-18);
 ref = _ayah.decoration0;
 },
 {
 alignment = -1;
 angle = 121;
-pos = (-112,24);
+pos = (437,24);
 ref = _ayah.decoration0;
 },
 {
 alignment = -1;
 angle = 85;
-pos = (-189,125);
+pos = (360,125);
 ref = _ayah.decoration0;
 },
 {
 alignment = -1;
 angle = 43;
-pos = (-206,258);
+pos = (343,258);
 ref = _ayah.decoration0;
 },
 {
-pos = (400,0);
+pos = (949,0);
 ref = _ayah.ring0;
 }
 );
-width = 400;
+width = 1117;
 },
 {
 associatedMasterId = m01;
@@ -11904,41 +11881,41 @@ attr = {
 colorPalette = 2;
 };
 layerId = "BBEEA15E-7915-420D-B934-810B6270F650";
-metricRight = "=60";
+metricLeft = "=229";
 name = "16 Apr 23 at 21:13";
 shapes = (
 {
 alignment = -1;
-pos = (272,247);
+pos = (821,247);
 ref = _dot;
 scale = (0.5,0.5);
 },
 {
 alignment = -1;
-pos = (151,-99);
+pos = (700,-99);
 ref = _dot;
 scale = (0.5,0.5);
 },
 {
 alignment = -1;
-pos = (-327,249);
+pos = (222,249);
 ref = _dot;
 scale = (0.5,0.5);
 },
 {
 alignment = -1;
-pos = (-28,471);
+pos = (521,471);
 ref = _dot;
 scale = (0.5,0.5);
 },
 {
 alignment = -1;
-pos = (-215,-95);
+pos = (334,-95);
 ref = _dot;
 scale = (0.5,0.5);
 }
 );
-width = 400;
+width = 1117;
 },
 {
 associatedMasterId = m01;
@@ -11946,45 +11923,45 @@ attr = {
 colorPalette = 3;
 };
 layerId = "08C4AC53-5DC2-4155-B6D9-EEB478B910A9";
-metricRight = "=65";
+metricLeft = "=229";
 name = "16 Apr 23 at 21:11";
 shapes = (
 {
 alignment = -1;
-pos = (-327,58);
+pos = (222,58);
 ref = _dot;
 scale = (0.5,0.5);
 },
 {
 alignment = -1;
-pos = (267,54);
+pos = (816,54);
 ref = _dot;
 scale = (0.5,0.5);
 },
 {
 alignment = -1;
-pos = (-31,-157);
+pos = (518,-157);
 ref = _dot;
 scale = (0.5,0.5);
 },
 {
 alignment = -1;
-pos = (-211,408);
+pos = (338,408);
 ref = _dot;
 scale = (0.5,0.5);
 },
 {
 alignment = -1;
-pos = (158,404);
+pos = (707,404);
 ref = _dot;
 scale = (0.5,0.5);
 }
 );
-width = 400;
+width = 1117;
 }
 );
-metricRight = "=|118";
-metricWidth = "=400";
+metricLeft = "=200";
+metricRight = "=200";
 },
 {
 glyphname = dottedCircle;
