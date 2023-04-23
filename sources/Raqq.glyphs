@@ -1,5 +1,5 @@
 {
-.appVersion = "3187";
+.appVersion = "3188";
 .formatVersion = 3;
 classes = (
 {
@@ -11963,7 +11963,6 @@ width = 1117;
 }
 );
 metricLeft = "=200";
-metricRight = "=200";
 },
 {
 glyphname = dottedCircle;
