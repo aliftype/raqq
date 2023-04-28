@@ -1,5 +1,5 @@
 {
-.appVersion = "3188";
+.appVersion = "3190";
 .formatVersion = 3;
 classes = (
 {
@@ -888,6 +888,12 @@ code = "lookup pos_dot_before_noon {
 	pos dotbelow-ar <35 0 0 0>;
 	pos twodotsverticalbelow-ar <15 0 0 0>;
 } pos_dot_before_noon;
+
+lookup optical_bounds {
+	pos endofayah-ar <-400 0 -400 0>;
+	pos endofayah-ar.05 <-400 0 -400 0>;
+	pos endofayah-ar.10 <-1117 0 -1117 0>;
+} optical_bounds;
 ";
 name = GPOS;
 }
@@ -992,6 +998,16 @@ sub alefMaksura-ar.fina by alefMaksura-ar.fina.salt;
 sub alefMaksura-ar.fina.wide by alefMaksura-ar.fina.wide.salt;
 ";
 tag = salt;
+},
+{
+code = "lookup optical_bounds;
+";
+tag = lfbd;
+},
+{
+code = "lookup optical_bounds;
+";
+tag = rtbd;
 }
 );
 fontMaster = (
