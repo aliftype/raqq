@@ -528,6 +528,9 @@ def propagateAnchors(glyph, layer):
     if glyph is not None and glyph.color == 0:
         return
 
+    if layer.layerId != layer.associatedMasterId:
+        return
+
     for component in layer.components:
         clayer = component.layer or component.component.layers[0]
         propagateAnchors(None, clayer)
