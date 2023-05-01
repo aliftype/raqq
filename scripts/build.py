@@ -386,8 +386,8 @@ def calcBits(bits, start, end):
 def getProperty(font, name):
     for prop in font.properties:
         if prop.key == name:
-            if prop.localized_values:
-                return {k[:2].lower(): v for (k, v) in prop.localized_values.items()}
+            if prop._localized_values:
+                return {k[:2].lower(): v for (k, v) in prop._localized_values.items()}
             return prop.value
 
 
