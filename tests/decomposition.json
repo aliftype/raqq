@@ -36,7 +36,17 @@
       "wawHamzaabove-ar",
       "yeh-ar",
       "yehFarsi-ar",
-      "yehHamzaabove-ar"
+      "yehHamzaabove-ar",
+      "behDotless-ar.medi.l1",
+      "hah-ar.medi.l1",
+      "seen-ar.medi.l1",
+      "sad-ar.medi.l1",
+      "ain-ar.medi.l1",
+      "fehDotless-ar.medi.l1",
+      "kaf-ar.medi.l1",
+      "meem-ar.medi.l1",
+      "heh-ar.medi.l1",
+      "alefabove-ar.medi.l1"
     ]
   },
   "tests": [

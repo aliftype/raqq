@@ -1,5 +1,5 @@
 {
-.appVersion = "3190";
+.appVersion = "3191";
 .formatVersion = 3;
 classes = (
 {
@@ -33,6 +33,16 @@ noonghunna-ar.fina
 hah-ar.medi
 hah-ar.fina";
 name = aftermeem;
+},
+{
+code = "$[name LIKE \"*.medi\" && ! name ENDSWITH \".l1\" && ! name BEGINSWITH \"_\" && ! name MATCHES \"^(lam|tah)-ar.*\"]
+";
+name = medi.l0;
+},
+{
+code = "$[name LIKE \"*.medi.l1\"]
+";
+name = medi.l1;
 }
 );
 customParameters = (
@@ -332,6 +342,36 @@ lookup rlig_kasratan {
 	;
 } rlig_kasratan;
 
+
+########## Meddial Hah ###########
+
+@medi.l0.full = [@medi.l0 lam-ar.medi tah-ar.medi];
+@medi.l1.full = [@medi.l1 lam-ar.medi.hah1 tah-ar.medi.hah1];
+
+lookup rlig_hah_medi_l1 {
+	lookupflag IgnoreMarks;
+
+	rsub [@medi.l0.full lam-ar.init tah-ar.init]'
+		 [hah-ar.medi hah-ar.fina @medi.l1.full]
+	by	 [@medi.l1.full lam-ar.init.hah1 tah-ar.init.hah1]
+	;
+} rlig_hah_medi_l1;
+
+lookup rlig_hah_init {
+	lookupflag IgnoreMarks;
+
+	sub	[behDotless-ar.init hah-ar.init hah-ar.medi.l1 lam-ar.init.hah1]'
+		[hah-ar.medi hah-ar.medi.l1 hah-ar.fina]
+	by	[behDotless-ar.init.hah hah-ar.init.hah hah-ar.medi.hah1 lam-ar.init.hah]
+	;
+} rlig_hah_init;
+
+lookup rlig_hah_cleanup {
+	sub @medi.l1 by @medi.l0;
+} rlig_hah_cleanup;
+
+##################################
+
 lookup rlig_ligatures {
 	lookupflag IgnoreMarks;
 
@@ -435,19 +475,8 @@ lookup wide_yeh {
 	sub fehDotless-ar.init	by fehDotless-ar.init.yeh;
 } wide_yeh;
 
-lookup level_1 {
-	sub behDotless-ar.init	by behDotless-ar.init.l1;
-	sub hah-ar.init			by hah-ar.init.l1;
-	sub hah-ar.medi			by hah-ar.medi.l1;
-	sub lam-ar.init			by lam-ar.init.l1;
-} level_1;
-
 lookup rlig_1 {
 	lookupflag IgnoreMarks;
-
-	sub	[behDotless-ar.init hah-ar.init hah-ar.medi lam-ar.init]' lookup level_1
-		[hah-ar.medi hah-ar.medi.l1 hah-ar.fina]
-	;
 
 	sub	[fehDotless-ar.medi meem-ar.init meem-ar.medi hah-ar.init hah-ar.medi]
 		 seen-ar.medi' lookup low_seen
@@ -576,10 +605,14 @@ lookup before_beh {
 	sub sad-ar.init				by sad-ar.init _c.seen.beh;
 	sub sad-ar.medi				by sad-ar.medi _c.seen.beh;
 	sub tah-ar.init				by tah-ar.init _c.seen.beh;
+	sub tah-ar.init.hah1		by tah-ar.init.hah1 _c.seen.beh;
 	sub tah-ar.medi				by tah-ar.medi _c.seen.beh;
+	sub tah-ar.medi.hah1		by tah-ar.medi.hah1 _c.seen.beh;
 	sub lam-ar.init				by lam-ar.init _c.seen.beh;
+	sub lam-ar.init.hah1		by lam-ar.init.hah1 _c.seen.beh;
 	sub lam-ar.medi				by lam-ar.medi _c.seen.beh;
 	sub lam-ar.medi.short		by lam-ar.medi.short _c.seen.beh;
+	sub lam-ar.medi.hah1		by lam-ar.medi.hah1 _c.seen.beh;
 
 	sub meem-ar.init			by meem-ar.init _c.seen.beh;
 	sub meem-ar.medi			by meem-ar.medi _c.seen.beh;
@@ -670,10 +703,14 @@ lookup rlig_connection {
 		 sad-ar.init
 		 sad-ar.medi
 		 tah-ar.init
+		 tah-ar.init.hah1
 		 tah-ar.medi
+		 tah-ar.medi.hah1
 		 lam-ar.init
+		 lam-ar.init.hah1
 		 lam-ar.medi
 		 lam-ar.medi.short
+		 lam-ar.medi.hah1
 		 meem-ar.init
 		 meem-ar.medi
 		 meem-ar.medi.round
@@ -691,18 +728,21 @@ lookup rlig_connection {
 
 	sub	[hah-ar.init hah-ar.medi ain-ar.medi]' lookup before_dal
 		[dal-ar.fina sad-ar.medi sad-ar.fina
-		 tah-ar.medi tah-ar.fina kaf-ar.medi kaf-ar.fina]
+		 tah-ar.medi tah-ar.medi.hah1 tah-ar.fina
+		 kaf-ar.medi kaf-ar.fina]
 	;
 
 	sub	 fehDotless-ar.init' lookup before_dal
-		[dal-ar.fina sad-ar.medi sad-ar.fina tah-ar.medi tah-ar.fina
+		[dal-ar.fina sad-ar.medi sad-ar.fina
+		 tah-ar.medi tah-ar.medi.hah1 tah-ar.fina
 		 kaf-ar.medi kaf-ar.fina
 		 qafDotless-ar.fina waw-ar.fina
 		 meem-ar.medi meem-ar.medi.round2 meem-ar.fina]
 	;
 
 	sub	 fehDotless-ar.medi' lookup before_dal
-		[dal-ar.fina sad-ar.medi sad-ar.fina tah-ar.medi tah-ar.fina
+		[dal-ar.fina sad-ar.medi sad-ar.fina
+		 tah-ar.medi tah-ar.medi.hah1 tah-ar.fina
 		 kaf-ar.medi kaf-ar.fina]
 	;
 
@@ -821,7 +861,10 @@ code = "lookup fina;";
 tag = fina;
 },
 {
-code = "lookup rlig_vertical_dots;
+code = "lookup rlig_hah_medi_l1;
+lookup rlig_hah_init;
+lookup rlig_hah_cleanup;
+lookup rlig_vertical_dots;
 lookup rlig_kashida;
 lookup rlig_kashida_2;
 lookup rlig_kasratan;
@@ -2107,7 +2150,7 @@ metricLeft = "=-20";
 metricRight = "=0";
 },
 {
-glyphname = "behDotless-ar.init.l1";
+glyphname = "behDotless-ar.init.hah";
 layers = (
 {
 anchors = (
@@ -2483,7 +2526,7 @@ width = 703;
 );
 },
 {
-glyphname = "hah-ar.medi.l1";
+glyphname = "hah-ar.medi.hah1";
 kernLeft = hah;
 layers = (
 {
@@ -2503,7 +2546,7 @@ pos = (58,309);
 layerId = m01;
 shapes = (
 {
-ref = "hah-ar.init.l1";
+ref = "hah-ar.init.hah";
 }
 );
 width = 643;
@@ -2593,7 +2636,7 @@ metricLeft = "=-20";
 metricRight = "=0";
 },
 {
-glyphname = "hah-ar.init.l1";
+glyphname = "hah-ar.init.hah";
 kernLeft = hah;
 layers = (
 {
@@ -4167,6 +4210,39 @@ metricLeft = "=tah-ar.init";
 metricRight = "=sad-ar.medi";
 },
 {
+glyphname = "tah-ar.medi.hah1";
+kernLeft = sad;
+kernRight = sad;
+layers = (
+{
+anchors = (
+{
+name = entry;
+pos = (758,0);
+},
+{
+name = exit;
+}
+);
+layerId = m01;
+shapes = (
+{
+alignment = -1;
+ref = "tah-ar.init.hah1";
+},
+{
+alignment = -1;
+pos = (357,0);
+ref = _c.sad;
+}
+);
+width = 758;
+}
+);
+metricLeft = "=tah-ar.init";
+metricRight = "=sad-ar.medi";
+},
+{
 glyphname = "tah-ar.init";
 kernLeft = sad;
 layers = (
@@ -4261,6 +4337,125 @@ nodes = (
 );
 }
 );
+width = 765;
+}
+);
+metricLeft = "=-20";
+metricRight = "=sad-ar";
+},
+{
+glyphname = "tah-ar.init.hah1";
+kernLeft = sad;
+layers = (
+{
+anchors = (
+{
+name = damma;
+pos = (10,171);
+},
+{
+name = exit;
+},
+{
+name = fatha;
+pos = (-39,373);
+},
+{
+name = kasra;
+pos = (589,-55);
+},
+{
+name = top;
+pos = (389,285);
+}
+);
+backgroundImage = {
+alpha = 80;
+angle = -0.9;
+imagePath = "images/MS-ADD-01116-000-00025.jpg";
+locked = 1;
+pos = (-5331,-3805);
+scale = (5,5);
+};
+layerId = m01;
+shapes = (
+{
+closed = 1;
+nodes = (
+(253,-4,o),
+(489,-10,o),
+(713,7,cs),
+(737,9,o),
+(766,30,o),
+(765,57,cs),
+(763,122,o),
+(739,173,o),
+(723,209,cs),
+(711,237,o),
+(707,247,o),
+(683,246,cs),
+(505,241,o),
+(297,239,o),
+(136,250,cs),
+(119,251,o),
+(116,254,o),
+(116,273,cs),
+(116,272,o),
+(103,559,o),
+(103,559,cs),
+(102,584,o),
+(87,582,o),
+(82,573,cs),
+(64,540,o),
+(32,510,o),
+(19,501,cs),
+(-1,488,o),
+(2,478,o),
+(3,463,cs),
+(6,402,o),
+(20,152,o),
+(21,88,c),
+(125,85,l),
+(121,172,l),
+(75,125,l),
+(265,119,o),
+(435,115,o),
+(605,130,cs),
+(615,131,o),
+(618,128,o),
+(619,125,cs),
+(622,117,o),
+(620,112,o),
+(591,110,cs),
+(377,95,o),
+(150,107,o),
+(82,108,cs),
+(-20,110,l),
+(-20,0,l)
+);
+}
+);
+width = 765;
+},
+{
+associatedMasterId = m01;
+backgroundImage = {
+alpha = 80;
+angle = -0.9;
+imagePath = "images/MS-ADD-01116-000-00025.jpg";
+pos = (-5331,-3665);
+scale = (5,5);
+};
+layerId = "F3AA85A5-6CE3-4866-BCBD-67E97CBA61D3";
+name = "1 May 23 at 01:39";
+shapes = (
+{
+alignment = -1;
+pos = (23,0);
+ref = "lam-ar.init.hah";
+}
+);
+visible = 1;
 width = 765;
 }
 );
@@ -6030,6 +6225,39 @@ metricLeft = "=-20";
 metricRight = "=3@157";
 },
 {
+glyphname = "lam-ar.medi.hah1";
+kernLeft = lam;
+kernRight = beh;
+layers = (
+{
+anchors = (
+{
+name = entry;
+pos = (125,0);
+},
+{
+name = exit;
+}
+);
+layerId = m01;
+shapes = (
+{
+alignment = -1;
+ref = "lam-ar.init.hah1";
+},
+{
+alignment = -1;
+pos = (38,0);
+ref = "kashida-ar.1";
+}
+);
+width = 125;
+}
+);
+metricLeft = "=-20";
+metricRight = "=3@157";
+},
+{
 glyphname = "lam-ar.medi.round";
 kernRight = beh;
 layers = (
@@ -6242,7 +6470,7 @@ metricLeft = "=-20@0";
 metricRight = "=0";
 },
 {
-glyphname = "lam-ar.init.l1";
+glyphname = "lam-ar.init.hah";
 layers = (
 {
 anchors = (
@@ -6299,6 +6527,114 @@ width = 105;
 }
 );
 metricLeft = "=0@0";
+metricRight = "=0";
+},
+{
+glyphname = "lam-ar.init.hah1";
+kernLeft = lam;
+layers = (
+{
+anchors = (
+{
+name = damma;
+pos = (5,173);
+},
+{
+name = exit;
+},
+{
+name = fatha;
+pos = (-48,390);
+},
+{
+name = kasra;
+pos = (123,-36);
+}
+);
+backgroundImage = {
+alpha = 80;
+angle = -0.1;
+imagePath = "images/MS-ADD-01116-000-00003.jpg";
+locked = 1;
+pos = (-6202,-3734);
+scale = (5,5);
+};
+layerId = m01;
+shapes = (
+{
+closed = 1;
+nodes = (
+(18,0,l),
+(92,2,o),
+(127,8,o),
+(123,116,cs),
+(118,263,o),
+(110,415,o),
+(104,557,cs),
+(103,580,o),
+(89,586,o),
+(79,567,cs),
+(67,544,o),
+(28,510,o),
+(10,496,cs),
+(-5,483,o),
+(1,470,o),
+(2,460,cs),
+(9,350,o),
+(16,214,o),
+(20,110,c),
+(-20,110,l),
+(-20,0,l)
+);
+}
+);
+width = 123;
+},
+{
+associatedMasterId = m01;
+backgroundImage = {
+alpha = 80;
+angle = -0.1;
+imagePath = "images/MS-ADD-01116-000-00003.jpg";
+locked = 1;
+pos = (-6202,-3734);
+scale = (5,5);
+};
+layerId = "57202DD3-E382-4D04-9977-46B2FD35FB4D";
+name = "1 May 23 at 01:53";
+shapes = (
+{
+closed = 1;
+nodes = (
+(18,0,l),
+(92,2,o),
+(127,8,o),
+(123,116,cs),
+(118,263,o),
+(107,475,o),
+(98,671,cs),
+(97,694,o),
+(83,700,o),
+(73,681,cs),
+(61,658,o),
+(22,624,o),
+(4,610,cs),
+(-11,597,o),
+(-5,584,o),
+(-4,574,cs),
+(6,413,o),
+(16,239,o),
+(18,110,c),
+(-20,110,l),
+(-20,0,l)
+);
+}
+);
+visible = 1;
+width = 123;
+}
+);
+metricLeft = "=-20@0";
 metricRight = "=0";
 },
 {
@@ -9785,6 +10121,141 @@ width = 395;
 }
 );
 unicode = 1574;
+},
+{
+color = 0;
+glyphname = "behDotless-ar.medi.l1";
+layers = (
+{
+layerId = m01;
+shapes = (
+{
+ref = "behDotless-ar.medi";
+}
+);
+width = 128;
+}
+);
+},
+{
+color = 0;
+glyphname = "hah-ar.medi.l1";
+layers = (
+{
+layerId = m01;
+shapes = (
+{
+ref = "hah-ar.medi";
+}
+);
+width = 703;
+}
+);
+},
+{
+color = 0;
+glyphname = "seen-ar.medi.l1";
+layers = (
+{
+layerId = m01;
+shapes = (
+{
+ref = "seen-ar.medi";
+}
+);
+width = 389;
+}
+);
+},
+{
+color = 0;
+glyphname = "sad-ar.medi.l1";
+layers = (
+{
+layerId = m01;
+shapes = (
+{
+ref = "sad-ar.medi";
+}
+);
+width = 758;
+}
+);
+},
+{
+color = 0;
+glyphname = "ain-ar.medi.l1";
+layers = (
+{
+layerId = m01;
+shapes = (
+{
+ref = "ain-ar.medi";
+}
+);
+width = 220;
+}
+);
+},
+{
+color = 0;
+glyphname = "fehDotless-ar.medi.l1";
+layers = (
+{
+layerId = m01;
+shapes = (
+{
+ref = "fehDotless-ar.medi";
+}
+);
+width = 377;
+}
+);
+},
+{
+color = 0;
+glyphname = "kaf-ar.medi.l1";
+layers = (
+{
+layerId = m01;
+shapes = (
+{
+ref = "kaf-ar.medi";
+}
+);
+width = 758;
+}
+);
+},
+{
+color = 0;
+glyphname = "meem-ar.medi.l1";
+layers = (
+{
+layerId = m01;
+shapes = (
+{
+ref = "meem-ar.medi";
+}
+);
+width = 380;
+}
+);
+},
+{
+color = 0;
+glyphname = "heh-ar.medi.l1";
+layers = (
+{
+layerId = m01;
+shapes = (
+{
+ref = "heh-ar.medi";
+}
+);
+width = 357;
+}
+);
 },
 {
 glyphname = "lam_lam_heh-ar";
@@ -13294,6 +13765,31 @@ nodes = (
 (71,111,c),
 (17,81,l)
 );
+}
+);
+width = 0;
+}
+);
+metricLeft = "=-60";
+metricWidth = "=0";
+},
+{
+color = 0;
+glyphname = "alefabove-ar.medi.l1";
+layers = (
+{
+annotations = (
+{
+pos = (-200,655);
+text = "https://corpuscoranicum.de/en/manuscripts/594/page/148r";
+type = Text;
+width = 270;
+}
+);
+layerId = m01;
+shapes = (
+{
+ref = "alefabove-ar.medi";
 }
 );
 width = 0;

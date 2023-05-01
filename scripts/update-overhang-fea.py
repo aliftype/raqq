@@ -96,7 +96,7 @@ def main(args):
                 lookahead = "' ".join(glyphs[1:])
                 rules.append(f"\tpos {match}' {adjustment} {lookahead}';")
                 if glyphs[1:] == ["hah-ar.medi"]:
-                    glyphs[1] = "hah-ar.medi.l1"
+                    glyphs[1] = "hah-ar.medi.hah1"
                     lookahead = "' ".join(glyphs[1:])
                     rules.append(f"\tpos {match}' {adjustment} {lookahead}';")
             if not found:
