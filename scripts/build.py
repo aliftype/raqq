@@ -560,6 +560,10 @@ def prepare(args):
             glyph.category = info.category
         if glyph.subCategory is None:
             glyph.subCategory = info.subCategory
+        if glyph.color == 0:
+            for layer in glyph.layers:
+                layer.components = []
+                layer.width = 600
         for layer in glyph.layers:
             propagateAnchors(glyph, layer)
 
