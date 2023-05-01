@@ -1,6 +1,7 @@
 PyYAML
 fonttools
-glyphsLib >= 6.0.0b1
+#glyphsLib >= 6.0.0b1
+glyphsLib @ git+https://github.com/googlefonts/glyphsLib@tokens
 ufo2ft
 skia-pathops
 fontbakery[freetype]

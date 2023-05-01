@@ -30,6 +30,7 @@ from fontTools.ttLib.tables._h_e_a_d import mac_epoch_diff
 from fontTools.varLib import build as merge
 
 from glyphsLib import GSFont, GSAnchor
+from glyphsLib.builder.tokens import TokenExpander
 from glyphsLib.glyphdata import get_glyph as getGlyphInfo, GlyphData
 
 
@@ -251,6 +252,7 @@ LANG_IDS = {"ARA": "0x0C01", "ENG": "0x0409"}
 
 def makeFeatures(instance, master, args, glyphOrder):
     font = instance.parent
+    expander = TokenExpander(font, master)
 
     def repl(match):
         regex = re.compile(match.group(1))
@@ -284,17 +286,19 @@ def makeFeatures(instance, master, args, glyphOrder):
     for name, code in groups.items():
         if not isinstance(code, str):
             code = " ".join(code)
+        code = expander.expand(code)
         fea += f"@{name} = [{code}];\n"
 
     for prefix in font.featurePrefixes:
         if prefix.disabled:
             continue
-        fea += prefix.code + "\n"
+        code = expander.expand(prefix.code)
+        fea += code + "\n"
 
     for feature in font.features:
         if feature.disabled:
             continue
-        code = feature.code
+        code = expander.expand(feature.code)
         names = ""
         for label in feature.labels:
             names += f'name 3 1 {LANG_IDS[label["language"]]} "{label["value"]}";\n'

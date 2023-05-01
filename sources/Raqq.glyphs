@@ -3,116 +3,24 @@
 .formatVersion = 3;
 classes = (
 {
-code = "dotabove-ar
-dotabove-ar.beh
-dotabove-ar.reh
-dotbelow-ar
-twodotsverticalabove-ar
-twodotsverticalabove-ar.beh
-twodotsverticalabove-ar.vert
-twodotsverticalabove-ar.vert.beh
-twodotsverticalbelow-ar
-threedotsupabove-ar
-threedotsupabove-ar.beh
-threedotsupabove-ar.vert
-threedotsupabove-ar.vert.beh
-threedotsdownbelow-ar
-threedotshorizontalabove-ar
-threedotshorizontalabove-ar.1
-threedotshorizontalabove-ar.2
-threedotshorizontalabove-ar.3
-threedotshorizontalabove-ar.4
-";
-name = dots;
-},
-{
-code = "alef-ar
-behDotless-ar
-hah-ar
-dal-ar
-reh-ar
-seen-ar
-sad-ar
-tah-ar
-ain-ar
-fehDotless-ar
-qafDotless-ar
-kaf-ar
-lam-ar
-meem-ar
-noonghunna-ar
-heh-ar
-waw-ar
-alefMaksura-ar
+code = "$[name LIKE \"*-ar\" && category == \"Letter\" && ! colorIndex == 0 &&
+  name != \"kashida-ar\" && name != \"hamza-ar\"]
 
 period
 threedots-ar
 zerowidthspace
 endofayah-ar
 dottedCircle
-
-fehDotless_alef-ar
-lam_alef-ar
-lam_lam_heh-ar
-seen_alefMaksura-ar
 ";
 name = isol;
 },
 {
-code = "behDotless-ar.init
-behDotless-ar.init.med
-behDotless-ar.init.high
-behDotless-ar.init.l1
-hah-ar.init
-hah-ar.init.l1
-seen-ar.init
-sad-ar.init
-tah-ar.init
-ain-ar.init
-fehDotless-ar.init
-fehDotless-ar.init.yeh
-kaf-ar.init
-lam-ar.init
-lam-ar.init.l1
-meem-ar.init
-meem-ar.init.round
-heh-ar.init
-heh-ar.init.round
+code = "$[name LIKE \"*.init*\" && ! name BEGINSWITH \"_\"]
 ";
 name = init;
 },
 {
-code = "alef-ar.fina
-alef-ar.fina.short
-behDotless-ar.fina
-hah-ar.fina
-dal-ar.fina
-reh-ar.fina
-seen-ar.fina
-sad-ar.fina
-tah-ar.fina
-ain-ar.fina
-fehDotless-ar.fina
-qafDotless-ar.fina
-kaf-ar.fina
-lam-ar.fina
-lam-ar.fina.short
-meem-ar.fina
-meem-ar.fina.round
-noonghunna-ar.fina
-heh-ar.fina
-waw-ar.fina
-waw-ar.fina.round
-alefMaksura-ar.fina
-alefMaksura-ar.fina.salt
-alefMaksura-ar.fina.tooth
-alefMaksura-ar.fina.wide
-alefMaksura-ar.fina.wide.salt
-yehbarree-ar.fina
-yehbarree-ar.fina.baseline
-
-lam_alef-ar.fina
-seen_alefMaksura-ar.fina
+code = "$[name LIKE \"*.fina*\" && ! name BEGINSWITH \"_\"]
 ";
 name = fina;
 },
@@ -125,20 +33,6 @@ noonghunna-ar.fina
 hah-ar.medi
 hah-ar.fina";
 name = aftermeem;
-},
-{
-code = "zero-ar
-one-ar
-two-ar
-three-ar
-four-ar
-five-ar
-six-ar
-seven-ar
-eight-ar
-nine-ar
-";
-name = numbers;
 }
 );
 customParameters = (
@@ -241,6 +135,8 @@ code = "lookup ccmp_1 {
 lookup ccmp_2 {
 	sub alef-ar fathatan-ar' by fathatan-ar.alt;
 } ccmp_2;
+
+@numbers = [$[category == \"Number\" && subCategory == \"Decimal Digit\"]];
 
 lookup ccmp_ayah_1 {
 	sub endofayah-ar' @numbers @numbers five-ar by endofayah-ar.05;
@@ -890,9 +786,9 @@ code = "lookup pos_dot_before_noon {
 } pos_dot_before_noon;
 
 lookup optical_bounds {
-	pos endofayah-ar <-400 0 -400 0>;
-	pos endofayah-ar.05 <-400 0 -400 0>;
-	pos endofayah-ar.10 <-1117 0 -1117 0>;
+	pos endofayah-ar	<-${endofayah-ar:width}		0 -${endofayah-ar:width} 0>;
+ 	pos endofayah-ar.05	<-${endofayah-ar.05:width}	0 -${endofayah-ar.05:width} 0>;
+ 	pos endofayah-ar.10	<-${endofayah-ar.10:width}	0 -${endofayah-ar.10:width} 0>;
 } optical_bounds;
 ";
 name = GPOS;
@@ -942,7 +838,8 @@ lookup rlig_beh_dots;
 tag = rlig;
 },
 {
-code = "sub @dots by NULL;
+code = "@dots = [$[name LIKE \"*dot*\" && category == \"Mark\"]];
+sub @dots by NULL;
 ";
 labels = (
 {
@@ -964,7 +861,7 @@ tag = curs;
 {
 code = "lookup spacing {
 	lookupflag IgnoreMarks;
-	pos [@isol @fina] [@init @isol] <400 0 400 0>;
+	pos [@isol @fina] [@init @isol] <${space:width} 0 ${space:width} 0>;
 } spacing;
 
 # Automatic Code
