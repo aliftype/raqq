@@ -468,6 +468,10 @@ lookup rlig_teeth_2 {
 	sub [behDotless-ar.init behDotless-ar.medi]' lookup med_beh
 		[seen-ar.medi]' lookup low_seen
 	;
+
+	sub	[fehDotless-ar.medi meem-ar.init meem-ar.medi hah-ar.init hah-ar.medi]
+		 seen-ar.medi' lookup low_seen
+	;
 } rlig_teeth_2;
 ";
 name = teeth;
@@ -489,10 +493,6 @@ lookup wide_yeh {
 
 lookup rlig_1 {
 	lookupflag IgnoreMarks;
-
-	sub	[fehDotless-ar.medi meem-ar.init meem-ar.medi hah-ar.init hah-ar.medi]
-		 seen-ar.medi' lookup low_seen
-	;
 
 	sub [behDotless-ar.init lam-ar.init fehDotless-ar.init]' lookup wide_yeh
 		[alefMaksura-ar.fina yehbarree-ar.fina]' lookup wide_yeh
