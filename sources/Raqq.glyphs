@@ -33,16 +33,6 @@ noonghunna-ar.fina
 hah-ar.medi
 hah-ar.fina";
 name = aftermeem;
-},
-{
-code = "$[name LIKE \"*.medi\" && ! name ENDSWITH \".l1\" && ! name BEGINSWITH \"_\" && ! name MATCHES \"^(lam|tah)-ar.*\"]
-";
-name = medi.l0;
-},
-{
-code = "$[name LIKE \"*.medi.l1\"]
-";
-name = medi.l1;
 }
 );
 customParameters = (
@@ -214,8 +204,11 @@ lookup ccmp_ayah_2 {
 lookup ccmp_kashida {
 	sub kashida-ar alefabove-ar by alefabove-ar.medi;
 } ccmp_kashida;
-
-lookup isol {
+";
+name = ccmp;
+},
+{
+code = "lookup isol {
 	sub fehAfrican-ar by fehDotless-ar;
 	sub qafAfrican-ar by qafDotless-ar;
 	sub noonAfrican-ar by noonghunna-ar;
@@ -289,8 +282,11 @@ lookup fina {
 	sub yehFarsi-ar by alefMaksura-ar.fina;
 	sub yehbarree-ar by yehbarree-ar.fina;
 } fina;
-
-lookup rlig_vertical_dots {
+";
+name = basic;
+},
+{
+code = "lookup rlig_vertical_dots {
 	lookupflag UseMarkFilteringSet [twodotsverticalabove-ar threedotsupabove-ar];
 
 	sub [behDotless-ar.init behDotless-ar.medi]
@@ -301,7 +297,21 @@ lookup rlig_vertical_dots {
 	;
 } rlig_vertical_dots;
 
-# Disallow kashida after letters that can themselves elongate.
+lookup rlig_kasratan {
+	lookupflag UseMarkFilteringSet [kasratan-ar];
+
+	sub [seen-ar seen-ar.fina
+		 noonghunna-ar noonghunna-ar.fina
+		 lam-ar lam-ar.fina]
+		 kasratan-ar'
+	by	 kasratan-ar.alt
+	;
+} rlig_kasratan;
+";
+name = marks;
+},
+{
+code = "# Disallow kashida after letters that can themselves elongate.
 lookup rlig_kashida {
 	lookupflag IgnoreMarks;
 
@@ -330,24 +340,16 @@ lookup rlig_kashida_2 {
 	by	 kashida-ar
 	;
 } rlig_kashida_2;
-
-lookup rlig_kasratan {
-	lookupflag UseMarkFilteringSet [kasratan-ar];
-
-	sub [seen-ar seen-ar.fina
-		 noonghunna-ar noonghunna-ar.fina
-		 lam-ar lam-ar.fina]
-		 kasratan-ar'
-	by	 kasratan-ar.alt
-	;
-} rlig_kasratan;
-
-
-########## Meddial Hah ###########
-
+";
+name = kashida;
+},
+{
+code = "@medi.l0 = [$[name LIKE \"*.medi\" && ! name ENDSWITH \".l1\" && ! name BEGINSWITH \"_\" && ! name MATCHES \"^(lam|tah)-ar.*\"]];
+@medi.l1 = [$[name LIKE \"*.medi.l1\"]];
 @medi.l0.full = [@medi.l0 lam-ar.medi tah-ar.medi];
 @medi.l1.full = [@medi.l1 lam-ar.medi.hah1 tah-ar.medi.hah1];
 
+# First substitute all glyphs before hah with an alternate ones
 lookup rlig_hah_medi_l1 {
 	lookupflag IgnoreMarks;
 
@@ -357,6 +359,7 @@ lookup rlig_hah_medi_l1 {
 	;
 } rlig_hah_medi_l1;
 
+# Substitute signle initial glyphs before hah with alternate ones
 lookup rlig_hah_init {
 	lookupflag IgnoreMarks;
 
@@ -366,13 +369,16 @@ lookup rlig_hah_init {
 	;
 } rlig_hah_init;
 
+# Some of the alternates are superflous but we needed them as context, not any more.
+# Replace them back with the original glyphs.
 lookup rlig_hah_cleanup {
 	sub @medi.l1 by @medi.l0;
 } rlig_hah_cleanup;
-
-##################################
-
-lookup rlig_ligatures {
+";
+name = hah;
+},
+{
+code = "lookup rlig_ligatures {
 	lookupflag IgnoreMarks;
 
 	sub lam-ar.init alef-ar.fina			by lam_alef-ar;
@@ -385,8 +391,11 @@ lookup rlig_ligatures {
 
 	sub lam-ar.init lam-ar.medi heh-ar.fina	by lam_lam_heh-ar;
 } rlig_ligatures;
-
-lookup high_beh {
+";
+name = ligatures;
+},
+{
+code = "lookup high_beh {
 	sub behDotless-ar.init	by behDotless-ar.init.high;
 	sub behDotless-ar.medi	by behDotless-ar.medi.high;
 } high_beh;
@@ -460,8 +469,11 @@ lookup rlig_teeth_2 {
 		[seen-ar.medi]' lookup low_seen
 	;
 } rlig_teeth_2;
-
-lookup tooth_rounded {
+";
+name = teeth;
+},
+{
+code = "lookup tooth_rounded {
 	sub behDotless-ar.medi	by behDotless-ar.medi.round;
 	sub lam-ar.medi			by lam-ar.medi.round;
 } tooth_rounded;
@@ -549,8 +561,11 @@ lookup rlig_4 {
 		 @aftermeem' lookup rounded;
 	;
 } rlig_4;
-
-lookup rlig_sheen_dots {
+";
+name = misc;
+},
+{
+code = "lookup rlig_sheen_dots {
 	lookupflag UseMarkFilteringSet [threedotshorizontalabove-ar];
 
 	sub [seen-ar.medi]
@@ -591,8 +606,11 @@ lookup rlig_beh_dots {
 		 twodotsverticalabove-ar.vert.beh threedotsupabove-ar.vert.beh]
 	;
 } rlig_beh_dots;
-
-lookup before_beh {
+";
+name = dots;
+},
+{
+code = "lookup before_beh {
 	sub behDotless-ar.init		by behDotless-ar.init _c.seen.beh;
 	sub behDotless-ar.init.med	by behDotless-ar.init.med _c.seen.beh;
 	sub behDotless-ar.init.high	by behDotless-ar.init.high _c.seen.beh;
@@ -817,7 +835,7 @@ lookup rlig_connection {
 	;
 } rlig_connection;
 ";
-name = GSUB;
+name = connections;
 },
 {
 code = "lookup pos_dot_before_noon {
