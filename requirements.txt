@@ -86,7 +86,7 @@ gitpython==3.1.31
     # via font-v
 glyphsets==0.6.0
     # via fontbakery
-glyphslib @ git+https://github.com/googlefonts/glyphsLib@tokens
+glyphslib==6.2.2
     # via
     #   -r requirements.in
     #   babelfont
