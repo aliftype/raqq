@@ -482,6 +482,7 @@ name = teeth;
 code = "lookup tooth_rounded {
 	sub behDotless-ar.medi	by behDotless-ar.medi.round;
 	sub lam-ar.medi			by lam-ar.medi.round;
+	sub lam-ar.medi.hah1	by lam-ar.medi.hah1.round;
 } tooth_rounded;
 
 lookup tooth_yeh {
@@ -536,7 +537,7 @@ lookup rlig_3 {
 	by	 yehbarree-ar.fina.baseline
 	;
 
-	sub [behDotless-ar.medi lam-ar.medi]' lookup tooth_rounded
+	sub [behDotless-ar.medi lam-ar.medi lam-ar.medi.hah1]' lookup tooth_rounded
 		[meem-ar.medi meem-ar.fina]' lookup rounded
 	;
 
@@ -6870,6 +6871,44 @@ width = 125;
 }
 );
 metricLeft = "=-20";
+metricRight = "=3@272";
+},
+{
+glyphname = "lam-ar.medi.hah1.round";
+kernLeft = lam;
+kernRight = beh;
+layers = (
+{
+anchors = (
+{
+name = damma;
+pos = (-29,289);
+},
+{
+name = entry;
+pos = (97,115);
+},
+{
+name = exit;
+pos = (0,115);
+},
+{
+name = fatha;
+pos = (-83,648);
+}
+);
+layerId = m01;
+shapes = (
+{
+alignment = -1;
+pos = (-5,115);
+ref = "alef-ar.fina.short";
+}
+);
+width = 97;
+}
+);
+metricLeft = "=-5@170";
 metricRight = "=3@272";
 },
 {

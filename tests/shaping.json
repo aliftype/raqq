@@ -3592,6 +3592,10 @@
       "expectation": "endofayah-ar.10=0+1117|three-ar=1+0|zero-ar=2+0|zero-ar=3+0"
     },
     {
+      "input": "أيلمح",
+      "expectation": "hah-ar.fina=4+417|meem-ar.medi.round=3@0,115+425|lam-ar.medi.hah1.round=2+97|twodotsverticalbelow-ar=1@72,42+0|_c.seen.beh=1@0,115+0|behDotless-ar.init=1@0,115+130|hamzaabove-ar=0@491,550+0|alef-ar=0@400,0+1086"
+    },
+    {
       "input": "اتبعو",
       "expectation": "waw-ar.fina.round=4+492|_c.ain.meem=3@-7,0+28|ain-ar.medi=3+220|dotbelow-ar=2@9,-110+0|_c.seen.beh=2+0|behDotless-ar.medi=2+128|twodotsverticalabove-ar.beh=1@-39,400+0|_c.seen.beh=1+0|behDotless-ar.init.high=1+130|alef-ar=0@400,0+1086"
     },
