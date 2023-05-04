@@ -469,6 +469,7 @@
   <glyph name="yehHamzaabove-ar" unicode="0626" category="Letter" script="arabic" decompose="alefMaksura-ar, hamzaabove-ar"
          sortName="arL0308"
   />
+
   <glyph name="behDotless-ar.medi.l1" category="Letter" script="arabic" decompose="behDotless-ar.medi"
          sortName="arL0320"
   />
@@ -503,6 +504,39 @@
          sortName="arL0330"
   />
 
+  <glyph name="behDotless-ar.medi.l2" category="Letter" script="arabic" decompose="behDotless-ar.medi"
+         sortName="arL0340"
+  />
+  <glyph name="hah-ar.medi.l2" category="Letter" script="arabic" decompose="hah-ar.medi"
+         sortName="arL0341"
+  />
+  <glyph name="seen-ar.medi.l2" category="Letter" script="arabic" decompose="seen-ar.medi"
+         sortName="arL0342"
+  />
+  <glyph name="sad-ar.medi.l2" category="Letter" script="arabic" decompose="sad-ar.medi"
+         sortName="arL0343"
+  />
+  <glyph name="tah-ar.medi.l2" category="Letter" script="arabic" decompose="tah-ar.medi"
+         sortName="arL0344"
+  />
+  <glyph name="ain-ar.medi.l2" category="Letter" script="arabic" decompose="ain-ar.medi"
+         sortName="arL0345"
+  />
+  <glyph name="fehDotless-ar.medi.l2" category="Letter" script="arabic" decompose="fehDotless-ar.medi"
+         sortName="arL0346"
+  />
+  <glyph name="kaf-ar.medi.l2" category="Letter" script="arabic" decompose="kaf-ar.medi"
+         sortName="arL0347"
+  />
+  <glyph name="lam-ar.medi.l2" category="Letter" script="arabic" decompose="lam-ar.medi"
+         sortName="arL0348"
+  />
+  <glyph name="meem-ar.medi.l2" category="Letter" script="arabic" decompose="meem-ar.medi"
+         sortName="arL0349"
+  />
+  <glyph name="heh-ar.medi.l2" category="Letter" script="arabic" decompose="heh-ar.medi"
+         sortName="arL0350"
+  />
 
   <glyph name="lam_lam_heh" category="Letter" subCategory="Ligature" script="arabic"
          sortName="arL0400"

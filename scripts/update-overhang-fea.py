@@ -101,6 +101,8 @@ def main(args):
                     rules.append(f"\tpos {match}' {adjustment} {lookahead}';")
                 if glyphs[1:] == ["hah-ar.medi.alt"]:
                     glyphs[1] = "hah-ar.medi.hah1.alt"
+                    if match == "lam-ar.init.hah1.alt":
+                        match = "lam-ar.init.hah2.alt"
                     lookahead = "' ".join(glyphs[1:])
                     rules.append(f"\tpos {match}' {adjustment} {lookahead}';")
             if not found:
