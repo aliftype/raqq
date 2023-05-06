@@ -76,7 +76,7 @@
     },
     {
       "input": "بح",
-      "expectation": "hah-ar.fina.alt=1+407|dotbelow-ar=0@521,-9+0|behDotless-ar.init.hah=0@36,130+575"
+      "expectation": "hah-ar.fina.alt=1+407|dotbelow-ar=0@528,-9+0|behDotless-ar.init.hah=0@63,0+572"
     },
     {
       "input": "بش",
@@ -580,7 +580,7 @@
     },
     {
       "input": "لم تحاجون",
-      "expectation": "dotabove-ar=8@5,191+0|noonghunna-ar=8+295|waw-ar.fina.round=7@400,0+892|dotbelow-ar=6@202,-112+0|_c.ain.meem=6@-7,0+28|hah-ar.init=6@-39,0+664|alef-ar.fina=5@400,0+501|_c.hah.beh=4+7|hah-ar.medi.alt=4+135|twodotsverticalabove-ar=3@-13,407+0|behDotless-ar.init.hah=3@36,135+565|space=2+400|meem-ar.fina=1+567|lam-ar.init=0@-25,0+98"
+      "expectation": "dotabove-ar=8@5,191+0|noonghunna-ar=8+295|waw-ar.fina.round=7@400,0+892|dotbelow-ar=6@202,-112+0|_c.ain.meem=6@-7,0+28|hah-ar.init=6@-39,0+664|alef-ar.fina=5@400,0+501|_c.hah.beh=4+7|hah-ar.medi.alt=4+135|twodotsverticalabove-ar=3@9,407+0|behDotless-ar.init.hah=3@63,5+572|space=2+400|meem-ar.fina=1+567|lam-ar.init=0@-25,0+98"
     },
     {
       "input": "۝٠",
@@ -2072,7 +2072,7 @@
     },
     {
       "input": "انحح",
-      "expectation": "hah-ar.fina=3+417|hah-ar.medi.hah1.alt=2@0,115+109|dotabove-ar=1@17,499+0|behDotless-ar.init.hah=1@36,235+565|alef-ar=0@400,0+1086"
+      "expectation": "hah-ar.fina=3+417|hah-ar.medi.hah1.alt=2@0,115+109|dotabove-ar=1@39,499+0|behDotless-ar.init.hah=1@63,105+572|alef-ar=0@400,0+1086"
     },
     {
       "input": "اوتے",
@@ -2232,7 +2232,7 @@
     },
     {
       "input": "ريحا",
-      "expectation": "alef-ar.fina=3+101|_c.hah.beh=2+7|hah-ar.medi.alt=2+135|twodotsverticalbelow-ar=1@521,-31+0|behDotless-ar.init.hah=1@36,135+565|reh-ar=0@400,0+850"
+      "expectation": "alef-ar.fina=3+101|_c.hah.beh=2+7|hah-ar.medi.alt=2+135|twodotsverticalbelow-ar=1@528,-31+0|behDotless-ar.init.hah=1@63,5+572|reh-ar=0@400,0+850"
     },
     {
       "input": "سببا",
@@ -2568,7 +2568,7 @@
     },
     {
       "input": "وبخا",
-      "expectation": "alef-ar.fina=3+101|dotabove-ar=2@-15,198+0|_c.hah.beh=2+7|hah-ar.medi.alt=2+135|dotbelow-ar=1@521,-4+0|behDotless-ar.init.hah=1@36,135+565|waw-ar=0@400,0+909"
+      "expectation": "alef-ar.fina=3+101|dotabove-ar=2@-15,198+0|_c.hah.beh=2+7|hah-ar.medi.alt=2+135|dotbelow-ar=1@528,-4+0|behDotless-ar.init.hah=1@63,5+572|waw-ar=0@400,0+909"
     },
     {
       "input": "ولجا",
