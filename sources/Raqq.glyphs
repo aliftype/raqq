@@ -3560,7 +3560,7 @@ backgroundImage = {
 alpha = 80;
 imagePath = "images/MS-ADD-01116-000-00049.jpg";
 locked = 1;
-pos = (-5794,-2854);
+pos = (-5783,-2854);
 scale = (5,5);
 };
 layerId = m01;
