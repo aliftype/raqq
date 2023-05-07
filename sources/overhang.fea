@@ -59,7 +59,7 @@ lookup overhang {
 	pos heh-ar.init' 510 yehbarree-ar.fina.baseline';
 	pos behDotless-ar.init.high' 500 _c.seen.beh' behDotless-ar.medi' yehbarree-ar.fina';
 	pos behDotless-ar.init.hah' 440 hah-ar.medi.alt' _c.ain.yeh' yehbarree-ar.fina';
-	pos behDotless-ar.init.med' 200 seen-ar.medi.low' yehbarree-ar.fina';
+	pos behDotless-ar.init.med' 220 _c.seen.beh' seen-ar.medi.low' yehbarree-ar.fina';
 	pos behDotless-ar.init.high' 390 _c.seen.beh' ain-ar.medi' _c.ain.yeh' yehbarree-ar.fina';
 	pos behDotless-ar.init' 200 _c.seen.beh' fehDotless-ar.medi' _c.feh.medi.reh' yehbarree-ar.fina';
 	pos behDotless-ar.init' 500 _c.seen.beh' lam-ar.medi' yehbarree-ar.fina';
@@ -90,15 +90,15 @@ lookup overhang {
 	pos heh-ar.init' 270 _c.feh.medi.beh' lam-ar.medi' yehbarree-ar.fina';
 	pos behDotless-ar.init' 370 _c.seen.beh' behDotless-ar.medi.high' _c.seen.beh' behDotless-ar.medi' yehbarree-ar.fina';
 	pos behDotless-ar.init.high' 350 _c.seen.beh' behDotless-ar.medi' hah-ar.medi' _c.ain.yeh' yehbarree-ar.fina';
-	pos behDotless-ar.init.high' 80 _c.seen.beh' behDotless-ar.medi.med' seen-ar.medi.low' yehbarree-ar.fina';
+	pos behDotless-ar.init.high' 90 _c.seen.beh' behDotless-ar.medi.med' _c.seen.beh' seen-ar.medi.low' yehbarree-ar.fina';
 	pos behDotless-ar.init.high' 260 _c.seen.beh' behDotless-ar.medi' _c.seen.beh' ain-ar.medi' _c.ain.yeh' yehbarree-ar.fina';
 	pos behDotless-ar.init.high' 80 _c.seen.beh' behDotless-ar.medi' _c.seen.beh' fehDotless-ar.medi' _c.feh.medi.reh' yehbarree-ar.fina';
 	pos behDotless-ar.init.high' 370 _c.seen.beh' behDotless-ar.medi' _c.seen.beh' lam-ar.medi' yehbarree-ar.fina';
 	pos behDotless-ar.init.high' 90 _c.seen.beh' behDotless-ar.medi.round' meem-ar.medi.round' yehbarree-ar.fina';
 	pos behDotless-ar.init.high' 140 _c.seen.beh' behDotless-ar.medi' _c.seen.beh' heh-ar.medi' yehbarree-ar.fina';
-	pos behDotless-ar.init.med' 80 seen-ar.medi.low' _c.seen.beh' behDotless-ar.medi' yehbarree-ar.fina';
-	pos behDotless-ar.init.med' 60 seen-ar.medi.low' hah-ar.medi' _c.ain.yeh' yehbarree-ar.fina';
-	pos behDotless-ar.init.med' 80 seen-ar.medi.low' _c.seen.beh' lam-ar.medi' yehbarree-ar.fina';
+	pos behDotless-ar.init.med' 90 _c.seen.beh' seen-ar.medi.low' _c.seen.beh' behDotless-ar.medi' yehbarree-ar.fina';
+	pos behDotless-ar.init.med' 70 _c.seen.beh' seen-ar.medi.low' hah-ar.medi' _c.ain.yeh' yehbarree-ar.fina';
+	pos behDotless-ar.init.med' 90 _c.seen.beh' seen-ar.medi.low' _c.seen.beh' lam-ar.medi' yehbarree-ar.fina';
 	pos behDotless-ar.init.high' 210 _c.seen.beh' ain-ar.medi' _c.ain.medi.beh' behDotless-ar.medi' yehbarree-ar.fina';
 	pos behDotless-ar.init.high' 260 _c.seen.beh' ain-ar.medi' hah-ar.medi' _c.ain.yeh' yehbarree-ar.fina';
 	pos behDotless-ar.init.high' 110 _c.seen.beh' ain-ar.medi' _c.ain.medi.beh' ain-ar.medi' _c.ain.yeh' yehbarree-ar.fina';
@@ -128,7 +128,7 @@ lookup overhang {
 	pos seen-ar.init' 130 _c.seen.beh' lam-ar.medi' _c.seen.beh' lam-ar.medi.short' yehbarree-ar.fina';
 	pos lam-ar.init' 380 _c.seen.beh' behDotless-ar.medi.high' _c.seen.beh' behDotless-ar.medi' yehbarree-ar.fina';
 	pos lam-ar.init.hah1' 360 _c.seen.beh' behDotless-ar.medi' hah-ar.medi' _c.ain.yeh' yehbarree-ar.fina';
-	pos lam-ar.init' 80 _c.seen.beh' behDotless-ar.medi.med' seen-ar.medi.low' yehbarree-ar.fina';
+	pos lam-ar.init' 100 _c.seen.beh' behDotless-ar.medi.med' _c.seen.beh' seen-ar.medi.low' yehbarree-ar.fina';
 	pos lam-ar.init' 270 _c.seen.beh' behDotless-ar.medi.high' _c.seen.beh' ain-ar.medi' _c.ain.yeh' yehbarree-ar.fina';
 	pos lam-ar.init' 80 _c.seen.beh' behDotless-ar.medi' _c.seen.beh' fehDotless-ar.medi' _c.feh.medi.reh' yehbarree-ar.fina';
 	pos lam-ar.init' 380 _c.seen.beh' behDotless-ar.medi' _c.seen.beh' lam-ar.medi' yehbarree-ar.fina';
