@@ -334,7 +334,7 @@ lookup rlig_kashida_2 {
 name = kashida;
 },
 {
-code = "@medi.l0 = [$[name LIKE \"*.medi\" && ! name ENDSWITH \".l1\" && ! name BEGINSWITH \"_\" && ! name MATCHES \"^(lam|tah)-ar.*\"]];
+code = "@medi.l0 = [$[name LIKE \"*.medi\" && ! name ENDSWITH \".l1\" && ! name BEGINSWITH \"_\" && ! name MATCHES \"^(lam|tah|alefabove)-ar.*\"]];
 @medi.l1 = [$[name LIKE \"*.medi.l1\"]];
 @medi.l2 = [$[name LIKE \"*.medi.l2\"]];
 @medi.l0.full = [@medi.l0 lam-ar.medi tah-ar.medi];
@@ -14951,145 +14951,44 @@ type = Text;
 width = 270;
 }
 );
-backgroundImage = {
-alpha = 80;
-imagePath = "images/alefabove-ar.medi.png";
-pos = (-844,-97);
-scale = (0.6,0.6);
-};
-layerId = m01;
-metricLeft = "=0";
-shapes = (
-{
-closed = 1;
-nodes = (
-(47,273,o),
-(28,273,o),
-(27,297,cs),
-(23,418,o),
-(17,510,o),
-(1,590,cs),
-(-3,608,o),
-(2,607,o),
-(7,614,cs),
-(22,637,o),
-(38,661,o),
-(43,686,cs),
-(46,700,o),
-(59,708,o),
-(57,681,cs),
-(46,550,o),
-(47,456,o),
-(47,298,cs)
-);
-}
-);
-width = 0;
-},
-{
-associatedMasterId = m01;
 attr = {
-colorPalette = 0;
+colorPalette = 3;
 };
 backgroundImage = {
 alpha = 80;
 imagePath = "images/alefabove-ar.medi.png";
-locked = 1;
-pos = (-809,-97);
+pos = (-872,-7);
 scale = (0.6,0.6);
 };
-layerId = "A57FEEC8-30F7-4C38-95EF-53FD5B79DDC0";
-metricLeft = "=-60";
-name = "Regular 3 Apr 23 at 16:42";
+layerId = m01;
 shapes = (
 {
 closed = 1;
 nodes = (
-(1,139,o),
-(-5,186,o),
-(-7,231,cs),
-(-11,328,o),
-(6,418,o),
-(-26,514,cs),
-(-39,553,o),
-(-52,575,o),
-(-57,590,cs),
-(-63,607,o),
-(-59,608,o),
-(-53,614,cs),
-(-30,637,o),
-(-20,657,o),
-(-6,686,cs),
-(0,699,o),
-(11,703,o),
-(15,676,cs),
-(23,621,o),
-(23,569,o),
-(25,518,cs),
-(28,450,o),
-(18,333,o),
-(33,231,cs),
-(40,186,o),
-(51,145,o),
-(71,111,c),
-(17,81,l)
+(19,333,o),
+(0,333,o),
+(-1,357,cs),
+(-5,478,o),
+(-11,610,o),
+(-27,690,cs),
+(-31,708,o),
+(-26,707,o),
+(-21,714,cs),
+(-6,737,o),
+(10,761,o),
+(15,786,cs),
+(18,800,o),
+(31,808,o),
+(29,781,cs),
+(18,650,o),
+(19,516,o),
+(19,358,cs)
 );
 }
 );
 width = 0;
 }
 );
-metricLeft = "=-60";
-metricWidth = "=0";
-},
-{
-color = 0;
-glyphname = "alefabove-ar.medi.l1";
-layers = (
-{
-annotations = (
-{
-pos = (-200,655);
-text = "https://corpuscoranicum.de/en/manuscripts/594/page/148r";
-type = Text;
-width = 270;
-}
-);
-layerId = m01;
-shapes = (
-{
-ref = "alefabove-ar.medi";
-}
-);
-width = 0;
-}
-);
-metricLeft = "=-60";
-metricWidth = "=0";
-},
-{
-color = 0;
-glyphname = "alefabove-ar.medi.l2";
-layers = (
-{
-annotations = (
-{
-pos = (-200,655);
-text = "https://corpuscoranicum.de/en/manuscripts/594/page/148r";
-type = Text;
-width = 270;
-}
-);
-layerId = m01;
-shapes = (
-{
-ref = "alefabove-ar.medi";
-}
-);
-width = 0;
-}
-);
-metricLeft = "=-60";
 metricWidth = "=0";
 },
 {
