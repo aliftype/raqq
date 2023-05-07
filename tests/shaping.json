@@ -1178,11 +1178,11 @@
     },
     {
       "input": "لحد",
-      "expectation": "dal-ar.fina=2+875|_c.hah.dal=1+71|hah-ar.medi.alt=1@-71,0+64|lam-ar.init.hah1.alt=0@63,5+568"
+      "expectation": "dal-ar.fina=2+875|_c.hah.dal=1+71|hah-ar.medi.alt=1@-71,0+64|lam-ar.init.hah1.alt=0@63,5+578"
     },
     {
       "input": "لحم",
-      "expectation": "meem-ar.fina=2+567|_c.ain.meem=1+35|hah-ar.medi.alt=1@-39,0+96|lam-ar.init.hah1.alt=0@63,5+568"
+      "expectation": "meem-ar.fina=2+567|_c.ain.meem=1+35|hah-ar.medi.alt=1@-39,0+96|lam-ar.init.hah1.alt=0@63,5+578"
     },
     {
       "input": "لسا",
@@ -1258,7 +1258,7 @@
     },
     {
       "input": "لسے",
-      "expectation": "yehbarree-ar.fina=2+312|seen-ar.medi=1@-32,0+357|_c.seen.beh=0+0|lam-ar.init=0+363"
+      "expectation": "yehbarree-ar.fina=2+312|seen-ar.medi=1@-32,0+357|_c.seen.beh=0+0|lam-ar.init=0+343"
     },
     {
       "input": "لطم",
@@ -2060,11 +2060,11 @@
     },
     {
       "input": "الحا",
-      "expectation": "alef-ar.fina=3+101|_c.hah.beh=2+7|hah-ar.medi.alt=2+135|lam-ar.init.hah1.alt=1@63,5+568|alef-ar=0@400,0+1086"
+      "expectation": "alef-ar.fina=3+101|_c.hah.beh=2+7|hah-ar.medi.alt=2+135|lam-ar.init.hah1.alt=1@63,5+578|alef-ar=0@400,0+1086"
     },
     {
       "input": "الحج",
-      "expectation": "dotbelow-ar=3@571,-122+0|hah-ar.fina=3+417|hah-ar.medi.hah1.alt=2@0,115+109|lam-ar.init.hah2.alt=1@63,5+568|alef-ar=0@400,0+1086"
+      "expectation": "dotbelow-ar=3@571,-122+0|hah-ar.fina=3+417|hah-ar.medi.hah1.alt=2@0,115+109|lam-ar.init.hah2.alt=1@63,5+578|alef-ar=0@400,0+1086"
     },
     {
       "input": "الله",
@@ -2284,7 +2284,7 @@
     },
     {
       "input": "لحلا",
-      "expectation": "lam_alef-ar.fina=2+510|hah-ar.medi.alt=1@-69,0+66|lam-ar.init.hah1.alt=0@63,5+568"
+      "expectation": "lam_alef-ar.fina=2+510|hah-ar.medi.alt=1@-69,0+66|lam-ar.init.hah1.alt=0@63,5+578"
     },
     {
       "input": "لسبا",
@@ -2572,7 +2572,7 @@
     },
     {
       "input": "ولجا",
-      "expectation": "alef-ar.fina=3+101|dotbelow-ar=2@220,-112+0|_c.hah.beh=2+7|hah-ar.medi.alt=2+135|lam-ar.init.hah1.alt=1@63,5+568|waw-ar=0@400,0+909"
+      "expectation": "alef-ar.fina=3+101|dotbelow-ar=2@220,-112+0|_c.hah.beh=2+7|hah-ar.medi.alt=2+135|lam-ar.init.hah1.alt=1@63,5+578|waw-ar=0@400,0+909"
     },
     {
       "input": "يشعر",
@@ -3617,7 +3617,7 @@
     },
     {
       "input": "البلح",
-      "expectation": "hah-ar.fina=4+417|lam-ar.medi.hah1=3+125|dotbelow-ar=2@9,5+0|_c.seen.beh=2@0,115+0|behDotless-ar.medi=2@0,115+128|_c.seen.beh=1@0,115+0|lam-ar.init.hah1=1+233|alef-ar=0@400,0+1086"
+      "expectation": "hah-ar.fina=4+417|lam-ar.medi.hah1=3+125|dotbelow-ar=2@9,5+0|_c.seen.beh=2@0,115+0|behDotless-ar.medi=2@0,115+128|_c.seen.beh=1@0,115+0|lam-ar.init.hah1=1+223|alef-ar=0@400,0+1086"
     },
     {
       "input": "الطيح",
@@ -3749,7 +3749,7 @@
     },
     {
       "input": "الحجارة",
-      "expectation": "twodotsverticalabove-ar=6@154,403+0|heh-ar=6+356|reh-ar=5@400,0+850|alef-ar.fina=4@400,0+501|dotbelow-ar=3@220,-112+0|_c.hah.beh=3+7|hah-ar.medi=3+133|hah-ar.medi.hah1.alt=2@0,122+109|lam-ar.init.hah2.alt=1@63,12+568|alef-ar=0@400,0+1086"
+      "expectation": "twodotsverticalabove-ar=6@154,403+0|heh-ar=6+356|reh-ar=5@400,0+850|alef-ar.fina=4@400,0+501|dotbelow-ar=3@220,-112+0|_c.hah.beh=3+7|hah-ar.medi=3+133|hah-ar.medi.hah1.alt=2@0,122+109|lam-ar.init.hah2.alt=1@63,12+578|alef-ar=0@400,0+1086"
     },
     {
       "input": "الطبجبج",
@@ -3757,7 +3757,7 @@
     },
     {
       "input": "اللبجلج",
-      "expectation": "dotbelow-ar=6@571,-122+0|hah-ar.fina=6+417|lam-ar.medi.hah1=5+125|dotbelow-ar=4@220,3+0|_c.hah.beh=4@0,115+7|hah-ar.medi=4@0,115+133|dotbelow-ar=3@9,127+0|behDotless-ar.medi=3@0,237+128|_c.seen.beh=2@0,237+0|lam-ar.medi.hah2=2@0,7+125|_c.seen.beh=1@0,237+0|lam-ar.init.hah2=1@0,7+123|alef-ar=0@400,0+1086"
+      "expectation": "dotbelow-ar=6@571,-122+0|hah-ar.fina=6+417|lam-ar.medi.hah1=5+125|dotbelow-ar=4@220,3+0|_c.hah.beh=4@0,115+7|hah-ar.medi=4@0,115+133|dotbelow-ar=3@9,127+0|behDotless-ar.medi=3@0,237+128|_c.seen.beh=2@0,237+0|lam-ar.medi.hah2=2@0,7+125|_c.seen.beh=1@0,237+0|lam-ar.init.hah2=1@0,7+203|alef-ar=0@400,0+1086"
     },
     {
       "input": "الملتحف",
@@ -3781,7 +3781,7 @@
     },
     {
       "input": "الحجَارة",
-      "expectation": "twodotsverticalabove-ar=7@154,403+0|heh-ar=7+356|reh-ar=6@400,0+850|alef-ar.fina=5@400,0+501|fatha-ar=3@1,285+0|dotbelow-ar=3@220,-112+0|_c.hah.beh=3+7|hah-ar.medi=3+133|hah-ar.medi.hah1.alt=2@0,122+109|lam-ar.init.hah2.alt=1@63,12+568|alef-ar=0@400,0+1086"
+      "expectation": "twodotsverticalabove-ar=7@154,403+0|heh-ar=7+356|reh-ar=6@400,0+850|alef-ar.fina=5@400,0+501|fatha-ar=3@1,285+0|dotbelow-ar=3@220,-112+0|_c.hah.beh=3+7|hah-ar.medi=3+133|hah-ar.medi.hah1.alt=2@0,122+109|lam-ar.init.hah2.alt=1@63,12+578|alef-ar=0@400,0+1086"
     },
     {
       "input": "المتلجلج",

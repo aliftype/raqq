@@ -968,6 +968,14 @@ code = "lookup spacing {
 
 # Automatic Code
 
+@beh.init	= [$[name MATCHES \"(behDotless|lam)-ar.init.*\"]];
+@beh.medi	= [$[name MATCHES \"(behDotless|lam)-ar.medi.*\"]];
+@sad.init	= [$[name MATCHES \"(sad|tah|kaf)-ar.init.*\"]];
+@sad.medi	= [$[name MATCHES \"(sad|tah|kaf)-ar.medi.*\"]];
+@hah.init	= [$[name MATCHES \"hah-ar.init.*\"]];
+@hah.medi	= [$[name MATCHES \"hah-ar.medi.*\"]];
+@seen.medi	= [$[name MATCHES \"seen-ar.medi.*\"]];
+
 include(overhang.fea)
 ";
 tag = kern;

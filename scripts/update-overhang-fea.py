@@ -20,7 +20,10 @@ import itertools
 
 THRESHOLD = 50
 OVERHANGERS = ["ح", "ح\u200D", "ے"]
-DUAL_JOINERS = ["ٮ", "ح", "س", "ص", "ط", "ع", "ڡ", "ك", "ل", "م", "ه"]
+
+# To decrease lookup size, letters with similar glyph advances are grouped
+# together, so ل is grouped with ٮ, and ط and ك are grouped with ص.
+DUAL_JOINERS = ["ٮ", "ح", "س", "ص", "ع", "ڡ", "م", "ه"]
 
 BUFFER = hb.Buffer()
 
@@ -44,6 +47,20 @@ def shape(font, text, direction="rtl", script="arab", features=None):
     advance = 0
     for info, pos in zip(infos, positions):
         glyph = font.glyph_to_string(info.codepoint)
+        if glyph.startswith("behDotless-ar.init"):
+            glyph = "@beh.init"
+        elif glyph.startswith("behDotless-ar.medi"):
+            glyph = "@beh.medi"
+        elif glyph.startswith("sad-ar.init"):
+            glyph = "@sad.init"
+        elif glyph.startswith("sad-ar.medi"):
+            glyph = "@sad.medi"
+        elif glyph.startswith("hah-ar.init"):
+            glyph = "@hah.init"
+        elif glyph.startswith("hah-ar.medi"):
+            glyph = "@hah.medi"
+        elif glyph.startswith("seen-ar.medi"):
+            glyph = "@seen.medi"
         glyphs.append(glyph)
         advance += pos.x_advance
 
@@ -95,16 +112,6 @@ def main(args):
                 match = glyphs[0]
                 lookahead = "' ".join(glyphs[1:])
                 rules.append(f"\tpos {match}' {adjustment} {lookahead}';")
-                if glyphs[1:] == ["hah-ar.medi"]:
-                    glyphs[1] = "hah-ar.medi.hah1"
-                    lookahead = "' ".join(glyphs[1:])
-                    rules.append(f"\tpos {match}' {adjustment} {lookahead}';")
-                if glyphs[1:] == ["hah-ar.medi.alt"]:
-                    glyphs[1] = "hah-ar.medi.hah1.alt"
-                    if match == "lam-ar.init.hah1.alt":
-                        match = "lam-ar.init.hah2.alt"
-                    lookahead = "' ".join(glyphs[1:])
-                    rules.append(f"\tpos {match}' {adjustment} {lookahead}';")
             if not found:
                 break
             i += 1
