@@ -52,7 +52,7 @@ fontbakery[freetype]==0.8.11
     # via -r requirements.in
 fontfeatures==1.7.4
     # via babelfont
-fonttools @ git+https://github.com/fonttools/fonttools
+fonttools[lxml,ufo,unicode]==4.39.4
     # via
     #   -r requirements.in
     #   axisregistry
