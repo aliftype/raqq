@@ -3813,7 +3813,7 @@
     },
     {
       "input": "ٮٮسـٰها",
-      "expectation": "alef-ar.fina=6+101|_c.feh.medi.beh=5+0|heh-ar.medi=5+357|alefabove-ar.medi=3+0|_c.seen.beh=2+0|seen-ar.medi.low=2+411|_c.seen.beh=1+0|behDotless-ar.medi.med=1+128|_c.seen.beh=0+0|behDotless-ar.init.high=0+130"
+      "expectation": "alef-ar.fina=6+101|_c.feh.medi.beh=5+0|heh-ar.medi=5+357|alefabove-ar=3+0|_c.seen.beh=2+0|seen-ar.medi.low=2+411|_c.seen.beh=1+0|behDotless-ar.medi.med=1+128|_c.seen.beh=0+0|behDotless-ar.init.high=0+130"
     },
     {
       "input": "الاصطخري",

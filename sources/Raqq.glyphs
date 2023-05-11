@@ -192,7 +192,7 @@ lookup ccmp_ayah_2 {
 } ccmp_ayah_2;
 
 lookup ccmp_kashida {
-	sub kashida-ar alefabove-ar by alefabove-ar.medi;
+	sub kashida-ar alefabove-ar by alefabove-ar;
 } ccmp_kashida;
 ";
 name = ccmp;
@@ -1099,6 +1099,12 @@ width = 440;
 glyphname = space;
 layers = (
 {
+anchors = (
+{
+name = alefabove;
+pos = (200,0);
+}
+);
 layerId = m01;
 width = 400;
 }
@@ -14730,16 +14736,11 @@ unicode = 1618;
 glyphname = "alefabove-ar";
 layers = (
 {
-layerId = m01;
-width = 1200;
+anchors = (
+{
+name = _alefabove;
 }
 );
-unicode = 1648;
-},
-{
-glyphname = "alefabove-ar.medi";
-layers = (
-{
 annotations = (
 {
 pos = (-200,655);
@@ -14787,6 +14788,7 @@ width = 0;
 }
 );
 metricWidth = "=0";
+unicode = 1648;
 },
 {
 glyphname = "alefbelow-ar";
