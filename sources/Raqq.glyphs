@@ -13768,8 +13768,8 @@ nodes = (
 width = 110;
 }
 );
-metricLeft = "=0";
-metricRight = "=0";
+metricLeft = "=6";
+metricRight = "=4";
 },
 {
 glyphname = "dotabove-ar.beh";
