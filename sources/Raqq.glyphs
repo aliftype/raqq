@@ -13436,6 +13436,9 @@ layers = (
 {
 anchors = (
 {
+name = alefabove;
+},
+{
 name = damma;
 pos = (-100,290);
 },

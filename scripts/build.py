@@ -162,7 +162,7 @@ def makeMark(instance, glyphOrder):
     font = instance.parent
 
     classes = ""
-    mark2base = ""
+    mark2base = {}
     mark2liga = ""
 
     ligatures = {}
@@ -186,7 +186,8 @@ def makeMark(instance, glyphOrder):
                 name, index = name.split("_")
                 ligatures[gname][int(index)].append((name, (x, y)))
             else:
-                mark2base += f"pos base {gname} <anchor {x} {y}> mark @mark_{name};\n"
+                mark2base.setdefault(name, "")
+                mark2base[name] += f"pos base {gname} <anchor {x} {y}> mark @mark_{name};\n"
 
     for name, components in ligatures.items():
         mark2liga += f"pos ligature {name}"
@@ -197,11 +198,17 @@ def makeMark(instance, glyphOrder):
                 mark2liga += f" <anchor {x} {y}> mark @mark_{anchor}"
         mark2liga += ";\n"
 
+    base = ""
+    for name, code in mark2base.items():
+        base += f"""
+lookup mark2base_{name} {{
+{code}
+}} mark2base_{name};
+"""
+
     return f"""
 {classes}
-lookup mark2base_auto {{
-{mark2base}
-}} mark2base_auto;
+{base}
 lookup mark2liga_auto {{
 {mark2liga}
 }} mark2liga_auto;
