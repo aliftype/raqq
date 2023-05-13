@@ -634,7 +634,8 @@ lookup rlig_beh_dots {
 		 behDotless-ar.medi.med
 		 behDotless-ar.medi.high
 		 behDotless-ar.medi.round
-		 behDotless-ar.init.high]
+		 behDotless-ar.init.high
+		 behDotless-ar.init.hah]
 		@beh1_dots'
 	by	[dotabove-ar.beh twodotsverticalabove-ar.beh threedotsupabove-ar.beh
 		 twodotsverticalabove-ar.vert.beh threedotsupabove-ar.vert.beh]
