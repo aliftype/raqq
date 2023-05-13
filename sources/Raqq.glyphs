@@ -869,18 +869,14 @@ tag = kern;
 {
 code = "# Automatic Code
 
-lookup noon_dots {
+@behmedi = [$[name LIKE \"behDotless-ar.medi*\"]];
+lookup dots_below {
 	lookupflag UseMarkFilteringSet @dotsbelow;
 
 	pos	[behDotless-ar.medi]
 		 @dotsbelow' lookup pos_dot_before_noon
 		[noonghunna-ar.fina]
 	;
-}  noon_dots;
-
-@behmedi = [$[name LIKE \"behDotless-ar.medi*\"]];
-lookup hah_dots {
-	lookupflag UseMarkFilteringSet @dotsbelow;
 
 	pos	[hah-ar.init hah-ar.medi]
 		 _c.hah.beh
@@ -911,7 +907,7 @@ lookup hah_dots {
 		 @dotsbelow' <0 -30 0 0>
 		 [waw-ar.fina reh-ar.fina]
 	;
-} hah_dots;
+} dots_below;
 
 lookup heh_dots {
 	lookupflag UseMarkFilteringSet [kasratan-ar];
