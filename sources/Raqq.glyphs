@@ -384,9 +384,9 @@ lookup above_hah1 {
 lookup rlig_hah_init {
 	lookupflag IgnoreMarks;
 
-	sub	[fehDotless-ar.init hah-ar.init hah-ar.medi.l1 hah-ar.medi.l2]'
+	sub	[fehDotless-ar.init ain-ar.init hah-ar.init hah-ar.medi.l1 hah-ar.medi.l2]'
 		[hah-ar.medi hah-ar.medi.l1 hah-ar.medi.l2 hah-ar.fina]
-	by	[fehDotless-ar.init.hah hah-ar.init.hah hah-ar.medi.hah hah-ar.medi.hah]
+	by	[fehDotless-ar.init.hah ain-ar.init.hah hah-ar.init.hah hah-ar.medi.hah hah-ar.medi.hah]
 	;
 
 	sub	[behDotless-ar.init lam-ar.init.hah1]' lookup above_hah
@@ -3021,7 +3021,7 @@ shapes = (
 {
 closed = 1;
 nodes = (
-(134,-1,o),
+(137,-1,o),
 (394,3,o),
 (465,3,cs),
 (482,3,o),
@@ -3049,10 +3049,10 @@ nodes = (
 (80,81,o),
 (126,63,c),
 (137,110,l),
-(92,102,o),
-(34,93,o),
-(-10,149,c),
-(-9,0,l)
+(93,103,o),
+(37,94,o),
+(-7,145,c),
+(-7,0,l)
 );
 }
 );
@@ -5267,7 +5267,7 @@ pos = (330,-380);
 },
 {
 name = top;
-pos = (202,309);
+pos = (44,233);
 }
 );
 backgroundImage = {
@@ -5407,7 +5407,7 @@ pos = (153,-53);
 },
 {
 name = top;
-pos = (149,340);
+pos = (5,261);
 }
 );
 backgroundImage = {
@@ -5445,12 +5445,12 @@ nodes = (
 (43,317,o),
 (38,309,cs),
 (12,268,o),
-(-6,240,o),
-(-31,223,cs),
-(-40,217,o),
-(-44,204,o),
-(-36,195,cs),
-(6,151,o),
+(-11,245,o),
+(-36,228,cs),
+(-45,222,o),
+(-49,209,o),
+(-41,200,cs),
+(1,156,o),
 (41,107,o),
 (94,72,c),
 (117,110,l),
@@ -5629,6 +5629,220 @@ width = 690;
 }
 );
 metricLeft = "=-20";
+metricRight = "=0";
+},
+{
+glyphname = "ain-ar.init.hah";
+layers = (
+{
+anchors = (
+{
+name = damma;
+pos = (-16,171);
+},
+{
+name = exit;
+},
+{
+name = fatha;
+pos = (162,403);
+},
+{
+name = kasra;
+pos = (522,-54);
+},
+{
+name = top;
+pos = (70,304);
+}
+);
+backgroundImage = {
+alpha = 80;
+imagePath = "images/MS-ADD-01116-000-00032.jpg";
+locked = 1;
+pos = (-4098,-3629);
+scale = (5,5);
+};
+layerId = m01;
+shapes = (
+{
+closed = 1;
+nodes = (
+(210,-3,o),
+(331,-2,o),
+(494,6,cs),
+(500,6,o),
+(507,10,o),
+(514,15,cs),
+(536,31,o),
+(571,70,o),
+(597,89,cs),
+(605,95,o),
+(607,106,o),
+(590,105,cs),
+(490,99,o),
+(390,109,o),
+(307,129,cs),
+(172,162,o),
+(82,230,o),
+(110,277,cs),
+(120,294,o),
+(151,342,o),
+(163,356,cs),
+(173,368,o),
+(164,383,o),
+(149,368,cs),
+(134,353,o),
+(38,262,o),
+(12,234,cs),
+(-33,186,o),
+(27,90,o),
+(99,75,c),
+(115,110,l),
+(73,102,o),
+(35,91,o),
+(-7,145,c),
+(-7,0,l)
+);
+}
+);
+width = 603;
+},
+{
+anchors = (
+{
+name = exit;
+}
+);
+associatedMasterId = m01;
+backgroundImage = {
+alpha = 80;
+imagePath = "images/MS-ADD-01116-000-00032.jpg";
+locked = 1;
+pos = (-4098,-3629);
+scale = (5,5);
+};
+layerId = "8E881780-A182-4184-BE1E-0E184AB97EB7";
+name = "13 May 23 at 15:29";
+shapes = (
+{
+closed = 1;
+nodes = (
+(134,-1,o),
+(394,3,o),
+(465,3,cs),
+(482,3,o),
+(506,5,o),
+(518,16,cs),
+(540,35,o),
+(562,56,o),
+(584,88,cs),
+(590,97,o),
+(587,104,o),
+(576,103,cs),
+(418,94,o),
+(206,143,o),
+(77,296,cs),
+(69,305,o),
+(57,302,o),
+(54,296,cs),
+(37,261,o),
+(3,227,o),
+(-17,214,cs),
+(-29,206,o),
+(-27,201,o),
+(-17,189,cs),
+(12,153,o),
+(80,81,o),
+(126,63,c),
+(137,110,l),
+(92,102,o),
+(34,93,o),
+(-10,149,c),
+(-10,0,l)
+);
+}
+);
+width = 603;
+},
+{
+anchors = (
+{
+name = damma;
+pos = (-16,171);
+},
+{
+name = exit;
+},
+{
+name = fatha;
+pos = (162,403);
+},
+{
+name = kasra;
+pos = (502,-54);
+},
+{
+name = top;
+pos = (70,304);
+}
+);
+associatedMasterId = m01;
+backgroundImage = {
+alpha = 80;
+imagePath = "images/MS-ADD-01116-000-00032.jpg";
+locked = 1;
+pos = (-4098,-3629);
+scale = (5,5);
+};
+layerId = "72B59425-9968-4590-8026-462ED36FB91A";
+name = "13 May 23 at 15:36";
+shapes = (
+{
+closed = 1;
+nodes = (
+(210,-3,o),
+(331,0,o),
+(568,8,cs),
+(574,8,o),
+(581,12,o),
+(588,17,cs),
+(610,33,o),
+(645,72,o),
+(671,91,cs),
+(679,97,o),
+(681,108,o),
+(664,107,cs),
+(521,100,o),
+(446,94,o),
+(307,129,cs),
+(171,162,o),
+(82,230,o),
+(110,277,cs),
+(120,294,o),
+(151,342,o),
+(163,356,cs),
+(173,368,o),
+(164,383,o),
+(149,368,cs),
+(134,353,o),
+(38,262,o),
+(12,234,cs),
+(-33,186,o),
+(27,90,o),
+(99,75,c),
+(115,110,l),
+(73,102,o),
+(35,91,o),
+(-7,145,c),
+(-7,0,l)
+);
+}
+);
+visible = 1;
+width = 603;
+}
+);
 metricRight = "=0";
 },
 {
