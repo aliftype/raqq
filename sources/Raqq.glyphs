@@ -765,6 +765,7 @@ name = connections;
 code = "lookup pos_dot_before_noon {
 	pos dotbelow-ar <35 0 0 0>;
 	pos twodotsverticalbelow-ar <15 0 0 0>;
+	pos threedotsdownbelow-ar <15 0 0 0>;
 } pos_dot_before_noon;
 
 lookup optical_bounds {
@@ -869,10 +870,10 @@ tag = kern;
 code = "# Automatic Code
 
 lookup noon_dots {
-	lookupflag UseMarkFilteringSet [dotbelow-ar twodotsverticalbelow-ar];
+	lookupflag UseMarkFilteringSet @dotsbelow;
 
 	pos [behDotless-ar.medi]
-		[dotbelow-ar twodotsverticalbelow-ar]' lookup pos_dot_before_noon
+		 @dotsbelow' lookup pos_dot_before_noon
 		[noonghunna-ar.fina]
 	;
 }  noon_dots;
