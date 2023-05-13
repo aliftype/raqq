@@ -906,6 +906,11 @@ lookup hah_dots {
 		 @dotsbelow' <-100 0 0 0>
 		 hah-ar.medi.hah.alt
 	;
+
+	pos	 @behmedi
+		 @dotsbelow' <0 -30 0 0>
+		 [waw-ar.fina reh-ar.fina]
+	;
 } hah_dots;
 
 lookup heh_dots {
