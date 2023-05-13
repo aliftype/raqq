@@ -910,11 +910,6 @@ lookup dots_below {
 		[hah-ar.medi hah-ar.medi.hah hah-ar.fina]
 	;
 
-	pos	[behDotless-ar.init.hah]
-		 @dotsbelow' <-100 0 0 0>
-		 hah-ar.medi.hah.alt
-	;
-
 	pos	 @behmedi
 		 @dotsbelow' <0 -30 0 0>
 		 [waw-ar.fina reh-ar.fina]
@@ -2229,7 +2224,7 @@ layers = (
 anchors = (
 {
 name = bottom;
-pos = (502,63);
+pos = (141,252);
 },
 {
 name = damma;
