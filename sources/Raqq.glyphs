@@ -763,12 +763,7 @@ lookup rlig_connection {
 name = connections;
 },
 {
-code = "lookup optical_bounds {
-	pos endofayah-ar	<-${endofayah-ar:width}		0 -${endofayah-ar:width} 0>;
- 	pos endofayah-ar.05	<-${endofayah-ar.05:width}	0 -${endofayah-ar.05:width} 0>;
- 	pos endofayah-ar.10	<-${endofayah-ar.10:width}	0 -${endofayah-ar.10:width} 0>;
-} optical_bounds;
-";
+code = "";
 name = GPOS;
 }
 );
@@ -944,7 +939,11 @@ sub alefMaksura-ar.fina.wide by alefMaksura-ar.fina.wide.salt;
 tag = salt;
 },
 {
-code = "lookup optical_bounds;
+code = "lookup optical_bounds {
+	pos endofayah-ar	<-${endofayah-ar:width}		0 -${endofayah-ar:width} 0>;
+ 	pos endofayah-ar.05	<-${endofayah-ar.05:width}	0 -${endofayah-ar.05:width} 0>;
+ 	pos endofayah-ar.10	<-${endofayah-ar.10:width}	0 -${endofayah-ar.10:width} 0>;
+} optical_bounds;
 ";
 tag = lfbd;
 },
