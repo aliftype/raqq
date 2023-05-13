@@ -3657,7 +3657,7 @@
     },
     {
       "input": "البلح",
-      "expectation": "hah-ar.fina=4+417|lam-ar.medi.hah1=3+125|dotbelow-ar=2@9,5+0|_c.seen.beh=2@0,115+0|behDotless-ar.medi=2@0,115+128|_c.seen.beh=1@0,115+0|lam-ar.init.hah1=1+203|alef-ar=0@400,0+1086"
+      "expectation": "hah-ar.fina=4+417|lam-ar.medi.hah1=3+125|dotbelow-ar=2@274,-15+0|_c.seen.beh=2@0,115+0|behDotless-ar.medi=2@0,115+128|_c.seen.beh=1@0,115+0|lam-ar.init.hah1=1+203|alef-ar=0@400,0+1086"
     },
     {
       "input": "الطيح",
@@ -3722,6 +3722,10 @@
     {
       "input": "لنبين",
       "expectation": "dotabove-ar=4@-3,101+0|noonghunna-ar.fina=4+250|twodotsverticalbelow-ar=3@-10,-137+0|behDotless-ar.medi=3@-34,0+94|dotbelow-ar=2@14,-110+0|_c.seen.beh=2+0|behDotless-ar.medi.high=2+128|dotabove-ar.beh=1@8,294+0|_c.seen.beh=1+0|behDotless-ar.medi=1+128|_c.seen.beh=0+0|lam-ar.init=0+123"
+    },
+    {
+      "input": "ليتخذ",
+      "expectation": "dotabove-ar=4@426,249+0|dal-ar.fina=4+875|dotabove-ar=3@-33,220+0|_c.hah.dal=3+71|hah-ar.medi=3@-71,0+62|twodotsverticalabove-ar.beh=2@-22,424+0|behDotless-ar.medi=2@0,122+128|twodotsverticalbelow-ar=1@279,-35+0|_c.seen.beh=1@0,122+0|behDotless-ar.medi.high=1@0,122+128|_c.seen.beh=0@0,122+0|lam-ar.init.hah1=0@0,7+203"
     },
     {
       "input": "مبنيه",

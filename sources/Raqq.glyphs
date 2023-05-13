@@ -898,6 +898,13 @@ lookup dots_below {
 		[hah-ar.medi hah-ar.medi.hah hah-ar.fina]
 	;
 
+	pos	 @behmedi
+		 _c.seen.beh
+		 @dotsbelow' <265 -20 0 0>
+		 @beh.medi
+		[hah-ar.medi hah-ar.medi.hah hah-ar.fina]
+	;
+
 	pos	[behDotless-ar.init.hah]
 		 @dotsbelow' <-100 0 0 0>
 		 hah-ar.medi.hah.alt
