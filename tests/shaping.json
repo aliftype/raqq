@@ -1118,7 +1118,11 @@
     },
     {
       "input": "فحا",
-      "expectation": "alef-ar.fina=2+101|_c.hah.beh=1+7|hah-ar.medi=1+133|dotabove-ar=0@-61,495+0|fehDotless-ar.init=0@0,122+464"
+      "expectation": "alef-ar.fina=2+101|_c.hah.beh=1+7|hah-ar.medi=1+133|dotabove-ar=0@-56,495+0|fehDotless-ar.init.hah=0@11,122+479"
+    },
+    {
+      "input": "فحح",
+      "expectation": "hah-ar.fina=2+417|hah-ar.medi.hah=1@0,115+109|dotabove-ar=0@-56,610+0|fehDotless-ar.init.hah=0@11,237+479"
     },
     {
       "input": "فسا",
@@ -1630,7 +1634,7 @@
     },
     {
       "input": "وقح لا",
-      "expectation": "lam_alef-ar=4+542|space=3+400|hah-ar.fina=2+417|twodotsverticalabove-ar=1@-91,496+0|fehDotless-ar.init=1@0,115+464|waw-ar=0@400,0+909"
+      "expectation": "lam_alef-ar=4+542|space=3+400|hah-ar.fina=2+417|twodotsverticalabove-ar=1@-86,496+0|fehDotless-ar.init.hah=1@11,115+479|waw-ar=0@400,0+909"
     },
     {
       "input": "۝١٠",

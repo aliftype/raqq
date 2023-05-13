@@ -4,14 +4,14 @@ lookup overhang {
   lookupflag IgnoreMarks;
 	pos @beh.init' 410 hah-ar.fina.alt';
 	pos seen-ar.init' 90 hah-ar.fina';
-	pos fehDotless-ar.init' 130 hah-ar.fina';
+	pos fehDotless-ar.init.hah' 140 hah-ar.fina';
 	pos heh-ar.init' 100 hah-ar.fina';
 	pos @beh.init' 210 _c.seen.beh' @beh.medi' hah-ar.fina';
 	pos @beh.init' 110 _c.seen.beh' ain-ar.medi' hah-ar.fina';
 	pos @beh.init' 80 _c.seen.beh' @beh.medi' _c.seen.beh' @beh.medi' hah-ar.fina';
 	pos @beh.init' 410 @hah.medi';
 	pos seen-ar.init' 90 @hah.medi';
-	pos fehDotless-ar.init' 130 @hah.medi';
+	pos fehDotless-ar.init.hah' 140 @hah.medi';
 	pos heh-ar.init' 100 @hah.medi';
 	pos @beh.init' 210 _c.seen.beh' @beh.medi' @hah.medi';
 	pos @beh.init' 110 _c.seen.beh' ain-ar.medi' @hah.medi';
@@ -35,7 +35,7 @@ lookup overhang {
 	pos seen-ar.init' 230 @hah.medi' _c.ain.yeh' yehbarree-ar.fina';
 	pos seen-ar.init' 140 _c.seen.beh' ain-ar.medi' _c.ain.yeh' yehbarree-ar.fina';
 	pos fehDotless-ar.init' 120 _c.feh.init.beh' @beh.medi' yehbarree-ar.fina';
-	pos fehDotless-ar.init' 280 @hah.medi' _c.ain.yeh' yehbarree-ar.fina';
+	pos fehDotless-ar.init.hah' 280 @hah.medi' _c.ain.yeh' yehbarree-ar.fina';
 	pos meem-ar.init' 200 _c.seen.beh' @beh.medi' yehbarree-ar.fina';
 	pos meem-ar.init' 180 @hah.medi' _c.ain.yeh' yehbarree-ar.fina';
 	pos meem-ar.init' 100 _c.seen.beh' ain-ar.medi' _c.ain.yeh' yehbarree-ar.fina';
