@@ -872,7 +872,7 @@ code = "# Automatic Code
 lookup noon_dots {
 	lookupflag UseMarkFilteringSet @dotsbelow;
 
-	pos [behDotless-ar.medi]
+	pos	[behDotless-ar.medi]
 		 @dotsbelow' lookup pos_dot_before_noon
 		[noonghunna-ar.fina]
 	;
@@ -882,14 +882,14 @@ lookup noon_dots {
 lookup hah_dots {
 	lookupflag UseMarkFilteringSet @dotsbelow;
 
-	pos  [hah-ar.init hah-ar.medi]
+	pos	[hah-ar.init hah-ar.medi]
 		 _c.hah.beh
 		 @dotsbelow' <50 -20 0 0>
 		[lam-ar.medi.hah1 lam-ar.medi.hah2 behDotless-ar.medi]
 		[hah-ar.medi hah-ar.medi.hah hah-ar.fina]
 	;
 
-	pos  [hah-ar.init hah-ar.medi]
+	pos	[hah-ar.init hah-ar.medi]
 		 _c.hah.beh
 		 @dotsbelow' <150 -20 0 0>
 		[behDotless-ar.medi]
@@ -897,7 +897,7 @@ lookup hah_dots {
 		[hah-ar.medi hah-ar.medi.hah hah-ar.fina]
 	;
 
-	pos  @behmedi
+	pos	 @behmedi
 		 @dotsbelow' <395 -20 0 0>
 		[hah-ar.medi hah-ar.medi.hah hah-ar.fina]
 	;
@@ -915,7 +915,9 @@ lookup hah_dots {
 
 lookup heh_dots {
 	lookupflag UseMarkFilteringSet [kasratan-ar];
-	pos heh-ar.fina kasratan-ar' <-67 0 0 0>;
+	pos	 heh-ar.fina
+		 kasratan-ar' <-67 0 0 0>
+	;
 } heh_dots;
 ";
 tag = mark;
