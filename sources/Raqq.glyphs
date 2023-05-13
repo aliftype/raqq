@@ -763,13 +763,7 @@ lookup rlig_connection {
 name = connections;
 },
 {
-code = "lookup pos_dot_before_noon {
-	pos dotbelow-ar <35 0 0 0>;
-	pos twodotsverticalbelow-ar <15 0 0 0>;
-	pos threedotsdownbelow-ar <15 0 0 0>;
-} pos_dot_before_noon;
-
-lookup optical_bounds {
+code = "lookup optical_bounds {
 	pos endofayah-ar	<-${endofayah-ar:width}		0 -${endofayah-ar:width} 0>;
  	pos endofayah-ar.05	<-${endofayah-ar.05:width}	0 -${endofayah-ar.05:width} 0>;
  	pos endofayah-ar.10	<-${endofayah-ar.10:width}	0 -${endofayah-ar.10:width} 0>;
@@ -874,9 +868,17 @@ code = "# Automatic Code
 lookup dots_below {
 	lookupflag UseMarkFilteringSet @dotsbelow;
 
+	ignore
+	pos	 behDotless-ar.medi.high
+		 _c.seen.beh
+		 @dotsbelow
+		 behDotless-ar.medi
+		 @dotsbelow'
+		[noonghunna-ar.fina alefMaksura-ar.fina]
+	;
 	pos	[behDotless-ar.medi]
-		 @dotsbelow' lookup pos_dot_before_noon
-		[noonghunna-ar.fina]
+		 @dotsbelow' <70 0 0 0>
+		[noonghunna-ar.fina alefMaksura-ar.fina]
 	;
 
 	pos	[hah-ar.init hah-ar.medi]
