@@ -30,12 +30,10 @@ from fontTools.pens.transformPen import TransformPen
 from fontTools.pens.ttGlyphPen import TTGlyphPen
 from fontTools.ttLib.tables._h_e_a_d import mac_epoch_diff
 from fontTools.varLib import build as merge
-
-
-from glyphsLib import GSFont, GSAnchor, GSFontMaster
+from glyphsLib import GSAnchor, GSFont, GSFontMaster
 from glyphsLib.builder.tokens import TokenExpander
-from glyphsLib.glyphdata import get_glyph as getGlyphInfo, GlyphData
-
+from glyphsLib.glyphdata import GlyphData
+from glyphsLib.glyphdata import get_glyph as getGlyphInfo
 
 DEFAULT_TRANSFORM = [1, 0, 0, 1, 0, 0]
 
@@ -175,13 +173,13 @@ def getAnchorPos(font, glyph, default, name):
         y.append((loc, position.y))
 
     # If all values are equal, return simple value
-    if all(a[1]==x[0][1] for a in x):
+    if all(a[1] == x[0][1] for a in x):
         x = x[0][1]
     else:
         x = "(" + " ".join(f"{a[0]}:{a[1]}" for a in x) + ")"
 
     # If all values are equal, return simple value
-    if all(a[1]==y[0][1] for a in y):
+    if all(a[1] == y[0][1] for a in y):
         y = y[0][1]
     else:
         y = "(" + " ".join(f"{a[0]}:{a[1]}" for a in y) + ")"

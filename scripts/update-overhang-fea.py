@@ -14,9 +14,9 @@
 # You should have received a copy of the GNU Affero General Public License
 # along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
-import uharfbuzz as hb
 import itertools
 
+import uharfbuzz as hb
 
 THRESHOLD = 50
 OVERHANGERS = ["ح", "ح\u200D", "ے"]
