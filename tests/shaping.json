@@ -2116,7 +2116,7 @@
     },
     {
       "input": "الله",
-      "expectation": "lam_lam_heh-ar=1+550|alef-ar=0@400,0+1086"
+      "expectation": "lam_lam_heh-ar=1+573|alef-ar=0@400,0+1086"
     },
     {
       "input": "انحح",
