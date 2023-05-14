@@ -28,12 +28,10 @@ FONTDIR = fonts
 TESTDIR = tests
 BUILDDIR = build
 
-OTF = $(FONTDIR)/$(NAME).otf
-TTF = $(FONTDIR)/$(NAME).ttf
+FONTS = $(FONTDIR)/$(NAME).ttf
 FEA = $(SOURCEDIR)/overhang.fea
 JSON = $(TESTDIR)/shaping.json $(TESTDIR)/decomposition.json
 HTML = $(TESTDIR)/$(NAME).html
-FONTS = $(TTF) # $(OTF)
 GLYPHDATA = $(SOURCEDIR)/GlyphData.xml
 
 ARGS ?= 
@@ -46,13 +44,9 @@ all: $(FONTS)
 test: $(HTML)
 update-test: $(JSON)
 
-update-fea: $(TTF)
+update-fea: $(FONTS)
 	$(info   GEN    $(@F))
 	python $(SCRIPTDIR)/update-overhang-fea.py $< $(FEA)
-
-$(FONTDIR)/%.otf: $(SOURCEDIR)/%.glyphs $(CONFIG) $(GLYPHDATA) $(FEA)
-	$(info   BUILD  $(@F))
-	python $(SCRIPTDIR)/build.py $< $(VERSION) $@ --data=$(GLYPHDATA) $(ARGS)
 
 $(FONTDIR)/%.ttf: $(SOURCEDIR)/%.glyphs $(CONFIG) $(GLYPHDATA) $(FEA)
 	$(info   BUILD  $(@F))
@@ -63,11 +57,11 @@ $(TESTDIR)/%.html: $(FONTDIR)/%.ttf $(TESTDIR)/fontbakery.yml
 	fontbakery check-universal --config=$(TESTDIR)/fontbakery.yml \
                    fontbakery.profiles.shaping $< --html=$@ -l WARN &> /dev/null
 
-$(TESTDIR)/decomposition.json: $(SOURCEDIR)/$(NAME).glyphs $(TTF)
+$(TESTDIR)/decomposition.json: $(SOURCEDIR)/$(NAME).glyphs $(FONTS)
 	$(info   GEN    $(@F))
 	python $(SCRIPTDIR)/update-decomposition-test.py $@ $+
 
-$(TESTDIR)/shaping.json: $(TESTDIR)/shaping.csv $(TTF)
+$(TESTDIR)/shaping.json: $(TESTDIR)/shaping.csv $(FONTS)
 	$(info   GEN    $(@F))
 	python $(SCRIPTDIR)/update-shaping-test.py $@ $+
 

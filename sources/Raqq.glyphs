@@ -1,6 +1,12 @@
 {
 .appVersion = "3192";
 .formatVersion = 3;
+axes = (
+{
+name = Spacing;
+tag = SPAC;
+}
+);
 classes = (
 {
 code = "$[name LIKE \"*-ar\" && category == \"Letter\" && ! colorIndex == 0 &&
@@ -82,6 +88,15 @@ name = glyphOrder;
 value = (
 .notdef,
 space
+);
+},
+{
+name = "Virtual Master";
+value = (
+{
+Axis = Spacing;
+Location = -100;
+}
 );
 }
 );
@@ -839,7 +854,7 @@ tag = curs;
 {
 code = "lookup spacing {
 	lookupflag IgnoreMarks;
-	pos [@isol @fina] [@init @isol] <${space:width} 0 ${space:width} 0>;
+	pos [@isol @fina] [@init @isol] <(SPAC=0:${space:width} SPAC=-100:40) 0 (SPAC=0:${space:width} SPAC=-100:40) 0>;
 } spacing;
 
 # Automatic Code
@@ -950,6 +965,9 @@ tag = rtbd;
 );
 fontMaster = (
 {
+axesValues = (
+0
+);
 customParameters = (
 {
 name = typoAscender;
@@ -1131,6 +1149,23 @@ pos = (200,0);
 );
 layerId = m01;
 width = 400;
+},
+{
+anchors = (
+{
+name = alefabove;
+pos = (20,0);
+}
+);
+associatedMasterId = m01;
+attr = {
+coordinates = (
+-100
+);
+};
+layerId = "6A138485-2A93-422B-84D0-8184A8F6FA16";
+name = "13 May 23 at 22:36";
+width = 40;
 }
 );
 unicode = (32,160);
@@ -20489,6 +20524,9 @@ metricRight = "=14";
 );
 instances = (
 {
+axesValues = (
+0
+);
 name = Regular;
 }
 );

@@ -23,13 +23,16 @@ from fontTools.designspaceLib import DesignSpaceDocument
 from fontTools.fontBuilder import FontBuilder
 from fontTools.misc.transform import Identity, Transform
 from fontTools.pens.boundsPen import ControlBoundsPen
+from fontTools.pens.cu2quPen import Cu2QuPen
 from fontTools.pens.recordingPen import RecordingPen
 from fontTools.pens.reverseContourPen import ReverseContourPen
 from fontTools.pens.transformPen import TransformPen
+from fontTools.pens.ttGlyphPen import TTGlyphPen
 from fontTools.ttLib.tables._h_e_a_d import mac_epoch_diff
 from fontTools.varLib import build as merge
 
-from glyphsLib import GSFont, GSAnchor
+
+from glyphsLib import GSFont, GSAnchor, GSFontMaster
 from glyphsLib.builder.tokens import TokenExpander
 from glyphsLib.glyphdata import get_glyph as getGlyphInfo, GlyphData
 
@@ -78,7 +81,7 @@ CODEPAGE_RANGES = {
 }
 
 
-def draw(layer, glyphSet, isTTF):
+def draw(layer, glyphSet):
     xMin = None
     pen = RecordingPen()
     if layer.attributes.get("colorPalette") is not None:
@@ -103,24 +106,12 @@ def draw(layer, glyphSet, isTTF):
     else:
         layer.draw(pen)
 
-    if isTTF:
-        from fontTools.pens.ttGlyphPen import TTGlyphPen
-        from fontTools.pens.cu2quPen import Cu2QuPen
-
-        ttpen = TTGlyphPen(glyphSet)
-        pen.replay(Cu2QuPen(ttpen, 1.0, reverse_direction=True))
-        glyph = ttpen.glyph()
-    else:
-        from fontTools.pens.t2CharStringPen import T2CharStringPen
-
-        t2pen = T2CharStringPen(layer.width, glyphSet)
-        pen.replay(t2pen)
-        glyph = t2pen.getCharString()
-
-    return glyph
+    ttpen = TTGlyphPen(glyphSet)
+    pen.replay(Cu2QuPen(ttpen, 1.0, reverse_direction=True))
+    return ttpen.glyph()
 
 
-def makeKern(font, master, instance):
+def makeKern(font, master):
     kerning = font.kerningRTL.get(master.id, [])
     pairs = ""
     classes = ""
@@ -151,15 +142,54 @@ lookupflag IgnoreMarks;
 """
 
 
-def getLayer(glyph, instance):
+def getLayer(glyph, master, default):
+    if glyph is None:
+        return None
     for layer in glyph.layers:
-        if layer.attributes.get("coordinates") == instance.axes:
+        if layer.attributes.get("coordinates") == master.axes:
             return layer
-    return glyph.layers[0]
+    if default:
+        return glyph.layers[0]
 
 
-def makeMark(instance, glyphOrder):
-    font = instance.parent
+def getAnchorPos(font, glyph, default, name):
+    coords = font.masters[default.layerId].axes
+    pos = [(coords, default.anchors[name].position)]
+    for layer in glyph.layers:
+        if layer.associatedMasterId != default.layerId:
+            continue
+        if coords := layer.attributes.get("coordinates"):
+            pos.append((coords, layer.anchors[name].position))
+
+    # Simplest case, there is only one layer
+    if len(pos) == 1:
+        return pos[0][1].x, pos[0][1].y
+
+    # More than one layer
+    x = []
+    y = []
+    axes = [a.axisTag for a in font.axes]
+    for coords, position in pos:
+        loc = ",".join(f"{axes[i]}={c}" for i, c in enumerate(coords))
+        x.append((loc, position.x))
+        y.append((loc, position.y))
+
+    # If all values are equal, return simple value
+    if all(a[1]==x[0][1] for a in x):
+        x = x[0][1]
+    else:
+        x = "(" + " ".join(f"{a[0]}:{a[1]}" for a in x) + ")"
+
+    # If all values are equal, return simple value
+    if all(a[1]==y[0][1] for a in y):
+        y = y[0][1]
+    else:
+        y = "(" + " ".join(f"{a[0]}:{a[1]}" for a in y) + ")"
+
+    return x, y
+
+
+def makeMark(font, glyphOrder):
 
     classes = ""
     mark2base = {}
@@ -175,9 +205,10 @@ def makeMark(instance, glyphOrder):
         if (glyph.category, glyph.subCategory) == ("Letter", "Ligature"):
             ligatures[gname] = {i + 1: [] for i in range(gname.count("_") + 1)}
 
-        layer = getLayer(glyph, instance)
+        layer = glyph.layers[0]
         for anchor in layer.anchors:
-            name, x, y = anchor.name, anchor.position.x, anchor.position.y
+            name = anchor.name
+            x, y = getAnchorPos(font, glyph, layer, name)
             if name.startswith("_"):
                 classes += f"markClass {gname} <anchor {x} {y}> @mark_{name[1:]};\n"
             elif name.startswith("caret_") or name in ("exit", "entry"):
@@ -187,7 +218,9 @@ def makeMark(instance, glyphOrder):
                 ligatures[gname][int(index)].append((name, (x, y)))
             else:
                 mark2base.setdefault(name, "")
-                mark2base[name] += f"pos base {gname} <anchor {x} {y}> mark @mark_{name};\n"
+                mark2base[
+                    name
+                ] += f"pos base {gname} <anchor {x} {y}> mark @mark_{name};\n"
 
     for name, components in ligatures.items():
         mark2liga += f"pos ligature {name}"
@@ -215,9 +248,7 @@ lookup mark2liga_auto {{
 """
 
 
-def makeCurs(instance, glyphOrder):
-    font = instance.parent
-
+def makeCurs(font, glyphOrder):
     fea = ""
 
     exit_ = {}
@@ -228,9 +259,10 @@ def makeCurs(instance, glyphOrder):
         if glyph is None:
             continue
 
-        layer = getLayer(glyph, instance)
+        layer = glyph.layers[0]
         for anchor in layer.anchors:
-            name, x, y = anchor.name, anchor.position.x, anchor.position.y
+            name = anchor.name
+            x, y = getAnchorPos(font, glyph, layer, name)
             if name == "exit":
                 exit_[gname] = (x, y)
             elif name == "entry":
@@ -257,8 +289,7 @@ RE_DELIM = re.compile(r"(?:/(.*?.)/)")
 LANG_IDS = {"ARA": "0x0C01", "ENG": "0x0409"}
 
 
-def makeFeatures(instance, master, args, glyphOrder):
-    font = instance.parent
+def makeFeatures(font, master, args, glyphOrder):
     expander = TokenExpander(font, master)
 
     def repl(match):
@@ -315,11 +346,11 @@ def makeFeatures(instance, master, args, glyphOrder):
         if "# Automatic Code\n" in code:
             before, after = code.split("# Automatic Code\n", 1)
             if feature.name == "mark":
-                auto = makeMark(instance, glyphOrder)
+                auto = makeMark(font, glyphOrder)
             elif feature.name == "curs":
-                auto = makeCurs(instance, glyphOrder)
+                auto = makeCurs(font, glyphOrder)
             elif feature.name == "kern":
-                auto = makeKern(font, master, instance)
+                auto = makeKern(font, master)
             code = "\n".join([before, auto, after])
         fea += f"""
             feature {feature.name} {{
@@ -340,21 +371,22 @@ def makeFeatures(instance, master, args, glyphOrder):
         elif (glyph.category, glyph.subCategory) == ("Letter", "Ligature"):
             ligatures.add(name)
         else:
-            layer = getLayer(glyph, instance)
+            layer = glyph.layers[0]
             for anchor in layer.anchors:
                 if anchor.name.startswith("_"):
                     marks.add(name)
                 elif anchor.name.startswith("caret_"):
                     ligatures.add(name)
 
-        layer = getLayer(glyph, instance)
+        layer = glyph.layers[0]
         caret = ""
         for anchor in layer.anchors:
             if anchor.name.startswith("caret_"):
                 _, index = anchor.name.split("_")
                 if not caret:
                     caret = f"LigatureCaretByPos {name}"
-                caret += f" {anchor.position.x}"
+                x, _ = getAnchorPos(font, glyph, layer, anchor.name)
+                caret += f" {x}"
         if caret:
             carets += f"{caret};\n"
 
@@ -402,25 +434,23 @@ def getProperty(font, name):
             return prop.value
 
 
-def build(instance, isTTF, args):
-    font = instance.parent
-    master = font.masters[0]
-
-    glyphOrder = list(font.glyphOrder)
-
-    characterMap = {}
+def buildMaster(font, master, default, args):
     colorLayers = {}
 
     glyphSet = {}
-    for name in glyphOrder:
+    for name in list(font.glyphOrder):
         glyph = font.glyphs[name]
-        layer = getLayer(glyph, instance)
+        layer = getLayer(glyph, master, default)
+
+        if layer is None:
+            continue
+
         glyphSet[name] = layer
 
-        for layer in glyph.layers:
-            if glyph.subCategory == "Nonspacing":
-                layer.width = 0
+        if not default:
+            continue
 
+        for layer in glyph.layers:
             paletteIdx = layer.attributes.get("colorPalette", None)
             if paletteIdx is not None:
                 colorLayers.setdefault(name, [])
@@ -432,11 +462,69 @@ def build(instance, isTTF, args):
                 else:
                     colorLayers[name].append((name, paletteIdx))
 
+    glyphOrder = list(glyphSet.keys())
+    if default:
+        font.colorLayers = colorLayers
+        glyphOrder = font.glyphOrder
+
+    fb = FontBuilder(font.upm, isTTF=True)
+    fb.setupGlyphOrder(glyphOrder)
+
+    glyphs = {}
+    for name, layer in glyphSet.items():
+        glyphs[name] = draw(layer, glyphSet)
+
+    fb.setupGlyf(glyphs)
+
+    metrics = {}
+    glyf = fb.font["glyf"]
+    for name, glyph in glyphs.items():
+        metrics[name] = (glyphSet[name].width, glyph.xMin)
+    fb.setupHorizontalMetrics(metrics)
+
+    # Add empty name table, varLib merger needs one for fvar names
+    fb.setupNameTable({}, mac=False)
+
+    fb.setupHorizontalHeader(
+        ascent=master.customParameters["hheaAscender"],
+        descent=master.customParameters["hheaDescender"],
+        lineGap=master.customParameters["hheaLineGap"] or 0,
+    )
+
+    fb.setupPost(
+        underlinePosition=master.customParameters["underlinePosition"] or 0,
+        underlineThickness=master.customParameters["underlineThickness"] or 0,
+    )
+
+    codePages = [CODEPAGE_RANGES[v] for v in font.customParameters["codePageRanges"]]
+    fb.setupOS2(
+        version=4,
+        sTypoAscender=master.customParameters["typoAscender"],
+        sTypoDescender=master.customParameters["typoDescender"],
+        sTypoLineGap=master.customParameters["typoLineGap"] or 0,
+        usWinAscent=master.customParameters["winAscent"],
+        usWinDescent=master.customParameters["winDescent"],
+        sxHeight=master.xHeight,
+        sCapHeight=master.capHeight,
+        achVendID=font.properties["vendorID"],
+        fsType=calcBits(font.customParameters["fsType"], 0, 16),
+        fsSelection=calcFsSelection(font.instances[0]),
+        ulUnicodeRange1=calcBits(font.customParameters["unicodeRanges"], 0, 32),
+        ulCodePageRange1=calcBits(codePages, 0, 32),
+    )
+
+    return fb.font
+
+
+def buildBase(font, instance, vf, args):
+    master = font.masters[0]
+
+    characterMap = {}
+    for glyph in font.glyphs:
         for uni in glyph.unicodes:
-            characterMap[int(uni, 16)] = name
+            characterMap[int(uni, 16)] = glyph.name
 
     version = float(args.version)
-
     vendor = getProperty(font, "vendorID")
     names = {
         "copyright": getProperty(font, "copyrights"),
@@ -456,7 +544,7 @@ def build(instance, isTTF, args):
         "sampleText": getProperty(font, "sampleTexts"),
     }
 
-    fb = FontBuilder(font.upm, isTTF=isTTF)
+    fb = FontBuilder(font=vf)
     date = font.date.replace(tzinfo=datetime.timezone.utc)
     stat = args.input.stat()
     fb.updateHead(
@@ -464,62 +552,15 @@ def build(instance, isTTF, args):
         created=int(date.timestamp()) - mac_epoch_diff,
         modified=int(stat.st_mtime) - mac_epoch_diff,
     )
-    fb.setupGlyphOrder(font.glyphOrder)
     fb.setupCharacterMap(characterMap)
+
+    vf_names = [n for n in vf["name"].names if n.platformID == 3]
     fb.setupNameTable(names, mac=False)
-    fb.setupHorizontalHeader(
-        ascent=master.customParameters["hheaAscender"],
-        descent=master.customParameters["hheaDescender"],
-        lineGap=master.customParameters["hheaLineGap"] or 0,
-    )
-
-    metrics = {}
-    glyphs = {}
-    for name, layer in glyphSet.items():
-        glyphs[name] = draw(layer, glyphSet, isTTF)
-        metrics[name] = [layer.width, 0]
-
-    if isTTF:
-        fb.setupGlyf(glyphs)
-        glyf = fb.font["glyf"]
-        for name, glyph in glyphs.items():
-            glyph.recalcBounds(glyf)
-            metrics[name][1] = glyph.xMin
-    else:
-        fb.setupCFF(names["psName"], {}, glyphs, {})
-        for name, charString in glyphs.items():
-            pen = ControlBoundsPen(glyphSet)
-            charString.draw(pen)
-            if pen.bounds:
-                metrics[name][1] = pen.bounds[0]
-
-    fb.setupHorizontalMetrics(metrics)
-
-    fb.setupPost(
-        underlinePosition=master.customParameters["underlinePosition"] or 0,
-        underlineThickness=master.customParameters["underlineThickness"] or 0,
-    )
-
-    codePages = [CODEPAGE_RANGES[v] for v in font.customParameters["codePageRanges"]]
-    fb.setupOS2(
-        version=4,
-        sTypoAscender=master.customParameters["typoAscender"],
-        sTypoDescender=master.customParameters["typoDescender"],
-        sTypoLineGap=master.customParameters["typoLineGap"] or 0,
-        usWinAscent=master.customParameters["winAscent"],
-        usWinDescent=master.customParameters["winDescent"],
-        sxHeight=master.xHeight,
-        sCapHeight=master.capHeight,
-        achVendID=vendor,
-        fsType=calcBits(font.customParameters["fsType"], 0, 16),
-        fsSelection=calcFsSelection(instance),
-        ulUnicodeRange1=calcBits(font.customParameters["unicodeRanges"], 0, 32),
-        ulCodePageRange1=calcBits(codePages, 0, 32),
-    )
+    fb.font["name"].names += vf_names
 
     fb.font.cfg["fontTools.otlLib.builder:WRITE_GPOS7"] = True
 
-    fea = makeFeatures(instance, master, args, glyphOrder)
+    fea = makeFeatures(font, master, args, font.glyphOrder)
     feapath = args.input
     if os.environ.get("FONTTOOLS_LOOKUP_DEBUGGING"):
         feapath = feapath.with_suffix(".fea")
@@ -530,7 +571,7 @@ def build(instance, isTTF, args):
     palettes = font.customParameters["Color Palettes"]
     palettes = [[tuple(v / 255 for v in c) for c in p] for p in palettes]
     fb.setupCPAL(palettes)
-    fb.setupCOLR(colorLayers)
+    fb.setupCOLR(font.colorLayers)
 
     return fb.font
 
@@ -563,27 +604,77 @@ def propagateAnchors(glyph, layer):
 
 def prepare(args):
     font = GSFont(args.input)
+    instance = font.instances[0]  # XXX
+
     font.glyphOrder = [g.name for g in font.glyphs if g.export]
 
     for glyph in font.glyphs:
-        info = getGlyphInfo(glyph.name, data=args.data)
+
+        # Set categories from the external GlyphGata file
+        with open(args.data) as f:
+            data = GlyphData.from_files(f)
+        info = getGlyphInfo(glyph.name, data=data)
         if glyph.category is None:
             glyph.category = info.category
         if glyph.subCategory is None:
             glyph.subCategory = info.subCategory
-        if glyph.color == 0:
-            for layer in glyph.layers:
+
+        for layer in glyph.layers:
+            if glyph.color == 0:
+                # Clear placeholder glyphs
                 layer.components = []
                 layer.width = 600
-        for layer in glyph.layers:
+            elif (glyph.category, glyph.subCategory) == ("Mark", "Nonspacing"):
+                # Zero mark width
+                layer.width = 0
             propagateAnchors(glyph, layer)
 
-    return font
+    # Turn virtual masters into regular masters
+    axes = [a.name for a in font.axes]
+    m = 0
+    for param in font.customParameters:
+        if param.name == "Virtual Master":
+            m += 1
+            master = GSFontMaster()
+            master.axes = instance.axes.copy()
+            master.customParameters = font.masters[0].customParameters
+            master.xHeight = font.masters[0].xHeight
+            master.capHeight = font.masters[0].capHeight
+            master.id = master.name = f"vm{m:02}"
+            for axis in param.value:
+                i = axes.index(axis["Axis"])
+                master.axes[i] = axis["Location"]
+            font.masters.append(master)
+
+    return font, instance
 
 
-def data(path):
-    with open(path) as f:
-        return GlyphData.from_files(f)
+def build(font, instance, args):
+    ds = DesignSpaceDocument()
+
+    for i, axisDef in enumerate(font.axes):
+        axis = ds.newAxisDescriptor()
+        axis.tag = axisDef.axisTag
+        axis.name = axisDef.name
+        axis.hidden = axisDef.hidden
+        axis.maximum = max(m.axes[i] for m in font.masters)
+        axis.minimum = min(m.axes[i] for m in font.masters)
+        axis.default = instance.axes[i]
+        ds.addAxis(axis)
+
+    for i, master in enumerate(font.masters):
+        source = ds.newSourceDescriptor()
+        source.font = buildMaster(font, master, master.axes == instance.axes, args)
+        source.familyName = font.familyName
+        source.styleName = master.name
+        source.name = f"master_{i}"
+        source.location = {a.name: master.axes[i] for i, a in enumerate(ds.axes)}
+        ds.addSource(source)
+
+    vf, _, _ = merge(ds)
+
+    otf = buildBase(font, instance, vf, args)
+    return otf
 
 
 def main():
@@ -593,17 +684,11 @@ def main():
     parser.add_argument("input", help="input Glyphs source file", type=Path)
     parser.add_argument("version", help="font version", type=str)
     parser.add_argument("output", help="output OTF file", type=Path)
-    parser.add_argument("--data", help="GlyphData.xml file", type=data)
+    parser.add_argument("--data", help="GlyphData.xml file", type=Path)
     args = parser.parse_args()
 
-    isTTF = False
-    if args.output.suffix == ".ttf":
-        isTTF = True
-
-    font = prepare(args)
-    instance = font.instances[0]  # XXX
-
-    otf = build(instance, isTTF, args)
+    font, instance = prepare(args)
+    otf = build(font, instance, args)
     otf.save(args.output)
 
 
