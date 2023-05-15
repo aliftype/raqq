@@ -14,23 +14,17 @@
 # along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
 import argparse
-import copy
 import datetime
 import os
-import re
 
+from fontTools.cu2qu.ufo import glyphs_to_quadratic
 from fontTools.designspaceLib import DesignSpaceDocument
 from fontTools.fontBuilder import FontBuilder
 from fontTools.misc.transform import Identity, Transform
-from fontTools.pens.boundsPen import ControlBoundsPen
-from fontTools.pens.cu2quPen import Cu2QuPen
-from fontTools.pens.recordingPen import RecordingPen
-from fontTools.pens.reverseContourPen import ReverseContourPen
-from fontTools.pens.transformPen import TransformPen
 from fontTools.pens.ttGlyphPen import TTGlyphPen
 from fontTools.ttLib.tables._h_e_a_d import mac_epoch_diff
 from fontTools.varLib import build as merge
-from glyphsLib import GSAnchor, GSFont, GSFontMaster
+from glyphsLib import GSAnchor, GSFont, GSFontMaster, GSLayer
 from glyphsLib.builder.tokens import TokenExpander
 from glyphsLib.glyphdata import GlyphData
 from glyphsLib.glyphdata import get_glyph as getGlyphInfo
@@ -80,8 +74,6 @@ CODEPAGE_RANGES = {
 
 
 def draw(layer, glyphSet):
-    xMin = None
-    pen = RecordingPen()
     if layer.attributes.get("colorPalette") is not None:
         # If we are drawing a color layer, and it has components, we need to
         # remap the component to point to the new color glyphs we created. We
@@ -94,6 +86,7 @@ def draw(layer, glyphSet):
                 ) == componentLayer.attributes.get("colorPalette"):
                     component.componentName = componentLayer.name
 
+    pen = TTGlyphPen(glyphSet)
     if layer.paths:
         from pathops import Path
 
@@ -104,9 +97,7 @@ def draw(layer, glyphSet):
     else:
         layer.draw(pen)
 
-    ttpen = TTGlyphPen(glyphSet)
-    pen.replay(Cu2QuPen(ttpen, 1.0, reverse_direction=True))
-    return ttpen.glyph()
+    return pen.glyph()
 
 
 def makeKern(font, master):
@@ -282,20 +273,11 @@ lookupflag IgnoreMarks RightToLeft;
 """
 
 
-RE_DELIM = re.compile(r"(?:/(.*?.)/)")
-
 LANG_IDS = {"ARA": "0x0C01", "ENG": "0x0409"}
 
 
 def makeFeatures(font, master, args, glyphOrder):
     expander = TokenExpander(font, master)
-
-    def repl(match):
-        regex = re.compile(match.group(1))
-        return " ".join(n for n in glyphOrder if regex.match(n))
-
-    for x in list(font.featurePrefixes) + list(font.classes) + list(font.features):
-        x.code = RE_DELIM.sub(repl, x.code)
 
     groups = {}
     for gclass in font.classes:
@@ -600,6 +582,14 @@ def propagateAnchors(glyph, layer):
             layer.anchors[name] = new
 
 
+# Monkey patch GSlayer to masquerade as UFO layer for glyphs_to_quadratic
+def clearContours(self):
+    self.paths = []
+
+
+GSLayer.clearContours = clearContours
+
+
 def prepare(args):
     font = GSFont(args.input)
     instance = font.instances[0]  # XXX
@@ -626,6 +616,16 @@ def prepare(args):
                 # Zero mark width
                 layer.width = 0
             propagateAnchors(glyph, layer)
+            if "colorPalette" in layer.attributes:
+                glyphs_to_quadratic([layer], max_err=1.0, reverse_direction=True)
+
+        layers = [
+            layer
+            for layer in glyph.layers
+            if layer.layerId == layer.associatedMasterId
+            or "coordinates" in layer.attributes
+        ]
+        glyphs_to_quadratic(layers, max_err=1.0, reverse_direction=True)
 
     # Turn virtual masters into regular masters
     axes = [a.name for a in font.axes]
