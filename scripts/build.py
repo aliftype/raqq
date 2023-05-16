@@ -72,6 +72,26 @@ CODEPAGE_RANGES = {
     437: 63,
 }
 
+# Money patch GSLayer
+
+# Makes our life simpler when checking for empty layer.
+def GSLayer__bool__(self):
+    if (self.paths or self.components or self.anchors) and self.width != 600:
+        return True
+    return False
+
+
+GSLayer.__bool__ = GSLayer__bool__
+
+
+# glyphs_to_quadratic expects a UFO layer with clearContours, so give GSLayer
+# one.
+def GSLayer_clearContours(self):
+    self.paths = []
+
+
+GSLayer.clearContours = GSLayer_clearContours
+
 
 def draw(layer, glyphSet):
     if layer.attributes.get("colorPalette") is not None:
@@ -87,15 +107,7 @@ def draw(layer, glyphSet):
                     component.componentName = componentLayer.name
 
     pen = TTGlyphPen(glyphSet)
-    if layer.paths:
-        from pathops import Path
-
-        path = Path()
-        layer.draw(path.getPen(glyphSet=glyphSet))
-        path.simplify(fix_winding=True, keep_starting_points=True)
-        path.draw(pen)
-    else:
-        layer.draw(pen)
+    layer.draw(pen)
 
     return pen.glyph()
 
@@ -131,24 +143,25 @@ lookupflag IgnoreMarks;
 """
 
 
-def getLayer(glyph, master, default):
+def getLayer(glyph, master):
     if glyph is None:
         return None
-    for layer in glyph.layers:
-        if layer.attributes.get("coordinates") == master.axes:
-            return layer
-    if default:
-        return glyph.layers[0]
+
+    layer = glyph.layers[master.id]
+    if layer or layer is glyph.layers[0]:
+        return layer
+
+    return None
 
 
 def getAnchorPos(font, glyph, default, name):
     coords = font.masters[default.layerId].axes
     pos = [(coords, default.anchors[name].position)]
-    for layer in glyph.layers:
-        if layer.associatedMasterId != default.layerId:
-            continue
-        if coords := layer.attributes.get("coordinates"):
-            pos.append((coords, layer.anchors[name].position))
+    for master in font.masters:
+        layer = getLayer(glyph, master)
+        if layer:
+            coords = master.axes
+            pos.append((master.axes, layer.anchors[name].position))
 
     # Simplest case, there is only one layer
     if len(pos) == 1:
@@ -420,7 +433,7 @@ def buildMaster(font, master, default, args):
     glyphSet = {}
     for name in list(font.glyphOrder):
         glyph = font.glyphs[name]
-        layer = getLayer(glyph, master, default)
+        layer = getLayer(glyph, master)
 
         if layer is None:
             continue
@@ -500,7 +513,10 @@ def buildBase(font, instance, vf, args):
     master = font.masters[0]
 
     characterMap = {}
-    for glyph in font.glyphs:
+    for name in font.glyphOrder:
+        glyph = font.glyphs[name]
+        if not glyph:
+            continue
         for uni in glyph.unicodes:
             characterMap[int(uni, 16)] = glyph.name
 
@@ -582,12 +598,26 @@ def propagateAnchors(glyph, layer):
             layer.anchors[name] = new
 
 
-# Monkey patch GSlayer to masquerade as UFO layer for glyphs_to_quadratic
-def clearContours(self):
-    self.paths = []
+def removeOverlap(font, glyph, layer):
+    from pathops import Path
 
+    if not layer.paths:
+        return
 
-GSLayer.clearContours = clearContours
+    # If glyph have variation layers, skip
+    layers = [l for l in glyph.layers if l and l.layerId == l.associatedMasterId]
+    if len(layers) > 1:
+        return
+
+    glyphSet = {}
+    if layer.layerId == layer.associatedMasterId:
+        glyphSet = {g.name: g.layers[layer.layerId] for g in font.glyphs}
+
+    path = Path()
+    layer.draw(path.getPen(glyphSet=glyphSet))
+    path.simplify(fix_winding=True, keep_starting_points=True)
+    layer.paths = []
+    path.draw(layer.getPen())
 
 
 def prepare(args):
@@ -596,8 +626,34 @@ def prepare(args):
 
     font.glyphOrder = [g.name for g in font.glyphs if g.export]
 
-    for glyph in font.glyphs:
+    # Add masters for all intermediate layers
+    coordinates = set()
+    for name in font.glyphOrder:
+        glyph = font.glyphs[name]
+        for layer in glyph.layers:
+            if coords := layer.attributes.get("coordinates"):
+                coordinates.add(tuple(coords))
 
+    for axes in coordinates:
+        master = GSFontMaster()
+        master.axes = list(axes)
+        master.customParameters = font.masters[0].customParameters
+        master.xHeight = font.masters[0].xHeight
+        master.capHeight = font.masters[0].capHeight
+        master.id = master.name = str(master.axes)
+        for name in font.glyphOrder:
+            glyph = font.glyphs[name]
+            for layer in glyph.layers:
+                if (
+                    layer.layerId != layer.associatedMasterId
+                    and layer.attributes.get("coordinates") == master.axes
+                ):
+                    layer.layerId = layer.associatedMasterId = master.id
+                    del layer.attributes["coordinates"]
+        font.masters.append(master)
+
+    for name in font.glyphOrder:
+        glyph = font.glyphs[name]
         # Set categories from the external GlyphGata file
         with open(args.data) as f:
             data = GlyphData.from_files(f)
@@ -616,33 +672,17 @@ def prepare(args):
                 # Zero mark width
                 layer.width = 0
             propagateAnchors(glyph, layer)
+            removeOverlap(font, glyph, layer)
             if "colorPalette" in layer.attributes:
                 glyphs_to_quadratic([layer], max_err=1.0, reverse_direction=True)
 
         layers = [
             layer
             for layer in glyph.layers
-            if layer.layerId == layer.associatedMasterId
-            or "coordinates" in layer.attributes
+            if layer.layerId == layer.associatedMasterId and layer
         ]
-        glyphs_to_quadratic(layers, max_err=1.0, reverse_direction=True)
-
-    # Turn virtual masters into regular masters
-    axes = [a.name for a in font.axes]
-    m = 0
-    for param in font.customParameters:
-        if param.name == "Virtual Master":
-            m += 1
-            master = GSFontMaster()
-            master.axes = instance.axes.copy()
-            master.customParameters = font.masters[0].customParameters
-            master.xHeight = font.masters[0].xHeight
-            master.capHeight = font.masters[0].capHeight
-            master.id = master.name = f"vm{m:02}"
-            for axis in param.value:
-                i = axes.index(axis["Axis"])
-                master.axes[i] = axis["Location"]
-            font.masters.append(master)
+        if layers:
+            glyphs_to_quadratic(layers, max_err=1.0, reverse_direction=True)
 
     return font, instance
 
