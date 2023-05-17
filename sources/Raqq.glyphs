@@ -666,13 +666,14 @@ code = "@beh = [$[name MATCHES \"behDotless-ar.(init|medi).*\" && ! name MATCHES
 @heh = [heh-ar.init heh-ar.medi];
 
 @before_beh1 = [@beh @seen @sad @lam @meem];
-@before_beh = [@before_beh1 @hah @ain @feh @heh];
+@before_beh = [@before_beh1 @hah @ain @feh @heh kashida-ar.1];
 lookup before_beh {
 	sub @before_beh1		by @before_beh1 _c.seen.beh;
 	sub @heh				by @heh _c.feh.medi.beh;
 	sub	@hah				by @hah _c.hah.beh;
 	sub @ain				by @ain [_c.ain.init.beh _c.ain.medi.beh];
 	sub @feh				by @feh [_c.feh.init.beh _c.feh.medi.beh];
+	sub kashida-ar.1		by kashida-ar.1 _c.ain.init.beh;
 } before_beh;
 
 lookup before_dal {
@@ -681,20 +682,22 @@ lookup before_dal {
 	sub @ain				by @ain _c.ain.dal;
 } before_dal;
 
-@before_reh = [@hah @ain fehDotless-ar.medi];
+@before_reh = [@hah @ain fehDotless-ar.medi kashida-ar.1];
 lookup before_reh {
 	sub @hah				by @hah _c.hah.reh;
 	sub @ain				by @ain [_c.hah.reh _c.ain.medi.reh];
 	sub fehDotless-ar.medi	by fehDotless-ar.medi _c.feh.medi.reh;
+	sub kashida-ar.1		by kashida-ar.1 _c.hah.reh;
 } before_reh;
 
 lookup before_meem {
 	sub fehDotless-ar.medi	by fehDotless-ar.medi _c.feh.medi.meem;
 	sub @seen				by @seen _c.seen.meem;
 	sub [@hah @ain]			by [@hah @ain] _c.ain.meem;
+	sub kashida-ar.1		by kashida-ar.1 _c.ain.meem;
 } before_meem;
 
-@before_noon = [@hah @seen @ain fehDotless-ar.init fehDotless-ar.medi];
+@before_noon = [@hah @seen @ain fehDotless-ar.init fehDotless-ar.medi kashida-ar.1];
 lookup before_noon {
 	sub @before_noon		by @before_noon _c.hah.noon;
 } before_noon;
@@ -703,7 +706,7 @@ lookup before_waw {
 	sub fehDotless-ar.medi	by fehDotless-ar.medi _c.feh.medi.waw;
 } before_waw;
 
-@before_yeh = [@hah @ain];
+@before_yeh = [@hah @ain kashida-ar.1];
 lookup before_yeh {
 	sub @before_yeh			by @before_yeh _c.ain.yeh;
 } before_yeh;
@@ -737,7 +740,7 @@ lookup rlig_connection {
 		 reh-ar.fina
 	;
 
-	sub	[@seen @hah @ain fehDotless-ar.medi]' lookup before_meem
+	sub	[@seen @hah @ain fehDotless-ar.medi kashida-ar.1]' lookup before_meem
 		[qafDotless-ar.fina meem-ar.medi meem-ar.medi.round2 meem-ar.fina]
 	;
 
@@ -24359,6 +24362,9 @@ _c.feh.medi.reh = -70;
 _c.hah.noon = -25;
 "lam_alef-ar.fina" = -80;
 "seen-ar.medi.low" = -10;
+};
+"kashida-ar.1" = {
+_c.hah.reh = -67;
 };
 };
 };
