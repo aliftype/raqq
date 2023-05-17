@@ -427,11 +427,11 @@ def getProperty(font, name):
             return prop.value
 
 
-def buildMaster(font, master, default, args):
+def buildMaster(font, master, args):
     colorLayers = {}
 
     glyphSet = {}
-    for name in list(font.glyphOrder):
+    for name in font.glyphOrder:
         glyph = font.glyphs[name]
         layer = getLayer(glyph, master)
 
@@ -440,25 +440,22 @@ def buildMaster(font, master, default, args):
 
         glyphSet[name] = layer
 
-        if not default:
-            continue
-
         for layer in glyph.layers:
+            if layer.associatedMasterId != master.id:
+                continue
             paletteIdx = layer.attributes.get("colorPalette", None)
-            if paletteIdx is not None:
-                colorLayers.setdefault(name, [])
-                if layer.layerId != master.id:
-                    layer.name = f"{name}.color{len(colorLayers[name])}"
-                    glyphSet[layer.name] = layer
-                    font.glyphOrder.append(layer.name)
-                    colorLayers[name].append((layer.name, paletteIdx))
-                else:
-                    colorLayers[name].append((name, paletteIdx))
+            if paletteIdx is None:
+                continue
+            colorLayers.setdefault(name, [])
+            if layer.layerId != master.id:
+                layer.name = f"{name}.color{len(colorLayers[name])}"
+                glyphSet[layer.name] = layer
+                colorLayers[name].append((layer.name, paletteIdx))
+            else:
+                colorLayers[name].append((name, paletteIdx))
 
-    glyphOrder = list(glyphSet.keys())
-    if default:
-        font.colorLayers = colorLayers
-        glyphOrder = font.glyphOrder
+    allGlyphs = font.glyphOrder + list(glyphSet.keys())
+    glyphOrder = sorted(glyphSet.keys(), key=lambda n: allGlyphs.index(n))
 
     fb = FontBuilder(font.upm, isTTF=True)
     fb.setupGlyphOrder(glyphOrder)
@@ -478,33 +475,11 @@ def buildMaster(font, master, default, args):
     # Add empty name table, varLib merger needs one for fvar names
     fb.setupNameTable({}, mac=False)
 
-    fb.setupHorizontalHeader(
-        ascent=master.customParameters["hheaAscender"],
-        descent=master.customParameters["hheaDescender"],
-        lineGap=master.customParameters["hheaLineGap"] or 0,
-    )
-
-    fb.setupPost(
-        underlinePosition=master.customParameters["underlinePosition"] or 0,
-        underlineThickness=master.customParameters["underlineThickness"] or 0,
-    )
-
-    codePages = [CODEPAGE_RANGES[v] for v in font.customParameters["codePageRanges"]]
-    fb.setupOS2(
-        version=4,
-        sTypoAscender=master.customParameters["typoAscender"],
-        sTypoDescender=master.customParameters["typoDescender"],
-        sTypoLineGap=master.customParameters["typoLineGap"] or 0,
-        usWinAscent=master.customParameters["winAscent"],
-        usWinDescent=master.customParameters["winDescent"],
-        sxHeight=master.xHeight,
-        sCapHeight=master.capHeight,
-        achVendID=font.properties["vendorID"],
-        fsType=calcBits(font.customParameters["fsType"], 0, 16),
-        fsSelection=calcFsSelection(font.instances[0]),
-        ulUnicodeRange1=calcBits(font.customParameters["unicodeRanges"], 0, 32),
-        ulCodePageRange1=calcBits(codePages, 0, 32),
-    )
+    if colorLayers:
+        palettes = font.customParameters["Color Palettes"]
+        palettes = [[tuple(v / 255 for v in c) for c in p] for p in palettes]
+        fb.setupCPAL(palettes)
+        fb.setupCOLR(colorLayers)
 
     return fb.font
 
@@ -515,8 +490,6 @@ def buildBase(font, instance, vf, args):
     characterMap = {}
     for name in font.glyphOrder:
         glyph = font.glyphs[name]
-        if not glyph:
-            continue
         for uni in glyph.unicodes:
             characterMap[int(uni, 16)] = glyph.name
 
@@ -550,6 +523,34 @@ def buildBase(font, instance, vf, args):
     )
     fb.setupCharacterMap(characterMap)
 
+    fb.setupHorizontalHeader(
+        ascent=master.customParameters["hheaAscender"],
+        descent=master.customParameters["hheaDescender"],
+        lineGap=master.customParameters["hheaLineGap"] or 0,
+    )
+
+    fb.setupPost(
+        underlinePosition=master.customParameters["underlinePosition"] or 0,
+        underlineThickness=master.customParameters["underlineThickness"] or 0,
+    )
+
+    codePages = [CODEPAGE_RANGES[v] for v in font.customParameters["codePageRanges"]]
+    fb.setupOS2(
+        version=4,
+        sTypoAscender=master.customParameters["typoAscender"],
+        sTypoDescender=master.customParameters["typoDescender"],
+        sTypoLineGap=master.customParameters["typoLineGap"] or 0,
+        usWinAscent=master.customParameters["winAscent"],
+        usWinDescent=master.customParameters["winDescent"],
+        sxHeight=master.xHeight,
+        sCapHeight=master.capHeight,
+        achVendID=font.properties["vendorID"],
+        fsType=calcBits(font.customParameters["fsType"], 0, 16),
+        fsSelection=calcFsSelection(instance),
+        ulUnicodeRange1=calcBits(font.customParameters["unicodeRanges"], 0, 32),
+        ulCodePageRange1=calcBits(codePages, 0, 32),
+    )
+
     vf_names = [n for n in vf["name"].names if n.platformID == 3]
     fb.setupNameTable(names, mac=False)
     fb.font["name"].names += vf_names
@@ -563,11 +564,6 @@ def buildBase(font, instance, vf, args):
         with open(feapath, "w") as f:
             f.write(fea)
     fb.addOpenTypeFeatures(fea, filename=feapath)
-
-    palettes = font.customParameters["Color Palettes"]
-    palettes = [[tuple(v / 255 for v in c) for c in p] for p in palettes]
-    fb.setupCPAL(palettes)
-    fb.setupCOLR(font.colorLayers)
 
     return fb.font
 
@@ -702,7 +698,7 @@ def build(font, instance, args):
 
     for i, master in enumerate(font.masters):
         source = ds.newSourceDescriptor()
-        source.font = buildMaster(font, master, master.axes == instance.axes, args)
+        source.font = buildMaster(font, master, args)
         source.familyName = font.familyName
         source.styleName = master.name
         source.name = f"master_{i}"
