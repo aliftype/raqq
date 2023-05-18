@@ -22,6 +22,7 @@ from fontTools.designspaceLib import DesignSpaceDocument
 from fontTools.fontBuilder import FontBuilder
 from fontTools.misc.transform import Identity, Transform
 from fontTools.pens.ttGlyphPen import TTGlyphPen
+from fontTools.ttLib import newTable
 from fontTools.ttLib.tables._h_e_a_d import mac_epoch_diff
 from fontTools.varLib import build as merge
 from glyphsLib import GSAnchor, GSFont, GSFontMaster, GSLayer
@@ -427,6 +428,20 @@ def getProperty(font, name):
             return prop.value
 
 
+def addSVG(fb):
+    from nanoemoji.colr_to_svg import colr_to_svg, glyph_region
+
+    font = fb.font
+    font["SVG "] = SVG = newTable("SVG ")
+    SVG.docList = []
+
+    for name, svg in colr_to_svg(lambda n: glyph_region(font, n), font).items():
+        gid = font.getGlyphID(name)
+        svg.remove_attributes(["viewBox"], inplace=True)
+        svg.topicosvg(inplace=True)
+        SVG.docList.append((svg.tostring(), gid, gid))
+
+
 def buildMaster(font, master, args):
     colorLayers = {}
 
@@ -564,6 +579,8 @@ def buildBase(font, instance, vf, args):
         with open(feapath, "w") as f:
             f.write(fea)
     fb.addOpenTypeFeatures(fea, filename=feapath)
+
+    addSVG(fb)
 
     return fb.font
 
