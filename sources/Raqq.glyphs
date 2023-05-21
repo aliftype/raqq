@@ -9,6 +9,11 @@ tag = SPAC;
 {
 name = Mashq;
 tag = MSHQ;
+},
+{
+hidden = 1;
+name = Justification;
+tag = jstf;
 }
 );
 classes = (
@@ -93,6 +98,11 @@ value = (
 .notdef,
 space
 );
+},
+{
+name = "Axis Mappings";
+value = {
+};
 }
 );
 date = "2021-04-25 20:10:22 +0000";
@@ -968,7 +978,8 @@ fontMaster = (
 {
 axesValues = (
 0,
-10
+10,
+0
 );
 customParameters = (
 {
@@ -1161,7 +1172,8 @@ associatedMasterId = m01;
 attr = {
 coordinates = (
 -100,
-10
+10,
+0
 );
 };
 layerId = "6A138485-2A93-422B-84D0-8184A8F6FA16";
@@ -1179,7 +1191,8 @@ associatedMasterId = m01;
 attr = {
 coordinates = (
 125,
-10
+10,
+0
 );
 };
 layerId = "2CDB55F1-6E7A-4AAF-AF70-8CD8F4A8FB2A";
@@ -1633,7 +1646,8 @@ associatedMasterId = m01;
 attr = {
 coordinates = (
 0,
-100
+100,
+0
 );
 };
 backgroundImage = {
@@ -1720,6 +1734,7 @@ pos = (273,228);
 associatedMasterId = m01;
 attr = {
 coordinates = (
+0,
 0,
 0
 );
@@ -1932,7 +1947,8 @@ associatedMasterId = m01;
 attr = {
 coordinates = (
 0,
-100
+100,
+0
 );
 };
 backgroundImage = {
@@ -2027,6 +2043,7 @@ pos = (352,294);
 associatedMasterId = m01;
 attr = {
 coordinates = (
+0,
 0,
 0
 );
@@ -2979,7 +2996,8 @@ associatedMasterId = m01;
 attr = {
 coordinates = (
 0,
-20
+20,
+0
 );
 };
 backgroundImage = {
@@ -3087,7 +3105,8 @@ associatedMasterId = m01;
 attr = {
 coordinates = (
 0,
-100
+100,
+0
 );
 };
 backgroundImage = {
@@ -3306,7 +3325,8 @@ associatedMasterId = m01;
 attr = {
 coordinates = (
 0,
-20
+20,
+0
 );
 };
 layerId = "9CD22476-6F4A-4896-A8A4-64D8BEBC78EE";
@@ -3412,7 +3432,8 @@ associatedMasterId = m01;
 attr = {
 coordinates = (
 0,
-100
+100,
+0
 );
 };
 layerId = "CA451A97-2056-4DD4-A001-0B8DFF813C4B";
@@ -3529,7 +3550,8 @@ associatedMasterId = m01;
 attr = {
 coordinates = (
 0,
-20
+20,
+0
 );
 };
 layerId = "94172F02-4388-4672-8AFE-BEC85DEDFE74";
@@ -3556,7 +3578,8 @@ associatedMasterId = m01;
 attr = {
 coordinates = (
 0,
-100
+100,
+0
 );
 };
 layerId = "5CEC36C1-5F28-4DF0-934C-02B5E49A159A";
@@ -4090,7 +4113,8 @@ associatedMasterId = m01;
 attr = {
 coordinates = (
 0,
-100
+100,
+0
 );
 };
 layerId = "9D20955F-C25B-4264-B142-35B8B72C809D";
@@ -4183,6 +4207,7 @@ pos = (161,267);
 associatedMasterId = m01;
 attr = {
 coordinates = (
+0,
 0,
 0
 );
@@ -4298,7 +4323,8 @@ associatedMasterId = m01;
 attr = {
 coordinates = (
 0,
-100
+100,
+0
 );
 };
 layerId = "1C08AE65-7D33-4305-928A-8761C156C024";
@@ -4326,6 +4352,7 @@ pos = (414,0);
 associatedMasterId = m01;
 attr = {
 coordinates = (
+0,
 0,
 0
 );
@@ -5186,7 +5213,8 @@ associatedMasterId = m01;
 attr = {
 coordinates = (
 0,
-100
+100,
+0
 );
 };
 backgroundImage = {
@@ -5314,6 +5342,7 @@ pos = (342,285);
 associatedMasterId = m01;
 attr = {
 coordinates = (
+0,
 0,
 0
 );
@@ -5462,7 +5491,8 @@ associatedMasterId = m01;
 attr = {
 coordinates = (
 0,
-100
+100,
+0
 );
 };
 layerId = "1E1497EF-A949-427F-818D-659DB047C7B9";
@@ -5491,6 +5521,7 @@ pos = (521,0);
 associatedMasterId = m01;
 attr = {
 coordinates = (
+0,
 0,
 0
 );
@@ -5564,7 +5595,8 @@ associatedMasterId = m01;
 attr = {
 coordinates = (
 0,
-100
+100,
+0
 );
 };
 backgroundImage = {
@@ -5602,6 +5634,7 @@ name = exit;
 associatedMasterId = m01;
 attr = {
 coordinates = (
+0,
 0,
 0
 );
@@ -5757,7 +5790,8 @@ associatedMasterId = m01;
 attr = {
 coordinates = (
 0,
-100
+100,
+0
 );
 };
 backgroundImage = {
@@ -5859,6 +5893,7 @@ pos = (199,285);
 associatedMasterId = m01;
 attr = {
 coordinates = (
+0,
 0,
 0
 );
@@ -6074,7 +6109,8 @@ associatedMasterId = m01;
 attr = {
 coordinates = (
 0,
-100
+100,
+0
 );
 };
 layerId = "B85748EF-F7E9-478D-95DB-E97BF30F33E2";
@@ -6180,6 +6216,7 @@ pos = (269,275);
 associatedMasterId = m01;
 attr = {
 coordinates = (
+0,
 0,
 0
 );
@@ -6307,7 +6344,8 @@ associatedMasterId = m01;
 attr = {
 coordinates = (
 0,
-100
+100,
+0
 );
 };
 layerId = "78306F47-CFEB-43C3-94D6-8ABFDB77C0F1";
@@ -6336,6 +6374,7 @@ pos = (415,0);
 associatedMasterId = m01;
 attr = {
 coordinates = (
+0,
 0,
 0
 );
@@ -6404,7 +6443,8 @@ associatedMasterId = m01;
 attr = {
 coordinates = (
 0,
-100
+100,
+0
 );
 };
 layerId = "93A9B6F3-A20E-4B03-9BBD-A2DAB08266C3";
@@ -6436,6 +6476,7 @@ name = exit;
 associatedMasterId = m01;
 attr = {
 coordinates = (
+0,
 0,
 0
 );
@@ -6506,7 +6547,8 @@ associatedMasterId = m01;
 attr = {
 coordinates = (
 0,
-100
+100,
+0
 );
 };
 layerId = "38739E7F-577A-4A83-AB3C-831977F0C6EC";
@@ -6539,6 +6581,7 @@ pos = (0,115);
 associatedMasterId = m01;
 attr = {
 coordinates = (
+0,
 0,
 0
 );
@@ -6609,7 +6652,8 @@ associatedMasterId = m01;
 attr = {
 coordinates = (
 0,
-100
+100,
+0
 );
 };
 layerId = "7F2682AE-2152-4552-959B-82C2C0DE2FB5";
@@ -6642,6 +6686,7 @@ pos = (0,230);
 associatedMasterId = m01;
 attr = {
 coordinates = (
+0,
 0,
 0
 );
@@ -6821,7 +6866,8 @@ associatedMasterId = m01;
 attr = {
 coordinates = (
 0,
-100
+100,
+0
 );
 };
 layerId = "342120A2-69CB-4D5B-B997-48E2238AD02F";
@@ -6911,6 +6957,7 @@ pos = (254,285);
 associatedMasterId = m01;
 attr = {
 coordinates = (
+0,
 0,
 0
 );
@@ -7104,7 +7151,8 @@ associatedMasterId = m01;
 attr = {
 coordinates = (
 0,
-100
+100,
+0
 );
 };
 layerId = "88F229B6-DD0B-4918-BCCF-4C0C47A68CDE";
@@ -7195,6 +7243,7 @@ pos = (254,400);
 associatedMasterId = m01;
 attr = {
 coordinates = (
+0,
 0,
 0
 );
@@ -7377,7 +7426,8 @@ associatedMasterId = m01;
 attr = {
 coordinates = (
 0,
-100
+100,
+0
 );
 };
 layerId = "C81DCBC0-C5CF-4390-81C3-70D0FB6B7C4D";
@@ -7466,6 +7516,7 @@ pos = (254,515);
 associatedMasterId = m01;
 attr = {
 coordinates = (
+0,
 0,
 0
 );
@@ -7651,7 +7702,8 @@ associatedMasterId = m01;
 attr = {
 coordinates = (
 0,
-20
+20,
+0
 );
 };
 layerId = "C44860A8-2572-4821-B881-095B1041344F";
@@ -7750,7 +7802,8 @@ associatedMasterId = m01;
 attr = {
 coordinates = (
 0,
-100
+100,
+0
 );
 };
 layerId = "0F9F2B89-AD32-45B3-983D-5C17A2778527";
@@ -8564,7 +8617,8 @@ associatedMasterId = m01;
 attr = {
 coordinates = (
 0,
-100
+100,
+0
 );
 };
 backgroundImage = {
@@ -8672,6 +8726,7 @@ pos = (286,393);
 associatedMasterId = m01;
 attr = {
 coordinates = (
+0,
 0,
 0
 );
@@ -8894,7 +8949,8 @@ associatedMasterId = m01;
 attr = {
 coordinates = (
 0,
-100
+100,
+0
 );
 };
 backgroundImage = {
@@ -8999,6 +9055,7 @@ pos = (288,357);
 associatedMasterId = m01;
 attr = {
 coordinates = (
+0,
 0,
 0
 );
@@ -9824,7 +9881,8 @@ associatedMasterId = m01;
 attr = {
 coordinates = (
 0,
-100
+100,
+0
 );
 };
 layerId = "74D6E443-AAA2-4E7E-A54D-56928A737A53";
@@ -9930,6 +9988,7 @@ pos = (330,-85);
 associatedMasterId = m01;
 attr = {
 coordinates = (
+0,
 0,
 0
 );
@@ -10058,7 +10117,8 @@ associatedMasterId = m01;
 attr = {
 coordinates = (
 0,
-100
+100,
+0
 );
 };
 layerId = "0BD1BE9B-54C3-449E-BE31-FDCBF2D30B5F";
@@ -10088,6 +10148,7 @@ pos = (459,0);
 associatedMasterId = m01;
 attr = {
 coordinates = (
+0,
 0,
 0
 );
@@ -10157,7 +10218,8 @@ associatedMasterId = m01;
 attr = {
 coordinates = (
 0,
-100
+100,
+0
 );
 };
 layerId = "79BB94E9-709B-4B8D-A308-DC550F0444BD";
@@ -10189,6 +10251,7 @@ name = exit;
 associatedMasterId = m01;
 attr = {
 coordinates = (
+0,
 0,
 0
 );
@@ -10328,7 +10391,8 @@ associatedMasterId = m01;
 attr = {
 coordinates = (
 0,
-100
+100,
+0
 );
 };
 layerId = "F7B304CE-F14F-4C45-8F42-E525D4807B96";
@@ -10412,6 +10476,7 @@ pos = (247,-73);
 associatedMasterId = m01;
 attr = {
 coordinates = (
+0,
 0,
 0
 );
@@ -14342,7 +14407,8 @@ associatedMasterId = m01;
 attr = {
 coordinates = (
 0,
-100
+100,
+0
 );
 };
 layerId = "200AAD3F-109F-4B5F-B6CA-7BA661F2BEFA";
@@ -24685,7 +24751,8 @@ associatedMasterId = m01;
 attr = {
 coordinates = (
 0,
-100
+100,
+0
 );
 };
 layerId = "B7198512-ACC9-4997-BBCE-B89F3F46B128";
@@ -24709,6 +24776,7 @@ width = 393;
 associatedMasterId = m01;
 attr = {
 coordinates = (
+0,
 0,
 0
 );
@@ -24781,7 +24849,8 @@ associatedMasterId = m01;
 attr = {
 coordinates = (
 0,
-100
+100,
+0
 );
 };
 layerId = "F6FEBD79-76E2-4209-8DE8-5053BC3B12D2";
@@ -24803,6 +24872,7 @@ width = 401;
 associatedMasterId = m01;
 attr = {
 coordinates = (
+0,
 0,
 0
 );
@@ -24832,7 +24902,8 @@ instances = (
 {
 axesValues = (
 0,
-10
+10,
+0
 );
 name = Regular;
 }
