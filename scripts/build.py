@@ -432,7 +432,7 @@ def addSVG(fb):
     from nanoemoji.colr_to_svg import colr_to_svg, glyph_region
 
     font = fb.font
-    font["SVG "] = SVG = newTable("SVG ")
+    SVG = font["SVG "] = newTable("SVG ")
     SVG.docList = []
 
     for name, svg in colr_to_svg(lambda n: glyph_region(font, n), font).items():
