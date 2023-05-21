@@ -580,14 +580,19 @@ lookup short_lam {
 	sub alef-ar.fina		by alef-ar.fina.short;
 } short_lam;
 
+lookup yehbarree_baseline {
+	sub yehbarree-ar.fina	by yehbarree-ar.fina.baseline;
+	sub lam-ar.init			by lam-ar.init.hah1;
+	sub tah-ar.init			by tah-ar.init.hah1;
+} yehbarree_baseline;
+
 @aftermeem = [meem-ar.medi meem-ar.fina waw-ar.fina reh-ar.fina noonghunna-ar.fina ];
 
 lookup rlig_3 {
 	lookupflag IgnoreMarks;
 
-	sub @init
-		 yehbarree-ar.fina'
-	by	 yehbarree-ar.fina.baseline
+	sub @init' lookup yehbarree_baseline
+		 yehbarree-ar.fina' lookup yehbarree_baseline
 	;
 
 	sub [behDotless-ar.medi lam-ar.medi lam-ar.medi.hah1 lam-ar.medi.hah2]' lookup tooth_rounded

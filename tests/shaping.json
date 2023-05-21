@@ -654,7 +654,7 @@
     },
     {
       "input": "الے",
-      "expectation": "yehbarree-ar.fina.baseline=2+267|lam-ar.init=1@0,115+863|alef-ar=0@400,0+1060"
+      "expectation": "yehbarree-ar.fina.baseline=2+267|lam-ar.init.hah1=1+863|alef-ar=0@400,0+1060"
     },
     {
       "input": "ببا",
