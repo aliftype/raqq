@@ -295,6 +295,10 @@
       "expectation": "hah-ar.fina=1+417|tah-ar.init.hah1=0+765"
     },
     {
+      "input": "طے",
+      "expectation": "yehbarree-ar.fina.baseline=1+297|tah-ar.init.hah1=0@0,-5+765"
+    },
+    {
       "input": "عا",
       "expectation": "alef-ar.fina=1+101|_c.ain.init.beh=0+95|ain-ar.init=0@-50,0+640"
     },
@@ -479,6 +483,10 @@
       "expectation": "twodotsverticalbelow-ar=1@339,-334+0|alefMaksura-ar.fina=1+282|kaf-ar.init=0@-36,0+729"
     },
     {
+      "input": "كے",
+      "expectation": "yehbarree-ar.fina.baseline=1+297|kaf-ar.init=0@-21,110+744"
+    },
+    {
       "input": "لآ",
       "expectation": "madda-ar=0@149,565+0|lam_alef-ar=0+542"
     },
@@ -507,6 +515,10 @@
       "expectation": "kasra-ar=0@171,-210+0|lam-ar=0+186"
     },
     {
+      "input": "لے",
+      "expectation": "yehbarree-ar.fina.baseline=1+297|lam-ar.init.hah1=0@0,-5+763"
+    },
+    {
       "input": "ما",
       "expectation": "alef-ar.fina=1+101|_c.seen.beh=0+0|meem-ar.init=0+425"
     },
@@ -531,6 +543,10 @@
       "expectation": "waw-ar.fina.round=1+492|meem-ar.init.round=0+398"
     },
     {
+      "input": "مے",
+      "expectation": "yehbarree-ar.fina.baseline=1+297|meem-ar.init=0@0,110+775"
+    },
+    {
       "input": "نٍ",
       "expectation": "kasratan-ar.alt=0@268,-193+0|dotabove-ar=0@5,191+0|noonghunna-ar=0+295"
     },
@@ -549,6 +565,14 @@
     {
       "input": "هن",
       "expectation": "dotabove-ar=1@-3,101+0|noonghunna-ar.fina=1+250|heh-ar.init.round=0+327"
+    },
+    {
+      "input": "هے",
+      "expectation": "yehbarree-ar.fina.baseline=1+297|heh-ar.init=0@0,110+771"
+    },
+    {
+      "input": "ىے",
+      "expectation": "yehbarree-ar.fina.baseline=1+297|behDotless-ar.init=0@0,110+770"
     },
     {
       "input": "◌ً",
@@ -1233,6 +1257,10 @@
       "expectation": "meem-ar.fina=2+567|_c.ain.meem=1+35|hah-ar.medi.alt=1@-39,0+96|lam-ar.init.hah1.alt=0@63,5+578"
     },
     {
+      "input": "لحے",
+      "expectation": "yehbarree-ar.fina=2+297|_c.ain.yeh=1@-5,0+10|hah-ar.medi.alt=1@-40,0+95|lam-ar.init.hah1.alt=0@63,5+578"
+    },
+    {
       "input": "لسا",
       "expectation": "alef-ar.fina=2+101|_c.seen.beh=1+0|seen-ar.medi=1+401|_c.seen.beh=0+0|lam-ar.init=0+123"
     },
@@ -1309,8 +1337,32 @@
       "expectation": "yehbarree-ar.fina=2+297|seen-ar.medi=1@-32,0+369|_c.seen.beh=0+0|lam-ar.init=0+353"
     },
     {
+      "input": "لصے",
+      "expectation": "yehbarree-ar.fina=2+297|sad-ar.medi=1+758|lam-ar.init=0@-23,0+100"
+    },
+    {
       "input": "لطم",
       "expectation": "meem-ar.fina=2+567|tah-ar.medi=1+758|lam-ar.init=0@-23,0+100"
+    },
+    {
+      "input": "لطے",
+      "expectation": "yehbarree-ar.fina=2+297|tah-ar.medi=1+758|lam-ar.init=0@-23,0+100"
+    },
+    {
+      "input": "لعے",
+      "expectation": "yehbarree-ar.fina=2+297|_c.ain.yeh=1@-5,0+10|ain-ar.medi=1+220|_c.seen.beh=0+0|lam-ar.init=0+533"
+    },
+    {
+      "input": "لفے",
+      "expectation": "yehbarree-ar.fina=2+297|dotabove-ar=1@-46,329+0|_c.feh.medi.reh=1@-24,0+23|fehDotless-ar.medi=1@-70,0+307|_c.seen.beh=0+0|lam-ar.init=0+343"
+    },
+    {
+      "input": "لكے",
+      "expectation": "yehbarree-ar.fina=2+297|kaf-ar.medi=1@-21,0+737|lam-ar.init=0@-23,0+100"
+    },
+    {
+      "input": "للے",
+      "expectation": "yehbarree-ar.fina=2+297|lam-ar.medi.short=1+123|_c.seen.beh=0+0|lam-ar.init=0+633"
     },
     {
       "input": "لما",
@@ -1323,6 +1375,18 @@
     {
       "input": "لمم",
       "expectation": "meem-ar.fina.round=2+554|meem-ar.medi.round2=1+398|lam-ar.init=0@-22,0+101"
+    },
+    {
+      "input": "لمے",
+      "expectation": "yehbarree-ar.fina=2+297|meem-ar.medi=1+380|lam-ar.init=0@-20,0+363"
+    },
+    {
+      "input": "لهے",
+      "expectation": "yehbarree-ar.fina=2+297|heh-ar.medi=1+357|_c.seen.beh=0+0|lam-ar.init=0+403"
+    },
+    {
+      "input": "لىے",
+      "expectation": "yehbarree-ar.fina=2+297|behDotless-ar.medi=1+128|_c.seen.beh=0+0|lam-ar.init=0+633"
     },
     {
       "input": "ليس",
