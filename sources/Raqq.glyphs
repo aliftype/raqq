@@ -730,7 +730,7 @@ lookup rlig_connection {
 	lookupflag IgnoreMarks;
 
 	sub	 @before_beh' lookup before_beh
-		[@MMK_L_beh fehDotless-ar.medi fehDotless-ar.fina]
+		[$[rightKerningGroup = \"beh\"] fehDotless-ar.medi fehDotless-ar.fina]
 	;
 
 	sub	[@hah @ain fehDotless-ar.medi]' lookup before_dal
