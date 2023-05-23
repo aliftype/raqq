@@ -16,6 +16,7 @@
 import argparse
 import datetime
 import os
+import io
 
 from fontTools.cu2qu.ufo import glyphs_to_quadratic
 from fontTools.designspaceLib import DesignSpaceDocument
@@ -29,6 +30,8 @@ from glyphsLib import GSAnchor, GSFont, GSFontMaster, GSLayer
 from glyphsLib.builder.tokens import TokenExpander
 from glyphsLib.glyphdata import GlyphData
 from glyphsLib.glyphdata import get_glyph as getGlyphInfo
+
+from fontTools.misc import etree as ET
 
 DEFAULT_TRANSFORM = [1, 0, 0, 1, 0, 0]
 
@@ -451,21 +454,75 @@ def addAvar(vf):
 
     axisTags = [a.axisTag for a in vf["fvar"].axes]
 
-    derived = [
-        {"jstf": +0.0},
-        {"jstf": +0.9},
-        {"jstf": +1.0},
-        {"jstf": -0.5},
-        {"jstf": -1.0},
-    ]
+    xml = """
+  <mapping>
+    <region>
+      <input>
+        <dimension tag="jstf" xvalue="0.0" />
+      </input>
+      <output>
+        <dimension tag="SPAC" xvalue="0.0" />
+        <dimension tag="MSHQ" xvalue="0.0" />
+      </output>
+    </region>
+    <region>
+      <input>
+        <dimension tag="jstf" xvalue="0.9" />
+      </input>
+      <output>
+        <dimension tag="SPAC" xvalue="0.0" />
+        <dimension tag="MSHQ" xvalue="1.0" />
+      </output>
+    </region>
+    <region>
+      <input>
+        <dimension tag="jstf" xvalue="1.0" />
+      </input>
+      <output>
+        <dimension tag="SPAC" xvalue="1.0" />
+        <dimension tag="MSHQ" xvalue="1.0" />
+      </output>
+    </region>
+    <region>
+      <input>
+        <dimension tag="jstf" xvalue="-0.5" />
+      </input>
+      <output>
+        <dimension tag="SPAC" xvalue="-0.0" />
+        <dimension tag="MSHQ" xvalue="-1.0" />
+      </output>
+    </region>
+    <region>
+      <input>
+        <dimension tag="jstf" xvalue="-1.0" />
+      </input>
+      <output>
+        <dimension tag="SPAC" xvalue="-1.0" />
+        <dimension tag="MSHQ" xvalue="-1.0" />
+      </output>
+    </region>
+  </mapping>
+"""
+    tree = ET.parse(io.StringIO(xml))
+    mapping = tree.getroot()
 
-    source = [
-        {"SPAC": +0.0, "MSHQ": +0.0},
-        {"SPAC": +0.0, "MSHQ": +1.0},
-        {"SPAC": +1.0, "MSHQ": +1.0},
-        {"SPAC": -0.0, "MSHQ": -1.0},
-        {"SPAC": -1.0, "MSHQ": -1.0},
-    ]
+    derived = []
+    source = []
+    for regionElement in mapping.findall(".region"):
+        inputElement = regionElement.find(".input")
+        outputElement = regionElement.find(".output")
+        derivedLoc = {}
+        sourceLoc = {}
+        for dimElement in inputElement.findall(".dimension"):
+            tag = dimElement.attrib["tag"]
+            value = float(dimElement.attrib["xvalue"])
+            derivedLoc[tag] = value
+        for dimElement in outputElement.findall(".dimension"):
+            tag = dimElement.attrib["tag"]
+            value = float(dimElement.attrib["xvalue"])
+            sourceLoc[tag] = value
+        derived.append(derivedLoc)
+        source.append(sourceLoc)
 
     model = models.VariationModel(derived, axisTags)
     builder = varStore.OnlineVarStoreBuilder(axisTags)
