@@ -65,13 +65,21 @@ def shape(font, text, direction="rtl", script="arab", features=None):
         advance += pos.x_advance
 
     overhang = font.get_glyph_h_advance(infos[-1].codepoint)
-    adjustment = overhang - advance
+    adj = overhang - advance
 
     # Round adjustment values to the nearest 10 units to reduce the number of
     # lookups.
-    adjustment = round(adjustment / 10) * 10
+    adj = round(adj / 10) * 10
 
-    return glyphs, adjustment
+    adj2 = None
+    if glyphs[-1].startswith("yehbarree-ar.fina"):
+        font2 = hb.Font(font.face)
+        font2.set_variations({"MSHQ": 100})
+        overhang2 = font2.get_glyph_h_advance(infos[-1].codepoint)
+        adj2 = adj + (overhang2 - overhang)
+        adj2 = f"(MSHQ=10:{adj} MSHQ=100:{adj2})"
+
+    return glyphs, adj, adj2
 
 
 def open_font(path):
@@ -104,14 +112,17 @@ def main(args):
                 if text.count("ح") > 1:
                     continue
 
-                glyphs, adjustment = shape(font, text, features={"kern": False})
-                if adjustment < THRESHOLD:
+                glyphs, adj, adj2 = shape(font, text, features={"kern": False})
+                if adj < THRESHOLD:
                     continue
                 found = True
 
+                if adj2 is not None:
+                    adj = adj2
+
                 match = glyphs[0]
                 lookahead = "' ".join(glyphs[1:])
-                rules.append(f"\tpos {match}' {adjustment} {lookahead}';")
+                rules.append(f"\tpos {match}' {adj} {lookahead}';")
             if not found:
                 break
             i += 1
