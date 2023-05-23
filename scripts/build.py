@@ -453,52 +453,55 @@ def addAvar(vf):
     assert "avar" not in vf
 
     axisTags = [a.axisTag for a in vf["fvar"].axes]
+    triples = {};
+    for a in vf["fvar"].axes:
+        triples[a.axisTag] = (a.minValue, a.defaultValue, a.maxValue)
 
     xml = """
   <mapping>
     <region>
       <input>
-        <dimension tag="jstf" xvalue="0.0" />
+        <dimension tag="jstf" xvalue="0" />
       </input>
       <output>
-        <dimension tag="SPAC" xvalue="0.0" />
-        <dimension tag="MSHQ" xvalue="0.0" />
+        <dimension tag="SPAC" xvalue="0" />
+        <dimension tag="MSHQ" xvalue="10" />
       </output>
     </region>
     <region>
       <input>
-        <dimension tag="jstf" xvalue="0.9" />
+        <dimension tag="jstf" xvalue="90" />
       </input>
       <output>
-        <dimension tag="SPAC" xvalue="0.0" />
-        <dimension tag="MSHQ" xvalue="1.0" />
+        <dimension tag="SPAC" xvalue="0" />
+        <dimension tag="MSHQ" xvalue="100" />
       </output>
     </region>
     <region>
       <input>
-        <dimension tag="jstf" xvalue="1.0" />
+        <dimension tag="jstf" xvalue="100" />
       </input>
       <output>
-        <dimension tag="SPAC" xvalue="1.0" />
-        <dimension tag="MSHQ" xvalue="1.0" />
+        <dimension tag="SPAC" xvalue="125" />
+        <dimension tag="MSHQ" xvalue="100" />
       </output>
     </region>
     <region>
       <input>
-        <dimension tag="jstf" xvalue="-0.5" />
+        <dimension tag="jstf" xvalue="-50" />
       </input>
       <output>
-        <dimension tag="SPAC" xvalue="-0.0" />
-        <dimension tag="MSHQ" xvalue="-1.0" />
+        <dimension tag="SPAC" xvalue="0" />
+        <dimension tag="MSHQ" xvalue="0" />
       </output>
     </region>
     <region>
       <input>
-        <dimension tag="jstf" xvalue="-1.0" />
+        <dimension tag="jstf" xvalue="-100" />
       </input>
       <output>
-        <dimension tag="SPAC" xvalue="-1.0" />
-        <dimension tag="MSHQ" xvalue="-1.0" />
+        <dimension tag="SPAC" xvalue="-100" />
+        <dimension tag="MSHQ" xvalue="0" />
       </output>
     </region>
   </mapping>
@@ -516,10 +519,18 @@ def addAvar(vf):
         for dimElement in inputElement.findall(".dimension"):
             tag = dimElement.attrib["tag"]
             value = float(dimElement.attrib["xvalue"])
+
+            # TODO Apply axis mapping first
+            value = models.normalizeLocation({tag: value}, triples)[tag]
+
             derivedLoc[tag] = value
         for dimElement in outputElement.findall(".dimension"):
             tag = dimElement.attrib["tag"]
             value = float(dimElement.attrib["xvalue"])
+
+            # TODO Apply axis mapping first
+            value = models.normalizeLocation({tag: value}, triples)[tag]
+
             sourceLoc[tag] = value
         derived.append(derivedLoc)
         source.append(sourceLoc)
