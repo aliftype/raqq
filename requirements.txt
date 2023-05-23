@@ -161,7 +161,7 @@ pyyaml==6.0
     #   fontbakery
 regex==2023.5.5
     # via nanoemoji
-requests==2.29.0
+requests==2.31.0
     # via fontbakery
 resvg-cli==0.22.0.post3
     # via nanoemoji
