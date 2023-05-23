@@ -626,6 +626,7 @@ def buildBase(font, instance, vf, args):
         feapath = feapath.with_suffix(".fea")
         with open(feapath, "w") as f:
             f.write(fea)
+        font.save(feapath.with_suffix(".debug.glyphs"))
     fb.addOpenTypeFeatures(fea, filename=feapath)
 
     addSVG(fb)
