@@ -698,6 +698,7 @@ def prepare(args):
     for axes in coordinates:
         master = GSFontMaster()
         master.axes = list(axes)
+        master.metrics = list(font.metrics)
         master.customParameters = font.masters[0].customParameters
         master.xHeight = font.masters[0].xHeight
         master.capHeight = font.masters[0].capHeight
