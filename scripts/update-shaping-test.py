@@ -53,6 +53,8 @@ def main(rags):
         reader = csv.DictReader(f, delimiter=";", lineterminator="\n")
         for test in reader:
             test = {k: v for k, v in test.items() if v}
+            if features := test.get("features"):
+                test["features"] = {f: True for f in features.split(",")}
             test["expectation"] = shape(
                 font,
                 test.get("input"),

@@ -530,6 +530,7 @@ name = teeth;
 code = "lookup tooth_rounded {
 	sub behDotless-ar.medi	by behDotless-ar.medi.round;
 	sub lam-ar.medi			by lam-ar.medi.round;
+	sub lam-ar.medi.short	by lam-ar.medi.round.short;
 	sub lam-ar.medi.hah1	by lam-ar.medi.hah1.round;
 	sub lam-ar.medi.hah2	by lam-ar.medi.hah2.round;
 } tooth_rounded;
@@ -551,13 +552,18 @@ lookup rlig_wide_yeh {
 	;
 } rlig_wide_yeh;
 
-lookup rlig_tooth_yeh {
+@dots = [$[name LIKE \"*dot*\" && category == \"Mark\"]];
+lookup ss01_dots {
+	sub @dots by NULL;
+} ss01_dots;
+
+lookup rclt_tooth_yeh {
 	lookupflag UseMarkFilteringSet @dotsbelow;
 
-	sub [behDotless-ar.medi lam-ar.medi]' lookup tooth_rounded
+	sub [behDotless-ar.medi lam-ar.medi lam-ar.medi.short]' lookup tooth_rounded
 		 alefMaksura-ar.fina' lookup tooth_yeh
 	;
-} rlig_tooth_yeh;
+} rclt_tooth_yeh;
 
 lookup rounded {
 	sub meem-ar.init		by meem-ar.init.round;
@@ -586,7 +592,7 @@ lookup yehbarree_baseline {
 	sub tah-ar.init			by tah-ar.init.hah1;
 } yehbarree_baseline;
 
-@aftermeem = [meem-ar.medi meem-ar.fina waw-ar.fina reh-ar.fina noonghunna-ar.fina ];
+@aftermeem = [meem-ar.medi meem-ar.fina waw-ar.fina reh-ar.fina noonghunna-ar.fina];
 
 lookup rlig_3 {
 	lookupflag IgnoreMarks;
@@ -833,7 +839,6 @@ lookup rlig_kasratan;
 lookup rlig_teeth_1;
 lookup rlig_teeth_2;
 lookup rlig_wide_yeh;
-lookup rlig_tooth_yeh;
 lookup rlig_ligatures;
 lookup rlig_3;
 lookup rlig_4;
@@ -844,8 +849,7 @@ lookup rlig_beh_dots;
 tag = rlig;
 },
 {
-code = "@dots = [$[name LIKE \"*dot*\" && category == \"Mark\"]];
-sub @dots by NULL;
+code = "lookup ss01_dots;
 ";
 labels = (
 {
@@ -858,6 +862,11 @@ value = "حروف مهملة (بلا نقاط)";
 }
 );
 tag = ss01;
+},
+{
+code = "lookup rclt_tooth_yeh;
+";
+tag = rclt;
 },
 {
 code = "# Automatic Code
