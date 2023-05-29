@@ -1709,6 +1709,13 @@
       "expectation": "lam_alef-ar=4+542|space=3+400|hah-ar.fina=2+417|twodotsverticalabove-ar=1@-86,496+0|fehDotless-ar.init.hah=1@11,115+479|waw-ar=0@400,0+909"
     },
     {
+      "input": "نبي",
+      "features": {
+        "ss01": true
+      },
+      "expectation": "alefMaksura-ar.fina.tooth=2+5|behDotless-ar.medi.round=1+110|_c.seen.beh=0+0|behDotless-ar.init.high=0+130"
+    },
+    {
       "input": "۝١٠",
       "direction": "ltr",
       "expectation": "endofayah-ar.10=0+1117|ayah.010=1@-809,-20+0"
