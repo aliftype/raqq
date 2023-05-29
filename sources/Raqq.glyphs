@@ -558,7 +558,7 @@ lookup ss01_dots {
 } ss01_dots;
 
 lookup rclt_tooth_yeh {
-	lookupflag UseMarkFilteringSet @dotsbelow;
+	lookupflag UseMarkFilteringSet [@dotsbelow kasra-ar kasratan-ar];
 
 	sub [behDotless-ar.medi lam-ar.medi lam-ar.medi.short]' lookup tooth_rounded
 		 alefMaksura-ar.fina' lookup tooth_yeh
