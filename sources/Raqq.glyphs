@@ -557,10 +557,17 @@ lookup ss01_dots {
 	sub @dots by NULL;
 } ss01_dots;
 
+@beforeyehtooth = [behDotless-ar.medi lam-ar.medi lam-ar.medi.short];
 lookup rclt_tooth_yeh {
 	lookupflag UseMarkFilteringSet [@dotsbelow kasra-ar kasratan-ar];
 
-	sub [behDotless-ar.medi lam-ar.medi lam-ar.medi.short]' lookup tooth_rounded
+	ignore
+	sub [behDotless-ar.init.high behDotless-ar.medi.high]'
+		 _c.seen.beh'
+		 @dotsbelow'
+		 @beforeyehtooth'
+	;
+	sub @beforeyehtooth' lookup tooth_rounded
 		 alefMaksura-ar.fina' lookup tooth_yeh
 	;
 } rclt_tooth_yeh;

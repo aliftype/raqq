@@ -770,7 +770,7 @@
     },
     {
       "input": "بني",
-      "expectation": "twodotsverticalbelow-ar=2@311,-329+0|alefMaksura-ar.fina.tooth=2+5|dotabove-ar.beh=1@-27,270+0|behDotless-ar.medi.round=1+110|dotbelow-ar=0@81,-46+0|_c.seen.beh=0+0|behDotless-ar.init.high=0+130"
+      "expectation": "twodotsverticalbelow-ar=2@339,-334+0|alefMaksura-ar.fina=2+282|dotabove-ar.beh=1@8,294+0|behDotless-ar.medi=1+128|dotbelow-ar=0@81,-46+0|_c.seen.beh=0+0|behDotless-ar.init.high=0+130"
     },
     {
       "input": "بنٍ",
@@ -839,6 +839,10 @@
     {
       "input": "جنح",
       "expectation": "hah-ar.fina=2+417|dotabove-ar.beh=1@8,409+0|behDotless-ar.medi=1@0,115+128|dotbelow-ar=0@270,-17+0|_c.hah.beh=0@0,115+7|hah-ar.init=0@0,115+703"
+    },
+    {
+      "input": "جنى",
+      "expectation": "alefMaksura-ar.fina.tooth=2+5|dotabove-ar.beh=1@-27,270+0|behDotless-ar.medi.round=1+110|dotbelow-ar=0@220,-112+0|_c.hah.beh=0+7|hah-ar.init=0+703"
     },
     {
       "input": "حبا",
@@ -1709,6 +1713,13 @@
       "expectation": "lam_alef-ar=4+542|space=3+400|hah-ar.fina=2+417|twodotsverticalabove-ar=1@-86,496+0|fehDotless-ar.init.hah=1@11,115+479|waw-ar=0@400,0+909"
     },
     {
+      "input": "بني",
+      "features": {
+        "ss01": true
+      },
+      "expectation": "alefMaksura-ar.fina.tooth=2+5|behDotless-ar.medi.round=1+110|_c.seen.beh=0+0|behDotless-ar.init.high=0+130"
+    },
+    {
       "input": "نبي",
       "features": {
         "ss01": true
@@ -1729,10 +1740,6 @@
       "input": "۝١٢",
       "direction": "ltr",
       "expectation": "endofayah-ar=0+400|one-ar=1+0|two-ar=2+0"
-    },
-    {
-      "input": "فلِي",
-      "expectation": "twodotsverticalbelow-ar=3@339,-334+0|alefMaksura-ar.fina=3+282|kasra-ar=1@48,-111+0|lam-ar.medi=1+125|dotabove-ar=0@-1,373+0|_c.feh.init.beh=0+174|fehDotless-ar.init=0@-114,0+220"
     },
     {
       "input": "۝١٣",
@@ -2400,6 +2407,10 @@
     {
       "input": "فلاُ",
       "expectation": "damma-ar=1@-137,-14+0|lam_alef-ar.fina=1+510|dotabove-ar=0@-131,373+0|fehDotless-ar.init=0@-70,0+264"
+    },
+    {
+      "input": "فلِي",
+      "expectation": "twodotsverticalbelow-ar=3@339,-334+0|alefMaksura-ar.fina=3+282|kasra-ar=1@48,-111+0|lam-ar.medi=1+125|dotabove-ar=0@-1,373+0|_c.feh.init.beh=0+174|fehDotless-ar.init=0@-114,0+220"
     },
     {
       "input": "قلنا",
@@ -3883,6 +3894,10 @@
       "expectation": "dotabove-ar=5@-3,101+0|noonghunna-ar.fina=5+250|twodotsverticalbelow-ar=4@45,-137+0|behDotless-ar.medi=4@-34,0+94|dotabove-ar.beh=3@-7,385+0|_c.seen.beh=3+0|behDotless-ar.medi.high=3+128|_c.seen.beh=2+0|seen-ar.medi=2+401|_c.hah.beh=1+7|hah-ar.medi.alt=1+135|twodotsverticalabove-ar.beh=0@14,407+0|behDotless-ar.init.hah=0@63,5+572"
     },
     {
+      "input": "تخطبني",
+      "expectation": "twodotsverticalbelow-ar=5@339,-334+0|alefMaksura-ar.fina=5+282|dotabove-ar.beh=4@8,294+0|behDotless-ar.medi=4+128|dotbelow-ar=3@14,-110+0|_c.seen.beh=3+0|behDotless-ar.medi.high=3+128|_c.seen.beh=2+0|tah-ar.medi=2+758|dotabove-ar=1@-22,198+0|_c.hah.dal=1+71|hah-ar.medi.alt=1@-71,0+64|twodotsverticalabove-ar.beh=0@14,407+0|behDotless-ar.init.hah=0@63,5+572"
+    },
+    {
       "input": "تعلمون",
       "expectation": "dotabove-ar=5@5,191+0|noonghunna-ar=5+295|waw-ar.fina.round=4@400,0+892|meem-ar.medi.round3=3+398|lam-ar.medi.round=2+97|_c.ain.medi.beh=1+66|ain-ar.medi=1+220|twodotsverticalabove-ar.beh=0@-39,400+0|_c.seen.beh=0+0|behDotless-ar.init.high=0+130"
     },
@@ -3925,6 +3940,13 @@
     {
       "input": "يُضِلُ",
       "expectation": "damma-ar=4@-42,-19+0|lam-ar.fina=4+177|kasra-ar=2@293,-130+0|dotabove-ar=2@310,247+0|_c.seen.beh=2+0|sad-ar.medi=2+758|damma-ar=0@-84,98+0|twodotsverticalbelow-ar=0@51,-73+0|behDotless-ar.init=0@-21,0+109"
+    },
+    {
+      "input": "تخطبني",
+      "features": {
+        "ss01": true
+      },
+      "expectation": "alefMaksura-ar.fina.tooth=5+5|behDotless-ar.medi.round=4+110|_c.seen.beh=3+0|behDotless-ar.medi.high=3+128|_c.seen.beh=2+0|tah-ar.medi=2+758|_c.hah.dal=1+71|hah-ar.medi.alt=1@-71,0+64|behDotless-ar.init.hah=0@63,5+572"
     },
     {
       "input": "اطلططحی",
