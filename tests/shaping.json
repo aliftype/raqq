@@ -1731,6 +1731,10 @@
       "expectation": "endofayah-ar=0+400|one-ar=1+0|two-ar=2+0"
     },
     {
+      "input": "فلِي",
+      "expectation": "twodotsverticalbelow-ar=3@339,-334+0|alefMaksura-ar.fina=3+282|kasra-ar=1@48,-111+0|lam-ar.medi=1+125|dotabove-ar=0@-1,373+0|_c.feh.init.beh=0+174|fehDotless-ar.init=0@-114,0+220"
+    },
+    {
       "input": "۝١٣",
       "direction": "ltr",
       "expectation": "endofayah-ar=0+400|one-ar=1+0|three-ar=2+0"
