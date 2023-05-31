@@ -753,17 +753,14 @@ def prepare(args):
 def build(font, instance, args):
     ds = DesignSpaceDocument()
 
+    axisMappings = font.customParameters["Axis Mappings"]
     for i, axisDef in enumerate(font.axes):
         axis = ds.newAxisDescriptor()
         axis.tag = axisDef.axisTag
         axis.name = axisDef.name
         axis.hidden = axisDef.hidden
-        axis.maximum = max(m.axes[i] for m in font.masters)
-        axis.minimum = min(m.axes[i] for m in font.masters)
-
-        if axis.name == "Justification":
-            axis.maximum = 100
-            axis.minimum = -100
+        axis.maximum = max(axisMappings[axis.tag].values())
+        axis.minimum = min(axisMappings[axis.tag].values())
         axis.default = instance.axes[i]
         ds.addAxis(axis)
 

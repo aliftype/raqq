@@ -1,5 +1,5 @@
 {
-.appVersion = "3197";
+.appVersion = "3198";
 .formatVersion = 3;
 axes = (
 {
@@ -102,6 +102,18 @@ space
 {
 name = "Axis Mappings";
 value = {
+MSHQ = {
+0 = 0;
+100 = 100;
+};
+SPAC = {
+-100 = -100;
+125 = 125;
+};
+jstf = {
+-100 = -100;
+100 = 100;
+};
 };
 }
 );
