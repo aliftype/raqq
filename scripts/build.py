@@ -754,24 +754,25 @@ def build(font, instance, args):
     ds = DesignSpaceDocument()
 
     axisMappings = font.customParameters["Axis Mappings"]
-    for i, axisDef in enumerate(font.axes):
-        axis = ds.newAxisDescriptor()
-        axis.tag = axisDef.axisTag
-        axis.name = axisDef.name
-        axis.hidden = axisDef.hidden
-        axis.maximum = max(axisMappings[axis.tag].values())
-        axis.minimum = min(axisMappings[axis.tag].values())
-        axis.default = instance.axes[i]
-        ds.addAxis(axis)
+    for axis, default in zip(font.axes, instance.axes):
+        locations = axisMappings[axis.axisTag].values()
+        ds.addAxisDescriptor(
+            tag=axis.axisTag,
+            name=axis.name,
+            hidden=axis.hidden,
+            maximum=max(locations),
+            minimum=min(locations),
+            default=default,
+        )
 
     for i, master in enumerate(font.masters):
-        source = ds.newSourceDescriptor()
-        source.font = buildMaster(font, master, args)
-        source.familyName = font.familyName
-        source.styleName = master.name
-        source.name = f"master_{i}"
-        source.location = {a.name: master.axes[i] for i, a in enumerate(ds.axes)}
-        ds.addSource(source)
+        ds.addSourceDescriptor(
+            font=buildMaster(font, master, args),
+            familyName=font.familyName,
+            styleName=master.name,
+            name=f"master_{i}",
+            location={a.name: master.axes[i] for i, a in enumerate(ds.axes)},
+        )
 
     vf, _, _ = merge(ds)
     addAvar(vf)
