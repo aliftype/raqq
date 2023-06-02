@@ -15,18 +15,19 @@ attrs==23.1.0
 axisregistry==0.4.2
     # via fontbakery
 babelfont==3.0.0
-    # via glyphtools
+    # via
+    #   collidoscope
+    #   glyphtools
 beautifulsoup4==4.12.2
     # via fontbakery
 beziers==0.5.0
     # via
-    #   collidoscope
     #   fontbakery
     #   fontfeatures
     #   glyphtools
 booleanoperations==0.9.0
     # via ufo2ft
-certifi==2022.12.7
+certifi==2023.5.7
     # via requests
 cffi==1.15.1
     # via cmarkgfm
@@ -36,7 +37,7 @@ charset-normalizer==3.1.0
     # via requests
 cmarkgfm==2022.10.27
     # via fontbakery
-collidoscope==0.4.1
+collidoscope==0.6.5
     # via fontbakery
 commandlines==0.4.1
     # via ufolint
@@ -52,7 +53,7 @@ dehinter==4.0.0
     # via fontbakery
 font-v==2.1.0
     # via fontbakery
-fontbakery[freetype]==0.8.11
+fontbakery[freetype]==0.8.13
     # via -r requirements.in
 fontfeatures==1.7.4
     # via babelfont
@@ -72,6 +73,7 @@ fonttools[lxml,ufo,unicode]==4.39.4
     #   fontfeatures
     #   glyphsets
     #   glyphslib
+    #   kurbopy
     #   nanoemoji
     #   ufo2ft
     #   ufolib2
@@ -83,13 +85,13 @@ fs==2.4.16
     # via
     #   fontfeatures
     #   fonttools
-gflanguages==0.4.7
+gflanguages==0.4.8
     # via fontbakery
 gitdb==4.0.10
     # via gitpython
 gitpython==3.1.31
     # via font-v
-glyphsets==0.6.0
+glyphsets==0.6.1
     # via fontbakery
 glyphslib==6.2.2
     # via
@@ -98,11 +100,11 @@ glyphslib==6.2.2
     #   glyphsets
     #   glyphtools
 glyphtools==0.8.0
-    # via
-    #   collidoscope
-    #   fontfeatures
+    # via fontfeatures
 idna==3.4
     # via requests
+kurbopy==0.9.0
+    # via collidoscope
 lxml==4.9.2
     # via
     #   fontbakery
@@ -126,15 +128,15 @@ openstep-plist==0.3.0.post1
     # via
     #   babelfont
     #   glyphslib
-opentype-sanitizer==9.0.0
+opentype-sanitizer==9.1.0
     # via fontbakery
 opentypespec==1.9.1
     # via fontbakery
-orjson==3.8.11
+orjson==3.9.0
     # via babelfont
 packaging==23.1
     # via fontbakery
-picosvg==0.20.6
+picosvg==0.21.0
     # via nanoemoji
 pillow==9.5.0
     # via nanoemoji
@@ -165,15 +167,16 @@ requests==2.29.0
     # via fontbakery
 resvg-cli==0.22.0.post3
     # via nanoemoji
-rich==13.3.5
+rich==13.4.1
     # via fontbakery
 rstr==3.2.1
     # via stringbrewer
 six==1.16.0
     # via fs
-skia-pathops==0.7.4
+skia-pathops==0.8.0
     # via
     #   -r requirements.in
+    #   collidoscope
     #   picosvg
 smmap==5.0.0
     # via gitdb
@@ -187,6 +190,8 @@ toml==0.10.2
     # via
     #   fontbakery
     #   nanoemoji
+tqdm==4.65.0
+    # via collidoscope
 ufo2ft[cffsubr]==2.31.1
     # via
     #   -r requirements.in
@@ -199,7 +204,7 @@ ufolib2==0.14.0
     #   nanoemoji
 ufolint==1.2.0
     # via fontbakery
-uharfbuzz==0.36.0
+uharfbuzz==0.37.0
     # via
     #   -r requirements.in
     #   collidoscope
@@ -208,7 +213,7 @@ unicodedata2==15.0.0
     # via
     #   fontbakery
     #   fonttools
-urllib3==1.26.15
+urllib3==2.0.2
     # via requests
 vharfbuzz==0.2.0
     # via fontbakery
