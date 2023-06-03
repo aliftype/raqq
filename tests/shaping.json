@@ -1021,6 +1021,10 @@
       "expectation": "threedotshorizontalabove-ar.4=2@6,222+0|seen-ar.fina=2+510|threedotshorizontalabove-ar.1=1@-1,174+0|_c.seen.beh=1+0|seen-ar.medi=1+401|threedotshorizontalabove-ar=0@3,169+0|_c.seen.beh=0+0|seen-ar.init=0+378"
     },
     {
+      "input": "شيق",
+      "expectation": "twodotsverticalabove-ar=2@-62,265+0|qafDotless-ar.fina=2+373|twodotsverticalbelow-ar=1@159,-137+0|behDotless-ar.medi=1+128|threedotshorizontalabove-ar=0@3,169+0|_c.seen.beh=0+0|seen-ar.init=0+378"
+    },
+    {
       "input": "صبا",
       "expectation": "alef-ar.fina=2+101|dotbelow-ar=1@9,-110+0|_c.seen.beh=1+0|behDotless-ar.medi=1+128|_c.seen.beh=0+0|sad-ar.init=0+765"
     },
@@ -2407,6 +2411,10 @@
     {
       "input": "سبيل",
       "expectation": "lam-ar.fina=3+177|twodotsverticalbelow-ar=2@9,-137+0|_c.seen.beh=2+0|behDotless-ar.medi=2+128|dotbelow-ar=1@14,-110+0|_c.seen.beh=1+0|behDotless-ar.medi.high=1+128|_c.seen.beh=0+0|seen-ar.init=0+378"
+    },
+    {
+      "input": "سحيق",
+      "expectation": "twodotsverticalabove-ar=3@-62,265+0|qafDotless-ar.fina=3+373|twodotsverticalbelow-ar=2@159,-137+0|behDotless-ar.medi=2+128|_c.hah.beh=1+7|hah-ar.medi=1+133|seen-ar.init=0@0,122+468"
     },
     {
       "input": "صــا",

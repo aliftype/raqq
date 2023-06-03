@@ -1002,6 +1002,27 @@ lookup dots_below {
 		[meem-ar.medi]
 		[hah-ar.medi hah-ar.fina]
 	;
+
+	ignore
+	pos [behDotless-ar.init.high behDotless-ar.medi.high]
+		 _c.seen.beh
+		 behDotless-ar.medi
+		 @dotsbelow'
+		 qafDotless-ar.fina
+	;
+
+	ignore
+	pos [behDotless-ar.init.high behDotless-ar.medi.high]
+		 _c.seen.beh
+		 @dotsbelow
+		 behDotless-ar.medi
+		 @dotsbelow'
+		 qafDotless-ar.fina
+	;
+	pos  behDotless-ar.medi
+		 @dotsbelow' <150 0 0 0>
+		 qafDotless-ar.fina
+	;
 } dots_below;
 
 lookup heh_dots {
