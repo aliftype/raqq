@@ -517,8 +517,15 @@ def buildMaster(font, master, args):
             else:
                 colorLayers[name].append((name, paletteIdx))
 
+    colorGlyphs = list(colorLayers.keys())
     allGlyphs = font.glyphOrder + list(glyphSet.keys())
-    glyphOrder = sorted(glyphSet.keys(), key=lambda n: allGlyphs.index(n))
+
+    def key(name):
+        if name in colorGlyphs:
+            return len(allGlyphs) + colorGlyphs.index(name)
+        return allGlyphs.index(name)
+
+    glyphOrder = sorted(glyphSet.keys(), key=key)
 
     fb = FontBuilder(font.upm, isTTF=True)
     fb.setupGlyphOrder(glyphOrder)
