@@ -918,6 +918,7 @@ tag = kern;
 code = "# Automatic Code
 
 @behmedi = [$[name LIKE \"behDotless-ar.medi*\"]];
+@behinit = [$[name LIKE \"behDotless-ar.init*\"]];
 lookup dots_below {
 	lookupflag UseMarkFilteringSet @dotsbelow;
 
@@ -970,7 +971,36 @@ lookup dots_below {
 
 	pos	 @behmedi
 		 @dotsbelow' <0 -30 0 0>
-		 [waw-ar.fina reh-ar.fina]
+		[waw-ar.fina reh-ar.fina]
+	;
+
+	pos  @behinit
+		[_c.seen.beh]
+		 @dotsbelow' <50 50 0 0>
+		[behDotless-ar.medi ain-ar.medi heh-ar.medi
+		 lam-ar.medi.hah1 lam-ar.medi.hah2]
+		[hah-ar.medi hah-ar.fina]
+	;
+
+	pos  @behinit
+		[_c.seen.beh]
+		 @dotsbelow' <50 50 0 0>
+		[behDotless-ar.medi]
+		 @dotsbelow
+		[hah-ar.medi hah-ar.fina]
+	;
+
+	pos  @behinit
+		[_c.seen.beh]
+		 @dotsbelow' <0 -40 0 0>
+		[fehDotless-ar.medi]
+		[hah-ar.medi hah-ar.fina]
+	;
+
+	pos  behDotless-ar.init
+		 @dotsbelow' <0 -40 0 0>
+		[meem-ar.medi]
+		[hah-ar.medi hah-ar.fina]
 	;
 } dots_below;
 
