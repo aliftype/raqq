@@ -515,6 +515,7 @@ class SVGPen(AbstractPen):
 def addSVG(fb):
     font = fb.font
     SVG = font["SVG "] = newTable("SVG ")
+    SVG.compressed = True
     SVG.docList = []
 
     COLR = font["COLR"]
