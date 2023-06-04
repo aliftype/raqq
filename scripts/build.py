@@ -21,6 +21,8 @@ from fontTools.cu2qu.ufo import glyphs_to_quadratic
 from fontTools.designspaceLib import DesignSpaceDocument
 from fontTools.fontBuilder import FontBuilder
 from fontTools.misc.transform import Identity, Transform
+from fontTools.pens.basePen import AbstractPen
+from fontTools.pens.svgPathPen import SVGPathPen
 from fontTools.pens.ttGlyphPen import TTGlyphPen
 from fontTools.ttLib import newTable
 from fontTools.ttLib.tables._h_e_a_d import mac_epoch_diff
@@ -29,6 +31,7 @@ from glyphsLib import GSAnchor, GSFont, GSFontMaster, GSLayer
 from glyphsLib.builder.tokens import TokenExpander
 from glyphsLib.glyphdata import GlyphData
 from glyphsLib.glyphdata import get_glyph as getGlyphInfo
+from lxml import etree
 
 DEFAULT_TRANSFORM = [1, 0, 0, 1, 0, 0]
 
@@ -428,18 +431,121 @@ def getProperty(font, name):
             return prop.value
 
 
-def addSVG(fb):
-    from nanoemoji.colr_to_svg import colr_to_svg, glyph_region
+XLINK = "http://www.w3.org/1999/xlink"
+HREF = f"{{{XLINK}}}href"
 
+
+def ntos(n):
+    n = round(n, 2)
+    s = str(int(n) if round(n) == n else n)
+    if s.startswith("0."):
+        s = s[1:]
+    if s.startswith("-0."):
+        s = "-" + s[2:]
+    return s
+
+
+def drawSVG(font, glyphSet, name, defs):
+    gid = f"g{font.getGlyphID(name)}"
+    if (elem := defs.find(f"*[@id='{gid}']")) is None:
+        pen = SVGPen(font, defs, glyphSet)
+        glyphSet[name].draw(pen)
+
+        elem = pen.finish()
+        elem.attrib["id"] = gid
+    return elem
+
+
+class SVGPen(AbstractPen):
+    def __init__(self, font, defs, glyphSet):
+        self.font = font
+        self.defs = defs
+        self.glyphSet = glyphSet
+        self.components = []
+        self.pen = SVGPathPen(glyphSet, ntos=ntos)
+
+    def moveTo(self, pt):
+        self.pen.moveTo(pt)
+
+    def lineTo(self, pt):
+        self.pen.lineTo(pt)
+
+    def qCurveTo(self, *points):
+        self.pen.qCurveTo(*points)
+
+    def addComponent(self, glyphName, transformation):
+        self.components.append((glyphName, transformation))
+
+    def finish(self):
+        font = self.font
+        defs = self.defs
+        glyphSet = self.glyphSet
+
+        g = None
+        path = None
+        commands = self.pen.getCommands()
+        components = self.components
+        if components:
+            if len(components) == 1 and not commands:
+                g = defs
+            else:
+                g = etree.SubElement(defs, "g")
+            for name, transform in components:
+                elem = drawSVG(font, glyphSet, name, defs)
+                use = etree.SubElement(g, "use")
+                use.attrib[HREF] = "#" + elem.attrib["id"]
+                if transform != Identity:
+                    if transform[:4] == (1, 0, 0, 1):
+                        dx, dy = transform[4:]
+                        transform = f"translate({dx}, {dy})"
+                    else:
+                        matrix = ",".join(ntos(t) for t in transform)
+                        transform = f"matrix({matrix})"
+                    use.attrib["transform"] = transform
+            if g == defs:
+                g = use
+
+        if commands:
+            path = etree.SubElement(g if g is not None else defs, "path")
+            path.attrib["d"] = commands
+
+        return g if g is not None else path
+
+
+def addSVG(fb):
     font = fb.font
     SVG = font["SVG "] = newTable("SVG ")
     SVG.docList = []
 
-    for name, svg in colr_to_svg(lambda n: glyph_region(font, n), font).items():
+    COLR = font["COLR"]
+    CPAL = font["CPAL"]
+
+    root = etree.fromstring(
+        f'<svg xmlns="http://www.w3.org/2000/svg" xmlns:x="{XLINK}"></svg>'
+    )
+    defs = etree.SubElement(root, "defs")
+
+    gids = [font.getGlyphID(name) for name in COLR.ColorLayers]
+    assert gids == list(range(min(gids), max(gids) + 1))
+
+    glyphSet = font.getGlyphSet()
+    for name, layers in COLR.ColorLayers.items():
         gid = font.getGlyphID(name)
-        svg.remove_attributes(["viewBox"], inplace=True)
-        svg.topicosvg(inplace=True)
-        SVG.docList.append((svg.tostring(), gid, gid))
+        g = etree.SubElement(root, "g")
+        g.attrib["id"] = f"glyph{gid}"
+        g.attrib["transform"] = "scale(1,-1)"
+        for layer in layers:
+            elem = drawSVG(font, glyphSet, layer.name, defs)
+
+            color = CPAL.palettes[0][layer.colorID]
+            use = etree.SubElement(g, "use")
+            use.attrib[HREF] = "#" + elem.attrib["id"]
+            use.attrib["fill"] = color.hex()[:7]
+            if color.alpha != 255:
+                use.attrib["opacity"] = ntos(color.alpha / 255)
+
+    doc = etree.tostring(root, pretty_print=False).decode("utf-8")
+    SVG.docList.append((doc, min(gids), max(gids)))
 
 
 def addAvar(vf):

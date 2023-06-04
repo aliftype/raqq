@@ -4,10 +4,6 @@
 #
 #    pip-compile --resolver=backtracking requirements.in
 #
-absl-py==1.4.0
-    # via
-    #   nanoemoji
-    #   picosvg
 appdirs==1.4.4
     # via fs
 attrs==23.1.0
@@ -74,7 +70,6 @@ fonttools[lxml,ufo,unicode]==4.39.4
     #   glyphsets
     #   glyphslib
     #   kurbopy
-    #   nanoemoji
     #   ufo2ft
     #   ufolib2
     #   ufolint
@@ -107,21 +102,16 @@ kurbopy==0.9.0
     # via collidoscope
 lxml==4.9.2
     # via
+    #   -r requirements.in
     #   fontbakery
     #   fontfeatures
     #   fonttools
-    #   nanoemoji
-    #   picosvg
 markdown-it-py==2.2.0
     # via rich
 mdurl==0.1.2
     # via markdown-it-py
 munkres==1.1.4
     # via fontbakery
-nanoemoji==0.15.1
-    # via -r requirements.in
-ninja==1.11.1
-    # via nanoemoji
 numpy==1.24.3
     # via glyphtools
 openstep-plist==0.3.0.post1
@@ -136,14 +126,8 @@ orjson==3.9.0
     # via babelfont
 packaging==23.1
     # via fontbakery
-picosvg==0.21.0
-    # via nanoemoji
-pillow==9.5.0
-    # via nanoemoji
 pip-api==0.0.30
     # via fontbakery
-pngquant-cli==2.17.0.post5
-    # via nanoemoji
 protobuf==3.20.3
     # via
     #   axisregistry
@@ -161,12 +145,8 @@ pyyaml==6.0
     # via
     #   -r requirements.in
     #   fontbakery
-regex==2023.5.5
-    # via nanoemoji
-requests==2.29.0
+requests==2.31.0
     # via fontbakery
-resvg-cli==0.22.0.post3
-    # via nanoemoji
 rich==13.4.1
     # via fontbakery
 rstr==3.2.1
@@ -177,7 +157,6 @@ skia-pathops==0.8.0
     # via
     #   -r requirements.in
     #   collidoscope
-    #   picosvg
 smmap==5.0.0
     # via gitdb
 soupsieve==2.4.1
@@ -187,21 +166,17 @@ sre-yield==1.2
 stringbrewer==0.0.1
     # via fontbakery
 toml==0.10.2
-    # via
-    #   fontbakery
-    #   nanoemoji
+    # via fontbakery
 tqdm==4.65.0
     # via collidoscope
-ufo2ft[cffsubr]==2.31.1
+ufo2ft==2.31.1
     # via
     #   -r requirements.in
     #   fontbakery
-    #   nanoemoji
 ufolib2==0.14.0
     # via
     #   babelfont
     #   glyphslib
-    #   nanoemoji
 ufolint==1.2.0
     # via fontbakery
 uharfbuzz==0.37.0
@@ -217,8 +192,6 @@ urllib3==2.0.2
     # via requests
 vharfbuzz==0.2.0
     # via fontbakery
-zopfli==0.2.2
-    # via nanoemoji
 
 # The following packages are considered to be unsafe in a requirements file:
 # pip
