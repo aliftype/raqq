@@ -16,6 +16,7 @@
 import argparse
 import datetime
 import os
+from xml.etree import ElementTree as etree
 
 from fontTools.cu2qu.ufo import glyphs_to_quadratic
 from fontTools.designspaceLib import DesignSpaceDocument
@@ -31,7 +32,6 @@ from glyphsLib import GSAnchor, GSFont, GSFontMaster, GSLayer
 from glyphsLib.builder.tokens import TokenExpander
 from glyphsLib.glyphdata import GlyphData
 from glyphsLib.glyphdata import get_glyph as getGlyphInfo
-from lxml import etree
 
 DEFAULT_TRANSFORM = [1, 0, 0, 1, 0, 0]
 
@@ -77,6 +77,7 @@ CODEPAGE_RANGES = {
 }
 
 # Money patch GSLayer
+
 
 # Makes our life simpler when checking for empty layer.
 def GSLayer__bool__(self):
@@ -196,7 +197,6 @@ def getAnchorPos(font, glyph, default, name):
 
 
 def makeMark(font, glyphOrder):
-
     classes = ""
     mark2base = {}
     mark2liga = ""
@@ -521,9 +521,8 @@ def addSVG(fb):
     COLR = font["COLR"]
     CPAL = font["CPAL"]
 
-    root = etree.fromstring(
-        f'<svg xmlns="http://www.w3.org/2000/svg" xmlns:x="{XLINK}"></svg>'
-    )
+    etree.register_namespace("x", XLINK)
+    root = etree.Element("svg", {"xmlns": "http://www.w3.org/2000/svg"})
     defs = etree.SubElement(root, "defs")
 
     gids = [font.getGlyphID(name) for name in COLR.ColorLayers]
@@ -545,7 +544,7 @@ def addSVG(fb):
             if color.alpha != 255:
                 use.attrib["opacity"] = ntos(color.alpha / 255)
 
-    doc = etree.tostring(root, pretty_print=False).decode("utf-8")
+    doc = etree.tostring(root)
     SVG.docList.append((doc, min(gids), max(gids)))
 
 
