@@ -76,7 +76,7 @@ CODEPAGE_RANGES = {
     437: 63,
 }
 
-# Money patch GSLayer
+# Monkey patch GSLayer
 
 
 # Makes our life simpler when checking for empty layer.
