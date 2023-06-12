@@ -463,9 +463,6 @@ class SVGPen(SVGPathPen):
         self.defs = defs
         self.components = []
 
-    def closePath(self):
-        pass
-
     def addComponent(self, glyphName, transformation):
         self.components.append((glyphName, transformation))
 
