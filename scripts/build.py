@@ -456,22 +456,15 @@ def drawSVG(font, glyphSet, name, defs):
     return elem
 
 
-class SVGPen(AbstractPen):
+class SVGPen(SVGPathPen):
     def __init__(self, font, defs, glyphSet):
+        super().__init__(glyphSet, ntos=ntos)
         self.font = font
         self.defs = defs
-        self.glyphSet = glyphSet
         self.components = []
-        self.pen = SVGPathPen(glyphSet, ntos=ntos)
 
-    def moveTo(self, pt):
-        self.pen.moveTo(pt)
-
-    def lineTo(self, pt):
-        self.pen.lineTo(pt)
-
-    def qCurveTo(self, *points):
-        self.pen.qCurveTo(*points)
+    def closePath(self):
+        pass
 
     def addComponent(self, glyphName, transformation):
         self.components.append((glyphName, transformation))
@@ -483,7 +476,7 @@ class SVGPen(AbstractPen):
 
         g = None
         path = None
-        commands = self.pen.getCommands()
+        commands = self.getCommands()
         components = self.components
         if components:
             if len(components) == 1 and not commands:
