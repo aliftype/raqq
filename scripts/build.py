@@ -548,54 +548,6 @@ def addSVG(fb):
     SVG.docList.append((doc, min(gids), max(gids)))
 
 
-def addAvar(vf):
-    from fontTools.misc.fixedTools import floatToFixed as fl2fi
-    from fontTools.ttLib.tables import otTables
-    from fontTools.varLib import models, varStore
-
-    assert "avar" not in vf
-
-    axisTags = [a.axisTag for a in vf["fvar"].axes]
-
-    derived = [
-        {"jstf": +0.0},
-        {"jstf": +0.9},
-        {"jstf": +1.0},
-        {"jstf": -0.5},
-        {"jstf": -1.0},
-    ]
-
-    source = [
-        {"SPAC": +0.0, "MSHQ": +0.0},
-        {"SPAC": +0.0, "MSHQ": +1.0},
-        {"SPAC": +1.0, "MSHQ": +1.0},
-        {"SPAC": -0.0, "MSHQ": -1.0},
-        {"SPAC": -1.0, "MSHQ": -1.0},
-    ]
-
-    model = models.VariationModel(derived, axisTags)
-    builder = varStore.OnlineVarStoreBuilder(axisTags)
-    builder.setModel(model)
-    varIdxes = {
-        t: builder.storeMasters([fl2fi(m.get(t, 0), 14) for m in source])[1]
-        for t in axisTags
-    }
-    store = builder.finish()
-    optimized = store.optimize()
-    varIdxes = {axis: optimized[value] for axis, value in varIdxes.items()}
-
-    varIdxMap = otTables.DeltaSetIndexMap()
-    varIdxMap.Format = 1
-    varIdxMap.mapping = [varIdxes[t] for t in axisTags]
-
-    avar = vf["avar"] = newTable("avar")
-    avar.majorVersion = 2
-    avar.segments = {t: {} for t in axisTags}
-    avar.table = otTables.avar()
-    avar.table.VarIdxMap = varIdxMap
-    avar.table.VarStore = store
-
-
 def buildMaster(font, master, args):
     colorLayers = {}
 
@@ -887,8 +839,18 @@ def build(font, instance, args):
             location={a.name: master.axes[i] for i, a in enumerate(ds.axes)},
         )
 
+    mappings = [
+        [{"Justification": -100}, {"Spacing": -100, "Mashq": 0}],
+        [{"Justification": -50}, {"Spacing": 0, "Mashq": 0}],
+        [{"Justification": 0}, {"Spacing": 0, "Mashq": 10}],
+        [{"Justification": 90}, {"Spacing": 0, "Mashq": 100}],
+        [{"Justification": 100}, {"Spacing": 125, "Mashq": 100}],
+    ]
+
+    for input, output in mappings:
+        ds.addAxisMappingDescriptor(inputLocation=input, outputLocation=output)
+
     vf, _, _ = merge(ds)
-    addAvar(vf)
 
     otf = buildBase(font, instance, vf, args)
     return otf
