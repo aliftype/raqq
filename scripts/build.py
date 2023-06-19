@@ -168,32 +168,15 @@ def getAnchorPos(font, glyph, default, name):
             coords = master.axes
             pos.append((master.axes, layer.anchors[name].position))
 
-    # Simplest case, there is only one layer
-    if len(pos) == 1:
-        return pos[0][1].x, pos[0][1].y
-
-    # More than one layer
     x = []
     y = []
     axes = [a.axisTag for a in font.axes]
     for coords, position in pos:
         loc = ",".join(f"{axes[i]}={c}" for i, c in enumerate(coords))
-        x.append((loc, position.x))
-        y.append((loc, position.y))
+        x.append(f"{loc}:{position.x}")
+        y.append(f"{loc}:{position.y}")
 
-    # If all values are equal, return simple value
-    if all(a[1] == x[0][1] for a in x):
-        x = x[0][1]
-    else:
-        x = "(" + " ".join(f"{a[0]}:{a[1]}" for a in x) + ")"
-
-    # If all values are equal, return simple value
-    if all(a[1] == y[0][1] for a in y):
-        y = y[0][1]
-    else:
-        y = "(" + " ".join(f"{a[0]}:{a[1]}" for a in y) + ")"
-
-    return x, y
+    return f"({' '.join(x)})", f"({' '.join(y)})"
 
 
 def makeMark(font, glyphOrder):
