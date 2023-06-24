@@ -503,6 +503,10 @@
   <glyph name="heh-ar.medi.l1" category="Letter" script="arabic" decompose="heh-ar.medi"
          sortName="arL0330"
   />
+  <glyph name="kashida-ar.medi.l1" category="Letter" script="arabic" decompose="kashida-ar.medi"
+         sortName="arL0331"
+  />
+
 
   <glyph name="behDotless-ar.medi.l2" category="Letter" script="arabic" decompose="behDotless-ar.medi"
          sortName="arL0340"
@@ -536,6 +540,9 @@
   />
   <glyph name="heh-ar.medi.l2" category="Letter" script="arabic" decompose="heh-ar.medi"
          sortName="arL0350"
+  />
+  <glyph name="kashida-ar.medi.l2" category="Letter" script="arabic" decompose="kashida-ar.medi"
+         sortName="arL0351"
   />
 
   <glyph name="lam_lam_heh" category="Letter" subCategory="Ligature" script="arabic"
