@@ -517,6 +517,7 @@ def addSVG(fb):
             if color.alpha != 255:
                 use.attrib["opacity"] = ntos(color.alpha / 255)
 
+    etree.indent(root)
     doc = etree.tostring(root)
     SVG.docList.append((doc, min(gids), max(gids)))
 
