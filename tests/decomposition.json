@@ -46,6 +46,7 @@
       "kaf-ar.medi.l1",
       "meem-ar.medi.l1",
       "heh-ar.medi.l1",
+      "kashida-ar.medi.l1",
       "behDotless-ar.medi.l2",
       "hah-ar.medi.l2",
       "seen-ar.medi.l2",
@@ -54,7 +55,8 @@
       "fehDotless-ar.medi.l2",
       "kaf-ar.medi.l2",
       "meem-ar.medi.l2",
-      "heh-ar.medi.l2"
+      "heh-ar.medi.l2",
+      "kashida-ar.medi.l2"
     ]
   },
   "tests": [
