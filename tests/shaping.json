@@ -2991,7 +2991,7 @@
     {
       "input": "۝١٤٠",
       "direction": "ltr",
-      "expectation": "endofayah-ar.10=0+1117|ayah.140=1@-715,46+0"
+      "expectation": "endofayah-ar.10=0+1117|ayah.140=1@-717,41+0"
     },
     {
       "input": "۝١٤١",
