@@ -52,7 +52,7 @@
     },
     {
       "input": "إِ",
-      "expectation": "kasra-ar=0@167,-158+0|hamzabelow-ar=0@303,-170+0|alef-ar=0+660"
+      "expectation": "kasra-ar=0@303,-170+0|hamzabelow-ar=0@303,-170+0|alef-ar=0+660"
     },
     {
       "input": "اء",
