@@ -175,75 +175,45 @@ lookup ccmp_ayah_1 {
 	ignore
 	sub endofayah-ar' five-ar @numbers;
 	sub endofayah-ar' five-ar by endofayah-ar.05;
+
+	sub endofayah-ar one-ar' zero-ar' zero-ar'	by ayah.100;
+	sub endofayah-ar one-ar' one-ar' zero-ar'	by ayah.110;
+	sub endofayah-ar one-ar' two-ar' zero-ar'	by ayah.120;
+	sub endofayah-ar one-ar' three-ar' zero-ar'	by ayah.130;
+	sub endofayah-ar one-ar' four-ar' zero-ar'	by ayah.140;
+	sub endofayah-ar one-ar' five-ar' zero-ar'	by ayah.150;
+	sub endofayah-ar one-ar' six-ar' zero-ar'	by ayah.160;
+	sub endofayah-ar one-ar' seven-ar' zero-ar'	by ayah.170;
+	sub endofayah-ar one-ar' eight-ar' zero-ar'	by ayah.180;
+	sub endofayah-ar one-ar' nine-ar' zero-ar'	by ayah.190;
+	sub endofayah-ar two-ar' zero-ar' zero-ar'	by ayah.200;
+	sub endofayah-ar two-ar' one-ar' zero-ar'	by ayah.210;
+	sub endofayah-ar two-ar' two-ar' zero-ar'	by ayah.220;
+	sub endofayah-ar two-ar' three-ar' zero-ar'	by ayah.230;
+	sub endofayah-ar two-ar' four-ar' zero-ar'	by ayah.240;
+	sub endofayah-ar two-ar' five-ar' zero-ar'	by ayah.250;
+	sub endofayah-ar two-ar' six-ar' zero-ar'	by ayah.260;
+	sub endofayah-ar two-ar' seven-ar' zero-ar'	by ayah.270;
+	sub endofayah-ar two-ar' eight-ar' zero-ar'	by ayah.280;
+
+	ignore
+	sub endofayah-ar @numbers' zero-ar' @numbers;
+
+	sub endofayah-ar one-ar' zero-ar'			by ayah.010;
+	sub endofayah-ar two-ar' zero-ar'			by ayah.020;
+	sub endofayah-ar three-ar' zero-ar'			by ayah.030;
+	sub endofayah-ar four-ar' zero-ar'			by ayah.040;
+	sub endofayah-ar five-ar' zero-ar'			by ayah.050;
+	sub endofayah-ar six-ar' zero-ar'			by ayah.060;
+	sub endofayah-ar seven-ar' zero-ar'			by ayah.070;
+	sub endofayah-ar eight-ar' zero-ar'			by ayah.080;
+	sub endofayah-ar nine-ar' zero-ar'			by ayah.090;
 } ccmp_ayah_1;
 
 lookup ccmp_ayah_2 {
-	ignore
-	sub endofayah-ar' @numbers @numbers @numbers zero-ar @numbers;
-
-	ignore
-	sub endofayah-ar' @numbers @numbers zero-ar @numbers;
-	sub endofayah-ar' @numbers @numbers zero-ar by endofayah-ar.10;
-
-	ignore
-	sub endofayah-ar' @numbers zero-ar @numbers;
-	sub endofayah-ar' @numbers zero-ar by endofayah-ar.10;
-
-	sub endofayah-ar.10 one-ar' zero-ar' zero-ar'	by ayah.100;
-	sub endofayah-ar.10 one-ar' one-ar' zero-ar'	by ayah.110;
-	sub endofayah-ar.10 one-ar' two-ar' zero-ar'	by ayah.120;
-	sub endofayah-ar.10 one-ar' three-ar' zero-ar'	by ayah.130;
-	sub endofayah-ar.10 one-ar' four-ar' zero-ar'	by ayah.140;
-	sub endofayah-ar.10 one-ar' five-ar' zero-ar'	by ayah.150;
-	sub endofayah-ar.10 one-ar' six-ar' zero-ar'	by ayah.160;
-	sub endofayah-ar.10 one-ar' seven-ar' zero-ar'	by ayah.170;
-	sub endofayah-ar.10 one-ar' eight-ar' zero-ar'	by ayah.180;
-	sub endofayah-ar.10 one-ar' nine-ar' zero-ar'	by ayah.190;
-	sub endofayah-ar.10 two-ar' zero-ar' zero-ar'	by ayah.200;
-	sub endofayah-ar.10 two-ar' one-ar' zero-ar'	by ayah.210;
-	sub endofayah-ar.10 two-ar' two-ar' zero-ar'	by ayah.220;
-	sub endofayah-ar.10 two-ar' three-ar' zero-ar'	by ayah.230;
-	sub endofayah-ar.10 two-ar' four-ar' zero-ar'	by ayah.240;
-	sub endofayah-ar.10 two-ar' five-ar' zero-ar'	by ayah.250;
-	sub endofayah-ar.10 two-ar' six-ar' zero-ar'	by ayah.260;
-	sub endofayah-ar.10 two-ar' seven-ar' zero-ar'	by ayah.270;
-	sub endofayah-ar.10 two-ar' eight-ar' zero-ar'	by ayah.280;
-
-	ignore
-	sub endofayah-ar.10 one-ar' zero-ar' @numbers;
-	sub endofayah-ar.10 one-ar' zero-ar' by ayah.010;
-
-	ignore
-	sub endofayah-ar.10 two-ar' zero-ar' @numbers;
-	sub endofayah-ar.10 two-ar' zero-ar' by ayah.020;
-
-	ignore
-	sub endofayah-ar.10 three-ar' zero-ar' @numbers;
-	sub endofayah-ar.10 three-ar' zero-ar' by ayah.030;
-
-	ignore
-	sub endofayah-ar.10 four-ar' zero-ar' @numbers;
-	sub endofayah-ar.10 four-ar' zero-ar' by ayah.040;
-
-	ignore
-	sub endofayah-ar.10 five-ar' zero-ar' @numbers;
-	sub endofayah-ar.10 five-ar' zero-ar' by ayah.050;
-
-	ignore
-	sub endofayah-ar.10 six-ar' zero-ar' @numbers;
-	sub endofayah-ar.10 six-ar' zero-ar' by ayah.060;
-
-	ignore
-	sub endofayah-ar.10 seven-ar' zero-ar' @numbers;
-	sub endofayah-ar.10 seven-ar' zero-ar' by ayah.070;
-
-	ignore
-	sub endofayah-ar.10 eight-ar' zero-ar' @numbers;
-	sub endofayah-ar.10 eight-ar' zero-ar' by ayah.080;
-
-	ignore
-	sub endofayah-ar.10 nine-ar' zero-ar' @numbers;
-	sub endofayah-ar.10 nine-ar' zero-ar' by ayah.090;
+	sub  endofayah-ar'
+		[$[name LIKE \"ayah.*\"]]
+	 by  endofayah-ar.10;
 } ccmp_ayah_2;
 
 lookup ccmp_kashida {
