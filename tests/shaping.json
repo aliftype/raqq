@@ -3741,7 +3741,7 @@
     {
       "input": "۝٢٩٠",
       "direction": "ltr",
-      "expectation": "endofayah-ar.10=0+1117|two-ar=1+0|nine-ar=2+0|zero-ar=3+0"
+      "expectation": "endofayah-ar=0+400|two-ar=1+0|nine-ar=2+0|zero-ar=3+0"
     },
     {
       "input": "۝٢٩١",
@@ -3791,7 +3791,7 @@
     {
       "input": "۝٣٠٠",
       "direction": "ltr",
-      "expectation": "endofayah-ar.10=0+1117|three-ar=1+0|zero-ar=2+0|zero-ar=3+0"
+      "expectation": "endofayah-ar=0+400|three-ar=1+0|zero-ar=2+0|zero-ar=3+0"
     },
     {
       "input": "أيلمح",
