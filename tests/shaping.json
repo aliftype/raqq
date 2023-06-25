@@ -2941,7 +2941,7 @@
     {
       "input": "۝١٣٠",
       "direction": "ltr",
-      "expectation": "endofayah-ar.10=0+1117|ayah.130=1@-712,26+0"
+      "expectation": "endofayah-ar.10=0+1117|ayah.130=1@-699,26+0"
     },
     {
       "input": "۝١٣١",
@@ -3341,7 +3341,7 @@
     {
       "input": "۝٢١٠",
       "direction": "ltr",
-      "expectation": "endofayah-ar.10=0+1117|two-ar=1+0|one-ar=2+0|zero-ar=3+0"
+      "expectation": "endofayah-ar.10=0+1117|ayah.210=1@-730,60+0"
     },
     {
       "input": "۝٢١١",
@@ -3391,7 +3391,7 @@
     {
       "input": "۝٢٢٠",
       "direction": "ltr",
-      "expectation": "endofayah-ar.10=0+1117|two-ar=1+0|two-ar=2+0|zero-ar=3+0"
+      "expectation": "endofayah-ar.10=0+1117|ayah.220=1@-730,60+0"
     },
     {
       "input": "۝٢٢١",
@@ -3441,7 +3441,7 @@
     {
       "input": "۝٢٣٠",
       "direction": "ltr",
-      "expectation": "endofayah-ar.10=0+1117|two-ar=1+0|three-ar=2+0|zero-ar=3+0"
+      "expectation": "endofayah-ar.10=0+1117|ayah.230=1@-689,52+0"
     },
     {
       "input": "۝٢٣١",
@@ -3491,7 +3491,7 @@
     {
       "input": "۝٢٤٠",
       "direction": "ltr",
-      "expectation": "endofayah-ar.10=0+1117|two-ar=1+0|four-ar=2+0|zero-ar=3+0"
+      "expectation": "endofayah-ar.10=0+1117|ayah.240=1@-716,52+0"
     },
     {
       "input": "۝٢٤١",
@@ -3541,7 +3541,7 @@
     {
       "input": "۝٢٥٠",
       "direction": "ltr",
-      "expectation": "endofayah-ar.10=0+1117|two-ar=1+0|five-ar=2+0|zero-ar=3+0"
+      "expectation": "endofayah-ar.10=0+1117|ayah.250=1@-716,42+0"
     },
     {
       "input": "۝٢٥١",
@@ -3591,7 +3591,7 @@
     {
       "input": "۝٢٦٠",
       "direction": "ltr",
-      "expectation": "endofayah-ar.10=0+1117|two-ar=1+0|six-ar=2+0|zero-ar=3+0"
+      "expectation": "endofayah-ar.10=0+1117|ayah.260=1@-716,42+0"
     },
     {
       "input": "۝٢٦١",
@@ -3641,7 +3641,7 @@
     {
       "input": "۝٢٧٠",
       "direction": "ltr",
-      "expectation": "endofayah-ar.10=0+1117|two-ar=1+0|seven-ar=2+0|zero-ar=3+0"
+      "expectation": "endofayah-ar.10=0+1117|ayah.270=1@-716,42+0"
     },
     {
       "input": "۝٢٧١",
@@ -3691,7 +3691,7 @@
     {
       "input": "۝٢٨٠",
       "direction": "ltr",
-      "expectation": "endofayah-ar.10=0+1117|two-ar=1+0|eight-ar=2+0|zero-ar=3+0"
+      "expectation": "endofayah-ar.10=0+1117|ayah.280=1@-716,42+0"
     },
     {
       "input": "۝٢٨١",
