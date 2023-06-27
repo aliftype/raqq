@@ -1,5 +1,5 @@
 {
-.appVersion = "3201";
+.appVersion = "3202";
 .formatVersion = 3;
 axes = (
 {
@@ -19788,6 +19788,10 @@ shapes = (
 alignment = -1;
 pos = (0,180);
 ref = _ayah.010;
+},
+{
+pos = (75,80);
+ref = _ayah.decoration1;
 }
 );
 width = 495;
@@ -19804,6 +19808,10 @@ shapes = (
 alignment = -1;
 pos = (0,180);
 ref = _ayah.010.1;
+},
+{
+pos = (75,80);
+ref = _ayah.decoration1.1;
 }
 );
 width = 495;
@@ -19820,6 +19828,10 @@ shapes = (
 alignment = -1;
 pos = (0,180);
 ref = _ayah.010;
+},
+{
+pos = (75,80);
+ref = _ayah.decoration1;
 }
 );
 width = 495;
@@ -20559,6 +20571,10 @@ alignment = -1;
 pos = (0,91);
 ref = _ayah.010;
 scale = (0.7,0.7);
+},
+{
+pos = (-5,34);
+ref = _ayah.decoration1;
 }
 );
 width = 349;
@@ -20584,6 +20600,10 @@ alignment = -1;
 pos = (0,91);
 ref = _ayah.010.1;
 scale = (0.7,0.7);
+},
+{
+pos = (-5,34);
+ref = _ayah.decoration1.1;
 }
 );
 visible = 1;
@@ -20608,6 +20628,10 @@ alignment = -1;
 pos = (0,91);
 ref = _ayah.010;
 scale = (0.7,0.7);
+},
+{
+pos = (-5,34);
+ref = _ayah.decoration1;
 }
 );
 visible = 1;
@@ -20624,168 +20648,42 @@ layers = (
 anchors = (
 {
 name = _top;
-pos = (180,166);
+pos = (142,147);
 }
 );
 layerId = m01;
 shapes = (
 {
 alignment = -1;
-pos = (132,189);
+pos = (90,189);
 ref = _ayah.100;
 scale = (0.56,0.48);
 },
 {
-pos = (42,196);
+pos = (0,196);
 ref = _ayah.waw;
 scale = (0.56,0.56);
 },
 {
 alignment = -1;
-pos = (137,112);
+pos = (20,97);
 ref = _ayah.010;
 scale = (0.48,0.56);
 },
 {
 alignment = -1;
-pos = (69,116);
+pos = (144,12);
 ref = _ayah.waw;
 scale = (0.56,0.56);
 },
 {
 alignment = -1;
-pos = (0,92);
+pos = (75,-12);
 ref = _ayah.noon;
 scale = (0.56,0.56);
 }
 );
-width = 377;
-},
-{
-associatedMasterId = m01;
-attr = {
-colorPalette = 4;
-};
-layerId = "D542F106-890E-45CF-A3C8-AEA4B940F3D6";
-metricLeft = "=-4";
-metricRight = "=-7";
-name = "17 Apr 23 at 00:00";
-shapes = (
-{
-alignment = -1;
-pos = (132,189);
-ref = _ayah.100.1;
-scale = (0.56,0.48);
-},
-{
-pos = (42,196);
-ref = _ayah.waw.1;
-scale = (0.56,0.56);
-},
-{
-alignment = -1;
-pos = (137,112);
-ref = _ayah.010.1;
-scale = (0.48,0.56);
-},
-{
-alignment = -1;
-pos = (69,116);
-ref = _ayah.waw.1;
-scale = (0.56,0.56);
-},
-{
-alignment = -1;
-pos = (0,92);
-ref = _ayah.noon.1;
-scale = (0.56,0.56);
-}
-);
-visible = 1;
-width = 377;
-},
-{
-associatedMasterId = m01;
-attr = {
-colorPalette = 1;
-};
-layerId = "A4C02AA6-6022-44EC-AFA7-E0EFF98AA081";
-name = "Color 1 17 Apr 23 at 00:03";
-shapes = (
-{
-alignment = -1;
-pos = (132,189);
-ref = _ayah.100;
-scale = (0.56,0.48);
-},
-{
-pos = (42,196);
-ref = _ayah.waw;
-scale = (0.56,0.56);
-},
-{
-alignment = -1;
-pos = (137,112);
-ref = _ayah.010;
-scale = (0.48,0.56);
-},
-{
-alignment = -1;
-pos = (69,116);
-ref = _ayah.waw;
-scale = (0.56,0.56);
-},
-{
-alignment = -1;
-pos = (0,92);
-ref = _ayah.noon;
-scale = (0.56,0.56);
-}
-);
-visible = 1;
-width = 377;
-}
-);
-metricLeft = "=0";
-metricRight = "=0";
-},
-{
-glyphname = ayah.130;
-layers = (
-{
-anchors = (
-{
-name = _top;
-pos = (138,157);
-}
-);
-layerId = m01;
-shapes = (
-{
-alignment = -1;
-pos = (94,204);
-ref = _ayah.100;
-scale = (0.56,0.48);
-},
-{
-pos = (0,211);
-ref = _ayah.waw;
-scale = (0.56,0.56);
-},
-{
-alignment = -1;
-pos = (89,82);
-ref = _ayah.030;
-scale = (0.48,0.48);
-},
-{
-alignment = -1;
-pos = (17,62);
-ref = _ayah.noon;
-scale = (0.56,0.56);
-}
-);
-width = 274;
+width = 270;
 },
 {
 associatedMasterId = m01;
@@ -20799,30 +20697,36 @@ name = "17 Apr 23 at 00:00";
 shapes = (
 {
 alignment = -1;
-pos = (94,204);
+pos = (90,189);
 ref = _ayah.100.1;
 scale = (0.56,0.48);
 },
 {
-pos = (0,211);
+pos = (0,196);
 ref = _ayah.waw.1;
 scale = (0.56,0.56);
 },
 {
 alignment = -1;
-pos = (89,82);
-ref = _ayah.030.1;
-scale = (0.48,0.48);
+pos = (20,97);
+ref = _ayah.010.1;
+scale = (0.48,0.56);
 },
 {
 alignment = -1;
-pos = (17,62);
+pos = (144,12);
+ref = _ayah.waw.1;
+scale = (0.56,0.56);
+},
+{
+alignment = -1;
+pos = (75,-12);
 ref = _ayah.noon.1;
 scale = (0.56,0.56);
 }
 );
 visible = 1;
-width = 274;
+width = 270;
 },
 {
 associatedMasterId = m01;
@@ -20834,30 +20738,162 @@ name = "Color 1 17 Apr 23 at 00:03";
 shapes = (
 {
 alignment = -1;
-pos = (94,204);
+pos = (90,189);
 ref = _ayah.100;
 scale = (0.56,0.48);
 },
 {
-pos = (0,211);
+pos = (0,196);
 ref = _ayah.waw;
 scale = (0.56,0.56);
 },
 {
 alignment = -1;
-pos = (89,82);
-ref = _ayah.030;
-scale = (0.48,0.48);
+pos = (20,97);
+ref = _ayah.010;
+scale = (0.48,0.56);
 },
 {
 alignment = -1;
-pos = (17,62);
+pos = (144,12);
+ref = _ayah.waw;
+scale = (0.56,0.56);
+},
+{
+alignment = -1;
+pos = (75,-12);
 ref = _ayah.noon;
 scale = (0.56,0.56);
 }
 );
 visible = 1;
-width = 274;
+width = 270;
+}
+);
+metricLeft = "=0";
+metricRight = "=0";
+},
+{
+glyphname = ayah.130;
+layers = (
+{
+anchors = (
+{
+name = _top;
+pos = (136,157);
+}
+);
+layerId = m01;
+shapes = (
+{
+alignment = -1;
+pos = (42,215);
+ref = _ayah.100;
+scale = (0.56,0.48);
+},
+{
+pos = (212,84);
+ref = _ayah.waw;
+scale = (0.56,0.56);
+},
+{
+alignment = -1;
+pos = (70,92);
+ref = _ayah.030;
+scale = (0.48,0.48);
+},
+{
+alignment = -1;
+pos = (0,42);
+ref = _ayah.noon;
+scale = (0.56,0.65);
+},
+{
+pos = (-32,34);
+ref = _ayah.decoration1;
+}
+);
+width = 299;
+},
+{
+associatedMasterId = m01;
+attr = {
+colorPalette = 4;
+};
+layerId = "D542F106-890E-45CF-A3C8-AEA4B940F3D6";
+metricLeft = "=-4";
+metricRight = "=-3";
+name = "17 Apr 23 at 00:00";
+shapes = (
+{
+alignment = -1;
+pos = (42,215);
+ref = _ayah.100.1;
+scale = (0.56,0.48);
+},
+{
+pos = (212,84);
+ref = _ayah.waw.1;
+scale = (0.56,0.56);
+},
+{
+alignment = -1;
+pos = (70,92);
+ref = _ayah.030.1;
+scale = (0.48,0.48);
+},
+{
+pos = (-32,34);
+ref = _ayah.decoration1.1;
+},
+{
+alignment = -1;
+pos = (0,42);
+ref = _ayah.noon.1;
+scale = (0.56,0.65);
+}
+);
+visible = 1;
+width = 299;
+},
+{
+associatedMasterId = m01;
+attr = {
+colorPalette = 1;
+};
+layerId = "A4C02AA6-6022-44EC-AFA7-E0EFF98AA081";
+name = "Color 1 17 Apr 23 at 00:03";
+shapes = (
+{
+alignment = -1;
+pos = (42,215);
+ref = _ayah.100;
+scale = (0.56,0.48);
+},
+{
+pos = (212,84);
+ref = _ayah.waw;
+scale = (0.56,0.56);
+},
+{
+alignment = -1;
+pos = (70,92);
+ref = _ayah.030;
+scale = (0.48,0.48);
+},
+{
+pos = (-32,34);
+ref = _ayah.decoration1;
+},
+{
+alignment = -1;
+pos = (0,42);
+ref = _ayah.noon;
+scale = (0.56,0.65);
+}
+);
+visible = 1;
+width = 299;
 }
 );
 metricLeft = "=0";
@@ -21660,42 +21696,49 @@ layers = (
 anchors = (
 {
 name = _top;
-pos = (169,123);
+pos = (169,161);
 }
 );
 layerId = m01;
 shapes = (
 {
 alignment = -1;
-pos = (96,193);
+pos = (142,204);
 ref = _ayah.200;
 scale = (0.56,0.48);
 },
 {
 alignment = -1;
-pos = (36,141);
+pos = (82,152);
 ref = _ayah.noon;
 scale = (0.56,0.56);
 },
 {
 alignment = -1;
-pos = (263,78);
+pos = (4,199);
 ref = _ayah.waw;
 scale = (0.56,0.56);
 },
 {
 alignment = -1;
-pos = (0,85);
+pos = (40,85);
 ref = _ayah.010;
 scale = (0.56,0.56);
 },
 {
-ref = _ayah.decoration1.1;
+pos = (0,38);
+ref = _ayah.decoration1;
 }
 );
 width = 350;
 },
 {
+anchors = (
+{
+name = _top;
+pos = (169,161);
+}
+);
 associatedMasterId = m01;
 attr = {
 colorPalette = 4;
@@ -21707,29 +21750,30 @@ name = "17 Apr 23 at 00:00";
 shapes = (
 {
 alignment = -1;
-pos = (96,193);
+pos = (142,204);
 ref = _ayah.200.1;
 scale = (0.56,0.48);
 },
 {
 alignment = -1;
-pos = (36,141);
+pos = (82,152);
 ref = _ayah.noon.1;
 scale = (0.56,0.56);
 },
 {
 alignment = -1;
-pos = (263,78);
+pos = (4,199);
 ref = _ayah.waw.1;
 scale = (0.56,0.56);
 },
 {
 alignment = -1;
-pos = (0,85);
+pos = (40,85);
 ref = _ayah.010.1;
 scale = (0.56,0.56);
 },
 {
+pos = (0,38);
 ref = _ayah.decoration1.1;
 }
 );
@@ -21737,6 +21781,12 @@ visible = 1;
 width = 350;
 },
 {
+anchors = (
+{
+name = _top;
+pos = (169,161);
+}
+);
 associatedMasterId = m01;
 attr = {
 colorPalette = 1;
@@ -21746,29 +21796,30 @@ name = "Color 1 17 Apr 23 at 00:03";
 shapes = (
 {
 alignment = -1;
-pos = (96,193);
+pos = (142,204);
 ref = _ayah.200;
 scale = (0.56,0.48);
 },
 {
 alignment = -1;
-pos = (36,141);
+pos = (82,152);
 ref = _ayah.noon;
 scale = (0.56,0.56);
 },
 {
 alignment = -1;
-pos = (263,78);
+pos = (4,199);
 ref = _ayah.waw;
 scale = (0.56,0.56);
 },
 {
 alignment = -1;
-pos = (0,85);
+pos = (40,85);
 ref = _ayah.010;
 scale = (0.56,0.56);
 },
 {
+pos = (0,38);
 ref = _ayah.decoration1;
 }
 );

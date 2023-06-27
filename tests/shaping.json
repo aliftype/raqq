@@ -2891,7 +2891,7 @@
     {
       "input": "۝١٢٠",
       "direction": "ltr",
-      "expectation": "endofayah-ar.10=0+1117|ayah.120=1@-741,17+0"
+      "expectation": "endofayah-ar.10=0+1117|ayah.120=1@-703,36+0"
     },
     {
       "input": "۝١٢١",
@@ -2941,7 +2941,7 @@
     {
       "input": "۝١٣٠",
       "direction": "ltr",
-      "expectation": "endofayah-ar.10=0+1117|ayah.130=1@-699,26+0"
+      "expectation": "endofayah-ar.10=0+1117|ayah.130=1@-697,26+0"
     },
     {
       "input": "۝١٣١",
@@ -3341,7 +3341,7 @@
     {
       "input": "۝٢١٠",
       "direction": "ltr",
-      "expectation": "endofayah-ar.10=0+1117|ayah.210=1@-730,60+0"
+      "expectation": "endofayah-ar.10=0+1117|ayah.210=1@-730,22+0"
     },
     {
       "input": "۝٢١١",
