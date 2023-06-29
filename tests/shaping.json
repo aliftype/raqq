@@ -645,6 +645,14 @@
       "expectation": "endofayah-ar.05=0+400|five-ar=1+0"
     },
     {
+      "input": "۝٥",
+      "direction": "ltr",
+      "features": {
+        "salt": true
+      },
+      "expectation": "endofayah-ar.10=0+1117|ayah.005=0@-747,0+0|five-ar=1+0"
+    },
+    {
       "input": "۝٦",
       "direction": "ltr",
       "expectation": "endofayah-ar=0+400|six-ar=1+0"
