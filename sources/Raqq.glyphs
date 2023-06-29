@@ -209,13 +209,13 @@ lookup ayah_numbers_100s {
 
 lookup ccmp_ayah_1 {
 	sub  endofayah-ar' lookup ayah_05
-		@numbers @numbers five-ar
+		 @numbers @numbers five-ar
 	;
 
 	ignore
 	sub  endofayah-ar' @numbers five-ar @numbers;
 	sub  endofayah-ar' lookup ayah_05
-		@numbers
+		 @numbers
 		 five-ar
 	;
 
@@ -226,14 +226,14 @@ lookup ccmp_ayah_1 {
 	;
 
 	sub  endofayah-ar
-		@numbers' lookup ayah_numbers_100s
-		@numbers'
-		@numbers'
+		 @numbers' lookup ayah_numbers_100s
+		 @numbers'
+		 @numbers'
 	;
 
 	sub  endofayah-ar
-		@numbers' lookup ayah_numbers_10s
-		@numbers'
+		 @numbers' lookup ayah_numbers_10s
+		 @numbers'
 	;
 } ccmp_ayah_1;
 
@@ -242,6 +242,18 @@ lookup ccmp_ayah_2 {
 		[$[name LIKE \"ayah.*\"]]
 	;
 } ccmp_ayah_2;
+
+lookup ayah_numbers_delete {
+	sub @numbers by NULL;
+} ayah_numbers_delete;
+
+lookup ccmp_ayah_3 {
+	lookupflag IgnoreMarks;
+
+	sub [endofayah-ar endofayah-ar.05 endofayah-ar.10]
+		@numbers' lookup ayah_numbers_delete
+	;
+} ccmp_ayah_3;
 
 lookup ccmp_kashida {
 	sub kashida-ar alefabove-ar by alefabove-ar;
@@ -842,6 +854,7 @@ lookup ccmp_2;
 lookup ccmp_kashida;
 lookup ccmp_ayah_1;
 lookup ccmp_ayah_2;
+lookup ccmp_ayah_3;
 ";
 tag = ccmp;
 },
