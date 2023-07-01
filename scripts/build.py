@@ -79,16 +79,6 @@ CODEPAGE_RANGES = {
 # Monkey patch GSLayer
 
 
-# Makes our life simpler when checking for empty layer.
-def GSLayer__bool__(self):
-    if (self.paths or self.components or self.anchors) and self.width != 600:
-        return True
-    return False
-
-
-GSLayer.__bool__ = GSLayer__bool__
-
-
 # glyphs_to_quadratic expects a UFO layer with clearContours, so give GSLayer
 # one.
 def GSLayer_clearContours(self):
@@ -148,23 +138,11 @@ lookupflag IgnoreMarks;
 """
 
 
-def getLayer(glyph, master):
-    if glyph is None:
-        return None
-
-    layer = glyph.layers[master.id]
-    if layer or layer is glyph.layers[0]:
-        return layer
-
-    return None
-
-
 def getAnchorPos(font, glyph, default, name):
     coords = font.masters[default.layerId].axes
     pos = [(coords, default.anchors[name].position)]
     for master in font.masters:
-        layer = getLayer(glyph, master)
-        if layer:
+        if (layer := glyph.layers[master.id]) is not None:
             coords = master.axes
             pos.append((master.axes, layer.anchors[name].position))
 
@@ -528,8 +506,10 @@ def buildMaster(font, master, args):
     glyphSet = {}
     for name in font.glyphOrder:
         glyph = font.glyphs[name]
-        layer = getLayer(glyph, master)
+        if glyph is None:
+            return
 
+        layer = glyph.layers[master.id]
         if layer is None:
             continue
 
@@ -735,6 +715,7 @@ def prepare(args):
             if coords := layer.attributes.get("coordinates"):
                 coordinates.add(tuple(coords))
 
+    index = len(font.masters)
     for axes in coordinates:
         master = GSFontMaster()
         master.axes = list(axes)
@@ -752,7 +733,11 @@ def prepare(args):
                 ):
                     layer.layerId = layer.associatedMasterId = master.id
                     del layer.attributes["coordinates"]
-        font.masters.append(master)
+
+        # we are not using masters.append() because it adds layer for the new
+        # master to each glyph in the font.
+        font.masters.insert(index, master)
+        index += 1
 
     for name in font.glyphOrder:
         glyph = font.glyphs[name]
@@ -781,7 +766,7 @@ def prepare(args):
         layers = [
             layer
             for layer in glyph.layers
-            if layer.layerId == layer.associatedMasterId and layer
+            if layer.layerId == layer.associatedMasterId
         ]
         if layers:
             glyphs_to_quadratic(layers, max_err=1.0, reverse_direction=True)
