@@ -24,7 +24,7 @@ from fontTools.fontBuilder import FontBuilder
 from fontTools.misc.transform import Identity, Transform
 from fontTools.pens.basePen import AbstractPen
 from fontTools.pens.svgPathPen import SVGPathPen
-from fontTools.pens.ttGlyphPen import TTGlyphPen
+from fontTools.pens.ttGlyphPen import TTGlyphPointPen
 from fontTools.ttLib import newTable
 from fontTools.ttLib.tables._h_e_a_d import mac_epoch_diff
 from fontTools.varLib import build as merge
@@ -101,8 +101,8 @@ def draw(layer, glyphSet):
                 ) == componentLayer.attributes.get("colorPalette"):
                     component.componentName = componentLayer.name
 
-    pen = TTGlyphPen(glyphSet)
-    layer.draw(pen)
+    pen = TTGlyphPointPen(glyphSet)
+    layer.drawPoints(pen)
 
     return pen.glyph()
 
