@@ -727,10 +727,7 @@ def prepare(args):
         for name in font.glyphOrder:
             glyph = font.glyphs[name]
             for layer in glyph.layers:
-                if (
-                    layer.layerId != layer.associatedMasterId
-                    and layer.attributes.get("coordinates") == master.axes
-                ):
+                if layer.attributes.get("coordinates") == master.axes:
                     layer.layerId = layer.associatedMasterId = master.id
                     del layer.attributes["coordinates"]
 
@@ -760,15 +757,13 @@ def prepare(args):
                 layer.width = 0
             propagateAnchors(glyph, layer)
             removeOverlap(font, glyph, layer)
-            if "colorPalette" in layer.attributes:
+
+            # Convert non-interpolatable layers one by one.
+            if layer.attributes:
                 glyphs_to_quadratic([layer], max_err=1.0, reverse_direction=True)
 
-        layers = [
-            layer
-            for layer in glyph.layers
-            if layer.layerId == layer.associatedMasterId
-        ]
-        if layers:
+        # Convert interpolatable layers together.
+        if layers := [l for l in glyph.layers if l.layerId == l.associatedMasterId]:
             glyphs_to_quadratic(layers, max_err=1.0, reverse_direction=True)
 
     return font, instance
