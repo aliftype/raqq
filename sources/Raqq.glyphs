@@ -1216,7 +1216,6 @@ GSOffsetPosition = 1;
 GSOffsetProportional = 1;
 GSOffsetVertical = 10;
 };
-visible = 1;
 }
 );
 glyphs = (
@@ -13853,6 +13852,7 @@ metricRight = "=0";
 },
 {
 glyphname = "alefMaksura-ar.fina";
+kernRight = yeh;
 layers = (
 {
 anchors = (
@@ -13947,6 +13947,7 @@ metricRight = "=0@0";
 },
 {
 glyphname = "alefMaksura-ar.fina.salt";
+kernRight = yeh;
 layers = (
 {
 anchors = (
@@ -13956,7 +13957,7 @@ pos = (296,-424);
 },
 {
 name = damma;
-pos = (-54,-13);
+pos = (-53,1);
 },
 {
 name = entry;
@@ -13964,7 +13965,7 @@ pos = (282,0);
 },
 {
 name = fatha;
-pos = (131,264);
+pos = (131,274);
 },
 {
 name = kasra;
@@ -13993,27 +13994,27 @@ nodes = (
 (298,-108,o),
 (301,-50,cs),
 (301,-39,o),
-(298,-27,o),
-(276,-27,cs),
-(211,-27,o),
-(148,-9,o),
+(298,-22,o),
+(276,-22,cs),
+(252,-22,o),
+(148,-24,o),
 (123,17,cs),
-(113,27,o),
-(122,35,o),
-(129,30,cs),
-(166,4,o),
-(173,-2,o),
+(116,29,o),
+(121,37,o),
+(133,26,cs),
+(166,-5,o),
+(208,0,o),
 (282,0,c),
 (282,110,l),
-(241,107,o),
-(201,212,o),
-(161,212,cs),
-(83,212,o),
-(0,138,o),
-(0,11,cs),
-(0,-89,o),
-(72,-148,o),
-(236,-142,c),
+(240,123,o),
+(220,216,o),
+(166,217,cs),
+(78,219,o),
+(0,128,o),
+(0,30,cs),
+(0,-99,o),
+(83,-156,o),
+(236,-147,c),
 (206,-137,l),
 (227,-163,o),
 (221,-263,o),
@@ -14040,11 +14041,12 @@ nodes = (
 width = 282;
 }
 );
-metricLeft = "=0@11";
+metricLeft = "=0@30";
 metricRight = "=0@0";
 },
 {
 glyphname = "alefMaksura-ar.fina.wide";
+kernRight = kaf.wide;
 layers = (
 {
 anchors = (
@@ -14148,15 +14150,15 @@ pos = (369,-411);
 },
 {
 name = damma;
-pos = (-44,-13);
+pos = (-53,1);
 },
 {
 name = entry;
-pos = (282,0);
+pos = (267,0);
 },
 {
 name = fatha;
-pos = (131,254);
+pos = (131,274);
 },
 {
 name = kasra;
@@ -14185,32 +14187,29 @@ nodes = (
 (389,-108,o),
 (382,-50,cs),
 (381,-39,o),
-(375,-19,o),
+(375,-17,o),
 (353,-19,cs),
-(198,-19,o),
-(164,-17,o),
-(123,22,cs),
-(112,32,o),
-(122,38,o),
-(129,33,cs),
-(152,17,o),
-(171,2,o),
-(212,0,cs),
-(230,-1,o),
-(253,-1,o),
+(252,-26,o),
+(148,-24,o),
+(123,17,cs),
+(116,29,o),
+(122,37,o),
+(133,26,cs),
+(166,-5,o),
+(208,0,o),
 (282,0,c),
 (282,110,l),
-(241,107,o),
-(201,212,o),
-(161,212,cs),
-(83,212,o),
-(0,138,o),
-(0,11,cs),
-(0,-107,o),
-(101,-165,o),
-(335,-128,c),
-(262,-129,l),
-(296,-130,o),
+(240,123,o),
+(220,216,o),
+(165,217,cs),
+(77,219,o),
+(0,128,o),
+(0,30,cs),
+(0,-114,o),
+(102,-162,o),
+(295,-144,c),
+(266,-140,l),
+(300,-146,o),
 (301,-252,o),
 (300,-334,c),
 (328,-321,l),
@@ -14232,11 +14231,11 @@ nodes = (
 );
 }
 );
-width = 282;
+width = 267;
 }
 );
-metricLeft = "=0@11";
-metricRight = "=0@10";
+metricLeft = "=0@30";
+metricRight = "=-15@0";
 },
 {
 glyphname = "alefMaksura-ar.fina.tooth";
@@ -26614,9 +26613,8 @@ _c.hah.reh = -131;
 "@MMK_L_beh" = -5;
 "@MMK_L_feh.medi" = -4;
 "@MMK_L_sad" = -10;
+"@MMK_L_yeh" = -36;
 "@MMK_L_yehbarree" = -21;
-"alefMaksura-ar.fina" = -36;
-"alefMaksura-ar.fina.salt" = -47;
 "hah-ar.fina" = -20;
 "hah-ar.medi" = -22;
 "hah-ar.medi.l1" = -24;
@@ -26646,13 +26644,11 @@ _c.hah.reh = -131;
 "@MMK_L_sad" = -9;
 };
 "@MMK_R_seen" = {
+"@MMK_L_kaf.wide" = -19;
 "@MMK_L_sad" = -15;
+"@MMK_L_yeh" = -36;
 "@MMK_L_yehbarree" = -32;
 _c.seen.meem = -36;
-"alefMaksura-ar.fina" = -36;
-"alefMaksura-ar.fina.salt" = -36;
-"alefMaksura-ar.fina.wide" = -19;
-"alefMaksura-ar.fina.wide.salt" = -34;
 };
 _c.ain.meem = {
 "meem-ar.medi" = 13;
@@ -26662,8 +26658,8 @@ _c.ain.meem = {
 "waw-ar.fina.round" = -7;
 };
 _c.ain.yeh = {
+"@MMK_L_yeh" = -20;
 "@MMK_L_yehbarree" = -5;
-"alefMaksura-ar.fina" = -20;
 };
 _c.feh.init.dal = {
 "meem-ar.fina.round" = 9;
@@ -26673,7 +26669,7 @@ _c.feh.init.dal = {
 "waw-ar.fina" = 22;
 };
 _c.feh.medi.meem = {
-"alefMaksura-ar.fina" = -36;
+"@MMK_L_yeh" = -36;
 "meem-ar.medi" = 11;
 "meem-ar.medi.round2" = 7;
 "qafDotless-ar.fina" = 7;
@@ -26687,8 +26683,8 @@ _c.hah.beh = {
 "@MMK_L_feh.medi" = 3;
 };
 _c.hah.reh = {
+"@MMK_L_yeh" = -36;
 "@MMK_L_yehbarree" = -21;
-"alefMaksura-ar.fina" = -36;
 "meem-ar.medi" = 10;
 "meem-ar.medi.round2" = 6;
 "qafDotless-ar.fina" = 7;
@@ -26702,15 +26698,13 @@ _c.seen.meem = {
 "qafDotless-ar.fina" = 7;
 };
 "ain-ar.init" = {
+"@MMK_L_kaf.wide" = -34;
+"@MMK_L_yeh" = -49;
 "@MMK_L_yehbarree" = -25;
 _c.ain.init.beh = -50;
 _c.ain.yeh = 0;
 _c.hah.dal = -25;
 _c.hah.reh = -88;
-"alefMaksura-ar.fina" = -49;
-"alefMaksura-ar.fina.salt" = -52;
-"alefMaksura-ar.fina.wide" = -34;
-"alefMaksura-ar.fina.wide.salt" = -50;
 "lam_alef-ar.fina" = -47;
 };
 "ain-ar.medi" = {
