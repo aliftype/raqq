@@ -19,7 +19,7 @@ MAKEFLAGS := -sr
 SHELL = bash
 
 CONFIG = _config.yml
-VERSION = $(shell python version.py $(CONFIG))
+VERSION = $(shell grep "version:" $(CONFIG) | sed -e "s/.*.: \([0-9]*.[0-9]*\).*/\1/")
 DIST = $(NAME)-$(VERSION)
 
 SOURCEDIR = sources
