@@ -1,4 +1,3 @@
-PyYAML
 fonttools >= 4.39.4
 glyphsLib >= 6.2.2
 skia-pathops

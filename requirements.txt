@@ -19,8 +19,6 @@ glyphslib==6.2.2
     # via -r requirements.in
 openstep-plist==0.3.0.post1
     # via glyphslib
-pyyaml==6.0
-    # via -r requirements.in
 six==1.16.0
     # via fs
 skia-pathops==0.8.0
