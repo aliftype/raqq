@@ -19,7 +19,7 @@ MAKEFLAGS := -sr
 SHELL = bash
 
 CONFIG = _config.yml
-VERSION = $(shell grep "version:" $(CONFIG) | sed -e "s/.*.: \([0-9]*.[0-9]*\).*/\1/")
+VERSION = $(shell grep "version:" $(CONFIG) | sed -e 's/.*.: "\(.*.\)".*/\1/')
 DIST = $(NAME)-$(VERSION)
 
 SOURCEDIR = sources
@@ -37,7 +37,7 @@ GLYPHDATA = $(SOURCEDIR)/GlyphData.xml
 ARGS ?= 
 
 .SECONDARY:
-
+.ONESHELL:
 .PHONY: all dist
 
 all: $(FONTS)
