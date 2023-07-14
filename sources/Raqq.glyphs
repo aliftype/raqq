@@ -1,5 +1,5 @@
 {
-.appVersion = "3202";
+.appVersion = "3206";
 .formatVersion = 3;
 axes = (
 {
@@ -1324,10 +1324,65 @@ unicode = (32,160);
 glyphname = "hamza-ar";
 layers = (
 {
-layerId = m01;
-width = 0;
+anchors = (
+{
+name = damma;
+pos = (-71,92);
+},
+{
+name = fatha;
+pos = (92,254);
+},
+{
+name = kasra;
+pos = (92,-71);
 }
 );
+layerId = m01;
+shapes = (
+{
+alignment = -1;
+pos = (-21,-21);
+ref = _dot.circle;
+scale = (1.5,1.5);
+}
+);
+width = 183;
+},
+{
+anchors = (
+{
+name = damma;
+pos = (-71,92);
+},
+{
+name = fatha;
+pos = (92,254);
+},
+{
+name = kasra;
+pos = (92,-71);
+}
+);
+associatedMasterId = m01;
+attr = {
+colorPalette = 1;
+};
+layerId = "34063F21-9FF7-435B-8483-E80A363DA2A7";
+name = "14 Jul 23 at 14:20";
+shapes = (
+{
+alignment = -1;
+pos = (-21,-21);
+ref = _dot;
+scale = (1.5,1.5);
+}
+);
+width = 183;
+}
+);
+metricLeft = "=0";
+metricRight = "=0";
 unicode = 1569;
 },
 {
