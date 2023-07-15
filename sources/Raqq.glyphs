@@ -140,7 +140,7 @@ code = "lookup ccmp_1 {
 	sub jeem-ar by hah-ar dotbelow-ar;
 	sub tcheh-ar by hah-ar threedotsdownbelow-ar;
 	sub khah-ar by hah-ar dotabove-ar;
-	sub thal-ar by dal-ar dotabove-ar;
+	sub thal-ar by dal-ar dotabove-ar.beh;
 	sub zain-ar by reh-ar dotabove-ar.reh;
 	sub jeh-ar by reh-ar threedotsupabove-ar;
 	sub sheen-ar by seen-ar threedotshorizontalabove-ar;
@@ -4361,7 +4361,7 @@ pos = (478,-65);
 },
 {
 name = top;
-pos = (505,278);
+pos = (169,211);
 }
 );
 backgroundImage = {
@@ -4455,7 +4455,7 @@ pos = (3196,-65);
 },
 {
 name = top;
-pos = (3223,278);
+pos = (169,211);
 }
 );
 associatedMasterId = m01;
@@ -4550,7 +4550,7 @@ pos = (292,-92);
 },
 {
 name = top;
-pos = (327,278);
+pos = (169,211);
 }
 );
 associatedMasterId = m01;
@@ -15202,7 +15202,7 @@ shapes = (
 ref = "dal-ar";
 },
 {
-pos = (426,240);
+pos = (122,218);
 ref = "dotabove-ar";
 }
 );
