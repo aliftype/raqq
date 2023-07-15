@@ -179,7 +179,9 @@ def makeMark(font, glyphOrder):
             if name.startswith("_"):
                 classes += f"markClass {gname} <anchor {x} {y}> @mark_{name[1:]};\n"
             elif name.startswith("caret_") or name in ("exit", "entry"):
-                pass
+                continue
+            elif (glyph.category, glyph.subCategory) == ("Mark", "Nonspacing"):
+                continue
             elif "_" in name:
                 name, index = name.split("_")
                 ligatures[gname][int(index)].append((name, (x, y)))
@@ -213,6 +215,37 @@ lookup mark2liga_auto {{
 {mark2liga}
 }} mark2liga_auto;
 """
+
+
+def makeMkmk(font, glyphOrder):
+    classes = ""
+    mark2mark = {}
+
+    for gname in glyphOrder:
+        glyph = font.glyphs[gname]
+        if glyph is None:
+            continue
+
+        if (glyph.category, glyph.subCategory) != ("Mark", "Nonspacing"):
+            continue
+
+        layer = glyph.layers[0]
+        for anchor in layer.anchors:
+            name = anchor.name
+            if name.startswith("_"):
+                continue
+            x, y = getAnchorPos(font, glyph, layer, name)
+            mark2mark.setdefault(name, "")
+            mark2mark[name] += f"pos mark {gname} <anchor {x} {y}> mark @mark_{name};\n"
+
+    mkmk = ""
+    for name, code in mark2mark.items():
+        mkmk += f"""
+lookup mark2mark_{name} {{
+{code}
+}} mark2mark_{name};
+"""
+    return mkmk
 
 
 def makeCurs(font, glyphOrder):
@@ -305,6 +338,8 @@ def makeFeatures(font, master, args, glyphOrder):
             before, after = code.split("# Automatic Code\n", 1)
             if feature.name == "mark":
                 auto = makeMark(font, glyphOrder)
+            elif feature.name == "mkmk":
+                auto = makeMkmk(font, glyphOrder)
             elif feature.name == "curs":
                 auto = makeCurs(font, glyphOrder)
             elif feature.name == "kern":
