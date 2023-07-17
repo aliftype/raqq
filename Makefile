@@ -18,7 +18,7 @@ NAME = Raqq
 MAKEFLAGS := -sr
 SHELL = bash
 
-CONFIG = _config.yml
+CONFIG = docs/_config.yml
 VERSION = $(shell grep "version:" $(CONFIG) | sed -e 's/.*.: "\(.*.\)".*/\1/')
 DIST = $(NAME)-$(VERSION)
 

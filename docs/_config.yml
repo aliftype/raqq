@@ -1,7 +1,7 @@
 version: "0.0" # Increment only when tagging release, download link uses it.
 title: Raqq
 title_ar: رَقّ
-description: Raqq is a manuscript Kufic typeface
-description_ar: رَقّ هو خط كوفي مصحفي
+description: A manuscript Kufic typeface
+description_ar: خط كوفي مصحفي
 logo: assets/images/favicon.svg
 theme: jekyll-theme-minimal

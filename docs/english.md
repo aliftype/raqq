@@ -1,5 +1,7 @@
-Raqq
-====
+---
+layout: english
+---
+
 _Raqq_ (رَقّ) is a manuscript Kufic typeface, that intends to replicate (as
 faithfully as possible) the third century AH (early Abbasid) style of Kufic
 script used in writing the Quran. _Raqq_ is Arabic for parchment.
@@ -15,7 +17,7 @@ _Raqq_ design is based mostly on the Cambridge University Library manuscript [MS
 Sample
 ------
 
-![Fatihah – 1](docs/assets/images/Fatihah_1.png)
-![Fatihah – 2](docs/assets/images/Fatihah_2.png)
+![Fatihah – 1](assets/images/Fatihah_1.png)
+![Fatihah – 2](assets/images/Fatihah_2.png)
 
 [MS Add.1116]: https://cudl.lib.cam.ac.uk/view/MS-ADD-01116

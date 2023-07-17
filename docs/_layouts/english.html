@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="./assets/images/favicon.svg"/>
+
+    <title>{{ page.title | default: site.title }} | {{ page.description | default: site.description }}</title>
+    <meta property="og:locale" content="en-US" />
+    <meta name="description" content="{{ page.description | default: site.description }}" />
+    <meta property="og:description" content="{{ page.description | default: site.description }}" />
+    <link rel="canonical" href="{{ site.url }}/{{ site.github.repository_name }}{{ page.url }}" />
+    <meta property="og:url" content="{{ site.url }}/{{ site.github.repository_name }}{{ page.url }}" />
+    <meta property="og:site_name" content="{{ site.title }}" />
+
+    <link rel="stylesheet" href="{{ "/assets/css/style.css?v=" | append: site.github.build_revision | relative_url }}">
+  </head>
+  <body>
+    <p class="lang-switcher" lang="ar"><a href="./" hreflang="ar">عربي</a></p>
+    <div class="wrapper">
+      <header>
+        <h1>{{ site.title | default: site.github.repository_name }}</h1>
+        <img src="{{site.logo | relative_url}}" alt="Logo" />
+        <p>{{ site.description | default: site.github.project_tagline }}</p>
+
+        <p class="downloads"><a href="{{ site.github.repository_url }}/releases/download/v{{ site.version }}/{{ site.title }}-{{ site.version }}.zip">Download font</a></p>
+
+        <!--p class="downloads"><a href="./app">Go to app</a></p-->
+
+        <p class="view"><a href="{{ site.github.repository_url }}">View the Project on GitHub <small>{{ site.github.repository_nwo }}</small></a></p>
+      </header>
+      <section>
+
+      {{ content }}
+
+      </section>
+      <footer>
+        <p>This project is maintained by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a></p>
+      </footer>
+    </div>
+    <script src="{{ "/assets/js/scale.fix.js" | relative_url }}"></script>
+  </body>
+</html>
