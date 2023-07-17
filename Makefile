@@ -29,6 +29,7 @@ TESTDIR = tests
 BUILDDIR = build
 
 FONTS = $(FONTDIR)/$(NAME).ttf
+WOFF2 = $(FONTDIR)/$(NAME).woff2
 FEA = $(SOURCEDIR)/overhang.fea
 JSON = $(TESTDIR)/shaping.json $(TESTDIR)/decomposition.json
 HTML = $(TESTDIR)/$(NAME).html
@@ -40,7 +41,9 @@ ARGS ?=
 .ONESHELL:
 .PHONY: all dist
 
-all: $(FONTS)
+ttf: $(FONTS)
+web: $(WOFF2)
+all: ttf web
 test: $(HTML)
 update-test: $(JSON)
 
@@ -51,6 +54,10 @@ update-fea: $(FONTS)
 $(FONTDIR)/%.ttf: $(SOURCEDIR)/%.glyphs $(CONFIG) $(GLYPHDATA) $(FEA)
 	$(info   BUILD  $(@F))
 	python $(SCRIPTDIR)/build.py $< $(VERSION) $@ --data=$(GLYPHDATA) $(ARGS)
+
+$(FONTDIR)/%.woff2: $(FONTDIR)/%.ttf
+	$(info   WOFF2  $(@F))
+	python $(SCRIPTDIR)/buildwoff2.py $< $@
 
 $(TESTDIR)/%.html: $(FONTDIR)/%.ttf $(TESTDIR)/fontbakery.yml
 	$(info   TEST   $(<F))
