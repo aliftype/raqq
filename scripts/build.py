@@ -13,7 +13,6 @@
 # You should have received a copy of the GNU Affero General Public License
 # along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
-import argparse
 import datetime
 import os
 from xml.etree import ElementTree as etree
@@ -811,6 +810,7 @@ def build(font, instance, args):
 
 
 def main():
+    import argparse
     from pathlib import Path
 
     parser = argparse.ArgumentParser(description="Build Raqq font.")
