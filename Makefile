@@ -75,6 +75,6 @@ $(TESTDIR)/shaping.json: $(TESTDIR)/shaping.csv $(FONTS)
 dist: all
 	$(info   DIST   $(DIST).zip)
 	install -Dm644 -t $(DIST) $(FONTS)
-	install -Dm644 -t $(DIST) README.md
+	install -Dm644 -t $(DIST) {README,README-Arabic}.txt
 	install -Dm644 -t $(DIST) LICENSE
 	zip -rq $(DIST).zip $(DIST)
