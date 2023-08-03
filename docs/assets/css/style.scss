@@ -14,6 +14,10 @@ body {
   font-family: "Noto Sans", "Mada", sans-serif;
 }
 
+.wrapper {
+  width: 1060px;
+}
+
 body:lang(ar) {
   direction: rtl;
   font-size: 14pt;
@@ -26,6 +30,7 @@ header, footer {
 
 section {
   float: right;
+  width: 700px;
 }
 
 header:lang(ar), footer:lang(ar) {
