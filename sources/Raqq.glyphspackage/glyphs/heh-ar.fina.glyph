@@ -1,0 +1,172 @@
+{
+glyphname = "heh-ar.fina";
+kernRight = beh;
+layers = (
+{
+anchors = (
+{
+name = damma;
+pos = (-54,176);
+},
+{
+name = entry;
+pos = (339,0);
+},
+{
+name = fatha;
+pos = (262,493);
+},
+{
+name = kasra;
+pos = (303,-52);
+},
+{
+name = top;
+pos = (268,407);
+}
+);
+backgroundImage = {
+alpha = 80;
+imagePath = "images/MS-ADD-01116-000-00031.jpg";
+locked = 1;
+pos = (-3171,-2818);
+scale = (5,5);
+};
+layerId = m01;
+shapes = (
+{
+closed = 1;
+nodes = (
+(262,-2,o),
+(309,-3,o),
+(352,0,c),
+(352,110,l),
+(340,110,o),
+(337,134,o),
+(336,157,cs),
+(334,234,o),
+(329,378,o),
+(310,442,cs),
+(306,458,o),
+(295,460,o),
+(288,445,cs),
+(276,416,o),
+(264,397,o),
+(239,378,cs),
+(203,352,o),
+(207,395,o),
+(225,235,c),
+(247,349,l),
+(78,311,o),
+(0,229,o),
+(0,141,cs),
+(0,48,o),
+(67,3,o),
+(197,0,cs)
+);
+},
+{
+closed = 1;
+nodes = (
+(218,154,o),
+(212,160,o),
+(212,167,cs),
+(212,173,o),
+(218,179,o),
+(225,179,cs),
+(231,179,o),
+(237,173,o),
+(237,167,cs),
+(237,160,o),
+(231,154,o),
+(225,154,cs)
+);
+}
+);
+width = 339;
+},
+{
+anchors = (
+{
+name = damma;
+pos = (-74,176);
+},
+{
+name = fatha;
+pos = (262,513);
+},
+{
+name = kasra;
+pos = (213,-72);
+},
+{
+name = top;
+pos = (249,395);
+}
+);
+associatedMasterId = m01;
+backgroundImage = {
+alpha = 80;
+imagePath = "images/MS-ADD-01116-000-00031.jpg";
+locked = 1;
+pos = (-3171,-2818);
+scale = (5,5);
+};
+layerId = "9DD22380-8ECD-46EF-8F43-C94BB99A59B0";
+name = "26 Feb 23 at 01:48";
+shapes = (
+{
+closed = 1;
+nodes = (
+(360,0,l),
+(360,110,l),
+(348,110,o),
+(346,134,o),
+(344,157,cs),
+(338,234,o),
+(326,380,o),
+(317,449,cs),
+(315,468,o),
+(296,466,o),
+(292,453,cs),
+(284,424,o),
+(254,382,o),
+(235,376,cs),
+(222,372,o),
+(219,364,o),
+(220,354,cs),
+(225,303,o),
+(235,174,o),
+(240,110,c),
+(201,110,l),
+(201,0,l)
+);
+}
+);
+width = 352;
+},
+{
+associatedMasterId = m01;
+backgroundImage = {
+alpha = 80;
+imagePath = "images/MS-ADD-01116-000-00031.jpg";
+locked = 1;
+pos = (-3171,-2818);
+scale = (5,5);
+};
+layerId = "9EC9D13F-BB79-4F49-B981-825D4AE87993";
+name = "4 Apr 23 at 00:20";
+shapes = (
+{
+alignment = -1;
+pos = (211,0);
+ref = "behDotless-ar.medi.high";
+}
+);
+visible = 1;
+width = 339;
+}
+);
+metricLeft = "=0";
+metricRight = "=3@157";
+}

@@ -1,0 +1,16 @@
+{
+color = 0;
+glyphname = "fehAfrican-ar";
+layers = (
+{
+layerId = m01;
+shapes = (
+{
+ref = "fehDotless-ar";
+}
+);
+width = 1020;
+}
+);
+unicode = 2235;
+}

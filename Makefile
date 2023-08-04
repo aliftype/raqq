@@ -51,7 +51,7 @@ update-fea: $(FONTS)
 	$(info   GEN    $(@F))
 	python $(SCRIPTDIR)/update-overhang-fea.py $< $(FEA)
 
-$(FONTDIR)/%.ttf: $(SOURCEDIR)/%.glyphs $(CONFIG) $(GLYPHDATA) $(FEA)
+$(FONTDIR)/%.ttf: $(SOURCEDIR)/%.glyphspackage $(CONFIG) $(GLYPHDATA) $(FEA)
 	$(info   BUILD  $(@F))
 	python $(SCRIPTDIR)/build.py $< $(VERSION) $@ --data=$(GLYPHDATA) $(ARGS)
 
@@ -64,7 +64,7 @@ $(TESTDIR)/%.html: $(FONTDIR)/%.ttf $(TESTDIR)/fontbakery.yml
 	fontbakery check-universal --config=$(TESTDIR)/fontbakery.yml \
                    fontbakery.profiles.shaping $< --html=$@ -l WARN &> /dev/null
 
-$(TESTDIR)/decomposition.json: $(SOURCEDIR)/$(NAME).glyphs $(FONTS)
+$(TESTDIR)/decomposition.json: $(SOURCEDIR)/$(NAME).glyphspackage $(FONTS)
 	$(info   GEN    $(@F))
 	python $(SCRIPTDIR)/update-decomposition-test.py $@ $+
 

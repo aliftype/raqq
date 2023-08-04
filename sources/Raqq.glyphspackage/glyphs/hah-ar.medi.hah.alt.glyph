@@ -1,0 +1,28 @@
+{
+glyphname = "hah-ar.medi.hah.alt";
+kernLeft = hah;
+layers = (
+{
+anchors = (
+{
+name = entry;
+pos = (109,120);
+},
+{
+name = exit;
+},
+{
+name = fatha;
+pos = (58,309);
+}
+);
+layerId = m01;
+shapes = (
+{
+ref = "hah-ar.init.hah";
+}
+);
+width = 579;
+}
+);
+}

@@ -1,0 +1,10 @@
+{
+glyphname = hairspace;
+layers = (
+{
+layerId = m01;
+width = 36;
+}
+);
+unicode = 8202;
+}

@@ -1,0 +1,35 @@
+{
+glyphname = "heh-ar.medi";
+kernLeft = heh;
+kernRight = beh;
+layers = (
+{
+anchors = (
+{
+name = entry;
+pos = (357,0);
+},
+{
+name = exit;
+}
+);
+layerId = m01;
+shapes = (
+{
+alignment = -1;
+pos = (34,0);
+ref = "heh-ar.medi.round";
+},
+{
+alignment = -1;
+pos = (20,0);
+ref = _p.lam;
+scale = (2,1);
+}
+);
+width = 357;
+}
+);
+metricLeft = "=-20";
+metricRight = "=3@157";
+}

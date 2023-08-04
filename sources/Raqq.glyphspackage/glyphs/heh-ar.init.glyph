@@ -1,0 +1,41 @@
+{
+glyphname = "heh-ar.init";
+kernLeft = heh;
+layers = (
+{
+anchors = (
+{
+name = damma;
+pos = (8,169);
+},
+{
+name = exit;
+}
+);
+backgroundImage = {
+alpha = 80;
+imagePath = "images/MS-ADD-01116-000-00012.jpg";
+locked = 1;
+pos = (-2466,-2736);
+scale = (5,5);
+};
+layerId = m01;
+shapes = (
+{
+alignment = -1;
+pos = (34,0);
+ref = "heh-ar.init.round";
+},
+{
+alignment = -1;
+pos = (20,0);
+ref = _p.lam;
+scale = (2,1);
+}
+);
+width = 361;
+}
+);
+metricLeft = "=-20";
+metricRight = "=0";
+}

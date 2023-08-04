@@ -1,0 +1,31 @@
+{
+glyphname = _dot;
+layers = (
+{
+layerId = m01;
+name = Regular;
+shapes = (
+{
+closed = 1;
+nodes = (
+(108,14,o),
+(136,43,o),
+(136,75,cs),
+(136,108,o),
+(108,136,o),
+(75,136,cs),
+(43,136,o),
+(14,108,o),
+(14,75,cs),
+(14,43,o),
+(43,14,o),
+(75,14,cs)
+);
+}
+);
+width = 150;
+}
+);
+metricLeft = "=14";
+metricRight = "=14";
+}

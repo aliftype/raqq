@@ -1,0 +1,69 @@
+{
+glyphname = "lam-ar.medi.hah2.round";
+kernLeft = lam;
+kernRight = beh;
+layers = (
+{
+anchors = (
+{
+name = damma;
+pos = (-29,404);
+},
+{
+name = entry;
+pos = (97,230);
+},
+{
+name = exit;
+pos = (0,230);
+},
+{
+name = fatha;
+pos = (-83,648);
+},
+{
+name = hamzaabove;
+pos = (140,674);
+},
+{
+name = kasra;
+pos = (62,174);
+}
+);
+layerId = m01;
+shapes = (
+{
+closed = 1;
+nodes = (
+(109,230,l),
+(109,340,l),
+(97,340,o),
+(95,364,o),
+(94,387,cs),
+(87,556,o),
+(77,625,o),
+(70,786,cs),
+(69,809,o),
+(55,815,o),
+(45,796,cs),
+(33,773,o),
+(-5,739,o),
+(-23,725,cs),
+(-39,713,o),
+(-33,699,o),
+(-32,689,cs),
+(-22,528,o),
+(-8,379,o),
+(-5,285,cs),
+(-4,250,o),
+(11,230,o),
+(60,230,cs)
+);
+}
+);
+width = 97;
+}
+);
+metricLeft = "=-5@285";
+metricRight = "=3@387";
+}

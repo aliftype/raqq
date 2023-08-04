@@ -1,0 +1,22 @@
+{
+glyphname = _p.lam;
+layers = (
+{
+layerId = m01;
+shapes = (
+{
+closed = 1;
+nodes = (
+(100,0,l),
+(100,110,l),
+(-20,110,l),
+(-20,0,l)
+);
+}
+);
+width = 100;
+}
+);
+metricLeft = "=-20";
+metricRight = "=0";
+}

@@ -1,0 +1,20 @@
+{
+color = 0;
+glyphname = "tcheh-ar";
+layers = (
+{
+layerId = m01;
+shapes = (
+{
+ref = "hah-ar";
+},
+{
+pos = (611,-174);
+ref = "threedotsdownbelow-ar";
+}
+);
+width = 983;
+}
+);
+unicode = 1670;
+}

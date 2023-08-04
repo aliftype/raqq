@@ -1,0 +1,20 @@
+{
+color = 0;
+glyphname = "gaf-ar";
+layers = (
+{
+layerId = m01;
+shapes = (
+{
+ref = "kaf-ar";
+},
+{
+pos = (112,682);
+ref = "gafsarkashabove-ar";
+}
+);
+width = 896;
+}
+);
+unicode = 1711;
+}

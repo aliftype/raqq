@@ -1,0 +1,78 @@
+{
+color = 9;
+glyphname = _p.dal;
+layers = (
+{
+layerId = m01;
+shapes = (
+{
+closed = 1;
+nodes = (
+(137,-7,o),
+(274,-4,o),
+(393,0,c),
+(393,110,l),
+(340,110,l),
+(0,-7,l)
+);
+}
+);
+width = 393;
+},
+{
+associatedMasterId = m01;
+attr = {
+coordinates = (
+0,
+100,
+0
+);
+};
+layerId = "B7198512-ACC9-4997-BBCE-B89F3F46B128";
+name = "16 May 23 at 17:24";
+shapes = (
+{
+closed = 1;
+nodes = (
+(137,1,o),
+(274,-1,o),
+(393,0,c),
+(393,110,l),
+(340,110,l),
+(0,1,l)
+);
+}
+);
+width = 393;
+},
+{
+associatedMasterId = m01;
+attr = {
+coordinates = (
+0,
+0,
+0
+);
+};
+layerId = "F26A4821-776C-44AF-815D-A9B817B98379";
+metricLeft = "=200";
+name = "17 May 23 at 04:01";
+shapes = (
+{
+closed = 1;
+nodes = (
+(264,-1,o),
+(329,-1,o),
+(393,0,c),
+(393,110,l),
+(340,110,l),
+(200,-2,l)
+);
+}
+);
+width = 393;
+}
+);
+metricLeft = "=0";
+metricRight = "=0";
+}

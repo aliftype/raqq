@@ -1,0 +1,10 @@
+{
+glyphname = thinspace;
+layers = (
+{
+layerId = m01;
+width = 120;
+}
+);
+unicode = (8201,8239);
+}
