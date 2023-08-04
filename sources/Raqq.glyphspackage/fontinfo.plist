@@ -845,7 +845,23 @@ lookup rlig_connection {
 name = connections;
 },
 {
-code = "";
+code = "lookup kerning {
+	pos [alef-ar @MMK_R_heh]
+		<(SPAC=-100:20 SPAC=0:0 SPAC=125:0) 0
+		 (SPAC=-100:20 SPAC=0:0 SPAC=125:0) 0>
+	;
+
+	pos  reh-ar.fina
+		<(SPAC=-100:-120 SPAC=0:0 SPAC=125:0) 0
+		 (SPAC=-100:-120 SPAC=0:0 SPAC=125:0) 0>
+	;
+
+	pos  @MMK_R_meem.fina
+		<(SPAC=-100:-60 SPAC=0:0 SPAC=125:0) 0
+		 (SPAC=-100:-60 SPAC=0:0 SPAC=125:0) 0>
+	;
+} kerning;
+";
 name = GPOS;
 }
 );
@@ -927,8 +943,18 @@ code = "lookup spacing {
 	lookupflag IgnoreMarks;
 	pos [@isol @fina] [@init @isol]
 		<(SPAC=0:${space:width} SPAC=-100:0 SPAC=125:500) 0
-		 (SPAC=0:${space:width} SPAC=-100:0 SPAC=125:500) 0>;
+		 (SPAC=0:${space:width} SPAC=-100:0 SPAC=125:500) 0>
+	;
 } spacing;
+
+lookup contextual_kerning {
+	lookupflag IgnoreMarks;
+	pos alef-ar' lookup kerning       @MMK_L_lam;
+	pos alef-ar' lookup kerning space @MMK_L_lam;
+
+	pos [@MMK_R_meem.fina @MMK_R_heh reh-ar.fina]' lookup kerning       [alef-ar hah-ar.init];
+	pos [@MMK_R_meem.fina @MMK_R_heh reh-ar.fina]' lookup kerning space [alef-ar hah-ar.init];
+} contextual_kerning;
 
 # Automatic Code
 
