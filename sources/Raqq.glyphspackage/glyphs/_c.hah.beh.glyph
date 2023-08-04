@@ -1,0 +1,33 @@
+{
+glyphname = _c.hah.beh;
+layers = (
+{
+anchors = (
+{
+name = entry;
+pos = (7,0);
+},
+{
+name = exit;
+}
+);
+layerId = m01;
+shapes = (
+{
+closed = 1;
+nodes = (
+(130,59,l),
+(130,104,l),
+(50,111,o),
+(-5,142,o),
+(-4,192,c),
+(-23,192,l),
+(-23,0,l)
+);
+}
+);
+width = 7;
+}
+);
+metricLeft = "=-23";
+}

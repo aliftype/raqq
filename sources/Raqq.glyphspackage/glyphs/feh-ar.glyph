@@ -1,0 +1,20 @@
+{
+color = 0;
+glyphname = "feh-ar";
+layers = (
+{
+layerId = m01;
+shapes = (
+{
+ref = "fehDotless-ar";
+},
+{
+pos = (607,355);
+ref = "dotabove-ar";
+}
+);
+width = 1020;
+}
+);
+unicode = 1601;
+}

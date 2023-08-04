@@ -1,0 +1,54 @@
+{
+color = 9;
+glyphname = space;
+layers = (
+{
+anchors = (
+{
+name = alefabove;
+pos = (200,0);
+}
+);
+layerId = m01;
+width = 400;
+},
+{
+anchors = (
+{
+name = alefabove;
+}
+);
+associatedMasterId = m01;
+attr = {
+coordinates = (
+-100,
+10,
+0
+);
+};
+layerId = "6A138485-2A93-422B-84D0-8184A8F6FA16";
+name = "13 May 23 at 22:36";
+width = 0;
+},
+{
+anchors = (
+{
+name = alefabove;
+pos = (250,0);
+}
+);
+associatedMasterId = m01;
+attr = {
+coordinates = (
+125,
+10,
+0
+);
+};
+layerId = "2CDB55F1-6E7A-4AAF-AF70-8CD8F4A8FB2A";
+name = "17 May 23 at 18:37";
+width = 500;
+}
+);
+unicode = (32,160);
+}

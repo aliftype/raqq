@@ -1,0 +1,36 @@
+{
+glyphname = _c.ain.dal;
+layers = (
+{
+anchors = (
+{
+name = entry;
+pos = (47,0);
+},
+{
+name = exit;
+}
+);
+layerId = m01;
+shapes = (
+{
+closed = 1;
+nodes = (
+(76,0,l),
+(76,104,l),
+(37,139,o),
+(8,169,o),
+(-27,212,cs),
+(-54,245,o),
+(-44,247,o),
+(-110,244,c),
+(-110,0,l)
+);
+}
+);
+width = 47;
+}
+);
+metricLeft = "=-110";
+metricRight = "=-29";
+}

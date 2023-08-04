@@ -1,0 +1,116 @@
+{
+glyphname = "lam-ar.fina.short";
+kernRight = beh;
+layers = (
+{
+anchors = (
+{
+name = damma;
+pos = (33,56);
+},
+{
+name = entry;
+pos = (178,0);
+},
+{
+name = exit;
+pos = (130,0);
+},
+{
+name = fatha;
+pos = (3,509);
+},
+{
+name = kasra;
+pos = (246,-135);
+}
+);
+backgroundImage = {
+alpha = 80;
+angle = -0.2;
+imagePath = "../images/MS-ADD-01116-000-00005.jpg";
+locked = 1;
+pos = (-4737,-1764);
+scale = (5,5);
+};
+layerId = m01;
+shapes = (
+{
+closed = 1;
+nodes = (
+(175,-234,o),
+(186,-222,o),
+(186,-198,cs),
+(186,-93,o),
+(178,11,o),
+(177,78,c),
+(172,263,o),
+(169,475,o),
+(158,671,cs),
+(157,694,o),
+(143,700,o),
+(133,681,cs),
+(121,658,o),
+(82,624,o),
+(64,610,cs),
+(49,597,o),
+(55,584,o),
+(56,574,cs),
+(70,413,o),
+(88,83,o),
+(99,-166,c),
+(119,-135,l),
+(77,-145,o),
+(40,-142,o),
+(7,-131,cs),
+(-1,-129,o),
+(-11,-126,o),
+(-17,-133,cs),
+(-41,-162,o),
+(-62,-192,o),
+(-91,-211,cs),
+(-104,-220,o),
+(-109,-233,o),
+(-96,-240,cs),
+(-12,-283,o),
+(91,-283,o),
+(159,-243,cs)
+);
+},
+{
+closed = 1;
+nodes = (
+(190,0,l),
+(190,110,l),
+(118,110,l),
+(118,0,l)
+);
+}
+);
+width = 178;
+},
+{
+associatedMasterId = m01;
+backgroundImage = {
+alpha = 80;
+angle = -0.2;
+imagePath = "../images/MS-ADD-01116-000-00005.jpg";
+locked = 1;
+pos = (-4737,-1764);
+scale = (5,5);
+};
+layerId = "D969F4A3-3B14-4CC0-B72A-5B513B267645";
+name = "4 Apr 23 at 01:20";
+shapes = (
+{
+alignment = -1;
+pos = (50,0);
+ref = "behDotless-ar.medi.high";
+}
+);
+width = 178;
+}
+);
+metricLeft = "=-100@-220";
+metricRight = "=3@157";
+}

@@ -1,0 +1,27 @@
+{
+glyphname = "threedotsupabove-ar.vert";
+layers = (
+{
+anchors = (
+{
+name = _top;
+pos = (69,11);
+}
+);
+layerId = m01;
+shapes = (
+{
+angle = 7;
+pos = (12,89);
+ref = "dotabove-ar";
+},
+{
+ref = "twodotsverticalabove-ar.vert";
+}
+);
+width = 110;
+}
+);
+metricLeft = "=dotabove-ar";
+metricRight = "=dotabove-ar";
+}

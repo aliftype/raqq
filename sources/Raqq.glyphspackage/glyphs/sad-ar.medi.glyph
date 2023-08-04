@@ -1,0 +1,120 @@
+{
+color = 9;
+glyphname = "sad-ar.medi";
+kernLeft = sad;
+kernRight = sad;
+layers = (
+{
+anchors = (
+{
+name = entry;
+pos = (758,0);
+},
+{
+name = exit;
+}
+);
+backgroundImage = {
+alpha = 80;
+imagePath = "images/MS-ADD-01116-000-00003.jpg";
+pos = (-5087,-3738);
+scale = (5,5);
+};
+layerId = m01;
+shapes = (
+{
+alignment = -1;
+ref = "sad-ar.init";
+},
+{
+alignment = -1;
+pos = (357,0);
+ref = _p.sad;
+}
+);
+width = 758;
+},
+{
+anchors = (
+{
+name = entry;
+pos = (5993,0);
+},
+{
+name = exit;
+}
+);
+associatedMasterId = m01;
+attr = {
+coordinates = (
+0,
+100,
+0
+);
+};
+backgroundImage = {
+alpha = 80;
+imagePath = "images/MS-ADD-01116-000-00003.jpg";
+pos = (-5087,-3738);
+scale = (5,5);
+};
+layerId = "AC06EA14-DBCE-4354-9165-0B56B6B33B2D";
+name = "16 May 23 at 19:27";
+shapes = (
+{
+alignment = -1;
+ref = "sad-ar.init";
+},
+{
+alignment = -1;
+pos = (5592,0);
+ref = _p.sad;
+}
+);
+visible = 1;
+width = 5993;
+},
+{
+anchors = (
+{
+name = entry;
+pos = (368,0);
+},
+{
+name = exit;
+}
+);
+associatedMasterId = m01;
+attr = {
+coordinates = (
+0,
+0,
+0
+);
+};
+backgroundImage = {
+alpha = 80;
+imagePath = "images/MS-ADD-01116-000-00003.jpg";
+pos = (-5087,-3738);
+scale = (5,5);
+};
+layerId = "89993892-A467-41EC-82A9-8FB0D89B668F";
+name = "17 May 23 at 16:05";
+shapes = (
+{
+alignment = -1;
+ref = "sad-ar.init";
+},
+{
+alignment = -1;
+pos = (-33,0);
+ref = _p.sad;
+}
+);
+visible = 1;
+width = 368;
+}
+);
+metricLeft = "=sad-ar.init";
+metricRight = "=0@110";
+}

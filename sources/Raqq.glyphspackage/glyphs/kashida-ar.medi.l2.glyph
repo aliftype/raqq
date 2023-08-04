@@ -1,0 +1,18 @@
+{
+color = 0;
+glyphname = "kashida-ar.medi.l2";
+layers = (
+{
+layerId = m01;
+shapes = (
+{
+pos = (-20,0);
+ref = "kashida-ar.medi";
+}
+);
+width = 80;
+}
+);
+metricLeft = "=-20";
+metricRight = "=0";
+}

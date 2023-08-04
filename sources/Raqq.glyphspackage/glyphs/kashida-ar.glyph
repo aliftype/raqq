@@ -1,0 +1,12 @@
+{
+glyphname = "kashida-ar";
+layers = (
+{
+layerId = m01;
+width = 0;
+}
+);
+metricLeft = "=0";
+metricRight = "=0";
+unicode = 1600;
+}

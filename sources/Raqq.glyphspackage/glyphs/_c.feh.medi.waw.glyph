@@ -1,0 +1,33 @@
+{
+glyphname = _c.feh.medi.waw;
+layers = (
+{
+anchors = (
+{
+name = entry;
+pos = (-25,0);
+},
+{
+name = exit;
+}
+);
+layerId = m01;
+shapes = (
+{
+closed = 1;
+nodes = (
+(36,10,l),
+(36,104,l),
+(-3,134,o),
+(-19,169,o),
+(-47,212,c),
+(-150,212,l),
+(-150,10,l)
+);
+}
+);
+width = 36;
+}
+);
+metricRight = "=0";
+}

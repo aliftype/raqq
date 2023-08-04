@@ -1,0 +1,181 @@
+{
+glyphname = dottedCircle;
+layers = (
+{
+anchors = (
+{
+name = alefabove;
+},
+{
+name = damma;
+pos = (-100,290);
+},
+{
+name = fatha;
+pos = (290,690);
+},
+{
+name = hamzaabove;
+pos = (608,504);
+},
+{
+name = hamzabelow;
+pos = (290,-115);
+},
+{
+name = kasra;
+pos = (290,-115);
+},
+{
+name = madda;
+pos = (-30,504);
+}
+);
+layerId = m01;
+shapes = (
+{
+alignment = -1;
+locked = 1;
+pos = (252,-7);
+ref = _dot;
+scale = (0.5,0.5);
+},
+{
+alignment = -1;
+locked = 1;
+pos = (252,510);
+ref = _dot;
+scale = (0.5,0.5);
+},
+{
+alignment = -1;
+locked = 1;
+pos = (-7,252);
+ref = _dot;
+scale = (0.5,0.5);
+},
+{
+alignment = -1;
+locked = 1;
+pos = (510,252);
+ref = _dot;
+scale = (0.5,0.5);
+},
+{
+alignment = -1;
+locked = 1;
+pos = (332,6);
+ref = _dot;
+scale = (0.5,0.5);
+},
+{
+alignment = -1;
+locked = 1;
+pos = (173,497);
+ref = _dot;
+scale = (0.5,0.5);
+},
+{
+alignment = -1;
+locked = 1;
+pos = (6,173);
+ref = _dot;
+scale = (0.5,0.5);
+},
+{
+alignment = -1;
+locked = 1;
+pos = (497,332);
+ref = _dot;
+scale = (0.5,0.5);
+},
+{
+alignment = -1;
+locked = 1;
+pos = (173,6);
+ref = _dot;
+scale = (0.5,0.5);
+},
+{
+alignment = -1;
+locked = 1;
+pos = (332,497);
+ref = _dot;
+scale = (0.5,0.5);
+},
+{
+alignment = -1;
+locked = 1;
+pos = (6,332);
+ref = _dot;
+scale = (0.5,0.5);
+},
+{
+alignment = -1;
+locked = 1;
+pos = (497,173);
+ref = _dot;
+scale = (0.5,0.5);
+},
+{
+alignment = -1;
+locked = 1;
+pos = (404,42);
+ref = _dot;
+scale = (0.5,0.5);
+},
+{
+alignment = -1;
+locked = 1;
+pos = (101,460);
+ref = _dot;
+scale = (0.5,0.5);
+},
+{
+alignment = -1;
+locked = 1;
+pos = (42,101);
+ref = _dot;
+scale = (0.5,0.5);
+},
+{
+alignment = -1;
+locked = 1;
+pos = (460,404);
+ref = _dot;
+scale = (0.5,0.5);
+},
+{
+alignment = -1;
+locked = 1;
+pos = (101,42);
+ref = _dot;
+scale = (0.5,0.5);
+},
+{
+alignment = -1;
+locked = 1;
+pos = (404,460);
+ref = _dot;
+scale = (0.5,0.5);
+},
+{
+alignment = -1;
+locked = 1;
+pos = (42,404);
+ref = _dot;
+scale = (0.5,0.5);
+},
+{
+alignment = -1;
+locked = 1;
+pos = (460,101);
+ref = _dot;
+scale = (0.5,0.5);
+}
+);
+width = 578;
+}
+);
+unicode = 9676;
+}

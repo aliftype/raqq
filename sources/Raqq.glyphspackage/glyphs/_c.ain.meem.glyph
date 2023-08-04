@@ -1,0 +1,34 @@
+{
+glyphname = _c.ain.meem;
+layers = (
+{
+anchors = (
+{
+name = entry;
+pos = (35,0);
+},
+{
+name = exit;
+}
+);
+layerId = m01;
+shapes = (
+{
+closed = 1;
+nodes = (
+(87,0,l),
+(87,110,l),
+(53,110,o),
+(-5,141,o),
+(-28,192,c),
+(-38,192,l),
+(-38,0,l)
+);
+}
+);
+width = 35;
+}
+);
+metricLeft = "=-38";
+metricRight = "=-52";
+}

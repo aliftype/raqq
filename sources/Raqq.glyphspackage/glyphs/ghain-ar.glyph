@@ -1,0 +1,20 @@
+{
+color = 0;
+glyphname = "ghain-ar";
+layers = (
+{
+layerId = m01;
+shapes = (
+{
+ref = "ain-ar";
+},
+{
+pos = (303,256);
+ref = "dotabove-ar";
+}
+);
+width = 982;
+}
+);
+unicode = 1594;
+}

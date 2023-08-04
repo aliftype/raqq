@@ -1,0 +1,34 @@
+{
+glyphname = "threedotshorizontalabove-ar";
+layers = (
+{
+anchors = (
+{
+name = _top;
+pos = (184,67);
+}
+);
+layerId = m01;
+shapes = (
+{
+angle = 9.4;
+pos = (244,105);
+ref = "dotabove-ar";
+},
+{
+angle = 7;
+pos = (3,23);
+ref = "dotabove-ar";
+},
+{
+angle = 6;
+pos = (116,46);
+ref = "dotabove-ar";
+}
+);
+width = 336;
+}
+);
+metricLeft = "=dotabove-ar";
+metricRight = "=dotabove-ar";
+}

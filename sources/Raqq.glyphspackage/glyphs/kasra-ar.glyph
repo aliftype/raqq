@@ -1,0 +1,37 @@
+{
+glyphname = "kasra-ar";
+layers = (
+{
+anchors = (
+{
+name = _kasra;
+pos = (75,75);
+}
+);
+layerId = m01;
+shapes = (
+{
+ref = "fatha-ar";
+}
+);
+width = 150;
+},
+{
+associatedMasterId = m01;
+attr = {
+colorPalette = 3;
+};
+layerId = "557AD2D8-7DD0-46C9-898C-BFF5D01578A7";
+name = "Regular 25 Jun 22, 20:51";
+shapes = (
+{
+ref = _dot;
+}
+);
+width = 150;
+}
+);
+metricLeft = "=fatha-ar";
+metricRight = "=fatha-ar";
+unicode = 1616;
+}
