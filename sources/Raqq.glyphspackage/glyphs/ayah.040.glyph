@@ -111,5 +111,6 @@ width = 311;
 }
 );
 metricLeft = "=0";
-metricRight = "=0";
+metricRight = "=-1";
+metricWidth = "=311";
 }

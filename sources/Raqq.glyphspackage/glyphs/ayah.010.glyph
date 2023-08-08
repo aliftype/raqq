@@ -28,6 +28,7 @@ attr = {
 colorPalette = 4;
 };
 layerId = "D542F106-890E-45CF-A3C8-AEA4B940F3D6";
+metricRight = "=-19";
 name = "17 Apr 23 at 00:00";
 shapes = (
 {
@@ -63,5 +64,6 @@ ref = _ayah.decoration1;
 width = 495;
 }
 );
-metricRight = "=|118";
+metricRight = "=-4";
+metricWidth = "=495";
 }
