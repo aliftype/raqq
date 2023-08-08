@@ -966,6 +966,14 @@
       "expectation": "waw-ar.fina=2+472|dotbelow-ar=1@-1,-140+0|behDotless-ar.medi=1@-10,0+118|_c.hah.beh=0+7|hah-ar.init=0+703"
     },
     {
+      "input": "حبى",
+      "expectation": "alefMaksura-ar.fina=2+282|dotbelow-ar=1@79,-110+0|behDotless-ar.medi=1+128|_c.hah.beh=0+7|hah-ar.init=0+703"
+    },
+    {
+      "input": "حتى",
+      "expectation": "alefMaksura-ar.fina.tooth=2+5|twodotsverticalabove-ar.beh=1@-57,278+0|behDotless-ar.medi.round=1+110|_c.hah.beh=0+7|hah-ar.init=0+703"
+    },
+    {
       "input": "حجج",
       "expectation": "dotbelow-ar=2@571,-122+0|hah-ar.fina=2+417|dotbelow-ar=1@401,-25+0|hah-ar.medi.hah=1@0,115+109|hah-ar.init.hah=0@0,237+579"
     },
@@ -1208,6 +1216,10 @@
     {
       "input": "على",
       "expectation": "alefMaksura-ar.fina.tooth=2+5|lam-ar.medi.round=1+97|_c.ain.init.beh=0+95|ain-ar.init=0@-50,0+640"
+    },
+    {
+      "input": "علي",
+      "expectation": "twodotsverticalbelow-ar=2@311,-329+0|alefMaksura-ar.fina.tooth=2+5|lam-ar.medi.round=1+97|_c.ain.init.beh=0+95|ain-ar.init=0@-50,0+640"
     },
     {
       "input": "عما",
@@ -2646,6 +2658,10 @@
       "expectation": "twodotsverticalabove-ar=3@-62,265+0|qafDotless-ar.fina=3+373|twodotsverticalbelow-ar=2@159,-137+0|behDotless-ar.medi=2+128|_c.hah.beh=1+7|hah-ar.medi=1+133|seen-ar.init=0@0,122+468"
     },
     {
+      "input": "سِيء",
+      "expectation": "hamza-ar=3+0|twodotsverticalbelow-ar=2@339,-334+0|alefMaksura-ar.fina=2+282|kasra-ar=0@126,-125+0|seen-ar.init=0@-36,0+342"
+    },
+    {
       "input": "صــا",
       "expectation": "alef-ar.fina=3+102|kashida-ar=2+0|kashida-ar=1+0|sad-ar.init=0+765"
     },
@@ -2660,6 +2676,10 @@
     {
       "input": "عليم",
       "expectation": "meem-ar.fina.round=3+554|twodotsverticalbelow-ar=2@-13,-137+0|behDotless-ar.medi.round=2+110|_c.seen.beh=1+0|lam-ar.medi=1+125|_c.ain.init.beh=0+95|ain-ar.init=0@-50,0+640"
+    },
+    {
+      "input": "علِي",
+      "expectation": "twodotsverticalbelow-ar=3@339,-334+0|alefMaksura-ar.fina=3+282|kasra-ar=1@48,-111+0|lam-ar.medi=1+125|_c.ain.init.beh=0+95|ain-ar.init=0@-50,0+640"
     },
     {
       "input": "عيسى",
