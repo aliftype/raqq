@@ -76,4 +76,5 @@ width = 250;
 );
 metricLeft = "=0";
 metricRight = "=0";
+metricWidth = "=250";
 }
