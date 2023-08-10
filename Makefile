@@ -41,9 +41,9 @@ ARGS ?=
 .ONESHELL:
 .PHONY: all dist
 
+all: ttf web
 ttf: $(FONTS)
 web: $(WOFF2)
-all: ttf web
 test: $(HTML)
 update-test: $(JSON)
 
