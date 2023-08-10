@@ -1,4 +1,5 @@
 {
+color = 9;
 glyphname = "kashida-ar.medi";
 layers = (
 {
@@ -9,6 +10,10 @@ pos = (100,0);
 },
 {
 name = exit;
+},
+{
+name = kasra;
+pos = (50,-54);
 }
 );
 layerId = m01;
@@ -37,6 +42,10 @@ pos = (6000,0);
 },
 {
 name = exit;
+},
+{
+name = kasra;
+pos = (3000,-54);
 }
 );
 associatedMasterId = m01;
