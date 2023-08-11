@@ -26,7 +26,7 @@ In _Raqq_ the spacing can be decreased using the custom font variation axis Spac
 > بسم الله الرحمن الرحيم
 {:.kufi .s-100}
 
-Similarly, line breaks frequently happen inside the word as long as calligraphic syllables are not broken. Unfortunately, line break opportunities are outside of font control, so if such line breaking is desired, the text should be spelled with spaces between the syllables, for example:
+Similarly, line breaks frequently happen inside the word as long as calligraphic syllables are not broken (in other words, lines can be broken inside a word after _alef_, _dal_, _thal_, _reh_, and _zain_, as they don’t connect to the left, and not after any other letter). Unfortunately, line break opportunities are outside of font control, so if such line breaking is desired, the text should be spelled with spaces between the syllables, for example:
 > قُل هوَ ا للهُ أ حد۝١ا للهُ ا لصمد۝٢لَم يلد وَ لم يُو لد۝٣وَ لَم يكن لهُ كفو اً أحد۝٤
 
 > *قُل هوَ ا للهُ أ حد۝١ا*{:.ش٣٧} *للهُ ا لصمد۝٢لَم*{:.ش٤٨} *يلد وَ لـم يُو*{:.ش٥٣} *لد۝٣وَ لَم يكن لهُ*{:.ش٤٦}  *كفو اً أحد*{:.ش٤٣}۝٤
