@@ -1111,7 +1111,7 @@ value = 805;
 },
 {
 name = typoDescender;
-value = -115;
+value = -500;
 },
 {
 name = hheaAscender;
@@ -1119,7 +1119,7 @@ value = 805;
 },
 {
 name = hheaDescender;
-value = -115;
+value = -500;
 },
 {
 name = winAscent;
