@@ -1,5 +1,5 @@
 {
-.appVersion = "3207";
+.appVersion = "3208";
 .formatVersion = 3;
 axes = (
 {
@@ -15199,9 +15199,11 @@ layers = (
 layerId = m01;
 shapes = (
 {
+alignment = -1;
 ref = "dal-ar";
 },
 {
+alignment = -1;
 pos = (122,218);
 ref = "dotabove-ar";
 }
@@ -18894,6 +18896,10 @@ anchors = (
 {
 name = _hamzabelow;
 pos = (106,113);
+},
+{
+name = kasra;
+pos = (106,-48);
 }
 );
 layerId = m01;
