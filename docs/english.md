@@ -184,6 +184,9 @@ And so on for the rest of the letters:
 ## Feedback
 We are happy to see _Raqq_ put in use. We welcome any questions, comments, or suggestions about the typeface or ways to improve it, either by mail on the GitHub project.
 
+> ۝
+{:.kufi .big}
+
 [Kufic]: https://en.wikipedia.org/wiki/Kufic
 [Amajor al-Turki]: https://en.wikipedia.org/wiki/Amajur_al-Turki
 [MS Add.1116]: https://cudl.lib.cam.ac.uk/view/MS-ADD-01116
