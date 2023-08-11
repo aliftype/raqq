@@ -105,6 +105,7 @@ blockquote.kufi p,
 blockquote.كوفي p {
   font-size: 8cqw;
   direction: rtl;
+  font-weight: normal;
 }
 
 blockquote.big p,
@@ -192,8 +193,6 @@ footer p {
 .kufi p, .كوفي p {
   font-family: var(--kufi-family);
   color: var(--kufi-color);
-  font-weight: normal;
-  font-size: 300%;
 }
 
 .big p, .كبير p {
@@ -229,6 +228,7 @@ footer p {
   body {
     grid-template-columns: auto;
     max-width: 700px;
+    padding: 0 20px;
     grid-template-areas:
       "lang-switcher"
       "title"
@@ -287,16 +287,6 @@ footer p {
 }
 
 @media print, screen and (max-width: 730px) {
-  body {
-    width: auto;
-    margin-inline-start: 20px;
-    margin-inline-end: 20px;
-  }
-
-  .kufi p, .كوفي p {
-    font-size: 180%;
-  }
-
   #title {
     font-size: 10vi;
   }
@@ -305,13 +295,6 @@ footer p {
 @media print, screen and (max-width: 700px) {
   section > p:lang(en-US) {
     text-align: start;
-  }
-}
-
-@media print, screen and (max-width: 400px) {
-
-  .kufi p, .كوفي p {
-    font-size: 160%;
   }
 }
 
