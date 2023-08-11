@@ -149,6 +149,12 @@ header p.logo {
   color: var(--kufi-color);
 }
 
+footer {
+  align-self: start;
+  position: sticky;
+  top: 0;
+}
+
 footer p {
   text-align: center;
   margin-block-end: 20%;
@@ -258,6 +264,12 @@ footer p {
     padding-block-start: 20px;
     border-block-start: 1px solid #e5e5e5;
     border-width: 1px 0;
+  }
+
+  footer {
+    align-self: revert;
+    position: revert;
+    top: revert;
   }
 
   #title {
