@@ -1,24 +1,9 @@
 Raqq
 ====
-_Raqq_ (رَقّ) is a manuscript Kufic typeface, that intends to replicate (as
-faithfully as possible) the third century AH (early Abbasid) style of Kufic
-script used in writing the Quran.
 
-_Raqq_ uses color font technology to replicate the colored vocalization system
-of red, yellow and green dots used in these early Quranic manuscripts.
+_Raqq_ (رَقّ) is a manuscript Kufic typeface, intends to revive (as faithfully as
+possible) the style of Kufic script used in writing the Qur’an in the third
+century AH. _Raqq_ is Arabic for parchment, on which early Qur’ans were written.
 
-_Raqq_ is intended more for use in smaller font sizes (possibly inline in
-scholarly texts) as it has large to body letter forms and a sturdy feel.
-
-_Raqq_ design is based mostly on the [MS Add.1116][1] Quranic manuscript.
-
-_Raqq_ is Arabic for parchment.
-
-Sample
-------
-
-![Fatihah – 1](samples/Fatihah_1.png)
-![Fatihah – 2](samples/Fatihah_2.png)
-
-[1]: https://cudl.lib.cam.ac.uk/view/MS-ADD-01116
-[2]: https://gallica.bnf.fr/ark:/12148/btv1b8415221r
+For more info and latest version:
+> https://aliftype.com/raqq/english
