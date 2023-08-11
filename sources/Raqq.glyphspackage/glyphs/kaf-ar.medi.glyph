@@ -1,0 +1,102 @@
+{
+color = 9;
+glyphname = "kaf-ar.medi";
+kernLeft = kaf;
+kernRight = sad;
+layers = (
+{
+anchors = (
+{
+name = entry;
+pos = (758,0);
+},
+{
+name = exit;
+}
+);
+layerId = m01;
+shapes = (
+{
+alignment = -1;
+ref = "kaf-ar.init";
+},
+{
+alignment = -1;
+pos = (357,0);
+ref = _p.sad;
+}
+);
+width = 758;
+},
+{
+anchors = (
+{
+name = entry;
+pos = (5993,0);
+},
+{
+name = exit;
+}
+);
+associatedMasterId = m01;
+attr = {
+coordinates = (
+0,
+100,
+0
+);
+};
+layerId = "79BB94E9-709B-4B8D-A308-DC550F0444BD";
+name = "17 May 23 at 02:07";
+shapes = (
+{
+alignment = -1;
+ref = "kaf-ar.init";
+},
+{
+alignment = -1;
+pos = (5592,0);
+ref = _p.sad;
+}
+);
+visible = 1;
+width = 5993;
+},
+{
+anchors = (
+{
+name = entry;
+pos = (414,0);
+},
+{
+name = exit;
+}
+);
+associatedMasterId = m01;
+attr = {
+coordinates = (
+0,
+0,
+0
+);
+};
+layerId = "28EC70D9-F0B5-4C86-945B-568F26E866FE";
+name = "17 May 23 at 13:22";
+shapes = (
+{
+alignment = -1;
+ref = "kaf-ar.init";
+},
+{
+alignment = -1;
+pos = (13,0);
+ref = _p.sad;
+}
+);
+visible = 1;
+width = 414;
+}
+);
+metricLeft = "=-10";
+metricRight = "=0@110";
+}

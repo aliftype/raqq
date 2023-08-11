@@ -1,0 +1,44 @@
+{
+glyphname = "hamzabelow-ar";
+layers = (
+{
+anchors = (
+{
+name = _hamzabelow;
+pos = (106,113);
+},
+{
+name = kasra;
+pos = (106,-48);
+}
+);
+layerId = m01;
+shapes = (
+{
+pos = (-7,0);
+ref = "fatha-ar";
+scale = (1.5,1.5);
+}
+);
+width = 211;
+},
+{
+associatedMasterId = m01;
+attr = {
+colorPalette = 1;
+};
+layerId = "BF707C9A-F0E2-4E2C-95C3-19D70D58E014";
+name = "Regular 25 Jun 22, 20:50";
+shapes = (
+{
+ref = _dot;
+scale = (1.5,1.5);
+}
+);
+width = 225;
+}
+);
+metricLeft = "=fatha-ar";
+metricRight = "=fatha-ar";
+unicode = 1621;
+}

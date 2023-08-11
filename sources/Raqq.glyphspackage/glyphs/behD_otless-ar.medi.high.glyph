@@ -1,0 +1,78 @@
+{
+glyphname = "behDotless-ar.medi.high";
+kernRight = beh;
+layers = (
+{
+anchors = (
+{
+name = bottom;
+pos = (51,-38);
+},
+{
+name = damma;
+pos = (15,170);
+},
+{
+name = entry;
+pos = (128,0);
+},
+{
+name = exit;
+},
+{
+name = fatha;
+pos = (66,510);
+},
+{
+name = kasra;
+pos = (84,-57);
+},
+{
+name = top;
+pos = (67,423);
+}
+);
+backgroundImage = {
+alpha = 80;
+angle = -0.4;
+imagePath = "images/MS-ADD-01116-000-00025.jpg";
+locked = 1;
+pos = (-3498,-2714);
+scale = (5,5);
+};
+layerId = m01;
+shapes = (
+{
+closed = 1;
+nodes = (
+(141,0,l),
+(141,110,l),
+(129,110,o),
+(126,134,o),
+(125,157,cs),
+(122,234,o),
+(115,380,o),
+(106,449,cs),
+(104,468,o),
+(85,466,o),
+(81,453,cs),
+(73,424,o),
+(43,382,o),
+(24,376,cs),
+(11,372,o),
+(8,364,o),
+(9,354,cs),
+(14,303,o),
+(19,174,o),
+(21,110,c),
+(-20,110,l),
+(-20,0,l)
+);
+}
+);
+width = 128;
+}
+);
+metricLeft = "=-20@0";
+metricRight = "=3@157";
+}

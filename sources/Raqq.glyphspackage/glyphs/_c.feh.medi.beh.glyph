@@ -1,0 +1,34 @@
+{
+glyphname = _c.feh.medi.beh;
+kernLeft = feh.medi.beh;
+layers = (
+{
+anchors = (
+{
+name = entry;
+},
+{
+name = exit;
+}
+);
+layerId = m01;
+shapes = (
+{
+closed = 1;
+nodes = (
+(69,0,l),
+(69,110,l),
+(30,108,o),
+(-5,162,o),
+(-5,212,c),
+(-24,212,l),
+(-24,0,l)
+);
+}
+);
+width = 0;
+}
+);
+metricLeft = "=-24";
+metricRight = "=-69";
+}

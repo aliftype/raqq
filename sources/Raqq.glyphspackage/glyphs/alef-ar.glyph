@@ -1,0 +1,253 @@
+{
+color = 9;
+glyphname = "alef-ar";
+layers = (
+{
+anchors = (
+{
+name = damma;
+pos = (-60,59);
+},
+{
+name = fatha;
+pos = (140,625);
+},
+{
+name = hamzaabove;
+pos = (140,625);
+},
+{
+name = hamzabelow;
+pos = (378,-95);
+},
+{
+name = kasra;
+pos = (378,-95);
+},
+{
+name = madda;
+pos = (-70,625);
+}
+);
+backgroundImage = {
+alpha = 80;
+imagePath = "images/MS-ADD-01116-000-00003.jpg";
+locked = 1;
+pos = (-2873,-2880);
+scale = (5,5);
+};
+layerId = m01;
+shapes = (
+{
+closed = 1;
+nodes = (
+(455,-42,o),
+(610,18,o),
+(658,129,cs),
+(663,141,o),
+(656,145,o),
+(644,139,cs),
+(494,69,o),
+(346,63,o),
+(241,116,cs),
+(158,157,o),
+(102,236,o),
+(94,347,cs),
+(85,481,o),
+(92,667,o),
+(77,762,cs),
+(73,789,o),
+(61,785,o),
+(54,771,cs),
+(41,743,o),
+(1,704,o),
+(-21,690,cs),
+(-31,683,o),
+(-24,665,o),
+(-20,634,cs),
+(-9,548,o),
+(-3,373,o),
+(0,263,cs),
+(5,45,o),
+(153,-42,o),
+(316,-42,cs)
+);
+}
+);
+width = 660;
+},
+{
+anchors = (
+{
+name = damma;
+pos = (-63,59);
+},
+{
+name = fatha;
+pos = (137,625);
+},
+{
+name = hamzaabove;
+pos = (137,625);
+},
+{
+name = hamzabelow;
+pos = (235,-74);
+},
+{
+name = kasra;
+pos = (235,-74);
+},
+{
+name = madda;
+pos = (-73,625);
+}
+);
+associatedMasterId = m01;
+attr = {
+coordinates = (
+0,
+7,
+0
+);
+};
+backgroundImage = {
+alpha = 80;
+angle = 2;
+crop = (0,0,1500,1216);
+imagePath = "images/MS-ADD-01116-000-00030.jpg";
+locked = 1;
+pos = (-1593,-1814);
+scale = (5,5);
+};
+layerId = "CE64C0F6-A480-4B7A-9BC6-4D80259FE710";
+name = "{0, 7, 0} 24 Jun 23 at 13:25";
+shapes = (
+{
+closed = 1;
+nodes = (
+(376,0,o),
+(428,44,o),
+(473,131,cs),
+(479,143,o),
+(471,151,o),
+(459,144,cs),
+(407,116,o),
+(304,107,o),
+(227,126,cs),
+(123,152,o),
+(99,239,o),
+(91,347,cs),
+(82,481,o),
+(89,667,o),
+(74,762,cs),
+(70,789,o),
+(58,785,o),
+(51,771,cs),
+(38,743,o),
+(-2,704,o),
+(-24,690,cs),
+(-34,683,o),
+(-27,665,o),
+(-23,634,cs),
+(-12,548,o),
+(-2,373,o),
+(0,263,cs),
+(4,76,o),
+(82,-6,o),
+(236,-3,cs)
+);
+}
+);
+width = 475;
+},
+{
+anchors = (
+{
+name = damma;
+pos = (-63,59);
+},
+{
+name = fatha;
+pos = (137,625);
+},
+{
+name = hamzaabove;
+pos = (137,625);
+},
+{
+name = hamzabelow;
+pos = (235,-74);
+},
+{
+name = kasra;
+pos = (235,-74);
+},
+{
+name = madda;
+pos = (-73,625);
+}
+);
+associatedMasterId = m01;
+attr = {
+coordinates = (
+0,
+0,
+0
+);
+};
+backgroundImage = {
+alpha = 80;
+angle = 2;
+crop = (0,0,1500,1216);
+imagePath = "images/MS-ADD-01116-000-00030.jpg";
+locked = 1;
+pos = (-1593,-1814);
+scale = (5,5);
+};
+layerId = "8CF105B5-82F0-4A4C-8F4B-4BC12D8167E3";
+name = "24 Jun 23 at 12:30";
+shapes = (
+{
+closed = 1;
+nodes = (
+(336,-3,o),
+(428,44,o),
+(473,131,cs),
+(479,143,o),
+(471,151,o),
+(459,144,cs),
+(407,116,o),
+(304,107,o),
+(227,126,cs),
+(123,152,o),
+(99,239,o),
+(91,347,cs),
+(82,481,o),
+(89,667,o),
+(74,762,cs),
+(70,789,o),
+(58,785,o),
+(51,771,cs),
+(38,743,o),
+(-2,704,o),
+(-24,690,cs),
+(-34,683,o),
+(-27,665,o),
+(-23,634,cs),
+(-12,548,o),
+(-2,373,o),
+(0,263,cs),
+(4,76,o),
+(82,-3,o),
+(227,-3,cs)
+);
+}
+);
+width = 475;
+}
+);
+metricLeft = "=0@263";
+metricRight = "=0";
+unicode = 1575;
+}

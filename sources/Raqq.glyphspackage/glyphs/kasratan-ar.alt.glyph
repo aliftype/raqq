@@ -1,0 +1,36 @@
+{
+glyphname = "kasratan-ar.alt";
+layers = (
+{
+anchors = (
+{
+name = _kasra;
+pos = (75,142);
+}
+);
+layerId = m01;
+shapes = (
+{
+ref = "dammatan-ar";
+}
+);
+width = 150;
+},
+{
+associatedMasterId = m01;
+attr = {
+colorPalette = 3;
+};
+layerId = "95BC5585-F924-4AAC-B205-D7D219410245";
+name = "Regular 25 Jun 22, 20:51";
+shapes = (
+{
+ref = "dammatan-ar";
+}
+);
+width = 150;
+}
+);
+metricLeft = "=kasra-ar";
+metricRight = "=kasra-ar";
+}

@@ -1,0 +1,24 @@
+{
+glyphname = "meem-ar.medi.round3";
+kernLeft = meem.alt;
+layers = (
+{
+anchors = (
+{
+name = entry;
+pos = (398,0);
+},
+{
+name = exit;
+}
+);
+layerId = m01;
+shapes = (
+{
+ref = "meem-ar.init.round";
+}
+);
+width = 398;
+}
+);
+}

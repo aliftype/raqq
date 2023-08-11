@@ -1,0 +1,16 @@
+{
+color = 0;
+glyphname = "tehMarbuta-ar";
+layers = (
+{
+layerId = m01;
+shapes = (
+{
+ref = "heh-ar";
+}
+);
+width = 356;
+}
+);
+unicode = 1577;
+}

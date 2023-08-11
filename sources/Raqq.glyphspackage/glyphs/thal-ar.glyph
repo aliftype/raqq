@@ -1,0 +1,22 @@
+{
+color = 0;
+glyphname = "thal-ar";
+layers = (
+{
+layerId = m01;
+shapes = (
+{
+alignment = -1;
+ref = "dal-ar";
+},
+{
+alignment = -1;
+pos = (122,218);
+ref = "dotabove-ar";
+}
+);
+width = 882;
+}
+);
+unicode = 1584;
+}

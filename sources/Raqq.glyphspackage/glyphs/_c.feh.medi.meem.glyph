@@ -1,0 +1,33 @@
+{
+glyphname = _c.feh.medi.meem;
+layers = (
+{
+anchors = (
+{
+name = entry;
+pos = (47,0);
+},
+{
+name = exit;
+}
+);
+layerId = m01;
+shapes = (
+{
+closed = 1;
+nodes = (
+(47,0,l),
+(47,110,l),
+(18,109,o),
+(-9,138,o),
+(-21,174,c),
+(-46,174,l),
+(-46,0,l)
+);
+}
+);
+width = 47;
+}
+);
+metricRight = "=0";
+}
