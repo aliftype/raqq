@@ -28,11 +28,12 @@
   --main-family: "Amiri", serif;
   --heading-family: "Reem Kufi", sans-serif;
   --h1-font-size: 40px;
+  --latin-font: "DM Sans", "Amiri", sans-serif;
 }
 
 :lang(en-US) {
-  --main-family: "DM Sans", "Amiri", sans-serif;
-  --heading-family: "DM Sans", "Amiri", sans-serif;
+  --main-family: var(--latin-font);
+  --heading-family: var(--latin-font);
   --h1-font-size: 1.5em;
 }
 
@@ -181,6 +182,11 @@ footer p {
   grid-area: lang-switcher;
   text-align: center;
   display: none;
+}
+
+.lang-switcher-side,
+.lang-switcher-top {
+  font-family: var(--latin-font);
 }
 
 .kufi p, .كوفي p {
