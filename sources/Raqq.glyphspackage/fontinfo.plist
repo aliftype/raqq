@@ -593,7 +593,7 @@ code = "lookup tooth_rounded {
 } tooth_rounded;
 
 lookup tooth_yeh {
-	sub alefMaksura-ar.fina by alefMaksura-ar.fina.tooth;
+	sub [alefMaksura-ar.fina alefMaksura-ar.fina.salt] by alefMaksura-ar.fina.tooth;
 } tooth_yeh;
 
 lookup wide_yeh {
@@ -614,18 +614,23 @@ lookup ss01_dots {
 	sub @dots by NULL;
 } ss01_dots;
 
+lookup salt_1 {
+	sub alefMaksura-ar from [alefMaksura-ar.salt yehbarree-ar];
+	sub alefMaksura-ar.fina from [alefMaksura-ar.fina.salt yehbarree-ar.fina];
+	sub alefMaksura-ar.fina.wide from [alefMaksura-ar.fina.wide.salt yehbarree-ar.fina];
+} salt_1;
+
 @beforeyehtooth = [behDotless-ar.medi lam-ar.medi lam-ar.medi.short];
 lookup rclt_tooth_yeh {
 	lookupflag UseMarkFilteringSet [@dotsbelow kasra-ar kasratan-ar];
 
 	ignore
 	sub [behDotless-ar.init.high behDotless-ar.medi.high]'
-		 _c.seen.beh'
 		 @dotsbelow'
 		 @beforeyehtooth'
 	;
 	sub @beforeyehtooth' lookup tooth_rounded
-		 alefMaksura-ar.fina' lookup tooth_yeh
+		 [alefMaksura-ar.fina alefMaksura-ar.fina.salt]' lookup tooth_yeh
 	;
 } rclt_tooth_yeh;
 
@@ -656,14 +661,18 @@ lookup yehbarree_baseline {
 	sub tah-ar.init			by tah-ar.init.hah1;
 } yehbarree_baseline;
 
-@aftermeem = [meem-ar.medi meem-ar.fina waw-ar.fina reh-ar.fina noonghunna-ar.fina];
-
-lookup rlig_3 {
+lookup rclt_yehbarree_baseline {
 	lookupflag IgnoreMarks;
 
 	sub @init' lookup yehbarree_baseline
 		 yehbarree-ar.fina' lookup yehbarree_baseline
 	;
+} rclt_yehbarree_baseline;
+
+@aftermeem = [meem-ar.medi meem-ar.fina waw-ar.fina reh-ar.fina noonghunna-ar.fina];
+
+lookup rlig_3 {
+	lookupflag IgnoreMarks;
 
 	sub [behDotless-ar.medi lam-ar.medi lam-ar.medi.hah1 lam-ar.medi.hah2]' lookup tooth_rounded
 		[meem-ar.medi meem-ar.fina]' lookup rounded
@@ -796,7 +805,7 @@ lookup before_yeh {
 	sub @before_yeh			by @before_yeh _c.ain.yeh;
 } before_yeh;
 
-lookup rlig_connection {
+lookup rclt_connection {
 	lookupflag IgnoreMarks;
 
 	sub	 @before_beh' lookup before_beh
@@ -834,7 +843,7 @@ lookup rlig_connection {
 	;
 
 	sub	 fehDotless-ar.medi' lookup before_meem
-		 alefMaksura-ar.fina
+		 [alefMaksura-ar.fina alefMaksura-ar.fina.salt]
 	;
 
 	sub	 @before_noon' lookup before_noon
@@ -850,13 +859,16 @@ lookup rlig_connection {
 	;
 
 	sub	 @before_yeh' lookup before_yeh
-		[alefMaksura-ar.fina yehbarree-ar.fina yehbarree-ar.fina.baseline]
+		[alefMaksura-ar.fina
+		 alefMaksura-ar.fina.salt
+		 yehbarree-ar.fina
+		 yehbarree-ar.fina.baseline]
 	;
 
 	sub	[_c.feh.medi.waw _c.ain.meem]
 		 waw-ar.fina' lookup rounded
 	;
-} rlig_connection;
+} rclt_connection;
 ";
 name = connections;
 },
@@ -924,11 +936,17 @@ lookup rlig_ligatures_1;
 lookup rlig_ligatures_2;
 lookup rlig_3;
 lookup rlig_4;
-lookup rlig_connection;
 lookup rlig_sheen_dots;
 lookup rlig_beh_dots;
 ";
 tag = rlig;
+},
+{
+code = "lookup rclt_tooth_yeh;
+lookup rclt_yehbarree_baseline;
+lookup rclt_connection;
+";
+tag = rclt;
 },
 {
 code = "lookup ss01_dots;
@@ -944,11 +962,6 @@ value = "حروف مهملة (بلا نقاط)";
 }
 );
 tag = ss01;
-},
-{
-code = "lookup rclt_tooth_yeh;
-";
-tag = rclt;
 },
 {
 code = "# Automatic Code
@@ -1108,15 +1121,8 @@ lookup heh_dots {
 tag = mark;
 },
 {
-automatic = 1;
-code = "sub alefMaksura-ar by alefMaksura-ar.salt;
-sub alefMaksura-ar.fina by alefMaksura-ar.fina.salt;
-sub alefMaksura-ar.fina.wide by alefMaksura-ar.fina.wide.salt;
-";
-tag = salt;
-},
-{
-code = "sub endofayah-ar.05 by endofayah-ar.10 ayah.005;
+code = "lookup salt_1;
+sub endofayah-ar.05 by endofayah-ar.10 ayah.005;
 ";
 tag = salt;
 },
