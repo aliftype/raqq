@@ -18,7 +18,7 @@ NAME = Raqq
 MAKEFLAGS := -sr
 SHELL = bash
 
-CONFIG = _config.yml
+CONFIG = docs/_config.yml
 VERSION = $(shell grep "version:" $(CONFIG) | sed -e 's/.*.: "\(.*.\)".*/\1/')
 DIST = $(NAME)-$(VERSION)
 
@@ -43,9 +43,11 @@ ARGS ?=
 
 all: ttf web
 ttf: $(FONTS)
-web: $(WOFF2)
 test: $(HTML)
 update-test: $(JSON)
+
+web: $(WOFF2)
+	cp $+ docs/assets/fonts/Raqq.woff2
 
 update-fea: $(FONTS)
 	$(info   GEN    $(@F))
