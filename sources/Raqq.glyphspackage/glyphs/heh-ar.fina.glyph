@@ -1,5 +1,6 @@
 {
 glyphname = "heh-ar.fina";
+kernLeft = heh;
 kernRight = beh;
 layers = (
 {

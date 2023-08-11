@@ -13,7 +13,6 @@
 # You should have received a copy of the GNU Affero General Public License
 # along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
-import argparse
 import datetime
 import os
 from xml.etree import ElementTree as etree
@@ -593,9 +592,14 @@ def buildMaster(font, master, args):
     fb.setupNameTable({}, mac=False)
 
     if colorLayers:
+        from glyphsLib.builder.common import to_ufo_color
+
         palettes = font.customParameters["Color Palettes"]
-        palettes = [[tuple(v / 255 for v in c) for c in p] for p in palettes]
-        fb.setupCPAL(palettes)
+        palettes = [[to_ufo_color(c) for c in p] for p in palettes]
+        paletteTypes = None
+        if len(palettes) == 2:
+            paletteTypes = [0x0001, 0x0002]
+        fb.setupCPAL(palettes, paletteTypes=paletteTypes)
         fb.setupCOLR(colorLayers)
 
     return fb.font
@@ -846,6 +850,7 @@ def build(font, instance, args):
 
 
 def main():
+    import argparse
     from pathlib import Path
 
     parser = argparse.ArgumentParser(description="Build Raqq font.")

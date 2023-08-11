@@ -1,5 +1,7 @@
 {
 glyphname = "lam_lam_heh-ar";
+kernLeft = heh;
+kernRight = lam;
 layers = (
 {
 anchors = (

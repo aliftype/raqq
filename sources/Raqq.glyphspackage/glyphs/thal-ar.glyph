@@ -6,12 +6,10 @@ layers = (
 layerId = m01;
 shapes = (
 {
-alignment = -1;
 ref = "dal-ar";
 },
 {
-alignment = -1;
-pos = (122,218);
+pos = (90,173);
 ref = "dotabove-ar";
 }
 );

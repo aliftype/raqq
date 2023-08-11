@@ -20,6 +20,16 @@ import json
 import uharfbuzz as hb
 
 
+def parsefeatures(text):
+    features = {}
+    for fea in text.split(","):
+        if "=" in fea:
+            fea, val = fea.split("=")
+            features[fea] = int(val)
+        else:
+            features[fea] = True
+    return features
+
 def shape(font, text, direction, script, language, features):
     buffer = hb.Buffer()
     buffer.add_str(text)
@@ -54,7 +64,7 @@ def main(rags):
         for test in reader:
             test = {k: v for k, v in test.items() if v}
             if features := test.get("features"):
-                test["features"] = {f: True for f in features.split(",")}
+                test["features"] = parsefeatures(features)
             test["expectation"] = shape(
                 font,
                 test.get("input"),

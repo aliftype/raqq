@@ -130,4 +130,5 @@ width = 248;
 );
 metricLeft = "=0";
 metricRight = "=0";
+metricWidth = "=248";
 }

@@ -1,6 +1,7 @@
 {
 glyphname = "lam-ar.init.hah2";
 kernLeft = lam;
+kernRight = lam;
 layers = (
 {
 anchors = (

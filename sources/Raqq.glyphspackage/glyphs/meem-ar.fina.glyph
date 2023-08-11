@@ -1,5 +1,6 @@
 {
 glyphname = "meem-ar.fina";
+kernLeft = meem.fina;
 layers = (
 {
 anchors = (
