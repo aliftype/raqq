@@ -696,6 +696,97 @@
       "expectation": "twodotsverticalbelow-ar=1@332,-510+0|alefMaksura-ar.fina.wide.salt=1+267|lam-ar.init=0+123"
     },
     {
+      "input": "بي",
+      "features": {
+        "salt": 2
+      },
+      "expectation": "twodotsverticalbelow-ar=1@449,-149+0|yehbarree-ar.fina.baseline=1+297|dotbelow-ar=0@72,64+0|behDotless-ar.init=0@0,110+770"
+    },
+    {
+      "input": "حى",
+      "features": {
+        "salt": 2
+      },
+      "expectation": "yehbarree-ar.fina.baseline=1+297|_c.ain.yeh=0@-5,110+10|hah-ar.init=0@-40,110+713"
+    },
+    {
+      "input": "سى",
+      "features": {
+        "salt": 2
+      },
+      "expectation": "seen_alefMaksura-ar=0+346"
+    },
+    {
+      "input": "سي",
+      "features": {
+        "salt": 2
+      },
+      "expectation": "twodotsverticalbelow-ar=0@330,-337+0|seen_alefMaksura-ar=0+346"
+    },
+    {
+      "input": "شي",
+      "features": {
+        "salt": 2
+      },
+      "expectation": "twodotsverticalbelow-ar=0@330,-337+0|threedotshorizontalabove-ar.3=0@-35,167+0|seen_alefMaksura-ar=0+346"
+    },
+    {
+      "input": "عى",
+      "features": {
+        "salt": 2
+      },
+      "expectation": "yehbarree-ar.fina.baseline=1+297|_c.ain.yeh=0@-5,110+10|ain-ar.init=0@0,110+760"
+    },
+    {
+      "input": "عي",
+      "features": {
+        "salt": 2
+      },
+      "expectation": "twodotsverticalbelow-ar=1@449,-149+0|yehbarree-ar.fina.baseline=1+297|_c.ain.yeh=0@-5,110+10|ain-ar.init=0@0,110+760"
+    },
+    {
+      "input": "فى",
+      "features": {
+        "salt": 2
+      },
+      "expectation": "yehbarree-ar.fina.baseline=1+297|dotabove-ar=0@-67,483+0|fehDotless-ar.init.yeh=0@0,110+768"
+    },
+    {
+      "input": "في",
+      "features": {
+        "salt": 2
+      },
+      "expectation": "twodotsverticalbelow-ar=1@449,-149+0|yehbarree-ar.fina.baseline=1+297|dotabove-ar=0@-67,483+0|fehDotless-ar.init.yeh=0@0,110+768"
+    },
+    {
+      "input": "كي",
+      "features": {
+        "salt": 2
+      },
+      "expectation": "twodotsverticalbelow-ar=1@449,-149+0|yehbarree-ar.fina.baseline=1+297|kaf-ar.init=0@-21,110+744"
+    },
+    {
+      "input": "لي",
+      "features": {
+        "salt": 2
+      },
+      "expectation": "twodotsverticalbelow-ar=1@449,-149+0|yehbarree-ar.fina.baseline=1+297|lam-ar.init.hah1=0@0,-5+763"
+    },
+    {
+      "input": "مني",
+      "features": {
+        "salt": 2
+      },
+      "expectation": "twodotsverticalbelow-ar=2@449,-259+0|yehbarree-ar.fina=2+297|dotabove-ar.beh=1@8,294+0|behDotless-ar.medi=1+128|_c.seen.beh=0+0|meem-ar.init=0+645"
+    },
+    {
+      "input": "علي",
+      "features": {
+        "salt": 2
+      },
+      "expectation": "twodotsverticalbelow-ar=2@449,-259+0|yehbarree-ar.fina=2+297|lam-ar.medi=1+125|_c.ain.init.beh=0+95|ain-ar.init=0@-50,0+640"
+    },
+    {
       "input": "۝٠",
       "direction": "ltr",
       "expectation": "endofayah-ar=0+400"
