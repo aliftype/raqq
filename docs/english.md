@@ -83,6 +83,15 @@ Early Arabic writing didn’t write the _hamza_ (glottal stop) explicit, so in K
 > أ إ آ ؤ
 {:.kufi}
 
+### _Lam-alef_
+In early Arabic writing the _alef_ was the right leg and the _lam_ was the left leg of the _lam-alef_, as _alef_ was originally 6-like and got the _lam_ attached to its left side, unlike later Arabic orthographies where the order is reversed to follow the order of writing.
+
+So the _hamza_ and vowels of the _alef_ get above the right side, but below the left side, which _Raqq_ will do automatically:
+> لأ لَا لإ لِأ لأُ
+
+> لأ لَا لإ لِأ لأُ
+{:.kufi}
+
 ### _Ayah_ Symbol
 Colors are used in _ayah_ symbol as well, and there are different symbol for every fifth and tenth _ayah_.
 
