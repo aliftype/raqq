@@ -776,12 +776,19 @@ def prepare(args):
 def build(font, instance, args):
     ds = DesignSpaceDocument()
 
+    axisNames = {
+        "MSHQ": {"ar": "مشق"},
+        "SPAC": {"ar": "مسافات"},
+        "jstf": {},
+    }
+
     axisMappings = font.customParameters["Axis Mappings"]
     for axis, default in zip(font.axes, instance.axes):
         locations = axisMappings[axis.axisTag].values()
         ds.addAxisDescriptor(
             tag=axis.axisTag,
             name=axis.name,
+            labelNames={**axisNames[axis.axisTag], "en": axis.name},
             hidden=axis.hidden,
             maximum=max(locations),
             minimum=min(locations),
@@ -809,6 +816,8 @@ def build(font, instance, args):
         ds.addAxisMappingDescriptor(inputLocation=input, outputLocation=output)
 
     vf, _, _ = merge(ds)
+    if "ltag" in vf:
+        del vf["ltag"]
 
     otf = buildBase(font, instance, vf, args)
     return otf
