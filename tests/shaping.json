@@ -1446,7 +1446,7 @@
     },
     {
       "input": "كلا",
-      "expectation": "lam_alef-ar.fina=1+510|kaf-ar.init=0@-85,0+680"
+      "expectation": "lam_alef-ar.fina=1+510|kaf-ar.init=0@-40,0+725"
     },
     {
       "input": "كما",
