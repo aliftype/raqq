@@ -1,0 +1,20 @@
+{
+glyphname = "sajdah-ar";
+layers = (
+{
+layerId = m01;
+shapes = (
+{
+alignment = 1;
+ref = "endofayah-ar.10";
+},
+{
+pos = (386,181);
+ref = ayah.sajdah;
+}
+);
+width = 1117;
+}
+);
+unicode = 1769;
+}

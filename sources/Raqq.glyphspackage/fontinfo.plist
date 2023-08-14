@@ -1,5 +1,5 @@
 {
-.appVersion = "3208";
+.appVersion = "3211";
 .formatVersion = 3;
 axes = (
 {
@@ -170,6 +170,7 @@ code = "lookup ccmp_1 {
 	sub wawHamzaabove-ar by waw-ar hamzaabove-ar;
 	sub yeh-ar by alefMaksura-ar twodotsverticalbelow-ar;
 	sub yehHamzaabove-ar by alefMaksura-ar;
+	sub sajdah-ar by endofayah-ar.10 ayah.sajdah;
 } ccmp_1;
 
 lookup ccmp_2 {
@@ -1258,8 +1259,9 @@ pos = -500;
 );
 name = Regular;
 userData = {
+GSCornerRadius = -15;
 GSOffsetCapStyle = 2;
-GSOffsetHorizontal = 10;
+GSOffsetHorizontal = 4;
 GSOffsetKeepCompatible = 1;
 GSOffsetPosition = 1;
 GSOffsetProportional = 1;
