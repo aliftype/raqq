@@ -1,5 +1,5 @@
 {
-.appVersion = "3211";
+.appVersion = "3212";
 .formatVersion = 3;
 axes = (
 {
@@ -875,7 +875,12 @@ name = connections;
 },
 {
 code = "lookup kerning {
-	pos [alef-ar @MMK_R_heh]
+	pos  alef-ar
+		<(SPAC=-100:10 SPAC=0:0 SPAC=125:0) 0
+		 (SPAC=-100:10 SPAC=0:0 SPAC=125:0) 0>
+	;
+
+	pos  @MMK_R_heh
 		<(SPAC=-100:20 SPAC=0:0 SPAC=125:0) 0
 		 (SPAC=-100:20 SPAC=0:0 SPAC=125:0) 0>
 	;
@@ -1267,6 +1272,7 @@ GSOffsetPosition = 1;
 GSOffsetProportional = 1;
 GSOffsetVertical = 10;
 };
+visible = 1;
 }
 );
 instances = (

@@ -9,7 +9,7 @@ shapes = (
 ref = "alef-ar";
 }
 );
-width = 660;
+width = 658;
 }
 );
 unicode = 1649;
