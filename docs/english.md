@@ -180,11 +180,11 @@ Kufic gives a great deal of a attention to the relation between black and white.
 
 See how the space between the _feh_ and next letters is meticulously filled:
 > ڡا ڡٮ ڡح ڡد ڡه ڡو ڡر ڡط ڡی ڡك ڡل ڡم ڡں ڡس ڡع ڡڡ ڡص ڡق ڡں
-{:.kufi .justified}
+{:.kufi}
 
 Similarly, between _hah_ and next letters:
 > حا حٮ حح حد حه حو حر حط حی حك حل حم حں حس حع حڡ حص حق حں
-{:.kufi .justified}
+{:.kufi}
 
 And so on for the rest of the letters:
 > علما ؞ بد ؞ سببا ؞ منها ؞ للسمع
