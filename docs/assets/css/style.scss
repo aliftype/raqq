@@ -122,7 +122,7 @@ img {
   max-width: 100%;
 }
 
-.sitedesigner {
+#sitedesigner {
   font-size: 60%;
   color: grey;
 }
@@ -132,7 +132,7 @@ header p {
   margin-block-end: 20%;
 }
 
-header p.logo {
+#logo {
   font-family: var(--kufi-family);
   color: var(--kufi-color);
   font-size: 55pt;
@@ -296,6 +296,57 @@ footer p {
   section > p:lang(en-US) {
     text-align: start;
   }
+}
+
+@media print {
+  body {
+    background-color: initial;
+    grid-template-columns: auto;
+    max-width: 100%;
+    padding: 0 8%;
+    grid-template-areas:
+      "title"
+      "section"
+      "footer"
+      "header"
+    ;
+  }
+
+  body * {
+    font-palette: light;
+  }
+
+  body,
+  .kufi p, .كوفي p,
+  h1, h2, h3, h4, h5, h6,
+  #title,
+  #logo {
+    color: black;
+  }
+
+  section {
+    break-after: page;
+  }
+
+  h1, h2, h3, h4, h5, h6,
+  blockquote {
+    break-after: avoid-page;
+  }
+
+  blockquote.kufi {
+    break-after: default;
+  }
+
+  footer {
+    border: none;
+  }
+
+  .lang-switcher-top,
+  .lang-switcher-side,
+  #sitedesigner {
+    display: none;
+  }
+
 }
 
 .m0, .ش٠ { font-variation-settings: 'MSHQ' 0; }
