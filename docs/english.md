@@ -179,7 +179,7 @@ Sometimes _meem_ in Kufic connects to specific letters by merely touching them, 
 Kufic gives a great deal of a attention to the relation between black and white. Spacing between unconnected letters is evenly distributed in the line and the page in general, and so is the spacing between connected letters. But unlike the very wide spacing between unconnected letters, connected letters are very tightly spaced and any empty space is filled except for a minimum hair space that is usually to the space between the two horizontal strokes of the _dal_ and the _sad_.
 
 See how the space between the _feh_ and next letters is meticulously filled:
-> ڡا ڡٮ ڡح ڡد ڡه ڡو ڡر ڡط ڡی ڡك ڡل ڡم ڡں ڡس ڡع ڡڡ ڡص ڡق ڡں
+> ڡا ڡٮ ڡح ڡد ڡه ڡو ڡر ڡط ڡی ڡك ڡل ڡم ڡں ڡس ڡع ڡڡ ڡص ڡٯ ڡں
 {:.kufi}
 
 Similarly, between _hah_ and next letters:
