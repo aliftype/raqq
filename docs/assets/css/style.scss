@@ -85,6 +85,8 @@ h1 {
 p {
   text-align: justify;
   line-height: normal;
+  hyphens: auto;
+  -webkit-hyphens: auto;
 }
 
 a {
@@ -295,6 +297,8 @@ footer p {
 @media print, screen and (max-width: 700px) {
   section > p:lang(en-US) {
     text-align: start;
+    hyphens: revert;
+    -webkit-hyphens: revert;
   }
 }
 
