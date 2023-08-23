@@ -67,6 +67,18 @@ _Raqq_ utilizes color fonts to automatically represent the color of vowel dots, 
 > ◌َ ◌ً ◌ِ ◌ٍ ◌ُ ◌ٌ
 {:.kufi}
 
+Some letters have slightly different vowel dot positioning. For examples, letters with ascenders have _fatha_ at top left, so that it does not get mastaken for a dot belonging to the line above:
+> طَ كَ لَ لَا
+
+> طَ كَ لَ لَا
+{:.kufi}
+
+Similarly, _kasra_ below letters with descenders go to their lower right:
+> لِ ںِ ىِ لٍ ںٍ ىٍ
+
+> لِ ںِ ىِ لٍ ںٍ ىٍ
+{:.kufi .salt1}
+
 ### Diacritical Dots
 Kufi Qur’an are often written with or without [diacritical dots] or I‘jam. _Raqq_ supports both. By default the letters are dotted:
 > *قل ا عو ذ بر ب ا*{:.ش٢٥} *لفـلق۝١من شر ما خلـق۝٢و من*{:.ش٢٢} *شر غا سق ا ذ ا و قب۝٣*{:.ش١٣} *و من شر ا لنفا ثا ت في ا*{:.ش٢٠} *لعقد۝٤و من شر حا سد*{:.ش٢٧} *ا ذ ا حسد۝٥*{:.ش٤٧}
