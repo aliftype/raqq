@@ -173,8 +173,13 @@ code = "lookup ccmp_1 {
 	sub sajdah-ar by endofayah-ar.10 ayah.sajdah;
 } ccmp_1;
 
+lookup vowels_vert {
+	sub fathatan-ar by fathatan-ar.alt;
+	sub kasratan-ar by kasratan-ar.alt;
+} vowels_vert;
+
 lookup ccmp_2 {
-	sub alef-ar fathatan-ar' by fathatan-ar.alt;
+	sub [alef-ar lam-ar tah-ar] fathatan-ar' lookup vowels_vert;
 } ccmp_2;
 
 @numbers = [$[category == \"Number\" && subCategory == \"Decimal Digit\"]];
@@ -366,17 +371,6 @@ code = "lookup rlig_vertical_dots {
 	by	[twodotsverticalabove-ar.vert threedotsupabove-ar.vert]
 	;
 } rlig_vertical_dots;
-
-lookup rlig_kasratan {
-	lookupflag UseMarkFilteringSet [kasratan-ar];
-
-	sub [seen-ar seen-ar.fina
-		 noonghunna-ar noonghunna-ar.fina
-		 lam-ar lam-ar.fina]
-		 kasratan-ar'
-	by	 kasratan-ar.alt
-	;
-} rlig_kasratan;
 ";
 name = marks;
 },
@@ -704,7 +698,26 @@ lookup rlig_4 {
 name = misc;
 },
 {
-code = "lookup rlig_sheen_dots {
+code = "lookup rclt_fathatan {
+	lookupflag UseMarkFilteringSet [fathatan-ar];
+
+	sub [kaf-ar kaf-ar.fina]
+		 fathatan-ar' lookup vowels_vert;
+	;
+} rclt_fathatan;
+
+lookup rclt_kasratan {
+	lookupflag UseMarkFilteringSet [kasratan-ar];
+
+	sub [seen-ar $[name LIKE \"seen-ar.fina*\"]
+		 $[name LIKE \"noonghunna-ar*\"]
+		 lam-ar $[name LIKE \"lam-ar.fina*\"]
+		 $[name LIKE \"alefMaksura-ar*salt\"]]
+		 kasratan-ar' lookup vowels_vert;
+	;
+} rclt_kasratan;
+
+lookup rlig_sheen_dots {
 	lookupflag UseMarkFilteringSet [threedotshorizontalabove-ar];
 
 	sub [seen-ar.medi]
@@ -934,7 +947,6 @@ lookup rlig_hah_cleanup;
 lookup rlig_vertical_dots;
 lookup rlig_kashida;
 lookup rlig_kashida_2;
-lookup rlig_kasratan;
 lookup rlig_teeth_1;
 lookup rlig_teeth_2;
 lookup rlig_wide_yeh;
@@ -951,6 +963,8 @@ tag = rlig;
 code = "lookup rclt_tooth_yeh;
 lookup rclt_yehbarree_baseline;
 lookup rclt_connection;
+lookup rclt_fathatan;
+lookup rclt_kasratan;
 ";
 tag = rclt;
 },
