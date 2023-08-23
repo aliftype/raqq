@@ -58,6 +58,15 @@ The rest of the letters do not elongate, but can be elongated by inserting _tatw
 > سائـِلون
 {:.kufi .m100}
 
+### Diacritical Dots
+Kufi Qur’an are often written with or without [diacritical dots] or I‘jam. _Raqq_ supports both. By default the letters are dotted:
+> *قل ا عو ذ بر ب ا*{:.ش٢٥} *لفـلق۝١من شر ما خلـق۝٢و من*{:.ش٢٢} *شر غا سق ا ذ ا و قب۝٣*{:.ش١٣} *و من شر ا لنفا ثا ت في ا*{:.ش٢٠} *لعقد۝٤و من شر حا سد*{:.ش٢٧} *ا ذ ا حسد۝٥*{:.ش٤٧}
+{:.kufi .aligned}
+
+Using Stylistic Set 1 (`ss01`) feature, the dots can be turned off:
+> *قل ا عو ذ بر ب ا*{:.ش٢٥} *لفـلق۝١من شر ما خلـق۝٢و من*{:.ش٢٢} *شر غا سق ا ذ ا و قب۝٣*{:.ش١٣} *و من شر ا لنفا ثا ت في ا*{:.ش٢٠} *لعقد۝٤و من شر حا سد*{:.ش٢٧} *ا ذ ا حسد۝٥*{:.ش٤٧}
+{:.kufi .aligned .ss01}
+
 ### Vowel Dots
 Kufic Qur’ans use an early system of [vowel marks], different from the later system in use today. In the old system, _fatha_ is a dot above the letter, _kasra_ is a dot below it, _damma_ is a dot in front (left) of it, and _tanwīn_ is two dots of each. To distinguish these dots from the diacritical dots (like the dots of _beh_ and _teh_), they were written using a different ink than the rest of the text, usually red (but sometimes also green, yellow, and blue, for other reasons).
 
@@ -78,15 +87,6 @@ Similarly, _kasra_ below letters with descenders go to their lower right:
 
 > لِ ںِ ىِ لٍ ںٍ ىٍ
 {:.kufi .salt1}
-
-### Diacritical Dots
-Kufi Qur’an are often written with or without [diacritical dots] or I‘jam. _Raqq_ supports both. By default the letters are dotted:
-> *قل ا عو ذ بر ب ا*{:.ش٢٥} *لفـلق۝١من شر ما خلـق۝٢و من*{:.ش٢٢} *شر غا سق ا ذ ا و قب۝٣*{:.ش١٣} *و من شر ا لنفا ثا ت في ا*{:.ش٢٠} *لعقد۝٤و من شر حا سد*{:.ش٢٧} *ا ذ ا حسد۝٥*{:.ش٤٧}
-{:.kufi .aligned}
-
-Using Stylistic Set 1 (`ss01`) feature, the dots can be turned off:
-> *قل ا عو ذ بر ب ا*{:.ش٢٥} *لفـلق۝١من شر ما خلـق۝٢و من*{:.ش٢٢} *شر غا سق ا ذ ا و قب۝٣*{:.ش١٣} *و من شر ا لنفا ثا ت في ا*{:.ش٢٠} *لعقد۝٤و من شر حا سد*{:.ش٢٧} *ا ذ ا حسد۝٥*{:.ش٤٧}
-{:.kufi .aligned .ss01}
 
 ### _Hmaza_
 Early Arabic writing didn’t write the _hamza_ (glottal stop) explicit, so in Kufic the same system of vowel dots was used also for the _hamza_, and it was written as red or yellow dot. In _Raqq_ hamza is always a red dot, and its position depends on its vowel:
