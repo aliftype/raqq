@@ -44,15 +44,15 @@
     },
     {
       "input": "أَ",
-      "expectation": "fatha-ar=0@72,547+0|hamzaabove-ar=0@72,547+0|alef-ar=0+658"
+      "expectation": "fatha-ar=0@72,547+0|alef-ar=0+658"
     },
     {
       "input": "أُ",
-      "expectation": "damma-ar=0@-138,-15+0|hamzaabove-ar=0@72,547+0|alef-ar=0+658"
+      "expectation": "damma-ar=0@-138,-15+0|alef-ar=0+658"
     },
     {
       "input": "إِ",
-      "expectation": "kasra-ar=0@297,-177+0|hamzabelow-ar=0@297,-177+0|alef-ar=0+658"
+      "expectation": "kasra-ar=0@297,-177+0|alef-ar=0+658"
     },
     {
       "input": "اء",
@@ -1495,6 +1495,18 @@
     {
       "input": "كًا",
       "expectation": "alef-ar.fina=2+101|fathatan-ar=0@44,279+0|kaf-ar.init=0@-5,0+760"
+    },
+    {
+      "input": "لأَ",
+      "expectation": "fatha-ar=0@352,599+0|lam_alef-ar=0+542"
+    },
+    {
+      "input": "لأُ",
+      "expectation": "damma-ar=0@-140,-56+0|lam_alef-ar=0+542"
+    },
+    {
+      "input": "لإِ",
+      "expectation": "kasra-ar=0@16,-159+0|lam_alef-ar=0+542"
     },
     {
       "input": "لبا",

@@ -182,6 +182,18 @@ lookup ccmp_2 {
 	sub [alef-ar lam-ar tah-ar] fathatan-ar' lookup vowels_vert;
 } ccmp_2;
 
+lookup hamza_vowel {
+	sub hamzaabove-ar fatha-ar by fatha-ar;
+	sub hamzaabove-ar damma-ar by damma-ar;
+	sub hamzabelow-ar kasra-ar by kasra-ar;
+} hamza_vowel;
+
+lookup ccmp_3 {
+	sub  alef-ar'
+		[hamzaabove-ar hamzabelow-ar]' lookup hamza_vowel
+		[fatha-ar damma-ar kasra-ar]';
+} ccmp_3;
+
 @numbers = [$[category == \"Number\" && subCategory == \"Decimal Digit\"]];
 
 lookup ayah_05 {
@@ -916,6 +928,7 @@ features = (
 {
 code = "lookup ccmp_1;
 lookup ccmp_2;
+lookup ccmp_3;
 lookup ccmp_kashida;
 lookup ccmp_ayah_numbers;
 lookup ccmp_ayah_10;
