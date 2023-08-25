@@ -82,6 +82,12 @@ Some letters have slightly different vowel dot positioning. For examples, letter
 > طَ كَ لَ لَا
 {:.kufi}
 
+However, _alef_ gets it on the right:
+> اَ اً
+
+> اَ اً
+{:.kufi}
+
 Similarly, _kasra_ below letters with descenders go to their lower right:
 > لِ ںِ ىِ لٍ ںٍ ىٍ
 
