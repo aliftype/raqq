@@ -1,5 +1,5 @@
 {
-.appVersion = "3213";
+.appVersion = "3214";
 .formatVersion = 3;
 axes = (
 {
@@ -169,30 +169,67 @@ code = "lookup ccmp_1 {
 	sub tehMarbuta-ar by heh-ar twodotsverticalabove-ar;
 	sub wawHamzaabove-ar by waw-ar hamzaabove-ar;
 	sub yeh-ar by alefMaksura-ar twodotsverticalbelow-ar;
-	sub yehHamzaabove-ar by alefMaksura-ar;
+	sub yehHamzaabove-ar by alefMaksura-ar hamzaabove-ar;
 	sub sajdah-ar by endofayah-ar.10 ayah.sajdah;
 } ccmp_1;
 
-lookup vowels_vert {
-	sub fathatan-ar by fathatan-ar.alt;
-	sub kasratan-ar by kasratan-ar.alt;
-} vowels_vert;
-
-lookup ccmp_2 {
-	sub [alef-ar lam-ar tah-ar] fathatan-ar' lookup vowels_vert;
-} ccmp_2;
-
-lookup hamza_vowel {
+lookup ccmp_hamza_1 {
+	sub kashida-ar hamzaabove-ar fathatan-ar by hamza_fathatan-ar;
 	sub hamzaabove-ar fatha-ar by fatha-ar;
 	sub hamzaabove-ar damma-ar by damma-ar;
 	sub hamzabelow-ar kasra-ar by kasra-ar;
-} hamza_vowel;
+	sub hamzaabove-ar kasra-ar by kasra-ar;
+	sub hamzabelow-ar kasratan-ar by kasratan-ar;
+	sub hamza-ar fatha-ar by hamza_fatha-ar;
+	sub hamza-ar damma-ar by hamza_damma-ar;
+	sub hamza-ar kasra-ar by hamza_kasra-ar;
+} ccmp_hamza_1;
 
-lookup ccmp_3 {
-	sub  alef-ar'
-		[hamzaabove-ar hamzabelow-ar]' lookup hamza_vowel
-		[fatha-ar damma-ar kasra-ar]';
-} ccmp_3;
+lookup ccmp_hamza_2 {
+	ignore
+	sub waw-ar hamzaabove-ar';
+	sub hamzaabove-ar' by fatha-ar;
+
+	sub hamzabelow-ar' by kasra-ar;
+} ccmp_hamza_2;
+
+lookup ccmp_hamza_3 {
+	sub	hamza_fathatan-ar
+		alef-ar'
+	by	alef-ar fathatan-ar
+	;
+
+	sub [hamza-ar hamza_fatha-ar]
+		 alef-ar'
+	by	 alef-ar madda-ar
+	;
+
+	sub	 alef-ar
+		[hamza-ar hamza_fatha-ar]'
+	by	 madda-ar
+	;
+
+	sub	[hamza-ar hamza_damma-ar]'
+		 waw-ar
+	by	 hamza-ar.alt;
+	;
+
+	sub	 waw-ar
+		 hamza_kasra-ar'
+	by	 kasra-ar
+	;
+} ccmp_hamza_3;
+
+lookup vertical_vowels {
+	sub fathatan-ar by fathatan-ar.alt;
+	sub kasratan-ar by kasratan-ar.alt;
+} vertical_vowels;
+
+lookup ccmp_vertical_vowels {
+	sub	[alef-ar lam-ar tah-ar]
+		 fathatan-ar' lookup vertical_vowels
+	;
+} ccmp_vertical_vowels;
 
 @numbers = [$[category == \"Number\" && subCategory == \"Decimal Digit\"]];
 
@@ -714,7 +751,7 @@ code = "lookup rclt_fathatan {
 	lookupflag UseMarkFilteringSet [fathatan-ar];
 
 	sub [kaf-ar kaf-ar.fina]
-		 fathatan-ar' lookup vowels_vert;
+		 fathatan-ar' lookup vertical_vowels;
 	;
 } rclt_fathatan;
 
@@ -725,7 +762,7 @@ lookup rclt_kasratan {
 		 $[name LIKE \"noonghunna-ar*\"]
 		 lam-ar $[name LIKE \"lam-ar.fina*\"]
 		 $[name LIKE \"alefMaksura-ar*salt\"]]
-		 kasratan-ar' lookup vowels_vert;
+		 kasratan-ar' lookup vertical_vowels;
 	;
 } rclt_kasratan;
 
@@ -927,8 +964,10 @@ name = GPOS;
 features = (
 {
 code = "lookup ccmp_1;
-lookup ccmp_2;
-lookup ccmp_3;
+lookup ccmp_hamza_1;
+lookup ccmp_hamza_2;
+lookup ccmp_hamza_3;
+lookup ccmp_vertical_vowels;
 lookup ccmp_kashida;
 lookup ccmp_ayah_numbers;
 lookup ccmp_ayah_10;

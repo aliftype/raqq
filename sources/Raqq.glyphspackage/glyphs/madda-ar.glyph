@@ -11,7 +11,7 @@ pos = (75,75);
 layerId = m01;
 shapes = (
 {
-ref = "hamzabelow-ar";
+ref = "hamzaabove-ar";
 }
 );
 width = 150;
@@ -31,7 +31,7 @@ ref = _dot;
 width = 150;
 }
 );
-metricLeft = "=hamzabelow-ar";
-metricRight = "=hamzabelow-ar";
+metricLeft = "=hamzaabove-ar";
+metricRight = "=hamzaabove-ar";
 unicode = 1619;
 }

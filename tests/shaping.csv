@@ -1,7 +1,9 @@
 input;direction;features;script;language
 آ
 أ
+ؤ
 إ
+ئ
 ا
 ب
 ش
@@ -10,7 +12,13 @@ input;direction;features;script;language
 ف
 أَ
 أُ
+ؤَ
+ؤُ
+ؤِ
 إِ
+ئم
+ئُ
+ئِ
 اء
 اَ
 اُ
@@ -150,6 +158,8 @@ input;direction;features;script;language
 هم
 هن
 هے
+وٕ
+ىٕ
 ىے
 ◌ً
 ◌ٌ
@@ -197,6 +207,7 @@ input;direction;features;script;language
 ۝٩;ltr
 ۝٥;ltr;salt
 ئفة
+ئِم
 اطح
 الح
 الے
@@ -286,6 +297,7 @@ input;direction;features;script;language
 سيء
 سيا
 سيم
+شئِ
 ششش
 شيق
 صبا
@@ -464,6 +476,7 @@ input;direction;features;script;language
 وصے
 وفے
 ولح
+ىِٕ
 يعج
 يعظ
 يقظ
@@ -585,6 +598,8 @@ input;direction;features;script;language
 ۝٩٧;ltr
 ۝٩٨;ltr
 ۝٩٩;ltr
+ءامن
+أضاء
 ابطح
 اطيح
 افنے
@@ -637,9 +652,11 @@ input;direction;features;script;language
 جججج
 جلحو
 ريحا
+سبإٍ
 سببا
 سبيل
 سحيق
+سوءِ
 سِيء
 صــا
 طارق
@@ -952,6 +969,8 @@ input;direction;features;script;language
 ۝٢٩٨;ltr
 ۝٢٩٩;ltr
 ۝٣٠٠;ltr
+ءَامن
+أضاءَ
 أيلمح
 اتبعو
 اططحح
@@ -980,6 +999,7 @@ input;direction;features;script;language
 ليفجر
 مبنيه
 مجلجل
+وءامن
 يحسبن
 يلمحح
 النبي;;salt
@@ -1015,6 +1035,7 @@ input;direction;features;script;language
 الملتحف
 فسنيسرك
 كَلِمةٍ
+ملجـًٔا
 ٮٮسـٰها
 اطلططحی;;salt
 الاصطخري
@@ -1023,6 +1044,9 @@ input;direction;features;script;language
 المســيح
 بببببببب
 فتستجيبو
+يستهزءون
 يــــتخذ
 الاصطخري;;salt
 التمنفحمد
+ليواطـُٔو
+يستهزءُون

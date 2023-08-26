@@ -17,14 +17,6 @@ name = fatha;
 pos = (145,650);
 },
 {
-name = hamzaabove;
-pos = (145,650);
-},
-{
-name = hamzabelow;
-pos = (67,-56);
-},
-{
 name = kasra;
 pos = (67,-56);
 },

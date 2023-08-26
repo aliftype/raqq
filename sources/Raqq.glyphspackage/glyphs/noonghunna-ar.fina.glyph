@@ -16,6 +16,10 @@ name = fatha;
 pos = (87,242);
 },
 {
+name = hamza;
+pos = (-71,60);
+},
+{
 name = kasra;
 pos = (335,-219);
 },

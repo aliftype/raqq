@@ -13,14 +13,6 @@ name = fatha;
 pos = (147,622);
 },
 {
-name = hamzaabove;
-pos = (147,622);
-},
-{
-name = hamzabelow;
-pos = (372,-102);
-},
-{
 name = kasra;
 pos = (372,-102);
 },
@@ -86,14 +78,6 @@ pos = (-67,60);
 {
 name = fatha;
 pos = (143,622);
-},
-{
-name = hamzaabove;
-pos = (143,622);
-},
-{
-name = hamzabelow;
-pos = (229,-79);
 },
 {
 name = kasra;
@@ -171,14 +155,6 @@ pos = (-67,60);
 {
 name = fatha;
 pos = (143,622);
-},
-{
-name = hamzaabove;
-pos = (143,622);
-},
-{
-name = hamzabelow;
-pos = (229,-79);
 },
 {
 name = kasra;

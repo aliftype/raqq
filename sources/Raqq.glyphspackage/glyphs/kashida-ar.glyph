@@ -2,6 +2,12 @@
 glyphname = "kashida-ar";
 layers = (
 {
+anchors = (
+{
+name = damma;
+pos = (0,173);
+}
+);
 layerId = m01;
 width = 0;
 }

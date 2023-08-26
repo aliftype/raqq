@@ -2,30 +2,10 @@
 glyphname = "hamzabelow-ar";
 layers = (
 {
-anchors = (
-{
-name = _hamzabelow;
-pos = (75,75);
-}
-);
 layerId = m01;
 shapes = (
 {
-ref = "fatha-ar";
-}
-);
-width = 150;
-},
-{
-associatedMasterId = m01;
-attr = {
-colorPalette = 3;
-};
-layerId = "BF707C9A-F0E2-4E2C-95C3-19D70D58E014";
-name = "Regular 25 Jun 22, 20:50";
-shapes = (
-{
-ref = _dot;
+ref = "kasra-ar";
 }
 );
 width = 150;
