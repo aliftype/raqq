@@ -10,7 +10,7 @@ attrs==23.1.0
     # via ufolib2
 brotli==1.0.9
     # via fonttools
-fonttools==4.42.0
+fonttools==4.42.1
     # via
     #   -r requirements.in
     #   glyphslib
