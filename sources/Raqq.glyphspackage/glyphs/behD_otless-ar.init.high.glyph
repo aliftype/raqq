@@ -1,5 +1,6 @@
 {
 glyphname = "behDotless-ar.init.high";
+kernRight = beh.init;
 layers = (
 {
 anchors = (

@@ -1,6 +1,7 @@
 {
 color = 9;
 glyphname = "tah-ar";
+kernRight = dal.isol;
 layers = (
 {
 anchors = (

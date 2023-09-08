@@ -1,6 +1,7 @@
 {
 glyphname = "hah-ar.medi.hah.alt";
 kernLeft = hah;
+kernRight = hah.init;
 layers = (
 {
 anchors = (

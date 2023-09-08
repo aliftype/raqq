@@ -1,5 +1,5 @@
 {
-.appVersion = "3214";
+.appVersion = "3217";
 .formatVersion = 3;
 axes = (
 {
@@ -934,31 +934,6 @@ lookup rclt_connection {
 } rclt_connection;
 ";
 name = connections;
-},
-{
-code = "lookup kerning {
-	pos  alef-ar
-		<(SPAC=-100:10 SPAC=0:0 SPAC=125:0) 0
-		 (SPAC=-100:10 SPAC=0:0 SPAC=125:0) 0>
-	;
-
-	pos  @MMK_R_heh
-		<(SPAC=-100:20 SPAC=0:0 SPAC=125:0) 0
-		 (SPAC=-100:20 SPAC=0:0 SPAC=125:0) 0>
-	;
-
-	pos  reh-ar.fina
-		<(SPAC=-100:-120 SPAC=0:0 SPAC=125:0) 0
-		 (SPAC=-100:-120 SPAC=0:0 SPAC=125:0) 0>
-	;
-
-	pos  @MMK_R_meem.fina
-		<(SPAC=-100:-60 SPAC=0:0 SPAC=125:0) 0
-		 (SPAC=-100:-60 SPAC=0:0 SPAC=125:0) 0>
-	;
-} kerning;
-";
-name = GPOS;
 }
 );
 features = (
@@ -1044,19 +1019,10 @@ tag = curs;
 code = "lookup spacing {
 	lookupflag IgnoreMarks;
 	pos [@isol @fina] [@init @isol]
-		<(SPAC=0:${space:width} SPAC=-100:0 SPAC=125:500) 0
-		 (SPAC=0:${space:width} SPAC=-100:0 SPAC=125:500) 0>
+		<(SPAC=0:${space:width} SPAC=-100:20 SPAC=125:500) 0
+		 (SPAC=0:${space:width} SPAC=-100:20 SPAC=125:500) 0>
 	;
 } spacing;
-
-lookup contextual_kerning {
-	lookupflag IgnoreMarks;
-	pos alef-ar' lookup kerning       @MMK_L_lam;
-	pos alef-ar' lookup kerning space @MMK_L_lam;
-
-	pos [@MMK_R_meem.fina @MMK_R_heh reh-ar.fina]' lookup kerning       [alef-ar hah-ar.init];
-	pos [@MMK_R_meem.fina @MMK_R_heh reh-ar.fina]' lookup kerning space [alef-ar hah-ar.init];
-} contextual_kerning;
 
 # Automatic Code
 
@@ -1356,6 +1322,14 @@ m01 = {
 "@MMK_R_ain.beh" = {
 "@MMK_L_feh.medi" = 2;
 };
+"@MMK_R_alef.fina" = {
+"alefMaksura-ar" = -40;
+"alefMaksura-ar.salt" = 4;
+"qafDotless-ar" = -90;
+};
+"@MMK_R_dal.fina" = {
+"alef-ar" = -59;
+};
 "@MMK_R_feh.init.beh" = {
 "@MMK_L_feh.medi" = -3;
 };
@@ -1395,14 +1369,36 @@ _c.hah.reh = -131;
 "noonghunna-ar.fina" = -34;
 "waw-ar.fina" = -10;
 };
+"@MMK_R_lam.fina" = {
+"@MMK_L_beh.init" = -80;
+"@MMK_L_dal.isol" = -87;
+"@MMK_L_feh.init" = -80;
+"@MMK_L_hah.init" = -80;
+"@MMK_L_heh.init" = -82;
+"@MMK_L_lam" = -65;
+"alef-ar" = -80;
+"behDotless-ar" = -83;
+"lam_alef-ar" = -87;
+"meem-ar.init" = -80;
+"meem-ar.init.round" = -80;
+"reh-ar" = -85;
+"seen_alefMaksura-ar" = 140;
+"waw-ar" = -82;
+};
 "@MMK_R_meem" = {
 "seen-ar.medi.low" = 20;
 };
 "@MMK_R_meem.alt" = {
 "reh-ar.fina" = 20;
 };
+"@MMK_R_meem.fina" = {
+"alef-ar" = -70;
+};
 "@MMK_R_sad" = {
 "@MMK_L_sad" = -9;
+};
+"@MMK_R_sad.isol" = {
+"alef-ar" = -110;
 };
 "@MMK_R_seen" = {
 "@MMK_L_kaf.wide" = -19;
@@ -1410,6 +1406,9 @@ _c.hah.reh = -131;
 "@MMK_L_yeh" = -36;
 "@MMK_L_yehbarree" = -32;
 _c.seen.meem = -36;
+};
+"@MMK_R_seen.isol" = {
+"alef-ar" = -15;
 };
 _c.ain.meem = {
 "meem-ar.medi" = 13;
@@ -1458,6 +1457,19 @@ _c.seen.meem = {
 "meem-ar.medi.round2" = 7;
 "qafDotless-ar.fina" = 7;
 };
+"ain-ar.fina" = {
+"@MMK_L_dal.isol" = -30;
+"@MMK_L_feh.init" = -5;
+"@MMK_L_hah.init" = -80;
+"@MMK_L_heh.init" = -5;
+"alef-ar" = -44;
+"behDotless-ar" = -20;
+"lam_alef-ar" = -110;
+"meem-ar.init" = -10;
+"meem-ar.init.round" = -10;
+"reh-ar" = -40;
+"waw-ar" = -10;
+};
 "ain-ar.init" = {
 "@MMK_L_kaf.wide" = -34;
 "@MMK_L_yeh" = -49;
@@ -1471,6 +1483,61 @@ _c.hah.reh = -88;
 "ain-ar.medi" = {
 "lam_alef-ar.fina" = -80;
 };
+"alef-ar" = {
+"@MMK_L_beh.init" = -10;
+"@MMK_L_dal.isol" = -35;
+"@MMK_L_feh.init" = -13;
+"@MMK_L_hah.init" = -30;
+"@MMK_L_lam" = -5;
+"@MMK_L_meem" = -23;
+"alef-ar" = -25;
+"alefMaksura-ar" = -70;
+"behDotless-ar" = -29;
+"heh-ar.init" = -16;
+"lam-ar" = -15;
+"lam_alef-ar" = -60;
+"meem-ar.init" = -19;
+"meem-ar.init.round" = -21;
+"noonghunna-ar" = -35;
+"qafDotless-ar" = -153;
+"reh-ar" = -40;
+"waw-ar" = -22;
+};
+"alefMaksura-ar.fina" = {
+"alef-ar" = -20;
+};
+"alefMaksura-ar.fina.salt" = {
+"alef-ar" = -20;
+};
+"alefMaksura-ar.fina.wide" = {
+"alef-ar" = -20;
+};
+"alefMaksura-ar.fina.wide.salt" = {
+"alef-ar" = -20;
+};
+"behDotless-ar.fina" = {
+"@MMK_L_beh.init" = -14;
+"@MMK_L_dal.isol" = -10;
+"@MMK_L_feh.init" = -35;
+"@MMK_L_hah.init" = -60;
+"@MMK_L_heh.init" = -20;
+"@MMK_L_lam" = -10;
+"@MMK_L_meem" = -10;
+"alef-ar" = -67;
+"alefMaksura-ar" = -32;
+"alefMaksura-ar.salt" = -26;
+"dal-ar" = 0;
+"fehDotless-ar.init" = -60;
+"fehDotless-ar.init.hah" = -62;
+"fehDotless-ar.init.yeh" = -62;
+"heh-ar" = -12;
+"kaf-ar" = 0;
+"kaf-ar.init" = 0;
+"meem-ar.init" = -20;
+"meem-ar.init.round" = -10;
+"qafDotless-ar" = -80;
+"waw-ar" = -15;
+};
 "behDotless-ar.init" = {
 "@MMK_L_sad" = -21;
 "lam_alef-ar.fina" = -60;
@@ -1482,6 +1549,30 @@ _c.hah.reh = -88;
 "lam_alef-ar.fina" = -60;
 "noonghunna-ar.fina" = -34;
 "waw-ar.fina" = -10;
+};
+"dal-ar" = {
+"@MMK_L_beh.init" = -10;
+"@MMK_L_feh.init" = -70;
+"@MMK_L_hah.init" = -65;
+"@MMK_L_heh.init" = -18;
+"@MMK_L_lam" = -10;
+"@MMK_L_meem" = -6;
+"alefMaksura-ar" = -32;
+"alefMaksura-ar.salt" = -27;
+"fehDotless-ar" = -36;
+"fehDotless-ar.init" = -60;
+"meem-ar.init" = -20;
+"meem-ar.init.round" = -10;
+"qafDotless-ar" = -70;
+"waw-ar" = -11;
+};
+"fehDotless-ar.fina" = {
+"@MMK_L_beh.init" = -15;
+"@MMK_L_feh.init" = -50;
+"@MMK_L_hah.init" = -50;
+"@MMK_L_heh.init" = -19;
+"alef-ar" = -60;
+"meem-ar.init" = -10;
 };
 "fehDotless-ar.init" = {
 _c.feh.init.beh = -114;
@@ -1504,8 +1595,111 @@ _c.hah.noon = -25;
 "lam_alef-ar.fina" = -80;
 "seen-ar.medi.low" = -10;
 };
+"fehDotless_alef-ar" = {
+"alef-ar" = -7;
+};
+"kaf-ar.fina" = {
+"alef-ar" = -50;
+};
 "kashida-ar.medi" = {
 _c.hah.reh = -67;
+};
+"lam-ar.fina.short" = {
+"alef-ar" = -80;
+};
+"lam_alef-ar" = {
+"alef-ar" = -76;
+};
+"lam_alef-ar.fina" = {
+"alef-ar" = -30;
+};
+"noonghunna-ar" = {
+"@MMK_L_dal.isol" = -20;
+"@MMK_L_hah.init" = -140;
+"alef-ar" = -100;
+"behDotless-ar" = -10;
+"reh-ar" = -30;
+};
+"noonghunna-ar.fina" = {
+"@MMK_L_beh" = -20;
+"alef-ar" = -20;
+};
+"reh-ar" = {
+"@MMK_L_beh.init" = -50;
+"@MMK_L_dal.isol" = -30;
+"@MMK_L_feh.init" = -80;
+"@MMK_L_hah.init" = -80;
+"@MMK_L_heh.init" = -50;
+"@MMK_L_lam" = -50;
+"@MMK_L_meem" = -20;
+"alef-ar" = -100;
+"alefMaksura-ar" = -20;
+"alefMaksura-ar.salt" = -22;
+"behDotless-ar" = -43;
+"fehDotless_alef-ar" = -70;
+"lam_alef-ar" = -30;
+"meem-ar.init" = -52;
+"meem-ar.init.round" = -29;
+"qafDotless-ar" = -30;
+"waw-ar" = -40;
+};
+"reh-ar.fina" = {
+"@MMK_L_beh.init" = -95;
+"@MMK_L_dal.isol" = -75;
+"@MMK_L_feh.init" = -120;
+"@MMK_L_hah.init" = -140;
+"@MMK_L_heh.init" = -100;
+"@MMK_L_lam" = -90;
+"@MMK_L_meem" = -80;
+"ain-ar" = -144;
+"alef-ar" = -150;
+"alefMaksura-ar.salt" = -25;
+"behDotless-ar" = -90;
+"lam_alef-ar" = -90;
+"meem-ar.init" = -110;
+"meem-ar.init.round" = -90;
+"qafDotless-ar" = -10;
+"reh-ar" = -60;
+"waw-ar" = -100;
+};
+"seen_alefMaksura-ar" = {
+"alef-ar" = 17;
+};
+"seen_alefMaksura-ar.fina" = {
+"alef-ar" = 17;
+};
+"waw-ar" = {
+"@MMK_L_beh.init" = -20;
+"@MMK_L_dal.isol" = -5;
+"@MMK_L_feh.init" = -40;
+"@MMK_L_hah.init" = -55;
+"@MMK_L_heh.init" = -20;
+"@MMK_L_lam" = -15;
+"@MMK_L_meem" = -10;
+"ain-ar" = -65;
+"ain-ar.init" = -75;
+"alef-ar" = -70;
+"alefMaksura-ar" = -25;
+"alefMaksura-ar.salt" = -26;
+"behDotless-ar" = -10;
+"fehDotless-ar.init" = -70;
+"fehDotless-ar.init.hah" = -80;
+"fehDotless-ar.init.yeh" = -80;
+"heh-ar" = -13;
+"meem-ar.init" = -25;
+"meem-ar.init.round" = -10;
+"qafDotless-ar" = -50;
+"waw-ar" = -15;
+"yehbarree-ar" = -80;
+};
+"waw-ar.fina" = {
+"alef-ar" = -120;
+};
+"waw-ar.fina.round" = {
+"alef-ar" = -110;
+};
+"yehbarree-ar.fina" = {
+"alef-ar" = -18;
 };
 };
 };

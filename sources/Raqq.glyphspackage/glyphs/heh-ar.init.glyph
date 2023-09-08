@@ -1,6 +1,7 @@
 {
 glyphname = "heh-ar.init";
 kernLeft = heh;
+kernRight = heh.init;
 layers = (
 {
 anchors = (

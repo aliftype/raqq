@@ -1,5 +1,6 @@
 {
 glyphname = "fehDotless-ar.init.yeh";
+kernRight = feh.init;
 layers = (
 {
 anchors = (

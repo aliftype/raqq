@@ -1,6 +1,8 @@
 {
 color = 9;
 glyphname = "dal-ar";
+kernLeft = dal.fina;
+kernRight = dal.isol;
 layers = (
 {
 anchors = (

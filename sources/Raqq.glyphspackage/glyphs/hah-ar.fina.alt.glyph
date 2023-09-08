@@ -1,6 +1,7 @@
 {
 color = 9;
 glyphname = "hah-ar.fina.alt";
+kernRight = hah.init;
 layers = (
 {
 anchors = (

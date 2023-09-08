@@ -1,5 +1,6 @@
 {
 glyphname = "alef-ar.fina.short";
+kernLeft = alef.fina;
 kernRight = beh;
 layers = (
 {

@@ -1,6 +1,7 @@
 {
 color = 9;
 glyphname = "yehbarree-ar";
+kernRight = hah.init;
 layers = (
 {
 anchors = (
