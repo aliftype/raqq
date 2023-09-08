@@ -1,6 +1,7 @@
 {
 color = 9;
 glyphname = "dal-ar.fina";
+kernLeft = dal.fina;
 kernRight = sad;
 layers = (
 {

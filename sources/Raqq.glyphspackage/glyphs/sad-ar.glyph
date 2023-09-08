@@ -1,6 +1,8 @@
 {
 color = 9;
 glyphname = "sad-ar";
+kernLeft = sad.isol;
+kernRight = dal.isol;
 layers = (
 {
 anchors = (

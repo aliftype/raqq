@@ -1,5 +1,6 @@
 {
 glyphname = "heh-ar.init.round";
+kernRight = heh.init;
 layers = (
 {
 anchors = (
@@ -92,6 +93,6 @@ nodes = (
 width = 327;
 }
 );
-metricLeft = "=meem-ar.medi.alt";
+metricLeft = "=meem-ar.medi.round";
 metricRight = "=0";
 }

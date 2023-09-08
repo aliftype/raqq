@@ -1,6 +1,7 @@
 {
 color = 9;
 glyphname = "kaf-ar";
+kernRight = dal.isol;
 layers = (
 {
 anchors = (

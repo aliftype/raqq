@@ -1,5 +1,6 @@
 {
 glyphname = "seen-ar.fina";
+kernLeft = seen.isol;
 kernRight = beh;
 layers = (
 {

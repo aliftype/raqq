@@ -1,6 +1,7 @@
 {
 color = 9;
 glyphname = "sad-ar.fina";
+kernLeft = sad.isol;
 kernRight = sad;
 layers = (
 {

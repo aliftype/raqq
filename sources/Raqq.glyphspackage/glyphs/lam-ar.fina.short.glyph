@@ -1,5 +1,6 @@
 {
 glyphname = "lam-ar.fina.short";
+kernLeft = lam.fina;
 kernRight = beh;
 layers = (
 {
