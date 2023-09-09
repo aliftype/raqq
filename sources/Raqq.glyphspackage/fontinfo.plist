@@ -177,6 +177,7 @@ lookup ccmp_hamza_1 {
 	sub kashida-ar hamzaabove-ar fathatan-ar by hamza_fathatan-ar;
 	sub hamzaabove-ar fatha-ar by fatha-ar;
 	sub hamzaabove-ar damma-ar by damma-ar;
+	sub kashida-ar hamzaabove-ar damma-ar by damma-ar;
 	sub hamzabelow-ar kasra-ar by kasra-ar;
 	sub hamzaabove-ar kasra-ar by kasra-ar;
 	sub hamzabelow-ar kasratan-ar by kasratan-ar;
@@ -424,42 +425,9 @@ code = "lookup rlig_vertical_dots {
 name = marks;
 },
 {
-code = "# Disallow kashida after letters that can themselves elongate.
-lookup rlig_kashida {
-	lookupflag IgnoreMarks;
-
-	ignore
-	sub [sad-ar.init sad-ar.medi
-		 tah-ar.init tah-ar.medi
-		 kaf-ar.init kaf-ar.medi
-		 kashida-ar]
-		 kashida-ar'
-	;
-
-	sub	 kashida-ar'
-	by	 kashida-ar.medi
-	;
-} rlig_kashida;
-
-# Disallow kashida before letters that can themselves elongate.
-lookup rlig_kashida_2 {
-	lookupflag IgnoreMarks;
-
-	rsub kashida-ar.medi'
-		[kashida-ar dal-ar.fina
-		 sad-ar.medi sad-ar.fina
-		 tah-ar.medi tah-ar.fina
-		 kaf-ar.medi kaf-ar.fina]
-	by	 kashida-ar
-	;
-} rlig_kashida_2;
-";
-name = kashida;
-},
-{
-code = "@medi.l0 = [$[name LIKE \"*.medi\" && ! name ENDSWITH \".l1\" && ! name BEGINSWITH \"_\" && ! name MATCHES \"^(lam|tah|alefabove)-ar.*\"]];
-@medi.l1 = [$[name LIKE \"*.medi.l1\"]];
-@medi.l2 = [$[name LIKE \"*.medi.l2\"]];
+code = "@medi.l0 = [$[name LIKE \"*.medi\" && ! name ENDSWITH \".l1\" && ! name BEGINSWITH \"_\" && ! name MATCHES \"^(lam|tah|alefabove)-ar.*\"] kashida-ar];
+@medi.l1 = [$[name LIKE \"*.medi.l1\"] kashida-ar.l1];
+@medi.l2 = [$[name LIKE \"*.medi.l2\"] kashida-ar.l2];
 @medi.l0.full = [@medi.l0 lam-ar.medi tah-ar.medi];
 @medi.l1.full = [@medi.l1 lam-ar.medi.hah1 tah-ar.medi.hah1];
 @medi.l2.full = [@medi.l2 lam-ar.medi.hah2 tah-ar.medi.hah2];
@@ -823,14 +791,14 @@ code = "@beh = [$[name MATCHES \"behDotless-ar.(init|medi).*\" && ! name MATCHES
 @heh = [heh-ar.init heh-ar.medi];
 
 @before_beh1 = [@beh @seen @sad @lam @meem];
-@before_beh = [@before_beh1 @hah @ain @feh @heh kashida-ar.medi];
+@before_beh = [@before_beh1 @hah @ain @feh @heh kashida-ar];
 lookup before_beh {
 	sub @before_beh1		by @before_beh1 _c.seen.beh;
 	sub @heh				by @heh _c.feh.medi.beh;
 	sub	@hah				by @hah _c.hah.beh;
 	sub @ain				by @ain [_c.ain.init.beh _c.ain.medi.beh];
 	sub @feh				by @feh [_c.feh.init.beh _c.feh.medi.beh];
-	sub kashida-ar.medi		by kashida-ar.medi _c.ain.init.beh;
+	sub kashida-ar			by kashida-ar _c.ain.init.beh;
 } before_beh;
 
 lookup before_dal {
@@ -839,22 +807,22 @@ lookup before_dal {
 	sub @ain				by @ain _c.ain.dal;
 } before_dal;
 
-@before_reh = [@hah @ain fehDotless-ar.medi kashida-ar.medi];
+@before_reh = [@hah @ain fehDotless-ar.medi kashida-ar];
 lookup before_reh {
 	sub @hah				by @hah _c.hah.reh;
 	sub @ain				by @ain [_c.hah.reh _c.ain.medi.reh];
 	sub fehDotless-ar.medi	by fehDotless-ar.medi _c.feh.medi.reh;
-	sub kashida-ar.medi		by kashida-ar.medi _c.hah.reh;
+	sub kashida-ar			by kashida-ar _c.hah.reh;
 } before_reh;
 
 lookup before_meem {
 	sub fehDotless-ar.medi	by fehDotless-ar.medi _c.feh.medi.meem;
 	sub @seen				by @seen _c.seen.meem;
 	sub [@hah @ain]			by [@hah @ain] _c.ain.meem;
-	sub kashida-ar.medi		by kashida-ar.medi _c.ain.meem;
+	sub kashida-ar			by kashida-ar _c.ain.meem;
 } before_meem;
 
-@before_noon = [@hah @seen @ain fehDotless-ar.init fehDotless-ar.medi kashida-ar.medi];
+@before_noon = [@hah @seen @ain fehDotless-ar.init fehDotless-ar.medi kashida-ar];
 lookup before_noon {
 	sub @before_noon		by @before_noon _c.hah.noon;
 } before_noon;
@@ -863,7 +831,7 @@ lookup before_waw {
 	sub fehDotless-ar.medi	by fehDotless-ar.medi _c.feh.medi.waw;
 } before_waw;
 
-@before_yeh = [@hah @ain kashida-ar.medi];
+@before_yeh = [@hah @ain kashida-ar];
 lookup before_yeh {
 	sub @before_yeh			by @before_yeh _c.ain.yeh;
 } before_yeh;
@@ -897,7 +865,7 @@ lookup rclt_connection {
 		 reh-ar.fina
 	;
 
-	sub	[@seen @hah @ain fehDotless-ar.medi kashida-ar.medi]' lookup before_meem
+	sub	[@seen @hah @ain fehDotless-ar.medi kashida-ar]' lookup before_meem
 		[qafDotless-ar.fina meem-ar.medi meem-ar.medi.round2 meem-ar.fina]
 	;
 
@@ -972,8 +940,6 @@ lookup rlig_hah_medi_l2;
 lookup rlig_hah_init;
 lookup rlig_hah_cleanup;
 lookup rlig_vertical_dots;
-lookup rlig_kashida;
-lookup rlig_kashida_2;
 lookup rlig_teeth_1;
 lookup rlig_teeth_2;
 lookup rlig_wide_yeh;
@@ -1601,7 +1567,7 @@ _c.hah.noon = -25;
 "kaf-ar.fina" = {
 "alef-ar" = -50;
 };
-"kashida-ar.medi" = {
+"kashida-ar" = {
 _c.hah.reh = -67;
 };
 "lam-ar.fina.short" = {
