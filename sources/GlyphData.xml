@@ -499,7 +499,7 @@
   <glyph name="heh-ar.medi.l1" category="Placeholder" script="arabic" decompose="heh-ar.medi"
          sortName="arL0330"
   />
-  <glyph name="kashida-ar.medi.l1" category="Placeholder" script="arabic" decompose="kashida-ar.medi"
+  <glyph name="kashida-ar.l1" category="Placeholder" script="arabic" decompose="kashida-ar"
          sortName="arL0331"
   />
 
@@ -537,7 +537,7 @@
   <glyph name="heh-ar.medi.l2" category="Placeholder" script="arabic" decompose="heh-ar.medi"
          sortName="arL0350"
   />
-  <glyph name="kashida-ar.medi.l2" category="Placeholder" script="arabic" decompose="kashida-ar.medi"
+  <glyph name="kashida-ar.l2" category="Placeholder" script="arabic" decompose="kashida-ar"
          sortName="arL0351"
   />
 
