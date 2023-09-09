@@ -178,13 +178,13 @@ It can be activated manually when needed using option 2 of Stylistic Alternates 
 > أي ؞ على ؞ يا بني ؞ إلي
 
 > أي ؞ على ؞ يا بني ؞ *إلي*{:.ش١٠٠}
-{:.kufi .salt2 .s-20}
+{:.kufi .salt2 .s-15}
 
 Or by typing the relevant Unicode character:
 > أے ؞ علے ؞ يا بنے ؞ إلے
 
 > أے ؞ علے ؞ يا بنے ؞ *إلے*{:.ش١٠٠}
-{:.kufi .s-20}
+{:.kufi .s-15}
 
 ### _Meem_
 Sometimes _meem_ in Kufic connects to specific letters by merely touching them, instead of a full baseline stroke. _Raqq_ will chose the right form of connection from the context:
