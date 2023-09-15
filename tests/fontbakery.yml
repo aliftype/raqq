@@ -9,6 +9,7 @@ exclude_checks:
   - com.google.fonts/check/unitsperem
   - com.google.fonts/check/outline_alignment_miss
   - com.google.fonts/check/contour_count
+  - com.google.fonts/check/fontbakery_version
   - com.adobe.fonts/check/varfont/same_size_instance_records
   - com.adobe.fonts/check/stat_has_axis_value_tables
   - com.adobe.fonts/check/varfont/foundry_defined_tag_name
