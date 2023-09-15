@@ -11,7 +11,7 @@ pos = (250,-40);
 },
 {
 name = damma;
-pos = (0,174);
+pos = (26,143);
 },
 {
 name = entry;
