@@ -839,6 +839,14 @@ lookup before_yeh {
 lookup rclt_connection {
 	lookupflag IgnoreMarks;
 
+	ignore
+	sub [kaf-ar.init kaf-ar.medi]'
+		 kashida-ar
+	;
+	sub	[kaf-ar.init kaf-ar.medi]'
+	by	[kaf-ar.init.alt kaf-ar.medi.alt]
+	;
+
 	sub	 @before_beh' lookup before_beh
 		[$[rightKerningGroup = \"beh\"] fehDotless-ar.medi fehDotless-ar.fina]
 	;
@@ -1498,7 +1506,7 @@ _c.hah.reh = -88;
 "fehDotless-ar.init.yeh" = -62;
 "heh-ar" = -12;
 "kaf-ar" = 0;
-"kaf-ar.init" = 0;
+"kaf-ar.init.alt" = 0;
 "meem-ar.init" = -20;
 "meem-ar.init.round" = -10;
 "qafDotless-ar" = -80;

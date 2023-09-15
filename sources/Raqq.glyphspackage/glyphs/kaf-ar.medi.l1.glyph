@@ -6,7 +6,7 @@ layers = (
 layerId = m01;
 shapes = (
 {
-ref = "kaf-ar.medi";
+ref = "kaf-ar.medi.alt";
 }
 );
 width = 758;

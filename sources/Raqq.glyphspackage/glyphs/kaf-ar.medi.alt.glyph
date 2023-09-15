@@ -1,6 +1,6 @@
 {
 color = 9;
-glyphname = "kaf-ar.medi";
+glyphname = "kaf-ar.medi.alt";
 kernLeft = kaf;
 kernRight = sad;
 layers = (
@@ -18,7 +18,7 @@ layerId = m01;
 shapes = (
 {
 alignment = -1;
-ref = "kaf-ar.init";
+ref = "kaf-ar.init.alt";
 },
 {
 alignment = -1;
@@ -51,7 +51,7 @@ name = "17 May 23 at 02:07";
 shapes = (
 {
 alignment = -1;
-ref = "kaf-ar.init";
+ref = "kaf-ar.init.alt";
 },
 {
 alignment = -1;
@@ -59,6 +59,7 @@ pos = (5592,0);
 ref = _p.sad;
 }
 );
+visible = 1;
 width = 5993;
 },
 {
@@ -84,7 +85,7 @@ name = "17 May 23 at 13:22";
 shapes = (
 {
 alignment = -1;
-ref = "kaf-ar.init";
+ref = "kaf-ar.init.alt";
 },
 {
 alignment = -1;
@@ -92,6 +93,7 @@ pos = (13,0);
 ref = _p.sad;
 }
 );
+visible = 1;
 width = 414;
 }
 );
