@@ -32,7 +32,7 @@ FONTS = $(FONTDIR)/$(NAME).ttf
 WOFF2 = $(FONTDIR)/$(NAME).woff2
 FEA = $(SOURCEDIR)/overhang.fea
 JSON = $(TESTDIR)/shaping.json $(TESTDIR)/decomposition.json
-HTML = $(TESTDIR)/$(NAME).html
+HTML = $(TESTDIR)/$(NAME)-shaping.html $(TESTDIR)/$(NAME)-fb.html
 GLYPHDATA = $(SOURCEDIR)/GlyphData.xml
 
 ARGS ?= 
@@ -61,10 +61,13 @@ $(FONTDIR)/%.woff2: $(FONTDIR)/%.ttf
 	$(info   WOFF2  $(@F))
 	python $(SCRIPTDIR)/buildwoff2.py $< $@
 
-$(TESTDIR)/%.html: $(FONTDIR)/%.ttf $(TESTDIR)/fontbakery.yml
+$(TESTDIR)/%-shaping.html: $(FONTDIR)/%.ttf $(TESTDIR)/fontbakery.yml
 	$(info   TEST   $(<F))
-	fontbakery check-universal --config=$(TESTDIR)/fontbakery.yml \
-                   fontbakery.profiles.shaping $< --html=$@ -l WARN &> /dev/null
+	fontbakery check-shaping --config=$(TESTDIR)/fontbakery.yml $< --html=$@ -l WARN &> /dev/null
+
+$(TESTDIR)/%-fb.html: $(FONTDIR)/%.ttf $(TESTDIR)/fontbakery.yml
+	$(info   SHP    $(<F))
+	fontbakery check-universal --config=$(TESTDIR)/fontbakery.yml $< --html=$@ -l WARN &> /dev/null
 
 $(TESTDIR)/decomposition.json: $(SOURCEDIR)/$(NAME).glyphspackage $(FONTS)
 	$(info   GEN    $(@F))
