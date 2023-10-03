@@ -22,11 +22,11 @@ booleanoperations==0.9.0
     # via ufo2ft
 certifi==2023.7.22
     # via requests
-cffi==1.15.1
+cffi==1.16.0
     # via cmarkgfm
 cffsubr==0.2.9.post1
     # via ufo2ft
-charset-normalizer==3.2.0
+charset-normalizer==3.3.0
     # via requests
 cmarkgfm==2022.10.27
     # via fontbakery
@@ -46,11 +46,11 @@ docopt==0.6.2
     # via num2words
 font-v==2.1.0
     # via fontbakery
-fontbakery==0.9.1
+fontbakery==0.9.2
     # via -r requirements-test.in
 fontfeatures==1.8.0
     # via babelfont
-fonttools==4.42.1
+fonttools==4.43.0
     # via
     #   axisregistry
     #   babelfont
@@ -76,17 +76,17 @@ fs==2.4.16
     # via
     #   fontfeatures
     #   fonttools
-gflanguages==0.5.6
+gflanguages==0.5.7
     # via
     #   fontbakery
     #   shaperglot
 gitdb==4.0.10
     # via gitpython
-gitpython==3.1.36
+gitpython==3.1.37
     # via font-v
-glyphsets==0.6.2
+glyphsets==0.6.4
     # via fontbakery
-glyphslib==6.4.0
+glyphslib==6.4.1
     # via
     #   babelfont
     #   glyphsets
@@ -116,7 +116,7 @@ opentypespec==1.9.1
     # via fontbakery
 orjson==3.9.7
     # via babelfont
-packaging==23.1
+packaging==23.2
     # via fontbakery
 pip-api==0.0.30
     # via fontbakery
@@ -142,7 +142,7 @@ requests==2.31.0
     # via
     #   fontbakery
     #   youseedee
-rich==13.5.3
+rich==13.6.0
     # via fontbakery
 rstr==3.2.1
     # via stringbrewer
@@ -184,9 +184,9 @@ uharfbuzz==0.37.3
     # via
     #   collidoscope
     #   vharfbuzz
-unicodedata2==15.0.0
+unicodedata2==15.1.0
     # via fonttools
-urllib3==2.0.4
+urllib3==2.0.6
     # via requests
 vharfbuzz==0.2.0
     # via
