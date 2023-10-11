@@ -1,5 +1,5 @@
 {
-.appVersion = "3219";
+.appVersion = "3221";
 .formatVersion = 3;
 axes = (
 {
@@ -1313,7 +1313,7 @@ _c.ain.yeh = -40;
 _c.hah.dal = -71;
 _c.hah.noon = -20;
 _c.hah.reh = -131;
-"lam_alef-ar.fina" = -69;
+"lam_alef-ar.fina" = -37;
 "seen-ar.medi.low" = 5;
 };
 "@MMK_R_heh" = {
@@ -1452,10 +1452,10 @@ _c.ain.init.beh = -50;
 _c.ain.yeh = 0;
 _c.hah.dal = -25;
 _c.hah.reh = -88;
-"lam_alef-ar.fina" = -47;
+"lam_alef-ar.fina" = -20;
 };
 "ain-ar.medi" = {
-"lam_alef-ar.fina" = -80;
+"lam_alef-ar.fina" = -21;
 };
 "alef-ar" = {
 "@MMK_L_beh.init" = -10;
@@ -1514,13 +1514,11 @@ _c.hah.reh = -88;
 };
 "behDotless-ar.init" = {
 "@MMK_L_sad" = -21;
-"lam_alef-ar.fina" = -60;
 "noonghunna-ar.fina" = -34;
 "waw-ar.fina" = -10;
 };
 "behDotless-ar.medi" = {
 "@MMK_L_sad" = -24;
-"lam_alef-ar.fina" = -60;
 "noonghunna-ar.fina" = -34;
 "waw-ar.fina" = -10;
 };
@@ -1551,7 +1549,7 @@ _c.hah.reh = -88;
 "fehDotless-ar.init" = {
 _c.feh.init.beh = -114;
 _c.feh.init.dal = -117;
-"lam_alef-ar.fina" = -70;
+"lam_alef-ar.fina" = -30;
 };
 "fehDotless-ar.init.hah" = {
 "hah-ar.fina" = 11;
@@ -1566,11 +1564,17 @@ _c.feh.medi.dal = -78;
 _c.feh.medi.meem = -71;
 _c.feh.medi.reh = -70;
 _c.hah.noon = -25;
-"lam_alef-ar.fina" = -80;
+"lam_alef-ar.fina" = -42;
 "seen-ar.medi.low" = -10;
 };
 "fehDotless_alef-ar" = {
 "alef-ar" = -7;
+};
+"hah-ar.init" = {
+"lam_alef-ar.fina" = -57;
+};
+"hah-ar.medi.alt" = {
+"lam_alef-ar.fina" = -57;
 };
 "kaf-ar.fina" = {
 "alef-ar" = -50;
