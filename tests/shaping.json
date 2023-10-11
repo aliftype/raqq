@@ -1010,7 +1010,7 @@
     },
     {
       "input": "بلا",
-      "expectation": "lam_alef-ar.fina=1+510|dotbelow-ar=0@12,-46+0|behDotless-ar.init=0@-60,0+70"
+      "expectation": "lam_alef-ar.fina=1+510|dotbelow-ar=0@72,-46+0|behDotless-ar.init=0+130"
     },
     {
       "input": "بلٍ",
@@ -1170,7 +1170,7 @@
     },
     {
       "input": "حلا",
-      "expectation": "lam_alef-ar.fina=1+510|hah-ar.init=0@-69,0+634"
+      "expectation": "lam_alef-ar.fina=1+510|hah-ar.init=0@-57,0+646"
     },
     {
       "input": "حلن",
@@ -1370,7 +1370,7 @@
     },
     {
       "input": "علا",
-      "expectation": "lam_alef-ar.fina=1+510|ain-ar.init=0@-47,0+643"
+      "expectation": "lam_alef-ar.fina=1+510|ain-ar.init=0@-20,0+670"
     },
     {
       "input": "علج",
@@ -1482,15 +1482,15 @@
     },
     {
       "input": "فلآ",
-      "expectation": "madda-ar=1@149,582+0|lam_alef-ar.fina=1+510|dotabove-ar=0@-131,373+0|fehDotless-ar.init=0@-70,0+264"
+      "expectation": "madda-ar=1@149,582+0|lam_alef-ar.fina=1+510|dotabove-ar=0@-91,373+0|fehDotless-ar.init=0@-30,0+304"
     },
     {
       "input": "فلأ",
-      "expectation": "fatha-ar=1@335,570+0|lam_alef-ar.fina=1+510|dotabove-ar=0@-131,373+0|fehDotless-ar.init=0@-70,0+264"
+      "expectation": "fatha-ar=1@335,570+0|lam_alef-ar.fina=1+510|dotabove-ar=0@-91,373+0|fehDotless-ar.init=0@-30,0+304"
     },
     {
       "input": "فلا",
-      "expectation": "lam_alef-ar.fina=1+510|dotabove-ar=0@-131,373+0|fehDotless-ar.init=0@-70,0+264"
+      "expectation": "lam_alef-ar.fina=1+510|dotabove-ar=0@-91,373+0|fehDotless-ar.init=0@-30,0+304"
     },
     {
       "input": "فما",
@@ -2923,7 +2923,7 @@
     },
     {
       "input": "فلاُ",
-      "expectation": "damma-ar=1@-137,-14+0|lam_alef-ar.fina=1+510|dotabove-ar=0@-131,373+0|fehDotless-ar.init=0@-70,0+264"
+      "expectation": "damma-ar=1@-137,-14+0|lam_alef-ar.fina=1+510|dotabove-ar=0@-91,373+0|fehDotless-ar.init=0@-30,0+304"
     },
     {
       "input": "فلِي",
@@ -2943,7 +2943,7 @@
     },
     {
       "input": "لحلا",
-      "expectation": "lam_alef-ar.fina=2+510|hah-ar.medi.alt=1@-69,0+66|lam-ar.init.hah1.alt=0@63,5+578"
+      "expectation": "lam_alef-ar.fina=2+510|hah-ar.medi.alt=1@-57,0+78|lam-ar.init.hah1.alt=0@63,5+578"
     },
     {
       "input": "لسبا",
@@ -3131,7 +3131,7 @@
     },
     {
       "input": "نعلا",
-      "expectation": "lam_alef-ar.fina=2+510|ain-ar.medi=1@-80,0+140|dotabove-ar.beh=0@-9,392+0|_c.seen.beh=0+0|behDotless-ar.init.high=0+130"
+      "expectation": "lam_alef-ar.fina=2+510|ain-ar.medi=1@-21,0+199|dotabove-ar.beh=0@-9,392+0|_c.seen.beh=0+0|behDotless-ar.init.high=0+130"
     },
     {
       "input": "نعلن",
@@ -3191,7 +3191,7 @@
     },
     {
       "input": "نفلا",
-      "expectation": "lam_alef-ar.fina=2+510|dotabove-ar=1@-79,329+0|fehDotless-ar.medi=1@-80,0+297|dotabove-ar=0@2,299+0|_c.seen.beh=0+0|behDotless-ar.init=0+130"
+      "expectation": "lam_alef-ar.fina=2+510|dotabove-ar=1@-41,329+0|fehDotless-ar.medi=1@-42,0+335|dotabove-ar=0@2,299+0|_c.seen.beh=0+0|behDotless-ar.init=0+130"
     },
     {
       "input": "نفلن",
@@ -4476,7 +4476,7 @@
     },
     {
       "input": "قليلا",
-      "expectation": "lam_alef-ar.fina=3+510|twodotsverticalbelow-ar=2@-51,-137+0|behDotless-ar.medi=2@-60,0+68|_c.seen.beh=1+0|lam-ar.medi=1+125|twodotsverticalabove-ar=0@-31,381+0|_c.feh.init.beh=0+174|fehDotless-ar.init=0@-114,0+220"
+      "expectation": "lam_alef-ar.fina=3+510|twodotsverticalbelow-ar=2@9,-137+0|behDotless-ar.medi=2+128|_c.seen.beh=1+0|lam-ar.medi=1+125|twodotsverticalabove-ar=0@-31,381+0|_c.feh.init.beh=0+174|fehDotless-ar.init=0@-114,0+220"
     },
     {
       "input": "لحححا",
@@ -4609,7 +4609,7 @@
     },
     {
       "input": "مَثلاً",
-      "expectation": "fathatan-ar.alt=3@335,503+0|lam_alef-ar.fina=3+510|threedotsupabove-ar.vert.beh=2@-55,298+0|behDotless-ar.medi=2@-60,0+68|fatha-ar=0@165,345+0|_c.seen.beh=0+0|meem-ar.init=0+425"
+      "expectation": "fathatan-ar.alt=3@335,503+0|lam_alef-ar.fina=3+510|threedotsupabove-ar.vert.beh=2@5,298+0|behDotless-ar.medi=2+128|fatha-ar=0@165,345+0|_c.seen.beh=0+0|meem-ar.init=0+425"
     },
     {
       "input": "يلبسون",

@@ -167,7 +167,6 @@ nodes = (
 );
 }
 );
-visible = 1;
 width = 6000;
 },
 {
@@ -256,7 +255,6 @@ nodes = (
 );
 }
 );
-visible = 1;
 width = 422;
 }
 );
