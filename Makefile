@@ -66,7 +66,7 @@ $(TESTDIR)/%-shaping.html: $(FONTDIR)/%.ttf $(TESTDIR)/fontbakery.yml
 	fontbakery check-shaping --config=$(TESTDIR)/fontbakery.yml $< --html=$@ -l WARN &> /dev/null
 
 $(TESTDIR)/%-fb.html: $(FONTDIR)/%.ttf $(TESTDIR)/fontbakery.yml
-	$(info   SHP    $(<F))
+	$(info   SHAPE  $(<F))
 	fontbakery check-universal --config=$(TESTDIR)/fontbakery.yml $< --html=$@ -l WARN &> /dev/null
 
 $(TESTDIR)/decomposition.json: $(SOURCEDIR)/$(NAME).glyphspackage $(FONTS)
