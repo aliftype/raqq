@@ -30,6 +30,7 @@ def parsefeatures(text):
             features[fea] = True
     return features
 
+
 def shape(font, text, direction, script, language, features):
     buffer = hb.Buffer()
     buffer.add_str(text)
