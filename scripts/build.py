@@ -156,6 +156,9 @@ def getAnchorPos(font, glyph, default, name):
     return f"({' '.join(x)})", f"({' '.join(y)})"
 
 
+AYAH_ANCHORS = {"ayah"}
+
+
 def makeMark(font, glyphOrder):
     classes = ""
     mark2base = {}
@@ -174,6 +177,8 @@ def makeMark(font, glyphOrder):
         layer = glyph.layers[0]
         for anchor in layer.anchors:
             name = anchor.name
+            if name in AYAH_ANCHORS:
+                continue
             x, y = getAnchorPos(font, glyph, layer, name)
             if name.startswith("_"):
                 classes += f"markClass {gname} <anchor {x} {y}> @mark_{name[1:]};\n"
@@ -197,21 +202,64 @@ def makeMark(font, glyphOrder):
                 mark2liga += f" <anchor {x} {y}> mark @mark_{anchor}"
         mark2liga += ";\n"
 
+    ayah = makeAyah(font, glyphOrder)
+
     base = ""
     for name, code in mark2base.items():
         base += f"""
 lookup mark2base_{name} {{
+lookupflag 0;
 {code}
 }} mark2base_{name};
 """
 
     return f"""
+{ayah}
 {classes}
 {base}
 lookup mark2liga_auto {{
+lookupflag 0;
 {mark2liga}
 }} mark2liga_auto;
 """
+
+
+def makeAyah(font, glyphOrder):
+    bases = []
+    marks = []
+    for gname in glyphOrder:
+        glyph = font.glyphs[gname]
+        if glyph is None:
+            continue
+
+        layer = glyph.layers[0]
+        for anchor in layer.anchors:
+            if anchor.name in AYAH_ANCHORS:
+                x = layer.width - anchor.position.x
+                y = anchor.position.y
+                bases.append((gname, (x, y)))
+                break
+            if anchor.name.startswith("_") and anchor.name[1:] in AYAH_ANCHORS:
+                x = anchor.position.x
+                y = anchor.position.y
+                marks.append((gname, (x, y)))
+                break
+
+    ayah = ""
+    for base, (bx, by) in bases:
+        for mark, (mx, my) in marks:
+            x = bx + mx
+            y = by - my
+            ayah += f"pos {base} <NULL> {mark} <{-x} {y} 0 0>;\n"
+
+    if ayah:
+        return f"""
+lookup ayah_auto {{
+lookupflag 0;
+{ayah}
+}} ayah_auto;
+        """
+    return ""
 
 
 def makeCurs(font, glyphOrder):
@@ -308,6 +356,10 @@ def makeFeatures(font, master, args, glyphOrder):
                 auto = makeCurs(font, glyphOrder)
             elif feature.name == "kern":
                 auto = makeKern(font, master)
+            else:
+                raise ValueError(
+                    f"Unknown feature for “# Automatic Code”: {feature.name}"
+                )
             code = "\n".join([before, auto, after])
         fea += f"""
             feature {feature.name} {{
