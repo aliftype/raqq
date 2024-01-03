@@ -170,7 +170,6 @@ code = "lookup ccmp_1 {
 	sub wawHamzaabove-ar by waw-ar hamzaabove-ar;
 	sub yeh-ar by alefMaksura-ar twodotsverticalbelow-ar;
 	sub yehHamzaabove-ar by alefMaksura-ar hamzaabove-ar;
-	sub sajdah-ar by endofayah-ar.10 ayah.sajdah;
 } ccmp_1;
 
 lookup ccmp_hamza_1 {
@@ -922,8 +921,7 @@ lookup ccmp_vertical_vowels;
 lookup ccmp_kashida;
 lookup ccmp_ayah_numbers;
 lookup ccmp_ayah_10;
-lookup ccmp_ayah_cleanup;
-";
+lookup ccmp_ayah_cleanup;";
 tag = ccmp;
 },
 {
@@ -1278,7 +1276,6 @@ GSOffsetPosition = 1;
 GSOffsetProportional = 1;
 GSOffsetVertical = 10;
 };
-visible = 1;
 }
 );
 instances = (
