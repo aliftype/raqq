@@ -4,7 +4,7 @@ layers = (
 {
 anchors = (
 {
-name = _top;
+name = _ayah;
 pos = (169,161);
 }
 );
@@ -44,7 +44,7 @@ width = 350;
 {
 anchors = (
 {
-name = _top;
+name = _ayah;
 pos = (169,161);
 }
 );
@@ -91,7 +91,7 @@ width = 350;
 {
 anchors = (
 {
-name = _top;
+name = _ayah;
 pos = (169,161);
 }
 );
