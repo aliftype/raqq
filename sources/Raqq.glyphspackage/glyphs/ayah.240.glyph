@@ -5,50 +5,50 @@ layers = (
 anchors = (
 {
 name = _ayah;
-pos = (155,131);
+pos = (155,183);
 }
 );
 layerId = m01;
 shapes = (
 {
 alignment = -1;
-pos = (132,193);
+pos = (132,245);
 ref = _ayah.200;
 scale = (0.56,0.48);
 },
 {
 alignment = -1;
-pos = (72,141);
+pos = (72,193);
 ref = _ayah.noon;
 scale = (0.56,0.56);
 },
 {
 alignment = -1;
-pos = (0,195);
+pos = (0,247);
 ref = _ayah.waw;
 scale = (0.56,0.56);
 },
 {
 alignment = -1;
-pos = (223,58);
+pos = (223,110);
 ref = _ayah.alef;
 scale = (0.48,0.45);
 },
 {
 alignment = -1;
-pos = (138,60);
+pos = (138,112);
 ref = _ayah.reh;
 scale = (0.48,0.48);
 },
 {
 alignment = -1;
-pos = (2,66);
+pos = (2,118);
 ref = _ayah.040;
 scale = (0.48,0.48);
 },
 {
 alignment = -1;
-pos = (115,-38);
+pos = (115,14);
 ref = _ayah.noon;
 scale = (0.56,0.56);
 }
@@ -67,43 +67,43 @@ name = "17 Apr 23 at 00:00";
 shapes = (
 {
 alignment = -1;
-pos = (132,193);
+pos = (132,245);
 ref = _ayah.200.1;
 scale = (0.56,0.48);
 },
 {
 alignment = -1;
-pos = (72,141);
+pos = (72,193);
 ref = _ayah.noon.1;
 scale = (0.56,0.56);
 },
 {
 alignment = -1;
-pos = (0,195);
+pos = (0,247);
 ref = _ayah.waw.1;
 scale = (0.56,0.56);
 },
 {
 alignment = -1;
-pos = (223,58);
+pos = (223,110);
 ref = _ayah.alef.1;
 scale = (0.48,0.45);
 },
 {
 alignment = -1;
-pos = (138,60);
+pos = (138,112);
 ref = _ayah.reh.1;
 scale = (0.48,0.48);
 },
 {
 alignment = -1;
-pos = (2,66);
+pos = (2,118);
 ref = _ayah.040.1;
 scale = (0.48,0.48);
 },
 {
 alignment = -1;
-pos = (115,-38);
+pos = (115,14);
 ref = _ayah.noon.1;
 scale = (0.56,0.56);
 }
@@ -120,43 +120,43 @@ name = "Color 1 17 Apr 23 at 00:03";
 shapes = (
 {
 alignment = -1;
-pos = (132,193);
+pos = (132,245);
 ref = _ayah.200;
 scale = (0.56,0.48);
 },
 {
 alignment = -1;
-pos = (72,141);
+pos = (72,193);
 ref = _ayah.noon;
 scale = (0.56,0.56);
 },
 {
 alignment = -1;
-pos = (0,195);
+pos = (0,247);
 ref = _ayah.waw;
 scale = (0.56,0.56);
 },
 {
 alignment = -1;
-pos = (223,58);
+pos = (223,110);
 ref = _ayah.alef;
 scale = (0.48,0.45);
 },
 {
 alignment = -1;
-pos = (138,60);
+pos = (138,112);
 ref = _ayah.reh;
 scale = (0.48,0.48);
 },
 {
 alignment = -1;
-pos = (2,66);
+pos = (2,118);
 ref = _ayah.040;
 scale = (0.48,0.48);
 },
 {
 alignment = -1;
-pos = (115,-38);
+pos = (115,14);
 ref = _ayah.noon;
 scale = (0.56,0.56);
 }
