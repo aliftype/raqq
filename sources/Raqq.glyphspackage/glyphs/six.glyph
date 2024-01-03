@@ -1,5 +1,5 @@
 {
-glyphname = "nine-ar";
+glyphname = six;
 layers = (
 {
 layerId = m01;
@@ -7,5 +7,5 @@ width = 0;
 }
 );
 metricWidth = "=0";
-unicode = 1641;
+unicode = 54;
 }

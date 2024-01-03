@@ -232,67 +232,77 @@ lookup ccmp_vertical_vowels {
 } ccmp_vertical_vowels;
 
 @numbers = [$[category == \"Number\" && subCategory == \"Decimal Digit\"]];
+@one = [one one-ar];
+@two = [two two-ar];
+@three = [three three-ar];
+@four = [four four-ar];
+@five = [five five-ar];
+@six = [six six-ar];
+@seven = [seven seven-ar];
+@eight = [eight eight-ar];
+@nine = [nine nine-ar];
+@zero = [zero zero-ar];
 
 lookup ayah_05 {
-	sub endofayah-ar			by endofayah-ar.05;
+	sub endofayah-ar		by endofayah-ar.05;
 } ayah_05;
 
 lookup ayah_10 {
-	sub endofayah-ar			by endofayah-ar.10;
+	sub endofayah-ar		by endofayah-ar.10;
 } ayah_10;
 
 lookup ayah_numbers_10s {
-	sub one-ar zero-ar			by ayah.010;
-	sub two-ar zero-ar			by ayah.020;
-	sub three-ar zero-ar		by ayah.030;
-	sub four-ar zero-ar			by ayah.040;
-	sub five-ar zero-ar			by ayah.050;
-	sub six-ar zero-ar			by ayah.060;
-	sub seven-ar zero-ar		by ayah.070;
-	sub eight-ar zero-ar		by ayah.080;
-	sub nine-ar zero-ar			by ayah.090;
+	sub @one @zero 			by ayah.010;
+	sub @two @zero 			by ayah.020;
+	sub @three @zero 		by ayah.030;
+	sub @four @zero 		by ayah.040;
+	sub @five @zero 		by ayah.050;
+	sub @six @zero 			by ayah.060;
+	sub @seven @zero 		by ayah.070;
+	sub @eight @zero 		by ayah.080;
+	sub @nine @zero 		by ayah.090;
 } ayah_numbers_10s;
 
 lookup ayah_numbers_100s {
-	sub one-ar zero-ar zero-ar	by ayah.100;
-	sub one-ar one-ar zero-ar	by ayah.110;
-	sub one-ar two-ar zero-ar	by ayah.120;
-	sub one-ar three-ar zero-ar	by ayah.130;
-	sub one-ar four-ar zero-ar	by ayah.140;
-	sub one-ar five-ar zero-ar	by ayah.150;
-	sub one-ar six-ar zero-ar	by ayah.160;
-	sub one-ar seven-ar zero-ar	by ayah.170;
-	sub one-ar eight-ar zero-ar	by ayah.180;
-	sub one-ar nine-ar zero-ar	by ayah.190;
-	sub two-ar zero-ar zero-ar	by ayah.200;
-	sub two-ar one-ar zero-ar	by ayah.210;
-	sub two-ar two-ar zero-ar	by ayah.220;
-	sub two-ar three-ar zero-ar	by ayah.230;
-	sub two-ar four-ar zero-ar	by ayah.240;
-	sub two-ar five-ar zero-ar	by ayah.250;
-	sub two-ar six-ar zero-ar	by ayah.260;
-	sub two-ar seven-ar zero-ar	by ayah.270;
-	sub two-ar eight-ar zero-ar	by ayah.280;
+	sub @one @zero @zero 	by ayah.100;
+	sub @one @one @zero 	by ayah.110;
+	sub @one @two @zero 	by ayah.120;
+	sub @one @three @zero 	by ayah.130;
+	sub @one @four @zero 	by ayah.140;
+	sub @one @five @zero 	by ayah.150;
+	sub @one @six @zero 	by ayah.160;
+	sub @one @seven @zero 	by ayah.170;
+	sub @one @eight @zero 	by ayah.180;
+	sub @one @nine @zero 	by ayah.190;
+	sub @two @zero @zero 	by ayah.200;
+	sub @two @one @zero 	by ayah.210;
+	sub @two @two @zero 	by ayah.220;
+	sub @two @three @zero 	by ayah.230;
+	sub @two @four @zero 	by ayah.240;
+	sub @two @five @zero 	by ayah.250;
+	sub @two @six @zero 	by ayah.260;
+	sub @two @seven @zero 	by ayah.270;
+	sub @two @eight @zero 	by ayah.280;
 } ayah_numbers_100s;
 
 lookup ccmp_ayah_numbers {
 	sub  endofayah-ar' lookup ayah_05
 		 @numbers
 		 @numbers
-		 five-ar
+		 @five
 	;
 
 	ignore
-	sub  endofayah-ar' @numbers five-ar @numbers;
+	sub  endofayah-ar' @numbers @five @numbers;
 	sub  endofayah-ar' lookup ayah_05
 		 @numbers
-		 five-ar
+		 @five
 	;
 
 	ignore
-	sub  endofayah-ar' five-ar @numbers;
+	sub  endofayah-ar' @five @numbers;
 	sub  endofayah-ar' lookup ayah_05
-		 five-ar
+		 @five
 	;
 
 	sub  endofayah-ar

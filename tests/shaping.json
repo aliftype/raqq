@@ -51,6 +51,1461 @@
       "expectation": "dotabove-ar=0@607,355+0|fehDotless-ar=0+1020"
     },
     {
+      "input": "۝100",
+      "direction": "ltr",
+      "expectation": "endofayah-ar.10=0+1117|ayah.100=1@-722,0+0"
+    },
+    {
+      "input": "۝101",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+400"
+    },
+    {
+      "input": "۝102",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+400"
+    },
+    {
+      "input": "۝103",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+400"
+    },
+    {
+      "input": "۝104",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+400"
+    },
+    {
+      "input": "۝105",
+      "direction": "ltr",
+      "expectation": "endofayah-ar.05=0+400"
+    },
+    {
+      "input": "۝106",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+400"
+    },
+    {
+      "input": "۝107",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+400"
+    },
+    {
+      "input": "۝108",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+400"
+    },
+    {
+      "input": "۝109",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+400"
+    },
+    {
+      "input": "۝10",
+      "direction": "ltr",
+      "expectation": "endofayah-ar.10=0+1117|ayah.010=1@-809,0+0"
+    },
+    {
+      "input": "۝110",
+      "direction": "ltr",
+      "expectation": "endofayah-ar.10=0+1117|ayah.110=1@-722,0+0"
+    },
+    {
+      "input": "۝111",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+400"
+    },
+    {
+      "input": "۝112",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+400"
+    },
+    {
+      "input": "۝113",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+400"
+    },
+    {
+      "input": "۝114",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+400"
+    },
+    {
+      "input": "۝115",
+      "direction": "ltr",
+      "expectation": "endofayah-ar.05=0+400"
+    },
+    {
+      "input": "۝116",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+400"
+    },
+    {
+      "input": "۝117",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+400"
+    },
+    {
+      "input": "۝118",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+400"
+    },
+    {
+      "input": "۝119",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+400"
+    },
+    {
+      "input": "۝11",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+400"
+    },
+    {
+      "input": "۝120",
+      "direction": "ltr",
+      "expectation": "endofayah-ar.10=0+1117|ayah.120=1@-703,0+0"
+    },
+    {
+      "input": "۝121",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+400"
+    },
+    {
+      "input": "۝122",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+400"
+    },
+    {
+      "input": "۝123",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+400"
+    },
+    {
+      "input": "۝124",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+400"
+    },
+    {
+      "input": "۝125",
+      "direction": "ltr",
+      "expectation": "endofayah-ar.05=0+400"
+    },
+    {
+      "input": "۝126",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+400"
+    },
+    {
+      "input": "۝127",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+400"
+    },
+    {
+      "input": "۝128",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+400"
+    },
+    {
+      "input": "۝129",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+400"
+    },
+    {
+      "input": "۝12",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+400"
+    },
+    {
+      "input": "۝130",
+      "direction": "ltr",
+      "expectation": "endofayah-ar.10=0+1117|ayah.130=1@-697,0+0"
+    },
+    {
+      "input": "۝131",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+400"
+    },
+    {
+      "input": "۝132",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+400"
+    },
+    {
+      "input": "۝133",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+400"
+    },
+    {
+      "input": "۝134",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+400"
+    },
+    {
+      "input": "۝135",
+      "direction": "ltr",
+      "expectation": "endofayah-ar.05=0+400"
+    },
+    {
+      "input": "۝136",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+400"
+    },
+    {
+      "input": "۝137",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+400"
+    },
+    {
+      "input": "۝138",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+400"
+    },
+    {
+      "input": "۝139",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+400"
+    },
+    {
+      "input": "۝13",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+400"
+    },
+    {
+      "input": "۝140",
+      "direction": "ltr",
+      "expectation": "endofayah-ar.10=0+1117|ayah.140=1@-717,0+0"
+    },
+    {
+      "input": "۝141",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+400"
+    },
+    {
+      "input": "۝142",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+400"
+    },
+    {
+      "input": "۝143",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+400"
+    },
+    {
+      "input": "۝144",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+400"
+    },
+    {
+      "input": "۝145",
+      "direction": "ltr",
+      "expectation": "endofayah-ar.05=0+400"
+    },
+    {
+      "input": "۝146",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+400"
+    },
+    {
+      "input": "۝147",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+400"
+    },
+    {
+      "input": "۝148",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+400"
+    },
+    {
+      "input": "۝149",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+400"
+    },
+    {
+      "input": "۝14",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+400"
+    },
+    {
+      "input": "۝150",
+      "direction": "ltr",
+      "expectation": "endofayah-ar.10=0+1117|ayah.150=1@-704,0+0"
+    },
+    {
+      "input": "۝151",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+400"
+    },
+    {
+      "input": "۝152",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+400"
+    },
+    {
+      "input": "۝153",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+400"
+    },
+    {
+      "input": "۝154",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+400"
+    },
+    {
+      "input": "۝155",
+      "direction": "ltr",
+      "expectation": "endofayah-ar.05=0+400"
+    },
+    {
+      "input": "۝156",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+400"
+    },
+    {
+      "input": "۝157",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+400"
+    },
+    {
+      "input": "۝158",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+400"
+    },
+    {
+      "input": "۝159",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+400"
+    },
+    {
+      "input": "۝15",
+      "direction": "ltr",
+      "expectation": "endofayah-ar.05=0+400"
+    },
+    {
+      "input": "۝160",
+      "direction": "ltr",
+      "expectation": "endofayah-ar.10=0+1117|ayah.160=1@-696,0+0"
+    },
+    {
+      "input": "۝161",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+400"
+    },
+    {
+      "input": "۝162",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+400"
+    },
+    {
+      "input": "۝163",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+400"
+    },
+    {
+      "input": "۝164",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+400"
+    },
+    {
+      "input": "۝165",
+      "direction": "ltr",
+      "expectation": "endofayah-ar.05=0+400"
+    },
+    {
+      "input": "۝166",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+400"
+    },
+    {
+      "input": "۝167",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+400"
+    },
+    {
+      "input": "۝168",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+400"
+    },
+    {
+      "input": "۝169",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+400"
+    },
+    {
+      "input": "۝16",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+400"
+    },
+    {
+      "input": "۝170",
+      "direction": "ltr",
+      "expectation": "endofayah-ar.10=0+1117|ayah.170=1@-705,0+0"
+    },
+    {
+      "input": "۝171",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+400"
+    },
+    {
+      "input": "۝172",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+400"
+    },
+    {
+      "input": "۝173",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+400"
+    },
+    {
+      "input": "۝174",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+400"
+    },
+    {
+      "input": "۝175",
+      "direction": "ltr",
+      "expectation": "endofayah-ar.05=0+400"
+    },
+    {
+      "input": "۝176",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+400"
+    },
+    {
+      "input": "۝177",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+400"
+    },
+    {
+      "input": "۝178",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+400"
+    },
+    {
+      "input": "۝179",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+400"
+    },
+    {
+      "input": "۝17",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+400"
+    },
+    {
+      "input": "۝180",
+      "direction": "ltr",
+      "expectation": "endofayah-ar.10=0+1117|ayah.180=1@-705,0+0"
+    },
+    {
+      "input": "۝181",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+400"
+    },
+    {
+      "input": "۝182",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+400"
+    },
+    {
+      "input": "۝183",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+400"
+    },
+    {
+      "input": "۝184",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+400"
+    },
+    {
+      "input": "۝185",
+      "direction": "ltr",
+      "expectation": "endofayah-ar.05=0+400"
+    },
+    {
+      "input": "۝186",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+400"
+    },
+    {
+      "input": "۝187",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+400"
+    },
+    {
+      "input": "۝188",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+400"
+    },
+    {
+      "input": "۝189",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+400"
+    },
+    {
+      "input": "۝18",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+400"
+    },
+    {
+      "input": "۝190",
+      "direction": "ltr",
+      "expectation": "endofayah-ar.10=0+1117|ayah.190=1@-705,0+0"
+    },
+    {
+      "input": "۝191",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+400"
+    },
+    {
+      "input": "۝192",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+400"
+    },
+    {
+      "input": "۝193",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+400"
+    },
+    {
+      "input": "۝194",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+400"
+    },
+    {
+      "input": "۝195",
+      "direction": "ltr",
+      "expectation": "endofayah-ar.05=0+400"
+    },
+    {
+      "input": "۝196",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+400"
+    },
+    {
+      "input": "۝197",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+400"
+    },
+    {
+      "input": "۝198",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+400"
+    },
+    {
+      "input": "۝199",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+400"
+    },
+    {
+      "input": "۝19",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+400"
+    },
+    {
+      "input": "۝200",
+      "direction": "ltr",
+      "expectation": "endofayah-ar.10=0+1117|ayah.200=1@-662,0+0"
+    },
+    {
+      "input": "۝201",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+400"
+    },
+    {
+      "input": "۝202",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+400"
+    },
+    {
+      "input": "۝203",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+400"
+    },
+    {
+      "input": "۝204",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+400"
+    },
+    {
+      "input": "۝205",
+      "direction": "ltr",
+      "expectation": "endofayah-ar.05=0+400"
+    },
+    {
+      "input": "۝206",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+400"
+    },
+    {
+      "input": "۝207",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+400"
+    },
+    {
+      "input": "۝208",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+400"
+    },
+    {
+      "input": "۝209",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+400"
+    },
+    {
+      "input": "۝20",
+      "direction": "ltr",
+      "expectation": "endofayah-ar.10=0+1117|ayah.020=1@-829,0+0"
+    },
+    {
+      "input": "۝210",
+      "direction": "ltr",
+      "expectation": "endofayah-ar.10=0+1117|ayah.210=1@-730,0+0"
+    },
+    {
+      "input": "۝211",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+400"
+    },
+    {
+      "input": "۝212",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+400"
+    },
+    {
+      "input": "۝213",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+400"
+    },
+    {
+      "input": "۝214",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+400"
+    },
+    {
+      "input": "۝215",
+      "direction": "ltr",
+      "expectation": "endofayah-ar.05=0+400"
+    },
+    {
+      "input": "۝216",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+400"
+    },
+    {
+      "input": "۝217",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+400"
+    },
+    {
+      "input": "۝218",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+400"
+    },
+    {
+      "input": "۝219",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+400"
+    },
+    {
+      "input": "۝21",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+400"
+    },
+    {
+      "input": "۝220",
+      "direction": "ltr",
+      "expectation": "endofayah-ar.10=0+1117|ayah.220=1@-730,0+0"
+    },
+    {
+      "input": "۝221",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+400"
+    },
+    {
+      "input": "۝222",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+400"
+    },
+    {
+      "input": "۝223",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+400"
+    },
+    {
+      "input": "۝224",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+400"
+    },
+    {
+      "input": "۝225",
+      "direction": "ltr",
+      "expectation": "endofayah-ar.05=0+400"
+    },
+    {
+      "input": "۝226",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+400"
+    },
+    {
+      "input": "۝227",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+400"
+    },
+    {
+      "input": "۝228",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+400"
+    },
+    {
+      "input": "۝229",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+400"
+    },
+    {
+      "input": "۝22",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+400"
+    },
+    {
+      "input": "۝230",
+      "direction": "ltr",
+      "expectation": "endofayah-ar.10=0+1117|ayah.230=1@-689,0+0"
+    },
+    {
+      "input": "۝231",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+400"
+    },
+    {
+      "input": "۝232",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+400"
+    },
+    {
+      "input": "۝233",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+400"
+    },
+    {
+      "input": "۝234",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+400"
+    },
+    {
+      "input": "۝235",
+      "direction": "ltr",
+      "expectation": "endofayah-ar.05=0+400"
+    },
+    {
+      "input": "۝236",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+400"
+    },
+    {
+      "input": "۝237",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+400"
+    },
+    {
+      "input": "۝238",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+400"
+    },
+    {
+      "input": "۝239",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+400"
+    },
+    {
+      "input": "۝23",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+400"
+    },
+    {
+      "input": "۝240",
+      "direction": "ltr",
+      "expectation": "endofayah-ar.10=0+1117|ayah.240=1@-716,0+0"
+    },
+    {
+      "input": "۝241",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+400"
+    },
+    {
+      "input": "۝242",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+400"
+    },
+    {
+      "input": "۝243",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+400"
+    },
+    {
+      "input": "۝244",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+400"
+    },
+    {
+      "input": "۝245",
+      "direction": "ltr",
+      "expectation": "endofayah-ar.05=0+400"
+    },
+    {
+      "input": "۝246",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+400"
+    },
+    {
+      "input": "۝247",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+400"
+    },
+    {
+      "input": "۝248",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+400"
+    },
+    {
+      "input": "۝249",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+400"
+    },
+    {
+      "input": "۝24",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+400"
+    },
+    {
+      "input": "۝250",
+      "direction": "ltr",
+      "expectation": "endofayah-ar.10=0+1117|ayah.250=1@-716,0+0"
+    },
+    {
+      "input": "۝251",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+400"
+    },
+    {
+      "input": "۝252",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+400"
+    },
+    {
+      "input": "۝253",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+400"
+    },
+    {
+      "input": "۝254",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+400"
+    },
+    {
+      "input": "۝255",
+      "direction": "ltr",
+      "expectation": "endofayah-ar.05=0+400"
+    },
+    {
+      "input": "۝256",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+400"
+    },
+    {
+      "input": "۝257",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+400"
+    },
+    {
+      "input": "۝258",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+400"
+    },
+    {
+      "input": "۝259",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+400"
+    },
+    {
+      "input": "۝25",
+      "direction": "ltr",
+      "expectation": "endofayah-ar.05=0+400"
+    },
+    {
+      "input": "۝260",
+      "direction": "ltr",
+      "expectation": "endofayah-ar.10=0+1117|ayah.260=1@-716,0+0"
+    },
+    {
+      "input": "۝261",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+400"
+    },
+    {
+      "input": "۝262",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+400"
+    },
+    {
+      "input": "۝263",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+400"
+    },
+    {
+      "input": "۝264",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+400"
+    },
+    {
+      "input": "۝265",
+      "direction": "ltr",
+      "expectation": "endofayah-ar.05=0+400"
+    },
+    {
+      "input": "۝266",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+400"
+    },
+    {
+      "input": "۝267",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+400"
+    },
+    {
+      "input": "۝268",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+400"
+    },
+    {
+      "input": "۝269",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+400"
+    },
+    {
+      "input": "۝26",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+400"
+    },
+    {
+      "input": "۝270",
+      "direction": "ltr",
+      "expectation": "endofayah-ar.10=0+1117|ayah.270=1@-716,0+0"
+    },
+    {
+      "input": "۝271",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+400"
+    },
+    {
+      "input": "۝272",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+400"
+    },
+    {
+      "input": "۝273",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+400"
+    },
+    {
+      "input": "۝274",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+400"
+    },
+    {
+      "input": "۝275",
+      "direction": "ltr",
+      "expectation": "endofayah-ar.05=0+400"
+    },
+    {
+      "input": "۝276",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+400"
+    },
+    {
+      "input": "۝277",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+400"
+    },
+    {
+      "input": "۝278",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+400"
+    },
+    {
+      "input": "۝279",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+400"
+    },
+    {
+      "input": "۝27",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+400"
+    },
+    {
+      "input": "۝280",
+      "direction": "ltr",
+      "expectation": "endofayah-ar.10=0+1117|ayah.280=1@-716,0+0"
+    },
+    {
+      "input": "۝281",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+400"
+    },
+    {
+      "input": "۝282",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+400"
+    },
+    {
+      "input": "۝283",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+400"
+    },
+    {
+      "input": "۝284",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+400"
+    },
+    {
+      "input": "۝285",
+      "direction": "ltr",
+      "expectation": "endofayah-ar.05=0+400"
+    },
+    {
+      "input": "۝286",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+400"
+    },
+    {
+      "input": "۝287",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+400"
+    },
+    {
+      "input": "۝288",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+400"
+    },
+    {
+      "input": "۝289",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+400"
+    },
+    {
+      "input": "۝28",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+400"
+    },
+    {
+      "input": "۝290",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+400"
+    },
+    {
+      "input": "۝291",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+400"
+    },
+    {
+      "input": "۝292",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+400"
+    },
+    {
+      "input": "۝293",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+400"
+    },
+    {
+      "input": "۝294",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+400"
+    },
+    {
+      "input": "۝295",
+      "direction": "ltr",
+      "expectation": "endofayah-ar.05=0+400"
+    },
+    {
+      "input": "۝296",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+400"
+    },
+    {
+      "input": "۝297",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+400"
+    },
+    {
+      "input": "۝298",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+400"
+    },
+    {
+      "input": "۝299",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+400"
+    },
+    {
+      "input": "۝29",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+400"
+    },
+    {
+      "input": "۝300",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+400"
+    },
+    {
+      "input": "۝30",
+      "direction": "ltr",
+      "expectation": "endofayah-ar.10=0+1117|ayah.030=1@-745,0+0"
+    },
+    {
+      "input": "۝31",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+400"
+    },
+    {
+      "input": "۝32",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+400"
+    },
+    {
+      "input": "۝33",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+400"
+    },
+    {
+      "input": "۝34",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+400"
+    },
+    {
+      "input": "۝35",
+      "direction": "ltr",
+      "expectation": "endofayah-ar.05=0+400"
+    },
+    {
+      "input": "۝36",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+400"
+    },
+    {
+      "input": "۝37",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+400"
+    },
+    {
+      "input": "۝38",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+400"
+    },
+    {
+      "input": "۝39",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+400"
+    },
+    {
+      "input": "۝40",
+      "direction": "ltr",
+      "expectation": "endofayah-ar.10=0+1117|ayah.040=1@-721,0+0"
+    },
+    {
+      "input": "۝41",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+400"
+    },
+    {
+      "input": "۝42",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+400"
+    },
+    {
+      "input": "۝43",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+400"
+    },
+    {
+      "input": "۝44",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+400"
+    },
+    {
+      "input": "۝45",
+      "direction": "ltr",
+      "expectation": "endofayah-ar.05=0+400"
+    },
+    {
+      "input": "۝46",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+400"
+    },
+    {
+      "input": "۝47",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+400"
+    },
+    {
+      "input": "۝48",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+400"
+    },
+    {
+      "input": "۝49",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+400"
+    },
+    {
+      "input": "۝50",
+      "direction": "ltr",
+      "expectation": "endofayah-ar.10=0+1117|ayah.050=1@-784,0+0"
+    },
+    {
+      "input": "۝51",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+400"
+    },
+    {
+      "input": "۝52",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+400"
+    },
+    {
+      "input": "۝53",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+400"
+    },
+    {
+      "input": "۝54",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+400"
+    },
+    {
+      "input": "۝55",
+      "direction": "ltr",
+      "expectation": "endofayah-ar.05=0+400"
+    },
+    {
+      "input": "۝56",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+400"
+    },
+    {
+      "input": "۝57",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+400"
+    },
+    {
+      "input": "۝58",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+400"
+    },
+    {
+      "input": "۝59",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+400"
+    },
+    {
+      "input": "۝60",
+      "direction": "ltr",
+      "expectation": "endofayah-ar.10=0+1117|ayah.060=1@-751,0+0"
+    },
+    {
+      "input": "۝61",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+400"
+    },
+    {
+      "input": "۝62",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+400"
+    },
+    {
+      "input": "۝63",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+400"
+    },
+    {
+      "input": "۝64",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+400"
+    },
+    {
+      "input": "۝65",
+      "direction": "ltr",
+      "expectation": "endofayah-ar.05=0+400"
+    },
+    {
+      "input": "۝66",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+400"
+    },
+    {
+      "input": "۝67",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+400"
+    },
+    {
+      "input": "۝68",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+400"
+    },
+    {
+      "input": "۝69",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+400"
+    },
+    {
+      "input": "۝70",
+      "direction": "ltr",
+      "expectation": "endofayah-ar.10=0+1117|ayah.070=1@-799,0+0"
+    },
+    {
+      "input": "۝71",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+400"
+    },
+    {
+      "input": "۝72",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+400"
+    },
+    {
+      "input": "۝73",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+400"
+    },
+    {
+      "input": "۝74",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+400"
+    },
+    {
+      "input": "۝75",
+      "direction": "ltr",
+      "expectation": "endofayah-ar.05=0+400"
+    },
+    {
+      "input": "۝76",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+400"
+    },
+    {
+      "input": "۝77",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+400"
+    },
+    {
+      "input": "۝78",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+400"
+    },
+    {
+      "input": "۝79",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+400"
+    },
+    {
+      "input": "۝80",
+      "direction": "ltr",
+      "expectation": "endofayah-ar.10=0+1117|ayah.080=1@-783,0+0"
+    },
+    {
+      "input": "۝81",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+400"
+    },
+    {
+      "input": "۝82",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+400"
+    },
+    {
+      "input": "۝83",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+400"
+    },
+    {
+      "input": "۝84",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+400"
+    },
+    {
+      "input": "۝85",
+      "direction": "ltr",
+      "expectation": "endofayah-ar.05=0+400"
+    },
+    {
+      "input": "۝86",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+400"
+    },
+    {
+      "input": "۝87",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+400"
+    },
+    {
+      "input": "۝88",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+400"
+    },
+    {
+      "input": "۝89",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+400"
+    },
+    {
+      "input": "۝90",
+      "direction": "ltr",
+      "expectation": "endofayah-ar.10=0+1117|ayah.090=1@-799,0+0"
+    },
+    {
+      "input": "۝91",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+400"
+    },
+    {
+      "input": "۝92",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+400"
+    },
+    {
+      "input": "۝93",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+400"
+    },
+    {
+      "input": "۝94",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+400"
+    },
+    {
+      "input": "۝95",
+      "direction": "ltr",
+      "expectation": "endofayah-ar.05=0+400"
+    },
+    {
+      "input": "۝96",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+400"
+    },
+    {
+      "input": "۝97",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+400"
+    },
+    {
+      "input": "۝98",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+400"
+    },
+    {
+      "input": "۝99",
+      "direction": "ltr",
+      "expectation": "endofayah-ar=0+400"
+    },
+    {
       "input": "أَ",
       "expectation": "fatha-ar=0@72,547+0|alef-ar=0+658"
     },
