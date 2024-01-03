@@ -19,7 +19,6 @@ layerId = m01;
 shapes = (
 {
 alignment = -1;
-pos = (0,178);
 ref = _ayah.005;
 },
 {
@@ -41,7 +40,6 @@ name = "Color 1 18 May 23 at 11:25";
 shapes = (
 {
 alignment = -1;
-pos = (0,178);
 ref = _ayah.005.1;
 },
 {
@@ -61,7 +59,6 @@ name = "Color 3 18 May 23 at 11:21";
 shapes = (
 {
 alignment = -1;
-pos = (0,178);
 ref = _ayah.005;
 },
 {
