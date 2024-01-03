@@ -5,31 +5,31 @@ layers = (
 anchors = (
 {
 name = _ayah;
-pos = (143,167);
+pos = (143,183);
 }
 );
 layerId = m01;
 shapes = (
 {
 alignment = -1;
-pos = (108,181);
+pos = (108,197);
 ref = _ayah.100;
 scale = (0.56,0.56);
 },
 {
-pos = (14,188);
+pos = (14,204);
 ref = _ayah.waw;
 scale = (0.56,0.56);
 },
 {
 alignment = -1;
-pos = (0,110);
+pos = (0,126);
 ref = _ayah.050;
 scale = (0.48,0.48);
 },
 {
 alignment = -1;
-pos = (117,10);
+pos = (117,26);
 ref = _ayah.noon;
 scale = (0.56,0.56);
 }
@@ -48,24 +48,24 @@ name = "17 Apr 23 at 00:00";
 shapes = (
 {
 alignment = -1;
-pos = (108,181);
+pos = (108,197);
 ref = _ayah.100.1;
 scale = (0.56,0.56);
 },
 {
-pos = (14,188);
+pos = (14,204);
 ref = _ayah.waw.1;
 scale = (0.56,0.56);
 },
 {
 alignment = -1;
-pos = (0,110);
+pos = (0,126);
 ref = _ayah.050.1;
 scale = (0.48,0.48);
 },
 {
 alignment = -1;
-pos = (117,10);
+pos = (117,26);
 ref = _ayah.noon.1;
 scale = (0.56,0.56);
 }
@@ -82,24 +82,24 @@ name = "Color 1 17 Apr 23 at 00:03";
 shapes = (
 {
 alignment = -1;
-pos = (108,181);
+pos = (108,197);
 ref = _ayah.100;
 scale = (0.56,0.56);
 },
 {
-pos = (14,188);
+pos = (14,204);
 ref = _ayah.waw;
 scale = (0.56,0.56);
 },
 {
 alignment = -1;
-pos = (0,110);
+pos = (0,126);
 ref = _ayah.050;
 scale = (0.48,0.48);
 },
 {
 alignment = -1;
-pos = (117,10);
+pos = (117,26);
 ref = _ayah.noon;
 scale = (0.56,0.56);
 }

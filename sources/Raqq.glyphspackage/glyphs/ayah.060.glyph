@@ -5,19 +5,19 @@ layers = (
 anchors = (
 {
 name = _ayah;
-pos = (190,193);
+pos = (190,183);
 }
 );
 layerId = m01;
 shapes = (
 {
 alignment = -1;
-pos = (0,183);
+pos = (0,173);
 ref = _ayah.060;
 },
 {
 alignment = -1;
-pos = (123,20);
+pos = (123,10);
 ref = _ayah.noon;
 }
 );
@@ -35,12 +35,12 @@ name = "17 Apr 23 at 00:00";
 shapes = (
 {
 alignment = -1;
-pos = (0,183);
+pos = (0,173);
 ref = _ayah.060.1;
 },
 {
 alignment = -1;
-pos = (123,20);
+pos = (123,10);
 ref = _ayah.noon.1;
 }
 );
@@ -57,12 +57,12 @@ name = "Color 1 17 Apr 23 at 00:03";
 shapes = (
 {
 alignment = -1;
-pos = (0,183);
+pos = (0,173);
 ref = _ayah.060;
 },
 {
 alignment = -1;
-pos = (123,20);
+pos = (123,10);
 ref = _ayah.noon;
 }
 );
