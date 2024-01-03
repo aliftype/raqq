@@ -1,30 +1,8 @@
 {
-glyphname = ayah.sajdah;
+glyphname = _ayah.sajdah.1;
 layers = (
 {
-anchors = (
-{
-name = _ayah;
-pos = (170,2);
-}
-);
 layerId = m01;
-shapes = (
-{
-ref = _ayah.sajdah;
-}
-);
-width = 334;
-},
-{
-associatedMasterId = m01;
-attr = {
-colorPalette = 4;
-};
-layerId = "B1CECB19-25AC-49F4-8CFC-27C6751FB6F9";
-metricLeft = "=-5";
-metricRight = "=-11";
-name = "15 Aug 23 at 02:26";
 shapes = (
 {
 closed = 1;
@@ -94,20 +72,6 @@ nodes = (
 (145,-150,o),
 (165,-148,cs)
 );
-}
-);
-width = 334;
-},
-{
-associatedMasterId = m01;
-attr = {
-colorPalette = 1;
-};
-layerId = "2F0BB2EF-DF74-4202-9888-1E1E1F9DC970";
-name = "15 Aug 23 at 02:26";
-shapes = (
-{
-ref = _ayah.sajdah;
 }
 );
 width = 334;
