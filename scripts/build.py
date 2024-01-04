@@ -156,9 +156,6 @@ def getAnchorPos(font, glyph, default, name):
     return f"({' '.join(x)})", f"({' '.join(y)})"
 
 
-AYAH_ANCHORS = {"ayah"}
-
-
 def makeMark(font, glyphOrder):
     classes = ""
     mark2base = {}
@@ -177,13 +174,13 @@ def makeMark(font, glyphOrder):
         layer = glyph.layers[0]
         for anchor in layer.anchors:
             name = anchor.name
-            if name in AYAH_ANCHORS:
-                continue
             x, y = getAnchorPos(font, glyph, layer, name)
             if name.startswith("_"):
                 classes += f"markClass {gname} <anchor {x} {y}> @mark_{name[1:]};\n"
+            elif not name[0].isalpha():
+                continue
             elif name.startswith("caret_") or name in ("exit", "entry"):
-                pass
+                continue
             elif "_" in name:
                 name, index = name.split("_")
                 ligatures[gname][int(index)].append((name, (x, y)))
@@ -202,8 +199,6 @@ def makeMark(font, glyphOrder):
                 mark2liga += f" <anchor {x} {y}> mark @mark_{anchor}"
         mark2liga += ";\n"
 
-    ayah = makeAyah(font, glyphOrder)
-
     base = ""
     for name, code in mark2base.items():
         base += f"""
@@ -214,7 +209,6 @@ lookupflag 0;
 """
 
     return f"""
-{ayah}
 {classes}
 {base}
 lookup mark2liga_auto {{
@@ -222,45 +216,6 @@ lookupflag 0;
 {mark2liga}
 }} mark2liga_auto;
 """
-
-
-def makeAyah(font, glyphOrder):
-    bases = []
-    marks = {}
-    for gname in glyphOrder:
-        glyph = font.glyphs[gname]
-        if glyph is None:
-            continue
-
-        layer = glyph.layers[0]
-        for anchor in layer.anchors:
-            if anchor.name in AYAH_ANCHORS:
-                x = layer.width - anchor.position.x
-                y = anchor.position.y
-                bases.append((gname, (x, y)))
-                break
-            if anchor.name.startswith("_") and anchor.name[1:] in AYAH_ANCHORS:
-                x = anchor.position.x
-                y = anchor.position.y
-                marks.setdefault((x, y), []).append(gname)
-                break
-
-    ayah = ""
-    for base, (bx, by) in bases:
-        for mx, my in marks:
-            names = " ".join(marks[(mx, my)])
-            x = bx + mx
-            y = by - my
-            ayah += f"pos {base} <NULL> [{names}] <{-x} {y} 0 0>;\n"
-
-    if ayah:
-        return f"""
-lookup ayah_auto {{
-lookupflag 0;
-{ayah}
-}} ayah_auto;
-        """
-    return ""
 
 
 def makeCurs(font, glyphOrder):
@@ -812,6 +767,13 @@ def prepare(args):
             elif (glyph.category, glyph.subCategory) == ("Mark", "Nonspacing"):
                 # Zero mark width
                 layer.width = 0
+                if origin := layer.anchors["*origin"]:
+                    for path in layer.paths:
+                        path.applyTransform([1, 0, 0, 1, -origin.position.x, 0])
+                    for component in layer.components:
+                        x = component.position.x - origin.position.x
+                        y = component.position.y
+                        component.position = (x, y)
             propagateAnchors(glyph, layer)
             removeOverlap(font, glyph, layer)
 
