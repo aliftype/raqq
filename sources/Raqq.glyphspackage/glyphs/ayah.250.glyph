@@ -5,43 +5,43 @@ layers = (
 anchors = (
 {
 name = _ayah;
-pos = (155,183);
+pos = (556,183);
 }
 );
 layerId = m01;
 shapes = (
 {
 alignment = -1;
-pos = (132,235);
+pos = (533,235);
 ref = _ayah.200;
 scale = (0.56,0.48);
 },
 {
 alignment = -1;
-pos = (72,183);
+pos = (473,183);
 ref = _ayah.noon;
 scale = (0.56,0.56);
 },
 {
 alignment = -1;
-pos = (0,237);
+pos = (401,237);
 ref = _ayah.waw;
 scale = (0.56,0.56);
 },
 {
 alignment = -1;
-pos = (0,122);
+pos = (401,122);
 ref = _ayah.050;
 scale = (0.48,0.48);
 },
 {
 alignment = -1;
-pos = (117,22);
+pos = (518,22);
 ref = _ayah.noon;
 scale = (0.56,0.56);
 }
 );
-width = 307;
+width = 1117;
 },
 {
 associatedMasterId = m01;
@@ -49,42 +49,40 @@ attr = {
 colorPalette = 4;
 };
 layerId = "D542F106-890E-45CF-A3C8-AEA4B940F3D6";
-metricLeft = "=-6";
-metricRight = "=-3";
 name = "17 Apr 23 at 00:00";
 shapes = (
 {
 alignment = -1;
-pos = (132,235);
+pos = (533,235);
 ref = _ayah.200.1;
 scale = (0.56,0.48);
 },
 {
 alignment = -1;
-pos = (72,183);
+pos = (473,183);
 ref = _ayah.noon.1;
 scale = (0.56,0.56);
 },
 {
 alignment = -1;
-pos = (0,237);
+pos = (401,237);
 ref = _ayah.waw.1;
 scale = (0.56,0.56);
 },
 {
 alignment = -1;
-pos = (0,122);
+pos = (401,122);
 ref = _ayah.050.1;
 scale = (0.48,0.48);
 },
 {
 alignment = -1;
-pos = (117,22);
+pos = (518,22);
 ref = _ayah.noon.1;
 scale = (0.56,0.56);
 }
 );
-width = 307;
+width = 1117;
 },
 {
 associatedMasterId = m01;
@@ -96,39 +94,36 @@ name = "Color 1 17 Apr 23 at 00:03";
 shapes = (
 {
 alignment = -1;
-pos = (132,235);
+pos = (533,235);
 ref = _ayah.200;
 scale = (0.56,0.48);
 },
 {
 alignment = -1;
-pos = (72,183);
+pos = (473,183);
 ref = _ayah.noon;
 scale = (0.56,0.56);
 },
 {
 alignment = -1;
-pos = (0,237);
+pos = (401,237);
 ref = _ayah.waw;
 scale = (0.56,0.56);
 },
 {
 alignment = -1;
-pos = (0,122);
+pos = (401,122);
 ref = _ayah.050;
 scale = (0.48,0.48);
 },
 {
 alignment = -1;
-pos = (117,22);
+pos = (518,22);
 ref = _ayah.noon;
 scale = (0.56,0.56);
 }
 );
-width = 307;
+width = 1117;
 }
 );
-metricLeft = "=0";
-metricRight = "=0";
-metricWidth = "=307";
 }

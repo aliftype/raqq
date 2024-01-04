@@ -5,29 +5,29 @@ layers = (
 anchors = (
 {
 name = _ayah;
-pos = (161,183);
+pos = (556,183);
 }
 );
 layerId = m01;
 shapes = (
 {
 alignment = -1;
-pos = (44,215);
+pos = (439,215);
 ref = _ayah.100;
 scale = (0.7,0.6);
 },
 {
 alignment = -1;
-pos = (0,117);
+pos = (395,117);
 ref = _ayah.010;
 scale = (0.7,0.7);
 },
 {
-pos = (-5,60);
+pos = (390,60);
 ref = _ayah.decoration1;
 }
 );
-width = 349;
+width = 1117;
 },
 {
 associatedMasterId = m01;
@@ -35,29 +35,27 @@ attr = {
 colorPalette = 4;
 };
 layerId = "D542F106-890E-45CF-A3C8-AEA4B940F3D6";
-metricLeft = "=-6";
-metricRight = "=-11";
 name = "17 Apr 23 at 00:00";
 shapes = (
 {
 alignment = -1;
-pos = (44,215);
+pos = (439,215);
 ref = _ayah.100.1;
 scale = (0.7,0.6);
 },
 {
 alignment = -1;
-pos = (0,117);
+pos = (395,117);
 ref = _ayah.010.1;
 scale = (0.7,0.7);
 },
 {
-pos = (-5,60);
+pos = (390,60);
 ref = _ayah.decoration1.1;
 }
 );
 visible = 1;
-width = 349;
+width = 1117;
 },
 {
 associatedMasterId = m01;
@@ -69,26 +67,23 @@ name = "Color 1 17 Apr 23 at 00:03";
 shapes = (
 {
 alignment = -1;
-pos = (44,215);
+pos = (439,215);
 ref = _ayah.100;
 scale = (0.7,0.6);
 },
 {
 alignment = -1;
-pos = (0,117);
+pos = (395,117);
 ref = _ayah.010;
 scale = (0.7,0.7);
 },
 {
-pos = (-5,60);
+pos = (390,60);
 ref = _ayah.decoration1;
 }
 );
 visible = 1;
-width = 349;
+width = 1117;
 }
 );
-metricLeft = "=0";
-metricRight = "=0";
-metricWidth = "=349";
 }

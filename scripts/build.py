@@ -226,7 +226,7 @@ lookupflag 0;
 
 def makeAyah(font, glyphOrder):
     bases = []
-    marks = []
+    marks = {}
     for gname in glyphOrder:
         glyph = font.glyphs[gname]
         if glyph is None:
@@ -242,15 +242,16 @@ def makeAyah(font, glyphOrder):
             if anchor.name.startswith("_") and anchor.name[1:] in AYAH_ANCHORS:
                 x = anchor.position.x
                 y = anchor.position.y
-                marks.append((gname, (x, y)))
+                marks.setdefault((x, y), []).append(gname)
                 break
 
     ayah = ""
     for base, (bx, by) in bases:
-        for mark, (mx, my) in marks:
+        for mx, my in marks:
+            names = " ".join(marks[(mx, my)])
             x = bx + mx
             y = by - my
-            ayah += f"pos {base} <NULL> {mark} <{-x} {y} 0 0>;\n"
+            ayah += f"pos {base} <NULL> [{names}] <{-x} {y} 0 0>;\n"
 
     if ayah:
         return f"""
