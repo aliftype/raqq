@@ -5,23 +5,23 @@ layers = (
 anchors = (
 {
 name = _ayah;
-pos = (190,183);
+pos = (556,183);
 }
 );
 layerId = m01;
 shapes = (
 {
 alignment = -1;
-pos = (0,173);
+pos = (366,173);
 ref = _ayah.060;
 },
 {
 alignment = -1;
-pos = (123,10);
+pos = (489,10);
 ref = _ayah.noon;
 }
 );
-width = 342;
+width = 1117;
 },
 {
 associatedMasterId = m01;
@@ -29,23 +29,21 @@ attr = {
 colorPalette = 4;
 };
 layerId = "D542F106-890E-45CF-A3C8-AEA4B940F3D6";
-metricLeft = "=-9";
-metricRight = "=-5";
 name = "17 Apr 23 at 00:00";
 shapes = (
 {
 alignment = -1;
-pos = (0,173);
+pos = (366,173);
 ref = _ayah.060.1;
 },
 {
 alignment = -1;
-pos = (123,10);
+pos = (489,10);
 ref = _ayah.noon.1;
 }
 );
 visible = 1;
-width = 342;
+width = 1117;
 },
 {
 associatedMasterId = m01;
@@ -57,20 +55,17 @@ name = "Color 1 17 Apr 23 at 00:03";
 shapes = (
 {
 alignment = -1;
-pos = (0,173);
+pos = (366,173);
 ref = _ayah.060;
 },
 {
 alignment = -1;
-pos = (123,10);
+pos = (489,10);
 ref = _ayah.noon;
 }
 );
 visible = 1;
-width = 342;
+width = 1117;
 }
 );
-metricLeft = "=0";
-metricRight = "=0";
-metricWidth = "=342";
 }

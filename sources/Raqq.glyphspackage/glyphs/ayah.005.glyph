@@ -5,14 +5,14 @@ layers = (
 anchors = (
 {
 name = _ayah;
-pos = (186,183);
+pos = (556,183);
 }
 );
 backgroundImage = {
 alpha = 80;
 crop = (0,0,2278,1618);
 imagePath = "images/MS-ADD-01116-000-00023.jpg";
-pos = (-4990,-3779);
+pos = (-4620,-3779);
 scale = (5,5);
 };
 layerId = m01;
@@ -22,11 +22,11 @@ alignment = -1;
 ref = _ayah.005;
 },
 {
-pos = (1,58);
+pos = (371,58);
 ref = _ayah.decoration1;
 }
 );
-width = 368;
+width = 1117;
 },
 {
 associatedMasterId = m01;
@@ -34,8 +34,6 @@ attr = {
 colorPalette = 4;
 };
 layerId = "185E14B7-DC9A-451C-945B-1C7ACD635787";
-metricLeft = "=-9";
-metricRight = "=-14";
 name = "Color 1 18 May 23 at 11:25";
 shapes = (
 {
@@ -43,11 +41,11 @@ alignment = -1;
 ref = _ayah.005.1;
 },
 {
-pos = (1,58);
+pos = (371,58);
 ref = _ayah.decoration1.1;
 }
 );
-width = 368;
+width = 1117;
 },
 {
 associatedMasterId = m01;
@@ -62,14 +60,11 @@ alignment = -1;
 ref = _ayah.005;
 },
 {
-pos = (1,58);
+pos = (371,58);
 ref = _ayah.decoration1;
 }
 );
-width = 368;
+width = 1117;
 }
 );
-metricLeft = "=0";
-metricRight = "=-4";
-metricWidth = "=368";
 }
