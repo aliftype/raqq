@@ -53,7 +53,7 @@
     {
       "input": "۝100",
       "direction": "ltr",
-      "expectation": "endofayah-ar.10=0+1117|ayah.100=1@-1117,0+0"
+      "expectation": "endofayah-ar.10=0+1117|ayah.100=1+0"
     },
     {
       "input": "۝101",
@@ -103,12 +103,12 @@
     {
       "input": "۝10",
       "direction": "ltr",
-      "expectation": "endofayah-ar.10=0+1117|ayah.010=1@-1117,0+0"
+      "expectation": "endofayah-ar.10=0+1117|ayah.010=1+0"
     },
     {
       "input": "۝110",
       "direction": "ltr",
-      "expectation": "endofayah-ar.10=0+1117|ayah.110=1@-1117,0+0"
+      "expectation": "endofayah-ar.10=0+1117|ayah.110=1+0"
     },
     {
       "input": "۝111",
@@ -163,7 +163,7 @@
     {
       "input": "۝120",
       "direction": "ltr",
-      "expectation": "endofayah-ar.10=0+1117|ayah.120=1@-1117,0+0"
+      "expectation": "endofayah-ar.10=0+1117|ayah.120=1+0"
     },
     {
       "input": "۝121",
@@ -218,7 +218,7 @@
     {
       "input": "۝130",
       "direction": "ltr",
-      "expectation": "endofayah-ar.10=0+1117|ayah.130=1@-1117,0+0"
+      "expectation": "endofayah-ar.10=0+1117|ayah.130=1+0"
     },
     {
       "input": "۝131",
@@ -273,7 +273,7 @@
     {
       "input": "۝140",
       "direction": "ltr",
-      "expectation": "endofayah-ar.10=0+1117|ayah.140=1@-1117,0+0"
+      "expectation": "endofayah-ar.10=0+1117|ayah.140=1+0"
     },
     {
       "input": "۝141",
@@ -328,7 +328,7 @@
     {
       "input": "۝150",
       "direction": "ltr",
-      "expectation": "endofayah-ar.10=0+1117|ayah.150=1@-1117,0+0"
+      "expectation": "endofayah-ar.10=0+1117|ayah.150=1+0"
     },
     {
       "input": "۝151",
@@ -383,7 +383,7 @@
     {
       "input": "۝160",
       "direction": "ltr",
-      "expectation": "endofayah-ar.10=0+1117|ayah.160=1@-1117,0+0"
+      "expectation": "endofayah-ar.10=0+1117|ayah.160=1+0"
     },
     {
       "input": "۝161",
@@ -438,7 +438,7 @@
     {
       "input": "۝170",
       "direction": "ltr",
-      "expectation": "endofayah-ar.10=0+1117|ayah.170=1@-1117,0+0"
+      "expectation": "endofayah-ar.10=0+1117|ayah.170=1+0"
     },
     {
       "input": "۝171",
@@ -493,7 +493,7 @@
     {
       "input": "۝180",
       "direction": "ltr",
-      "expectation": "endofayah-ar.10=0+1117|ayah.180=1@-1117,0+0"
+      "expectation": "endofayah-ar.10=0+1117|ayah.180=1+0"
     },
     {
       "input": "۝181",
@@ -548,7 +548,7 @@
     {
       "input": "۝190",
       "direction": "ltr",
-      "expectation": "endofayah-ar.10=0+1117|ayah.190=1@-1117,0+0"
+      "expectation": "endofayah-ar.10=0+1117|ayah.190=1+0"
     },
     {
       "input": "۝191",
@@ -603,7 +603,7 @@
     {
       "input": "۝200",
       "direction": "ltr",
-      "expectation": "endofayah-ar.10=0+1117|ayah.200=1@-1117,0+0"
+      "expectation": "endofayah-ar.10=0+1117|ayah.200=1+0"
     },
     {
       "input": "۝201",
@@ -653,12 +653,12 @@
     {
       "input": "۝20",
       "direction": "ltr",
-      "expectation": "endofayah-ar.10=0+1117|ayah.020=1@-1117,0+0"
+      "expectation": "endofayah-ar.10=0+1117|ayah.020=1+0"
     },
     {
       "input": "۝210",
       "direction": "ltr",
-      "expectation": "endofayah-ar.10=0+1117|ayah.210=1@-1117,0+0"
+      "expectation": "endofayah-ar.10=0+1117|ayah.210=1+0"
     },
     {
       "input": "۝211",
@@ -713,7 +713,7 @@
     {
       "input": "۝220",
       "direction": "ltr",
-      "expectation": "endofayah-ar.10=0+1117|ayah.220=1@-1117,0+0"
+      "expectation": "endofayah-ar.10=0+1117|ayah.220=1+0"
     },
     {
       "input": "۝221",
@@ -768,7 +768,7 @@
     {
       "input": "۝230",
       "direction": "ltr",
-      "expectation": "endofayah-ar.10=0+1117|ayah.230=1@-1117,0+0"
+      "expectation": "endofayah-ar.10=0+1117|ayah.230=1+0"
     },
     {
       "input": "۝231",
@@ -823,7 +823,7 @@
     {
       "input": "۝240",
       "direction": "ltr",
-      "expectation": "endofayah-ar.10=0+1117|ayah.240=1@-1117,0+0"
+      "expectation": "endofayah-ar.10=0+1117|ayah.240=1+0"
     },
     {
       "input": "۝241",
@@ -878,7 +878,7 @@
     {
       "input": "۝250",
       "direction": "ltr",
-      "expectation": "endofayah-ar.10=0+1117|ayah.250=1@-1117,0+0"
+      "expectation": "endofayah-ar.10=0+1117|ayah.250=1+0"
     },
     {
       "input": "۝251",
@@ -933,7 +933,7 @@
     {
       "input": "۝260",
       "direction": "ltr",
-      "expectation": "endofayah-ar.10=0+1117|ayah.260=1@-1117,0+0"
+      "expectation": "endofayah-ar.10=0+1117|ayah.260=1+0"
     },
     {
       "input": "۝261",
@@ -988,7 +988,7 @@
     {
       "input": "۝270",
       "direction": "ltr",
-      "expectation": "endofayah-ar.10=0+1117|ayah.270=1@-1117,0+0"
+      "expectation": "endofayah-ar.10=0+1117|ayah.270=1+0"
     },
     {
       "input": "۝271",
@@ -1043,7 +1043,7 @@
     {
       "input": "۝280",
       "direction": "ltr",
-      "expectation": "endofayah-ar.10=0+1117|ayah.280=1@-1117,0+0"
+      "expectation": "endofayah-ar.10=0+1117|ayah.280=1+0"
     },
     {
       "input": "۝281",
@@ -1158,7 +1158,7 @@
     {
       "input": "۝30",
       "direction": "ltr",
-      "expectation": "endofayah-ar.10=0+1117|ayah.030=1@-1117,0+0"
+      "expectation": "endofayah-ar.10=0+1117|ayah.030=1+0"
     },
     {
       "input": "۝31",
@@ -1208,7 +1208,7 @@
     {
       "input": "۝40",
       "direction": "ltr",
-      "expectation": "endofayah-ar.10=0+1117|ayah.040=1@-1117,0+0"
+      "expectation": "endofayah-ar.10=0+1117|ayah.040=1+0"
     },
     {
       "input": "۝41",
@@ -1258,7 +1258,7 @@
     {
       "input": "۝50",
       "direction": "ltr",
-      "expectation": "endofayah-ar.10=0+1117|ayah.050=1@-1117,0+0"
+      "expectation": "endofayah-ar.10=0+1117|ayah.050=1+0"
     },
     {
       "input": "۝51",
@@ -1308,7 +1308,7 @@
     {
       "input": "۝60",
       "direction": "ltr",
-      "expectation": "endofayah-ar.10=0+1117|ayah.060=1@-1117,0+0"
+      "expectation": "endofayah-ar.10=0+1117|ayah.060=1+0"
     },
     {
       "input": "۝61",
@@ -1358,7 +1358,7 @@
     {
       "input": "۝70",
       "direction": "ltr",
-      "expectation": "endofayah-ar.10=0+1117|ayah.070=1@-1117,0+0"
+      "expectation": "endofayah-ar.10=0+1117|ayah.070=1+0"
     },
     {
       "input": "۝71",
@@ -1408,7 +1408,7 @@
     {
       "input": "۝80",
       "direction": "ltr",
-      "expectation": "endofayah-ar.10=0+1117|ayah.080=1@-1117,0+0"
+      "expectation": "endofayah-ar.10=0+1117|ayah.080=1+0"
     },
     {
       "input": "۝81",
@@ -1458,7 +1458,7 @@
     {
       "input": "۝90",
       "direction": "ltr",
-      "expectation": "endofayah-ar.10=0+1117|ayah.090=1@-1117,0+0"
+      "expectation": "endofayah-ar.10=0+1117|ayah.090=1+0"
     },
     {
       "input": "۝91",
@@ -2373,7 +2373,7 @@
       "features": {
         "salt": true
       },
-      "expectation": "endofayah-ar.10=0+1117|ayah.005=0@-1117,0+0"
+      "expectation": "endofayah-ar.10=0+1117|ayah.005=0+0"
     },
     {
       "input": "ئفة",
@@ -3661,7 +3661,7 @@
     {
       "input": "۝١٠",
       "direction": "ltr",
-      "expectation": "endofayah-ar.10=0+1117|ayah.010=1@-1117,0+0"
+      "expectation": "endofayah-ar.10=0+1117|ayah.010=1+0"
     },
     {
       "input": "۝١١",
@@ -3711,7 +3711,7 @@
     {
       "input": "۝٢٠",
       "direction": "ltr",
-      "expectation": "endofayah-ar.10=0+1117|ayah.020=1@-1117,0+0"
+      "expectation": "endofayah-ar.10=0+1117|ayah.020=1+0"
     },
     {
       "input": "۝٢١",
@@ -3761,7 +3761,7 @@
     {
       "input": "۝٣٠",
       "direction": "ltr",
-      "expectation": "endofayah-ar.10=0+1117|ayah.030=1@-1117,0+0"
+      "expectation": "endofayah-ar.10=0+1117|ayah.030=1+0"
     },
     {
       "input": "۝٣١",
@@ -3811,7 +3811,7 @@
     {
       "input": "۝٤٠",
       "direction": "ltr",
-      "expectation": "endofayah-ar.10=0+1117|ayah.040=1@-1117,0+0"
+      "expectation": "endofayah-ar.10=0+1117|ayah.040=1+0"
     },
     {
       "input": "۝٤١",
@@ -3861,7 +3861,7 @@
     {
       "input": "۝٥٠",
       "direction": "ltr",
-      "expectation": "endofayah-ar.10=0+1117|ayah.050=1@-1117,0+0"
+      "expectation": "endofayah-ar.10=0+1117|ayah.050=1+0"
     },
     {
       "input": "۝٥١",
@@ -3911,7 +3911,7 @@
     {
       "input": "۝٦٠",
       "direction": "ltr",
-      "expectation": "endofayah-ar.10=0+1117|ayah.060=1@-1117,0+0"
+      "expectation": "endofayah-ar.10=0+1117|ayah.060=1+0"
     },
     {
       "input": "۝٦١",
@@ -3961,7 +3961,7 @@
     {
       "input": "۝٧٠",
       "direction": "ltr",
-      "expectation": "endofayah-ar.10=0+1117|ayah.070=1@-1117,0+0"
+      "expectation": "endofayah-ar.10=0+1117|ayah.070=1+0"
     },
     {
       "input": "۝٧١",
@@ -4011,7 +4011,7 @@
     {
       "input": "۝٨٠",
       "direction": "ltr",
-      "expectation": "endofayah-ar.10=0+1117|ayah.080=1@-1117,0+0"
+      "expectation": "endofayah-ar.10=0+1117|ayah.080=1+0"
     },
     {
       "input": "۝٨١",
@@ -4061,7 +4061,7 @@
     {
       "input": "۝٩٠",
       "direction": "ltr",
-      "expectation": "endofayah-ar.10=0+1117|ayah.090=1@-1117,0+0"
+      "expectation": "endofayah-ar.10=0+1117|ayah.090=1+0"
     },
     {
       "input": "۝٩١",
@@ -4839,7 +4839,7 @@
     {
       "input": "۝١٠٠",
       "direction": "ltr",
-      "expectation": "endofayah-ar.10=0+1117|ayah.100=1@-1117,0+0"
+      "expectation": "endofayah-ar.10=0+1117|ayah.100=1+0"
     },
     {
       "input": "۝١٠١",
@@ -4889,7 +4889,7 @@
     {
       "input": "۝١١٠",
       "direction": "ltr",
-      "expectation": "endofayah-ar.10=0+1117|ayah.110=1@-1117,0+0"
+      "expectation": "endofayah-ar.10=0+1117|ayah.110=1+0"
     },
     {
       "input": "۝١١١",
@@ -4939,7 +4939,7 @@
     {
       "input": "۝١٢٠",
       "direction": "ltr",
-      "expectation": "endofayah-ar.10=0+1117|ayah.120=1@-1117,0+0"
+      "expectation": "endofayah-ar.10=0+1117|ayah.120=1+0"
     },
     {
       "input": "۝١٢١",
@@ -4989,7 +4989,7 @@
     {
       "input": "۝١٣٠",
       "direction": "ltr",
-      "expectation": "endofayah-ar.10=0+1117|ayah.130=1@-1117,0+0"
+      "expectation": "endofayah-ar.10=0+1117|ayah.130=1+0"
     },
     {
       "input": "۝١٣١",
@@ -5039,7 +5039,7 @@
     {
       "input": "۝١٤٠",
       "direction": "ltr",
-      "expectation": "endofayah-ar.10=0+1117|ayah.140=1@-1117,0+0"
+      "expectation": "endofayah-ar.10=0+1117|ayah.140=1+0"
     },
     {
       "input": "۝١٤١",
@@ -5089,7 +5089,7 @@
     {
       "input": "۝١٥٠",
       "direction": "ltr",
-      "expectation": "endofayah-ar.10=0+1117|ayah.150=1@-1117,0+0"
+      "expectation": "endofayah-ar.10=0+1117|ayah.150=1+0"
     },
     {
       "input": "۝١٥١",
@@ -5139,7 +5139,7 @@
     {
       "input": "۝١٦٠",
       "direction": "ltr",
-      "expectation": "endofayah-ar.10=0+1117|ayah.160=1@-1117,0+0"
+      "expectation": "endofayah-ar.10=0+1117|ayah.160=1+0"
     },
     {
       "input": "۝١٦١",
@@ -5189,7 +5189,7 @@
     {
       "input": "۝١٧٠",
       "direction": "ltr",
-      "expectation": "endofayah-ar.10=0+1117|ayah.170=1@-1117,0+0"
+      "expectation": "endofayah-ar.10=0+1117|ayah.170=1+0"
     },
     {
       "input": "۝١٧١",
@@ -5239,7 +5239,7 @@
     {
       "input": "۝١٨٠",
       "direction": "ltr",
-      "expectation": "endofayah-ar.10=0+1117|ayah.180=1@-1117,0+0"
+      "expectation": "endofayah-ar.10=0+1117|ayah.180=1+0"
     },
     {
       "input": "۝١٨١",
@@ -5289,7 +5289,7 @@
     {
       "input": "۝١٩٠",
       "direction": "ltr",
-      "expectation": "endofayah-ar.10=0+1117|ayah.190=1@-1117,0+0"
+      "expectation": "endofayah-ar.10=0+1117|ayah.190=1+0"
     },
     {
       "input": "۝١٩١",
@@ -5339,7 +5339,7 @@
     {
       "input": "۝٢٠٠",
       "direction": "ltr",
-      "expectation": "endofayah-ar.10=0+1117|ayah.200=1@-1117,0+0"
+      "expectation": "endofayah-ar.10=0+1117|ayah.200=1+0"
     },
     {
       "input": "۝٢٠١",
@@ -5389,7 +5389,7 @@
     {
       "input": "۝٢١٠",
       "direction": "ltr",
-      "expectation": "endofayah-ar.10=0+1117|ayah.210=1@-1117,0+0"
+      "expectation": "endofayah-ar.10=0+1117|ayah.210=1+0"
     },
     {
       "input": "۝٢١١",
@@ -5439,7 +5439,7 @@
     {
       "input": "۝٢٢٠",
       "direction": "ltr",
-      "expectation": "endofayah-ar.10=0+1117|ayah.220=1@-1117,0+0"
+      "expectation": "endofayah-ar.10=0+1117|ayah.220=1+0"
     },
     {
       "input": "۝٢٢١",
@@ -5489,7 +5489,7 @@
     {
       "input": "۝٢٣٠",
       "direction": "ltr",
-      "expectation": "endofayah-ar.10=0+1117|ayah.230=1@-1117,0+0"
+      "expectation": "endofayah-ar.10=0+1117|ayah.230=1+0"
     },
     {
       "input": "۝٢٣١",
@@ -5539,7 +5539,7 @@
     {
       "input": "۝٢٤٠",
       "direction": "ltr",
-      "expectation": "endofayah-ar.10=0+1117|ayah.240=1@-1117,0+0"
+      "expectation": "endofayah-ar.10=0+1117|ayah.240=1+0"
     },
     {
       "input": "۝٢٤١",
@@ -5589,7 +5589,7 @@
     {
       "input": "۝٢٥٠",
       "direction": "ltr",
-      "expectation": "endofayah-ar.10=0+1117|ayah.250=1@-1117,0+0"
+      "expectation": "endofayah-ar.10=0+1117|ayah.250=1+0"
     },
     {
       "input": "۝٢٥١",
@@ -5639,7 +5639,7 @@
     {
       "input": "۝٢٦٠",
       "direction": "ltr",
-      "expectation": "endofayah-ar.10=0+1117|ayah.260=1@-1117,0+0"
+      "expectation": "endofayah-ar.10=0+1117|ayah.260=1+0"
     },
     {
       "input": "۝٢٦١",
@@ -5689,7 +5689,7 @@
     {
       "input": "۝٢٧٠",
       "direction": "ltr",
-      "expectation": "endofayah-ar.10=0+1117|ayah.270=1@-1117,0+0"
+      "expectation": "endofayah-ar.10=0+1117|ayah.270=1+0"
     },
     {
       "input": "۝٢٧١",
@@ -5739,7 +5739,7 @@
     {
       "input": "۝٢٨٠",
       "direction": "ltr",
-      "expectation": "endofayah-ar.10=0+1117|ayah.280=1@-1117,0+0"
+      "expectation": "endofayah-ar.10=0+1117|ayah.280=1+0"
     },
     {
       "input": "۝٢٨١",

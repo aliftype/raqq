@@ -4,8 +4,8 @@ layers = (
 {
 anchors = (
 {
-name = _ayah;
-pos = (556,183);
+name = "*origin";
+pos = (1117,0);
 }
 );
 layerId = m01;
@@ -26,6 +26,12 @@ scale = (0.8,0.85);
 width = 1117;
 },
 {
+anchors = (
+{
+name = "*origin";
+pos = (1117,0);
+}
+);
 associatedMasterId = m01;
 attr = {
 colorPalette = 4;
@@ -49,6 +55,12 @@ scale = (0.8,0.85);
 width = 1117;
 },
 {
+anchors = (
+{
+name = "*origin";
+pos = (1117,0);
+}
+);
 associatedMasterId = m01;
 attr = {
 colorPalette = 1;

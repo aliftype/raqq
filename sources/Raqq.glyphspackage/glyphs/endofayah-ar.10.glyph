@@ -2,12 +2,6 @@
 glyphname = "endofayah-ar.10";
 layers = (
 {
-anchors = (
-{
-name = ayah;
-pos = (556,183);
-}
-);
 backgroundImage = {
 alpha = 80;
 crop = (0,0,2278,1618);

@@ -4,8 +4,8 @@ layers = (
 {
 anchors = (
 {
-name = _ayah;
-pos = (556,183);
+name = "*origin";
+pos = (1117,0);
 }
 );
 layerId = m01;
@@ -44,8 +44,8 @@ width = 1117;
 {
 anchors = (
 {
-name = _ayah;
-pos = (556,183);
+name = "*origin";
+pos = (1117,0);
 }
 );
 associatedMasterId = m01;
@@ -89,8 +89,8 @@ width = 1117;
 {
 anchors = (
 {
-name = _ayah;
-pos = (556,183);
+name = "*origin";
+pos = (1117,0);
 }
 );
 associatedMasterId = m01;
