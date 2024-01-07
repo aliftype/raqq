@@ -31,13 +31,17 @@ def parsefeatures(text):
     return features
 
 
-def shape(font, text, direction, script, language, features):
+def shape(font, text, direction, script, language, features, variations):
     buffer = hb.Buffer()
     buffer.add_str(text)
     buffer.direction = direction
     buffer.script = script
     if language:
         buffer.language = language
+
+    old_variations = font.get_var_coords_normalized()
+    if variations:
+        font.set_variations(variations)
 
     hb.shape(font, buffer, features)
 
@@ -51,6 +55,9 @@ def shape(font, text, direction, script, language, features):
         if pos.y_advance:
             glyph += f",{pos.y_advance}"
         output.append(glyph)
+
+    if variations:
+        font.set_var_coords_normalized(old_variations)
 
     return "|".join(output)
 
@@ -66,6 +73,8 @@ def main(rags):
             test = {k: v for k, v in test.items() if v}
             if features := test.get("features"):
                 test["features"] = parsefeatures(features)
+            if variations := test.get("variations"):
+                test["variations"] = parsefeatures(variations)
             test["expectation"] = shape(
                 font,
                 test.get("input"),
@@ -73,6 +82,7 @@ def main(rags):
                 test.get("script", "arab"),
                 test.get("language"),
                 test.get("features"),
+                test.get("variations"),
             )
             tests.append(test)
 

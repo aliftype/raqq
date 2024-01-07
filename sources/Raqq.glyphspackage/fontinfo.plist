@@ -21,6 +21,7 @@ classes = (
 code = "$[name LIKE \"*-ar\" && category == \"Letter\" && ! colorIndex == 0 &&
   name != \"kashida-ar\" && name != \"hamza-ar\"]
 
+lam-ar.short
 period
 threedots-ar
 zerowidthspace
@@ -666,6 +667,8 @@ lookup short_lam {
 	sub lam-ar.medi			by lam-ar.medi.short;
 	sub lam-ar.medi.round	by lam-ar.medi.round.short;
 	sub alef-ar.fina		by alef-ar.fina.short;
+	sub lam-ar				by lam-ar.short;
+	sub lam-ar.init			by lam-ar.init.short;
 } short_lam;
 
 lookup yehbarree_baseline {
@@ -712,6 +715,23 @@ lookup rlig_4 {
 		 @aftermeem' lookup rounded;
 	;
 } rlig_4;
+
+conditionset compact {
+	SPAC -100 -95;
+} compact;
+
+variation rlig compact {
+	lookupflag IgnoreMarks;
+
+	ignore
+	sub [alef-ar alef-ar.fina fehDotless_alef-ar]
+		[lam-ar lam-ar.init]'
+		[lam-ar.medi.short lam-ar.medi.round.short lam-ar.fina.short]
+	;
+	sub [alef-ar alef-ar.fina fehDotless_alef-ar]
+		[lam-ar lam-ar.init]' lookup short_lam
+	;
+} rlig;
 ";
 name = misc;
 },
@@ -1581,7 +1601,9 @@ _c.hah.noon = -25;
 "seen-ar.medi.low" = -10;
 };
 "fehDotless_alef-ar" = {
+"@MMK_L_lam" = -8;
 "alef-ar" = -7;
+"lam-ar.short" = -17;
 };
 "hah-ar.init" = {
 "lam_alef-ar.fina" = -57;

@@ -52,8 +52,10 @@ filelock==3.13.1
     # via youseedee
 font-v==2.1.0
     # via fontbakery
-fontbakery==0.10.8
-    # via -r requirements-test.in
+fontbakery @ git+https://github.com/fonttools/fontbakery@shaping-variations
+    # via
+    #   -r requirements-test.in
+    #   fontbakery
 fontfeatures==1.8.0
     # via babelfont
 fonttools==4.47.0
