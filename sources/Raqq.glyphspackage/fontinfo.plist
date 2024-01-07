@@ -1,5 +1,5 @@
 {
-.appVersion = "3231";
+.appVersion = "3234";
 .formatVersion = 3;
 axes = (
 {
@@ -696,7 +696,7 @@ lookup rlig_3 {
 	lookupflag IgnoreMarks;
 
 	sub [behDotless-ar.medi lam-ar.medi lam-ar.medi.hah1 lam-ar.medi.hah2]' lookup tooth_rounded
-		[meem-ar.medi meem-ar.fina]' lookup rounded
+		[meem-ar.medi meem-ar.fina noonghunna-ar.fina]' lookup rounded
 	;
 
 	sub [meem-ar.init heh-ar.init]' lookup rounded
@@ -1032,11 +1032,11 @@ lookup dots_below {
 	pos	 behDotless-ar.medi.high
 		 _c.seen.beh
 		 @dotsbelow
-		 behDotless-ar.medi
+		[behDotless-ar.medi behDotless-ar.medi.round]
 		 @dotsbelow'
 		[noonghunna-ar.fina alefMaksura-ar.fina]
 	;
-	pos	[behDotless-ar.medi]
+	pos	[behDotless-ar.medi behDotless-ar.medi.round]
 		 @dotsbelow' <70 0 0 0>
 		[noonghunna-ar.fina alefMaksura-ar.fina]
 	;
