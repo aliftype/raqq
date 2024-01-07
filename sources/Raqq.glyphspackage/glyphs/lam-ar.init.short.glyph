@@ -1,5 +1,5 @@
 {
-glyphname = "lam-ar.init.hah1";
+glyphname = "lam-ar.init.short";
 kernLeft = lam;
 kernRight = lam;
 layers = (
@@ -7,19 +7,18 @@ layers = (
 anchors = (
 {
 name = damma;
-pos = (5,288);
+pos = (5,173);
 },
 {
 name = exit;
-pos = (0,115);
 },
 {
 name = fatha;
-pos = (-54,635);
+pos = (-54,520);
 },
 {
 name = kasra;
-pos = (123,79);
+pos = (123,-36);
 }
 );
 backgroundImage = {
@@ -27,31 +26,10 @@ alpha = 80;
 angle = -0.1;
 imagePath = "images/MS-ADD-01116-000-00003.jpg";
 locked = 1;
-pos = (-6202,-3619);
+pos = (-3157,-1867);
 scale = (5,5);
 };
 layerId = m01;
-shapes = (
-{
-alignment = -1;
-pos = (0,115);
-ref = "lam-ar.init.short";
-}
-);
-width = 123;
-},
-{
-associatedMasterId = m01;
-backgroundImage = {
-alpha = 80;
-angle = -0.1;
-imagePath = "images/MS-ADD-01116-000-00003.jpg";
-locked = 1;
-pos = (-6202,-3734);
-scale = (5,5);
-};
-layerId = "57202DD3-E382-4D04-9977-46B2FD35FB4D";
-name = "1 May 23 at 01:53";
 shapes = (
 {
 closed = 1;
@@ -83,6 +61,6 @@ nodes = (
 width = 123;
 }
 );
-metricLeft = "=-20@115";
+metricLeft = "=-20@0";
 metricRight = "=0";
 }

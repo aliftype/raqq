@@ -1,4 +1,4 @@
-input;direction;features;script;language
+input;direction;features;script;language;variations
 آ
 أ
 ؤ
@@ -546,6 +546,7 @@ input;direction;features;script;language
 جلح
 جنح
 جنى
+حال
 حبا
 حبب
 حبر
@@ -646,6 +647,7 @@ input;direction;features;script;language
 فها
 فهم
 فهو
+قال
 قلم
 كسي
 كـا
@@ -774,6 +776,8 @@ input;direction;features;script;language
 يمر
 يمن
 وقح لا
+حال;;;;;SPAC=-100
+قال;;;;;SPAC=-100
 بسي;;salt
 بشي;;salt
 بني;;salt
@@ -942,6 +946,7 @@ input;direction;features;script;language
 ثثثا
 جججج
 جلحو
+حالت
 ريحا
 سبإٍ
 سببا
@@ -958,6 +963,7 @@ input;direction;features;script;language
 فبيا
 فلاُ
 فلِي
+قالت
 قلنا
 كلمة
 لبشر
@@ -1043,6 +1049,8 @@ input;direction;features;script;language
 يمما
 يممر
 يممو
+حالت;;;;;SPAC=-100
+قالت;;;;;SPAC=-100
 ببسي;;salt
 بسسي;;salt
 بصسي;;salt
