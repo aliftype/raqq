@@ -801,9 +801,9 @@ def build(font, instance, args):
     for axis, default in zip(font.axes, instance.axes):
         locations = axisMappings[axis.axisTag].values()
         ds.addAxisDescriptor(
-            tag=axis.axisTag,
             name=axis.name,
-            labelNames={**axisNames[axis.axisTag], "en": axis.name},
+            tag=axis.axisTag,
+            labelNames={"en": axis.name, **axisNames[axis.axisTag]},
             hidden=axis.hidden,
             maximum=max(locations),
             minimum=min(locations),
@@ -812,10 +812,10 @@ def build(font, instance, args):
 
     for i, master in enumerate(font.masters):
         ds.addSourceDescriptor(
+            name=f"master_{i}",
             font=buildMaster(font, master, args),
             familyName=font.familyName,
             styleName=master.name,
-            name=f"master_{i}",
             location={a.name: master.axes[i] for i, a in enumerate(ds.axes)},
         )
 
