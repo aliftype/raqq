@@ -13,3 +13,4 @@ exclude_checks:
   - com.adobe.fonts/check/varfont/same_size_instance_records
   - com.adobe.fonts/check/stat_has_axis_value_tables
   - com.adobe.fonts/check/varfont/foundry_defined_tag_name
+  - com.google.fonts/check/gdef_non_mark_chars
