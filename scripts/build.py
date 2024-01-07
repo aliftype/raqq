@@ -18,7 +18,7 @@ import os
 from xml.etree import ElementTree as etree
 
 from fontTools.cu2qu.ufo import glyphs_to_quadratic
-from fontTools.designspaceLib import DesignSpaceDocument
+from fontTools.designspaceLib import DesignSpaceDocument, AxisLabelDescriptor
 from fontTools.fontBuilder import FontBuilder
 from fontTools.misc.transform import Identity, Transform
 from fontTools.pens.basePen import AbstractPen
@@ -26,7 +26,7 @@ from fontTools.pens.svgPathPen import SVGPathPen
 from fontTools.pens.ttGlyphPen import TTGlyphPointPen
 from fontTools.ttLib import newTable
 from fontTools.ttLib.tables._h_e_a_d import mac_epoch_diff
-from fontTools.varLib import build as merge
+from fontTools.varLib import build_many as merge
 from glyphsLib import GSAnchor, GSFont, GSFontMaster, GSLayer
 from glyphsLib.builder.tokens import TokenExpander
 from glyphsLib.glyphdata import GlyphData
@@ -788,22 +788,21 @@ def prepare(args):
     return font, instance
 
 
-def build(font, instance, args):
+def build(font, default_instance, args):
     ds = DesignSpaceDocument()
 
     axisNames = {
         "MSHQ": {"ar": "مشق"},
         "SPAC": {"ar": "مسافات"},
-        "jstf": {},
     }
 
     axisMappings = font.customParameters["Axis Mappings"]
-    for axis, default in zip(font.axes, instance.axes):
+    for axis, default in zip(font.axes, default_instance.axes):
         locations = axisMappings[axis.axisTag].values()
         ds.addAxisDescriptor(
             name=axis.name,
             tag=axis.axisTag,
-            labelNames={"en": axis.name, **axisNames[axis.axisTag]},
+            labelNames={"en": axis.name, **axisNames.get(axis.axisTag, {})},
             hidden=axis.hidden,
             maximum=max(locations),
             minimum=min(locations),
@@ -819,6 +818,19 @@ def build(font, instance, args):
             location={a.name: master.axes[i] for i, a in enumerate(ds.axes)},
         )
 
+    for i, instance in enumerate(font.instances):
+        location = {a.name: instance.axes[i] for i, a in enumerate(ds.axes)}
+        ds.addLocationLabelDescriptor(name=instance.name, userLocation=location)
+        if instance == default_instance:
+            continue
+        ds.addInstanceDescriptor(
+            name=f"instance_{i}",
+            familyName=font.familyName,
+            localisedStyleName={"en": instance.name},
+            postScriptFontName=instance.fontName,
+            location=location,
+        )
+
     mappings = [
         [{"Justification": -100}, {"Spacing": -100, "Mashq": 0}],
         [{"Justification": -50}, {"Spacing": 0, "Mashq": 0}],
@@ -830,11 +842,11 @@ def build(font, instance, args):
     for input, output in mappings:
         ds.addAxisMappingDescriptor(inputLocation=input, outputLocation=output)
 
-    vf, _, _ = merge(ds)
+    vf = merge(ds)["VF"]
     if "ltag" in vf:
         del vf["ltag"]
 
-    otf = buildBase(font, instance, vf, args)
+    otf = buildBase(font, default_instance, vf, args)
     return otf
 
 
