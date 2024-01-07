@@ -535,6 +535,7 @@ lookup med_beh {
 
 lookup low_seen {
 	sub seen-ar.medi		by seen-ar.medi.low;
+	sub seen-ar.fina		by seen-ar.fina.low;
 } low_seen;
 
 lookup rlig_teeth_1 {
@@ -565,10 +566,10 @@ lookup rlig_teeth_3 {
 	ignore
 	sub [behDotless-ar.init.high behDotless-ar.medi.high]
 		[behDotless-ar.init behDotless-ar.medi]'
-		[seen-ar.fina ain-ar.medi ain-ar.fina heh-ar.fina heh-ar.medi]
+		[ain-ar.medi ain-ar.fina heh-ar.fina heh-ar.medi]
 	;
 	sub	[behDotless-ar.init behDotless-ar.medi]' lookup high_beh
-		[seen-ar.fina ain-ar.medi ain-ar.fina]
+		[ain-ar.medi ain-ar.fina]
 	;
 
 	sub	 behDotless-ar.init' lookup high_beh
@@ -585,11 +586,11 @@ lookup rlig_teeth_3 {
 	;
 
 	sub [behDotless-ar.init behDotless-ar.medi]' lookup med_beh
-		[seen-ar.medi]' lookup low_seen
+		[seen-ar.medi seen-ar.fina]' lookup low_seen
 	;
 
 	sub	[fehDotless-ar.medi meem-ar.init meem-ar.medi hah-ar.init hah-ar.medi]
-		 seen-ar.medi' lookup low_seen
+		[seen-ar.medi seen-ar.fina]' lookup low_seen
 	;
 } rlig_teeth_3;
 ";
@@ -755,6 +756,11 @@ lookup rlig_sheen_dots {
 	sub [seen-ar seen-ar.fina]
 		[threedotshorizontalabove-ar]'
 	by	[threedotshorizontalabove-ar.4]
+	;
+
+	sub [seen-ar.fina.low]
+		[threedotshorizontalabove-ar]'
+	by	[threedotshorizontalabove-ar.5]
 	;
 } rlig_sheen_dots;
 

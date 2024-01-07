@@ -1,0 +1,94 @@
+{
+glyphname = "seen-ar.fina.low";
+kernLeft = seen.isol;
+kernRight = beh;
+layers = (
+{
+anchors = (
+{
+name = entry;
+pos = (487,0);
+},
+{
+name = fatha;
+pos = (298,324);
+},
+{
+name = kasra;
+pos = (343,-241);
+},
+{
+name = top;
+pos = (280,192);
+}
+);
+layerId = m01;
+shapes = (
+{
+alignment = -1;
+pos = (0,-83);
+ref = "noonghunna-ar";
+},
+{
+closed = 1;
+nodes = (
+(500,0,l),
+(500,110,l),
+(485,110,o),
+(485,139,o),
+(479,271,cs),
+(478,290,o),
+(466,289,o),
+(456,271,cs),
+(439,241,o),
+(428,207,o),
+(390,195,cs),
+(379,191,o),
+(377,185,o),
+(378,172,cs),
+(380,126,o),
+(382,120,o),
+(409,83,c),
+(408,111,l),
+(377,146,o),
+(347,197,o),
+(327,258,cs),
+(324,268,o),
+(316,266,o),
+(313,257,cs),
+(293,202,o),
+(271,180,o),
+(245,167,cs),
+(238,163,o),
+(235,158,o),
+(239,149,cs),
+(263,94,o),
+(274,76,o),
+(291,51,c),
+(265,128,l),
+(252,133,o),
+(241,140,o),
+(231,152,c),
+(231,0,l)
+);
+}
+);
+width = 487;
+},
+{
+associatedMasterId = m01;
+layerId = "0274AD99-FFA9-4811-AD80-170E3C36CBC7";
+name = "4 Apr 23 at 00:00";
+shapes = (
+{
+alignment = -1;
+pos = (382,0);
+ref = "behDotless-ar.medi";
+}
+);
+width = 510;
+}
+);
+metricLeft = "=noonghunna-ar";
+metricRight = "=seen-ar.medi.low";
+}
