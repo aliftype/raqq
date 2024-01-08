@@ -1,0 +1,20 @@
+{
+glyphname = "threedotsdownbelow-ar";
+layers = (
+{
+anchors = (
+{
+name = _bottom;
+pos = (37,124);
+}
+);
+layerId = m01;
+shapes = (
+{
+ref = "threedotsupabove-ar";
+}
+);
+width = 174;
+}
+);
+}

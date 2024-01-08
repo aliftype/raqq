@@ -1,0 +1,35 @@
+{
+glyphname = _c.ain.init.beh;
+kernLeft = ain.beh;
+layers = (
+{
+anchors = (
+{
+name = entry;
+pos = (95,0);
+},
+{
+name = exit;
+}
+);
+layerId = m01;
+shapes = (
+{
+closed = 1;
+nodes = (
+(-10,0,l),
+(95,0,l),
+(95,110,l),
+(51,118,o),
+(-4,155,o),
+(-6,234,c),
+(-24,234,l)
+);
+}
+);
+width = 95;
+}
+);
+metricLeft = "=-24";
+metricRight = "=0";
+}

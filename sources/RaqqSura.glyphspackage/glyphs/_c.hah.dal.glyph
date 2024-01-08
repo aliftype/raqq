@@ -1,0 +1,35 @@
+{
+glyphname = _c.hah.dal;
+layers = (
+{
+anchors = (
+{
+name = entry;
+pos = (71,0);
+},
+{
+name = exit;
+}
+);
+layerId = m01;
+shapes = (
+{
+closed = 1;
+nodes = (
+(71,10,l),
+(71,104,l),
+(32,134,o),
+(-4,169,o),
+(-32,212,cs),
+(-47,233,o),
+(-50,242,o),
+(-65,244,c),
+(-65,10,l)
+);
+}
+);
+width = 71;
+}
+);
+metricRight = "=0";
+}

@@ -1,0 +1,98 @@
+{
+glyphname = "behDotless-ar.medi.round";
+kernRight = beh;
+layers = (
+{
+anchors = (
+{
+name = bottom;
+pos = (22,-38);
+},
+{
+name = damma;
+pos = (-10,170);
+},
+{
+name = entry;
+pos = (108,0);
+},
+{
+name = exit;
+},
+{
+name = fatha;
+pos = (27,387);
+},
+{
+name = kasra;
+pos = (55,-57);
+},
+{
+name = top;
+pos = (45,308);
+}
+);
+backgroundImage = {
+alpha = 80;
+imagePath = "images/MS-ADD-01116-000-00005.jpg";
+locked = 1;
+pos = (-5177,-2810);
+scale = (5,5);
+};
+layerId = m01;
+shapes = (
+{
+closed = 1;
+nodes = (
+(121,0,l),
+(121,110,l),
+(109,110,o),
+(106,134,o),
+(105,157,cs),
+(102,234,o),
+(100,289,o),
+(96,341,cs),
+(95,360,o),
+(81,359,o),
+(75,351,cs),
+(44,305,o),
+(21,271,o),
+(2,265,cs),
+(-11,261,o),
+(-14,248,o),
+(-13,238,cs),
+(-9,197,o),
+(-9,181,o),
+(-9,146,cs),
+(-8,64,o),
+(3,0,o),
+(88,0,cs)
+);
+}
+);
+width = 108;
+},
+{
+associatedMasterId = m01;
+backgroundImage = {
+alpha = 80;
+imagePath = "images/MS-ADD-01116-000-00005.jpg";
+locked = 1;
+pos = (-5171,-2810);
+scale = (5,5);
+};
+layerId = "7C6F5614-CB40-4B03-BC75-799A396C73E3";
+name = "3 Apr 23 at 23:52";
+shapes = (
+{
+alignment = -1;
+pos = (-18,0);
+ref = "behDotless-ar.medi.high";
+}
+);
+visible = 1;
+width = 110;
+}
+);
+metricRight = "=3@157";
+}

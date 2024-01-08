@@ -1,0 +1,32 @@
+{
+glyphname = _c.seen.beh;
+layers = (
+{
+anchors = (
+{
+name = entry;
+},
+{
+name = exit;
+}
+);
+layerId = m01;
+shapes = (
+{
+closed = 1;
+nodes = (
+(22,136,o),
+(-4,153,o),
+(-5,202,c),
+(-24,202,l),
+(-24,45,l),
+(41,45,l),
+(41,130,l)
+);
+}
+);
+width = 0;
+}
+);
+metricLeft = "=-24";
+}

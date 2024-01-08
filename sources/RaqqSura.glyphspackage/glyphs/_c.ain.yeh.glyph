@@ -1,0 +1,34 @@
+{
+glyphname = _c.ain.yeh;
+layers = (
+{
+anchors = (
+{
+name = entry;
+pos = (15,0);
+},
+{
+name = exit;
+}
+);
+layerId = m01;
+shapes = (
+{
+closed = 1;
+nodes = (
+(67,0,l),
+(67,110,l),
+(36,110,o),
+(-10,135,o),
+(-40,177,c),
+(-58,177,l),
+(-5,0,l)
+);
+}
+);
+width = 15;
+}
+);
+metricLeft = "=-58";
+metricRight = "=-52";
+}

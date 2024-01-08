@@ -1,0 +1,83 @@
+{
+glyphname = "hah-ar.init.hah";
+kernLeft = hah;
+kernRight = hah.init;
+layers = (
+{
+anchors = (
+{
+name = bottom;
+pos = (437,-67);
+},
+{
+name = damma;
+pos = (28,121);
+},
+{
+name = exit;
+},
+{
+name = fatha;
+pos = (407,177);
+},
+{
+name = kasra;
+pos = (506,-52);
+},
+{
+name = top;
+pos = (21,249);
+}
+);
+backgroundImage = {
+alpha = 80;
+imagePath = "images/MS-ADD-01116-000-00012.jpg";
+locked = 1;
+pos = (-2138,-1861);
+scale = (5,5);
+};
+layerId = m01;
+shapes = (
+{
+closed = 1;
+nodes = (
+(137,-1,o),
+(385,3,o),
+(456,3,cs),
+(473,3,o),
+(499,3,o),
+(509,16,cs),
+(526,38,o),
+(549,59,o),
+(575,83,cs),
+(583,91,o),
+(578,104,o),
+(567,103,cs),
+(409,94,o),
+(206,143,o),
+(77,296,cs),
+(69,305,o),
+(57,302,o),
+(54,296,cs),
+(37,261,o),
+(3,227,o),
+(-17,214,cs),
+(-29,206,o),
+(-27,201,o),
+(-17,189,cs),
+(12,153,o),
+(80,81,o),
+(126,63,c),
+(137,110,l),
+(93,103,o),
+(37,94,o),
+(-7,145,c),
+(-7,0,l)
+);
+}
+);
+width = 579;
+}
+);
+metricRight = "=0";
+}

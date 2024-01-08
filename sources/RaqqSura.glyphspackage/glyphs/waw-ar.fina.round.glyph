@@ -1,0 +1,23 @@
+{
+glyphname = "waw-ar.fina.round";
+layers = (
+{
+anchors = (
+{
+name = entry;
+pos = (492,0);
+}
+);
+layerId = m01;
+shapes = (
+{
+alignment = -1;
+pos = (0,-83);
+ref = "waw-ar";
+}
+);
+width = 492;
+}
+);
+metricLeft = "=waw-ar";
+}

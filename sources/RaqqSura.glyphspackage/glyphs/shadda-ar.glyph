@@ -1,0 +1,10 @@
+{
+glyphname = "shadda-ar";
+layers = (
+{
+layerId = m01;
+width = 1200;
+}
+);
+unicode = 1617;
+}

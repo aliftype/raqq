@@ -1,0 +1,60 @@
+{
+glyphname = "lam-ar.init.hah1.alt";
+layers = (
+{
+anchors = (
+{
+name = damma;
+pos = (-9,232);
+},
+{
+name = exit;
+pos = (-63,130);
+},
+{
+name = fatha;
+pos = (-69,625);
+},
+{
+name = kasra;
+pos = (163,-72);
+}
+);
+backgroundImage = {
+alpha = 80;
+angle = -1.1;
+imagePath = "images/MS-ADD-01116-000-00003.jpg";
+locked = 1;
+pos = (-2756,-3785);
+scale = (5,5);
+};
+layerId = m01;
+shapes = (
+{
+closed = 1;
+nodes = (
+(105,130,l),
+(100,276,o),
+(89,578,o),
+(81,766,cs),
+(80,789,o),
+(66,795,o),
+(56,776,cs),
+(44,753,o),
+(5,719,o),
+(-13,705,cs),
+(-28,692,o),
+(-22,679,o),
+(-21,669,cs),
+(-11,518,o),
+(-2,256,o),
+(0,130,c)
+);
+}
+);
+width = 105;
+}
+);
+metricLeft = "=0@130";
+metricRight = "=0";
+}

@@ -1,0 +1,52 @@
+{
+glyphname = "lam-ar.init.hah2.alt";
+layers = (
+{
+anchors = (
+{
+name = damma;
+pos = (-9,332);
+},
+{
+name = exit;
+pos = (-63,230);
+},
+{
+name = fatha;
+pos = (-69,608);
+},
+{
+name = kasra;
+pos = (163,28);
+}
+);
+layerId = m01;
+shapes = (
+{
+closed = 1;
+nodes = (
+(105,230,l),
+(100,376,o),
+(89,578,o),
+(81,766,cs),
+(80,789,o),
+(66,795,o),
+(56,776,cs),
+(44,753,o),
+(5,719,o),
+(-13,705,cs),
+(-28,692,o),
+(-22,679,o),
+(-21,669,cs),
+(-11,518,o),
+(-2,356,o),
+(0,230,c)
+);
+}
+);
+width = 105;
+}
+);
+metricLeft = "=0@230";
+metricRight = "=0";
+}

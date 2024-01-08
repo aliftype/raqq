@@ -1,0 +1,34 @@
+{
+glyphname = "lam-ar.medi.hah2";
+kernLeft = lam;
+kernRight = beh;
+layers = (
+{
+anchors = (
+{
+name = entry;
+pos = (125,230);
+},
+{
+name = exit;
+pos = (0,230);
+}
+);
+layerId = m01;
+shapes = (
+{
+alignment = -1;
+ref = "lam-ar.init.hah2";
+},
+{
+alignment = -1;
+pos = (38,230);
+ref = _p.lam;
+}
+);
+width = 125;
+}
+);
+metricLeft = "=-20";
+metricRight = "=3@387";
+}

@@ -1,0 +1,24 @@
+{
+glyphname = "dotbelow-ar";
+layers = (
+{
+anchors = (
+{
+name = _bottom;
+pos = (37,72);
+}
+);
+layerId = m01;
+shapes = (
+{
+alignment = -1;
+pos = (0,-8);
+ref = "dotabove-ar";
+}
+);
+width = 110;
+}
+);
+metricLeft = "=dotabove-ar";
+metricRight = "=dotabove-ar";
+}

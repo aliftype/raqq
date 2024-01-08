@@ -28,8 +28,8 @@ FONTDIR = fonts
 TESTDIR = tests
 BUILDDIR = build
 
-FONTS = $(FONTDIR)/$(NAME).ttf
-WOFF2 = $(FONTDIR)/$(NAME).woff2
+FONTS = $(FONTDIR)/$(NAME).ttf $(FONTDIR)/$(NAME)Sura.ttf
+WOFF2 = $(FONTDIR)/$(NAME).woff2 $(FONTDIR)/$(NAME)Sura.woff2
 FEA = $(SOURCEDIR)/overhang.fea
 JSON = $(TESTDIR)/shaping.json $(TESTDIR)/decomposition.json
 HTML = $(TESTDIR)/$(NAME)-shaping.html $(TESTDIR)/$(NAME)-fb.html
@@ -47,7 +47,7 @@ test: $(HTML)
 update-test: $(JSON)
 
 web: $(WOFF2)
-	cp $+ docs/assets/fonts/Raqq.woff2
+	cp $+ docs/assets/fonts/
 
 update-fea: $(FONTS)
 	$(info   GEN    $(@F))
