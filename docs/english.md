@@ -1,6 +1,6 @@
 ---
 title: Raqq
-description: Early manuscript Kufic
+description: Early manuscript Kufic typeface
 layout: default
 language: en-US
 direction: ltr
