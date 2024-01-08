@@ -93,7 +93,6 @@ pos = (286,-169);
 associatedMasterId = m01;
 attr = {
 coordinates = (
-0,
 100
 );
 };
