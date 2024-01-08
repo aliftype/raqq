@@ -716,11 +716,7 @@ lookup rlig_4 {
 	;
 } rlig_4;
 
-conditionset compact {
-	SPAC -100 -95;
-} compact;
-
-variation rlig compact {
+lookup rlig_5 {
 	lookupflag IgnoreMarks;
 
 	ignore
@@ -731,7 +727,7 @@ variation rlig compact {
 	sub [alef-ar alef-ar.fina fehDotless_alef-ar]
 		[lam-ar lam-ar.init]' lookup short_lam
 	;
-} rlig;
+} rlig_5;
 ";
 name = misc;
 },
@@ -981,6 +977,7 @@ lookup rlig_ligatures_1;
 lookup rlig_ligatures_2;
 lookup rlig_3;
 lookup rlig_4;
+lookup rlig_5;
 lookup rlig_sheen_dots;
 lookup rlig_beh_dots;
 ";
@@ -1019,8 +1016,7 @@ tag = curs;
 code = "lookup spacing {
 	lookupflag IgnoreMarks;
 	pos [@isol @fina] [@init @isol]
-		<(SPAC=0:${space:width} SPAC=-100:20 SPAC=125:500) 0
-		 (SPAC=0:${space:width} SPAC=-100:20 SPAC=125:500) 0>
+		<${space:width} 0 ${space:width} 0>
 	;
 } spacing;
 
