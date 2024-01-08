@@ -1,0 +1,38 @@
+{
+glyphname = "lam-ar.medi.short";
+kernLeft = lam;
+kernRight = beh;
+layers = (
+{
+anchors = (
+{
+name = entry;
+pos = (123,0);
+},
+{
+name = exit;
+},
+{
+name = kasra;
+pos = (80,-49);
+}
+);
+layerId = m01;
+shapes = (
+{
+alignment = -1;
+pos = (0,-115);
+ref = "lam-ar.init.hah1";
+},
+{
+alignment = -1;
+pos = (23,0);
+ref = _p.lam;
+}
+);
+width = 123;
+}
+);
+metricLeft = "=-20";
+metricRight = "=0";
+}

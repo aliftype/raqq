@@ -1,0 +1,101 @@
+{
+glyphname = ayah.110;
+layers = (
+{
+anchors = (
+{
+name = "*origin";
+pos = (1117,0);
+}
+);
+layerId = m01;
+shapes = (
+{
+alignment = -1;
+pos = (439,215);
+ref = _ayah.100;
+scale = (0.7,0.6);
+},
+{
+alignment = -1;
+pos = (395,117);
+ref = _ayah.010;
+scale = (0.7,0.7);
+},
+{
+pos = (390,60);
+ref = _ayah.decoration1;
+}
+);
+width = 1117;
+},
+{
+anchors = (
+{
+name = "*origin";
+pos = (1117,0);
+}
+);
+associatedMasterId = m01;
+attr = {
+colorPalette = 4;
+};
+layerId = "D542F106-890E-45CF-A3C8-AEA4B940F3D6";
+name = "17 Apr 23 at 00:00";
+shapes = (
+{
+alignment = -1;
+pos = (439,215);
+ref = _ayah.100.1;
+scale = (0.7,0.6);
+},
+{
+alignment = -1;
+pos = (395,117);
+ref = _ayah.010.1;
+scale = (0.7,0.7);
+},
+{
+pos = (390,60);
+ref = _ayah.decoration1.1;
+}
+);
+visible = 1;
+width = 1117;
+},
+{
+anchors = (
+{
+name = "*origin";
+pos = (1117,0);
+}
+);
+associatedMasterId = m01;
+attr = {
+colorPalette = 1;
+};
+layerId = "A4C02AA6-6022-44EC-AFA7-E0EFF98AA081";
+name = "Color 1 17 Apr 23 at 00:03";
+shapes = (
+{
+alignment = -1;
+pos = (439,215);
+ref = _ayah.100;
+scale = (0.7,0.6);
+},
+{
+alignment = -1;
+pos = (395,117);
+ref = _ayah.010;
+scale = (0.7,0.7);
+},
+{
+pos = (390,60);
+ref = _ayah.decoration1;
+}
+);
+visible = 1;
+width = 1117;
+}
+);
+}

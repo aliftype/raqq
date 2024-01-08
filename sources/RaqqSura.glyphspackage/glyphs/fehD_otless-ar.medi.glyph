@@ -1,0 +1,91 @@
+{
+glyphname = "fehDotless-ar.medi";
+kernRight = feh.medi;
+layers = (
+{
+anchors = (
+{
+name = bottom;
+pos = (208,-35);
+},
+{
+name = damma;
+pos = (3,172);
+},
+{
+name = entry;
+pos = (377,0);
+},
+{
+name = exit;
+},
+{
+name = fatha;
+pos = (201,461);
+},
+{
+name = kasra;
+pos = (230,-51);
+},
+{
+name = top;
+pos = (80,367);
+}
+);
+backgroundImage = {
+alpha = 80;
+imagePath = "images/MS-ADD-01116-000-00012.jpg";
+locked = 1;
+pos = (-4900,-2769);
+scale = (5,5);
+};
+layerId = m01;
+shapes = (
+{
+closed = 1;
+nodes = (
+(377,0,l),
+(377,110,l),
+(307,110,l),
+(371,47,l),
+(373,103,o),
+(376,158,o),
+(376,188,cs),
+(376,327,o),
+(296,413,o),
+(202,413,cs),
+(109,413,o),
+(15,338,o),
+(15,231,cs),
+(15,145,o),
+(79,97,o),
+(138,62,c),
+(106,110,l),
+(-20,110,l),
+(-20,0,l)
+);
+},
+{
+closed = 1;
+nodes = (
+(201,238,o),
+(195,244,o),
+(195,251,cs),
+(195,257,o),
+(201,263,o),
+(208,263,cs),
+(214,263,o),
+(220,257,o),
+(220,251,cs),
+(220,244,o),
+(214,238,o),
+(208,238,cs)
+);
+}
+);
+width = 377;
+}
+);
+metricLeft = "=-20";
+metricRight = "=0";
+}

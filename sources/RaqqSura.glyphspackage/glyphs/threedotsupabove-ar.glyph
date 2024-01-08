@@ -1,0 +1,31 @@
+{
+glyphname = "threedotsupabove-ar";
+layers = (
+{
+anchors = (
+{
+name = _top;
+pos = (143,30);
+}
+);
+layerId = m01;
+shapes = (
+{
+pos = (64,-8);
+ref = "dotabove-ar";
+},
+{
+pos = (0,44);
+ref = "dotabove-ar";
+},
+{
+pos = (32,18);
+ref = "dotabove-ar";
+}
+);
+width = 174;
+}
+);
+metricLeft = "=dotabove-ar";
+metricRight = "=dotabove-ar";
+}

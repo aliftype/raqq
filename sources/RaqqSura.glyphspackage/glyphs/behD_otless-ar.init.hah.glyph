@@ -1,0 +1,66 @@
+{
+glyphname = "behDotless-ar.init.hah";
+layers = (
+{
+anchors = (
+{
+name = bottom;
+pos = (141,252);
+},
+{
+name = damma;
+pos = (-9,281);
+},
+{
+name = exit;
+pos = (-63,130);
+},
+{
+name = fatha;
+pos = (41,511);
+},
+{
+name = kasra;
+pos = (109,59);
+},
+{
+name = top;
+pos = (55,432);
+}
+);
+backgroundImage = {
+imagePath = "images/MS-ADD-01116-000-00010.jpg";
+locked = 1;
+pos = (-2723,-2714);
+scale = (5,5);
+};
+layerId = m01;
+shapes = (
+{
+closed = 1;
+nodes = (
+(99,130,l),
+(94,237,o),
+(89,348,o),
+(89,458,cs),
+(89,467,o),
+(82,471,o),
+(75,460,cs),
+(55,429,o),
+(32,388,o),
+(3,369,cs),
+(-11,360,o),
+(-8,343,o),
+(-6,312,cs),
+(-4,279,o),
+(-3,261,o),
+(0,130,c)
+);
+}
+);
+width = 99;
+}
+);
+metricLeft = "=0@130";
+metricRight = "=0";
+}

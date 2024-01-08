@@ -1,0 +1,82 @@
+{
+color = 9;
+glyphname = "hah-ar.fina.alt";
+kernRight = hah.init;
+layers = (
+{
+anchors = (
+{
+name = entry;
+pos = (407,130);
+},
+{
+name = fatha;
+pos = (359,328);
+}
+);
+layerId = m01;
+shapes = (
+{
+ref = "hah-ar";
+}
+);
+width = 983;
+},
+{
+anchors = (
+{
+name = entry;
+pos = (507,130);
+},
+{
+name = fatha;
+pos = (459,328);
+}
+);
+associatedMasterId = m01;
+attr = {
+coordinates = (
+0,
+20,
+0
+);
+};
+layerId = "94172F02-4388-4672-8AFE-BEC85DEDFE74";
+name = "17 May 23 at 17:56";
+shapes = (
+{
+ref = "hah-ar";
+}
+);
+width = 1083;
+},
+{
+anchors = (
+{
+name = entry;
+pos = (507,130);
+},
+{
+name = fatha;
+pos = (459,328);
+}
+);
+associatedMasterId = m01;
+attr = {
+coordinates = (
+0,
+100,
+0
+);
+};
+layerId = "5CEC36C1-5F28-4DF0-934C-02B5E49A159A";
+name = "17 May 23 at 17:56";
+shapes = (
+{
+ref = "hah-ar";
+}
+);
+width = 1083;
+}
+);
+}

@@ -1,0 +1,31 @@
+{
+glyphname = _c.hah.noon;
+layers = (
+{
+anchors = (
+{
+name = entry;
+pos = (-20,0);
+},
+{
+name = exit;
+}
+);
+layerId = m01;
+shapes = (
+{
+closed = 1;
+nodes = (
+(70,26,l),
+(70,110,l),
+(1,116,o),
+(-23,141,o),
+(-70,174,c),
+(-42,26,l)
+);
+}
+);
+width = 0;
+}
+);
+}

@@ -1,0 +1,27 @@
+{
+glyphname = "twodotsverticalabove-ar.beh";
+layers = (
+{
+anchors = (
+{
+name = _top;
+pos = (104,30);
+}
+);
+layerId = m01;
+shapes = (
+{
+pos = (0,19);
+ref = "dotabove-ar.beh";
+},
+{
+pos = (30,-8);
+ref = "dotabove-ar.beh";
+}
+);
+width = 126;
+}
+);
+metricLeft = "=dotabove-ar";
+metricRight = "=dotabove-ar";
+}

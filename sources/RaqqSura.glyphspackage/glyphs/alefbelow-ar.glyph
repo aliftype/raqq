@@ -1,0 +1,10 @@
+{
+glyphname = "alefbelow-ar";
+layers = (
+{
+layerId = m01;
+width = 1200;
+}
+);
+unicode = 1622;
+}

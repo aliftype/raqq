@@ -1,0 +1,105 @@
+{
+color = 9;
+glyphname = "tah-ar.medi.hah1";
+kernLeft = sad;
+kernRight = sad;
+layers = (
+{
+anchors = (
+{
+name = entry;
+pos = (758,115);
+},
+{
+name = exit;
+pos = (0,115);
+}
+);
+layerId = m01;
+shapes = (
+{
+alignment = -1;
+ref = "tah-ar.init.hah1";
+},
+{
+alignment = -1;
+pos = (357,115);
+ref = _p.sad;
+}
+);
+width = 758;
+},
+{
+anchors = (
+{
+name = entry;
+pos = (5993,115);
+},
+{
+name = exit;
+pos = (0,115);
+}
+);
+associatedMasterId = m01;
+attr = {
+coordinates = (
+0,
+100,
+0
+);
+};
+layerId = "38739E7F-577A-4A83-AB3C-831977F0C6EC";
+name = "17 May 23 at 01:16";
+shapes = (
+{
+alignment = -1;
+ref = "tah-ar.init.hah1";
+},
+{
+alignment = -1;
+pos = (5592,115);
+ref = _p.sad;
+}
+);
+visible = 1;
+width = 5993;
+},
+{
+anchors = (
+{
+name = entry;
+pos = (415,115);
+},
+{
+name = exit;
+pos = (0,115);
+}
+);
+associatedMasterId = m01;
+attr = {
+coordinates = (
+0,
+0,
+0
+);
+};
+layerId = "EDA50E51-B7D0-4425-BC97-B40C0DFCAC93";
+name = "17 May 23 at 16:11";
+shapes = (
+{
+alignment = -1;
+ref = "tah-ar.init.hah1";
+},
+{
+alignment = -1;
+pos = (14,115);
+ref = _p.sad;
+}
+);
+visible = 1;
+width = 415;
+}
+);
+metricLeft = "=tah-ar.init";
+metricRight = "=0@225";
+}

@@ -1,0 +1,20 @@
+{
+color = 0;
+glyphname = "theh-ar";
+layers = (
+{
+layerId = m01;
+shapes = (
+{
+ref = "behDotless-ar";
+},
+{
+pos = (715,198);
+ref = "threedotsupabove-ar";
+}
+);
+width = 1007;
+}
+);
+unicode = 1579;
+}

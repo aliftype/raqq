@@ -1,0 +1,35 @@
+{
+glyphname = _c.feh.init.beh;
+kernLeft = feh.init.beh;
+layers = (
+{
+anchors = (
+{
+name = entry;
+pos = (174,0);
+},
+{
+name = exit;
+}
+);
+layerId = m01;
+shapes = (
+{
+closed = 1;
+nodes = (
+(47,0,l),
+(174,110,l),
+(60,108,o),
+(-4,164,o),
+(-7,264,c),
+(-23,264,l),
+(-23,0,l)
+);
+}
+);
+width = 174;
+}
+);
+metricLeft = "=-23";
+metricRight = "=0";
+}
