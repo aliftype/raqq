@@ -9,11 +9,6 @@ tag = SPAC;
 {
 name = Mashq;
 tag = MSHQ;
-},
-{
-hidden = 1;
-name = Justification;
-tag = jstf;
 }
 );
 classes = (
@@ -1179,8 +1174,7 @@ fontMaster = (
 {
 axesValues = (
 0,
-10,
-0
+10
 );
 customParameters = (
 {
@@ -1306,16 +1300,14 @@ instances = (
 {
 axesValues = (
 0,
-10,
-0
+10
 );
 name = Regular;
 },
 {
 axesValues = (
 -100,
-10,
-0
+10
 );
 name = Compact;
 }

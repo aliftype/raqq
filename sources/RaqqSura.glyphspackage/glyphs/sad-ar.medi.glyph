@@ -48,8 +48,7 @@ associatedMasterId = m01;
 attr = {
 coordinates = (
 0,
-100,
-0
+100
 );
 };
 backgroundImage = {
@@ -87,7 +86,6 @@ name = exit;
 associatedMasterId = m01;
 attr = {
 coordinates = (
-0,
 0,
 0
 );

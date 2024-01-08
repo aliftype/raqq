@@ -36,8 +36,7 @@ associatedMasterId = m01;
 attr = {
 coordinates = (
 0,
-100,
-0
+100
 );
 };
 layerId = "0BD1BE9B-54C3-449E-BE31-FDCBF2D30B5F";
@@ -67,7 +66,6 @@ pos = (459,0);
 associatedMasterId = m01;
 attr = {
 coordinates = (
-0,
 0,
 0
 );

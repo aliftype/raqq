@@ -24,8 +24,7 @@ associatedMasterId = m01;
 attr = {
 coordinates = (
 0,
-100,
-0
+100
 );
 };
 layerId = "B7198512-ACC9-4997-BBCE-B89F3F46B128";
@@ -49,7 +48,6 @@ width = 393;
 associatedMasterId = m01;
 attr = {
 coordinates = (
-0,
 0,
 0
 );
