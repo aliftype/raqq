@@ -21,7 +21,6 @@ width = 401;
 associatedMasterId = m01;
 attr = {
 coordinates = (
-0,
 100
 );
 };
@@ -44,7 +43,6 @@ width = 401;
 associatedMasterId = m01;
 attr = {
 coordinates = (
-0,
 0
 );
 };

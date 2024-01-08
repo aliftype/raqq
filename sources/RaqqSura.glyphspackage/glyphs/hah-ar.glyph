@@ -128,7 +128,6 @@ pos = (435,226);
 associatedMasterId = m01;
 attr = {
 coordinates = (
-0,
 20
 );
 };
@@ -236,7 +235,6 @@ pos = (435,226);
 associatedMasterId = m01;
 attr = {
 coordinates = (
-0,
 100
 );
 };

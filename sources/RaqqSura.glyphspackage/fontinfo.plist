@@ -3,10 +3,6 @@
 .formatVersion = 3;
 axes = (
 {
-name = Spacing;
-tag = SPAC;
-},
-{
 name = Mashq;
 tag = MSHQ;
 }
@@ -113,14 +109,6 @@ name = "Axis Mappings";
 value = {
 MSHQ = {
 0 = 0;
-100 = 100;
-};
-SPAC = {
--100 = -100;
-125 = 125;
-};
-jstf = {
--100 = -100;
 100 = 100;
 };
 };
@@ -1173,7 +1161,6 @@ tag = rtbd;
 fontMaster = (
 {
 axesValues = (
-0,
 10
 );
 customParameters = (
@@ -1299,14 +1286,12 @@ GSOffsetVertical = 10;
 instances = (
 {
 axesValues = (
-0,
 10
 );
 name = Regular;
 },
 {
 axesValues = (
--100,
 10
 );
 name = Compact;
