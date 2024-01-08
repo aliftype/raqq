@@ -132,7 +132,7 @@ jstf = {
 }
 );
 date = "2021-04-25 20:10:22 +0000";
-familyName = Raqq;
+familyName = "Raqq Sura";
 featurePrefixes = (
 {
 code = "languagesystem DFLT dflt;
@@ -1739,11 +1739,11 @@ key = copyrights;
 values = (
 {
 language = ENG;
-value = "Copyright 2021–2023 The Raqq Project Authors (github.com/aliftype/raqq)";
+value = "Copyright 2021–2024 The Raqq Project Authors (github.com/aliftype/raqq)";
 },
 {
 language = ARA;
-value = "حقوق النسخ ٢٠٢١–٢٠٢٣ لمؤلفي مشروع رَقّ (github.com/aliftype/raqq)";
+value = "حقوق النسخ ٢٠٢١–٢٠٢٤ لمؤلفي مشروع رَقّ (github.com/aliftype/raqq)";
 }
 );
 },
@@ -1816,7 +1816,7 @@ key = sampleTexts;
 values = (
 {
 language = ENG;
-value = "بسمِ الله الرَحمنِ الرحيمِ";
+value = "بسم الله الرحمن الرحيم";
 }
 );
 },
