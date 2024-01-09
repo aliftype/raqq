@@ -8,10 +8,25 @@ name = _bottom;
 pos = (37,124);
 }
 );
+attr = {
+colorPalette = 4;
+};
 layerId = m01;
 shapes = (
 {
-ref = "threedotsupabove-ar";
+alignment = -1;
+pos = (64,-8);
+ref = _dotabove;
+},
+{
+alignment = -1;
+pos = (0,44);
+ref = _dotabove;
+},
+{
+alignment = -1;
+pos = (32,18);
+ref = _dotabove;
 }
 );
 width = 174;

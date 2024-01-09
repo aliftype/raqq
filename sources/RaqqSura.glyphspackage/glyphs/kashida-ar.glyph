@@ -35,57 +35,30 @@ nodes = (
 width = 100;
 },
 {
-anchors = (
-{
-name = entry;
-pos = (100,0);
-},
-{
-name = exit;
-},
-{
-name = kasra;
-pos = (50,-54);
-}
-);
 associatedMasterId = m01;
 attr = {
 colorPalette = 4;
 };
 layerId = "EFB32494-B84F-4CE2-B5CE-D70C5A90ADDD";
-metricLeft = "=0";
 name = "9 Jan 24 at 19:07";
 shapes = (
 {
 closed = 1;
 nodes = (
-(40,0,o),
+(20,0,o),
 (60,0,o),
 (100,0,c),
 (100,110,l),
 (60,110,o),
-(40,110,o),
-(0,110,c),
-(0,0,l)
+(20,110,o),
+(-20,110,c),
+(-20,0,l)
 );
 }
 );
 width = 100;
 },
 {
-anchors = (
-{
-name = entry;
-pos = (100,0);
-},
-{
-name = exit;
-},
-{
-name = kasra;
-pos = (50,-54);
-}
-);
 associatedMasterId = m01;
 attr = {
 colorPalette = 1;
@@ -96,14 +69,14 @@ shapes = (
 {
 closed = 1;
 nodes = (
-(13,10,o),
-(67,10,o),
-(100,10,c),
-(100,100,l),
-(67,100,o),
-(13,100,o),
-(-20,100,c),
-(-20,10,l)
+(11,10,o),
+(69,10,o),
+(102,10,c),
+(102,100,l),
+(69,100,o),
+(11,100,o),
+(-22,100,c),
+(-22,10,l)
 );
 }
 );
@@ -149,19 +122,6 @@ nodes = (
 width = 6000;
 },
 {
-anchors = (
-{
-name = entry;
-pos = (6000,0);
-},
-{
-name = exit;
-},
-{
-name = kasra;
-pos = (3000,-54);
-}
-);
 associatedMasterId = m01;
 attr = {
 colorPalette = 4;
@@ -170,40 +130,25 @@ coordinates = (
 );
 };
 layerId = "200AAD3F-109F-4B5F-B6CA-7BA661F2BEFA";
-metricLeft = "=0";
 name = "17 May 23 at 02:27";
 shapes = (
 {
 closed = 1;
 nodes = (
-(1997,-13,o),
+(1977,-13,o),
 (4003,-13,o),
 (6000,0,c),
 (6000,110,l),
-(4024,94,o),
-(682,94,o),
-(0,109,c),
-(0,0,l)
+(4004,94,o),
+(615,106,o),
+(-20,110,c),
+(-20,0,l)
 );
 }
 );
-visible = 1;
 width = 6000;
 },
 {
-anchors = (
-{
-name = entry;
-pos = (6000,0);
-},
-{
-name = exit;
-},
-{
-name = kasra;
-pos = (3000,-54);
-}
-);
 associatedMasterId = m01;
 attr = {
 colorPalette = 1;
@@ -217,14 +162,14 @@ shapes = (
 {
 closed = 1;
 nodes = (
-(1983,-3,o),
-(3997,-3,o),
-(6000,10,c),
-(6000,100,l),
-(4004,84,o),
-(614,84,o),
-(-20,100,c),
-(-20,10,l)
+(1981,-3,o),
+(3999,-3,o),
+(6002,10,c),
+(6002,100,l),
+(4006,84,o),
+(612,95,o),
+(-22,100,c),
+(-22,10,l)
 );
 }
 );

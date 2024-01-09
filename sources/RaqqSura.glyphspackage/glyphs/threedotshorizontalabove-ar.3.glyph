@@ -8,22 +8,28 @@ name = _top;
 pos = (194,77);
 }
 );
+attr = {
+colorPalette = 4;
+};
 layerId = m01;
 shapes = (
 {
+alignment = -1;
 angle = 9.4;
 pos = (255,73);
-ref = "dotabove-ar";
+ref = _dotabove;
 },
 {
+alignment = -1;
 angle = 9;
 pos = (4,7);
-ref = "dotabove-ar";
+ref = _dotabove;
 },
 {
+alignment = -1;
 angle = 9;
 pos = (128,36);
-ref = "dotabove-ar";
+ref = _dotabove;
 }
 );
 width = 347;

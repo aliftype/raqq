@@ -32,6 +32,9 @@ name = top;
 pos = (82,332);
 }
 );
+attr = {
+colorPalette = 4;
+};
 backgroundImage = {
 alpha = 80;
 imagePath = "images/MS-ADD-01116-000-00008.jpg";
@@ -49,20 +52,14 @@ nodes = (
 (129,110,o),
 (126,134,o),
 (125,157,cs),
-(123,234,o),
-(119,289,o),
-(115,341,cs),
-(114,360,o),
-(100,359,o),
-(94,351,cs),
-(63,305,o),
-(56,285,o),
-(28,269,cs),
-(15,262,o),
-(13,257,o),
-(14,247,cs),
-(16,216,o),
-(20,174,o),
+(123,213,o),
+(119,310,o),
+(112,379,c),
+(63,302,o),
+(53,283,o),
+(13,260,c),
+(16,228,o),
+(20,151,o),
 (21,110,c),
 (-20,110,l),
 (-20,0,l)
@@ -73,6 +70,9 @@ width = 128;
 },
 {
 associatedMasterId = m01;
+attr = {
+colorPalette = 1;
+};
 backgroundImage = {
 alpha = 80;
 imagePath = "images/MS-ADD-01116-000-00008.jpg";
@@ -80,15 +80,32 @@ locked = 1;
 pos = (-3889,-2872);
 scale = (5,5);
 };
-layerId = "6BF016C0-5EF7-4DF0-8856-0DAE64C70AB6";
-name = "3 Apr 23 at 23:45";
+layerId = "099CF29B-596A-4F11-8DDD-6E94280AFCA9";
+metricRight = "=-13";
+name = "Regular 9 Jan 24 at 21:27";
 shapes = (
 {
-alignment = -1;
-ref = "behDotless-ar.medi.high";
+closed = 1;
+nodes = (
+(143,10,l),
+(143,100,l),
+(121,98,o),
+(117,125,o),
+(115,157,cs),
+(113,205,o),
+(110,284,o),
+(105,349,c),
+(70,295,o),
+(57,275,o),
+(24,255,c),
+(27,216,o),
+(31,135,o),
+(31,100,c),
+(-22,100,l),
+(-22,10,l)
+);
 }
 );
-visible = 1;
 width = 128;
 }
 );

@@ -8,10 +8,20 @@ name = _bottom;
 pos = (37,99);
 }
 );
+attr = {
+colorPalette = 4;
+};
 layerId = m01;
 shapes = (
 {
-ref = "twodotsverticalabove-ar";
+alignment = -1;
+pos = (0,19);
+ref = _dotabove;
+},
+{
+alignment = -1;
+pos = (30,-8);
+ref = _dotabove;
 }
 );
 width = 140;

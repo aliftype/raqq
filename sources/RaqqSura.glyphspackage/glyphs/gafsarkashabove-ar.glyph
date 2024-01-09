@@ -11,9 +11,10 @@ pos = (79,36);
 layerId = m01;
 shapes = (
 {
+alignment = -1;
 angle = 3;
 pos = (3,-3);
-ref = "dotabove-ar";
+ref = _dotabove;
 }
 );
 width = 110;
