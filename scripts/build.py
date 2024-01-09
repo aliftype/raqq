@@ -78,13 +78,39 @@ CODEPAGE_RANGES = {
 # Monkey patch GSLayer
 
 
+def axesToStr(axes):
+    return "{" + ", ".join(f"{a:g}" for a in axes) + "}"
+
+
 # glyphs_to_quadratic expects a UFO layer with clearContours, so give GSLayer
 # one.
 def GSLayer_clearContours(self):
     self.paths = []
 
 
+def GSLayer__repr__(self: GSLayer):
+    name = []
+    if self.layerId == self.associatedMasterId:
+        name.append(self.parent.parent.masters[self.layerId].name)
+    if color := self.attributes.get("colorPalette"):
+        name.append(f"Color {color}")
+    if self.layerId != self.associatedMasterId and (
+        coords := self.attributes.get("coordinates")
+    ):
+        name.append(axesToStr(coords))
+    if name:
+        name = " ".join(name)
+    else:
+        name = self.name
+    if self.parent:
+        parent = self.parent.name
+    else:
+        parent = "orphan"
+    return f'<GSLayer "{name}" ({parent})>'
+
+
 GSLayer.clearContours = GSLayer_clearContours
+GSLayer.__repr__ = GSLayer__repr__
 
 
 def draw(layer, glyphSet):
