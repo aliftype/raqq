@@ -724,8 +724,7 @@ def removeOverlap(font, glyph, layer):
         return
 
     # If glyph have variation layers, skip
-    layers = [l for l in glyph.layers if l and l.layerId == l.associatedMasterId]
-    if len(layers) > 1:
+    if any("coordinates" in l.attributes for l in glyph.layers):
         return
 
     glyphSet = {}
@@ -766,8 +765,9 @@ def prepare(args):
             glyph = font.glyphs[name]
             for layer in glyph.layers:
                 if layer.attributes.get("coordinates") == master.axes:
-                    layer.layerId = layer.associatedMasterId = master.id
-                    del layer.attributes["coordinates"]
+                    layer.associatedMasterId = master.id
+                    if len(layer.attributes) == 1:
+                        layer.layerId = master.id
 
         # we are not using masters.append() because it adds layer for the new
         # master to each glyph in the font.
@@ -803,12 +803,15 @@ def prepare(args):
             propagateAnchors(glyph, layer)
             removeOverlap(font, glyph, layer)
 
-            # Convert non-interpolatable layers one by one.
-            if layer.attributes:
-                glyphs_to_quadratic([layer], max_err=1.0, reverse_direction=True)
+        # Group layers by master, so we can convert corresponding layers from all
+        # masters together.
+        groups = []
+        for master in font.masters:
+            if layers := [l for l in glyph.layers if l.associatedMasterId == master.id]:
+                groups.append(layers)
 
         # Convert interpolatable layers together.
-        if layers := [l for l in glyph.layers if l.layerId == l.associatedMasterId]:
+        for layers in zip(*groups):
             glyphs_to_quadratic(layers, max_err=1.0, reverse_direction=True)
 
     return font, instance
