@@ -12,6 +12,9 @@ pos = (95,0);
 name = exit;
 }
 );
+attr = {
+colorPalette = 4;
+};
 layerId = m01;
 shapes = (
 {
@@ -20,10 +23,42 @@ nodes = (
 (-10,0,l),
 (95,0,l),
 (95,110,l),
-(51,118,o),
-(-4,155,o),
-(-6,234,c),
-(-24,234,l)
+(43,110,o),
+(1,152,o),
+(-6,223,c),
+(-24,223,l)
+);
+}
+);
+width = 95;
+},
+{
+anchors = (
+{
+name = entry;
+pos = (95,0);
+},
+{
+name = exit;
+}
+);
+associatedMasterId = m01;
+attr = {
+colorPalette = 1;
+};
+layerId = "3AAF0A65-77CF-4D86-BF7E-217FCB6BFAB0";
+name = "9 Jan 24 at 20:03";
+shapes = (
+{
+closed = 1;
+nodes = (
+(-27,223,l),
+(-11,10,l),
+(95,10,l),
+(95,100,l),
+(39,100,o),
+(-8,144,o),
+(-16,223,c)
 );
 }
 );

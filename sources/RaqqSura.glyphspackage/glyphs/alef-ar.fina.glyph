@@ -26,6 +26,9 @@ name = madda;
 pos = (-76,635);
 }
 );
+attr = {
+colorPalette = 4;
+};
 backgroundImage = {
 alpha = 80;
 angle = 1;
@@ -44,20 +47,14 @@ nodes = (
 (102,110,o),
 (99,134,o),
 (94,247,cs),
-(91,326,o),
-(85,616,o),
-(84,777,cs),
-(84,797,o),
-(70,797,o),
-(63,786,cs),
-(41,750,o),
-(18,722,o),
-(-8,706,cs),
-(-25,695,o),
-(-22,677,o),
-(-16,610,cs),
-(-5,490,o),
-(-5,239,o),
+(93,265,o),
+(86,578,o),
+(83,820,c),
+(46,752,o),
+(21,725,o),
+(-24,696,c),
+(-3,534,o),
+(-2,117,o),
 (0,55,cs),
 (1,20,o),
 (16,0,o),
@@ -69,24 +66,38 @@ width = 102;
 },
 {
 associatedMasterId = m01;
-backgroundImage = {
-alpha = 80;
-imagePath = "images/MS-ADD-01116-000-00005.jpg";
-locked = 1;
-pos = (-4004,-2880);
-scale = (5,5);
+attr = {
+colorPalette = 1;
 };
-layerId = "532FC0AD-E949-40C1-A1D7-8CEDFA7C419C";
-name = "4 Apr 23 at 01:05";
+layerId = "71CEAFC8-0E0A-4757-824F-4661413A707E";
+metricLeft = "=-13";
+metricRight = "=-12";
+name = "Regular 9 Jan 24 at 19:02";
 shapes = (
 {
-alignment = -1;
-pos = (-28,0);
-ref = "behDotless-ar.medi.high";
+closed = 1;
+nodes = (
+(114,10,l),
+(114,100,l),
+(92,99,o),
+(89,125,o),
+(84,247,cs),
+(83,264,o),
+(77,547,o),
+(73,783,c),
+(46,739,o),
+(22,715,o),
+(-13,691,c),
+(7,524,o),
+(8,116,o),
+(10,55,cs),
+(11,25,o),
+(22,10,o),
+(65,10,cs)
+);
 }
 );
-visible = 1;
-width = 100;
+width = 102;
 }
 );
 metricLeft = "=0@55";
