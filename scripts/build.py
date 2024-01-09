@@ -760,7 +760,8 @@ def prepare(args):
         master.customParameters = font.masters[0].customParameters
         master.xHeight = font.masters[0].xHeight
         master.capHeight = font.masters[0].capHeight
-        master.id = master.name = str(master.axes)
+        master.id = f"m{index + 1:02}"
+        master.name = f"master_{axesToStr(axes)}"
         for name in font.glyphOrder:
             glyph = font.glyphs[name]
             for layer in glyph.layers:
