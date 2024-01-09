@@ -8,69 +8,19 @@ name = _top;
 pos = (74,38);
 }
 );
+attr = {
+colorPalette = 4;
+};
 layerId = m01;
 shapes = (
 {
+alignment = -1;
 angle = 9;
 pos = (4,-9);
-ref = "dotabove-ar";
+ref = _dotabove;
 }
 );
 width = 96;
-},
-{
-anchors = (
-{
-name = _top;
-pos = (90,50);
-}
-);
-associatedMasterId = m01;
-layerId = "1951D83C-027C-46A2-BBE7-A485E6845D98";
-name = "1 May 21, 00:30";
-shapes = (
-{
-closed = 1;
-nodes = (
-(128,152,l),
-(112,164,l),
-(0,12,l),
-(16,0,l)
-);
-}
-);
-width = 128;
-},
-{
-anchors = (
-{
-name = _top;
-pos = (79,38);
-}
-);
-associatedMasterId = m01;
-layerId = "35FFA398-3489-4430-A27C-01EFA9C459D5";
-name = "25 Feb 23 at 15:48";
-shapes = (
-{
-closed = 1;
-nodes = (
-(52,38,o),
-(81,71,o),
-(106,100,cs),
-(117,113,o),
-(101,126,o),
-(91,113,cs),
-(67,84,o),
-(36,52,o),
-(6,27,cs),
-(-8,14,o),
-(4,1,o),
-(19,13,cs)
-);
-}
-);
-width = 110;
 }
 );
 metricLeft = "=dotabove-ar";

@@ -193,24 +193,6 @@ nodes = (
 width = 493;
 },
 {
-anchors = (
-{
-name = damma;
-pos = (-67,60);
-},
-{
-name = fatha;
-pos = (143,622);
-},
-{
-name = kasra;
-pos = (283,-62);
-},
-{
-name = madda;
-pos = (-67,626);
-}
-);
 associatedMasterId = m01;
 attr = {
 colorPalette = 4;
@@ -251,24 +233,6 @@ nodes = (
 width = 493;
 },
 {
-anchors = (
-{
-name = damma;
-pos = (-67,60);
-},
-{
-name = fatha;
-pos = (143,622);
-},
-{
-name = kasra;
-pos = (283,-62);
-},
-{
-name = madda;
-pos = (-67,626);
-}
-);
 associatedMasterId = m01;
 attr = {
 colorPalette = 1;
@@ -376,24 +340,6 @@ nodes = (
 width = 493;
 },
 {
-anchors = (
-{
-name = damma;
-pos = (-67,60);
-},
-{
-name = fatha;
-pos = (143,622);
-},
-{
-name = kasra;
-pos = (283,-62);
-},
-{
-name = madda;
-pos = (-67,626);
-}
-);
 associatedMasterId = m01;
 attr = {
 colorPalette = 4;
@@ -434,24 +380,6 @@ nodes = (
 width = 493;
 },
 {
-anchors = (
-{
-name = damma;
-pos = (-67,60);
-},
-{
-name = fatha;
-pos = (143,622);
-},
-{
-name = kasra;
-pos = (283,-62);
-},
-{
-name = madda;
-pos = (-67,626);
-}
-);
 associatedMasterId = m01;
 attr = {
 colorPalette = 1;
