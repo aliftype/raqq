@@ -12,6 +12,9 @@ pos = (66,0);
 name = exit;
 }
 );
+attr = {
+colorPalette = 4;
+};
 layerId = m01;
 shapes = (
 {
@@ -19,11 +22,34 @@ closed = 1;
 nodes = (
 (118,0,l),
 (118,123,l),
-(76,123,o),
-(-5,151,o),
-(-6,237,c),
-(-24,237,l),
+(74,123,o),
+(-7,152,o),
+(-7,250,c),
+(-24,250,l),
 (-24,0,l)
+);
+}
+);
+width = 66;
+},
+{
+associatedMasterId = m01;
+attr = {
+colorPalette = 1;
+};
+layerId = "9DB72D40-AB96-4709-8E34-2B661363A7B8";
+name = "Regular 10 Jan 24 at 12:02";
+shapes = (
+{
+closed = 1;
+nodes = (
+(140,10,l),
+(140,111,l),
+(80,112,o),
+(-17,132,o),
+(-17,250,c),
+(-26,250,l),
+(-26,10,l)
 );
 }
 );
