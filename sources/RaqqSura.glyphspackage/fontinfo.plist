@@ -996,14 +996,7 @@ code = "# Automatic Code
 tag = curs;
 },
 {
-code = "lookup spacing {
-	lookupflag IgnoreMarks;
-	pos [@isol @fina] [@init @isol]
-		<${space:width} 0 ${space:width} 0>
-	;
-} spacing;
-
-# Automatic Code
+code = "# Automatic Code
 
 @beh.init	= [$[name MATCHES \"(behDotless|lam)-ar.init.*\"]];
 @beh.medi	= [$[name MATCHES \"(behDotless|lam)-ar.medi.*\"]];
