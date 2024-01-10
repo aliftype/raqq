@@ -852,7 +852,7 @@ def build(font, default_instance, args):
     for i, instance in enumerate(font.instances):
         location = {a.name: instance.axes[i] for i, a in enumerate(ds.axes)}
         ds.addLocationLabelDescriptor(name=instance.name, userLocation=location)
-        if instance == default_instance and len(ds.instances) > 1:
+        if instance == default_instance:
             continue
         ds.addInstanceDescriptor(
             name=f"instance_{i}",
