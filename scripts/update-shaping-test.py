@@ -62,7 +62,7 @@ def shape(font, text, direction, script, language, features, variations):
     return "|".join(output)
 
 
-def main(rags):
+def main(args):
     blob = hb.Blob.from_file_path(args.font)
     face = hb.Face(blob)
     font = hb.Font(face)
