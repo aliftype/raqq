@@ -37,7 +37,7 @@ JSON = $(TESTS:%=$(TESTDIR)/%.json)
 
 
 FEA = $(SOURCEDIR)/overhang.fea
-HTML = $(TESTDIR)/$(NAME)-shaping.html $(TESTDIR)/$(NAME)-fb.html
+HTML = $(NAMES:%=$(TESTDIR)/%-shaping.html) $(NAMES:%=$(TESTDIR)/%-fb.html)
 GLYPHDATA = $(SOURCEDIR)/GlyphData.xml
 
 ARGS ?= 
@@ -71,11 +71,11 @@ $(FONTDIR)/%.woff2: $(FONTDIR)/%.ttf
 	python $(SCRIPTDIR)/buildwoff2.py $< $@
 
 $(TESTDIR)/%-shaping.html: $(FONTDIR)/%.ttf $(TESTDIR)/fontbakery.yml
-	$(info   TEST   $(<F))
+	$(info   SHAPE  $(<F))
 	fontbakery check-shaping --config=$(TESTDIR)/fontbakery.yml $< --html=$@ -l WARN -e WARN &> /dev/null
 
 $(TESTDIR)/%-fb.html: $(FONTDIR)/%.ttf $(TESTDIR)/fontbakery.yml
-	$(info   SHAPE  $(<F))
+	$(info   TEST   $(<F))
 	fontbakery check-universal --config=$(TESTDIR)/fontbakery.yml $< --html=$@ -l WARN -e WARN &> /dev/null
 
 $(TESTDIR)/decomposition.json: $(SOURCEDIR)/$(NAME).glyphspackage $(FONTS)

@@ -28,7 +28,7 @@ def main(args):
         if glyph.color == 0:
             forbidden_glyphs.append(glyph.name)
 
-    blob = hb.Blob.from_file_path(args.font)
+    blob = hb.Blob.from_file_path(args.font[0])
     face = hb.Face(blob)
     unicodes = face.unicodes
     tests = []
@@ -59,7 +59,7 @@ if __name__ == "__main__":
     parser = ArgumentParser()
     parser.add_argument("json", type=Path, help="output .json file path.")
     parser.add_argument("glyphs", type=Path, help="input .glyphs file path.")
-    parser.add_argument("font", type=Path, help="input .ttf file path.")
+    parser.add_argument("font", type=Path, nargs="+", help="input .ttf file path.")
 
     args = parser.parse_args()
     main(args)
