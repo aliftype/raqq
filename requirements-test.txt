@@ -52,7 +52,7 @@ filelock==3.13.1
     # via youseedee
 font-v==2.1.0
     # via fontbakery
-fontbakery @ git+https://github.com/fonttools/fontbakery@shaping-variations
+fontbakery @ git+https://github.com/fonttools/fontbakery
     # via
     #   -r requirements-test.in
     #   fontbakery
