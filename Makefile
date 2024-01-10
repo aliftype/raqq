@@ -28,10 +28,15 @@ FONTDIR = fonts
 TESTDIR = tests
 BUILDDIR = build
 
-FONTS = $(FONTDIR)/$(NAME).ttf $(FONTDIR)/$(NAME)Sura.ttf
-WOFF2 = $(FONTDIR)/$(NAME).woff2 $(FONTDIR)/$(NAME)Sura.woff2
+NAMES = $(NAME) $(NAME)Sura
+FONTS = $(NAMES:%=$(FONTDIR)/%.ttf)
+WOFF2 = $(FONTS:%.ttf=%.woff2)
+
+TESTS = shaping decomposition
+JSON = $(TESTS:%=$(TESTDIR)/%.json)
+
+
 FEA = $(SOURCEDIR)/overhang.fea
-JSON = $(TESTDIR)/shaping.json $(TESTDIR)/decomposition.json
 HTML = $(TESTDIR)/$(NAME)-shaping.html $(TESTDIR)/$(NAME)-fb.html
 GLYPHDATA = $(SOURCEDIR)/GlyphData.xml
 
