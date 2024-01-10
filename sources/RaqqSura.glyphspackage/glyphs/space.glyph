@@ -10,7 +10,7 @@ name = alefabove;
 );
 layerId = m01;
 name = Regular;
-width = 20;
+width = 0;
 }
 );
 unicode = (32,160);
