@@ -712,6 +712,9 @@
          sortName="arS1036"
   />
 
+  <glyph name="space.mark" category="Mark" subCategory="Nonspacing" script="arabic"
+         sortName="arM1000"
+  />
 
   <glyph name="dotabove-ar" category="Mark" subCategory="Nonspacing" script="arabic"
          sortName="arM1060"
