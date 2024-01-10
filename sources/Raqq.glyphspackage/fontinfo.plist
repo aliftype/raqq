@@ -339,6 +339,11 @@ lookup ccmp_ayah_cleanup {
 lookup ccmp_kashida {
 	sub kashida-ar alefabove-ar by alefabove-ar;
 } ccmp_kashida;
+
+lookup ccmp_space {
+	lookupflag 0;
+	sub space by space.mark;
+} ccmp_space;
 ";
 name = ccmp;
 },
@@ -716,11 +721,7 @@ lookup rlig_4 {
 	;
 } rlig_4;
 
-conditionset compact {
-	SPAC -100 -95;
-} compact;
-
-variation rlig compact {
+lookup rlig_short_lam_2 {
 	lookupflag IgnoreMarks;
 
 	ignore
@@ -731,7 +732,7 @@ variation rlig compact {
 	sub [alef-ar alef-ar.fina fehDotless_alef-ar]
 		[lam-ar lam-ar.init]' lookup short_lam
 	;
-} rlig;
+} rlig_short_lam_2;
 ";
 name = misc;
 },
@@ -936,6 +937,21 @@ lookup rclt_connection {
 } rclt_connection;
 ";
 name = connections;
+},
+{
+code = "conditionset compact {
+	SPAC -100 -95;
+} compact;
+
+variation ccmp compact {
+	lookup ccmp_space;
+} ccmp;
+
+variation rlig compact {
+	lookup rlig_short_lam_2;
+} rlig;
+";
+name = variations;
 }
 );
 features = (

@@ -1,5 +1,5 @@
 {
-glyphname = space;
+glyphname = space.mark;
 layers = (
 {
 anchors = (
@@ -12,5 +12,4 @@ name = Regular;
 width = 0;
 }
 );
-unicode = (32,160);
 }

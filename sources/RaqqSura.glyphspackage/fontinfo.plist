@@ -322,7 +322,11 @@ lookup ccmp_ayah_cleanup {
 lookup ccmp_kashida {
 	sub kashida-ar alefabove-ar by alefabove-ar;
 } ccmp_kashida;
-";
+
+lookup ccmp_space {
+	lookupflag 0;
+	sub space by space.mark;
+} ccmp_space;";
 name = ccmp;
 },
 {
@@ -927,7 +931,9 @@ lookup ccmp_vertical_vowels;
 lookup ccmp_kashida;
 lookup ccmp_ayah_numbers;
 lookup ccmp_ayah_10;
-lookup ccmp_ayah_cleanup;";
+lookup ccmp_ayah_cleanup;
+lookup ccmp_space;
+";
 tag = ccmp;
 },
 {

@@ -51,6 +51,13 @@
       "expectation": "dotabove-ar=0@607,355+0|fehDotless-ar=0+1020"
     },
     {
+      "input": "ر ارا",
+      "variations": {
+        "SPAC": -100
+      },
+      "expectation": "alef-ar=4+658|reh-ar=3@-80,0+370|alef-ar=2@-20,0+638|space.mark=1+0|reh-ar=0@-80,0+370"
+    },
+    {
       "input": "۝100",
       "direction": "ltr",
       "expectation": "endofayah-ar.10=0+1117|ayah.100=1+0"
@@ -2144,6 +2151,13 @@
     {
       "input": "◌ٕ",
       "expectation": "kasra-ar=0@215,-190+0|dottedCircle=0+578"
+    },
+    {
+      "input": "مر امرا",
+      "variations": {
+        "SPAC": -100
+      },
+      "expectation": "alef-ar=6+658|reh-ar.fina=5@-130,0+263|meem-ar.init.round=4@20,0+418|alef-ar=3@-1,0+657|space.mark=2+0|reh-ar.fina=1@-130,0+263|meem-ar.init.round=0@20,0+418"
     },
     {
       "input": "لم تحاجون",

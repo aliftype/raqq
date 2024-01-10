@@ -10,6 +10,7 @@ input;direction;features;script;language;variations
 ع
 غ
 ف
+ر ارا;;;;;SPAC=-100
 ۝100;ltr
 ۝101;ltr
 ۝102;ltr
@@ -461,6 +462,7 @@ input;direction;features;script;language;variations
 ◌ٓ
 ◌ٔ
 ◌ٕ
+مر امرا;;;;;SPAC=-100
 لم تحاجون
 بي;;salt
 حى;;salt
