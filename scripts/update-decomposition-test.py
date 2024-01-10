@@ -20,7 +20,7 @@ import uharfbuzz as hb
 from glyphsLib import GSFont
 
 
-def main(rags):
+def main(args):
     font = GSFont(args.glyphs)
 
     forbidden_glyphs = []
