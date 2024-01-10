@@ -1274,7 +1274,6 @@ pos = -500;
 name = Regular;
 userData = {
 GSCornerRadius = -15;
-GSOffsetCapStyle = 2;
 GSOffsetHorizontal = -10;
 GSOffsetKeepCompatible = 1;
 GSOffsetPosition = 1;
