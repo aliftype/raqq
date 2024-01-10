@@ -1288,12 +1288,6 @@ axesValues = (
 10
 );
 name = Regular;
-},
-{
-axesValues = (
-10
-);
-name = Compact;
 }
 );
 kerningRTL = {
