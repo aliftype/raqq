@@ -66,14 +66,14 @@
       "input": "ع",
       "expectation": {
         "default": "ain-ar=0+982",
-        "RaqqSura.ttf": "ain-ar=0+982"
+        "RaqqSura.ttf": "ain-ar=0+995"
       }
     },
     {
       "input": "غ",
       "expectation": {
         "default": "dotabove-ar=0@303,256+0|ain-ar=0+982",
-        "RaqqSura.ttf": "dotabove-ar=0@303,256+0|ain-ar=0+982"
+        "RaqqSura.ttf": "dotabove-ar=0@303,256+0|ain-ar=0+995"
       }
     },
     {
