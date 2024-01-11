@@ -14,8 +14,6 @@ babelfont==3.0.1
     #   fontbakery
 beziers==0.5.0
     # via fontbakery
-black==23.12.1
-    # via youseedee
 booleanoperations==0.9.0
     # via ufo2ft
 certifi==2023.11.17
@@ -26,8 +24,6 @@ cffsubr==0.2.9.post1
     # via ufo2ft
 charset-normalizer==3.3.2
     # via requests
-click==8.1.7
-    # via black
 cmarkgfm==2022.10.27
     # via fontbakery
 collidoscope==0.6.5
@@ -80,8 +76,6 @@ mdurl==0.1.2
     # via markdown-it-py
 munkres==1.1.4
     # via fontbakery
-mypy-extensions==1.0.0
-    # via black
 num2words==0.5.13
     # via shaperglot
 openstep-plist==0.3.1
@@ -95,15 +89,9 @@ opentypespec==1.9.1
 orjson==3.9.10
     # via babelfont
 packaging==23.2
-    # via
-    #   black
-    #   fontbakery
-pathspec==0.12.1
-    # via black
+    # via fontbakery
 pip-api==0.0.30
     # via fontbakery
-platformdirs==4.1.0
-    # via black
 protobuf==3.20.3
     # via
     #   gflanguages
@@ -147,9 +135,7 @@ termcolor==2.4.0
 toml==0.10.2
     # via fontbakery
 tqdm==4.66.1
-    # via
-    #   collidoscope
-    #   youseedee
+    # via collidoscope
 ufo2ft==2.33.4
     # via
     #   fontbakery
@@ -170,7 +156,7 @@ vharfbuzz==0.2.0
     # via
     #   fontbakery
     #   shaperglot
-youseedee==0.5.2
+youseedee==0.5.3
     # via shaperglot
 
 # The following packages are considered to be unsafe in a requirements file:
