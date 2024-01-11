@@ -72,11 +72,11 @@ $(FONTDIR)/%.woff2: $(FONTDIR)/%.ttf
 
 $(TESTDIR)/%-shaping.html: $(FONTDIR)/%.ttf $(TESTDIR)/fontbakery.yml
 	$(info   SHAPE  $(<F))
-	fontbakery check-shaping --config=$(TESTDIR)/fontbakery.yml $< --html=$@ -e WARN &> /dev/null
+	fontbakery check-shaping --config=$(TESTDIR)/fontbakery.yml $< --html=$@ -e WARN 1> /dev/null
 
 $(TESTDIR)/%-fb.html: $(FONTDIR)/%.ttf $(TESTDIR)/fontbakery.yml
 	$(info   TEST   $(<F))
-	fontbakery check-universal --config=$(TESTDIR)/fontbakery.yml $< --html=$@ -e WARN &> /dev/null
+	fontbakery check-universal --config=$(TESTDIR)/fontbakery.yml $< --html=$@ -e WARN 1> /dev/null
 
 $(TESTDIR)/decomposition.json: $(SOURCEDIR)/$(NAME).glyphspackage $(FONTS)
 	$(info   GEN    $(@F))
