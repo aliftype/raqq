@@ -8,14 +8,10 @@ appdirs==1.4.4
     # via fs
 attrs==23.2.0
     # via ufolib2
-axisregistry==0.4.5
-    # via fontbakery
 babelfont==3.0.1
     # via
     #   collidoscope
     #   fontbakery
-beautifulsoup4==4.12.2
-    # via fontbakery
 beziers==0.5.0
     # via fontbakery
 black==23.12.1
@@ -36,22 +32,12 @@ cmarkgfm==2022.10.27
     # via fontbakery
 collidoscope==0.6.5
     # via fontbakery
-commandlines==0.4.1
-    # via ufolint
 cu2qu==1.6.7.post2
     # via babelfont
-defcon==0.10.3
-    # via
-    #   fontbakery
-    #   glyphsets
-dehinter==4.0.0
-    # via fontbakery
 docopt==0.6.2
     # via num2words
 filelock==3.13.1
     # via youseedee
-font-v==2.1.0
-    # via fontbakery
 fontbakery @ git+https://github.com/fonttools/fontbakery
     # via
     #   -r requirements-test.in
@@ -60,23 +46,17 @@ fontfeatures==1.8.0
     # via babelfont
 fonttools==4.47.0
     # via
-    #   axisregistry
     #   babelfont
     #   booleanoperations
     #   cffsubr
     #   collidoscope
     #   cu2qu
-    #   defcon
-    #   dehinter
-    #   font-v
     #   fontbakery
     #   fontfeatures
-    #   glyphsets
     #   glyphslib
     #   kurbopy
     #   ufo2ft
     #   ufolib2
-    #   ufolint
     #   vharfbuzz
 freetype-py==2.3.0
     # via fontbakery
@@ -85,27 +65,15 @@ fs==2.4.16
     #   fontfeatures
     #   fonttools
 gflanguages==0.5.15
-    # via
-    #   fontbakery
-    #   shaperglot
-gitdb==4.0.11
-    # via gitpython
-gitpython==3.1.40
-    # via font-v
-glyphsets==0.6.11
-    # via fontbakery
+    # via shaperglot
 glyphslib==6.6.0
-    # via
-    #   babelfont
-    #   glyphsets
+    # via babelfont
 idna==3.6
     # via requests
 kurbopy==0.10.40
     # via collidoscope
-lxml==4.9.4
-    # via
-    #   fontfeatures
-    #   fonttools
+lxml==5.1.0
+    # via fontfeatures
 markdown-it-py==3.0.0
     # via rich
 mdurl==0.1.2
@@ -138,8 +106,6 @@ platformdirs==4.1.0
     # via black
 protobuf==3.20.3
     # via
-    #   axisregistry
-    #   fontbakery
     #   gflanguages
     #   shaperglot
 pyclipper==1.3.0.post5
@@ -170,10 +136,6 @@ six==1.16.0
     #   python-dateutil
 skia-pathops==0.8.0.post1
     # via collidoscope
-smmap==5.0.1
-    # via gitdb
-soupsieve==2.5
-    # via beautifulsoup4
 sre-yield==1.2
     # via stringbrewer
 strictyaml==1.7.3
@@ -196,16 +158,12 @@ ufolib2==0.16.0
     # via
     #   babelfont
     #   glyphslib
-ufolint==1.2.0
-    # via fontbakery
 uharfbuzz==0.38.0
     # via
     #   collidoscope
     #   vharfbuzz
 unicodedata2==15.1.0
-    # via
-    #   fonttools
-    #   glyphsets
+    # via fonttools
 urllib3==2.1.0
     # via requests
 vharfbuzz==0.2.0
