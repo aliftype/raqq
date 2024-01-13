@@ -34,13 +34,11 @@ docopt==0.6.2
     # via num2words
 filelock==3.13.1
     # via youseedee
-fontbakery @ git+https://github.com/fonttools/fontbakery
-    # via
-    #   -r requirements-test.in
-    #   fontbakery
+fontbakery==0.10.9
+    # via -r requirements-test.in
 fontfeatures==1.8.0
     # via babelfont
-fonttools==4.47.0
+fonttools==4.47.2
     # via
     #   babelfont
     #   booleanoperations
