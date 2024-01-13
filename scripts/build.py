@@ -717,14 +717,10 @@ def propagateAnchors(glyph, layer):
             layer.anchors[name] = new
 
 
-def removeOverlap(font, glyph, layer):
+def removeOverlap(font, layer):
     from pathops import Path
 
     if not layer.paths:
-        return
-
-    # If glyph have variation layers, skip
-    if any("coordinates" in l.attributes for l in glyph.layers):
         return
 
     glyphSet = {}
@@ -769,6 +765,7 @@ def prepare(args):
                     layer.associatedMasterId = master.id
                     if len(layer.attributes) == 1:
                         layer.layerId = master.id
+                    del layer.attributes["coordinates"]
 
         # we are not using masters.append() because it adds layer for the new
         # master to each glyph in the font.
@@ -802,7 +799,6 @@ def prepare(args):
                         y = component.position.y
                         component.position = (x, y)
             propagateAnchors(glyph, layer)
-            removeOverlap(font, glyph, layer)
 
         # Group layers by master, so we can convert corresponding layers from all
         # masters together.
@@ -813,6 +809,9 @@ def prepare(args):
 
         # Convert interpolatable layers together.
         for layers in zip(*groups):
+            if len(layers) == 1:
+                # No interpolation needed, we can safely remove overlaps
+                removeOverlap(font, layers[0])
             glyphs_to_quadratic(layers, max_err=1.0, reverse_direction=True)
 
     return font, instance
