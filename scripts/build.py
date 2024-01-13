@@ -561,15 +561,21 @@ def buildMaster(font, master, args):
             else:
                 colorLayers[name].append((name, paletteIdx))
 
-    colorGlyphs = list(colorLayers.keys())
-    allGlyphs = font.glyphOrder + list(glyphSet.keys())
+    colorGlyphs = list(colorLayers)
+    allGlyphs = font.glyphOrder + [n for n in glyphSet if n not in font.glyphOrder]
 
+    # If we are creating an SVG table, we want to have all color glyphs at the end so
+    # that the color glyph IDs make a continuous range to allow putting all SVGs in one
+    # SVG doc. Otherwise, we want to keep the original glyph order.
     def key(name):
         if name in colorGlyphs:
             return len(allGlyphs) + colorGlyphs.index(name)
         return allGlyphs.index(name)
 
-    glyphOrder = sorted(glyphSet.keys(), key=key)
+    if args.no_SVG:
+        glyphOrder = allGlyphs
+    else:
+        glyphOrder = sorted(glyphSet.keys(), key=key)
 
     fb = FontBuilder(font.upm, isTTF=True)
     fb.setupGlyphOrder(glyphOrder)
