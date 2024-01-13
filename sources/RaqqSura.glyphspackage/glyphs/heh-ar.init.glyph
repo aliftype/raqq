@@ -13,6 +13,9 @@ pos = (8,169);
 name = exit;
 }
 );
+attr = {
+colorPalette = 4;
+};
 backgroundImage = {
 alpha = 80;
 imagePath = "images/MS-ADD-01116-000-00012.jpg";
@@ -28,15 +31,38 @@ pos = (34,0);
 ref = "heh-ar.init.round";
 },
 {
+ref = _p.heh;
+}
+);
+width = 361;
+},
+{
+associatedMasterId = m01;
+attr = {
+colorPalette = 1;
+};
+backgroundImage = {
+alpha = 80;
+imagePath = "images/MS-ADD-01116-000-00012.jpg";
+pos = (-2466,-2736);
+scale = (5,5);
+};
+layerId = "7C90B5B6-1854-4F02-98AA-75E111E06362";
+metricRight = "=10";
+name = "Regular 14 Jan 24 at 00:33";
+shapes = (
+{
 alignment = -1;
-pos = (20,0);
-ref = _p.lam;
-scale = (2,1);
+pos = (34,0);
+ref = "heh-ar.init.round";
+},
+{
+ref = _p.heh;
 }
 );
 width = 361;
 }
 );
-metricLeft = "=-20";
+metricLeft = "=_p.heh";
 metricRight = "=0";
 }
