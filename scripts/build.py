@@ -551,8 +551,7 @@ def buildMaster(font, master, args):
         for layer in glyph.layers:
             if layer.associatedMasterId != master.id:
                 continue
-            paletteIdx = layer.attributes.get("colorPalette", None)
-            if paletteIdx is None:
+            if (paletteIdx := layer.attributes.get("colorPalette", None)) is None:
                 continue
             colorLayers.setdefault(name, [])
             if layer.layerId != master.id:
