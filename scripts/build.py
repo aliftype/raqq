@@ -18,10 +18,9 @@ import os
 from xml.etree import ElementTree as etree
 
 from fontTools.cu2qu.ufo import glyphs_to_quadratic
-from fontTools.designspaceLib import DesignSpaceDocument, AxisLabelDescriptor
+from fontTools.designspaceLib import DesignSpaceDocument
 from fontTools.fontBuilder import FontBuilder
 from fontTools.misc.transform import Identity, Transform
-from fontTools.pens.basePen import AbstractPen
 from fontTools.pens.svgPathPen import SVGPathPen
 from fontTools.pens.ttGlyphPen import TTGlyphPointPen
 from fontTools.ttLib import newTable
