@@ -120,9 +120,10 @@ def draw(layer, glyphSet):
         # with the same color index.
         for component in layer.components:
             for componentLayer in component.component.layers:
-                if layer.attributes.get(
-                    "colorPalette"
-                ) == componentLayer.attributes.get("colorPalette"):
+                if componentLayer.name != "Regular" and (
+                    layer.attributes.get("colorPalette")
+                    == componentLayer.attributes.get("colorPalette")
+                ):
                     component.componentName = componentLayer.name
 
     pen = TTGlyphPointPen(glyphSet)
