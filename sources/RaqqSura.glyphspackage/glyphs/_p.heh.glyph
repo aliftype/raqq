@@ -1,0 +1,47 @@
+{
+glyphname = _p.heh;
+layers = (
+{
+attr = {
+colorPalette = 4;
+};
+layerId = m01;
+shapes = (
+{
+closed = 1;
+nodes = (
+(220,0,l),
+(220,110,l),
+(-20,110,l),
+(-20,0,l)
+);
+}
+);
+width = 220;
+},
+{
+associatedMasterId = m01;
+attr = {
+colorPalette = 1;
+};
+layerId = "C56B7BA5-C5BD-4D7A-844A-189ED2A8F3AD";
+metricLeft = "=-22";
+metricRight = "=-2";
+name = "Regular 14 Jan 24 at 00:34";
+shapes = (
+{
+closed = 1;
+nodes = (
+(222,10,l),
+(222,100,l),
+(-22,100,l),
+(-22,10,l)
+);
+}
+);
+width = 220;
+}
+);
+metricLeft = "=-20";
+metricRight = "=0";
+}
