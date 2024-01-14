@@ -298,14 +298,10 @@ def makeFeatures(font, master, args, glyphOrder):
             continue
         if glyph.leftKerningGroup:
             group = f"MMK_R_{glyph.leftKerningGroup}"
-            if group not in groups:
-                groups[group] = []
-            groups[group].append(name)
+            groups.setdefault(group, []).append(name)
         if glyph.rightKerningGroup:
             group = f"MMK_L_{glyph.rightKerningGroup}"
-            if group not in groups:
-                groups[group] = []
-            groups[group].append(name)
+            groups.setdefault(group, []).append(name)
 
     fea = ""
     for name, code in groups.items():
