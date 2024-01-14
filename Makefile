@@ -35,8 +35,7 @@ WOFF2 = $(FONTS:%.ttf=%.woff2)
 TESTS = shaping decomposition
 JSON = $(TESTS:%=$(TESTDIR)/%.json)
 
-
-FEA = $(SOURCEDIR)/overhang.fea
+FEA = $(NAMES:%=$(SOURCEDIR)/%-overhang.fea)
 HTML = $(NAMES:%=$(TESTDIR)/%-shaping.html) $(NAMES:%=$(TESTDIR)/%-fb.html)
 GLYPHDATA = $(SOURCEDIR)/GlyphData.xml
 
@@ -55,10 +54,14 @@ web: $(WOFF2)
 	cp $+ docs/assets/fonts/
 
 update-fea: $(FONTS)
-	$(info   GEN    $(@F))
-	python $(SCRIPTDIR)/update-overhang-fea.py $< $(FEA)
+	fonts=($(FONTS))
+	fea=($(FEA))
+	for i in $${!fonts[@]}; do
+		echo "  GEN    $${fea[$$i]}"
+		python $(SCRIPTDIR)/update-overhang-fea.py $${fonts[$$i]} $${fea[$$i]}
+	done
 
-$(FONTDIR)/%.ttf: $(SOURCEDIR)/%.glyphspackage $(CONFIG) $(GLYPHDATA) $(FEA)
+$(FONTDIR)/%.ttf: $(SOURCEDIR)/%.glyphspackage $(CONFIG) $(GLYPHDATA) $(SOURCEDIR)/%-overhang.fea
 	$(info   BUILD  $(@F))
 	python $(SCRIPTDIR)/build.py $< $(VERSION) $@ --data=$(GLYPHDATA) $(ARGS)
 

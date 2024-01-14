@@ -1054,7 +1054,7 @@ code = "lookup spacing {
 @hah.medi	= [$[name MATCHES \"hah-ar.medi.*\"]];
 @seen.medi	= [$[name MATCHES \"seen-ar.medi.*\"]];
 
-include(overhang.fea)
+include(Raqq-overhang.fea)
 ";
 tag = kern;
 },
