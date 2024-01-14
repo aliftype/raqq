@@ -979,7 +979,7 @@ tag = rlig;
 {
 code = "lookup rclt_tooth_yeh;
 lookup rclt_yehbarree_baseline;
-lookup rclt_connection;
+#lookup rclt_connection;
 lookup rclt_fathatan;
 lookup rclt_kasratan;
 ";
