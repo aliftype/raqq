@@ -572,10 +572,10 @@ def buildMaster(font, master, args):
             return len(allGlyphs) + colorGlyphs.index(name)
         return allGlyphs.index(name)
 
-    if args.no_SVG:
-        glyphOrder = allGlyphs
-    else:
+    if font.customParameters["Export SVG Table"]:
         glyphOrder = sorted(glyphSet.keys(), key=key)
+    else:
+        glyphOrder = allGlyphs
 
     fb = FontBuilder(font.upm, isTTF=True)
     fb.setupGlyphOrder(glyphOrder)
@@ -691,7 +691,7 @@ def buildBase(font, instance, vf, args):
         font.save(feapath.with_suffix(".debug.glyphs"))
     fb.addOpenTypeFeatures(fea, filename=feapath)
 
-    if not args.no_SVG:
+    if font.customParameters["Export SVG Table"]:
         addSVG(fb)
 
     return fb.font
@@ -892,7 +892,6 @@ def main():
     parser.add_argument("version", help="font version", type=str)
     parser.add_argument("output", help="output OTF file", type=Path)
     parser.add_argument("--data", help="GlyphData.xml file", type=Path)
-    parser.add_argument("--no-SVG", help="do not build SVG table", action="store_true")
     args = parser.parse_args()
 
     font, instance = prepare(args)

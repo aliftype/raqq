@@ -58,10 +58,6 @@ update-fea: $(FONTS)
 	$(info   GEN    $(@F))
 	python $(SCRIPTDIR)/update-overhang-fea.py $< $(FEA)
 
-$(FONTDIR)/%Sura.ttf: $(SOURCEDIR)/%Sura.glyphspackage $(CONFIG) $(GLYPHDATA) $(FEA)
-	$(info   BUILD  $(@F))
-	python $(SCRIPTDIR)/build.py $< $(VERSION) $@ --data=$(GLYPHDATA) --no-SVG $(ARGS)
-
 $(FONTDIR)/%.ttf: $(SOURCEDIR)/%.glyphspackage $(CONFIG) $(GLYPHDATA) $(FEA)
 	$(info   BUILD  $(@F))
 	python $(SCRIPTDIR)/build.py $< $(VERSION) $@ --data=$(GLYPHDATA) $(ARGS)
