@@ -9,11 +9,11 @@ shapes = (
 ref = "alef-ar";
 },
 {
-pos = (297,-177);
+pos = (298,-177);
 ref = "hamzabelow-ar";
 }
 );
-width = 662;
+width = 652;
 }
 );
 unicode = 1573;
