@@ -55,8 +55,8 @@ nodes = (
 (19,289,o),
 (-10,283,c),
 (-10,110,l),
-(-50,110,l),
-(-50,0,l)
+(-30,110,l),
+(-30,0,l)
 );
 }
 );
@@ -71,11 +71,10 @@ backgroundImage = {
 alpha = 80;
 imagePath = "images/MS-ADD-01116-000-00005.jpg";
 locked = 1;
-pos = (-4107,-2810);
+pos = (-4087,-2810);
 scale = (5,5);
 };
 layerId = "EF850527-60EE-4A6C-A294-AF37A907E406";
-metricLeft = "=0@120";
 metricRight = "=10";
 name = "Regular 14 Jan 24 at 21:45";
 shapes = (
@@ -91,14 +90,14 @@ nodes = (
 (29,284,o),
 (0,273,c),
 (0,110,l),
-(-52,110,l),
-(-52,10,l)
+(-32,110,l),
+(-32,10,l)
 );
 }
 );
 width = 100;
 }
 );
-metricLeft = "=-10@120";
+metricLeft = "=behDotless-ar.medi";
 metricRight = "=0";
 }
