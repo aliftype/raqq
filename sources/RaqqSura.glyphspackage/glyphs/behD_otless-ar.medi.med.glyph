@@ -6,32 +6,35 @@ layers = (
 anchors = (
 {
 name = bottom;
-pos = (54,-38);
+pos = (24,-38);
 },
 {
 name = damma;
-pos = (18,170);
+pos = (-10,172);
 },
 {
 name = entry;
-pos = (128,0);
+pos = (100,0);
 },
 {
 name = exit;
 },
 {
 name = fatha;
-pos = (70,460);
+pos = (43,453);
 },
 {
 name = kasra;
-pos = (87,-57);
+pos = (57,-57);
 },
 {
 name = top;
-pos = (76,381);
+pos = (59,374);
 }
 );
+attr = {
+colorPalette = 4;
+};
 backgroundImage = {
 alpha = 80;
 angle = -0.4;
@@ -45,55 +48,54 @@ shapes = (
 {
 closed = 1;
 nodes = (
-(141,0,l),
-(141,110,l),
-(129,110,o),
-(126,134,o),
-(125,157,cs),
-(122,234,o),
-(119,330,o),
-(110,399,cs),
-(108,418,o),
-(91,416,o),
-(86,403,cs),
-(75,374,o),
-(47,341,o),
-(28,328,cs),
-(16,320,o),
-(12,311,o),
-(13,301,cs),
-(18,250,o),
-(21,174,o),
-(21,110,c),
-(-20,110,l),
-(-20,0,l)
+(100,0,l),
+(100,439,l),
+(82,389,o),
+(26,329,o),
+(-10,322,c),
+(-10,110,l),
+(-48,110,l),
+(-48,0,l)
 );
 }
 );
-width = 128;
+width = 100;
 },
 {
 associatedMasterId = m01;
+attr = {
+colorPalette = 1;
+};
 backgroundImage = {
 alpha = 80;
 angle = -0.4;
 imagePath = "images/MS-ADD-01116-000-00025.jpg";
 locked = 1;
-pos = (-3495,-2714);
+pos = (-3493,-2714);
 scale = (5,5);
 };
-layerId = "E30D4792-36E3-4DDE-93DA-2C961643E0E7";
-name = "3 Apr 23 at 23:50";
+layerId = "6205199F-59CC-4574-98E1-3AA4B08296A7";
+name = "14 Jan 24 at 22:07";
 shapes = (
 {
-alignment = -1;
-ref = "behDotless-ar.medi.high";
+closed = 1;
+nodes = (
+(100,10,l),
+(100,110,l),
+(90,110,l),
+(90,395,l),
+(66,358,o),
+(29,323,o),
+(0,312,c),
+(0,110,l),
+(-50,110,l),
+(-50,10,l)
+);
 }
 );
-visible = 1;
-width = 128;
+width = 100;
 }
 );
-metricLeft = "=-20@0";
-metricRight = "=3@157";
+metricLeft = "=behDotless-ar.medi";
+metricRight = "=behDotless-ar.medi";
 }

@@ -9,7 +9,7 @@ shapes = (
 ref = "behDotless-ar.medi";
 }
 );
-width = 128;
+width = 100;
 }
 );
 }
