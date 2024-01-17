@@ -1,26 +1,39 @@
 {
-glyphname = "alefMaksura-ar.fina.tooth";
+glyphname = "lam_alefMaksura-ar.fina.short";
+kernRight = beh;
 layers = (
 {
 anchors = (
 {
-name = bottom;
+name = bottom_2;
 pos = (348,-230);
 },
 {
-name = damma;
+name = damma_1;
+pos = (0,170);
+},
+{
+name = damma_2;
 pos = (-88,-82);
 },
 {
 name = entry;
-pos = (6,0);
+pos = (110,0);
 },
 {
-name = fatha;
+name = fatha_1;
+pos = (53,414);
+},
+{
+name = fatha_2;
 pos = (-83,272);
 },
 {
-name = kasra;
+name = kasra_1;
+pos = (56,-57);
+},
+{
+name = kasra_2;
 pos = (197,-308);
 }
 );
@@ -29,9 +42,10 @@ colorPalette = 4;
 };
 backgroundImage = {
 alpha = 80;
-imagePath = "images/MS-ADD-01116-000-00018.jpg";
+angle = 1.8;
+imagePath = "images/MS-ADD-01116-000-00066.jpg";
 locked = 1;
-pos = (-3154,-2556);
+pos = (-2959,-1894);
 scale = (5,5);
 };
 layerId = m01;
@@ -54,8 +68,13 @@ nodes = (
 (110,-14,o),
 (110,-5,o),
 (110,0,cs),
-(110,95,l),
-(0,148,l),
+(110,680,ls),
+(110,694,o),
+(103,696,o),
+(95,684,cs),
+(71,642,o),
+(29,603,o),
+(0,597,c),
 (0,0,ls),
 (0,-47,o),
 (4,-86,o),
@@ -87,15 +106,16 @@ colorPalette = 1;
 };
 backgroundImage = {
 alpha = 80;
-imagePath = "images/MS-ADD-01116-000-00018.jpg";
+angle = 1.8;
+imagePath = "images/MS-ADD-01116-000-00066.jpg";
 locked = 1;
-pos = (-3154,-2556);
+pos = (-2959,-1894);
 scale = (5,5);
 };
-layerId = "9F7DA325-C963-44EF-80CD-FC70154256C8";
+layerId = "BB5A3033-D661-402A-992B-C63FD966FB46";
 metricLeft = "=10@0";
 metricRight = "=10";
-name = "Regular 16 Jan 24 at 19:12";
+name = "16 Jan 24 at 19:46";
 shapes = (
 {
 closed = 1;
@@ -117,8 +137,12 @@ nodes = (
 (100,0,cs),
 (100,10,l),
 (110,10,l),
-(110,98,l),
-(10,147,l),
+(110,100,l),
+(100,100,l),
+(100,673,l),
+(77,634,o),
+(40,599,o),
+(10,589,c),
 (10,0,ls),
 (10,-103,o),
 (34,-148,o),
@@ -136,7 +160,6 @@ nodes = (
 );
 }
 );
-visible = 1;
 width = 359;
 }
 );

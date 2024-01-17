@@ -9,11 +9,11 @@ shapes = (
 ref = "alefMaksura-ar";
 },
 {
-pos = (350,-245);
+pos = (350,-213);
 ref = "twodotsverticalbelow-ar";
 }
 );
-width = 395;
+width = 393;
 }
 );
 unicode = 1610;

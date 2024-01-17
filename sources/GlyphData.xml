@@ -564,17 +564,30 @@
          anchors="fatha_1, damma_1, kasra_1, fatha_2, damma_2, kasra_2, hamzaabove_2, hamzabelow_2, madda_2, caret_1"
          accents="fatha-ar, fathatan-ar.alt, damma-ar, dammatan-ar, kasra-ar, kasratan-ar, hamzaabove-ar, hamzabelow-ar, madda-ar, shadda-ar"
   />
-
-  <glyph name="seen_alefMaksura-ar" category="Letter" subCategory="Ligature" script="arabic"
+  <glyph name="behDotless_alefMaksura-ar.fina" category="Letter" subCategory="Ligature" script="arabic"
          sortName="arL0404"
-         anchors="fatha_1, damma_1, kasra_1, fatha_2, damma_2, kasra_2, caret_1"
-         accents="fatha-ar, fathatan-ar, damma-ar, dammatan-ar, kasra-ar, kasratan-ar, shadda-ar, threedotshorizontalabove-ar.3, twodotsverticalbelow-ar"
+         anchors="fatha_1, damma_1, kasra_1, fatha_2, damma_2, kasra_2, caret_1, top_1, bottom_1, bottom_2"
+         accents="fatha-ar, fathatan-ar, damma-ar, dammatan-ar, kasra-ar, kasratan-ar, shadda-ar, dotabove-ar, twodotsverticalabove-ar, dotbelow-ar, twodotsverticalbelow-ar, threedotsupabove-ar, threedotsdownbelow-ar, twodotsverticalbelow-ar"
   />
-
-  <glyph name="seen_alefMaksura-ar.fina" category="Letter" subCategory="Ligature" script="arabic"
+  <glyph name="seen_alefMaksura-ar" category="Letter" subCategory="Ligature" script="arabic"
          sortName="arL0405"
          anchors="fatha_1, damma_1, kasra_1, fatha_2, damma_2, kasra_2, caret_1"
          accents="fatha-ar, fathatan-ar, damma-ar, dammatan-ar, kasra-ar, kasratan-ar, shadda-ar, threedotshorizontalabove-ar.3, twodotsverticalbelow-ar"
+  />
+  <glyph name="seen_alefMaksura-ar.fina" category="Letter" subCategory="Ligature" script="arabic"
+         sortName="arL0406"
+         anchors="fatha_1, damma_1, kasra_1, fatha_2, damma_2, kasra_2, caret_1"
+         accents="fatha-ar, fathatan-ar, damma-ar, dammatan-ar, kasra-ar, kasratan-ar, shadda-ar, threedotshorizontalabove-ar.3, twodotsverticalbelow-ar"
+  />
+  <glyph name="lam_alefMaksura-ar.fina" category="Letter" subCategory="Ligature" script="arabic"
+         sortName="arL0407"
+         anchors="fatha_1, damma_1, kasra_1, fatha_2, damma_2, kasra_2, caret_1, bottom_2"
+         accents="fatha-ar, fathatan-ar, damma-ar, dammatan-ar, kasra-ar, kasratan-ar, shadda-ar, twodotsverticalbelow-ar"
+  />
+  <glyph name="lam_alefMaksura-ar.fina.short" category="Letter" subCategory="Ligature" script="arabic"
+         sortName="arL0407"
+         anchors="fatha_1, damma_1, kasra_1, fatha_2, damma_2, kasra_2, caret_1, bottom_2"
+         accents="fatha-ar, fathatan-ar, damma-ar, dammatan-ar, kasra-ar, kasratan-ar, shadda-ar, twodotsverticalbelow-ar"
   />
 
   <glyph name="zero" unicode="0030" category="Number" subCategory="Decimal Digit" script="arabic"
