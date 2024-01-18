@@ -17,24 +17,23 @@ shapes = (
 alignment = -1;
 angle = 9.4;
 pos = (294,67);
-ref = _dotabove;
+ref = "dotabove-ar";
 },
 {
 alignment = -1;
 angle = 7;
 pos = (3,42);
-ref = _dotabove;
+ref = "dotabove-ar";
 },
 {
 alignment = -1;
 angle = 11;
 pos = (147,41);
-ref = _dotabove;
+ref = "dotabove-ar";
 }
 );
 width = 386;
 }
 );
 metricLeft = "=dotabove-ar";
-metricRight = "=dotabove-ar";
 }

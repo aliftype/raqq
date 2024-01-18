@@ -14,13 +14,20 @@ colorPalette = 4;
 layerId = m01;
 shapes = (
 {
-alignment = -1;
-ref = _dotabove;
+closed = 1;
+nodes = (
+(14,9,l),
+(51,38,o),
+(82,69,o),
+(109,105,c),
+(94,118,l),
+(66,83,o),
+(37,50,o),
+(2,25,c)
+);
 }
 );
 width = 110;
 }
 );
-metricLeft = "=6";
-metricRight = "=4";
 }
