@@ -87,6 +87,9 @@ def GSLayer_clearContours(self):
     self.paths = []
 
 
+GSLayer.clearContours = GSLayer_clearContours
+
+
 def GSLayer__repr__(self: GSLayer):
     name = []
     if self.layerId == self.associatedMasterId:
@@ -108,28 +111,7 @@ def GSLayer__repr__(self: GSLayer):
     return f'<GSLayer "{name}" ({parent})>'
 
 
-GSLayer.clearContours = GSLayer_clearContours
 GSLayer.__repr__ = GSLayer__repr__
-
-
-def draw(layer, glyphSet):
-    if layer.attributes.get("colorPalette") is not None:
-        # If we are drawing a color layer, and it has components, we need to
-        # remap the component to point to the new color glyphs we created. We
-        # match Glyphs’s app by using the first layer in the component glyph
-        # with the same color index.
-        for component in layer.components:
-            for componentLayer in component.component.layers:
-                if componentLayer.name != "Regular" and (
-                    layer.attributes.get("colorPalette")
-                    == componentLayer.attributes.get("colorPalette")
-                ):
-                    component.componentName = componentLayer.name
-
-    pen = TTGlyphPointPen(glyphSet)
-    layer.drawPoints(pen)
-
-    return pen.glyph()
 
 
 def makeKern(font, master):
@@ -551,11 +533,24 @@ def buildMaster(font, master, args):
                 continue
             colorLayers.setdefault(name, [])
             if layer.layerId != master.id:
-                layer.name = f"{name}.color{len(colorLayers[name])}"
-                glyphSet[layer.name] = layer
-                colorLayers[name].append((layer.name, paletteIdx))
+                layerName = f"{name}.color{len(colorLayers[name])}"
+                glyphSet[layerName] = layer
+                colorLayers[name].append((layerName, paletteIdx))
             else:
                 colorLayers[name].append((name, paletteIdx))
+
+    # Remap color layers components to point to the new color glyphs we created.
+    for name, layer in glyphSet.items():
+        if layer.attributes.get("colorPalette") is not None:
+            if "." not in name:
+                continue
+            suffix = name.split(".")[-1]
+            if not suffix.startswith("color"):
+                continue
+            for component in layer.components:
+                componentName = f"{component.componentName}.{suffix}"
+                if componentName in glyphSet:
+                    component.componentName = componentName
 
     colorGlyphs = list(colorLayers)
     allGlyphs = font.glyphOrder + [n for n in glyphSet if n not in font.glyphOrder]
@@ -578,7 +573,10 @@ def buildMaster(font, master, args):
 
     glyphs = {}
     for name, layer in glyphSet.items():
-        glyphs[name] = draw(layer, glyphSet)
+        pen = TTGlyphPointPen(glyphSet)
+        layer.drawPoints(pen)
+
+        glyphs[name] = pen.glyph()
 
     fb.setupGlyf(glyphs)
 
