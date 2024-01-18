@@ -14,7 +14,7 @@ shapes = (
 alignment = -1;
 angle = 3;
 pos = (3,-3);
-ref = _dotabove;
+ref = "dotabove-ar";
 }
 );
 width = 110;

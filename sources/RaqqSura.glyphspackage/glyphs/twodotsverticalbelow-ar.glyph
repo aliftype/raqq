@@ -16,17 +16,16 @@ shapes = (
 {
 alignment = -1;
 pos = (0,19);
-ref = _dotabove;
+ref = "dotabove-ar";
 },
 {
 alignment = -1;
 pos = (30,-8);
-ref = _dotabove;
+ref = "dotabove-ar";
 }
 );
 width = 140;
 }
 );
 metricLeft = "=dotabove-ar";
-metricRight = "=dotabove-ar";
 }
