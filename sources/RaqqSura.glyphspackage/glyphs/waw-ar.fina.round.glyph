@@ -8,7 +8,32 @@ name = entry;
 pos = (492,0);
 }
 );
+attr = {
+colorPalette = 4;
+};
 layerId = m01;
+shapes = (
+{
+alignment = -1;
+pos = (0,-83);
+ref = "waw-ar";
+}
+);
+width = 492;
+},
+{
+anchors = (
+{
+name = entry;
+pos = (492,0);
+}
+);
+associatedMasterId = m01;
+attr = {
+colorPalette = 1;
+};
+layerId = "7EDAF56C-7A62-447A-A6BD-7288FA082622";
+name = "18 Jan 24 at 12:23";
 shapes = (
 {
 alignment = -1;

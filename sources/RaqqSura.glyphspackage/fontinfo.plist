@@ -1269,6 +1269,7 @@ GSOffsetPosition = 1;
 GSOffsetProportional = 1;
 GSOffsetVertical = 10;
 };
+visible = 1;
 }
 );
 instances = (
@@ -1647,7 +1648,7 @@ _c.hah.reh = -67;
 "@MMK_L_meem" = -10;
 "ain-ar" = -65;
 "ain-ar.init" = -75;
-"alef-ar" = -70;
+"alef-ar" = -95;
 "alefMaksura-ar" = -25;
 "alefMaksura-ar.salt" = -26;
 "behDotless-ar" = -10;
