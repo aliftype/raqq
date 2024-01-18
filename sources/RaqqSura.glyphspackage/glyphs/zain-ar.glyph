@@ -9,11 +9,11 @@ shapes = (
 ref = "reh-ar";
 },
 {
-pos = (143,161);
+pos = (146,150);
 ref = "dotabove-ar.reh";
 }
 );
-width = 450;
+width = 453;
 }
 );
 unicode = 1586;
