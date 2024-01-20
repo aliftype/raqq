@@ -9,7 +9,7 @@ shapes = (
 ref = "seen-ar.medi";
 }
 );
-width = 401;
+width = 345;
 }
 );
 }
