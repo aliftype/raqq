@@ -579,11 +579,11 @@ lookup rlig_teeth_3 {
 	by	behDotless-ar.medi.semi
 	;
 
-	sub [behDotless-ar.init behDotless-ar.medi]' lookup med_beh
-		[seen-ar.medi seen-ar.fina]' lookup low_seen
+	sub [behDotless-ar.init behDotless-ar.medi]' lookup high_beh
+		[seen-ar.medi seen-ar.fina]
 	;
 
-	sub	[fehDotless-ar.medi meem-ar.init meem-ar.medi hah-ar.init hah-ar.medi]
+	sub	[hah-ar.init hah-ar.medi ain-ar.init]
 		[seen-ar.medi seen-ar.fina]' lookup low_seen
 	;
 } rlig_teeth_3;
@@ -1263,7 +1263,7 @@ pos = -500;
 name = Regular;
 userData = {
 GSCornerRadius = -15;
-GSOffsetHorizontal = 10;
+GSOffsetHorizontal = -10;
 GSOffsetKeepCompatible = 1;
 GSOffsetPosition = 1;
 GSOffsetProportional = 1;
