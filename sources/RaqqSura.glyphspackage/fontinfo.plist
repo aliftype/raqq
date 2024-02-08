@@ -1,5 +1,5 @@
 {
-.appVersion = "3234";
+.appVersion = "3236";
 .formatVersion = 3;
 axes = (
 {
@@ -1269,7 +1269,6 @@ GSOffsetPosition = 1;
 GSOffsetProportional = 1;
 GSOffsetVertical = 10;
 };
-visible = 1;
 }
 );
 instances = (
@@ -1503,7 +1502,6 @@ _c.hah.reh = -88;
 "waw-ar" = -15;
 };
 "behDotless-ar.init" = {
-"@MMK_L_sad" = -21;
 "noonghunna-ar.fina" = -34;
 "waw-ar.fina" = -10;
 };
