@@ -21,12 +21,13 @@ from fontTools.cu2qu.ufo import glyphs_to_quadratic
 from fontTools.designspaceLib import DesignSpaceDocument
 from fontTools.fontBuilder import FontBuilder
 from fontTools.misc.transform import Identity, Transform
+from fontTools.pens.hashPointPen import HashPointPen
 from fontTools.pens.svgPathPen import SVGPathPen
 from fontTools.pens.ttGlyphPen import TTGlyphPointPen
 from fontTools.ttLib import newTable
 from fontTools.ttLib.tables._h_e_a_d import mac_epoch_diff
 from fontTools.varLib import build_many as merge
-from glyphsLib import GSAnchor, GSFont, GSFontMaster, GSLayer
+from glyphsLib import GSAnchor, GSComponent, GSFont, GSFontMaster, GSLayer
 from glyphsLib.builder.tokens import TokenExpander
 from glyphsLib.glyphdata import GlyphData
 from glyphsLib.glyphdata import get_glyph as getGlyphInfo
@@ -571,8 +572,22 @@ def buildMaster(font, master, args):
     fb = FontBuilder(font.upm, isTTF=True)
     fb.setupGlyphOrder(glyphOrder)
 
+    hashes = {}
     glyphs = {}
     for name, layer in glyphSet.items():
+        if layer.paths:
+            # Try to find a glyph with identical outlines and use it.
+            pen = HashPointPen(glyphSet=glyphSet)
+            layer.drawPoints(pen)
+            hash = pen.hash
+            if hash in hashes:
+                new = GSLayer()
+                new.width = layer.width
+                new.components = [GSComponent(hashes[hash])]
+                layer = new
+            else:
+                hashes[hash] = name
+
         pen = TTGlyphPointPen(glyphSet)
         layer.drawPoints(pen)
 
