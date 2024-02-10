@@ -596,7 +596,6 @@ def buildMaster(font, master, args):
     fb.setupGlyf(glyphs)
 
     metrics = {}
-    glyf = fb.font["glyf"]
     for name, glyph in glyphs.items():
         metrics[name] = (glyphSet[name].width, glyph.xMin)
     fb.setupHorizontalMetrics(metrics)
