@@ -745,6 +745,7 @@ def removeOverlap(font, layer):
     layer.draw(path.getPen(glyphSet=glyphSet))
     path.simplify(fix_winding=True, keep_starting_points=True)
     layer.paths = []
+    layer.components = []
     path.draw(layer.getPen())
 
 
