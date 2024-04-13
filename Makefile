@@ -36,14 +36,14 @@ TESTS = shaping decomposition
 JSON = $(TESTS:%=$(TESTDIR)/%.json)
 
 FEA = $(NAMES:%=$(SOURCEDIR)/%-overhang.fea)
-HTML = $(NAMES:%=$(TESTDIR)/%-shaping.html) $(NAMES:%=$(TESTDIR)/%-fb.html)
+HTML = $(NAMES:%=$(TESTDIR)/%-shaping.html) $(NAMES:%=$(TESTDIR)/%-qa.html)
 GLYPHDATA = $(SOURCEDIR)/GlyphData.xml
 
 ARGS ?= 
 
 .SECONDARY:
 .ONESHELL:
-.PHONY: all dist
+.PHONY: all dist ttf web
 
 all: ttf web
 ttf: $(FONTS)
@@ -73,7 +73,7 @@ $(TESTDIR)/%-shaping.html: $(FONTDIR)/%.ttf $(TESTDIR)/fontbakery.yml
 	$(info   SHAPE  $(<F))
 	fontbakery check-shaping --config=$(TESTDIR)/fontbakery.yml $< --html=$@ -e WARN -q
 
-$(TESTDIR)/%-fb.html: $(FONTDIR)/%.ttf $(TESTDIR)/fontbakery.yml
+$(TESTDIR)/%-qa.html: $(FONTDIR)/%.ttf $(TESTDIR)/fontbakery.yml
 	$(info   TEST   $(<F))
 	fontbakery check-universal --config=$(TESTDIR)/fontbakery.yml $< --html=$@ -e WARN -q
 
