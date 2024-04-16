@@ -10,14 +10,14 @@ attrs==23.2.0
     # via ufolib2
 brotli==1.1.0
     # via fonttools
-fonttools[ufo,unicode,woff]==4.49.0
+fonttools[ufo,unicode,woff]==4.51.0
     # via
     #   -r requirements.in
     #   glyphslib
     #   ufolib2
 fs==2.4.16
     # via fonttools
-glyphslib==6.6.5
+glyphslib==6.7.0
     # via -r requirements.in
 openstep-plist==0.3.1
     # via glyphslib
@@ -27,7 +27,7 @@ skia-pathops==0.8.0.post1
     # via -r requirements.in
 ufolib2==0.16.0
     # via glyphslib
-uharfbuzz==0.39.0
+uharfbuzz==0.39.1
     # via -r requirements.in
 unicodedata2==15.1.0
     # via fonttools
