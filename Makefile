@@ -27,10 +27,11 @@ SCRIPTDIR = scripts
 FONTDIR = fonts
 TESTDIR = tests
 BUILDDIR = build
+WOFFDIR = docs/assets/fonts
 
 NAMES = $(NAME) $(NAME)Sura
 FONTS = $(NAMES:%=$(FONTDIR)/%.ttf)
-WOFF2 = $(FONTS:%.ttf=%.woff2)
+WOFF2 = $(NAMES:%=$(WOFFDIR)/%.woff2)
 
 TESTS = shaping decomposition
 JSON = $(TESTS:%=$(TESTDIR)/%.json)
@@ -51,7 +52,6 @@ test: $(HTML)
 update-test: $(JSON)
 
 web: $(WOFF2)
-	cp $+ docs/assets/fonts/
 
 update-fea: $(FONTS)
 	fonts=($(FONTS))
@@ -65,7 +65,7 @@ $(FONTDIR)/%.ttf: $(SOURCEDIR)/%.glyphspackage $(CONFIG) $(GLYPHDATA) $(SOURCEDI
 	$(info   BUILD  $(@F))
 	python $(SCRIPTDIR)/build.py $< $(VERSION) $@ --data=$(GLYPHDATA) $(ARGS)
 
-$(FONTDIR)/%.woff2: $(FONTDIR)/%.ttf
+$(WOFFDIR)/%.woff2: $(FONTDIR)/%.ttf
 	$(info   WOFF2  $(@F))
 	python $(SCRIPTDIR)/buildwoff2.py $< $@
 
