@@ -59,7 +59,7 @@ fs==2.4.16
     # via
     #   fontfeatures
     #   fonttools
-gflanguages==0.6.0
+gflanguages==0.6.1
     # via shaperglot
 glyphslib==6.7.1
     # via babelfont
@@ -113,7 +113,7 @@ pyyaml==6.0.1
     # via
     #   fontbakery
     #   shaperglot
-requests==2.31.0
+requests==2.32.1
     # via
     #   fontbakery
     #   youseedee
@@ -143,7 +143,7 @@ tqdm==4.66.4
     # via collidoscope
 typing-extensions==4.11.0
     # via vfblib
-ufo2ft==3.2.2
+ufo2ft==3.2.3
     # via
     #   fontbakery
     #   shaperglot
