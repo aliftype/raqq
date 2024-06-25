@@ -10,7 +10,7 @@ attrs==23.2.0
     # via ufolib2
 brotli==1.1.0
     # via fonttools
-fonttools[ufo,unicode,woff]==4.51.0
+fonttools[ufo,unicode,woff]==4.53.0
     # via
     #   -r requirements.in
     #   glyphslib

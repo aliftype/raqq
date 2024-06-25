@@ -14,7 +14,7 @@ beziers==0.6.0
     # via fontbakery
 booleanoperations==0.9.0
     # via ufo2ft
-certifi==2024.2.2
+certifi==2024.6.2
     # via requests
 cffi==1.16.0
     # via cmarkgfm
@@ -30,15 +30,15 @@ defcon==0.10.3
     # via vfblib
 docopt==0.6.2
     # via num2words
-filelock==3.14.0
+filelock==3.15.4
     # via youseedee
-fontbakery[shaperglot,shaping,ufo2ft]==0.12.6
+fontbakery[shaperglot,shaping,ufo2ft]==0.12.7
     # via -r requirements-test.in
 fontfeatures==1.8.0
     # via babelfont
 fontmath==0.9.3
     # via ufo2ft
-fonttools[ufo,unicode]==4.51.0
+fonttools[ufo,unicode]==4.53.0
     # via
     #   babelfont
     #   booleanoperations
@@ -59,7 +59,7 @@ fs==2.4.16
     # via
     #   fontfeatures
     #   fonttools
-gflanguages==0.6.1
+gflanguages==0.6.2
     # via shaperglot
 glyphslib==6.7.1
     # via babelfont
@@ -67,7 +67,7 @@ idna==3.7
     # via requests
 jinja2==3.1.4
     # via fontbakery
-kurbopy==0.10.40
+kurbopy==0.11.0
     # via collidoscope
 lxml==5.2.2
     # via fontfeatures
@@ -89,9 +89,9 @@ opentype-sanitizer==9.1.0
     # via fontbakery
 opentypespec==1.9.1
     # via fontbakery
-orjson==3.10.3
+orjson==3.10.5
     # via babelfont
-packaging==24.0
+packaging==24.1
     # via fontbakery
 pip-api==0.0.33
     # via fontbakery
@@ -113,7 +113,7 @@ pyyaml==6.0.1
     # via
     #   fontbakery
     #   shaperglot
-requests==2.32.1
+requests==2.32.3
     # via
     #   fontbakery
     #   youseedee
@@ -141,9 +141,9 @@ toml==0.10.2
     # via fontbakery
 tqdm==4.66.4
     # via collidoscope
-typing-extensions==4.11.0
+typing-extensions==4.12.2
     # via vfblib
-ufo2ft==3.2.3
+ufo2ft==3.2.5
     # via
     #   fontbakery
     #   shaperglot
@@ -161,9 +161,9 @@ uharfbuzz==0.39.1
     #   vharfbuzz
 unicodedata2==15.1.0
     # via fonttools
-urllib3==2.2.1
+urllib3==2.2.2
     # via requests
-vfblib==0.6.5
+vfblib==0.7.0
     # via babelfont
 vharfbuzz==0.3.0
     # via
