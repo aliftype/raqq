@@ -1,5 +1,5 @@
 {
-.appVersion = "3236";
+.appVersion = "3316";
 .formatVersion = 3;
 axes = (
 {
@@ -693,6 +693,11 @@ lookup rlig_4 {
 	;
 } rlig_4;
 
+lookup alef_lam {
+	sub alef-ar			by alef-ar.lam;
+	sub alef-ar.fina	by alef-ar.fina.lam;
+} alef_lam;
+
 lookup rlig_5 {
 	lookupflag IgnoreMarks;
 
@@ -702,7 +707,7 @@ lookup rlig_5 {
 		[lam-ar.medi.short lam-ar.medi.round.short lam-ar.fina.short
 		 lam_alefMaksura-ar.fina.short]
 	;
-	sub [alef-ar alef-ar.fina fehDotless_alef-ar]
+	sub [alef-ar alef-ar.fina fehDotless_alef-ar]' lookup alef_lam
 		[lam-ar lam-ar.init]' lookup short_lam
 	;
 } rlig_5;
@@ -1447,11 +1452,9 @@ _c.hah.reh = -88;
 "lam_alef-ar.fina" = -21;
 };
 "alef-ar" = {
-"@MMK_L_beh.init" = -10;
 "@MMK_L_dal.isol" = -35;
 "@MMK_L_feh.init" = -13;
 "@MMK_L_hah.init" = -30;
-"@MMK_L_lam" = -5;
 "@MMK_L_meem" = -23;
 "alef-ar" = -25;
 "alefMaksura-ar" = -70;
