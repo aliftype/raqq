@@ -2719,7 +2719,7 @@
       "input": "حے",
       "expectation": {
         "default": "yehbarree-ar.fina.baseline=1+297|_c.ain.yeh=0@-5,110+10|hah-ar.init=0@-40,110+713",
-        "RaqqSura.ttf": "yehbarree-ar.fina.baseline=1+297|hah-ar.init=0@0,110+773"
+        "RaqqSura.ttf": "yehbarree-ar.fina.baseline=1+297|hah-ar.init=0@0,110+763"
       }
     },
     {
@@ -2747,7 +2747,7 @@
       "input": "سح",
       "expectation": {
         "default": "hah-ar.fina=1+417|seen-ar.init=0@0,115+468",
-        "RaqqSura.ttf": "hah-ar.fina=1+417|seen-ar.init=0@0,115+435"
+        "RaqqSura.ttf": "hah-ar.fina=1+417|seen-ar.init=0@0,115+465"
       }
     },
     {
@@ -2880,7 +2880,7 @@
       "input": "سے",
       "expectation": {
         "default": "yehbarree-ar.fina.baseline=1+297|seen-ar.init=0@-32,110+736",
-        "RaqqSura.ttf": "yehbarree-ar.fina.baseline=1+297|seen-ar.init=0@-32,110+703"
+        "RaqqSura.ttf": "yehbarree-ar.fina.baseline=1+297|seen-ar.init=0@-32,110+733"
       }
     },
     {
@@ -3083,7 +3083,7 @@
       "input": "عے",
       "expectation": {
         "default": "yehbarree-ar.fina.baseline=1+297|_c.ain.yeh=0@-5,110+10|ain-ar.init=0@0,110+760",
-        "RaqqSura.ttf": "yehbarree-ar.fina.baseline=1+297|ain-ar.init=0@-25,110+748"
+        "RaqqSura.ttf": "yehbarree-ar.fina.baseline=1+297|ain-ar.init=0@-25,110+738"
       }
     },
     {
@@ -3363,7 +3363,7 @@
       "input": "لے",
       "expectation": {
         "default": "yehbarree-ar.fina.baseline=1+297|lam-ar.init.hah1=0@0,-5+763",
-        "RaqqSura.ttf": "yehbarree-ar.fina.baseline=1+297|lam-ar.init.hah1=0@0,-5+793"
+        "RaqqSura.ttf": "yehbarree-ar.fina.baseline=1+297|lam-ar.init.hah1=0@0,-5+783"
       }
     },
     {
@@ -3412,7 +3412,7 @@
       "input": "مے",
       "expectation": {
         "default": "yehbarree-ar.fina.baseline=1+297|meem-ar.init=0@0,110+775",
-        "RaqqSura.ttf": "yehbarree-ar.fina.baseline=1+297|meem-ar.init=0@0,110+775"
+        "RaqqSura.ttf": "yehbarree-ar.fina.baseline=1+297|meem-ar.init=0@0,110+765"
       }
     },
     {
@@ -3454,7 +3454,7 @@
       "input": "هے",
       "expectation": {
         "default": "yehbarree-ar.fina.baseline=1+297|heh-ar.init=0@0,110+771",
-        "RaqqSura.ttf": "yehbarree-ar.fina.baseline=1+297|heh-ar.init=0@0,110+771"
+        "RaqqSura.ttf": "yehbarree-ar.fina.baseline=1+297|heh-ar.init=0@0,110+761"
       }
     },
     {
@@ -3475,7 +3475,7 @@
       "input": "ىے",
       "expectation": {
         "default": "yehbarree-ar.fina.baseline=1+297|behDotless-ar.init=0@0,110+770",
-        "RaqqSura.ttf": "yehbarree-ar.fina.baseline=1+297|behDotless-ar.init=0@0,110+770"
+        "RaqqSura.ttf": "yehbarree-ar.fina.baseline=1+297|behDotless-ar.init=0@0,110+760"
       }
     },
     {
@@ -3695,7 +3695,7 @@
       },
       "expectation": {
         "default": "twodotsverticalbelow-ar=1@449,-149+0|yehbarree-ar.fina.baseline=1+297|dotbelow-ar=0@72,64+0|behDotless-ar.init=0@0,110+770",
-        "RaqqSura.ttf": "twodotsverticalbelow-ar=1@449,-139+0|yehbarree-ar.fina.baseline=1+297|dotbelow-ar=0@72,64+0|behDotless-ar.init=0@0,110+770"
+        "RaqqSura.ttf": "twodotsverticalbelow-ar=1@449,-139+0|yehbarree-ar.fina.baseline=1+297|dotbelow-ar=0@72,64+0|behDotless-ar.init=0@0,110+760"
       }
     },
     {
@@ -3705,7 +3705,7 @@
       },
       "expectation": {
         "default": "yehbarree-ar.fina.baseline=1+297|_c.ain.yeh=0@-5,110+10|hah-ar.init=0@-40,110+713",
-        "RaqqSura.ttf": "yehbarree-ar.fina.baseline=1+297|hah-ar.init=0@0,110+773"
+        "RaqqSura.ttf": "yehbarree-ar.fina.baseline=1+297|hah-ar.init=0@0,110+763"
       }
     },
     {
@@ -3745,7 +3745,7 @@
       },
       "expectation": {
         "default": "yehbarree-ar.fina.baseline=1+297|_c.ain.yeh=0@-5,110+10|ain-ar.init=0@0,110+760",
-        "RaqqSura.ttf": "yehbarree-ar.fina.baseline=1+297|ain-ar.init=0@-25,110+748"
+        "RaqqSura.ttf": "yehbarree-ar.fina.baseline=1+297|ain-ar.init=0@-25,110+738"
       }
     },
     {
@@ -3755,7 +3755,7 @@
       },
       "expectation": {
         "default": "twodotsverticalbelow-ar=1@449,-149+0|yehbarree-ar.fina.baseline=1+297|_c.ain.yeh=0@-5,110+10|ain-ar.init=0@0,110+760",
-        "RaqqSura.ttf": "twodotsverticalbelow-ar=1@449,-139+0|yehbarree-ar.fina.baseline=1+297|ain-ar.init=0@-25,110+748"
+        "RaqqSura.ttf": "twodotsverticalbelow-ar=1@449,-139+0|yehbarree-ar.fina.baseline=1+297|ain-ar.init=0@-25,110+738"
       }
     },
     {
@@ -3795,7 +3795,7 @@
       },
       "expectation": {
         "default": "twodotsverticalbelow-ar=1@449,-149+0|yehbarree-ar.fina.baseline=1+297|lam-ar.init.hah1=0@0,-5+763",
-        "RaqqSura.ttf": "twodotsverticalbelow-ar=1@449,-139+0|yehbarree-ar.fina.baseline=1+297|lam-ar.init.hah1=0@0,-5+793"
+        "RaqqSura.ttf": "twodotsverticalbelow-ar=1@449,-139+0|yehbarree-ar.fina.baseline=1+297|lam-ar.init.hah1=0@0,-5+783"
       }
     },
     {
@@ -3921,7 +3921,7 @@
       "input": "الے",
       "expectation": {
         "default": "yehbarree-ar.fina.baseline=2+297|lam-ar.init.hah1=1@0,-5+763|alef-ar=0@395,0+1053",
-        "RaqqSura.ttf": "yehbarree-ar.fina.baseline=2+297|lam-ar.init.short=1@0,110+770|alef-ar.lam=0+652"
+        "RaqqSura.ttf": "yehbarree-ar.fina.baseline=2+297|lam-ar.init.short=1@0,110+760|alef-ar.lam=0+652"
       }
     },
     {
@@ -5174,7 +5174,7 @@
       "input": "لسے",
       "expectation": {
         "default": "yehbarree-ar.fina=2+297|seen-ar.medi=1@-32,0+369|_c.seen.beh=0+0|lam-ar.init=0+353",
-        "RaqqSura.ttf": "yehbarree-ar.fina=2+297|seen-ar.medi=1@-32,0+313|lam-ar.init=0+373"
+        "RaqqSura.ttf": "yehbarree-ar.fina=2+297|seen-ar.medi=1@-32,0+313|lam-ar.init=0+443"
       }
     },
     {
@@ -5461,7 +5461,7 @@
       "input": "نسے",
       "expectation": {
         "default": "yehbarree-ar.fina=2+297|seen-ar.medi.low=1@-32,0+379|dotabove-ar=0@-2,339+0|_c.seen.beh=0+0|behDotless-ar.init.med=0+360",
-        "RaqqSura.ttf": "yehbarree-ar.fina=2+297|seen-ar.medi=1@-32,0+313|dotabove-ar.beh=0@-15,380+0|behDotless-ar.init.high=0+350"
+        "RaqqSura.ttf": "yehbarree-ar.fina=2+297|seen-ar.medi=1@-32,0+313|dotabove-ar.beh=0@-15,380+0|behDotless-ar.init.high=0+420"
       }
     },
     {
@@ -5769,7 +5769,7 @@
       "input": "وسے",
       "expectation": {
         "default": "yehbarree-ar.fina.baseline=2+297|seen-ar.init=1@-32,110+736|waw-ar=0@380,0+889",
-        "RaqqSura.ttf": "yehbarree-ar.fina.baseline=2+297|seen-ar.init=1@-32,110+703|waw-ar=0@-20,0+496"
+        "RaqqSura.ttf": "yehbarree-ar.fina.baseline=2+297|seen-ar.init=1@-32,110+733|waw-ar=0@-20,0+496"
       }
     },
     {
@@ -6899,7 +6899,7 @@
       "input": "اوتے",
       "expectation": {
         "default": "yehbarree-ar.fina.baseline=3+297|twodotsverticalabove-ar=2@-28,417+0|behDotless-ar.init=2@0,110+770|waw-ar=1@380,0+889|alef-ar=0@378,0+1036",
-        "RaqqSura.ttf": "yehbarree-ar.fina.baseline=3+297|twodotsverticalabove-ar=2@-50,415+0|behDotless-ar.init=2@0,110+770|waw-ar=1@-20,0+496|alef-ar=0@-22,0+630"
+        "RaqqSura.ttf": "yehbarree-ar.fina.baseline=3+297|twodotsverticalabove-ar=2@-50,415+0|behDotless-ar.init=2@0,110+760|waw-ar=1@-20,0+496|alef-ar=0@-22,0+630"
       }
     },
     {
@@ -7242,7 +7242,7 @@
       "input": "سحيق",
       "expectation": {
         "default": "twodotsverticalabove-ar=3@-62,265+0|qafDotless-ar.fina=3+373|twodotsverticalbelow-ar=2@159,-137+0|behDotless-ar.medi=2+128|_c.hah.beh=1+7|hah-ar.medi=1+133|seen-ar.init=0@0,122+468",
-        "RaqqSura.ttf": "twodotsverticalabove-ar=3@-62,265+0|qafDotless-ar.fina=3+373|twodotsverticalbelow-ar=2@131,-137+0|behDotless-ar.medi=2+100|hah-ar.medi=1+133|seen-ar.init=0@0,122+435"
+        "RaqqSura.ttf": "twodotsverticalabove-ar=3@-62,265+0|qafDotless-ar.fina=3+373|twodotsverticalbelow-ar=2@131,-137+0|behDotless-ar.medi=2+100|hah-ar.medi=1+133|seen-ar.init=0@0,122+465"
       }
     },
     {
