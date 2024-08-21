@@ -7,12 +7,15 @@ layers = (
 anchors = (
 {
 name = entry;
-pos = (125,0);
+pos = (100,0);
 },
 {
 name = exit;
 }
 );
+attr = {
+colorPalette = 4;
+};
 layerId = m01;
 shapes = (
 {
@@ -21,27 +24,40 @@ ref = "lam-ar.init";
 },
 {
 alignment = -1;
-pos = (38,0);
 ref = _p.lam;
 }
 );
-width = 125;
+width = 138;
 },
 {
+anchors = (
+{
+name = entry;
+pos = (125,0);
+},
+{
+name = exit;
+}
+);
 associatedMasterId = m01;
-layerId = "0C5AA166-5080-455D-A1EC-207441B745FB";
-name = "4 Apr 23 at 01:10";
+attr = {
+colorPalette = 1;
+};
+layerId = "FC3128F7-7DC6-4BB2-997E-830E1F9F2E55";
+name = "Regular 22 Aug 24 at 02:49";
 shapes = (
 {
 alignment = -1;
-pos = (-3,0);
-ref = "behDotless-ar.medi.high";
+ref = "lam-ar.init";
+},
+{
+alignment = -1;
+ref = _p.lam;
 }
 );
-visible = 1;
-width = 125;
+width = 138;
 }
 );
 metricLeft = "=-20";
-metricRight = "=3@157";
+metricRight = "behDotless-ar.medi";
 }

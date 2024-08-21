@@ -6,33 +6,61 @@ layers = (
 {
 anchors = (
 {
+name = damma;
+pos = (5,173);
+},
+{
 name = entry;
-pos = (123,0);
+pos = (93,0);
 },
 {
 name = exit;
+},
+{
+name = fatha;
+pos = (-54,520);
 },
 {
 name = kasra;
 pos = (80,-49);
 }
 );
+attr = {
+colorPalette = 4;
+};
 layerId = m01;
 shapes = (
 {
 alignment = -1;
-pos = (0,-115);
-ref = "lam-ar.init.hah1";
+ref = "lam-ar.init.short";
 },
 {
 alignment = -1;
-pos = (23,0);
 ref = _p.lam;
 }
 );
-width = 123;
+width = 138;
+},
+{
+associatedMasterId = m01;
+attr = {
+colorPalette = 1;
+};
+layerId = "FAC38553-2979-45DE-800E-E07DD3BD4BB0";
+name = "22 Aug 24 at 02:44";
+shapes = (
+{
+alignment = -1;
+ref = "lam-ar.init.short";
+},
+{
+alignment = -1;
+ref = _p.lam;
+}
+);
+width = 138;
 }
 );
 metricLeft = "=-20";
-metricRight = "=0";
+metricRight = "=behDotless-ar.medi";
 }
