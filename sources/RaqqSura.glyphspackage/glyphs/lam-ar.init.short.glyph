@@ -7,6 +7,59 @@ layers = (
 anchors = (
 {
 name = damma;
+pos = (-22,173);
+},
+{
+name = exit;
+},
+{
+name = fatha;
+pos = (-81,520);
+},
+{
+name = kasra;
+pos = (96,-36);
+}
+);
+attr = {
+colorPalette = 4;
+};
+backgroundImage = {
+alpha = 80;
+angle = -0.1;
+imagePath = "images/MS-ADD-01116-000-00003.jpg";
+locked = 1;
+pos = (-3184,-1867);
+scale = (5,5);
+};
+layerId = m01;
+shapes = (
+{
+closed = 1;
+nodes = (
+(35,0,ls),
+(74,0,o),
+(100,37,o),
+(100,72,cs),
+(100,679,ls),
+(100,693,o),
+(93,695,o),
+(85,683,cs),
+(61,641,o),
+(19,602,o),
+(-10,596,c),
+(-10,110,l),
+(-30,110,l),
+(-30,0,l)
+);
+}
+);
+width = 100;
+},
+{
+anchors = (
+{
+name = damma;
 pos = (5,173);
 },
 {
@@ -21,6 +74,7 @@ name = kasra;
 pos = (123,-36);
 }
 );
+associatedMasterId = m01;
 backgroundImage = {
 alpha = 80;
 angle = -0.1;
@@ -29,7 +83,8 @@ locked = 1;
 pos = (-3157,-1867);
 scale = (5,5);
 };
-layerId = m01;
+layerId = "0D7BC4EE-3A33-4ABA-AF50-64FE119541EF";
+name = "22 Aug 24 at 00:55";
 shapes = (
 {
 closed = 1;
@@ -59,8 +114,57 @@ nodes = (
 }
 );
 width = 123;
+},
+{
+anchors = (
+{
+name = damma;
+pos = (-22,173);
+},
+{
+name = fatha;
+pos = (-81,520);
+},
+{
+name = kasra;
+pos = (96,-36);
 }
 );
-metricLeft = "=-20@0";
-metricRight = "=0";
+associatedMasterId = m01;
+attr = {
+colorPalette = 1;
+};
+backgroundImage = {
+alpha = 80;
+angle = -0.1;
+imagePath = "images/MS-ADD-01116-000-00003.jpg";
+locked = 1;
+pos = (-3184,-1867);
+scale = (5,5);
+};
+layerId = "69B0F7C6-21FE-42FD-B8CB-AA3E312980A6";
+name = "Regular 22 Aug 24 at 00:57";
+shapes = (
+{
+closed = 1;
+nodes = (
+(35,10,ls),
+(67,10,o),
+(90,42,o),
+(90,72,cs),
+(90,671,l),
+(66,634,o),
+(29,599,o),
+(0,588,c),
+(0,110,l),
+(-32,110,l),
+(-32,10,l)
+);
+}
+);
+width = 100;
+}
+);
+metricLeft = "=behDotless-ar.init";
+metricRight = "=behDotless-ar.init";
 }
