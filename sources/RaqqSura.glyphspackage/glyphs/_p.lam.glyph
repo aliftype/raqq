@@ -2,6 +2,9 @@
 glyphname = _p.lam;
 layers = (
 {
+attr = {
+colorPalette = 4;
+};
 layerId = m01;
 shapes = (
 {
@@ -11,6 +14,26 @@ nodes = (
 (100,110,l),
 (-20,110,l),
 (-20,0,l)
+);
+}
+);
+width = 100;
+},
+{
+associatedMasterId = m01;
+attr = {
+colorPalette = 1;
+};
+layerId = "9BDC0B0C-2272-4149-96D3-3B16DA1CACAA";
+name = "Regular 22 Aug 24 at 02:51";
+shapes = (
+{
+closed = 1;
+nodes = (
+(100,10,l),
+(100,100,l),
+(-20,100,l),
+(-20,10,l)
 );
 }
 );
