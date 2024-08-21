@@ -6,7 +6,7 @@
 #
 appdirs==1.4.4
     # via fs
-attrs==23.2.0
+attrs==24.2.0
     # via ufolib2
 brotli==1.1.0
     # via fonttools
@@ -17,7 +17,7 @@ fonttools[ufo,unicode,woff]==4.53.1
     #   ufolib2
 fs==2.4.16
     # via fonttools
-glyphslib==6.7.1
+glyphslib==6.8.1
     # via -r requirements.in
 openstep-plist==0.3.1
     # via glyphslib
