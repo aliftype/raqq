@@ -14,6 +14,7 @@ pos = (380,0);
 },
 {
 name = exit;
+pos = (28,0);
 },
 {
 name = fatha;
@@ -24,6 +25,9 @@ name = kasra;
 pos = (276,-56);
 }
 );
+attr = {
+colorPalette = 4;
+};
 backgroundImage = {
 alpha = 80;
 angle = -0.6;
@@ -57,9 +61,43 @@ nodes = (
 (380,0,l),
 (380,110,l),
 (-20,110,l),
-(-20,115,o),
-(-20,8,o),
-(-20,0,c)
+(-20,0,l)
+);
+}
+);
+width = 380;
+},
+{
+associatedMasterId = m01;
+attr = {
+colorPalette = 1;
+};
+backgroundImage = {
+alpha = 80;
+angle = -0.6;
+imagePath = "images/MS-ADD-01116-000-00005.jpg";
+locked = 1;
+pos = (-3209,-2727);
+scale = (5,5);
+};
+layerId = "2A8921EC-E6B4-49CA-8536-D7BDBA3D5F26";
+name = "Regular 22 Aug 24 at 16:04";
+shapes = (
+{
+closed = 1;
+nodes = (
+(266,1,o),
+(370,1,o),
+(370,74,cs),
+(370,238,o),
+(295,341,o),
+(205,341,cs),
+(112,341,o),
+(8,251,o),
+(28,70,cs),
+(34,16,o),
+(127,3,o),
+(200,2,cs)
 );
 },
 {
@@ -77,6 +115,15 @@ nodes = (
 (222,173,o),
 (216,167,o),
 (210,167,cs)
+);
+},
+{
+closed = 1;
+nodes = (
+(380,10,l),
+(380,100,l),
+(-20,100,l),
+(-20,10,l)
 );
 }
 );
