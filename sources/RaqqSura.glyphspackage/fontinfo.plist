@@ -1274,7 +1274,6 @@ GSOffsetPosition = 1;
 GSOffsetProportional = 1;
 GSOffsetVertical = 10;
 };
-visible = 1;
 }
 );
 instances = (
@@ -1582,10 +1581,12 @@ _c.hah.reh = -67;
 "alef-ar" = -80;
 };
 "lam_alef-ar" = {
+"@MMK_L_dal.isol" = -32;
 "@MMK_L_hah.init" = -90;
 "alef-ar" = -76;
 };
 "lam_alef-ar.fina" = {
+"@MMK_L_dal.isol" = -43;
 "alef-ar" = -30;
 };
 "noonghunna-ar" = {
