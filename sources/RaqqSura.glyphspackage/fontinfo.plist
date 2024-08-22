@@ -1295,6 +1295,9 @@ m01 = {
 "alefMaksura-ar.salt" = 4;
 "qafDotless-ar" = -90;
 };
+"@MMK_R_beh.fina" = {
+"alef-ar" = -110;
+};
 "@MMK_R_dal.fina" = {
 "alef-ar" = -59;
 };
@@ -1490,7 +1493,6 @@ _c.hah.reh = -88;
 "@MMK_L_heh.init" = -20;
 "@MMK_L_lam" = -10;
 "@MMK_L_meem" = -10;
-"alef-ar" = -67;
 "alefMaksura-ar" = -32;
 "alefMaksura-ar.salt" = -26;
 "dal-ar" = 0;
@@ -1597,7 +1599,7 @@ _c.hah.reh = -67;
 "alef-ar" = -20;
 };
 "reh-ar" = {
-"@MMK_L_beh.init" = -50;
+"@MMK_L_beh.init" = -53;
 "@MMK_L_dal.isol" = -30;
 "@MMK_L_feh.init" = -80;
 "@MMK_L_hah.init" = -80;
@@ -1666,6 +1668,7 @@ _c.hah.reh = -67;
 };
 "waw-ar.fina" = {
 "alef-ar" = -120;
+"reh-ar" = -77;
 };
 "waw-ar.fina.round" = {
 "alef-ar" = -110;

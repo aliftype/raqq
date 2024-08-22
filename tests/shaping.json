@@ -10154,7 +10154,7 @@
       "input": "الحجارة",
       "expectation": {
         "default": "twodotsverticalabove-ar=6@154,403+0|heh-ar=6+356|reh-ar=5@350,0+800|alef-ar.fina=4@400,0+501|dotbelow-ar=3@220,-112+0|_c.hah.beh=3+7|hah-ar.medi=3+133|hah-ar.medi.hah.alt=2@0,122+109|lam-ar.init.hah2.alt=1@63,12+578|alef-ar=0@400,0+1058",
-        "RaqqSura.ttf": "twodotsverticalabove-ar=6@201,436+0|heh-ar=6+356|reh-ar=5@-50,0+403|alef-ar.fina=4+90|dotbelow-ar=3@213,-112+0|hah-ar.medi=3+133|hah-ar.medi.hah.alt=2@0,122+109|lam-ar.init.hah2.alt=1@63,12+578|alef-ar=0+652"
+        "RaqqSura.ttf": "twodotsverticalabove-ar=6@201,436+0|heh-ar=6+356|reh-ar=5@-53,0+400|alef-ar.fina=4+90|dotbelow-ar=3@213,-112+0|hah-ar.medi=3+133|hah-ar.medi.hah.alt=2@0,122+109|lam-ar.init.hah2.alt=1@63,12+578|alef-ar=0+652"
       }
     },
     {
@@ -10227,7 +10227,7 @@
       "input": "الحجَارة",
       "expectation": {
         "default": "twodotsverticalabove-ar=7@154,403+0|heh-ar=7+356|reh-ar=6@350,0+800|alef-ar.fina=5@400,0+501|fatha-ar=3@1,285+0|dotbelow-ar=3@220,-112+0|_c.hah.beh=3+7|hah-ar.medi=3+133|hah-ar.medi.hah.alt=2@0,122+109|lam-ar.init.hah2.alt=1@63,12+578|alef-ar=0@400,0+1058",
-        "RaqqSura.ttf": "twodotsverticalabove-ar=7@201,436+0|heh-ar=7+356|reh-ar=6@-50,0+403|alef-ar.fina=5+90|fatha-ar=3@-6,285+0|dotbelow-ar=3@213,-112+0|hah-ar.medi=3+133|hah-ar.medi.hah.alt=2@0,122+109|lam-ar.init.hah2.alt=1@63,12+578|alef-ar=0+652"
+        "RaqqSura.ttf": "twodotsverticalabove-ar=7@201,436+0|heh-ar=7+356|reh-ar=6@-53,0+400|alef-ar.fina=5+90|fatha-ar=3@-6,285+0|dotbelow-ar=3@213,-112+0|hah-ar.medi=3+133|hah-ar.medi.hah.alt=2@0,122+109|lam-ar.init.hah2.alt=1@63,12+578|alef-ar=0+652"
       }
     },
     {
