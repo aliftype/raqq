@@ -32,6 +32,9 @@ name = top;
 pos = (80,367);
 }
 );
+attr = {
+colorPalette = 4;
+};
 backgroundImage = {
 alpha = 80;
 imagePath = "images/MS-ADD-01116-000-00012.jpg";
@@ -45,13 +48,8 @@ shapes = (
 closed = 1;
 nodes = (
 (377,0,l),
-(377,110,l),
-(307,110,l),
-(371,47,l),
-(373,103,o),
-(376,158,o),
-(376,188,cs),
-(376,327,o),
+(377,188,ls),
+(377,327,o),
 (296,413,o),
 (202,413,cs),
 (109,413,o),
@@ -63,6 +61,45 @@ nodes = (
 (106,110,l),
 (-20,110,l),
 (-20,0,l)
+);
+}
+);
+width = 377;
+},
+{
+associatedMasterId = m01;
+attr = {
+colorPalette = 1;
+};
+backgroundImage = {
+alpha = 80;
+imagePath = "images/MS-ADD-01116-000-00012.jpg";
+locked = 1;
+pos = (-4900,-2769);
+scale = (5,5);
+};
+layerId = "006FB352-3ACA-462E-8D31-A0C5BE5C9A36";
+name = "Regular 22 Aug 24 at 15:00";
+shapes = (
+{
+closed = 1;
+nodes = (
+(377,10,l),
+(377,100,l),
+(367,100,l),
+(367,188,ls),
+(367,321,o),
+(290,403,o),
+(202,403,cs),
+(114,403,o),
+(25,332,o),
+(25,231,cs),
+(25,169,o),
+(60,128,o),
+(103,97,c),
+(101,100,l),
+(-20,100,l),
+(-20,10,l)
 );
 },
 {
