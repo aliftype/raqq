@@ -1465,7 +1465,7 @@ _c.hah.reh = -88;
 "behDotless-ar" = -29;
 "heh-ar.init" = -16;
 "lam-ar" = -15;
-"lam_alef-ar" = -60;
+"lam_alef-ar" = -113;
 "meem-ar.init" = -19;
 "meem-ar.init.round" = -21;
 "noonghunna-ar" = -35;
@@ -1567,7 +1567,7 @@ _c.hah.noon = -25;
 "lam-ar.short" = -17;
 };
 "hah-ar.init" = {
-"lam_alef-ar.fina" = -57;
+"lam_alef-ar.fina" = -63;
 };
 "hah-ar.medi.alt" = {
 "lam_alef-ar.fina" = -57;
@@ -1582,6 +1582,7 @@ _c.hah.reh = -67;
 "alef-ar" = -80;
 };
 "lam_alef-ar" = {
+"@MMK_L_hah.init" = -90;
 "alef-ar" = -76;
 };
 "lam_alef-ar.fina" = {
