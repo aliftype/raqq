@@ -9,11 +9,11 @@ shapes = (
 ref = "seen-ar";
 },
 {
-pos = (5,222);
+pos = (3,224);
 ref = "threedotshorizontalabove-ar.4";
 }
 );
-width = 506;
+width = 496;
 }
 );
 unicode = 1588;
