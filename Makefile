@@ -49,7 +49,7 @@ ARGS ?=
 all: ttf web
 ttf: $(FONTS)
 test: $(HTML)
-update-test: $(JSON)
+expectation: $(JSON)
 
 web: $(WOFF2)
 
