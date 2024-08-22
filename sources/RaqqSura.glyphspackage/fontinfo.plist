@@ -1305,6 +1305,7 @@ m01 = {
 "@MMK_L_feh.medi" = -3;
 };
 "@MMK_R_hah" = {
+"@MMK_L_meem.medi" = -120;
 _c.ain.meem = -39;
 _c.ain.yeh = -40;
 _c.hah.dal = -71;

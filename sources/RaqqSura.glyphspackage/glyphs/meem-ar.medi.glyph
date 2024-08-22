@@ -1,6 +1,7 @@
 {
 glyphname = "meem-ar.medi";
 kernLeft = meem;
+kernRight = meem.medi;
 layers = (
 {
 anchors = (
