@@ -1230,6 +1230,14 @@ value = 900;
 {
 name = winDescent;
 value = 500;
+},
+{
+name = underlinePosition;
+value = -165;
+},
+{
+name = underlineThickness;
+value = 50;
 }
 );
 guides = (
