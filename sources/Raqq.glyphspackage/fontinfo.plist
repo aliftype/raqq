@@ -1398,8 +1398,8 @@ _c.hah.reh = -131;
 };
 "@MMK_R_lam" = {
 "@MMK_L_sad" = -23;
-"meem-ar.fina" = -25;
-"meem-ar.medi" = -20;
+"meem-ar.fina" = -30;
+"meem-ar.medi" = -25;
 "meem-ar.medi.round2" = -22;
 "noonghunna-ar.fina" = -34;
 "waw-ar.fina" = -10;
@@ -1575,6 +1575,8 @@ _c.hah.reh = -88;
 };
 "behDotless-ar.init" = {
 "@MMK_L_sad" = -21;
+"meem-ar.fina" = -30;
+"meem-ar.medi" = -25;
 "noonghunna-ar.fina" = -34;
 "waw-ar.fina" = -10;
 };
