@@ -20,8 +20,8 @@ MAKEFLAGS := -srj
 PYTHON := venv/bin/python3
 
 CONFIG = docs/_config.yml
-VERSION = $(shell grep "version:" $(CONFIG) | sed -e 's/.*.: "\(.*.\)".*/\1/')
-DIST = $(NAME)-$(VERSION)
+VERSION = $(shell grep "version:" ${CONFIG} | sed -e 's/.*.: "\(.*.\)".*/\1/')
+DIST = ${NAME}-${VERSION}
 
 SOURCEDIR = sources
 SCRIPTDIR = scripts
@@ -30,16 +30,16 @@ TESTDIR = tests
 BUILDDIR = build
 WOFFDIR = docs/assets/fonts
 
-NAMES = $(NAME) $(NAME)Sura
-FONTS = $(NAMES:%=$(FONTDIR)/%.ttf)
-WOFF2 = $(NAMES:%=$(WOFFDIR)/%.woff2)
+NAMES = ${NAME} ${NAME}Sura
+FONTS = ${NAMES:%=${FONTDIR}/%.ttf}
+WOFF2 = ${NAMES:%=${WOFFDIR}/%.woff2}
 
 TESTS = shaping decomposition
-JSON = $(TESTS:%=$(TESTDIR)/%.json)
+JSON = ${TESTS:%=${TESTDIR}/%.json}
 
-FEA = $(NAMES:%=$(SOURCEDIR)/%-overhang.fea)
-HTML = $(NAMES:%=$(TESTDIR)/%-shaping.html) $(NAMES:%=$(TESTDIR)/%-qa.html)
-GLYPHDATA = $(SOURCEDIR)/GlyphData.xml
+FEA = ${NAMES:%=${SOURCEDIR}/%-overhang.fea}
+HTML = ${NAMES:%=${TESTDIR}/%-shaping.html} ${NAMES:%=${TESTDIR}/%-qa.html}
+GLYPHDATA = ${SOURCEDIR}/GlyphData.xml
 
 ARGS ?= 
 
@@ -48,47 +48,47 @@ ARGS ?=
 .PHONY: all dist ttf web
 
 all: ttf web
-ttf: $(FONTS)
-test: $(HTML)
-expectation: $(JSON)
+ttf: ${FONTS}
+test: ${HTML}
+expectation: ${JSON}
 
-web: $(WOFF2)
+web: ${WOFF2}
 
-update-fea: $(FONTS)
-	fonts=($(FONTS))
-	fea=($(FEA))
+update-fea: ${FONTS}
+	fonts=(${FONTS})
+	fea=(${FEA})
 	for i in $${!fonts[@]}; do
 		echo "  GEN    $${fea[$$i]}"
-		${PYTHON} $(SCRIPTDIR)/update-overhang-fea.py $${fonts[$$i]} $${fea[$$i]}
+		${PYTHON} ${SCRIPTDIR}/update-overhang-fea.py $${fonts[$$i]} $${fea[$$i]}
 	done
 
-$(FONTDIR)/%.ttf: $(SOURCEDIR)/%.glyphspackage $(CONFIG) $(GLYPHDATA) $(SOURCEDIR)/%-overhang.fea
-	$(info   BUILD  $(@F))
-	${PYTHON} $(SCRIPTDIR)/build.py $< $(VERSION) $@ --data=$(GLYPHDATA) $(ARGS)
+${FONTDIR}/%.ttf: ${SOURCEDIR}/%.glyphspackage ${CONFIG} ${GLYPHDATA} ${SOURCEDIR}/%-overhang.fea
+	$(info   BUILD  ${@F})
+	${PYTHON} ${SCRIPTDIR}/build.py $< ${VERSION} $@ --data=${GLYPHDATA} ${ARGS}
 
-$(WOFFDIR)/%.woff2: $(FONTDIR)/%.ttf
-	$(info   WOFF2  $(@F))
-	${PYTHON} $(SCRIPTDIR)/buildwoff2.py $< $@
+${WOFFDIR}/%.woff2: ${FONTDIR}/%.ttf
+	$(info   WOFF2  ${@F})
+	${PYTHON} ${SCRIPTDIR}/buildwoff2.py $< $@
 
-$(TESTDIR)/%-shaping.html: $(FONTDIR)/%.ttf $(TESTDIR)/fontbakery.yml
-	$(info   SHAPE  $(<F))
-	${PYTHON} -m fontbakery check-shaping --config=$(TESTDIR)/fontbakery.yml $< --html=$@ -e WARN -q
+${TESTDIR}/%-shaping.html: ${FONTDIR}/%.ttf ${TESTDIR}/fontbakery.yml
+	$(info   SHAPE  ${<F})
+	${PYTHON} -m fontbakery check-shaping --config=${TESTDIR}/fontbakery.yml $< --html=$@ -e WARN -q
 
-$(TESTDIR)/%-qa.html: $(FONTDIR)/%.ttf $(TESTDIR)/fontbakery.yml
-	$(info   TEST   $(<F))
-	${PYTHON} -m fontbakery check-universal --config=$(TESTDIR)/fontbakery.yml $< --html=$@ -e WARN -q
+${TESTDIR}/%-qa.html: ${FONTDIR}/%.ttf ${TESTDIR}/fontbakery.yml
+	$(info   TEST   ${<F})
+	${PYTHON} -m fontbakery check-universal --config=${TESTDIR}/fontbakery.yml $< --html=$@ -e WARN -q
 
-$(TESTDIR)/decomposition.json: $(SOURCEDIR)/$(NAME).glyphspackage $(FONTS)
-	$(info   GEN    $(@F))
-	${PYTHON} $(SCRIPTDIR)/update-decomposition-test.py $@ $+
+${TESTDIR}/decomposition.json: ${SOURCEDIR}/${NAME}.glyphspackage ${FONTS}
+	$(info   GEN    ${@F})
+	${PYTHON} ${SCRIPTDIR}/update-decomposition-test.py $@ $+
 
-$(TESTDIR)/shaping.json: $(TESTDIR)/shaping.csv $(FONTS)
-	$(info   GEN    $(@F))
-	${PYTHON} $(SCRIPTDIR)/update-shaping-test.py $@ $+
+${TESTDIR}/shaping.json: ${TESTDIR}/shaping.csv ${FONTS}
+	$(info   GEN    ${@F})
+	${PYTHON} ${SCRIPTDIR}/update-shaping-test.py $@ $+
 
 dist: all
-	$(info   DIST   $(DIST).zip)
-	install -Dm644 -t $(DIST) $(FONTS)
-	install -Dm644 -t $(DIST) {README,README-Arabic}.txt
-	install -Dm644 -t $(DIST) LICENSE
-	zip -rq $(DIST).zip $(DIST)
+	$(info   DIST   ${DIST}.zip)
+	install -Dm644 -t ${DIST} ${FONTS}
+	install -Dm644 -t ${DIST} {README,README-Arabic}.txt
+	install -Dm644 -t ${DIST} LICENSE
+	zip -rq ${DIST}.zip ${DIST}
