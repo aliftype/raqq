@@ -4964,7 +4964,7 @@
       "input": "كـا",
       "expectation": {
         "default": "alef-ar.fina.kashida=2+219|kashida-ar=1+100|kaf-ar.init=0+765",
-        "RaqqSura.ttf": "alef-ar.fina=2+90|kashida-ar=1+100|kaf-ar.init=0+765"
+        "RaqqSura.ttf": "alef-ar.fina.kashida=2+198|kashida-ar=1+100|kaf-ar.init=0+765"
       }
     },
     {
@@ -5601,7 +5601,7 @@
       "input": "نـا",
       "expectation": {
         "default": "alef-ar.fina.kashida=2+219|kashida-ar=1+100|dotabove-ar=0@2,299+0|behDotless-ar.init=0+130",
-        "RaqqSura.ttf": "alef-ar.fina=2+90|kashida-ar=1+100|dotabove-ar=0@-20,297+0|behDotless-ar.init=0+100"
+        "RaqqSura.ttf": "alef-ar.fina.kashida=2+198|kashida-ar=1+100|dotabove-ar=0@-20,297+0|behDotless-ar.init=0+100"
       }
     },
     {
@@ -7025,7 +7025,7 @@
       "input": "بكـا",
       "expectation": {
         "default": "alef-ar.fina.kashida=3+219|kashida-ar=2+100|kaf-ar.medi=1+758|dotbelow-ar=0@51,-46+0|behDotless-ar.init=0@-21,0+109",
-        "RaqqSura.ttf": "alef-ar.fina=3+90|kashida-ar=2+100|kaf-ar.medi=1+758|dotbelow-ar=0@72,-46+0|behDotless-ar.init=0+100"
+        "RaqqSura.ttf": "alef-ar.fina.kashida=3+198|kashida-ar=2+100|kaf-ar.medi=1+758|dotbelow-ar=0@72,-46+0|behDotless-ar.init=0+100"
       }
     },
     {
@@ -7263,7 +7263,7 @@
       "input": "صــا",
       "expectation": {
         "default": "alef-ar.fina.kashida=3+219|kashida-ar=2+100|kashida-ar=1+100|sad-ar.init=0+765",
-        "RaqqSura.ttf": "alef-ar.fina=3+90|kashida-ar=2+100|kashida-ar=1+100|sad-ar.init=0+765"
+        "RaqqSura.ttf": "alef-ar.fina.kashida=3+198|kashida-ar=2+100|kashida-ar=1+100|sad-ar.init=0+765"
       }
     },
     {
@@ -7732,7 +7732,7 @@
       "input": "نــا",
       "expectation": {
         "default": "alef-ar.fina.kashida=3+219|kashida-ar=2+100|kashida-ar=1+100|dotabove-ar=0@2,299+0|behDotless-ar.init=0+130",
-        "RaqqSura.ttf": "alef-ar.fina=3+90|kashida-ar=2+100|kashida-ar=1+100|dotabove-ar=0@-20,297+0|behDotless-ar.init=0+100"
+        "RaqqSura.ttf": "alef-ar.fina.kashida=3+198|kashida-ar=2+100|kashida-ar=1+100|dotabove-ar=0@-20,297+0|behDotless-ar.init=0+100"
       }
     },
     {
