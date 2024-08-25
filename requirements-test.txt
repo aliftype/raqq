@@ -59,9 +59,9 @@ fs==2.4.16
     #   fonttools
 gflanguages==0.6.2
     # via shaperglot
-glyphslib==6.8.1
+glyphslib==6.8.2
     # via babelfont
-idna==3.7
+idna==3.8
     # via requests
 jinja2==3.1.4
     # via fontbakery
@@ -152,7 +152,7 @@ ufolib2==0.16.0
     #   vfblib
 ufonormalizer==0.6.2
     # via vfblib
-uharfbuzz==0.39.3
+uharfbuzz==0.39.5
     # via
     #   collidoscope
     #   fontbakery
