@@ -1,0 +1,100 @@
+{
+glyphname = "alef-ar.fina.lam.kashida";
+kernLeft = alef.fina;
+layers = (
+{
+anchors = (
+{
+name = damma;
+pos = (-76,61);
+},
+{
+name = entry;
+pos = (211,0);
+},
+{
+name = fatha;
+pos = (135,650);
+},
+{
+name = kasra;
+pos = (57,-56);
+},
+{
+name = madda;
+pos = (-86,635);
+}
+);
+attr = {
+colorPalette = 4;
+};
+backgroundImage = {
+alpha = 80;
+angle = 1;
+imagePath = "images/MS-ADD-01116-000-00003.jpg";
+locked = 1;
+pos = (-4888,-2944);
+scale = (5,5);
+};
+layerId = m01;
+shapes = (
+{
+closed = 1;
+nodes = (
+(166,110,o),
+(90,126,o),
+(90,228,cs),
+(90,781,ls),
+(91,808,o),
+(79,795,o),
+(71,784,cs),
+(50,755,o),
+(20,714,o),
+(-10,689,c),
+(-10,179,ls),
+(-10,106,o),
+(-10,0,o),
+(177,0,cs),
+(211,0,l),
+(211,110,l)
+);
+}
+);
+width = 211;
+},
+{
+associatedMasterId = m01;
+attr = {
+colorPalette = 1;
+};
+layerId = "71CEAFC8-0E0A-4757-824F-4661413A707E";
+name = "Regular 9 Jan 24 at 19:02";
+shapes = (
+{
+closed = 1;
+nodes = (
+(164,100,o),
+(80,118,o),
+(80,228,cs),
+(80,781,l),
+(80,781,o),
+(87,789,o),
+(79,778,cs),
+(59,750,o),
+(30,710,o),
+(0,684,c),
+(0,179,ls),
+(0,106,o),
+(0,10,o),
+(177,10,cs),
+(211,10,l),
+(211,100,l)
+);
+}
+);
+visible = 1;
+width = 211;
+}
+);
+metricRight = "=0";
+}
