@@ -17,7 +17,7 @@ fonttools[ufo,unicode,woff]==4.53.1
     #   ufolib2
 fs==2.4.16
     # via fonttools
-glyphslib==6.8.1
+glyphslib==6.8.2
     # via -r requirements.in
 openstep-plist==0.3.1
     # via glyphslib
@@ -27,7 +27,7 @@ skia-pathops==0.8.0.post1
     # via -r requirements.in
 ufolib2==0.16.0
     # via glyphslib
-uharfbuzz==0.39.3
+uharfbuzz==0.39.5
     # via -r requirements.in
 unicodedata2==15.1.0
     # via fonttools
