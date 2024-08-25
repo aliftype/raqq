@@ -830,6 +830,9 @@ lookup before_beh {
 	sub @ain				by @ain [_c.ain.init.beh _c.ain.medi.beh];
 	sub @feh				by @feh [_c.feh.init.beh _c.feh.medi.beh];
 	sub kashida-ar			by kashida-ar _c.ain.init.beh;
+	sub alef-ar.fina		by alef-ar.fina.kashida;
+	sub lam-ar.medi.round	by lam-ar.medi.round.kashida;
+	sub behDotless-ar.medi.round	by behDotless-ar.medi.round.kashida;
 } before_beh;
 
 lookup before_dal {
@@ -876,6 +879,10 @@ lookup rclt_connection {
 	;
 	sub	[kaf-ar.init kaf-ar.medi]'
 	by	[kaf-ar.init.alt kaf-ar.medi.alt]
+	;
+
+	sub [kashida-ar]'
+		[alef-ar.fina behDotless-ar.medi.round lam-ar.medi.round]' lookup before_beh
 	;
 
 	sub	 @before_beh' lookup before_beh
