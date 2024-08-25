@@ -15,8 +15,9 @@
 
 NAME = Raqq
 
-MAKEFLAGS := -sr
 SHELL = bash
+MAKEFLAGS := -srj
+PYTHON := venv/bin/python3
 
 CONFIG = docs/_config.yml
 VERSION = $(shell grep "version:" $(CONFIG) | sed -e 's/.*.: "\(.*.\)".*/\1/')
@@ -58,32 +59,32 @@ update-fea: $(FONTS)
 	fea=($(FEA))
 	for i in $${!fonts[@]}; do
 		echo "  GEN    $${fea[$$i]}"
-		python $(SCRIPTDIR)/update-overhang-fea.py $${fonts[$$i]} $${fea[$$i]}
+		${PYTHON} $(SCRIPTDIR)/update-overhang-fea.py $${fonts[$$i]} $${fea[$$i]}
 	done
 
 $(FONTDIR)/%.ttf: $(SOURCEDIR)/%.glyphspackage $(CONFIG) $(GLYPHDATA) $(SOURCEDIR)/%-overhang.fea
 	$(info   BUILD  $(@F))
-	python $(SCRIPTDIR)/build.py $< $(VERSION) $@ --data=$(GLYPHDATA) $(ARGS)
+	${PYTHON} $(SCRIPTDIR)/build.py $< $(VERSION) $@ --data=$(GLYPHDATA) $(ARGS)
 
 $(WOFFDIR)/%.woff2: $(FONTDIR)/%.ttf
 	$(info   WOFF2  $(@F))
-	python $(SCRIPTDIR)/buildwoff2.py $< $@
+	${PYTHON} $(SCRIPTDIR)/buildwoff2.py $< $@
 
 $(TESTDIR)/%-shaping.html: $(FONTDIR)/%.ttf $(TESTDIR)/fontbakery.yml
 	$(info   SHAPE  $(<F))
-	fontbakery check-shaping --config=$(TESTDIR)/fontbakery.yml $< --html=$@ -e WARN -q
+	${PYTHON} -m fontbakery check-shaping --config=$(TESTDIR)/fontbakery.yml $< --html=$@ -e WARN -q
 
 $(TESTDIR)/%-qa.html: $(FONTDIR)/%.ttf $(TESTDIR)/fontbakery.yml
 	$(info   TEST   $(<F))
-	fontbakery check-universal --config=$(TESTDIR)/fontbakery.yml $< --html=$@ -e WARN -q
+	${PYTHON} -m fontbakery check-universal --config=$(TESTDIR)/fontbakery.yml $< --html=$@ -e WARN -q
 
 $(TESTDIR)/decomposition.json: $(SOURCEDIR)/$(NAME).glyphspackage $(FONTS)
 	$(info   GEN    $(@F))
-	python $(SCRIPTDIR)/update-decomposition-test.py $@ $+
+	${PYTHON} $(SCRIPTDIR)/update-decomposition-test.py $@ $+
 
 $(TESTDIR)/shaping.json: $(TESTDIR)/shaping.csv $(FONTS)
 	$(info   GEN    $(@F))
-	python $(SCRIPTDIR)/update-shaping-test.py $@ $+
+	${PYTHON} $(SCRIPTDIR)/update-shaping-test.py $@ $+
 
 dist: all
 	$(info   DIST   $(DIST).zip)
