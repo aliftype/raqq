@@ -1,0 +1,72 @@
+{
+glyphname = "alef-ar.fina.kashida";
+kernLeft = alef.fina;
+layers = (
+{
+anchors = (
+{
+name = damma;
+pos = (-26,61);
+},
+{
+name = entry;
+pos = (219,0);
+},
+{
+name = fatha;
+pos = (135,650);
+},
+{
+name = kasra;
+pos = (87,-56);
+},
+{
+name = madda;
+pos = (-76,635);
+}
+);
+backgroundImage = {
+alpha = 80;
+angle = 1;
+crop = (0,0,1500,1216);
+imagePath = "images/MS-ADD-01116-000-00020.jpg";
+locked = 1;
+pos = (-3473,-1732);
+scale = (5,5);
+};
+layerId = m01;
+shapes = (
+{
+closed = 1;
+nodes = (
+(219,0,l),
+(219,110,l),
+(194,110,o),
+(104,126,o),
+(98,228,cs),
+(93,317,o),
+(83,608,o),
+(71,769,cs),
+(70,789,o),
+(57,789,o),
+(50,778,cs),
+(28,742,o),
+(9,714,o),
+(-18,697,cs),
+(-42,682,o),
+(-21,643,o),
+(-14,570,cs),
+(-4,456,o),
+(4,298,o),
+(12,149,cs),
+(16,76,o),
+(12,0,o),
+(199,0,cs)
+);
+}
+);
+width = 219;
+}
+);
+metricRight = "=0";
+}
