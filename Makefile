@@ -38,7 +38,7 @@ TESTS = shaping decomposition
 JSON = ${TESTS:%=${TESTDIR}/%.json}
 
 FEA = ${NAMES:%=${SOURCEDIR}/%-overhang.fea}
-HTML = ${NAMES:%=${TESTDIR}/%-shaping.html} ${NAMES:%=${TESTDIR}/%-qa.html}
+HTML = ${NAMES:%=${TESTDIR}/%-shaping.html}
 GLYPHDATA = ${SOURCEDIR}/GlyphData.xml
 
 ARGS ?= 
@@ -70,13 +70,9 @@ ${WOFFDIR}/%.woff2: ${FONTDIR}/%.ttf
 	$(info   WOFF2  ${@F})
 	${PYTHON} ${SCRIPTDIR}/buildwoff2.py $< $@
 
-${TESTDIR}/%-shaping.html: ${FONTDIR}/%.ttf ${TESTDIR}/fontbakery.yml
+${TESTDIR}/%-shaping.html: ${FONTDIR}/%.ttf ${TESTDIR}/shaping-config.yml
 	$(info   SHAPE  ${<F})
-	${PYTHON} -m fontbakery check-shaping --config=${TESTDIR}/fontbakery.yml $< --html=$@ -e WARN -q
-
-${TESTDIR}/%-qa.html: ${FONTDIR}/%.ttf ${TESTDIR}/fontbakery.yml
-	$(info   TEST   ${<F})
-	${PYTHON} -m fontbakery check-universal --config=${TESTDIR}/fontbakery.yml $< --html=$@ -e WARN -q
+	${PYTHON} ${SCRIPTDIR}/check-shaping.py $< ${TESTDIR}/shaping-config.yml $@
 
 ${TESTDIR}/decomposition.json: ${SOURCEDIR}/${NAME}.glyphspackage ${FONTS}
 	$(info   GEN    ${@F})

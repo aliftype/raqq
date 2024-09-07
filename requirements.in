@@ -2,3 +2,5 @@ fonttools[woff] >= 4.47.1
 glyphsLib >= 6.2.2
 skia-pathops
 uharfbuzz
+vharfbuzz
+pyyaml
