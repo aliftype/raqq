@@ -4,16 +4,16 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="shortcut icon" href="./assets/images/favicon.svg"/>
+    <link rel="shortcut icon" href="./assets/images/favicon.svg">
 
     <title>{{ page.title | default: site.title }} | {{ page.description | default: site.description }}</title>
-    <meta property="og:locale" content="{{ page.language }}" />
-    <meta        name="description" content="{{ messages.description }}" />
-    <meta property="og:description" content="{{ messages.description }}" />
-    <link      rel="canonical" href="{{ site.url }}/{{ site.github.repository_name }}{{ page.url }}" />
-    <meta property="og:url" content="{{ site.url }}/{{ site.github.repository_name }}{{ page.url }}" />
-    <meta property="og:site_name" content="{{ site.title }}" />
-    <meta property="og:image" content="{{ "/assets/images/card.png" | relative_url }}" />
+    <meta property="og:locale" content="{{ page.language }}">
+    <meta        name="description" content="{{ messages.description }}">
+    <meta property="og:description" content="{{ messages.description }}">
+    <link      rel="canonical" href="{{ site.url }}/{{ site.github.repository_name }}{{ page.url }}">
+    <meta property="og:url" content="{{ site.url }}/{{ site.github.repository_name }}{{ page.url }}">
+    <meta property="og:site_name" content="{{ site.title }}">
+    <meta property="og:image" content="{{ "/assets/images/card.png" | relative_url }}">
 
     <link rel="stylesheet" href="{{ "/assets/css/style.css?v=" | append: site.github.build_revision | relative_url }}">
   </head>
