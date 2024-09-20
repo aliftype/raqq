@@ -3,6 +3,60 @@ configuration:
     script: arab
     direction: rtl
 
+  forbidden_glyphs:
+  - alefHamzaabove-ar
+  - alefHamzabelow-ar
+  - alefMadda-ar
+  - alefWasla-ar
+  - beh-ar
+  - teh-ar
+  - theh-ar
+  - peh-ar
+  - jeem-ar
+  - khah-ar
+  - tcheh-ar
+  - thal-ar
+  - zain-ar
+  - jeh-ar
+  - sheen-ar
+  - dad-ar
+  - zah-ar
+  - ghain-ar
+  - feh-ar
+  - veh-ar
+  - fehAfrican-ar
+  - qaf-ar
+  - qafAfrican-ar
+  - keheh-ar
+  - gaf-ar
+  - noon-ar
+  - noonAfrican-ar
+  - tehMarbuta-ar
+  - wawHamzaabove-ar
+  - yeh-ar
+  - yehFarsi-ar
+  - yehHamzaabove-ar
+  - behDotless-ar.medi.l1
+  - hah-ar.medi.l1
+  - seen-ar.medi.l1
+  - sad-ar.medi.l1
+  - ain-ar.medi.l1
+  - fehDotless-ar.medi.l1
+  - kaf-ar.medi.l1
+  - meem-ar.medi.l1
+  - heh-ar.medi.l1
+  - kashida-ar.l1
+  - behDotless-ar.medi.l2
+  - hah-ar.medi.l2
+  - seen-ar.medi.l2
+  - sad-ar.medi.l2
+  - ain-ar.medi.l2
+  - fehDotless-ar.medi.l2
+  - kaf-ar.medi.l2
+  - meem-ar.medi.l2
+  - heh-ar.medi.l2
+  - kashida-ar.l2
+
 input:
 - variations:
     SPAC: -100
@@ -701,6 +755,59 @@ input:
   - ۝99
 
 - text:
+  - ء ء‍ ‍ء‍ ‍ء
+  - آ آ‍ ‍آ‍ ‍آ
+  - أ أ‍ ‍أ‍ ‍أ
+  - ؤ ؤ‍ ‍ؤ‍ ‍ؤ
+  - إ إ‍ ‍إ‍ ‍إ
+  - ئ ئ‍ ‍ئ‍ ‍ئ
+  - ا ا‍ ‍ا‍ ‍ا
+  - ب ب‍ ‍ب‍ ‍ب
+  - ة ة‍ ‍ة‍ ‍ة
+  - ت ت‍ ‍ت‍ ‍ت
+  - ث ث‍ ‍ث‍ ‍ث
+  - ج ج‍ ‍ج‍ ‍ج
+  - ح ح‍ ‍ح‍ ‍ح
+  - خ خ‍ ‍خ‍ ‍خ
+  - د د‍ ‍د‍ ‍د
+  - ذ ذ‍ ‍ذ‍ ‍ذ
+  - ر ر‍ ‍ر‍ ‍ر
+  - ز ز‍ ‍ز‍ ‍ز
+  - س س‍ ‍س‍ ‍س
+  - ش ش‍ ‍ش‍ ‍ش
+  - ص ص‍ ‍ص‍ ‍ص
+  - ض ض‍ ‍ض‍ ‍ض
+  - ط ط‍ ‍ط‍ ‍ط
+  - ظ ظ‍ ‍ظ‍ ‍ظ
+  - ع ع‍ ‍ع‍ ‍ع
+  - غ غ‍ ‍غ‍ ‍غ
+  - ـ ـ‍ ‍ـ‍ ‍ـ
+  - ف ف‍ ‍ف‍ ‍ف
+  - ق ق‍ ‍ق‍ ‍ق
+  - ك ك‍ ‍ك‍ ‍ك
+  - ل ل‍ ‍ل‍ ‍ل
+  - م م‍ ‍م‍ ‍م
+  - ن ن‍ ‍ن‍ ‍ن
+  - ه ه‍ ‍ه‍ ‍ه
+  - و و‍ ‍و‍ ‍و
+  - ى ى‍ ‍ى‍ ‍ى
+  - ي ي‍ ‍ي‍ ‍ي
+  - ٮ ٮ‍ ‍ٮ‍ ‍ٮ
+  - ٯ ٯ‍ ‍ٯ‍ ‍ٯ
+  - ٱ ٱ‍ ‍ٱ‍ ‍ٱ
+  - پ پ‍ ‍پ‍ ‍پ
+  - چ چ‍ ‍چ‍ ‍چ
+  - ژ ژ‍ ‍ژ‍ ‍ژ
+  - ڡ ڡ‍ ‍ڡ‍ ‍ڡ
+  - ڤ ڤ‍ ‍ڤ‍ ‍ڤ
+  - ک ک‍ ‍ک‍ ‍ک
+  - گ گ‍ ‍گ‍ ‍گ
+  - ں ں‍ ‍ں‍ ‍ں
+  - ی ی‍ ‍ی‍ ‍ی
+  - ے ے‍ ‍ے‍ ‍ے
+  - ࢻ ࢻ‍ ‍ࢻ‍ ‍ࢻ
+  - ࢼ ࢼ‍ ‍ࢼ‍ ‍ࢼ
+  - ࢽ ࢽ‍ ‍ࢽ‍ ‍ࢽ
   - آ
   - أ
   - ؤ
