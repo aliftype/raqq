@@ -9,7 +9,7 @@ shapes = (
 ref = "ain-ar";
 },
 {
-pos = (303,256);
+pos = (293,290);
 ref = "dotabove-ar";
 }
 );
