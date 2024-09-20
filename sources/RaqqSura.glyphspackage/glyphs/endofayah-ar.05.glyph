@@ -185,5 +185,4 @@ width = 400;
 }
 );
 metricRight = "=70";
-metricWidth = "=space";
 }

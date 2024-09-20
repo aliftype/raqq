@@ -166,7 +166,5 @@ visible = 1;
 width = 469;
 }
 );
-metricLeft = "=0";
-metricRight = "=0";
 unicode = 1647;
 }

@@ -61,6 +61,4 @@ ref = _p.lam;
 width = 138;
 }
 );
-metricLeft = "=-20";
-metricRight = "=behDotless-ar.medi";
 }

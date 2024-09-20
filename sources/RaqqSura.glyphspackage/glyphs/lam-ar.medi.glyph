@@ -49,6 +49,5 @@ ref = _p.lam;
 width = 100;
 }
 );
-metricLeft = "=-20";
 metricRight = "behDotless-ar.medi";
 }

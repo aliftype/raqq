@@ -80,6 +80,4 @@ nodes = (
 width = 123;
 }
 );
-metricLeft = "=-20@0";
-metricRight = "=0";
 }

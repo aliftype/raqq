@@ -320,7 +320,6 @@ visible = 1;
 width = 620;
 }
 );
-metricLeft = "=behDotless-ar";
 metricRight = "=0";
 unicode = 1697;
 }

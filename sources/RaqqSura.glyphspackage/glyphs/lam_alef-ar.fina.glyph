@@ -265,6 +265,4 @@ nodes = (
 width = 510;
 }
 );
-metricLeft = "=0";
-metricRight = "=-30";
 }

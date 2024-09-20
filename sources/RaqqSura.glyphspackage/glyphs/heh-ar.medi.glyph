@@ -7,7 +7,7 @@ layers = (
 anchors = (
 {
 name = entry;
-pos = (357,0);
+pos = (354,0);
 },
 {
 name = exit;
@@ -36,8 +36,6 @@ attr = {
 colorPalette = 1;
 };
 layerId = "C3E6481E-5BA4-4B68-9517-7170E9CF0FDB";
-metricLeft = "=-22";
-metricRight = "=10@157";
 name = "14 Jan 24 at 01:05";
 shapes = (
 {
@@ -53,6 +51,4 @@ ref = _p.heh;
 width = 354;
 }
 );
-metricLeft = "=-20";
-metricRight = "=0@157";
 }
