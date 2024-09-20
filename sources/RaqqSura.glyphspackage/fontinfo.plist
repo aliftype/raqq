@@ -1467,14 +1467,14 @@ _c.seen.meem = {
 "waw-ar" = -10;
 };
 "ain-ar.init" = {
-"@MMK_L_kaf.wide" = -34;
-"@MMK_L_yeh" = -49;
-"@MMK_L_yehbarree" = -25;
-_c.ain.init.beh = -50;
+"@MMK_L_kaf.wide" = -22;
+"@MMK_L_yeh" = -43;
+"@MMK_L_yehbarree" = -30;
+_c.ain.init.beh = -42;
 _c.ain.yeh = 0;
 _c.hah.dal = -25;
 _c.hah.reh = -88;
-"lam_alef-ar.fina" = -20;
+"lam_alef-ar.fina" = -11;
 };
 "ain-ar.medi" = {
 "lam_alef-ar.fina" = -21;
