@@ -186,6 +186,4 @@ visible = 1;
 width = 373;
 }
 );
-metricLeft = "=0";
-metricRight = "=0@10";
 }

@@ -29,6 +29,4 @@ ref = _p.lam;
 width = 125;
 }
 );
-metricLeft = "=-20";
-metricRight = "=3@272";
 }

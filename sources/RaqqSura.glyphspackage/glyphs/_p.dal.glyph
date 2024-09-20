@@ -145,7 +145,6 @@ coordinates = (
 );
 };
 layerId = "536617C6-D3D0-4096-8389-7EC87272664A";
-metricLeft = "=200";
 name = "{0} 8 Feb 24 at 23:32";
 shapes = (
 {
@@ -171,7 +170,6 @@ coordinates = (
 );
 };
 layerId = "F2A64662-A59B-4A5A-9249-90DBA4EE0BFD";
-metricLeft = "=200";
 name = "Color 4 {0} 8 Feb 24 at 23:34";
 shapes = (
 {
@@ -197,7 +195,6 @@ coordinates = (
 );
 };
 layerId = "F26A4821-776C-44AF-815D-A9B817B98379";
-metricLeft = "=200";
 name = "17 May 23 at 04:01";
 shapes = (
 {
@@ -215,6 +212,4 @@ nodes = (
 width = 393;
 }
 );
-metricLeft = "=0";
-metricRight = "=0";
 }

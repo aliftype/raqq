@@ -784,7 +784,5 @@ nodes = (
 width = 528;
 }
 );
-metricLeft = "=0@208";
-metricRight = "=0";
 unicode = 1589;
 }

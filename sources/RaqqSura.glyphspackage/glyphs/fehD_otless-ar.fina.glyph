@@ -313,6 +313,5 @@ visible = 1;
 width = 597;
 }
 );
-metricLeft = "=behDotless-ar";
 metricRight = "=0";
 }

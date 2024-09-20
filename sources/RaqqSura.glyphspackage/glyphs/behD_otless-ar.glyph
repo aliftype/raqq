@@ -133,6 +133,8 @@ pos = (-2761,-2863);
 scale = (5,5);
 };
 layerId = "8AB8F055-48A1-4D1A-BF6A-4C5B01E913AA";
+metricLeft = "=10";
+metricRight = "=10";
 name = "22 Aug 24 at 03:02";
 shapes = (
 {
@@ -313,6 +315,8 @@ pos = (-2761,-2863);
 scale = (5,5);
 };
 layerId = "307A62E0-5030-4782-86E3-03AB3DF697F9";
+metricLeft = "=10";
+metricRight = "=10";
 name = "17 May 23 at 02:24";
 shapes = (
 {
@@ -493,6 +497,8 @@ pos = (-2761,-2863);
 scale = (5,5);
 };
 layerId = "72A149EE-7B58-4136-BDFB-772EA48C3704";
+metricLeft = "=10";
+metricRight = "=10";
 name = "17 May 23 at 17:21";
 shapes = (
 {
@@ -531,7 +537,7 @@ nodes = (
 width = 422;
 }
 );
-metricLeft = "=0";
+metricLeft = "=-8";
 metricRight = "=0";
 unicode = 1646;
 }

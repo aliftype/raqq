@@ -67,7 +67,7 @@ nodes = (
 );
 }
 );
-width = 652;
+width = 642;
 },
 {
 associatedMasterId = m01;
@@ -113,8 +113,7 @@ nodes = (
 );
 }
 );
-visible = 1;
-width = 652;
+width = 642;
 },
 {
 associatedMasterId = m01;
@@ -122,7 +121,7 @@ attr = {
 colorPalette = 1;
 };
 layerId = "E8AE70B6-982A-4560-87D2-37798FC1B16D";
-metricRight = "=20";
+metricRight = "=19";
 name = "Regular 8 Jan 24 at 22:31";
 shapes = (
 {
@@ -155,7 +154,7 @@ nodes = (
 );
 }
 );
-width = 652;
+width = 642;
 },
 {
 anchors = (
@@ -221,7 +220,7 @@ nodes = (
 );
 }
 );
-width = 483;
+width = 472;
 },
 {
 associatedMasterId = m01;
@@ -270,7 +269,7 @@ nodes = (
 );
 }
 );
-width = 483;
+width = 472;
 },
 {
 associatedMasterId = m01;
@@ -281,7 +280,7 @@ coordinates = (
 );
 };
 layerId = "E5FAE675-6B3A-423C-9291-F9C12C865A83";
-metricRight = "=15";
+metricRight = "=16";
 name = "Color 7 {7} 8 Jan 24 at 22:43";
 shapes = (
 {
@@ -314,7 +313,7 @@ nodes = (
 );
 }
 );
-width = 483;
+width = 472;
 },
 {
 anchors = (
@@ -389,7 +388,7 @@ nodes = (
 );
 }
 );
-width = 483;
+width = 472;
 },
 {
 associatedMasterId = m01;
@@ -438,7 +437,7 @@ nodes = (
 );
 }
 );
-width = 483;
+width = 472;
 },
 {
 associatedMasterId = m01;
@@ -449,7 +448,7 @@ coordinates = (
 );
 };
 layerId = "CC075CEE-95D5-4798-8613-5ADA6FE08F21";
-metricRight = "=15";
+metricRight = "=16";
 name = "Color 1 {7} 8 Jan 24 at 22:50";
 shapes = (
 {
@@ -482,7 +481,7 @@ nodes = (
 );
 }
 );
-width = 483;
+width = 472;
 }
 );
 metricRight = "=0";

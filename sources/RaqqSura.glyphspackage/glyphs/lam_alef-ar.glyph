@@ -301,6 +301,4 @@ visible = 1;
 width = 542;
 }
 );
-metricLeft = "=0@0";
-metricRight = "=0";
 }
