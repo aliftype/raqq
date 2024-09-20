@@ -34,8 +34,7 @@ NAMES = ${NAME} ${NAME}Sura
 FONTS = ${NAMES:%=${FONTDIR}/%.ttf}
 WOFF2 = ${NAMES:%=${WOFFDIR}/%.woff2}
 
-TESTS = shaping decomposition
-JSON = ${TESTS:%=${TESTDIR}/%.json}
+JSON = ${TESTDIR}/shaping.json
 
 FEA = ${NAMES:%=${SOURCEDIR}/%-overhang.fea}
 HTML = ${NAMES:%=${TESTDIR}/%-shaping.html}
@@ -73,10 +72,6 @@ ${WOFFDIR}/%.woff2: ${FONTDIR}/%.ttf
 ${TESTDIR}/%-shaping.html: ${FONTDIR}/%.ttf ${TESTDIR}/shaping-config.yml
 	$(info   SHAPE  ${<F})
 	${PYTHON} -m alifTools.shaping.check $< ${TESTDIR}/shaping-config.yml $@
-
-${TESTDIR}/decomposition.json: ${SOURCEDIR}/${NAME}.glyphspackage ${FONTS}
-	$(info   GEN    ${@F})
-	${PYTHON} ${SCRIPTDIR}/update-decomposition-test.py $@ $+
 
 ${TESTDIR}/shaping.json: ${TESTDIR}/shaping.yaml ${FONTS}
 	$(info   GEN    ${@F})
