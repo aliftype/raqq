@@ -4,3 +4,4 @@ skia-pathops
 uharfbuzz
 vharfbuzz
 pyyaml
+alifTools @ git+https://github.com/aliftype/tools.git@e3e2ba35a6fa22721aa0a5080e24716e709b7eb6

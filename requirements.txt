@@ -4,6 +4,8 @@
 #
 #    pip-compile requirements.in
 #
+aliftools @ git+https://github.com/aliftype/tools.git@e3e2ba35a6fa22721aa0a5080e24716e709b7eb6
+    # via -r requirements.in
 appdirs==1.4.4
     # via fs
 attrs==24.2.0
@@ -30,9 +32,10 @@ skia-pathops==0.8.0.post1
     # via -r requirements.in
 ufolib2==0.16.0
     # via glyphslib
-uharfbuzz==0.39.5
+uharfbuzz==0.40.1
     # via
     #   -r requirements.in
+    #   aliftools
     #   vharfbuzz
 unicodedata2==15.1.0
     # via fonttools
