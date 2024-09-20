@@ -44,7 +44,7 @@ ARGS ?=
 
 .SECONDARY:
 .ONESHELL:
-.PHONY: all dist ttf web
+.PHONY: all dist test ttf web
 
 all: ttf web
 ttf: ${FONTS}
