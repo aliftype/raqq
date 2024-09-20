@@ -29,11 +29,121 @@ width = 876;
 anchors = (
 {
 name = entry;
+pos = (876,0);
+}
+);
+associatedMasterId = m01;
+attr = {
+colorPalette = 4;
+};
+layerId = "E417F774-EFF3-4292-8597-13B3A204B7DD";
+name = "20 Sep 24 at 22:36";
+shapes = (
+{
+alignment = -1;
+ref = "sad-ar";
+},
+{
+alignment = -1;
+pos = (475,0);
+ref = _p.sad;
+}
+);
+width = 876;
+},
+{
+anchors = (
+{
+name = entry;
+pos = (876,0);
+}
+);
+associatedMasterId = m01;
+attr = {
+colorPalette = 1;
+};
+layerId = "F02EE80B-F9CF-425D-8FE0-45FFFE76CFFE";
+name = "Color 4 20 Sep 24 at 22:36";
+shapes = (
+{
+alignment = -1;
+ref = "sad-ar";
+},
+{
+alignment = -1;
+pos = (475,0);
+ref = _p.sad;
+}
+);
+width = 876;
+},
+{
+anchors = (
+{
+name = entry;
 pos = (5993,0);
 }
 );
 associatedMasterId = m01;
 attr = {
+coordinates = (
+100
+);
+};
+layerId = "871D10E1-26C0-47C6-9F74-29BF62D9E2E9";
+name = "{100} 20 Sep 24 at 22:37";
+shapes = (
+{
+alignment = -1;
+ref = "sad-ar";
+},
+{
+alignment = -1;
+pos = (5592,0);
+ref = _p.sad;
+}
+);
+width = 5993;
+},
+{
+anchors = (
+{
+name = entry;
+pos = (5993,0);
+}
+);
+associatedMasterId = m01;
+attr = {
+colorPalette = 4;
+coordinates = (
+100
+);
+};
+layerId = "10E79ECB-D9F0-4EDD-9FBA-4A69BA36E9F0";
+name = "Color 4 {100} 20 Sep 24 at 22:37";
+shapes = (
+{
+alignment = -1;
+ref = "sad-ar";
+},
+{
+alignment = -1;
+pos = (5592,0);
+ref = _p.sad;
+}
+);
+width = 5993;
+},
+{
+anchors = (
+{
+name = entry;
+pos = (5993,0);
+}
+);
+associatedMasterId = m01;
+attr = {
+colorPalette = 1;
 coordinates = (
 100
 );
@@ -67,6 +177,35 @@ coordinates = (
 0
 );
 };
+layerId = "C1107F3B-EDD3-4FDF-9FFE-63DEEA7839DD";
+name = "{0} 20 Sep 24 at 22:38";
+shapes = (
+{
+alignment = -1;
+ref = "sad-ar";
+},
+{
+alignment = -1;
+pos = (120,0);
+ref = _p.sad;
+}
+);
+width = 521;
+},
+{
+anchors = (
+{
+name = entry;
+pos = (521,0);
+}
+);
+associatedMasterId = m01;
+attr = {
+colorPalette = 4;
+coordinates = (
+0
+);
+};
 layerId = "6CDC7988-9077-4935-AFE6-4B2F71721C4C";
 name = "17 May 23 at 13:07";
 shapes = (
@@ -81,8 +220,35 @@ ref = _p.sad;
 }
 );
 width = 521;
+},
+{
+anchors = (
+{
+name = entry;
+pos = (521,0);
 }
 );
-metricLeft = "=sad-ar";
-metricRight = "=0@110";
+associatedMasterId = m01;
+attr = {
+colorPalette = 1;
+coordinates = (
+0
+);
+};
+layerId = "C62730EC-6BB6-43DA-ABBC-A7340253DA21";
+name = "20 Sep 24 at 22:38";
+shapes = (
+{
+alignment = -1;
+ref = "sad-ar";
+},
+{
+alignment = -1;
+pos = (120,0);
+ref = _p.sad;
+}
+);
+width = 521;
+}
+);
 }
