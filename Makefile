@@ -72,15 +72,15 @@ ${WOFFDIR}/%.woff2: ${FONTDIR}/%.ttf
 
 ${TESTDIR}/%-shaping.html: ${FONTDIR}/%.ttf ${TESTDIR}/shaping-config.yml
 	$(info   SHAPE  ${<F})
-	${PYTHON} ${SCRIPTDIR}/check-shaping.py $< ${TESTDIR}/shaping-config.yml $@
+	${PYTHON} -m alifTools.shaping.check $< ${TESTDIR}/shaping-config.yml $@
 
 ${TESTDIR}/decomposition.json: ${SOURCEDIR}/${NAME}.glyphspackage ${FONTS}
 	$(info   GEN    ${@F})
 	${PYTHON} ${SCRIPTDIR}/update-decomposition-test.py $@ $+
 
-${TESTDIR}/shaping.json: ${TESTDIR}/shaping.csv ${FONTS}
+${TESTDIR}/shaping.json: ${TESTDIR}/shaping.yaml ${FONTS}
 	$(info   GEN    ${@F})
-	${PYTHON} ${SCRIPTDIR}/update-shaping-test.py $@ $+
+	${PYTHON} -m alifTools.shaping.update $< $@ ${FONTS}
 
 dist: all
 	$(info   DIST   ${DIST}.zip)
