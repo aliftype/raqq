@@ -2,6 +2,4 @@ fonttools[woff] >= 4.47.1
 glyphsLib >= 6.2.2
 skia-pathops
 uharfbuzz
-vharfbuzz
-pyyaml
-alifTools @ git+https://github.com/aliftype/tools.git@e3e2ba35a6fa22721aa0a5080e24716e709b7eb6
+alifTools[shaping] @ git+https://github.com/aliftype/tools.git@2a34f87b0ea6af1488190572437025dfe4548d3d
