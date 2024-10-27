@@ -11,6 +11,7 @@ en-US:
   app: Go to app
   download: Download font
   description: Raqq (رَقّ) is a manuscript Kufic typeface, intends to revive (as faithfully as possible) the style of Kufic script used in writing the Qur’an in the third century AH. Raqq is Arabic for parchment, on which early Qur’ans were written.
+  artwork: Artwork
 
 ar:
   foundry: حروف ألف
@@ -25,3 +26,4 @@ ar:
   app: اذهب إلى التطبيق
   github: صفحة المشروع على جت&zwnj;هب
   description: «رَقّ» هو خط حاسوبي كوفي مصحفي، يهدف إلى إحياء الخط الكوفي الذي كتبت به المصاحف المبكرة، وتحديدا مصاحف القرن الثالث الهجري، عبر رقمنته رقمنة دقيقة قدر الإمكان. الرَقّ هو الجلد الذي كتبت عليه المصاحف المبكرة.
+  artwork: أعمال فنية
