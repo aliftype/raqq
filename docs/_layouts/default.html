@@ -4,7 +4,7 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="shortcut icon" href="./assets/images/favicon.svg">
+    <link rel="shortcut icon" href="{{ "/assets/images/favicon.svg" | relative_url }}">
 
     <title>{{ page.title | default: site.title }} | {{ page.description | default: site.description }}</title>
     <meta property="og:locale" content="{{ page.language }}">
@@ -48,14 +48,19 @@
     </p>
     <h1 dir="rtl" id="title">{{ site.title }}&#x200A;۝&#x200A;{{ site.description }}</h1>
     <section>
-      {% if page.title and page.description %}
-      <h1>{{ page.title }}&#x200A;—&#x200A;{{ page.description }}</h1>
+      {% if page.description %}
+      <h1>{{ page.title | default: site.title }}&#x200A;—&#x200A;{{ page.description }}</h1>
       {% endif %}
       {{ content }}
     </section>
 
     <footer>
       <p class="downloads"><a href="{{ site.github.repository_url }}/releases/download/v{{ site.version }}/{{ site.name }}-{{ site.version }}.zip">{{ messages.download }}</a></p>
+      {% if page.language == "ar" %}
+      <p class="downloads"><a href="./artwork">{{ messages.artwork }}</a></p>
+      {% else %}
+      <p class="downloads"><a href="./artwork/english">{{ messages.artwork }}</a></p>
+      {% endif %}
       <!--p class="downloads"><a href="./app">{{ messages.app }}</a></p-->
       <p>{{ messages.github }} <br/><a href="{{ site.github.repository_url }}"><code>{{ site.github.repository_nwo }}</code></a></p>
     </footer>
