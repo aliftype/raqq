@@ -28,11 +28,10 @@ SCRIPTDIR = scripts
 FONTDIR = fonts
 TESTDIR = tests
 BUILDDIR = build
-WOFFDIR = docs/assets/fonts
 
 NAMES = ${NAME} ${NAME}Sura
 FONTS = ${NAMES:%=${FONTDIR}/%.ttf}
-WOFF2 = ${NAMES:%=${WOFFDIR}/%.woff2}
+WOFF2 = ${NAMES:%=${FONTDIR}/%.woff2}
 
 JSON = ${TESTDIR}/shaping.json
 
@@ -65,7 +64,7 @@ ${FONTDIR}/%.ttf: ${SOURCEDIR}/%.glyphspackage ${CONFIG} ${GLYPHDATA} ${SOURCEDI
 	$(info   BUILD  ${@F})
 	${PYTHON} ${SCRIPTDIR}/build.py $< ${VERSION} $@ --data=${GLYPHDATA} ${ARGS}
 
-${WOFFDIR}/%.woff2: ${FONTDIR}/%.ttf
+${FONTDIR}/%.woff2: ${FONTDIR}/%.ttf
 	$(info   WOFF2  ${@F})
 	${PYTHON} ${SCRIPTDIR}/buildwoff2.py $< $@
 
