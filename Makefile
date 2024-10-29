@@ -19,10 +19,6 @@ SHELL = bash
 MAKEFLAGS := -srj
 PYTHON := venv/bin/python3
 
-CONFIG = docs/_config.yml
-VERSION = $(shell grep "version:" ${CONFIG} | sed -e 's/.*.: "\(.*.\)".*/\1/')
-DIST = ${NAME}-${VERSION}
-
 SOURCEDIR = sources
 SCRIPTDIR = scripts
 FONTDIR = fonts
@@ -39,7 +35,10 @@ FEA = ${NAMES:%=${SOURCEDIR}/%-overhang.fea}
 HTML = ${NAMES:%=${TESTDIR}/%-shaping.html}
 GLYPHDATA = ${SOURCEDIR}/GlyphData.xml
 
-ARGS ?= 
+TAG = $(shell git describe --tags --abbrev=0)
+VERSION = ${TAG:v%=%}
+DIST = ${NAME}-${VERSION}
+
 
 .SECONDARY:
 .ONESHELL:
@@ -60,9 +59,9 @@ update-fea: ${FONTS}
 		${PYTHON} ${SCRIPTDIR}/update-overhang-fea.py $${fonts[$$i]} $${fea[$$i]}
 	done
 
-${FONTDIR}/%.ttf: ${SOURCEDIR}/%.glyphspackage ${CONFIG} ${GLYPHDATA} ${SOURCEDIR}/%-overhang.fea
+${FONTDIR}/%.ttf: ${SOURCEDIR}/%.glyphspackage ${GLYPHDATA} ${SOURCEDIR}/%-overhang.fea
 	$(info   BUILD  ${@F})
-	${PYTHON} ${SCRIPTDIR}/build.py $< ${VERSION} $@ --data=${GLYPHDATA} ${ARGS}
+	${PYTHON} ${SCRIPTDIR}/build.py $< ${VERSION} $@ --data=${GLYPHDATA}
 
 ${FONTDIR}/%.woff2: ${FONTDIR}/%.ttf
 	$(info   WOFF2  ${@F})
@@ -76,7 +75,7 @@ ${TESTDIR}/shaping.json: ${TESTDIR}/shaping.yaml ${FONTS}
 	$(info   GEN    ${@F})
 	${PYTHON} -m alifTools.shaping.update $< $@ ${FONTS}
 
-dist: all
+dist: ${FONTS}
 	$(info   DIST   ${DIST}.zip)
 	install -Dm644 -t ${DIST} ${FONTS}
 	install -Dm644 -t ${DIST} {README,README-Arabic}.txt
