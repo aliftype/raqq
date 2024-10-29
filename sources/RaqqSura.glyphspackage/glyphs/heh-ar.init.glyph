@@ -34,7 +34,7 @@ ref = "heh-ar.init.round";
 ref = _p.heh;
 }
 );
-width = 361;
+width = 371;
 },
 {
 associatedMasterId = m01;
@@ -60,7 +60,7 @@ ref = "heh-ar.init.round";
 ref = _p.heh;
 }
 );
-width = 361;
+width = 371;
 }
 );
 metricLeft = "=_p.heh";
