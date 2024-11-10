@@ -519,7 +519,7 @@ def buildMaster(font, master, args):
     for name in font.glyphOrder:
         glyph = font.glyphs[name]
         if glyph is None:
-            return
+            continue
 
         layer = glyph.layers[master.id]
         if layer is None:
