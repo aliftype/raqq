@@ -667,14 +667,17 @@ def buildBase(font, instance, vf, args):
         underlineThickness=master.customParameters["underlineThickness"] or 0,
     )
 
+    # Compile to get font bbox
+    fb.font["head"].compile(fb.font)
+
     codePages = [CODEPAGE_RANGES[v] for v in font.customParameters["codePageRanges"]]
     fb.setupOS2(
         version=4,
         sTypoAscender=master.customParameters["typoAscender"],
         sTypoDescender=master.customParameters["typoDescender"],
         sTypoLineGap=master.customParameters["typoLineGap"] or 0,
-        usWinAscent=master.customParameters["winAscent"],
-        usWinDescent=master.customParameters["winDescent"],
+        usWinAscent=master.customParameters["winAscent"] or fb.font["head"].yMax,
+        usWinDescent=master.customParameters["winDescent"] or -fb.font["head"].yMin,
         sxHeight=master.xHeight,
         sCapHeight=master.capHeight,
         achVendID=font.properties["vendorID"],
