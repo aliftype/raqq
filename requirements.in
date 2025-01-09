@@ -1,5 +1,5 @@
-fonttools[woff] >= 4.47.1
-glyphsLib >= 6.2.2
+fonttools[woff]
+glyphsLib
 skia-pathops
 uharfbuzz
-alifTools[shaping] @ git+https://github.com/aliftype/tools.git@2a34f87b0ea6af1488190572437025dfe4548d3d
+alifTools[shaping]
