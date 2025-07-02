@@ -16,7 +16,7 @@
 NAME = Raqq
 
 SHELL = bash
-MAKEFLAGS := -srj
+MAKEFLAGS := -sr
 PYTHON := venv/bin/python3
 
 SOURCEDIR = sources
@@ -42,7 +42,7 @@ DIST = ${NAME}-${VERSION}
 
 .SECONDARY:
 .ONESHELL:
-.PHONY: all dist test ttf web
+.PHONY: all clean dist ttf test web
 
 all: ttf web
 ttf: ${FONTS}
@@ -67,13 +67,13 @@ ${FONTDIR}/%.woff2: ${FONTDIR}/%.ttf
 	$(info   WOFF2  ${@F})
 	${PYTHON} ${SCRIPTDIR}/buildwoff2.py $< $@
 
-${TESTDIR}/%-shaping.html: ${FONTDIR}/%.ttf ${TESTDIR}/shaping-config.yml
-	$(info   SHAPE  ${<F})
-	${PYTHON} -m alifTools.shaping.check $< ${TESTDIR}/shaping-config.yml $@
-
 ${TESTDIR}/shaping.json: ${TESTDIR}/shaping.yaml ${FONTS}
 	$(info   GEN    ${@F})
 	${PYTHON} -m alifTools.shaping.update $< $@ ${FONTS}
+
+${TESTDIR}/%-shaping.html: ${FONTDIR}/%.ttf ${TESTDIR}/shaping-config.yml
+	$(info   SHAPE  ${<F})
+	${PYTHON} -m alifTools.shaping.check $< ${TESTDIR}/shaping-config.yml $@
 
 dist: ${FONTS}
 	$(info   DIST   ${DIST}.zip)
@@ -81,3 +81,6 @@ dist: ${FONTS}
 	install -Dm644 -t ${DIST} {README,README-Arabic}.txt
 	install -Dm644 -t ${DIST} LICENSE
 	zip -rq ${DIST}.zip ${DIST}
+
+clean:
+	rm -rf ${FONTS} ${HTML} ${DIST} ${DIST}.zip
