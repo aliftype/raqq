@@ -1,4 +1,5 @@
 {
+category = Letter;
 glyphname = "seen-ar.medi";
 kernLeft = seen;
 kernRight = beh;
@@ -118,4 +119,7 @@ width = 401;
 );
 metricLeft = "=-20";
 metricRight = "=3@157";
+script = arabic;
+sortName = arL0025a;
+sortNameKeep = arL0025a;
 }

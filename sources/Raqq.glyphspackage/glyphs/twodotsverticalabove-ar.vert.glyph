@@ -1,4 +1,5 @@
 {
+category = Mark;
 glyphname = "twodotsverticalabove-ar.vert";
 layers = (
 {
@@ -25,4 +26,9 @@ width = 110;
 );
 metricLeft = "=dotabove-ar";
 metricRight = "=dotabove-ar";
+production = twodotsverticalabovear.vert;
+script = arabic;
+sortName = arM1064.vert;
+sortNameKeep = arM1064.vert;
+subCategory = Nonspacing;
 }

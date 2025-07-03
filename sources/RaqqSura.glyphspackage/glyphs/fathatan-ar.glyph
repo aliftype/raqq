@@ -1,4 +1,5 @@
 {
+category = Mark;
 glyphname = "fathatan-ar";
 layers = (
 {
@@ -34,5 +35,9 @@ width = 284;
 );
 metricLeft = "=fatha-ar";
 metricRight = "=fatha-ar";
+script = arabic;
+sortName = arM1075;
+sortNameKeep = arM1075;
+subCategory = Nonspacing;
 unicode = 1611;
 }

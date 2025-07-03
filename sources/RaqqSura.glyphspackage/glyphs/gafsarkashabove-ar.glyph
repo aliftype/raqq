@@ -1,4 +1,5 @@
 {
+category = Mark;
 glyphname = "gafsarkashabove-ar";
 layers = (
 {
@@ -20,4 +21,8 @@ ref = "dotabove-ar";
 width = 110;
 }
 );
+script = arabic;
+sortName = arM1085;
+sortNameKeep = arM1085;
+subCategory = Nonspacing;
 }

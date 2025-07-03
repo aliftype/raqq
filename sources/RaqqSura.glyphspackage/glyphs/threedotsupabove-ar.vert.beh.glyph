@@ -1,4 +1,5 @@
 {
+category = Mark;
 glyphname = "threedotsupabove-ar.vert.beh";
 layers = (
 {
@@ -36,4 +37,9 @@ width = 96;
 }
 );
 metricLeft = "=dotabove-ar";
+production = threedotsupabovear.vert.beh;
+script = arabic;
+sortName = arM1067a.vert.beh;
+sortNameKeep = arM1067a.vert.beh;
+subCategory = Nonspacing;
 }

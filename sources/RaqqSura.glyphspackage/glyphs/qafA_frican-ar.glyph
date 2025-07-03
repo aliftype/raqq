@@ -1,4 +1,5 @@
 {
+category = Placeholder;
 color = 0;
 glyphname = "qafAfrican-ar";
 layers = (
@@ -12,5 +13,8 @@ ref = "qafDotless-ar";
 width = 469;
 }
 );
+script = arabic;
+sortName = arL0238;
+sortNameKeep = arL0238;
 unicode = 2236;
 }

@@ -1,4 +1,5 @@
 {
+category = Mark;
 glyphname = "dotabove-ar.reh";
 layers = (
 {
@@ -45,4 +46,9 @@ width = 94;
 );
 metricLeft = "=0";
 metricRight = "=0";
+production = dotabovear.reh;
+script = arabic;
+sortName = arM1060.reh;
+sortNameKeep = arM1060.reh;
+subCategory = Nonspacing;
 }

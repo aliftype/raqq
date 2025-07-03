@@ -1,4 +1,5 @@
 {
+category = Number;
 glyphname = "seven-ar";
 layers = (
 {
@@ -7,5 +8,9 @@ width = 0;
 }
 );
 metricWidth = "=0";
+script = arabic;
+sortName = arN0897;
+sortNameKeep = arN0897;
+subCategory = "Decimal Digit";
 unicode = 1639;
 }

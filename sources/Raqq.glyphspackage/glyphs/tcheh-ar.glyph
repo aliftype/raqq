@@ -1,4 +1,5 @@
 {
+category = Placeholder;
 color = 0;
 glyphname = "tcheh-ar";
 layers = (
@@ -16,5 +17,8 @@ ref = "threedotsdownbelow-ar";
 width = 983;
 }
 );
+script = arabic;
+sortName = arL0151;
+sortNameKeep = arL0151;
 unicode = 1670;
 }

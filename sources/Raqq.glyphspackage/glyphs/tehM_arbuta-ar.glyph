@@ -1,4 +1,5 @@
 {
+category = Placeholder;
 color = 0;
 glyphname = "tehMarbuta-ar";
 layers = (
@@ -12,5 +13,8 @@ ref = "heh-ar";
 width = 356;
 }
 );
+script = arabic;
+sortName = arL0283;
+sortNameKeep = arL0283;
 unicode = 1577;
 }

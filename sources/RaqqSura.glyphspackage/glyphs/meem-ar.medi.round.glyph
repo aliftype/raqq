@@ -1,4 +1,5 @@
 {
+category = Letter;
 glyphname = "meem-ar.medi.round";
 layers = (
 {
@@ -50,4 +51,8 @@ width = 398;
 );
 metricLeft = "=0";
 metricRight = "=0";
+production = meemar.medi.round;
+script = arabic;
+sortName = arL0059.round;
+sortNameKeep = arL0059.round;
 }

@@ -1,4 +1,5 @@
 {
+category = Placeholder;
 color = 0;
 glyphname = "behDotless-ar.medi.l1";
 layers = (
@@ -12,4 +13,7 @@ ref = "behDotless-ar.medi";
 width = 100;
 }
 );
+script = arabic;
+sortName = arL0320;
+sortNameKeep = arL0320;
 }

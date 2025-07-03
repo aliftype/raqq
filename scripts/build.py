@@ -29,8 +29,6 @@ from fontTools.ttLib.tables._h_e_a_d import mac_epoch_diff
 from fontTools.varLib import build_many as merge
 from glyphsLib import GSAnchor, GSComponent, GSFont, GSFontMaster, GSLayer
 from glyphsLib.builder.tokens import TokenExpander
-from glyphsLib.glyphdata import GlyphData
-from glyphsLib.glyphdata import get_glyph as getGlyphInfo
 
 DEFAULT_TRANSFORM = [1, 0, 0, 1, 0, 0]
 
@@ -792,14 +790,6 @@ def prepare(args):
 
     for name in font.glyphOrder:
         glyph = font.glyphs[name]
-        # Set categories from the external GlyphGata file
-        with open(args.data) as f:
-            data = GlyphData.from_files(f)
-        info = getGlyphInfo(glyph.name, data=data)
-        if glyph.category is None:
-            glyph.category = info.category
-        if glyph.subCategory is None:
-            glyph.subCategory = info.subCategory
 
         for layer in glyph.layers:
             if glyph.color == 0:
@@ -903,7 +893,6 @@ def main():
     parser.add_argument("input", help="input Glyphs source file", type=Path)
     parser.add_argument("version", help="font version", type=str)
     parser.add_argument("output", help="output OTF file", type=Path)
-    parser.add_argument("--data", help="GlyphData.xml file", type=Path)
     args = parser.parse_args()
 
     font, instance = prepare(args)

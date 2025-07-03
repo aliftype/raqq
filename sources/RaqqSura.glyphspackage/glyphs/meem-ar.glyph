@@ -1,4 +1,5 @@
 {
+category = Letter;
 glyphname = "meem-ar";
 kernLeft = meem.fina;
 kernRight = meem;
@@ -177,5 +178,8 @@ width = 554;
 );
 metricLeft = "=-12";
 metricRight = "=0";
+script = arabic;
+sortName = arL0057;
+sortNameKeep = arL0057;
 unicode = 1605;
 }

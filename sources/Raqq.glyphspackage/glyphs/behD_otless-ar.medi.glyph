@@ -1,4 +1,5 @@
 {
+category = Letter;
 glyphname = "behDotless-ar.medi";
 kernRight = beh;
 layers = (
@@ -94,4 +95,7 @@ width = 128;
 );
 metricLeft = "=-20@0";
 metricRight = "=3@157";
+script = arabic;
+sortName = arL0010a;
+sortNameKeep = arL0010a;
 }

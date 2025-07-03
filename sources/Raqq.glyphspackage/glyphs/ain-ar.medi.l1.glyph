@@ -1,4 +1,5 @@
 {
+category = Placeholder;
 color = 0;
 glyphname = "ain-ar.medi.l1";
 layers = (
@@ -12,4 +13,7 @@ ref = "ain-ar.medi";
 width = 220;
 }
 );
+script = arabic;
+sortName = arL0325;
+sortNameKeep = arL0325;
 }

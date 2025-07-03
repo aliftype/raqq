@@ -1,4 +1,5 @@
 {
+category = Letter;
 glyphname = "seen_alefMaksura-ar.fina";
 kernRight = beh;
 layers = (
@@ -189,4 +190,8 @@ width = 343;
 );
 metricLeft = "=0@0";
 metricRight = "=0@130";
+script = arabic;
+sortName = arL0406;
+sortNameKeep = arL0406;
+subCategory = Ligature;
 }

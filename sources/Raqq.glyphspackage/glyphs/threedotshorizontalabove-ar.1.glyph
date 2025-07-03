@@ -1,4 +1,5 @@
 {
+category = Mark;
 glyphname = "threedotshorizontalabove-ar.1";
 layers = (
 {
@@ -31,4 +32,9 @@ width = 360;
 );
 metricLeft = "=dotabove-ar";
 metricRight = "=dotabove-ar";
+production = threedotshorizontalabovear.1;
+script = arabic;
+sortName = arM1068.1;
+sortNameKeep = arM1068.1;
+subCategory = Nonspacing;
 }
