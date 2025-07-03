@@ -22,7 +22,6 @@ from fontTools.designspaceLib import DesignSpaceDocument
 from fontTools.fontBuilder import FontBuilder
 from fontTools.misc.transform import Identity, Transform
 from fontTools.pens.hashPointPen import HashPointPen
-from fontTools.pens.svgPathPen import SVGPathPen
 from fontTools.pens.ttGlyphPen import TTGlyphPointPen
 from fontTools.ttLib import newTable
 from fontTools.ttLib.tables._h_e_a_d import mac_epoch_diff
@@ -416,100 +415,6 @@ def ntos(n):
     return s
 
 
-def drawSVG(font, glyphSet, name, defs):
-    gid = f"g{font.getGlyphID(name)}"
-    if (elem := defs.find(f"*[@id='{gid}']")) is None:
-        pen = SVGPen(font, defs, glyphSet)
-        glyphSet[name].draw(pen)
-
-        elem = pen.finish()
-        elem.attrib["id"] = gid
-    return elem
-
-
-class SVGPen(SVGPathPen):
-    def __init__(self, font, defs, glyphSet):
-        super().__init__(glyphSet, ntos=ntos)
-        self.font = font
-        self.defs = defs
-        self.components = []
-
-    def addComponent(self, glyphName, transformation):
-        self.components.append((glyphName, transformation))
-
-    def finish(self):
-        font = self.font
-        defs = self.defs
-        glyphSet = self.glyphSet
-
-        g = None
-        path = None
-        commands = self.getCommands()
-        components = self.components
-        if components:
-            if len(components) == 1 and not commands:
-                g = defs
-            else:
-                g = etree.SubElement(defs, "g")
-            for name, transform in components:
-                elem = drawSVG(font, glyphSet, name, defs)
-                use = etree.SubElement(g, "use")
-                use.attrib[HREF] = "#" + elem.attrib["id"]
-                if transform != Identity:
-                    if transform[:4] == (1, 0, 0, 1):
-                        dx, dy = transform[4:]
-                        transform = f"translate({dx}, {dy})"
-                    else:
-                        matrix = ",".join(ntos(t) for t in transform)
-                        transform = f"matrix({matrix})"
-                    use.attrib["transform"] = transform
-            if g == defs:
-                g = use
-
-        if commands:
-            path = etree.SubElement(g if g is not None else defs, "path")
-            path.attrib["d"] = commands
-
-        return g if g is not None else path
-
-
-def addSVG(fb):
-    font = fb.font
-    SVG = font["SVG "] = newTable("SVG ")
-    SVG.compressed = True
-    SVG.docList = []
-
-    COLR = font["COLR"]
-    CPAL = font["CPAL"]
-
-    etree.register_namespace("x", XLINK)
-    root = etree.Element("svg", {"xmlns": "http://www.w3.org/2000/svg"})
-    defs = etree.SubElement(root, "defs")
-
-    gids = [font.getGlyphID(name) for name in COLR.ColorLayers]
-    assert gids == list(range(min(gids), max(gids) + 1))
-
-    glyphSet = font.getGlyphSet()
-    for name, layers in COLR.ColorLayers.items():
-        gid = font.getGlyphID(name)
-        g = etree.SubElement(root, "g")
-        g.attrib["id"] = f"glyph{gid}"
-        g.attrib["transform"] = "scale(1,-1)"
-        for layer in layers:
-            elem = drawSVG(font, glyphSet, layer.name, defs)
-
-            color = CPAL.palettes[0][layer.colorID]
-            use = etree.SubElement(g, "use")
-            use.attrib[HREF] = "#" + elem.attrib["id"]
-            use.attrib["fill"] = color.hex()[:7]
-            if color.alpha != 255:
-                use.attrib["opacity"] = ntos(color.alpha / 255)
-
-    etree.indent(root)
-    doc = etree.tostring(root)
-    SVG.docList.append((doc, min(gids), max(gids)))
-
-
 def buildMaster(font, master, args):
     colorLayers = {}
 
@@ -552,20 +457,7 @@ def buildMaster(font, master, args):
                     component.componentName = componentName
 
     colorGlyphs = list(colorLayers)
-    allGlyphs = font.glyphOrder + [n for n in glyphSet if n not in font.glyphOrder]
-
-    # If we are creating an SVG table, we want to have all color glyphs at the end so
-    # that the color glyph IDs make a continuous range to allow putting all SVGs in one
-    # SVG doc. Otherwise, we want to keep the original glyph order.
-    def key(name):
-        if name in colorGlyphs:
-            return len(allGlyphs) + colorGlyphs.index(name)
-        return allGlyphs.index(name)
-
-    if font.customParameters["Export SVG Table"]:
-        glyphOrder = sorted(glyphSet.keys(), key=key)
-    else:
-        glyphOrder = allGlyphs
+    glyphOrder = font.glyphOrder + [n for n in glyphSet if n not in font.glyphOrder]
 
     fb = FontBuilder(font.upm, isTTF=True)
     fb.setupGlyphOrder(glyphOrder)
@@ -699,9 +591,6 @@ def buildBase(font, instance, vf, args):
             f.write(fea)
         font.save(feapath.with_suffix(".debug.glyphs"))
     fb.addOpenTypeFeatures(fea, filename=feapath)
-
-    if font.customParameters["Export SVG Table"]:
-        addSVG(fb)
 
     return fb.font
 
