@@ -34,6 +34,8 @@ JSON = ${TESTDIR}/shaping.json
 FEA = ${NAMES:%=${SOURCEDIR}/%-overhang.fea}
 HTML = ${NAMES:%=${TESTDIR}/%-shaping.html}
 
+export PYTHONWARNINGS ?= ignore
+
 TAG = $(shell git describe --tags --abbrev=0)
 VERSION = ${TAG:v%=%}
 DIST = ${NAME}-${VERSION}
@@ -60,7 +62,16 @@ update-fea: ${FONTS}
 
 ${FONTDIR}/%.ttf: ${SOURCEDIR}/%.glyphspackage ${SOURCEDIR}/%-overhang.fea
 	$(info   BUILD  ${@F})
-	${PYTHON} ${SCRIPTDIR}/build.py $< ${VERSION} $@
+	export SOURCE_DATE_EPOCH=$(shell stat -c "%Y" $<)
+	${PYTHON} -m fontmake $< \
+			      --output-path=$@ \
+			      --output=variable \
+			      --verbose=WARNING \
+			      --flatten-components \
+			      --filter ... \
+			      --filter DecomposeTransformedComponentsFilter \
+			      --filter "alifTools.filters::ClearPlaceholdersFilter()" \
+			      --filter "alifTools.filters::FontVersionFilter(fontVersion=${VERSION})"
 	if grep -A1 '"Export SVG Table";' $</fontinfo.plist | grep 'value = 1;' > /dev/null; then \
 	  ${PYTHON} ${SCRIPTDIR}/colr-to-svg.py $@; \
 	fi
