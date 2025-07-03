@@ -1,4 +1,5 @@
 {
+category = Placeholder;
 color = 0;
 glyphname = "sheen-ar";
 layers = (
@@ -16,5 +17,8 @@ ref = "threedotshorizontalabove-ar.4";
 width = 506;
 }
 );
+script = arabic;
+sortName = arL0196;
+sortNameKeep = arL0196;
 unicode = 1588;
 }

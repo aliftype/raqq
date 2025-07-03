@@ -1,4 +1,5 @@
 {
+category = Punctuation;
 glyphname = "endofayah-ar.10";
 layers = (
 {
@@ -549,4 +550,7 @@ width = 1117;
 }
 );
 metricLeft = "=200";
+script = arabic;
+sortName = arP0989.10;
+sortNameKeep = arP0989.10;
 }

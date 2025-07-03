@@ -1,4 +1,5 @@
 {
+category = Letter;
 glyphname = "seen-ar";
 kernLeft = seen.isol;
 kernRight = beh.init;
@@ -182,5 +183,8 @@ width = 496;
 }
 );
 metricLeft = "=noonghunna-ar";
+script = arabic;
+sortName = arL0023;
+sortNameKeep = arL0023;
 unicode = 1587;
 }

@@ -1,4 +1,5 @@
 {
+category = Placeholder;
 color = 0;
 glyphname = "seen-ar.medi.l2";
 layers = (
@@ -12,4 +13,7 @@ ref = "seen-ar.medi";
 width = 401;
 }
 );
+script = arabic;
+sortName = arL0342;
+sortNameKeep = arL0342;
 }

@@ -1,4 +1,5 @@
 {
+category = Letter;
 glyphname = "alefMaksura-ar.fina.wide.salt";
 layers = (
 {
@@ -95,4 +96,7 @@ width = 267;
 );
 metricLeft = "=0@30";
 metricRight = "=-15@0";
+script = arabic;
+sortName = arL0080d;
+sortNameKeep = arL0080d;
 }

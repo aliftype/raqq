@@ -1,4 +1,5 @@
 {
+category = Letter;
 color = 9;
 glyphname = "fehDotless-ar.fina";
 kernRight = feh.medi;
@@ -314,4 +315,7 @@ width = 597;
 }
 );
 metricRight = "=0";
+script = arabic;
+sortName = arL0040;
+sortNameKeep = arL0040;
 }

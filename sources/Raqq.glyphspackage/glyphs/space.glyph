@@ -1,4 +1,5 @@
 {
+category = Separator;
 color = 9;
 glyphname = space;
 layers = (
@@ -50,5 +51,8 @@ name = "17 May 23 at 18:37";
 width = 500;
 }
 );
+sortName = "-s001";
+sortNameKeep = "-s001";
+subCategory = Space;
 unicode = (32,160);
 }

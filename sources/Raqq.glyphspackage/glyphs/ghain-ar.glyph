@@ -1,4 +1,5 @@
 {
+category = Placeholder;
 color = 0;
 glyphname = "ghain-ar";
 layers = (
@@ -16,5 +17,8 @@ ref = "dotabove-ar";
 width = 982;
 }
 );
+script = arabic;
+sortName = arL0216;
+sortNameKeep = arL0216;
 unicode = 1594;
 }

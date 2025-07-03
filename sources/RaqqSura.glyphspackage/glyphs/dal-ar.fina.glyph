@@ -1,4 +1,5 @@
 {
+category = Letter;
 color = 9;
 glyphname = "dal-ar.fina";
 kernLeft = dal.fina;
@@ -271,4 +272,7 @@ width = 414;
 );
 metricLeft = "=0";
 metricRight = "=-1";
+script = arabic;
+sortName = arL0019;
+sortNameKeep = arL0019;
 }

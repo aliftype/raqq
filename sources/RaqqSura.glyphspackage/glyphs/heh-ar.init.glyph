@@ -1,4 +1,5 @@
 {
+category = Letter;
 glyphname = "heh-ar.init";
 kernLeft = heh;
 kernRight = heh.init;
@@ -65,4 +66,7 @@ width = 371;
 );
 metricLeft = "=_p.heh";
 metricRight = "=0";
+script = arabic;
+sortName = arL0067;
+sortNameKeep = arL0067;
 }

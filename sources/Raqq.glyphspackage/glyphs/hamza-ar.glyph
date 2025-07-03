@@ -1,4 +1,5 @@
 {
+category = Mark;
 glyphname = "hamza-ar";
 layers = (
 {
@@ -6,5 +7,9 @@ layerId = m01;
 width = 0;
 }
 );
+script = arabic;
+sortName = arM1069a;
+sortNameKeep = arM1069a;
+subCategory = Nonspacing;
 unicode = 1569;
 }

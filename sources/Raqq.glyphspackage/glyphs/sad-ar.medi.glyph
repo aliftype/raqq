@@ -1,4 +1,5 @@
 {
+category = Letter;
 color = 9;
 glyphname = "sad-ar.medi";
 kernLeft = sad;
@@ -117,4 +118,7 @@ width = 368;
 );
 metricLeft = "=sad-ar.init";
 metricRight = "=0@110";
+script = arabic;
+sortName = arL0029;
+sortNameKeep = arL0029;
 }

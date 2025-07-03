@@ -1,4 +1,5 @@
 {
+category = Letter;
 glyphname = "heh-ar.medi.round";
 kernRight = beh;
 layers = (
@@ -125,4 +126,8 @@ width = 323;
 );
 metricLeft = "=meem-ar.medi.round";
 metricRight = "=3@157";
+production = hehar.medi.round;
+script = arabic;
+sortName = arL0066.round;
+sortNameKeep = arL0066.round;
 }

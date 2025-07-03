@@ -1,4 +1,5 @@
 {
+category = Mark;
 glyphname = "alefbelow-ar";
 layers = (
 {
@@ -6,5 +7,9 @@ layerId = m01;
 width = 1200;
 }
 );
+script = arabic;
+sortName = arM1084;
+sortNameKeep = arM1084;
+subCategory = Nonspacing;
 unicode = 1622;
 }

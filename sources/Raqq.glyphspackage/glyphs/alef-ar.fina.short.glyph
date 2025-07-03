@@ -1,4 +1,5 @@
 {
+category = Letter;
 glyphname = "alef-ar.fina.short";
 kernLeft = alef.fina;
 kernRight = beh;
@@ -131,4 +132,7 @@ width = 102;
 );
 metricLeft = "=0@55";
 metricRight = "=3@157";
+script = arabic;
+sortName = arL0005.short;
+sortNameKeep = arL0005.short;
 }

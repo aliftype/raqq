@@ -1,4 +1,5 @@
 {
+category = Letter;
 glyphname = "seen-ar.init";
 kernLeft = seen;
 kernRight = beh.init;
@@ -97,4 +98,7 @@ width = 378;
 );
 metricLeft = "=-20";
 metricRight = "=0";
+script = arabic;
+sortName = arL0026;
+sortNameKeep = arL0026;
 }

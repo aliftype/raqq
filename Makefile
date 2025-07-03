@@ -33,7 +33,6 @@ JSON = ${TESTDIR}/shaping.json
 
 FEA = ${NAMES:%=${SOURCEDIR}/%-overhang.fea}
 HTML = ${NAMES:%=${TESTDIR}/%-shaping.html}
-GLYPHDATA = ${SOURCEDIR}/GlyphData.xml
 
 TAG = $(shell git describe --tags --abbrev=0)
 VERSION = ${TAG:v%=%}
@@ -59,9 +58,9 @@ update-fea: ${FONTS}
 		${PYTHON} ${SCRIPTDIR}/update-overhang-fea.py $${fonts[$$i]} $${fea[$$i]}
 	done
 
-${FONTDIR}/%.ttf: ${SOURCEDIR}/%.glyphspackage ${GLYPHDATA} ${SOURCEDIR}/%-overhang.fea
+${FONTDIR}/%.ttf: ${SOURCEDIR}/%.glyphspackage ${SOURCEDIR}/%-overhang.fea
 	$(info   BUILD  ${@F})
-	${PYTHON} ${SCRIPTDIR}/build.py $< ${VERSION} $@ --data=${GLYPHDATA}
+	${PYTHON} ${SCRIPTDIR}/build.py $< ${VERSION} $@
 
 ${FONTDIR}/%.woff2: ${FONTDIR}/%.ttf
 	$(info   WOFF2  ${@F})

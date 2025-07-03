@@ -1,4 +1,5 @@
 {
+category = Mark;
 glyphname = ayah.190;
 layers = (
 {
@@ -117,4 +118,8 @@ scale = (0.56,0.56);
 width = 1117;
 }
 );
+script = arabic;
+sortName = arM1086.190;
+sortNameKeep = arM1086.190;
+subCategory = Nonspacing;
 }

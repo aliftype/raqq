@@ -1,4 +1,5 @@
 {
+category = Placeholder;
 color = 0;
 glyphname = "yehHamzaabove-ar";
 layers = (
@@ -12,5 +13,8 @@ ref = "alefMaksura-ar";
 width = 395;
 }
 );
+script = arabic;
+sortName = arL0308;
+sortNameKeep = arL0308;
 unicode = 1574;
 }

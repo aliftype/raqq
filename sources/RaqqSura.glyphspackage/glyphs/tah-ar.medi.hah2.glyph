@@ -1,4 +1,5 @@
 {
+category = Letter;
 color = 9;
 glyphname = "tah-ar.medi.hah2";
 kernLeft = sad;
@@ -98,4 +99,8 @@ width = 415;
 );
 metricLeft = "=tah-ar.init";
 metricRight = "=0@340";
+production = tahar.medi.hah2;
+script = arabic;
+sortName = arL0033.hah2;
+sortNameKeep = arL0033.hah2;
 }
