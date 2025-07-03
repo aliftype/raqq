@@ -684,7 +684,7 @@ def prepare(args):
             if glyph.color == 0:
                 # Clear placeholder glyphs
                 layer.components = []
-                layer.width = 600
+                layer.width = 800
             elif (glyph.category, glyph.subCategory) == ("Mark", "Nonspacing"):
                 # Zero mark width
                 layer.width = 0
