@@ -61,6 +61,9 @@ update-fea: ${FONTS}
 ${FONTDIR}/%.ttf: ${SOURCEDIR}/%.glyphspackage ${SOURCEDIR}/%-overhang.fea
 	$(info   BUILD  ${@F})
 	${PYTHON} ${SCRIPTDIR}/build.py $< ${VERSION} $@
+	if grep -A1 '"Export SVG Table";' $</fontinfo.plist | grep 'value = 1;' > /dev/null; then \
+	  ${PYTHON} ${SCRIPTDIR}/colr-to-svg.py $@; \
+	fi
 
 ${FONTDIR}/%.woff2: ${FONTDIR}/%.ttf
 	$(info   WOFF2  ${@F})
