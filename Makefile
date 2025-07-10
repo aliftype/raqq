@@ -27,7 +27,6 @@ BUILDDIR = build
 
 NAMES = ${NAME} ${NAME}Sura
 FONTS = ${NAMES:%=${FONTDIR}/%.ttf}
-WOFF2 = ${NAMES:%=${FONTDIR}/%.woff2}
 
 JSON = ${TESTDIR}/shaping.json
 
@@ -41,14 +40,12 @@ DIST = ${NAME}-${VERSION}
 
 .SECONDARY:
 .ONESHELL:
-.PHONY: all clean dist ttf test web
+.PHONY: all clean dist ttf test
 
-all: ttf web
+all: ttf
 ttf: ${FONTS}
 test: ${HTML}
 expectation: ${JSON}
-
-web: ${WOFF2}
 
 update-fea: ${FONTS}
 	fonts=(${FONTS})
@@ -61,10 +58,6 @@ update-fea: ${FONTS}
 ${FONTDIR}/%.ttf: ${SOURCEDIR}/%.glyphspackage ${SOURCEDIR}/%-overhang.fea
 	$(info   BUILD  ${@F})
 	${PYTHON} ${SCRIPTDIR}/build.py $< ${VERSION} $@
-
-${FONTDIR}/%.woff2: ${FONTDIR}/%.ttf
-	$(info   WOFF2  ${@F})
-	${PYTHON} ${SCRIPTDIR}/buildwoff2.py $< $@
 
 ${TESTDIR}/shaping.json: ${TESTDIR}/shaping.yaml ${FONTS}
 	$(info   GEN    ${@F})
