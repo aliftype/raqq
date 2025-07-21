@@ -57,7 +57,16 @@ update-fea: ${FONTS}
 
 ${FONTDIR}/%.ttf: ${SOURCEDIR}/%.glyphspackage ${SOURCEDIR}/%-overhang.fea
 	$(info   BUILD  ${@F})
-	${PYTHON} ${SCRIPTDIR}/build.py $< ${VERSION} $@
+	export SOURCE_DATE_EPOCH=$(shell stat -c "%Y" $<)
+	${PYTHON} -m fontmake $< \
+			      --output-path=$@ \
+			      --output=variable \
+			      --verbose=WARNING \
+			      --flatten-components \
+			      --filter ... \
+			      --filter DecomposeTransformedComponentsFilter \
+			      --filter "alifTools.filters::ClearPlaceholdersFilter()" \
+			      --filter "alifTools.filters::FontVersionFilter(fontVersion=${VERSION})"
 
 ${TESTDIR}/shaping.json: ${TESTDIR}/shaping.yaml ${FONTS}
 	$(info   GEN    ${@F})

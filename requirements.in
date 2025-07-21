@@ -1,5 +1,3 @@
-fonttools
-glyphsLib
-skia-pathops
+fontmake[pathops]
 uharfbuzz
-alifTools[shaping]
+alifTools[shaping,filters]
