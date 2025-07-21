@@ -755,17 +755,6 @@ def build(font, default_instance, args):
             location=location,
         )
 
-    mappings = [
-        [{"Justification": -100}, {"Spacing": -100, "Mashq": 0}],
-        [{"Justification": -50}, {"Spacing": 0, "Mashq": 0}],
-        [{"Justification": 0}, {"Spacing": 0, "Mashq": 10}],
-        [{"Justification": 90}, {"Spacing": 0, "Mashq": 100}],
-        [{"Justification": 100}, {"Spacing": 125, "Mashq": 100}],
-    ]
-
-    for input, output in mappings:
-        ds.addAxisMappingDescriptor(inputLocation=input, outputLocation=output)
-
     vf = merge(ds)["VF"]
     if "ltag" in vf:
         del vf["ltag"]
