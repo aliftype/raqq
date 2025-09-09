@@ -1385,6 +1385,7 @@ _c.hah.reh = -131;
 };
 "@MMK_R_meem.fina" = {
 "alef-ar" = -70;
+"alef-ar.lam" = -130;
 };
 "@MMK_R_sad" = {
 "@MMK_L_sad" = -9;
