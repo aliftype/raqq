@@ -21347,7 +21347,7 @@
     {
       "only": "RaqqSura.ttf",
       "input": "قال",
-      "expectation": "lam-ar.short=2+186|twodotsverticalabove-ar=0@106,402+0|fehDotless_alef-ar=0@-17,0+543",
+      "expectation": "lam-ar.short=2+186|twodotsverticalabove-ar=0@62,402+0|fehDotless_alef-ar.lam=0+489",
       "variations": {
         "SPAC": -100
       }
@@ -21363,7 +21363,7 @@
     {
       "only": "RaqqSura.ttf",
       "input": "قالت",
-      "expectation": "twodotsverticalabove-ar=3@803,264+0|behDotless-ar.fina=3+984|lam-ar.init.short=2+100|twodotsverticalabove-ar=0@115,402+0|fehDotless_alef-ar=0@-8,0+552",
+      "expectation": "twodotsverticalabove-ar=3@803,264+0|behDotless-ar.fina=3+984|lam-ar.init.short=2+100|twodotsverticalabove-ar=0@62,402+0|fehDotless_alef-ar.lam=0+489",
       "variations": {
         "SPAC": -100
       }
@@ -26316,7 +26316,7 @@
     {
       "only": "RaqqSura.ttf",
       "input": "فا",
-      "expectation": "dotabove-ar=0@153,394+0|fehDotless_alef-ar=0+560"
+      "expectation": "dotabove-ar=0@92,394+0|fehDotless_alef-ar=0+489"
     },
     {
       "only": "RaqqSura.ttf",
@@ -27391,7 +27391,7 @@
     {
       "only": "RaqqSura.ttf",
       "input": "قال",
-      "expectation": "lam-ar.short=2+186|twodotsverticalabove-ar=0@106,402+0|fehDotless_alef-ar=0@-17,0+543"
+      "expectation": "lam-ar.short=2+186|twodotsverticalabove-ar=0@62,402+0|fehDotless_alef-ar.lam=0+489"
     },
     {
       "only": "RaqqSura.ttf",
@@ -28386,7 +28386,7 @@
     {
       "only": "RaqqSura.ttf",
       "input": "قالت",
-      "expectation": "twodotsverticalabove-ar=3@803,264+0|behDotless-ar.fina=3+984|lam-ar.init.short=2+100|twodotsverticalabove-ar=0@115,402+0|fehDotless_alef-ar=0@-8,0+552"
+      "expectation": "twodotsverticalabove-ar=3@803,264+0|behDotless-ar.fina=3+984|lam-ar.init.short=2+100|twodotsverticalabove-ar=0@62,402+0|fehDotless_alef-ar.lam=0+489"
     },
     {
       "only": "RaqqSura.ttf",
@@ -29041,7 +29041,7 @@
     {
       "only": "RaqqSura.ttf",
       "input": "رِزقاً",
-      "expectation": "fathatan-ar.alt=3@91,527+0|twodotsverticalabove-ar=3@123,402+0|fehDotless_alef-ar=3+560|dotabove-ar.reh=2@76,150+0|reh-ar=2@-70,0+383|kasra-ar=0@261,-162+0|reh-ar=0+453"
+      "expectation": "fathatan-ar.alt=3@20,527+0|twodotsverticalabove-ar=3@62,402+0|fehDotless_alef-ar=3+489|dotabove-ar.reh=2@76,150+0|reh-ar=2@-70,0+383|kasra-ar=0@261,-162+0|reh-ar=0+453"
     },
     {
       "only": "RaqqSura.ttf",

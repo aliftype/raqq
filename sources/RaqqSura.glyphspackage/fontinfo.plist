@@ -690,8 +690,9 @@ lookup rlig_4 {
 } rlig_4;
 
 lookup alef_lam {
-	sub alef-ar			by alef-ar.lam;
-	sub alef-ar.fina	by alef-ar.fina.lam;
+	sub alef-ar				by alef-ar.lam;
+	sub alef-ar.fina		by alef-ar.fina.lam;
+	sub fehDotless_alef-ar	by fehDotless_alef-ar.lam;
 } alef_lam;
 
 lookup rlig_5 {
