@@ -704,7 +704,7 @@ lookup rlig_5 {
 		 lam_alefMaksura-ar.fina.short]
 	;
 	sub [alef-ar alef-ar.fina fehDotless_alef-ar]' lookup alef_lam
-		[lam-ar lam-ar.init]' lookup short_lam
+		[lam-ar lam-ar.init lam_lam_heh-ar]' lookup short_lam
 	;
 } rlig_5;
 ";
