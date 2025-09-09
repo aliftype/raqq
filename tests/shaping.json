@@ -28071,7 +28071,7 @@
     {
       "only": "RaqqSura.ttf",
       "input": "الله",
-      "expectation": "lam_lam_heh-ar=1+573|alef-ar=0+642"
+      "expectation": "lam_lam_heh-ar=1+536|alef-ar.lam=0+642"
     },
     {
       "only": "RaqqSura.ttf",
