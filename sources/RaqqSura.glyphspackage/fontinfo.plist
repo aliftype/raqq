@@ -848,6 +848,14 @@ lookup rclt_connection_sura {
 		[alef-ar.fina alef-ar.fina.lam
 		 behDotless-ar.medi.round lam-ar.medi.round]' lookup before_beh
 	;
+
+	ignore
+	sub [kaf-ar.init kaf-ar.medi]'
+		 kashida-ar
+	;
+	sub	[kaf-ar.init kaf-ar.medi]'
+	by	[kaf-ar.init.alt kaf-ar.medi.alt]
+	;
 } rclt_connection_sura;
 
 lookup rclt_connection {

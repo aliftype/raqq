@@ -21467,7 +21467,7 @@
     {
       "only": "RaqqSura.ttf",
       "input": "كي",
-      "expectation": "twodotsverticalbelow-ar=1@259,-523+0|alefMaksura-ar.fina.salt=1+282|kaf-ar.init=0@-36,0+729",
+      "expectation": "twodotsverticalbelow-ar=1@259,-523+0|alefMaksura-ar.fina.salt=1+282|kaf-ar.init.alt=0@-36,0+729",
       "features": {
         "salt": 1
       }
@@ -21587,7 +21587,7 @@
     {
       "only": "RaqqSura.ttf",
       "input": "كسي",
-      "expectation": "twodotsverticalbelow-ar=1@339,-337+0|seen_alefMaksura-ar.fina=1+343|kaf-ar.init=0@-5,0+760",
+      "expectation": "twodotsverticalbelow-ar=1@339,-337+0|seen_alefMaksura-ar.fina=1+343|kaf-ar.init.alt=0@-5,0+760",
       "features": {
         "salt": 1
       }
@@ -21715,7 +21715,7 @@
     {
       "only": "RaqqSura.ttf",
       "input": "بكسي",
-      "expectation": "twodotsverticalbelow-ar=2@339,-337+0|seen_alefMaksura-ar.fina=2+343|kaf-ar.medi=1@-5,0+753|dotbelow-ar=0@72,-46+0|behDotless-ar.init=0+100",
+      "expectation": "twodotsverticalbelow-ar=2@339,-337+0|seen_alefMaksura-ar.fina=2+343|kaf-ar.medi.alt=1@-5,0+753|dotbelow-ar=0@72,-46+0|behDotless-ar.init=0+100",
       "features": {
         "salt": 1
       }
@@ -21923,7 +21923,7 @@
     {
       "only": "RaqqSura.ttf",
       "input": "كي",
-      "expectation": "twodotsverticalbelow-ar=1@449,-139+0|yehbarree-ar.fina.baseline=1+297|kaf-ar.init=0@-21,110+744",
+      "expectation": "twodotsverticalbelow-ar=1@449,-139+0|yehbarree-ar.fina.baseline=1+297|kaf-ar.init.alt=0@-21,110+744",
       "features": {
         "salt": 2
       }
@@ -25691,17 +25691,17 @@
     {
       "only": "RaqqSura.ttf",
       "input": "ك ك‍ ‍ك‍ ‍ك",
-      "expectation": "kaf-ar.fina=10+889|space=8+0|space.mark=8+0|space=6+0|kaf-ar.medi=6@-10,0+748|space=4+0|space.mark=4+0|space=2+0|kaf-ar.init=2@-10,0+755|space.mark=1+0|kaf-ar=0+896"
+      "expectation": "kaf-ar.fina=10+889|space=8+0|space.mark=8+0|space=6+0|kaf-ar.medi.alt=6@-10,0+748|space=4+0|space.mark=4+0|space=2+0|kaf-ar.init.alt=2@-10,0+755|space.mark=1+0|kaf-ar=0+896"
     },
     {
       "only": "RaqqSura.ttf",
       "input": "ک ک‍ ‍ک‍ ‍ک",
-      "expectation": "kaf-ar.fina=10+889|space=8+0|space.mark=8+0|space=6+0|kaf-ar.medi=6@-10,0+748|space=4+0|space.mark=4+0|space=2+0|kaf-ar.init=2@-10,0+755|space.mark=1+0|kaf-ar=0+896"
+      "expectation": "kaf-ar.fina=10+889|space=8+0|space.mark=8+0|space=6+0|kaf-ar.medi.alt=6@-10,0+748|space=4+0|space.mark=4+0|space=2+0|kaf-ar.init.alt=2@-10,0+755|space.mark=1+0|kaf-ar=0+896"
     },
     {
       "only": "RaqqSura.ttf",
       "input": "گ گ‍ ‍گ‍ ‍گ",
-      "expectation": "gafsarkashabove-ar=10@112,691+0|kaf-ar.fina=10+889|space=8+0|space.mark=8+0|space=6+0|gafsarkashabove-ar=6@37,256+0|kaf-ar.medi=6@-10,0+748|space=4+0|space.mark=4+0|space=2+0|gafsarkashabove-ar=2@37,256+0|kaf-ar.init=2@-10,0+755|space.mark=1+0|gafsarkashabove-ar=0@112,682+0|kaf-ar=0+896"
+      "expectation": "gafsarkashabove-ar=10@112,691+0|kaf-ar.fina=10+889|space=8+0|space.mark=8+0|space=6+0|gafsarkashabove-ar=6@37,256+0|kaf-ar.medi.alt=6@-10,0+748|space=4+0|space.mark=4+0|space=2+0|gafsarkashabove-ar=2@37,256+0|kaf-ar.init.alt=2@-10,0+755|space.mark=1+0|gafsarkashabove-ar=0@112,682+0|kaf-ar=0+896"
     },
     {
       "only": "RaqqSura.ttf",
@@ -26416,32 +26416,32 @@
     {
       "only": "RaqqSura.ttf",
       "input": "كا",
-      "expectation": "alef-ar.fina=1+90|kaf-ar.init=0@-5,0+760"
+      "expectation": "alef-ar.fina=1+90|kaf-ar.init.alt=0@-5,0+760"
     },
     {
       "only": "RaqqSura.ttf",
       "input": "كد",
-      "expectation": "dal-ar.fina=1+875|kaf-ar.init=0@-10,0+755"
+      "expectation": "dal-ar.fina=1+875|kaf-ar.init.alt=0@-10,0+755"
     },
     {
       "only": "RaqqSura.ttf",
       "input": "كر",
-      "expectation": "reh-ar.fina=1+387|kaf-ar.init=0@-5,0+760"
+      "expectation": "reh-ar.fina=1+387|kaf-ar.init.alt=0@-5,0+760"
     },
     {
       "only": "RaqqSura.ttf",
       "input": "كم",
-      "expectation": "meem-ar.fina=1+562|kaf-ar.init=0@-12,0+753"
+      "expectation": "meem-ar.fina=1+562|kaf-ar.init.alt=0@-12,0+753"
     },
     {
       "only": "RaqqSura.ttf",
       "input": "كن",
-      "expectation": "dotabove-ar=1@-3,90+0|noonghunna-ar.fina=1+240|kaf-ar.init=0@-30,0+735"
+      "expectation": "dotabove-ar=1@-3,90+0|noonghunna-ar.fina=1+240|kaf-ar.init.alt=0@-30,0+735"
     },
     {
       "only": "RaqqSura.ttf",
       "input": "كي",
-      "expectation": "twodotsverticalbelow-ar=1@339,-334+0|alefMaksura-ar.fina=1+282|kaf-ar.init=0@-36,0+729"
+      "expectation": "twodotsverticalbelow-ar=1@339,-334+0|alefMaksura-ar.fina=1+282|kaf-ar.init.alt=0@-36,0+729"
     },
     {
       "only": "RaqqSura.ttf",
@@ -26456,7 +26456,7 @@
     {
       "only": "RaqqSura.ttf",
       "input": "كے",
-      "expectation": "yehbarree-ar.fina.baseline=1+297|kaf-ar.init=0@-21,110+744"
+      "expectation": "yehbarree-ar.fina.baseline=1+297|kaf-ar.init.alt=0@-21,110+744"
     },
     {
       "only": "RaqqSura.ttf",
@@ -26746,7 +26746,7 @@
     {
       "only": "RaqqSura.ttf",
       "input": "بكم",
-      "expectation": "meem-ar.fina=2+562|kaf-ar.medi=1@-12,0+746|dotbelow-ar=0@72,-46+0|behDotless-ar.init=0+100"
+      "expectation": "meem-ar.fina=2+562|kaf-ar.medi.alt=1@-12,0+746|dotbelow-ar=0@72,-46+0|behDotless-ar.init=0+100"
     },
     {
       "only": "RaqqSura.ttf",
@@ -26951,7 +26951,7 @@
     {
       "only": "RaqqSura.ttf",
       "input": "حكا",
-      "expectation": "alef-ar.fina=2+90|kaf-ar.medi=1@-5,0+753|hah-ar.init=0+703"
+      "expectation": "alef-ar.fina=2+90|kaf-ar.medi.alt=1@-5,0+753|hah-ar.init=0+703"
     },
     {
       "only": "RaqqSura.ttf",
@@ -27051,7 +27051,7 @@
     {
       "only": "RaqqSura.ttf",
       "input": "سكا",
-      "expectation": "alef-ar.fina=2+90|kaf-ar.medi=1@-5,0+753|seen-ar.init=0@-15,0+330"
+      "expectation": "alef-ar.fina=2+90|kaf-ar.medi.alt=1@-5,0+753|seen-ar.init=0@-15,0+330"
     },
     {
       "only": "RaqqSura.ttf",
@@ -27201,7 +27201,7 @@
     {
       "only": "RaqqSura.ttf",
       "input": "عكا",
-      "expectation": "alef-ar.fina=2+90|kaf-ar.medi=1@-5,0+753|ain-ar.init=0+680"
+      "expectation": "alef-ar.fina=2+90|kaf-ar.medi.alt=1@-5,0+753|ain-ar.init=0+680"
     },
     {
       "only": "RaqqSura.ttf",
@@ -27341,7 +27341,7 @@
     {
       "only": "RaqqSura.ttf",
       "input": "فكا",
-      "expectation": "alef-ar.fina=2+90|kaf-ar.medi=1@-5,0+753|dotabove-ar=0@-61,373+0|fehDotless-ar.init=0+334"
+      "expectation": "alef-ar.fina=2+90|kaf-ar.medi.alt=1@-5,0+753|dotabove-ar=0@-61,373+0|fehDotless-ar.init=0+334"
     },
     {
       "only": "RaqqSura.ttf",
@@ -27401,7 +27401,7 @@
     {
       "only": "RaqqSura.ttf",
       "input": "كسي",
-      "expectation": "twodotsverticalbelow-ar=1@339,-337+0|seen_alefMaksura-ar.fina=1+343|kaf-ar.init=0@-5,0+760"
+      "expectation": "twodotsverticalbelow-ar=1@339,-337+0|seen_alefMaksura-ar.fina=1+343|kaf-ar.init.alt=0@-5,0+760"
     },
     {
       "only": "RaqqSura.ttf",
@@ -27411,22 +27411,22 @@
     {
       "only": "RaqqSura.ttf",
       "input": "كلا",
-      "expectation": "lam_alef-ar.fina=1+522|kaf-ar.init=0@-40,0+725"
+      "expectation": "lam_alef-ar.fina=1+522|kaf-ar.init.alt=0@-40,0+725"
     },
     {
       "only": "RaqqSura.ttf",
       "input": "كما",
-      "expectation": "alef-ar.fina=2+90|meem-ar.medi=1@-28,0+352|kaf-ar.init=0@-5,0+760"
+      "expectation": "alef-ar.fina=2+90|meem-ar.medi=1@-28,0+352|kaf-ar.init.alt=0@-5,0+760"
     },
     {
       "only": "RaqqSura.ttf",
       "input": "كمم",
-      "expectation": "meem-ar.fina.round=2+554|meem-ar.medi.round2=1+398|kaf-ar.init=0@-8,0+757"
+      "expectation": "meem-ar.fina.round=2+554|meem-ar.medi.round2=1+398|kaf-ar.init.alt=0@-8,0+757"
     },
     {
       "only": "RaqqSura.ttf",
       "input": "كًا",
-      "expectation": "alef-ar.fina=2+90|fathatan-ar=0@44,279+0|kaf-ar.init=0@-5,0+760"
+      "expectation": "alef-ar.fina=2+90|fathatan-ar=0@44,279+0|kaf-ar.init.alt=0@-5,0+760"
     },
     {
       "only": "RaqqSura.ttf",
@@ -27586,7 +27586,7 @@
     {
       "only": "RaqqSura.ttf",
       "input": "لكے",
-      "expectation": "yehbarree-ar.fina=2+297|kaf-ar.medi=1@-21,0+737|lam-ar.init=0@-23,0+100"
+      "expectation": "yehbarree-ar.fina=2+297|kaf-ar.medi.alt=1@-21,0+737|lam-ar.init=0@-23,0+100"
     },
     {
       "only": "RaqqSura.ttf",
@@ -28166,7 +28166,7 @@
     {
       "only": "RaqqSura.ttf",
       "input": "بكسي",
-      "expectation": "twodotsverticalbelow-ar=2@339,-337+0|seen_alefMaksura-ar.fina=2+343|kaf-ar.medi=1@-5,0+753|dotbelow-ar=0@72,-46+0|behDotless-ar.init=0+100"
+      "expectation": "twodotsverticalbelow-ar=2@339,-337+0|seen_alefMaksura-ar.fina=2+343|kaf-ar.medi.alt=1@-5,0+753|dotbelow-ar=0@72,-46+0|behDotless-ar.init=0+100"
     },
     {
       "only": "RaqqSura.ttf",
@@ -28176,7 +28176,7 @@
     {
       "only": "RaqqSura.ttf",
       "input": "بكمم",
-      "expectation": "meem-ar.fina.round=3+554|meem-ar.medi.round2=2+398|kaf-ar.medi=1@-8,0+750|dotbelow-ar=0@72,-46+0|behDotless-ar.init=0+100"
+      "expectation": "meem-ar.fina.round=3+554|meem-ar.medi.round2=2+398|kaf-ar.medi.alt=1@-8,0+750|dotbelow-ar=0@72,-46+0|behDotless-ar.init=0+100"
     },
     {
       "only": "RaqqSura.ttf",
@@ -28396,7 +28396,7 @@
     {
       "only": "RaqqSura.ttf",
       "input": "كلمة",
-      "expectation": "twodotsverticalabove-ar=3@186,388+0|heh-ar.fina=3+336|meem-ar.medi.round=2+398|lam-ar.medi.round=1@-11,0+99|kaf-ar.init=0@-5,0+760"
+      "expectation": "twodotsverticalabove-ar=3@186,388+0|heh-ar.fina=3+336|meem-ar.medi.round=2+398|lam-ar.medi.round=1@-11,0+99|kaf-ar.init.alt=0@-5,0+760"
     },
     {
       "only": "RaqqSura.ttf",
@@ -28451,7 +28451,7 @@
     {
       "only": "RaqqSura.ttf",
       "input": "لسكا",
-      "expectation": "alef-ar.fina=3+90|kaf-ar.medi=2@-5,0+753|seen-ar.medi=1@-15,0+330|lam-ar.init=0+123"
+      "expectation": "alef-ar.fina=3+90|kaf-ar.medi.alt=2@-5,0+753|seen-ar.medi=1@-15,0+330|lam-ar.init=0+123"
     },
     {
       "only": "RaqqSura.ttf",
@@ -28566,7 +28566,7 @@
     {
       "only": "RaqqSura.ttf",
       "input": "نسكا",
-      "expectation": "alef-ar.fina=3+90|kaf-ar.medi=2@-5,0+753|seen-ar.medi=1@-15,0+330|dotabove-ar.beh=0@-15,380+0|behDotless-ar.init.high=0+100"
+      "expectation": "alef-ar.fina=3+90|kaf-ar.medi.alt=2@-5,0+753|seen-ar.medi=1@-15,0+330|dotabove-ar.beh=0@-15,380+0|behDotless-ar.init.high=0+100"
     },
     {
       "only": "RaqqSura.ttf",
@@ -28636,7 +28636,7 @@
     {
       "only": "RaqqSura.ttf",
       "input": "نعكا",
-      "expectation": "alef-ar.fina=3+90|kaf-ar.medi=2@-5,0+753|ain-ar.medi=1+202|dotabove-ar.beh=0@-15,380+0|behDotless-ar.init.high=0+100"
+      "expectation": "alef-ar.fina=3+90|kaf-ar.medi.alt=2@-5,0+753|ain-ar.medi=1+202|dotabove-ar.beh=0@-15,380+0|behDotless-ar.init.high=0+100"
     },
     {
       "only": "RaqqSura.ttf",
@@ -28711,7 +28711,7 @@
     {
       "only": "RaqqSura.ttf",
       "input": "نفكا",
-      "expectation": "alef-ar.fina=3+90|kaf-ar.medi=2@-5,0+753|dotabove-ar=1@1,329+0|fehDotless-ar.medi=1+377|dotabove-ar=0@-20,297+0|behDotless-ar.init=0+100"
+      "expectation": "alef-ar.fina=3+90|kaf-ar.medi.alt=2@-5,0+753|dotabove-ar=1@1,329+0|fehDotless-ar.medi=1+377|dotabove-ar=0@-20,297+0|behDotless-ar.init=0+100"
     },
     {
       "only": "RaqqSura.ttf",
@@ -28861,7 +28861,7 @@
     {
       "only": "RaqqSura.ttf",
       "input": "الكتب",
-      "expectation": "dotbelow-ar=4@834,-111+0|behDotless-ar.fina=4+984|twodotsverticalabove-ar.beh=3@-45,390+0|behDotless-ar.medi.high=3+100|kaf-ar.medi=2@-5,0+753|lam-ar.init.short=1@-23,0+77|alef-ar.lam=0+642"
+      "expectation": "dotbelow-ar=4@834,-111+0|behDotless-ar.fina=4+984|twodotsverticalabove-ar.beh=3@-45,390+0|behDotless-ar.medi.high=3+100|kaf-ar.medi.alt=2@-5,0+753|lam-ar.init.short=1@-23,0+77|alef-ar.lam=0+642"
     },
     {
       "only": "RaqqSura.ttf",
@@ -29111,7 +29111,7 @@
     {
       "only": "RaqqSura.ttf",
       "input": "كَلِمةٍ",
-      "expectation": "kasratan-ar=5@94,-127+0|twodotsverticalabove-ar=5@186,388+0|heh-ar.fina=5+336|meem-ar.medi.round=4+398|kasra-ar=2@-26,-131+0|lam-ar.medi.round=2@-11,0+99|fatha-ar=0@111,279+0|kaf-ar.init=0@-5,0+760"
+      "expectation": "kasratan-ar=5@94,-127+0|twodotsverticalabove-ar=5@186,388+0|heh-ar.fina=5+336|meem-ar.medi.round=4+398|kasra-ar=2@-26,-131+0|lam-ar.medi.round=2@-11,0+99|fatha-ar=0@111,279+0|kaf-ar.init.alt=0@-5,0+760"
     },
     {
       "only": "RaqqSura.ttf",
