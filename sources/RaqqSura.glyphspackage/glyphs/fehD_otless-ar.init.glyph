@@ -29,6 +29,9 @@ name = top;
 pos = (18,411);
 }
 );
+attr = {
+colorPalette = 4;
+};
 backgroundImage = {
 alpha = 80;
 imagePath = "images/MS-ADD-01116-000-00012.jpg";
@@ -50,18 +53,122 @@ nodes = (
 (-47,351,o),
 (-47,260,cs),
 (-47,216,o),
-(-24,178,o),
-(10,155,cs),
-(66,117,o),
-(165,128,o),
-(213,137,cs),
-(224,139,o),
-(225,128,o),
-(214,121,cs),
-(195,109,o),
+(-24,155,o),
+(10,132,cs),
+(66,94,o),
+(165,105,o),
+(213,114,c),
+(213,121,l),
+(154,109,o),
 (69,109,o),
 (-20,110,c),
 (-20,0,l)
+);
+}
+);
+width = 334;
+},
+{
+associatedMasterId = m01;
+backgroundImage = {
+alpha = 80;
+imagePath = "images/MS-ADD-01116-000-00012.jpg";
+pos = (-1784,-3557);
+scale = (5,5);
+};
+layerId = "E3FD7D17-7914-4D01-AFBC-AEEBA73638D1";
+name = "16 Sep 25 at 00:18";
+shapes = (
+{
+closed = 1;
+nodes = (
+(-32,-20,o),
+(334,-14,o),
+(334,115,cs),
+(334,287,o),
+(251,462,o),
+(136,462,cs),
+(29,462,o),
+(-47,351,o),
+(-47,260,cs),
+(-47,216,o),
+(-24,155,o),
+(10,132,cs),
+(66,94,o),
+(165,106,o),
+(213,115,c),
+(213,127,l),
+(165,121,o),
+(41,94,o),
+(-34,170,c),
+(-92,6,l)
+);
+}
+);
+width = 334;
+},
+{
+anchors = (
+{
+name = bottom;
+pos = (295,43);
+},
+{
+name = damma;
+pos = (-37,172);
+},
+{
+name = exit;
+},
+{
+name = fatha;
+pos = (133,513);
+},
+{
+name = kasra;
+pos = (212,-44);
+},
+{
+name = top;
+pos = (18,411);
+}
+);
+associatedMasterId = m01;
+attr = {
+colorPalette = 1;
+};
+backgroundImage = {
+alpha = 80;
+imagePath = "images/MS-ADD-01116-000-00012.jpg";
+pos = (-1784,-3557);
+scale = (5,5);
+};
+layerId = "263086C7-F2CB-42DA-84F6-54800BF42854";
+name = "16 Sep 25 at 00:19";
+shapes = (
+{
+closed = 1;
+nodes = (
+(122,8,o),
+(324,5,o),
+(324,115,cs),
+(324,283,o),
+(243,452,o),
+(136,452,cs),
+(36,452,o),
+(-37,347,o),
+(-37,260,cs),
+(-37,218,o),
+(-15,161,o),
+(16,140,cs),
+(66,106,o),
+(154,114,o),
+(203,122,c),
+(203,109,l),
+(152,99,o),
+(64,99,o),
+(-30,100,c),
+(-30,10,l)
 );
 },
 {
@@ -86,7 +193,7 @@ width = 334;
 }
 );
 metricLeft = "=-20@0";
-metricRight = "=0";
+metricRight = "=fehDotless-ar.init";
 script = arabic;
 sortName = arL0042;
 sortNameKeep = arL0042;
