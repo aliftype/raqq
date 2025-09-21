@@ -4,11 +4,11 @@
 #
 #    pip-compile
 #
-aliftools[shaping]==0.1.3
+aliftools[shaping]==0.1.4
     # via -r requirements.in
 attrs==25.3.0
     # via ufolib2
-fonttools[ufo,unicode]==4.59.2
+fonttools[ufo,unicode]==4.60.0
     # via
     #   -r requirements.in
     #   glyphslib
@@ -23,7 +23,7 @@ skia-pathops==0.8.0.post2
     # via -r requirements.in
 ufolib2==0.18.1
     # via glyphslib
-uharfbuzz==0.51.4
+uharfbuzz==0.51.5
     # via
     #   -r requirements.in
     #   aliftools
