@@ -1,5 +1,5 @@
 {
-.appVersion = "3414";
+.appVersion = "3428";
 .formatVersion = 3;
 axes = (
 {
@@ -1798,7 +1798,7 @@ value = "خالد حسني";
 },
 {
 key = designerURL;
-value = "https://aliftype.com";
+value = "https://khaledhosny.com";
 },
 {
 key = licenses;
