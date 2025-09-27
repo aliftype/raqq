@@ -1,5 +1,5 @@
 {
-.appVersion = "3428";
+.appVersion = "3430";
 .formatVersion = 3;
 axes = (
 {
@@ -577,11 +577,6 @@ lookup rlig_teeth_3 {
 		[heh-ar.medi heh-ar.fina]
 	;
 
-	sub	 behDotless-ar.medi
-		 behDotless-ar.medi'
-	by	behDotless-ar.medi.semi
-	;
-
 	sub [behDotless-ar.init behDotless-ar.medi]' lookup med_beh
 		[seen-ar.medi seen-ar.fina]' lookup low_seen
 	;
@@ -783,7 +778,6 @@ lookup rlig_beh_dots {
 	lookupflag UseMarkFilteringSet @beh1_dots;
 
 	sub [behDotless-ar.medi
-		 behDotless-ar.medi.semi
 		 behDotless-ar.medi.med
 		 behDotless-ar.medi.high
 		 behDotless-ar.medi.round
