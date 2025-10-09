@@ -1,5 +1,5 @@
 {
-.appVersion = "3428";
+.appVersion = "3434";
 .formatVersion = 3;
 axes = (
 {
@@ -1298,8 +1298,9 @@ pos = -500;
 name = Regular;
 userData = {
 GSCornerRadius = -15;
-GSOffsetHorizontal = -10;
+GSOffsetHorizontal = -5;
 GSOffsetKeepCompatible = 1;
+GSOffsetMakeStroke = 1;
 GSOffsetPosition = 1;
 GSOffsetProportional = 1;
 GSOffsetVertical = 10;
