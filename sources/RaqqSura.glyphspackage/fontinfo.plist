@@ -1028,6 +1028,8 @@ code = "# Automatic Code
 @hah.init	= [$[name MATCHES \"hah-ar.init.*\"]];
 @hah.medi	= [$[name MATCHES \"hah-ar.medi.*\"]];
 @seen.medi	= [$[name MATCHES \"seen-ar.medi.*\"]];
+@yeh.fina	= [alefMaksura-ar.fina alefMaksura-ar.fina.salt];
+@hah.fina	= [hah-ar.fina];
 
 include(RaqqSura-overhang.fea)
 ";
