@@ -19,7 +19,7 @@ import itertools
 import uharfbuzz as hb
 
 THRESHOLD = 50
-OVERHANGERS = ["ح", "ح\u200D", "ے"]
+OVERHANGERS = ["ح", "ح\u200d", "ے"]
 
 # To decrease lookup size, letters with similar glyph advances are grouped
 # together, so ل is grouped with ٮ, and ط and ك are grouped with ص.
@@ -45,7 +45,11 @@ def shape(font, text, direction="rtl", script="arab", features=None):
 
     glyphs = []
     advance = 0
+    face = font.face
     for info, pos in zip(infos, positions):
+        if face.get_layout_glyph_class(info.codepoint) == hb.OTLayoutGlyphClass.MARK:
+            assert pos.x_advance == 0
+            continue
         glyph = font.glyph_to_string(info.codepoint)
         if glyph.startswith("behDotless-ar.init"):
             glyph = "@beh.init"
@@ -61,6 +65,10 @@ def shape(font, text, direction="rtl", script="arab", features=None):
             glyph = "@hah.medi"
         elif glyph.startswith("seen-ar.medi"):
             glyph = "@seen.medi"
+        elif glyph in ["alefMaksura-ar.fina", "alefMaksura-ar.fina.salt"]:
+            glyph = "@yeh.fina"
+        elif glyph in ["hah-ar.fina", "hah-ar.fina.salt"]:
+            glyph = "@hah.fina"
         glyphs.append(glyph)
         advance += pos.x_advance
 
@@ -92,6 +100,12 @@ def open_font(path):
 def main(args):
     font = open_font(args.font)
 
+    face = font.face
+
+    script_tags = face.get_table_script_tags("GSUB")
+    assert "arab" in script_tags
+    feature_tags = face.get_language_feature_tags("GSUB", script_tags.index("arab"))
+
     rules = []
     for overhanger in OVERHANGERS:
         i = 0
@@ -112,17 +126,25 @@ def main(args):
                 if text.count("ح") > 1:
                     continue
 
-                glyphs, adj, adj2 = shape(font, text, features={"kern": False})
-                if adj < THRESHOLD:
-                    continue
-                found = True
+                for fea in [None, "hist", "salt"]:
+                    features = {"kern": False}
+                    if fea:
+                        if fea not in feature_tags:
+                            continue
+                        features[fea] = True
+                    glyphs, adj, adj2 = shape(font, text, features=features)
+                    if adj < THRESHOLD:
+                        continue
+                    found = True
 
-                if adj2 is not None:
-                    adj = adj2
+                    if adj2 is not None:
+                        adj = adj2
 
-                match = glyphs[0]
-                lookahead = "' ".join(glyphs[1:])
-                rules.append(f"\tpos {match}' {adj} {lookahead}';")
+                    match = glyphs[0]
+                    lookahead = "' ".join(glyphs[1:])
+                    rule = f"\tpos {match}' {adj} {lookahead}';"
+                    if rule not in rules:
+                        rules.append(rule)
             if not found:
                 break
             i += 1
