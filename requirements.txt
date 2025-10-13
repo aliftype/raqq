@@ -6,24 +6,24 @@
 #
 aliftools[shaping]==0.1.4
     # via -r requirements.in
-attrs==25.3.0
+attrs==25.4.0
     # via ufolib2
-fonttools[ufo,unicode]==4.60.0
+fonttools[ufo,unicode]==4.60.1
     # via
     #   -r requirements.in
     #   glyphslib
     #   ufolib2
-glyphslib==6.11.6
+glyphslib==6.12.0
     # via -r requirements.in
-openstep-plist==0.5.0
+openstep-plist==0.5.1
     # via glyphslib
-pyyaml==6.0.2
+pyyaml==6.0.3
     # via aliftools
 skia-pathops==0.8.0.post2
     # via -r requirements.in
 ufolib2==0.18.1
     # via glyphslib
-uharfbuzz==0.51.5
+uharfbuzz==0.51.6
     # via
     #   -r requirements.in
     #   aliftools
