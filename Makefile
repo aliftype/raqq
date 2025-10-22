@@ -63,9 +63,9 @@ ${TESTDIR}/shaping.json: ${TESTDIR}/shaping.yaml ${FONTS}
 	$(info   GEN    ${@F})
 	${PYTHON} -m alifTools.shaping.update $< $@ ${FONTS}
 
-${TESTDIR}/%-shaping.html: ${FONTDIR}/%.ttf ${TESTDIR}/shaping-config.yml
+${TESTDIR}/%-shaping.html: ${FONTDIR}/%.ttf ${TESTDIR}/shaping-config.yaml
 	$(info   SHAPE  ${<F})
-	${PYTHON} -m alifTools.shaping.check $< ${TESTDIR}/shaping-config.yml $@
+	${PYTHON} -m alifTools.shaping.check $< ${TESTDIR}/shaping-config.yaml $@
 
 dist: ${FONTS}
 	$(info   DIST   ${DIST}.zip)
