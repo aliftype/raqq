@@ -1,0 +1,11 @@
+{
+category = Mark;
+glyphname = dummy.mark;
+layers = (
+{
+layerId = m01;
+width = 400;
+}
+);
+subCategory = Nonspacing;
+}
