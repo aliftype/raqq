@@ -39,5 +39,5 @@ script = arabic;
 sortName = arM1075;
 sortNameKeep = arM1075;
 subCategory = Nonspacing;
-unicode = 1611;
+unicode = (1611,2288);
 }
