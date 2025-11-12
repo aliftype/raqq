@@ -1,4 +1,4 @@
-# Copyright (c) 2020-2024 Khaled Hosny
+# Copyright (c) 2020-2025 Khaled Hosny
 #
 # This program is free software: you can redistribute it and/or modify
 # it under the terms of the GNU Affero General Public License as
@@ -57,7 +57,15 @@ update-fea: ${FONTS}
 
 ${FONTDIR}/%.ttf: ${SOURCEDIR}/%.glyphspackage ${SOURCEDIR}/%-overhang.fea
 	$(info   BUILD  ${@F})
-	${PYTHON} ${SCRIPTDIR}/build.py $< ${VERSION} $@
+	export SOURCE_DATE_EPOCH=$(shell stat -c "%Y" $<)
+	${PYTHON} -m fontmake $< \
+			      --output-path=$@ \
+			      --output=variable \
+			      --verbose=WARNING \
+			      --flatten-components \
+			      --filter ... \
+			      --filter "alifTools.filters::ClearPlaceholdersFilter(outlines=True)" \
+			      --filter "alifTools.filters::FontVersionFilter(fontVersion=${VERSION})"
 
 ${TESTDIR}/shaping.json: ${TESTDIR}/shaping.yaml ${FONTS}
 	$(info   GEN    ${@F})
