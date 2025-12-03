@@ -560,7 +560,8 @@ def buildBase(font, instance, vf, args):
     # Compile to get font bbox
     fb.font["head"].compile(fb.font)
 
-    codePages = [CODEPAGE_RANGES[int(v)] for v in font.customParameters["codePageRanges"]]
+    codePageRanges = font.customParameters["codePageRanges"]
+    codePages = [CODEPAGE_RANGES[int(v)] for v in codePageRanges]
     fb.setupOS2(
         version=4,
         sTypoAscender=master.customParameters["typoAscender"],
