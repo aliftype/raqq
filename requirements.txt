@@ -8,18 +8,18 @@ aliftools[shaping]==0.1.6
     # via -r requirements.in
 attrs==25.4.0
     # via ufolib2
-fonttools[ufo,unicode]==4.60.1
+fonttools[ufo,unicode]==4.61.0
     # via
     #   -r requirements.in
     #   glyphslib
     #   ufolib2
-glyphslib==6.12.1
+glyphslib==6.12.5
     # via -r requirements.in
 openstep-plist==0.5.1
     # via glyphslib
 pyyaml==6.0.3
     # via aliftools
-skia-pathops==0.8.0.post2
+skia-pathops==0.9.0
     # via -r requirements.in
 ufolib2==0.18.1
     # via glyphslib
@@ -27,3 +27,5 @@ uharfbuzz==0.52.0
     # via
     #   -r requirements.in
     #   aliftools
+unicodedata2==17.0.0
+    # via fonttools

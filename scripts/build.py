@@ -112,6 +112,13 @@ def GSLayer__repr__(self: GSLayer):
 GSLayer.__repr__ = GSLayer__repr__
 
 
+def GSLayer__len__(self: GSLayer):
+    return len(self.shapes)
+
+
+GSLayer.__len__ = GSLayer__len__
+
+
 def makeKern(font, master):
     kerning = font.kerningRTL.get(master.id, [])
     pairs = ""
