@@ -43,19 +43,7 @@ name = dotsbelow;
 );
 customParameters = (
 {
-name = "Write lastChange";
-value = 0;
-},
-{
 name = "Don't use Production Names";
-value = 1;
-},
-{
-name = "Write DisplayStrings";
-value = 0;
-},
-{
-name = "Use Line Breaks";
 value = 1;
 },
 {
@@ -120,6 +108,18 @@ SPAC = {
 125 = 125;
 };
 };
+},
+{
+name = "Write lastChange";
+value = 0;
+},
+{
+name = "Write DisplayStrings";
+value = 0;
+},
+{
+name = "Use Line Breaks";
+value = 1;
 }
 );
 date = "2021-04-25 20:10:22 +0000";
