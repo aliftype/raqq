@@ -72,19 +72,6 @@ value = (
 );
 },
 {
-name = unicodeRanges;
-value = (
-13
-);
-},
-{
-name = codePageRanges;
-value = (
-"1256",
-"864"
-);
-},
-{
 name = fsType;
 value = (
 );

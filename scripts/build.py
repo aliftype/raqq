@@ -29,48 +29,6 @@ from fontTools.varLib import build_many as merge
 from glyphsLib import GSAnchor, GSComponent, GSFont, GSFontMaster, GSLayer
 from glyphsLib.builder.tokens import TokenExpander
 
-DEFAULT_TRANSFORM = [1, 0, 0, 1, 0, 0]
-
-# https://www.microsoft.com/typography/otspec/os2.htm#cpr
-CODEPAGE_RANGES = {
-    1252: 0,
-    1250: 1,
-    1251: 2,
-    1253: 3,
-    1254: 4,
-    1255: 5,
-    1256: 6,
-    1257: 7,
-    1258: 8,
-    # 9-15: Reserved for Alternate ANSI
-    874: 16,
-    932: 17,
-    936: 18,
-    949: 19,
-    950: 20,
-    1361: 21,
-    # 22-28: Reserved for Alternate ANSI and OEM
-    # 29: Macintosh Character Set (US Roman)
-    # 30: OEM Character Set
-    # 31: Symbol Character Set
-    # 32-47: Reserved for OEM
-    869: 48,
-    866: 49,
-    865: 50,
-    864: 51,
-    863: 52,
-    862: 53,
-    861: 54,
-    860: 55,
-    857: 56,
-    855: 57,
-    852: 58,
-    775: 59,
-    737: 60,
-    708: 61,
-    850: 62,
-    437: 63,
-}
 
 # Monkey patch GSLayer
 
@@ -567,8 +525,6 @@ def buildBase(font, instance, vf, args):
     # Compile to get font bbox
     fb.font["head"].compile(fb.font)
 
-    codePageRanges = font.customParameters["codePageRanges"]
-    codePages = [CODEPAGE_RANGES[int(v)] for v in codePageRanges]
     fb.setupOS2(
         version=4,
         sTypoAscender=master.customParameters["typoAscender"],
@@ -581,9 +537,8 @@ def buildBase(font, instance, vf, args):
         achVendID=font.properties["vendorID"],
         fsType=calcBits(font.customParameters["fsType"], 0, 16),
         fsSelection=calcFsSelection(instance),
-        ulUnicodeRange1=calcBits(font.customParameters["unicodeRanges"], 0, 32),
-        ulCodePageRange1=calcBits(codePages, 0, 32),
     )
+    fb.font["OS/2"].recalcCodePageRanges(fb.font)
 
     vf_names = [n for n in vf["name"].names if n.platformID == 3]
     fb.setupNameTable(names, mac=False)
