@@ -9,21 +9,11 @@ name = _fatha;
 pos = (75,142);
 }
 );
-layerId = m01;
-shapes = (
-{
-ref = "dammatan-ar";
-}
-);
-width = 150;
-},
-{
-associatedMasterId = m01;
 attr = {
 colorPalette = 3;
 };
-layerId = "94F5A0C7-0133-4DD7-A780-4D7DBEF662F0";
-name = "Regular 25 Jun 22, 20:50";
+layerId = m01;
+name = Regular;
 shapes = (
 {
 alignment = 1;

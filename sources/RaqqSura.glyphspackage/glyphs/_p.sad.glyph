@@ -43,6 +43,8 @@ attr = {
 colorPalette = 1;
 };
 layerId = "E72DE158-BDD9-4F75-A03E-C59946FE88FF";
+metricLeft = "=64";
+metricRight = "=-10";
 name = "20 Sep 24 at 22:39";
 shapes = (
 {
@@ -111,6 +113,8 @@ coordinates = (
 );
 };
 layerId = "A5F050DA-BF31-415A-853F-BEC4E30A77E2";
+metricLeft = "=64";
+metricRight = "=-10";
 name = "20 Sep 24 at 22:39";
 shapes = (
 {
@@ -157,6 +161,7 @@ coordinates = (
 );
 };
 layerId = "9D5E2237-7E07-4490-B6B5-C0A0AF83D309";
+metricLeft = "=200";
 name = "20 Sep 24 at 22:39";
 shapes = (
 {
@@ -180,6 +185,8 @@ coordinates = (
 );
 };
 layerId = "70A75821-0DAC-4AC5-840F-3634DBB18664";
+metricLeft = "=229";
+metricRight = "=-10";
 name = "20 Sep 24 at 22:39";
 shapes = (
 {

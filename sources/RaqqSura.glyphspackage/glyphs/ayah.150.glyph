@@ -9,81 +9,6 @@ name = "*origin";
 pos = (1117,0);
 }
 );
-layerId = m01;
-shapes = (
-{
-alignment = -1;
-pos = (521,197);
-ref = _ayah.100;
-scale = (0.56,0.56);
-},
-{
-pos = (427,204);
-ref = _ayah.waw;
-scale = (0.56,0.56);
-},
-{
-alignment = -1;
-pos = (413,126);
-ref = _ayah.050;
-scale = (0.48,0.48);
-},
-{
-alignment = -1;
-pos = (530,26);
-ref = _ayah.noon;
-scale = (0.56,0.56);
-}
-);
-width = 1117;
-},
-{
-anchors = (
-{
-name = "*origin";
-pos = (1117,0);
-}
-);
-associatedMasterId = m01;
-attr = {
-colorPalette = 4;
-};
-layerId = "D542F106-890E-45CF-A3C8-AEA4B940F3D6";
-name = "17 Apr 23 at 00:00";
-shapes = (
-{
-alignment = -1;
-pos = (521,197);
-ref = _ayah.100.1;
-scale = (0.56,0.56);
-},
-{
-pos = (427,204);
-ref = _ayah.waw.1;
-scale = (0.56,0.56);
-},
-{
-alignment = -1;
-pos = (413,126);
-ref = _ayah.050.1;
-scale = (0.48,0.48);
-},
-{
-alignment = -1;
-pos = (530,26);
-ref = _ayah.noon.1;
-scale = (0.56,0.56);
-}
-);
-width = 1117;
-},
-{
-anchors = (
-{
-name = "*origin";
-pos = (1117,0);
-}
-);
 associatedMasterId = m01;
 attr = {
 colorPalette = 1;
@@ -112,6 +37,45 @@ scale = (0.48,0.48);
 alignment = -1;
 pos = (530,26);
 ref = _ayah.noon;
+scale = (0.56,0.56);
+}
+);
+width = 1117;
+},
+{
+anchors = (
+{
+name = "*origin";
+pos = (1117,0);
+}
+);
+attr = {
+colorPalette = 4;
+};
+layerId = m01;
+name = Regular;
+shapes = (
+{
+alignment = -1;
+pos = (521,197);
+ref = _ayah.100.1;
+scale = (0.56,0.56);
+},
+{
+pos = (427,204);
+ref = _ayah.waw.1;
+scale = (0.56,0.56);
+},
+{
+alignment = -1;
+pos = (413,126);
+ref = _ayah.050.1;
+scale = (0.48,0.48);
+},
+{
+alignment = -1;
+pos = (530,26);
+ref = _ayah.noon.1;
 scale = (0.56,0.56);
 }
 );

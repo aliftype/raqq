@@ -9,26 +9,11 @@ name = _kasra;
 pos = (142,75);
 }
 );
-layerId = m01;
-shapes = (
-{
-alignment = -1;
-ref = "fatha-ar";
-},
-{
-pos = (134,0);
-ref = "fatha-ar";
-}
-);
-width = 284;
-},
-{
-associatedMasterId = m01;
 attr = {
 colorPalette = 3;
 };
-layerId = "93F08398-69CF-41D4-8750-0A9275A491D4";
-name = "Regular 25 Jun 22, 20:51";
+layerId = m01;
+name = Regular;
 shapes = (
 {
 alignment = -1;

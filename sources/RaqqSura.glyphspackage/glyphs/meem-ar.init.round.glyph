@@ -4,105 +4,6 @@ glyphname = "meem-ar.init.round";
 kernLeft = meem.alt;
 layers = (
 {
-anchors = (
-{
-name = damma;
-pos = (-21,181);
-},
-{
-name = exit;
-},
-{
-name = fatha;
-pos = (200,411);
-},
-{
-name = kasra;
-pos = (308,-78);
-}
-);
-backgroundImage = {
-alpha = 80;
-imagePath = "images/MS-ADD-01116-000-00008.jpg";
-locked = 1;
-pos = (-3041,-2823);
-scale = (5,5);
-};
-layerId = m01;
-shapes = (
-{
-closed = 1;
-nodes = (
-(352,-33,o),
-(398,-7,o),
-(398,94,cs),
-(398,194,o),
-(330,361,o),
-(205,361,cs),
-(60,361,o),
-(-26,223,o),
-(-7,104,cs),
-(7,26,o),
-(76,-35,o),
-(230,-34,cs)
-);
-},
-{
-closed = 1;
-nodes = (
-(197,148,o),
-(191,154,o),
-(191,161,cs),
-(191,167,o),
-(197,173,o),
-(204,173,cs),
-(210,173,o),
-(216,167,o),
-(216,161,cs),
-(216,154,o),
-(210,148,o),
-(204,148,cs)
-);
-}
-);
-width = 398;
-},
-{
-associatedMasterId = m01;
-attr = {
-colorPalette = 4;
-};
-backgroundImage = {
-alpha = 80;
-imagePath = "images/MS-ADD-01116-000-00008.jpg";
-locked = 1;
-pos = (-3041,-2823);
-scale = (5,5);
-};
-layerId = "9DA92329-F643-4A2F-BAA7-2F315EA666CB";
-name = "30 Oct 24 at 00:54";
-shapes = (
-{
-closed = 1;
-nodes = (
-(352,-33,o),
-(398,-7,o),
-(398,94,cs),
-(398,194,o),
-(330,361,o),
-(205,361,cs),
-(60,361,o),
-(-26,223,o),
-(-7,104,cs),
-(7,26,o),
-(76,-35,o),
-(230,-34,cs)
-);
-}
-);
-width = 398;
-},
-{
 associatedMasterId = m01;
 attr = {
 colorPalette = 1;
@@ -151,6 +52,57 @@ nodes = (
 (216,154,o),
 (210,148,o),
 (204,148,cs)
+);
+}
+);
+width = 398;
+},
+{
+anchors = (
+{
+name = damma;
+pos = (-21,181);
+},
+{
+name = exit;
+},
+{
+name = fatha;
+pos = (200,411);
+},
+{
+name = kasra;
+pos = (308,-78);
+}
+);
+attr = {
+colorPalette = 4;
+};
+backgroundImage = {
+alpha = 80;
+imagePath = "images/MS-ADD-01116-000-00008.jpg";
+locked = 1;
+pos = (-3041,-2823);
+scale = (5,5);
+};
+layerId = m01;
+name = Regular;
+shapes = (
+{
+closed = 1;
+nodes = (
+(352,-33,o),
+(398,-7,o),
+(398,94,cs),
+(398,194,o),
+(330,361,o),
+(205,361,cs),
+(60,361,o),
+(-26,223,o),
+(-7,104,cs),
+(7,26,o),
+(76,-35,o),
+(230,-34,cs)
 );
 }
 );

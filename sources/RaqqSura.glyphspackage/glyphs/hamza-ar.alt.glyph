@@ -13,21 +13,11 @@ name = _hamza;
 pos = (75,75);
 }
 );
-layerId = m01;
-shapes = (
-{
-ref = _dot.circle;
-}
-);
-width = 150;
-},
-{
-associatedMasterId = m01;
 attr = {
 colorPalette = 3;
 };
-layerId = "683DD911-7D27-4050-902D-227E30672A01";
-name = "26 Aug 23 at 14:59";
+layerId = m01;
+name = Regular;
 shapes = (
 {
 alignment = -1;

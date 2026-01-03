@@ -5,116 +5,6 @@ kernLeft = meem.fina;
 kernRight = meem;
 layers = (
 {
-anchors = (
-{
-name = damma;
-pos = (-20,60);
-},
-{
-name = fatha;
-pos = (350,375);
-},
-{
-name = kasra;
-pos = (376,-93);
-}
-);
-backgroundImage = {
-alpha = 80;
-imagePath = "images/MS-ADD-01116-000-00005.jpg";
-locked = 1;
-pos = (-4613,-2812);
-scale = (5,5);
-};
-layerId = m01;
-shapes = (
-{
-closed = 1;
-nodes = (
-(370,-45,ls),
-(436,-45,o),
-(554,-55,o),
-(554,86,cs),
-(554,216,o),
-(473,327,o),
-(368,327,cs),
-(267,327,o),
-(171,234,o),
-(198,84,c),
-(171,86,o),
-(139,92,o),
-(102,108,c),
-(81,57,o),
-(35,36,o),
-(-12,21,c),
-(22,-38,o),
-(126,-42,o),
-(200,-45,cs)
-);
-},
-{
-closed = 1;
-nodes = (
-(380,137,o),
-(374,143,o),
-(374,150,cs),
-(374,156,o),
-(380,162,o),
-(387,162,cs),
-(393,162,o),
-(399,156,o),
-(399,150,cs),
-(399,143,o),
-(393,137,o),
-(387,137,cs)
-);
-}
-);
-width = 554;
-},
-{
-associatedMasterId = m01;
-attr = {
-colorPalette = 4;
-};
-backgroundImage = {
-alpha = 80;
-imagePath = "images/MS-ADD-01116-000-00005.jpg";
-locked = 1;
-pos = (-4613,-2812);
-scale = (5,5);
-};
-layerId = "27B88358-2BC3-485F-A34A-AF977376944F";
-name = "30 Oct 24 at 00:32";
-shapes = (
-{
-closed = 1;
-nodes = (
-(370,-45,ls),
-(436,-45,o),
-(554,-55,o),
-(554,86,cs),
-(554,216,o),
-(473,327,o),
-(368,327,cs),
-(267,327,o),
-(171,234,o),
-(198,84,c),
-(171,86,o),
-(139,92,o),
-(102,108,c),
-(81,57,o),
-(35,36,o),
-(-12,21,c),
-(22,-38,o),
-(126,-42,o),
-(200,-45,cs)
-);
-}
-);
-width = 554;
-},
-{
 associatedMasterId = m01;
 attr = {
 colorPalette = 1;
@@ -170,6 +60,61 @@ nodes = (
 (399,143,o),
 (393,137,o),
 (387,137,cs)
+);
+}
+);
+width = 554;
+},
+{
+anchors = (
+{
+name = damma;
+pos = (-20,60);
+},
+{
+name = fatha;
+pos = (350,375);
+},
+{
+name = kasra;
+pos = (376,-93);
+}
+);
+attr = {
+colorPalette = 4;
+};
+backgroundImage = {
+alpha = 80;
+imagePath = "images/MS-ADD-01116-000-00005.jpg";
+locked = 1;
+pos = (-4613,-2812);
+scale = (5,5);
+};
+layerId = m01;
+name = Regular;
+shapes = (
+{
+closed = 1;
+nodes = (
+(370,-45,ls),
+(436,-45,o),
+(554,-55,o),
+(554,86,cs),
+(554,216,o),
+(473,327,o),
+(368,327,cs),
+(267,327,o),
+(171,234,o),
+(198,84,c),
+(171,86,o),
+(139,92,o),
+(102,108,c),
+(81,57,o),
+(35,36,o),
+(-12,21,c),
+(22,-38,o),
+(126,-42,o),
+(200,-45,cs)
 );
 }
 );

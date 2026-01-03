@@ -9,106 +9,6 @@ name = "*origin";
 pos = (1117,0);
 }
 );
-layerId = m01;
-shapes = (
-{
-alignment = -1;
-pos = (520,227);
-ref = _ayah.100;
-scale = (0.56,0.48);
-},
-{
-pos = (426,234);
-ref = _ayah.waw;
-scale = (0.56,0.56);
-},
-{
-alignment = -1;
-pos = (621,123);
-ref = _ayah.alef;
-scale = (0.48,0.45);
-},
-{
-alignment = -1;
-pos = (536,125);
-ref = _ayah.reh;
-scale = (0.48,0.48);
-},
-{
-alignment = -1;
-pos = (400,131);
-ref = _ayah.040;
-scale = (0.48,0.48);
-},
-{
-alignment = -1;
-pos = (513,21);
-ref = _ayah.noon;
-scale = (0.56,0.56);
-}
-);
-width = 1117;
-},
-{
-anchors = (
-{
-name = "*origin";
-pos = (1117,0);
-}
-);
-associatedMasterId = m01;
-attr = {
-colorPalette = 4;
-};
-layerId = "D542F106-890E-45CF-A3C8-AEA4B940F3D6";
-name = "17 Apr 23 at 00:00";
-shapes = (
-{
-alignment = -1;
-pos = (520,227);
-ref = _ayah.100.1;
-scale = (0.56,0.48);
-},
-{
-pos = (426,234);
-ref = _ayah.waw.1;
-scale = (0.56,0.56);
-},
-{
-alignment = -1;
-pos = (621,123);
-ref = _ayah.alef.1;
-scale = (0.48,0.45);
-},
-{
-alignment = -1;
-pos = (536,125);
-ref = _ayah.reh.1;
-scale = (0.48,0.48);
-},
-{
-alignment = -1;
-pos = (400,131);
-ref = _ayah.040.1;
-scale = (0.48,0.48);
-},
-{
-alignment = -1;
-pos = (513,21);
-ref = _ayah.noon.1;
-scale = (0.56,0.56);
-}
-);
-visible = 1;
-width = 1117;
-},
-{
-anchors = (
-{
-name = "*origin";
-pos = (1117,0);
-}
-);
 associatedMasterId = m01;
 attr = {
 colorPalette = 1;
@@ -149,6 +49,58 @@ scale = (0.48,0.48);
 alignment = -1;
 pos = (513,21);
 ref = _ayah.noon;
+scale = (0.56,0.56);
+}
+);
+visible = 1;
+width = 1117;
+},
+{
+anchors = (
+{
+name = "*origin";
+pos = (1117,0);
+}
+);
+attr = {
+colorPalette = 4;
+};
+layerId = m01;
+name = Regular;
+shapes = (
+{
+alignment = -1;
+pos = (520,227);
+ref = _ayah.100.1;
+scale = (0.56,0.48);
+},
+{
+pos = (426,234);
+ref = _ayah.waw.1;
+scale = (0.56,0.56);
+},
+{
+alignment = -1;
+pos = (621,123);
+ref = _ayah.alef.1;
+scale = (0.48,0.45);
+},
+{
+alignment = -1;
+pos = (536,125);
+ref = _ayah.reh.1;
+scale = (0.48,0.48);
+},
+{
+alignment = -1;
+pos = (400,131);
+ref = _ayah.040.1;
+scale = (0.48,0.48);
+},
+{
+alignment = -1;
+pos = (513,21);
+ref = _ayah.noon.1;
 scale = (0.56,0.56);
 }
 );

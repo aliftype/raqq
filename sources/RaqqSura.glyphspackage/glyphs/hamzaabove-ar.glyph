@@ -9,21 +9,11 @@ name = _hamzaabove;
 pos = (75,75);
 }
 );
-layerId = m01;
-shapes = (
-{
-ref = "fatha-ar";
-}
-);
-width = 150;
-},
-{
-associatedMasterId = m01;
 attr = {
 colorPalette = 3;
 };
-layerId = "057221C3-A498-4D61-8B14-F8267A46D106";
-name = "Regular 25 Jun 22, 20:50";
+layerId = m01;
+name = Regular;
 shapes = (
 {
 ref = _dot;

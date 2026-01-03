@@ -144,6 +144,7 @@ pos = (-1784,-3557);
 scale = (5,5);
 };
 layerId = "263086C7-F2CB-42DA-84F6-54800BF42854";
+metricLeft = "=-30@10";
 name = "16 Sep 25 at 00:19";
 shapes = (
 {

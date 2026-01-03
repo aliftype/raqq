@@ -3,6 +3,20 @@ category = Letter;
 glyphname = "meem-ar.medi.round";
 layers = (
 {
+associatedMasterId = m01;
+attr = {
+colorPalette = 1;
+};
+layerId = "862261EA-9AFB-4C70-965D-CC4805B189CB";
+name = "30 Oct 24 at 01:04";
+shapes = (
+{
+ref = "meem-ar.init";
+}
+);
+width = 398;
+},
+{
 anchors = (
 {
 name = entry;
@@ -12,35 +26,11 @@ pos = (398,0);
 name = exit;
 }
 );
-layerId = m01;
-shapes = (
-{
-ref = "meem-ar.init";
-}
-);
-width = 398;
-},
-{
-associatedMasterId = m01;
 attr = {
 colorPalette = 4;
 };
-layerId = "2C73C2D5-D402-4C8A-BC27-C39D0DB23262";
-name = "30 Oct 24 at 01:04";
-shapes = (
-{
-ref = "meem-ar.init";
-}
-);
-width = 398;
-},
-{
-associatedMasterId = m01;
-attr = {
-colorPalette = 1;
-};
-layerId = "862261EA-9AFB-4C70-965D-CC4805B189CB";
-name = "30 Oct 24 at 01:04";
+layerId = m01;
+name = Regular;
 shapes = (
 {
 ref = "meem-ar.init";

@@ -9,58 +9,6 @@ name = "*origin";
 pos = (1117,0);
 }
 );
-layerId = m01;
-shapes = (
-{
-alignment = -1;
-pos = (333,187);
-ref = _ayah.050;
-scale = (0.7,0.7);
-},
-{
-alignment = -1;
-pos = (489,10);
-ref = _ayah.noon;
-}
-);
-width = 1117;
-},
-{
-anchors = (
-{
-name = "*origin";
-pos = (1117,0);
-}
-);
-associatedMasterId = m01;
-attr = {
-colorPalette = 4;
-};
-layerId = "D542F106-890E-45CF-A3C8-AEA4B940F3D6";
-name = "17 Apr 23 at 00:00";
-shapes = (
-{
-alignment = -1;
-pos = (333,187);
-ref = _ayah.050.1;
-scale = (0.7,0.7);
-},
-{
-alignment = -1;
-pos = (489,10);
-ref = _ayah.noon.1;
-}
-);
-visible = 1;
-width = 1117;
-},
-{
-anchors = (
-{
-name = "*origin";
-pos = (1117,0);
-}
-);
 associatedMasterId = m01;
 attr = {
 colorPalette = 1;
@@ -78,6 +26,34 @@ scale = (0.7,0.7);
 alignment = -1;
 pos = (489,10);
 ref = _ayah.noon;
+}
+);
+visible = 1;
+width = 1117;
+},
+{
+anchors = (
+{
+name = "*origin";
+pos = (1117,0);
+}
+);
+attr = {
+colorPalette = 4;
+};
+layerId = m01;
+name = Regular;
+shapes = (
+{
+alignment = -1;
+pos = (333,187);
+ref = _ayah.050.1;
+scale = (0.7,0.7);
+},
+{
+alignment = -1;
+pos = (489,10);
+ref = _ayah.noon.1;
 }
 );
 visible = 1;

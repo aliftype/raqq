@@ -4,41 +4,31 @@ glyphname = "meem-ar.fina.round";
 kernLeft = meem.fina;
 layers = (
 {
-anchors = (
-{
-name = entry;
-pos = (554,0);
-}
-);
-layerId = m01;
-shapes = (
-{
-ref = "meem-ar";
-}
-);
-width = 554;
-},
-{
-associatedMasterId = m01;
-attr = {
-colorPalette = 4;
-};
-layerId = "77645959-A7A0-431E-9110-444F48058287";
-name = "30 Oct 24 at 00:39";
-shapes = (
-{
-ref = "meem-ar";
-}
-);
-width = 554;
-},
-{
 associatedMasterId = m01;
 attr = {
 colorPalette = 1;
 };
 layerId = "55D80CA6-89B2-429B-8AD1-2EF6104B11ED";
 name = "30 Oct 24 at 00:39";
+shapes = (
+{
+ref = "meem-ar";
+}
+);
+width = 554;
+},
+{
+anchors = (
+{
+name = entry;
+pos = (554,0);
+}
+);
+attr = {
+colorPalette = 4;
+};
+layerId = m01;
+name = Regular;
 shapes = (
 {
 ref = "meem-ar";

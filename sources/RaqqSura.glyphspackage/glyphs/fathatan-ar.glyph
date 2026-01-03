@@ -9,21 +9,11 @@ name = _fatha;
 pos = (142,75);
 }
 );
-layerId = m01;
-shapes = (
-{
-ref = "kasratan-ar";
-}
-);
-width = 284;
-},
-{
-associatedMasterId = m01;
 attr = {
 colorPalette = 3;
 };
-layerId = "B1CF235A-D426-403E-AC5F-FAE0BFC820A1";
-name = "Regular 25 Jun 22, 20:50";
+layerId = m01;
+name = Regular;
 shapes = (
 {
 alignment = 1;

@@ -9,25 +9,11 @@ name = _damma;
 pos = (75,142);
 }
 );
-layerId = m01;
-shapes = (
-{
-ref = "damma-ar";
-},
-{
-pos = (0,134);
-ref = "damma-ar";
-}
-);
-width = 150;
-},
-{
-associatedMasterId = m01;
 attr = {
 colorPalette = 3;
 };
-layerId = "CDCF1E84-7251-4EF5-B909-E7186DCEAE9B";
-name = "Regular 25 Jun 22, 20:50";
+layerId = m01;
+name = Regular;
 shapes = (
 {
 alignment = -1;

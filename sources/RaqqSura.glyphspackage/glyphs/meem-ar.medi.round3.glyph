@@ -4,62 +4,34 @@ glyphname = "meem-ar.medi.round3";
 kernLeft = meem.alt;
 layers = (
 {
-anchors = (
-{
-name = entry;
-pos = (398,0);
-},
-{
-name = exit;
-}
-);
-layerId = m01;
-shapes = (
-{
-ref = "meem-ar.init.round";
-}
-);
-width = 398;
-},
-{
-anchors = (
-{
-name = entry;
-pos = (398,0);
-},
-{
-name = exit;
-}
-);
-associatedMasterId = m01;
-attr = {
-colorPalette = 4;
-};
-layerId = "D577FD94-BBAF-4E97-964E-4704D5243196";
-name = "30 Oct 24 at 00:55";
-shapes = (
-{
-ref = "meem-ar.init.round";
-}
-);
-width = 398;
-},
-{
-anchors = (
-{
-name = entry;
-pos = (398,0);
-},
-{
-name = exit;
-}
-);
 associatedMasterId = m01;
 attr = {
 colorPalette = 1;
 };
 layerId = "07637A8A-33D2-412B-A81E-2CF67FE85E9D";
 name = "Color 4 30 Oct 24 at 00:57";
+shapes = (
+{
+ref = "meem-ar.init.round";
+}
+);
+width = 398;
+},
+{
+anchors = (
+{
+name = entry;
+pos = (398,0);
+},
+{
+name = exit;
+}
+);
+attr = {
+colorPalette = 4;
+};
+layerId = m01;
+name = Regular;
 shapes = (
 {
 ref = "meem-ar.init.round";

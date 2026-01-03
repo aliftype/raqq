@@ -9,21 +9,11 @@ name = _fatha;
 pos = (75,75);
 }
 );
-layerId = m01;
-shapes = (
-{
-ref = _dot.circle;
-}
-);
-width = 150;
-},
-{
-associatedMasterId = m01;
 attr = {
 colorPalette = 3;
 };
-layerId = "7AFB0887-D8D9-481C-81E1-5E6720F61C9F";
-name = "Regular 25 Jun 22, 20:51";
+layerId = m01;
+name = Regular;
 shapes = (
 {
 ref = _dot;

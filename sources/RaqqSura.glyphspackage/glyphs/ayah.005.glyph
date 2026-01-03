@@ -9,58 +9,6 @@ name = "*origin";
 pos = (1117,0);
 }
 );
-backgroundImage = {
-alpha = 80;
-crop = (0,0,2278,1618);
-imagePath = "images/MS-ADD-01116-000-00023.jpg";
-pos = (-4620,-3779);
-scale = (5,5);
-};
-layerId = m01;
-shapes = (
-{
-alignment = -1;
-ref = _ayah.005;
-},
-{
-pos = (371,58);
-ref = _ayah.decoration1;
-}
-);
-width = 1117;
-},
-{
-anchors = (
-{
-name = "*origin";
-pos = (1117,0);
-}
-);
-associatedMasterId = m01;
-attr = {
-colorPalette = 4;
-};
-layerId = "185E14B7-DC9A-451C-945B-1C7ACD635787";
-name = "Color 1 18 May 23 at 11:25";
-shapes = (
-{
-alignment = -1;
-ref = _ayah.005.1;
-},
-{
-pos = (371,58);
-ref = _ayah.decoration1.1;
-}
-);
-width = 1117;
-},
-{
-anchors = (
-{
-name = "*origin";
-pos = (1117,0);
-}
-);
 associatedMasterId = m01;
 attr = {
 colorPalette = 1;
@@ -75,6 +23,30 @@ ref = _ayah.005;
 {
 pos = (371,58);
 ref = _ayah.decoration1;
+}
+);
+width = 1117;
+},
+{
+anchors = (
+{
+name = "*origin";
+pos = (1117,0);
+}
+);
+attr = {
+colorPalette = 4;
+};
+layerId = m01;
+name = Regular;
+shapes = (
+{
+alignment = -1;
+ref = _ayah.005.1;
+},
+{
+pos = (371,58);
+ref = _ayah.decoration1.1;
 }
 );
 width = 1117;
