@@ -8,23 +8,41 @@ layers = (
 anchors = (
 {
 name = entry;
-pos = (109,120);
+pos = (109,138);
 },
 {
 name = exit;
+pos = (15,0);
 },
 {
 name = fatha;
 pos = (58,309);
 }
 );
+attr = {
+colorPalette = 4;
+};
 layerId = m01;
 shapes = (
 {
 ref = "hah-ar.init.hah";
 }
 );
-width = 579;
+width = 596;
+},
+{
+associatedMasterId = m01;
+attr = {
+colorPalette = 1;
+};
+layerId = "E4276E53-9339-4112-AC8F-38DD185726CC";
+name = "3 Jan 26 at 17:08";
+shapes = (
+{
+ref = "hah-ar.init.hah";
+}
+);
+width = 596;
 }
 );
 production = hahar.medi.hah.alt;

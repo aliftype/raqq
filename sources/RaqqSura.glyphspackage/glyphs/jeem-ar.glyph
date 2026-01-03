@@ -14,7 +14,7 @@ pos = (611,-122);
 ref = "dotbelow-ar";
 }
 );
-width = 983;
+width = 973;
 }
 );
 script = arabic;

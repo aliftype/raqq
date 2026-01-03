@@ -18,6 +18,9 @@ name = fatha;
 pos = (81,337);
 }
 );
+attr = {
+colorPalette = 4;
+};
 backgroundImage = {
 alpha = 80;
 angle = -2.5;
@@ -27,6 +30,28 @@ pos = (-4538,-1650);
 scale = (5,5);
 };
 layerId = m01;
+shapes = (
+{
+ref = "hah-ar.init";
+}
+);
+width = 703;
+},
+{
+associatedMasterId = m01;
+attr = {
+colorPalette = 1;
+};
+backgroundImage = {
+alpha = 80;
+angle = -2.5;
+imagePath = "images/MS-ADD-01116-000-00023.jpg";
+locked = 1;
+pos = (-4538,-1650);
+scale = (5,5);
+};
+layerId = "D738D19B-80C0-487B-9F9C-AA201BDAF078";
+name = "3 Jan 26 at 16:32";
 shapes = (
 {
 ref = "hah-ar.init";

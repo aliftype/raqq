@@ -29,6 +29,9 @@ name = top;
 pos = (55,432);
 }
 );
+attr = {
+colorPalette = 4;
+};
 backgroundImage = {
 imagePath = "images/MS-ADD-01116-000-00010.jpg";
 locked = 1;
@@ -40,29 +43,52 @@ shapes = (
 {
 closed = 1;
 nodes = (
-(99,130,l),
-(94,237,o),
-(89,348,o),
-(89,458,cs),
-(89,467,o),
-(82,471,o),
-(75,460,cs),
-(55,429,o),
-(32,388,o),
-(3,369,cs),
-(-11,360,o),
-(-8,343,o),
-(-6,312,cs),
-(-4,279,o),
-(-3,261,o),
-(0,130,c)
+(100,142,l),
+(100,466,ls),
+(100,480,o),
+(93,482,o),
+(85,470,cs),
+(61,428,o),
+(19,389,o),
+(-10,383,c),
+(-10,195,l)
 );
 }
 );
-width = 99;
+width = 100;
+},
+{
+associatedMasterId = m01;
+attr = {
+colorPalette = 1;
+};
+backgroundImage = {
+imagePath = "images/MS-ADD-01116-000-00010.jpg";
+locked = 1;
+pos = (-2723,-2714);
+scale = (5,5);
+};
+layerId = "1A6FCE8A-4998-48C6-BD83-7428367B4B1A";
+metricLeft = "=0";
+metricRight = "=10";
+name = "3 Jan 26 at 16:34";
+shapes = (
+{
+closed = 1;
+nodes = (
+(90,120,l),
+(90,456,l),
+(66,419,o),
+(29,384,o),
+(0,373,c),
+(0,120,l)
+);
 }
 );
-metricLeft = "=0@130";
+width = 100;
+}
+);
+metricLeft = "=-10";
 metricRight = "=0";
 production = behDotlessar.init.hah;
 script = arabic;

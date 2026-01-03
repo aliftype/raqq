@@ -14,7 +14,7 @@ pos = (256,188);
 ref = "dotabove-ar";
 }
 );
-width = 983;
+width = 973;
 }
 );
 script = arabic;

@@ -21,34 +21,72 @@ name = kasra;
 pos = (163,28);
 }
 );
+attr = {
+colorPalette = 4;
+};
 layerId = m01;
 shapes = (
 {
 closed = 1;
 nodes = (
-(105,230,l),
-(100,376,o),
-(89,578,o),
-(81,766,cs),
-(80,789,o),
-(66,795,o),
-(56,776,cs),
-(44,753,o),
-(5,719,o),
-(-13,705,cs),
-(-28,692,o),
-(-22,679,o),
-(-21,669,cs),
-(-11,518,o),
-(-2,356,o),
-(0,230,c)
+(100,240,l),
+(100,751,ls),
+(100,765,o),
+(93,767,o),
+(85,755,cs),
+(61,713,o),
+(19,674,o),
+(-10,668,c),
+(-10,293,l)
 );
 }
 );
-width = 105;
+width = 100;
+},
+{
+anchors = (
+{
+name = damma;
+pos = (-9,332);
+},
+{
+name = exit;
+pos = (-63,230);
+},
+{
+name = fatha;
+pos = (-69,608);
+},
+{
+name = kasra;
+pos = (163,28);
 }
 );
-metricLeft = "=0@230";
+associatedMasterId = m01;
+attr = {
+colorPalette = 1;
+};
+layerId = "5B441E5E-25D4-4B4C-AFC3-E87551109C1B";
+metricLeft = "=0";
+metricRight = "=10";
+name = "Regular 3 Jan 26 at 17:16";
+shapes = (
+{
+closed = 1;
+nodes = (
+(90,220,l),
+(90,741,l),
+(66,704,o),
+(29,669,o),
+(0,658,c),
+(0,220,l)
+);
+}
+);
+width = 100;
+}
+);
+metricLeft = "=-10";
 metricRight = "=0";
 production = lamar.init.hah2.alt;
 script = arabic;

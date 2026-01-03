@@ -23,6 +23,9 @@ name = kasra;
 pos = (123,79);
 }
 );
+attr = {
+colorPalette = 4;
+};
 backgroundImage = {
 alpha = 80;
 angle = -0.1;
@@ -42,43 +45,43 @@ ref = "lam-ar.init.short";
 width = 123;
 },
 {
+anchors = (
+{
+name = damma;
+pos = (5,288);
+},
+{
+name = exit;
+pos = (0,115);
+},
+{
+name = fatha;
+pos = (-54,635);
+},
+{
+name = kasra;
+pos = (123,79);
+}
+);
 associatedMasterId = m01;
+attr = {
+colorPalette = 1;
+};
 backgroundImage = {
 alpha = 80;
 angle = -0.1;
 imagePath = "images/MS-ADD-01116-000-00003.jpg";
 locked = 1;
-pos = (-6202,-3734);
+pos = (-6202,-3619);
 scale = (5,5);
 };
-layerId = "57202DD3-E382-4D04-9977-46B2FD35FB4D";
-name = "1 May 23 at 01:53";
+layerId = "3994444A-5397-4B82-844D-D93F7FE78F17";
+name = "Regular 3 Jan 26 at 17:22";
 shapes = (
 {
-closed = 1;
-nodes = (
-(18,0,l),
-(92,2,o),
-(127,8,o),
-(123,116,cs),
-(118,263,o),
-(107,475,o),
-(98,671,cs),
-(97,694,o),
-(83,700,o),
-(73,681,cs),
-(61,658,o),
-(22,624,o),
-(4,610,cs),
-(-11,597,o),
-(-5,584,o),
-(-4,574,cs),
-(6,413,o),
-(16,239,o),
-(18,110,c),
-(-20,110,l),
-(-20,0,l)
-);
+alignment = -1;
+pos = (0,115);
+ref = "lam-ar.init.short";
 }
 );
 width = 123;

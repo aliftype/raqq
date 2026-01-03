@@ -1316,14 +1316,12 @@ pos = -500;
 name = Regular;
 userData = {
 GSCornerRadius = -15;
-GSOffsetHorizontal = -5;
+GSOffsetHorizontal = -10;
 GSOffsetKeepCompatible = 1;
-GSOffsetMakeStroke = 1;
 GSOffsetPosition = 1;
 GSOffsetProportional = 1;
 GSOffsetVertical = 10;
 };
-visible = 1;
 }
 );
 instances = (

@@ -15,7 +15,40 @@ name = exit;
 pos = (0,115);
 }
 );
+attr = {
+colorPalette = 4;
+};
 layerId = m01;
+shapes = (
+{
+alignment = -1;
+ref = "lam-ar.init.hah1";
+},
+{
+alignment = -1;
+pos = (38,115);
+ref = _p.lam;
+}
+);
+width = 125;
+},
+{
+anchors = (
+{
+name = entry;
+pos = (125,115);
+},
+{
+name = exit;
+pos = (0,115);
+}
+);
+associatedMasterId = m01;
+attr = {
+colorPalette = 1;
+};
+layerId = "360C8995-2430-40C9-9A59-48FB8E727D13";
+name = "Regular 3 Jan 26 at 17:22";
 shapes = (
 {
 alignment = -1;
