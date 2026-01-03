@@ -84,17 +84,49 @@ space
 );
 },
 {
-name = "Axis Mappings";
-value = {
-MSHQ = {
-0 = 0;
-100 = 100;
-};
-SPAC = {
--100 = -100;
-125 = 125;
-};
-};
+name = "Virtual Master";
+value = (
+{
+Axis = Mashq;
+Location = 7;
+}
+);
+},
+{
+name = "Virtual Master";
+value = (
+{
+Axis = Mashq;
+Location = 20;
+}
+);
+},
+{
+name = "Virtual Master";
+value = (
+{
+Axis = Mashq;
+Location = 100;
+}
+);
+},
+{
+name = "Virtual Master";
+value = (
+{
+Axis = Spacing;
+Location = 125;
+}
+);
+},
+{
+name = "Virtual Master";
+value = (
+{
+Axis = Spacing;
+Location = -100;
+}
+);
 },
 {
 name = "Write lastChange";

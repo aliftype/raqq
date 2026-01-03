@@ -80,13 +80,31 @@ space
 );
 },
 {
-name = "Axis Mappings";
-value = {
-MSHQ = {
-0 = 0;
-100 = 100;
-};
-};
+name = "Virtual Master";
+value = (
+{
+Axis = Mashq;
+Location = 7;
+}
+);
+},
+{
+name = "Virtual Master";
+value = (
+{
+Axis = Mashq;
+Location = 20;
+}
+);
+},
+{
+name = "Virtual Master";
+value = (
+{
+Axis = Mashq;
+Location = 100;
+}
+);
 },
 {
 name = "Write lastChange";

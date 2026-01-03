@@ -685,9 +685,8 @@ def build(font, default_instance, args):
         "SPAC": {"ar": "مسافات"},
     }
 
-    axisMappings = font.customParameters["Axis Mappings"]
-    for axis, default in zip(font.axes, default_instance.axes):
-        locations = axisMappings[axis.axisTag].values()
+    for i, (axis, default) in enumerate(zip(font.axes, default_instance.axes)):
+        locations = [m.axes[i] for m in font.masters]
         ds.addAxisDescriptor(
             name=axis.name,
             tag=axis.axisTag,
