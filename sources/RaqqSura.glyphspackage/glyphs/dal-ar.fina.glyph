@@ -86,100 +86,6 @@ width = 875;
 anchors = (
 {
 name = entry;
-pos = (5993,0);
-}
-);
-associatedMasterId = m01;
-attr = {
-coordinates = (
-100
-);
-};
-layerId = "179FCC2E-5C1F-4B1F-B7EC-F9D34C585468";
-metricRight = "=-7";
-name = "{100} 8 Feb 24 at 23:31";
-shapes = (
-{
-alignment = -1;
-pos = (0,9);
-ref = "dal-ar";
-},
-{
-alignment = -1;
-pos = (5600,0);
-ref = _p.dal;
-}
-);
-width = 5993;
-},
-{
-anchors = (
-{
-name = entry;
-pos = (5993,0);
-}
-);
-associatedMasterId = m01;
-attr = {
-colorPalette = 4;
-coordinates = (
-100
-);
-};
-layerId = "FCF9B173-4FF8-4077-B9F9-9E9555146EEE";
-metricRight = "=-10";
-name = "Color 4 {100} 8 Feb 24 at 23:31";
-shapes = (
-{
-alignment = -1;
-pos = (0,9);
-ref = "dal-ar";
-},
-{
-alignment = -1;
-pos = (5610,0);
-ref = _p.dal;
-}
-);
-visible = 1;
-width = 5993;
-},
-{
-anchors = (
-{
-name = entry;
-pos = (5993,0);
-}
-);
-associatedMasterId = m01;
-attr = {
-colorPalette = 1;
-coordinates = (
-100
-);
-};
-layerId = "1C08AE65-7D33-4305-928A-8761C156C024";
-metricLeft = "=18";
-metricRight = "=-10";
-name = "15 May 23 at 22:26";
-shapes = (
-{
-alignment = -1;
-pos = (0,9);
-ref = "dal-ar";
-},
-{
-alignment = -1;
-pos = (5610,0);
-ref = _p.dal;
-}
-);
-width = 5993;
-},
-{
-anchors = (
-{
-name = entry;
 pos = (414,0);
 }
 );
@@ -268,6 +174,99 @@ ref = _p.dal;
 }
 );
 width = 414;
+},
+{
+anchors = (
+{
+name = entry;
+pos = (5993,0);
+}
+);
+associatedMasterId = m01;
+attr = {
+coordinates = (
+100
+);
+};
+layerId = "179FCC2E-5C1F-4B1F-B7EC-F9D34C585468";
+metricRight = "=-7";
+name = "{100} 8 Feb 24 at 23:31";
+shapes = (
+{
+alignment = -1;
+pos = (0,9);
+ref = "dal-ar";
+},
+{
+alignment = -1;
+pos = (5600,0);
+ref = _p.dal;
+}
+);
+width = 5993;
+},
+{
+anchors = (
+{
+name = entry;
+pos = (5993,0);
+}
+);
+associatedMasterId = m01;
+attr = {
+colorPalette = 4;
+coordinates = (
+100
+);
+};
+layerId = "FCF9B173-4FF8-4077-B9F9-9E9555146EEE";
+metricRight = "=-10";
+name = "Color 4 {100} 8 Feb 24 at 23:31";
+shapes = (
+{
+alignment = -1;
+pos = (0,9);
+ref = "dal-ar";
+},
+{
+alignment = -1;
+pos = (5610,0);
+ref = _p.dal;
+}
+);
+width = 5993;
+},
+{
+anchors = (
+{
+name = entry;
+pos = (5993,0);
+}
+);
+associatedMasterId = m01;
+attr = {
+colorPalette = 1;
+coordinates = (
+100
+);
+};
+layerId = "1C08AE65-7D33-4305-928A-8761C156C024";
+metricLeft = "=18";
+metricRight = "=-10";
+name = "15 May 23 at 22:26";
+shapes = (
+{
+alignment = -1;
+pos = (0,9);
+ref = "dal-ar";
+},
+{
+alignment = -1;
+pos = (5610,0);
+ref = _p.dal;
+}
+);
+width = 5993;
 }
 );
 metricLeft = "=0";

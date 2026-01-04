@@ -31,6 +31,126 @@ ref = _p.sad;
 width = 758;
 },
 {
+associatedMasterId = m01;
+attr = {
+colorPalette = 4;
+};
+layerId = "3C96829D-AB68-4D47-95B8-2A0533F24D1F";
+name = "5 Jan 26 at 01:19";
+shapes = (
+{
+alignment = -1;
+ref = "tah-ar.init.hah1";
+},
+{
+alignment = -1;
+pos = (357,115);
+ref = _p.sad;
+}
+);
+width = 758;
+},
+{
+associatedMasterId = m01;
+attr = {
+colorPalette = 1;
+};
+layerId = "05FDBA86-510C-452B-A2E0-EAEADA62E6A5";
+metricRight = "=-10";
+name = "5 Jan 26 at 01:19";
+shapes = (
+{
+alignment = -1;
+ref = "tah-ar.init.hah1";
+},
+{
+alignment = -1;
+pos = (357,115);
+ref = _p.sad;
+}
+);
+width = 758;
+},
+{
+anchors = (
+{
+name = entry;
+pos = (368,115);
+},
+{
+name = exit;
+pos = (0,115);
+}
+);
+associatedMasterId = m01;
+attr = {
+coordinates = (
+0
+);
+};
+layerId = "E19298B1-5D9E-43E0-8ABE-9FE671D0873A";
+name = "{0} 5 Jan 26 at 01:19";
+shapes = (
+{
+alignment = -1;
+ref = "tah-ar.init.hah1";
+},
+{
+alignment = -1;
+pos = (-33,115);
+ref = _p.sad;
+}
+);
+width = 368;
+},
+{
+associatedMasterId = m01;
+attr = {
+colorPalette = 4;
+coordinates = (
+0
+);
+};
+layerId = "EDA50E51-B7D0-4425-BC97-B40C0DFCAC93";
+name = "17 May 23 at 16:11";
+shapes = (
+{
+alignment = -1;
+ref = "tah-ar.init.hah1";
+},
+{
+alignment = -1;
+pos = (-33,115);
+ref = _p.sad;
+}
+);
+width = 368;
+},
+{
+associatedMasterId = m01;
+attr = {
+colorPalette = 1;
+coordinates = (
+0
+);
+};
+layerId = "45666F11-2BF8-4B55-9962-51313BA8991F";
+metricRight = "=-10";
+name = "5 Jan 26 at 01:19";
+shapes = (
+{
+alignment = -1;
+ref = "tah-ar.init.hah1";
+},
+{
+alignment = -1;
+pos = (-33,115);
+ref = _p.sad;
+}
+);
+width = 368;
+},
+{
 anchors = (
 {
 name = entry;
@@ -43,6 +163,29 @@ pos = (0,115);
 );
 associatedMasterId = m01;
 attr = {
+coordinates = (
+100
+);
+};
+layerId = "14F151F6-2639-4B7C-B073-EAC07777FFCD";
+name = "{100} 5 Jan 26 at 01:20";
+shapes = (
+{
+alignment = -1;
+ref = "tah-ar.init.hah1";
+},
+{
+alignment = -1;
+pos = (5592,115);
+ref = _p.sad;
+}
+);
+width = 5993;
+},
+{
+associatedMasterId = m01;
+attr = {
+colorPalette = 4;
 coordinates = (
 100
 );
@@ -60,28 +203,19 @@ pos = (5592,115);
 ref = _p.sad;
 }
 );
-visible = 1;
 width = 5993;
 },
 {
-anchors = (
-{
-name = entry;
-pos = (415,115);
-},
-{
-name = exit;
-pos = (0,115);
-}
-);
 associatedMasterId = m01;
 attr = {
+colorPalette = 1;
 coordinates = (
-0
+100
 );
 };
-layerId = "EDA50E51-B7D0-4425-BC97-B40C0DFCAC93";
-name = "17 May 23 at 16:11";
+layerId = "87BB44AE-2A75-40C9-94FD-F4599B1AB733";
+metricRight = "=-10";
+name = "5 Jan 26 at 01:20";
 shapes = (
 {
 alignment = -1;
@@ -89,17 +223,15 @@ ref = "tah-ar.init.hah1";
 },
 {
 alignment = -1;
-pos = (14,115);
+pos = (5592,115);
 ref = _p.sad;
 }
 );
-visible = 1;
-width = 415;
+width = 5993;
 }
 );
 metricLeft = "=tah-ar.init";
 metricRight = "=0@225";
-production = tahar.medi.hah1;
 script = arabic;
 sortName = arL0033.hah1;
 sortNameKeep = arL0033.hah1;
