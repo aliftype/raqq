@@ -25636,12 +25636,12 @@
     {
       "only": "RaqqSura.ttf",
       "input": "ط ط‍ ‍ط‍ ‍ط",
-      "expectation": "tah-ar.fina=10+798|space=8+0|space.mark=8+0|space=6+0|tah-ar.medi=6@-9,0+749|space=4+0|space.mark=4+0|space=2+0|tah-ar.init=2@-9,0+749|space.mark=1+0|tah-ar=0+805"
+      "expectation": "tah-ar.fina=10+812|space=8+0|space.mark=8+0|space=6+0|tah-ar.medi=6@-9,0+749|space=4+0|space.mark=4+0|space=2+0|tah-ar.init=2@-9,0+749|space.mark=1+0|tah-ar=0+812"
     },
     {
       "only": "RaqqSura.ttf",
       "input": "ظ ظ‍ ‍ظ‍ ‍ظ",
-      "expectation": "dotabove-ar=10@350,247+0|tah-ar.fina=10+798|space=8+0|space.mark=8+0|space=6+0|dotabove-ar=6@301,247+0|tah-ar.medi=6@-9,0+749|space=4+0|space.mark=4+0|space=2+0|dotabove-ar=2@301,247+0|tah-ar.init=2@-9,0+749|space.mark=1+0|dotabove-ar=0@350,237+0|tah-ar=0+805"
+      "expectation": "dotabove-ar=10@364,247+0|tah-ar.fina=10+812|space=8+0|space.mark=8+0|space=6+0|dotabove-ar=6@301,247+0|tah-ar.medi=6@-9,0+749|space=4+0|space.mark=4+0|space=2+0|dotabove-ar=2@301,247+0|tah-ar.init=2@-9,0+749|space.mark=1+0|dotabove-ar=0@364,247+0|tah-ar=0+812"
     },
     {
       "only": "RaqqSura.ttf",
@@ -25991,7 +25991,7 @@
     {
       "only": "RaqqSura.ttf",
       "input": "حط",
-      "expectation": "tah-ar.fina=1+798|hah-ar.init=0+703"
+      "expectation": "tah-ar.fina=1+812|hah-ar.init=0+703"
     },
     {
       "only": "RaqqSura.ttf",
@@ -26091,7 +26091,7 @@
     {
       "only": "RaqqSura.ttf",
       "input": "سط",
-      "expectation": "tah-ar.fina=1+798|seen-ar.init=0@-15,0+330"
+      "expectation": "tah-ar.fina=1+812|seen-ar.init=0@-15,0+330"
     },
     {
       "only": "RaqqSura.ttf",
@@ -26196,12 +26196,12 @@
     {
       "only": "RaqqSura.ttf",
       "input": "طً",
-      "expectation": "fathatan-ar.alt=0@-75,483+0|tah-ar=0+805"
+      "expectation": "fathatan-ar.alt=0@-81,483+0|tah-ar=0+812"
     },
     {
       "only": "RaqqSura.ttf",
       "input": "طَ",
-      "expectation": "fatha-ar=0@-75,550+0|tah-ar=0+805"
+      "expectation": "fatha-ar=0@-81,550+0|tah-ar=0+812"
     },
     {
       "only": "RaqqSura.ttf",
@@ -26246,7 +26246,7 @@
     {
       "only": "RaqqSura.ttf",
       "input": "عط",
-      "expectation": "tah-ar.fina=1+798|ain-ar.init=0+680"
+      "expectation": "tah-ar.fina=1+812|ain-ar.init=0+680"
     },
     {
       "only": "RaqqSura.ttf",
@@ -26346,7 +26346,7 @@
     {
       "only": "RaqqSura.ttf",
       "input": "فط",
-      "expectation": "tah-ar.fina=1+798|dotabove-ar=0@-61,373+0|fehDotless-ar.init=0+334"
+      "expectation": "tah-ar.fina=1+812|dotabove-ar=0@-61,373+0|fehDotless-ar.init=0+334"
     },
     {
       "only": "RaqqSura.ttf",
@@ -27496,7 +27496,7 @@
     {
       "only": "RaqqSura.ttf",
       "input": "لسط",
-      "expectation": "tah-ar.fina=2+798|seen-ar.medi=1@-15,0+330|lam-ar.init=0+123"
+      "expectation": "tah-ar.fina=2+812|seen-ar.medi=1@-15,0+330|lam-ar.init=0+123"
     },
     {
       "only": "RaqqSura.ttf",
@@ -27706,7 +27706,7 @@
     {
       "only": "RaqqSura.ttf",
       "input": "نسط",
-      "expectation": "tah-ar.fina=2+798|seen-ar.medi=1@-15,0+330|dotabove-ar.beh=0@-15,380+0|behDotless-ar.init.high=0+100"
+      "expectation": "tah-ar.fina=2+812|seen-ar.medi=1@-15,0+330|dotabove-ar.beh=0@-15,380+0|behDotless-ar.init.high=0+100"
     },
     {
       "only": "RaqqSura.ttf",
@@ -27801,7 +27801,7 @@
     {
       "only": "RaqqSura.ttf",
       "input": "نعط",
-      "expectation": "tah-ar.fina=2+798|ain-ar.medi=1+202|dotabove-ar.beh=0@-15,380+0|behDotless-ar.init.high=0+100"
+      "expectation": "tah-ar.fina=2+812|ain-ar.medi=1+202|dotabove-ar.beh=0@-15,380+0|behDotless-ar.init.high=0+100"
     },
     {
       "only": "RaqqSura.ttf",
@@ -27896,7 +27896,7 @@
     {
       "only": "RaqqSura.ttf",
       "input": "نفط",
-      "expectation": "tah-ar.fina=2+798|dotabove-ar=1@1,329+0|fehDotless-ar.medi=1+377|dotabove-ar=0@-20,297+0|behDotless-ar.init=0+100"
+      "expectation": "tah-ar.fina=2+812|dotabove-ar=1@1,329+0|fehDotless-ar.medi=1+377|dotabove-ar=0@-20,297+0|behDotless-ar.init=0+100"
     },
     {
       "only": "RaqqSura.ttf",
@@ -28011,12 +28011,12 @@
     {
       "only": "RaqqSura.ttf",
       "input": "يعظ",
-      "expectation": "dotabove-ar=2@350,247+0|tah-ar.fina=2+798|ain-ar.medi=1+202|twodotsverticalbelow-ar=0@51,-73+0|behDotless-ar.init.high=0+100"
+      "expectation": "dotabove-ar=2@364,247+0|tah-ar.fina=2+812|ain-ar.medi=1+202|twodotsverticalbelow-ar=0@51,-73+0|behDotless-ar.init.high=0+100"
     },
     {
       "only": "RaqqSura.ttf",
       "input": "يقظ",
-      "expectation": "dotabove-ar=2@350,247+0|tah-ar.fina=2+798|twodotsverticalabove-ar=1@-29,337+0|fehDotless-ar.medi=1+377|twodotsverticalbelow-ar=0@72,-73+0|behDotless-ar.init=0+100"
+      "expectation": "dotabove-ar=2@364,247+0|tah-ar.fina=2+812|twodotsverticalabove-ar=1@-29,337+0|fehDotless-ar.medi=1+377|twodotsverticalbelow-ar=0@72,-73+0|behDotless-ar.init=0+100"
     },
     {
       "only": "RaqqSura.ttf",
