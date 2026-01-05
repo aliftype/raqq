@@ -46,7 +46,6 @@ metricLeft = "=damma-ar";
 metricRight = "=damma-ar";
 script = arabic;
 sortName = arM1079;
-sortNameKeep = arM1079;
 subCategory = Nonspacing;
 unicode = (1612,2289);
 }

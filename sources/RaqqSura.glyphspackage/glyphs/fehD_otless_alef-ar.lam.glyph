@@ -159,6 +159,5 @@ metricLeft = "=alef-ar.fina.lam";
 metricRight = "=fehDotless-ar.init";
 script = arabic;
 sortName = arL0403;
-sortNameKeep = arL0403;
 subCategory = Ligature;
 }

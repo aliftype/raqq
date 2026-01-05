@@ -158,8 +158,6 @@ width = 470;
 );
 metricLeft = "=noonghunna-ar";
 metricRight = "behDotless-ar.medi";
-production = seenar.fina.low;
 script = arabic;
 sortName = arL0024.low;
-sortNameKeep = arL0024.low;
 }

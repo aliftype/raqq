@@ -118,8 +118,6 @@ width = 97;
 }
 );
 metricRight = "=3@157";
-production = lamar.medi.round;
 script = arabic;
 sortName = arL0055.round;
-sortNameKeep = arL0055.round;
 }

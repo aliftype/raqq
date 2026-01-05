@@ -50,6 +50,5 @@ metricLeft = "=0";
 metricRight = "=0";
 script = arabic;
 sortName = arP0945;
-sortNameKeep = arP0945;
 unicode = 46;
 }

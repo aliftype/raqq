@@ -118,5 +118,4 @@ metricLeft = "=sad-ar.init";
 metricRight = "=0@110";
 script = arabic;
 sortName = arL0029;
-sortNameKeep = arL0029;
 }

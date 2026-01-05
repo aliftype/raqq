@@ -64,8 +64,6 @@ width = 99;
 );
 metricLeft = "=0@130";
 metricRight = "=0";
-production = behDotlessar.init.hah;
 script = arabic;
 sortName = arL0012.hah;
-sortNameKeep = arL0012.hah;
 }

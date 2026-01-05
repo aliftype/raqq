@@ -90,5 +90,4 @@ metricLeft = "=tah-ar";
 metricRight = "=0@110";
 script = arabic;
 sortName = arL0032;
-sortNameKeep = arL0032;
 }

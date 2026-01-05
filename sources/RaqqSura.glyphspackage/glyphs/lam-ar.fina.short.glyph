@@ -74,8 +74,6 @@ width = 178;
 );
 metricLeft = "=-100@-220";
 metricRight = "=3@157";
-production = lamar.fina.short;
 script = arabic;
 sortName = arL0054.short;
-sortNameKeep = arL0054.short;
 }

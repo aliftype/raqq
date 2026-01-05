@@ -57,7 +57,6 @@ width = 0;
 metricWidth = "=0";
 script = arabic;
 sortName = arM1082;
-sortNameKeep = arM1082;
 subCategory = Nonspacing;
 unicode = 1648;
 }

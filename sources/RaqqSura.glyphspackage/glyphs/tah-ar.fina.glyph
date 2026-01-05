@@ -219,5 +219,4 @@ metricLeft = "=tah-ar";
 metricRight = "=tah-ar.medi";
 script = arabic;
 sortName = arL0032;
-sortNameKeep = arL0033;
 }

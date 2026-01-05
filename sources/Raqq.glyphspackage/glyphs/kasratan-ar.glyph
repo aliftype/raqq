@@ -46,7 +46,6 @@ metricLeft = "=kasra-ar";
 metricRight = "=kasra-ar";
 script = arabic;
 sortName = arM1077;
-sortNameKeep = arM1077;
 subCategory = Nonspacing;
 unicode = (1613,2290);
 }

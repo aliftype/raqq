@@ -542,6 +542,5 @@ metricLeft = "=-8";
 metricRight = "=0";
 script = arabic;
 sortName = arL0008;
-sortNameKeep = arL0008;
 unicode = 1646;
 }

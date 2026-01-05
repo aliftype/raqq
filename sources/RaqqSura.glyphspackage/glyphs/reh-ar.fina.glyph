@@ -76,5 +76,4 @@ metricLeft = "=reh-ar";
 metricRight = "=-66";
 script = arabic;
 sortName = arL0021;
-sortNameKeep = arL0021;
 }

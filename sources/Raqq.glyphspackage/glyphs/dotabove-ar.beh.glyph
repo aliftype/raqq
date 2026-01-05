@@ -76,9 +76,7 @@ width = 110;
 );
 metricLeft = "=dotabove-ar";
 metricRight = "=dotabove-ar";
-production = dotabovear.beh;
 script = arabic;
 sortName = arM1060.beh;
-sortNameKeep = arM1060.beh;
 subCategory = Nonspacing;
 }

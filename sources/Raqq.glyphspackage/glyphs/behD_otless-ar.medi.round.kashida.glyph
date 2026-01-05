@@ -218,8 +218,6 @@ width = 108;
 }
 );
 metricRight = "=0";
-production = behDotlessar.medi.round.kashida;
 script = arabic;
 sortName = arL0010e.kashida;
-sortNameKeep = arL0010e.kashida;
 }

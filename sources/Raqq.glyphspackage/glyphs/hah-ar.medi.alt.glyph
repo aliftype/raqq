@@ -35,8 +35,6 @@ ref = "hah-ar.init";
 width = 703;
 }
 );
-production = hahar.medi.alt;
 script = arabic;
 sortName = arL0016.alt;
-sortNameKeep = arL0016.alt;
 }

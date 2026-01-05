@@ -317,5 +317,4 @@ width = 6000;
 metricRight = "=0";
 script = arabic;
 sortName = arL0040;
-sortNameKeep = arL0040;
 }

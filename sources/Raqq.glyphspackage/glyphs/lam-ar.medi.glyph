@@ -47,5 +47,4 @@ metricLeft = "=-20";
 metricRight = "=3@157";
 script = arabic;
 sortName = arL0055;
-sortNameKeep = arL0055;
 }

@@ -191,6 +191,5 @@ metricLeft = "=seen_alefMaksura-ar.fina";
 metricRight = "=0@73";
 script = arabic;
 sortName = arL0405;
-sortNameKeep = arL0405;
 subCategory = Ligature;
 }

@@ -102,5 +102,4 @@ metricLeft = "=waw-ar";
 metricRight = "=-50";
 script = arabic;
 sortName = arL0077;
-sortNameKeep = arL0077;
 }

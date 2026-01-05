@@ -173,6 +173,5 @@ metricLeft = "=0";
 metricRight = "=0";
 script = arabic;
 sortName = arL0057;
-sortNameKeep = arL0057;
 unicode = 1605;
 }

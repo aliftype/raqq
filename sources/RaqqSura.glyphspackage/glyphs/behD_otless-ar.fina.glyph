@@ -540,5 +540,4 @@ width = 6000;
 metricLeft = "=-11";
 script = arabic;
 sortName = arL0009;
-sortNameKeep = arL0009;
 }

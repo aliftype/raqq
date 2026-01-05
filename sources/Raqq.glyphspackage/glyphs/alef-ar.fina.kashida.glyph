@@ -70,8 +70,6 @@ width = 219;
 }
 );
 metricRight = "=0";
-production = alefar.fina.kashida;
 script = arabic;
 sortName = arL0005.kashida;
-sortNameKeep = arL0005.kashida;
 }

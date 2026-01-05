@@ -26,9 +26,7 @@ width = 96;
 );
 metricLeft = "=dotabove-ar";
 metricRight = "=dotabove-ar";
-production = twodotsverticalabovear.vert.beh;
 script = arabic;
 sortName = arM1064.vert.beh;
-sortNameKeep = arM1064.vert.beh;
 subCategory = Nonspacing;
 }

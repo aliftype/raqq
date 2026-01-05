@@ -23,8 +23,6 @@ width = 425;
 );
 metricLeft = "=0";
 metricRight = "=0";
-production = meemar.medi.round;
 script = arabic;
 sortName = arL0059.round;
-sortNameKeep = arL0059.round;
 }

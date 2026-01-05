@@ -96,8 +96,6 @@ width = 327;
 );
 metricLeft = "=meem-ar.medi.round";
 metricRight = "=0";
-production = hehar.init.round;
 script = arabic;
 sortName = arL0067.round;
-sortNameKeep = arL0067.round;
 }

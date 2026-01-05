@@ -36,6 +36,5 @@ width = 174;
 metricLeft = "=dotabove-ar";
 script = arabic;
 sortName = arM1067a;
-sortNameKeep = arM1067a;
 subCategory = Nonspacing;
 }

@@ -26,7 +26,6 @@ metricLeft = "=fatha-ar";
 metricRight = "=fatha-ar";
 script = arabic;
 sortName = arM1070;
-sortNameKeep = arM1070;
 subCategory = Nonspacing;
 unicode = 1620;
 }

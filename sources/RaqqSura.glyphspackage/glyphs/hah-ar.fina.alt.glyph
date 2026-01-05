@@ -172,8 +172,6 @@ ref = "hah-ar";
 width = 1073;
 }
 );
-production = hahar.fina.alt;
 script = arabic;
 sortName = arL0015.alt;
-sortNameKeep = arL0015.alt;
 }

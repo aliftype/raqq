@@ -36,7 +36,6 @@ metricLeft = "=hamzaabove-ar";
 metricRight = "=hamzaabove-ar";
 script = arabic;
 sortName = arM1073;
-sortNameKeep = arM1073;
 subCategory = Nonspacing;
 unicode = 1619;
 }

@@ -304,6 +304,5 @@ width = 542;
 );
 script = arabic;
 sortName = arL0401;
-sortNameKeep = arL0401;
 subCategory = Ligature;
 }

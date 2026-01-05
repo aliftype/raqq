@@ -185,6 +185,5 @@ width = 496;
 metricLeft = "=noonghunna-ar";
 script = arabic;
 sortName = arL0023;
-sortNameKeep = arL0023;
 unicode = 1587;
 }

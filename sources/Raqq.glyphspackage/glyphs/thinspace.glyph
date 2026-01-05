@@ -7,9 +7,7 @@ layerId = m01;
 width = 120;
 }
 );
-production = uni2009;
 sortName = "-s012";
-sortNameKeep = "-s012";
 subCategory = Space;
 unicode = (8201,8239);
 }

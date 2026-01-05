@@ -268,8 +268,6 @@ width = 422;
 );
 metricLeft = "=-20";
 metricRight = "=sad-ar";
-production = tahar.init.hah2;
 script = arabic;
 sortName = arL0034.hah2;
-sortNameKeep = arL0034.hah2;
 }

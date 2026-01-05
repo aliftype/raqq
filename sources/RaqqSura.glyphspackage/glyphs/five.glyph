@@ -10,7 +10,6 @@ width = 0;
 metricWidth = "=0";
 script = arabic;
 sortName = arN0885;
-sortNameKeep = arN0885;
 subCategory = "Decimal Digit";
 unicode = 53;
 }

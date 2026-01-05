@@ -168,6 +168,5 @@ metricLeft = "=0@0";
 metricRight = "=0";
 script = arabic;
 sortName = arL0407;
-sortNameKeep = arL0407;
 subCategory = Ligature;
 }

@@ -15,5 +15,4 @@ width = 128;
 );
 script = arabic;
 sortName = arL0320;
-sortNameKeep = arL0320;
 }

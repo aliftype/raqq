@@ -19,6 +19,5 @@ width = 973;
 );
 script = arabic;
 sortName = arL0151;
-sortNameKeep = arL0151;
 unicode = 1670;
 }

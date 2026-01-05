@@ -9,7 +9,6 @@ width = 1200;
 );
 script = arabic;
 sortName = arM1084;
-sortNameKeep = arM1084;
 subCategory = Nonspacing;
 unicode = 1622;
 }

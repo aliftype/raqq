@@ -92,8 +92,6 @@ width = 90;
 );
 metricLeft = "=-10@120";
 metricRight = "=behDotless-ar.medi";
-production = alefar.fina.lam;
 script = arabic;
 sortName = arL0005.lam;
-sortNameKeep = arL0005.lam;
 }

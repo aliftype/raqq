@@ -31,9 +31,7 @@ nodes = (
 width = 94;
 }
 );
-production = dotabovear.reh;
 script = arabic;
 sortName = arM1060.reh;
-sortNameKeep = arM1060.reh;
 subCategory = Nonspacing;
 }

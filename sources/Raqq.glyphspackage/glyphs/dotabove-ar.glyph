@@ -102,6 +102,5 @@ metricLeft = "=6";
 metricRight = "=4";
 script = arabic;
 sortName = arM1060;
-sortNameKeep = arM1060;
 subCategory = Nonspacing;
 }

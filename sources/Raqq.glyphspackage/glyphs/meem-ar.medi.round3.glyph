@@ -22,8 +22,6 @@ ref = "meem-ar.init.round";
 width = 398;
 }
 );
-production = meemar.medi.round3;
 script = arabic;
 sortName = arL0059.round3;
-sortNameKeep = arL0059.round3;
 }

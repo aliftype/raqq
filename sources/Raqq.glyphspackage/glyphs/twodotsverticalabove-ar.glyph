@@ -27,6 +27,5 @@ metricLeft = "=dotabove-ar";
 metricRight = "=dotabove-ar";
 script = arabic;
 sortName = arM1064;
-sortNameKeep = arM1064;
 subCategory = Nonspacing;
 }

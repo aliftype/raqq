@@ -25,9 +25,7 @@ width = 96;
 }
 );
 metricLeft = "=dotabove-ar";
-production = dotabovear.beh;
 script = arabic;
 sortName = arM1060.beh;
-sortNameKeep = arM1060.beh;
 subCategory = Nonspacing;
 }

@@ -109,5 +109,4 @@ metricLeft = "=alef-ar.fina";
 metricRight = "=alef-ar.fina";
 script = arabic;
 sortName = arL0005.short;
-sortNameKeep = arL0005.short;
 }

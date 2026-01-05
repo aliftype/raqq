@@ -100,6 +100,5 @@ width = 400;
 metricRight = "=36";
 script = arabic;
 sortName = arP0989;
-sortNameKeep = arP0989;
 unicode = 1757;
 }

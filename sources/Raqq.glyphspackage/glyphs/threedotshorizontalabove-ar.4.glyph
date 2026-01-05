@@ -32,9 +32,7 @@ width = 456;
 );
 metricLeft = "=dotabove-ar";
 metricRight = "=dotabove-ar";
-production = threedotshorizontalabovear.4;
 script = arabic;
 sortName = arM1068.4;
-sortNameKeep = arM1068.4;
 subCategory = Nonspacing;
 }

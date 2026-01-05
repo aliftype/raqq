@@ -100,5 +100,4 @@ metricLeft = "=tah-ar.init";
 metricRight = "=0@110";
 script = arabic;
 sortName = arL0033;
-sortNameKeep = arL0033;
 }

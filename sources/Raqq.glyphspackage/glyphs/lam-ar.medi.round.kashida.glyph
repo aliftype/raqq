@@ -121,8 +121,6 @@ width = 96;
 }
 );
 metricRight = "=0";
-production = lamar.medi.round.kashida;
 script = arabic;
 sortName = arL0055.round.kashida;
-sortNameKeep = arL0055.round.kashida;
 }

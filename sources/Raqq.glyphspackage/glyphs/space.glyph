@@ -50,7 +50,6 @@ width = 500;
 }
 );
 sortName = "-s001";
-sortNameKeep = "-s001";
 subCategory = Space;
 unicode = (32,160);
 }

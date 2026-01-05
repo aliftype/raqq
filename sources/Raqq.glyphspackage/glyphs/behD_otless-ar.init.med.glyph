@@ -71,8 +71,6 @@ width = 130;
 );
 metricLeft = "=-20";
 metricRight = "=0";
-production = behDotlessar.init.med;
 script = arabic;
 sortName = arL0012.med;
-sortNameKeep = arL0012.med;
 }

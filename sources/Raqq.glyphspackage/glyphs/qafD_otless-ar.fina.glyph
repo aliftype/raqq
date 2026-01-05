@@ -133,5 +133,4 @@ metricLeft = "=0";
 metricRight = "=0@10";
 script = arabic;
 sortName = arL0044;
-sortNameKeep = arL0044;
 }

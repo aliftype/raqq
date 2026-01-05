@@ -53,5 +53,4 @@ width = 100;
 metricRight = "behDotless-ar.medi";
 script = arabic;
 sortName = arL0055;
-sortNameKeep = arL0055;
 }

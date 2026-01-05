@@ -81,8 +81,6 @@ width = 577;
 }
 );
 metricRight = "=0";
-production = hahar.medi.hah;
 script = arabic;
 sortName = arL0016.hah;
-sortNameKeep = arL0016.hah;
 }

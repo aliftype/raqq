@@ -117,5 +117,4 @@ metricLeft = "=-20@50";
 metricRight = "=behDotless-ar.medi";
 script = arabic;
 sortName = arL0037;
-sortNameKeep = arL0037;
 }

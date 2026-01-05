@@ -242,6 +242,5 @@ metricLeft = "=0@88";
 metricRight = "=0";
 script = arabic;
 sortName = arL0079a;
-sortNameKeep = arL0079a;
 unicode = 1609;
 }

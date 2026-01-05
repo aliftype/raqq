@@ -37,9 +37,7 @@ width = 156;
 }
 );
 metricLeft = "=dotabove-ar";
-production = threedotsupabovear.beh;
 script = arabic;
 sortName = arM1067a.beh;
-sortNameKeep = arM1067a.beh;
 subCategory = Nonspacing;
 }

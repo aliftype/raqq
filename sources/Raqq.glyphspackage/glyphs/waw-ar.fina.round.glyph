@@ -21,8 +21,6 @@ width = 492;
 }
 );
 metricLeft = "=waw-ar";
-production = wawar.fina.round;
 script = arabic;
 sortName = arL0077.round;
-sortNameKeep = arL0077.round;
 }

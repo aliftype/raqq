@@ -87,8 +87,6 @@ ref = "lam-ar.init.short";
 width = 123;
 }
 );
-production = lamar.init.hah1;
 script = arabic;
 sortName = arL0056.hah1;
-sortNameKeep = arL0056.hah1;
 }

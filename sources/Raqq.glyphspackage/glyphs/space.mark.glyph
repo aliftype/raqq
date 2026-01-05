@@ -14,6 +14,5 @@ width = 400;
 );
 script = arabic;
 sortName = arM1000;
-sortNameKeep = arM1000;
 subCategory = Nonspacing;
 }

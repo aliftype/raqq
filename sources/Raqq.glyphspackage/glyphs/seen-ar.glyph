@@ -83,6 +83,5 @@ metricLeft = "=noonghunna-ar";
 metricRight = "=0";
 script = arabic;
 sortName = arL0023;
-sortNameKeep = arL0023;
 unicode = 1587;
 }

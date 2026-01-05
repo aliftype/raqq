@@ -37,6 +37,5 @@ metricLeft = "=fatha-ar";
 metricRight = "=fatha-ar";
 script = arabic;
 sortName = arM1075.alt;
-sortNameKeep = arM1075.alt;
 subCategory = Nonspacing;
 }

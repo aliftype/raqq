@@ -157,8 +157,6 @@ width = 328;
 }
 );
 metricRight = "=fehDotless-ar.init";
-production = fehDotlessar.init.hah;
 script = arabic;
 sortName = arL0042.hah;
-sortNameKeep = arL0042.hah;
 }

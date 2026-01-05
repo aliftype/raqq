@@ -78,8 +78,6 @@ ref = "hah-ar";
 width = 1083;
 }
 );
-production = hahar.fina.alt;
 script = arabic;
 sortName = arL0015.alt;
-sortNameKeep = arL0015.alt;
 }

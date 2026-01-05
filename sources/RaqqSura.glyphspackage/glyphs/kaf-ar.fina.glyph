@@ -91,5 +91,4 @@ metricLeft = "=kaf-ar";
 metricRight = "=0@110";
 script = arabic;
 sortName = arL0047;
-sortNameKeep = arL0047;
 }

@@ -86,8 +86,6 @@ width = 123;
 );
 metricLeft = "=-20@115";
 metricRight = "=0";
-production = lamar.init.hah1;
 script = arabic;
 sortName = arL0056.hah1;
-sortNameKeep = arL0056.hah1;
 }

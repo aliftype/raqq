@@ -63,8 +63,6 @@ ref = _p.lam;
 width = 125;
 }
 );
-production = lamar.medi.hah1;
 script = arabic;
 sortName = arL0055.hah1;
-sortNameKeep = arL0055.hah1;
 }

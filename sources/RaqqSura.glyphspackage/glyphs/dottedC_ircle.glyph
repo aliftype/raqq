@@ -176,6 +176,5 @@ width = 578;
 );
 script = arabic;
 sortName = arS1029;
-sortNameKeep = arS1029;
 unicode = 9676;
 }

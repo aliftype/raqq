@@ -102,8 +102,6 @@ width = 100;
 );
 metricLeft = "=behDotless-ar.init";
 metricRight = "=behDotless-ar.init";
-production = behDotlessar.init.med;
 script = arabic;
 sortName = arL0012.med;
-sortNameKeep = arL0012.med;
 }

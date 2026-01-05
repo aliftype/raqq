@@ -62,8 +62,6 @@ ref = _p.lam;
 width = 138;
 }
 );
-production = lamar.medi.short;
 script = arabic;
 sortName = arL0055.short;
-sortNameKeep = arL0055.short;
 }
