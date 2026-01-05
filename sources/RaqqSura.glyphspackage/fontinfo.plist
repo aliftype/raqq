@@ -84,6 +84,15 @@ name = "Virtual Master";
 value = (
 {
 Axis = Mashq;
+Location = 0;
+}
+);
+},
+{
+name = "Virtual Master";
+value = (
+{
+Axis = Mashq;
 Location = 7;
 }
 );
