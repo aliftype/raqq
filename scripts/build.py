@@ -646,10 +646,9 @@ def prepare(args):
         glyph = font.glyphs[name]
 
         for layer in glyph.layers:
-            if glyph.color == 0:
+            if glyph.category == "Placeholder":
                 # Clear placeholder glyphs
                 layer.components = []
-                layer.width = 800
             elif (glyph.category, glyph.subCategory) == ("Mark", "Nonspacing"):
                 # Zero mark width
                 layer.width = 0
