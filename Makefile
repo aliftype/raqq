@@ -23,15 +23,15 @@ SOURCEDIR = sources
 SCRIPTDIR = scripts
 FONTDIR = fonts
 TESTDIR = tests
-BUILDDIR = build
 
 NAMES = ${NAME} ${NAME}Sura
 FONTS = ${NAMES:%=${FONTDIR}/%.ttf}
 
 JSON = ${TESTDIR}/shaping.json
-
-FEA = ${NAMES:%=${SOURCEDIR}/%-overhang.fea}
 HTML = ${NAMES:%=${TESTDIR}/%-shaping.html}
+SVG = FontSample.svg
+
+GLYPHSFILES = ${NAMES:%=${SOURCEDIR}/%.glyphspackage}
 
 TAG = $(shell git describe --tags --abbrev=0)
 VERSION = ${TAG:v%=%}
@@ -40,32 +40,48 @@ DIST = ${NAME}-${VERSION}
 
 .SECONDARY:
 .ONESHELL:
-.PHONY: all clean dist ttf test
+.PHONY: all clean dist ttf test doc
 
-all: ttf
+all: ttf doc
 ttf: ${FONTS}
 test: ${HTML}
 expectation: ${JSON}
 
 update-fea: ${FONTS}
 	fonts=(${FONTS})
-	fea=(${FEA})
+	glyphsfiles=(${GLYPHSFILES})
 	for i in $${!fonts[@]}; do
-		echo "  GEN    $${fea[$$i]}"
-		${PYTHON} ${SCRIPTDIR}/update-overhang-fea.py $${fonts[$$i]} $${fea[$$i]}
+		echo "  GEN    $${glyphsfiles[$$i]}"
+		${PYTHON} ${SCRIPTDIR}/update-overhang-fea.py $${fonts[$$i]} $${glyphsfiles[$$i]}/fontinfo.plist
 	done
 
-${FONTDIR}/%.ttf: ${SOURCEDIR}/%.glyphspackage ${SOURCEDIR}/%-overhang.fea
+${FONTDIR}/%.ttf: ${SOURCEDIR}/%.glyphspackage ${SOURCEDIR}/%.glyphspackage/fontinfo.plist
 	$(info   BUILD  ${@F})
-	${PYTHON} ${SCRIPTDIR}/build.py $< ${VERSION} $@
+	export SOURCE_DATE_EPOCH=$(shell stat -c "%Y" $<)
+	${PYTHON} -m fontmake $< \
+			      --output-path=$@ \
+			      --output=variable \
+			      --verbose=WARNING \
+			      --flatten-components \
+			      --filter=... \
+			      --filter="alifTools.filters::VariableFeaConvertorFilter(default='MSHQ=10')" \
+			      --filter="alifTools.filters::ClearPlaceholdersFilter()" \
+			      --filter="alifTools.filters::FontVersionFilter(fontVersion=${VERSION})"
 
-${TESTDIR}/shaping.json: ${TESTDIR}/shaping.yaml ${FONTS}
+${TESTDIR}/%.json: ${TESTDIR}/%.yaml ${FONTS}
 	$(info   GEN    ${@F})
 	${PYTHON} -m alifTools.shaping.update $< $@ ${FONTS}
 
 ${TESTDIR}/%-shaping.html: ${FONTDIR}/%.ttf ${TESTDIR}/shaping-config.yaml
 	$(info   SHAPE  ${<F})
 	${PYTHON} -m alifTools.shaping.check $< ${TESTDIR}/shaping-config.yaml $@
+
+${SVG}: ${FONTS}
+	$(info   SVG    ${@F})
+	${PYTHON} -m alifTools.sample $< \
+				      --foreground=1F2328 \
+				      --dark-foreground=D1D7E0 \
+				      -o $@
 
 dist: ${FONTS}
 	$(info   DIST   ${DIST}.zip)
@@ -75,4 +91,4 @@ dist: ${FONTS}
 	zip -rq ${DIST}.zip ${DIST}
 
 clean:
-	rm -rf ${FONTS} ${HTML} ${DIST} ${DIST}.zip
+	rm -rf ${FONTS} ${HTML} ${SVG} ${DIST} ${DIST}.zip

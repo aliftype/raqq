@@ -15,6 +15,7 @@
 # along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
 import itertools
+import re
 
 import uharfbuzz as hb
 
@@ -85,7 +86,7 @@ def shape(font, text, direction="rtl", script="arab", features=None):
         font2.set_variations({"MSHQ": 100})
         overhang2 = font2.get_glyph_h_advance(infos[-1].codepoint)
         adj2 = adj + (overhang2 - overhang)
-        adj2 = f"(MSHQ=10:{adj} MSHQ=100:{adj2})"
+        adj2 = f"{adj} (MSHQ:100) {adj2}"
 
     return glyphs, adj, adj2
 
@@ -149,12 +150,22 @@ def main(args):
                 break
             i += 1
 
-    with open(args.fea, "w") as fea:
-        fea.write("# THIS FILE IS AUTO GENERATED, DO NOT EDIT\n\n")
-        fea.write("lookup overhang {\n")
-        fea.write("  lookupflag IgnoreMarks;\n")
-        fea.write("\n".join(rules))
-        fea.write("\n} overhang;\n\n")
+    with open(args.plist, "r") as f:
+        data = f.read()
+
+    lookup = f"""
+# THIS FILE IS AUTO GENERATED, DO NOT EDIT
+lookup overhang {{
+    lookupflag IgnoreMarks;
+{"\n".join(rules)}
+}} overhang;
+"""
+    pat = re.compile(r"(# Overhang Begin\n).*?(\n# Overhang End)", flags=re.DOTALL)
+    assert pat.findall(data), pat.findall(data)
+    data = pat.sub(rf"\1{lookup}\2", data)
+
+    with open(args.plist, "w") as f:
+        f.write(data)
 
 
 if __name__ == "__main__":
@@ -163,7 +174,7 @@ if __name__ == "__main__":
 
     parser = ArgumentParser()
     parser.add_argument("font", type=Path, help="input font file path.")
-    parser.add_argument("fea", type=Path, help="output .fea file path.")
+    parser.add_argument("plist", type=Path, help="output .plist file path.")
 
     args = parser.parse_args()
     main(args)
