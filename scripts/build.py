@@ -422,7 +422,9 @@ def buildMaster(font, master, args):
                     component.componentName = componentName
 
     colorGlyphs = list(colorLayers)
-    glyphOrder = font.glyphOrder + [n for n in glyphSet if n not in font.glyphOrder]
+    glyphOrder = font.glyphOrder + sorted(
+        n for n in glyphSet if n not in font.glyphOrder
+    )
 
     fb = FontBuilder(font.upm, isTTF=True)
     fb.setupGlyphOrder(glyphOrder)
