@@ -1289,9 +1289,9 @@ tag = salt;
 },
 {
 code = "lookup optical_bounds {
-	pos endofayah-ar	<-${endofayah-ar:width}		0 -${endofayah-ar:width} 0>;
- 	pos endofayah-ar.05	<-${endofayah-ar.05:width}	0 -${endofayah-ar.05:width} 0>;
- 	pos endofayah-ar.10	<-${endofayah-ar.10:width}	0 -${endofayah-ar.10:width} 0>;
+	pos endofayah-ar	<${endofayah-ar:width*-1}		0 ${endofayah-ar:width*-1} 0>;
+ 	pos endofayah-ar.05	<${endofayah-ar.05:width*-1}	0 ${endofayah-ar.05:width*-1} 0>;
+ 	pos endofayah-ar.10	<${endofayah-ar.10:width*-1}	0 ${endofayah-ar.10:width*-1} 0>;
 } optical_bounds;
 ";
 tag = lfbd;
