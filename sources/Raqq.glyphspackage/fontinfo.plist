@@ -77,6 +77,10 @@ value = (
 );
 },
 {
+name = "Use Typo Metrics";
+value = 1;
+},
+{
 name = glyphOrder;
 value = (
 .notdef,
