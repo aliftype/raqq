@@ -1,6 +1,5 @@
 {
 category = Placeholder;
-color = 0;
 glyphname = "qafDotless-ar";
 layers = (
 {
@@ -14,5 +13,6 @@ width = 469;
 }
 );
 script = arabic;
+subCategory = Base;
 unicode = 1647;
 }

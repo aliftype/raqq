@@ -1,6 +1,5 @@
 {
 category = Placeholder;
-color = 0;
 glyphname = "hah-ar";
 layers = (
 {
@@ -14,5 +13,6 @@ width = 973;
 }
 );
 script = arabic;
+subCategory = Base;
 unicode = 1581;
 }

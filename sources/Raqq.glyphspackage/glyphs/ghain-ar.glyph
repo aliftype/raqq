@@ -1,6 +1,5 @@
 {
 category = Placeholder;
-color = 0;
 glyphname = "ghain-ar";
 layers = (
 {
@@ -18,6 +17,6 @@ width = 982;
 }
 );
 script = arabic;
-sortName = arL0216;
+subCategory = Base;
 unicode = 1594;
 }

@@ -1,6 +1,5 @@
 {
 category = Placeholder;
-color = 0;
 glyphname = "noonAfrican-ar";
 layers = (
 {
@@ -14,6 +13,6 @@ width = 295;
 }
 );
 script = arabic;
-sortName = arL0281;
+subCategory = Base;
 unicode = 2237;
 }

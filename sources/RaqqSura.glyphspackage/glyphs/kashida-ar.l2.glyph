@@ -1,6 +1,5 @@
 {
 category = Placeholder;
-color = 0;
 glyphname = "kashida-ar.l2";
 layers = (
 {
@@ -17,5 +16,5 @@ width = 80;
 metricLeft = "=-20";
 metricRight = "=0";
 script = arabic;
-sortName = arL0351;
+subCategory = "Level 2";
 }

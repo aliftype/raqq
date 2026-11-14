@@ -1,6 +1,5 @@
 {
 category = Placeholder;
-color = 0;
 glyphname = "waw-ar";
 layers = (
 {
@@ -14,5 +13,6 @@ width = 516;
 }
 );
 script = arabic;
+subCategory = Base;
 unicode = 1608;
 }

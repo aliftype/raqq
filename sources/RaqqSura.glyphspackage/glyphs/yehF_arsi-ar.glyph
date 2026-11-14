@@ -1,6 +1,5 @@
 {
 category = Placeholder;
-color = 0;
 glyphname = "yehFarsi-ar";
 layers = (
 {
@@ -14,6 +13,6 @@ width = 393;
 }
 );
 script = arabic;
-sortName = arL0307;
+subCategory = Base;
 unicode = 1740;
 }
