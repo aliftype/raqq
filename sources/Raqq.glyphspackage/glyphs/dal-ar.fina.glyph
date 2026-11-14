@@ -17,7 +17,7 @@ shapes = (
 {
 alignment = -1;
 pos = (0,9);
-ref = "dal-ar";
+ref = "dal-ar.isol";
 },
 {
 alignment = -1;
@@ -46,7 +46,7 @@ name = "15 May 23 at 22:26";
 shapes = (
 {
 alignment = -1;
-ref = "dal-ar";
+ref = "dal-ar.isol";
 },
 {
 alignment = -1;
@@ -76,7 +76,7 @@ shapes = (
 {
 alignment = -1;
 pos = (0,9);
-ref = "dal-ar";
+ref = "dal-ar.isol";
 },
 {
 alignment = -1;

@@ -162,7 +162,7 @@ nodes = (
 width = 484;
 }
 );
-metricLeft = "=noonghunna-ar";
+metricLeft = "=noonghunna-ar.isol";
 metricRight = "behDotless-ar.medi";
 script = arabic;
 sortName = arL0024;

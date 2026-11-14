@@ -17,7 +17,7 @@ shapes = (
 {
 alignment = -1;
 pos = (0,-83);
-ref = "waw-ar";
+ref = "waw-ar.isol";
 }
 );
 width = 492;
@@ -39,13 +39,13 @@ shapes = (
 {
 alignment = -1;
 pos = (0,-83);
-ref = "waw-ar";
+ref = "waw-ar.isol";
 }
 );
 width = 492;
 }
 );
-metricLeft = "=waw-ar";
+metricLeft = "=waw-ar.isol";
 script = arabic;
 sortName = arL0077.round;
 }

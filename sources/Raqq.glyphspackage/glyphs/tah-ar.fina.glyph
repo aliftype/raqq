@@ -16,7 +16,7 @@ shapes = (
 {
 alignment = -1;
 pos = (0,10);
-ref = "tah-ar";
+ref = "tah-ar.isol";
 },
 {
 pos = (397,0);
@@ -45,7 +45,7 @@ shapes = (
 {
 alignment = -1;
 pos = (0,10);
-ref = "tah-ar";
+ref = "tah-ar.isol";
 },
 {
 pos = (5592,0);
@@ -75,7 +75,7 @@ shapes = (
 {
 alignment = -1;
 pos = (0,10);
-ref = "tah-ar";
+ref = "tah-ar.isol";
 },
 {
 pos = (14,0);
@@ -86,7 +86,7 @@ visible = 1;
 width = 415;
 }
 );
-metricLeft = "=tah-ar";
+metricLeft = "=tah-ar.isol";
 metricRight = "=0@110";
 script = arabic;
 sortName = arL0032;

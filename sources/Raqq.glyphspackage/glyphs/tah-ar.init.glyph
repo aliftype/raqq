@@ -313,7 +313,7 @@ width = 422;
 }
 );
 metricLeft = "=-20";
-metricRight = "=sad-ar";
+metricRight = "=sad-ar.isol";
 script = arabic;
 sortName = arL0034;
 }

@@ -73,7 +73,7 @@ nodes = (
 {
 alignment = -1;
 pos = (0,-83);
-ref = "noonghunna-ar";
+ref = "noonghunna-ar.isol";
 }
 );
 width = 510;
@@ -93,7 +93,7 @@ visible = 1;
 width = 510;
 }
 );
-metricLeft = "=noonghunna-ar";
+metricLeft = "=noonghunna-ar.isol";
 metricRight = "=3@157";
 script = arabic;
 sortName = arL0024;

@@ -316,7 +316,7 @@ visible = 1;
 width = 597;
 }
 );
-metricLeft = "=behDotless-ar";
+metricLeft = "=behDotless-ar.isol";
 metricRight = "=0";
 script = arabic;
 sortName = arL0040;

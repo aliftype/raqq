@@ -7,7 +7,7 @@ layers = (
 layerId = m01;
 shapes = (
 {
-ref = "alefMaksura-ar";
+ref = "alefMaksura-ar.isol";
 },
 {
 pos = (350,-213);

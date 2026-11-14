@@ -1,0 +1,171 @@
+{
+category = Letter;
+glyphname = "fehDotless_alef-ar.isol";
+kernRight = feh.init;
+layers = (
+{
+anchors = (
+{
+name = caret_1;
+pos = (79,0);
+},
+{
+name = damma_1;
+pos = (79,248);
+},
+{
+name = damma_2;
+pos = (-47,66);
+},
+{
+name = fatha_1;
+pos = (277,507);
+},
+{
+name = fatha_2;
+pos = (95,669);
+},
+{
+name = kasra_1;
+pos = (397,-49);
+},
+{
+name = kasra_2;
+pos = (72,-56);
+},
+{
+name = madda_2;
+pos = (-66,619);
+},
+{
+name = top_1;
+pos = (171,432);
+}
+);
+attr = {
+colorPalette = 4;
+};
+backgroundImage = {
+alpha = 80;
+imagePath = "images/MS-ADD-01116-000-00005.jpg";
+locked = 1;
+pos = (-3997,-3724);
+scale = (5,5);
+};
+layerId = m01;
+shapes = (
+{
+closed = 1;
+nodes = (
+(428,-10,o),
+(489,23,o),
+(489,122,cs),
+(489,309,o),
+(386,459,o),
+(268,460,cs),
+(137,461,o),
+(55,344,o),
+(75,213,c),
+(86,213,l),
+(74,292,o),
+(91,586,o),
+(80,792,cs),
+(79,812,o),
+(67,806,o),
+(61,795,cs),
+(34,749,o),
+(28,731,o),
+(-24,696,c),
+(-8,576,o),
+(-10,407,o),
+(-10,230,cs),
+(-10,141,o),
+(-13,68,o),
+(30,30,cs),
+(69,-6,o),
+(101,-14,o),
+(215,-13,cs)
+);
+}
+);
+width = 489;
+},
+{
+associatedMasterId = m01;
+attr = {
+colorPalette = 1;
+};
+backgroundImage = {
+alpha = 80;
+imagePath = "images/MS-ADD-01116-000-00005.jpg";
+locked = 1;
+pos = (-3997,-3724);
+scale = (5,5);
+};
+layerId = "9AA3F44B-4D5B-4F9F-A408-0EF1ADE08EEC";
+name = "Regular 9 Sep 25 at 06:53";
+shapes = (
+{
+closed = 1;
+nodes = (
+(424,0,o),
+(479,30,o),
+(479,122,cs),
+(479,304,o),
+(380,449,o),
+(268,450,cs),
+(143,451,o),
+(66,339,o),
+(85,215,cs),
+(99,125,o),
+(221,102,o),
+(366,106,c),
+(366,96,l),
+(221,92,o),
+(91,110,o),
+(75,211,cs),
+(63,291,o),
+(81,585,o),
+(70,790,c),
+(44,748,o),
+(36,726,o),
+(-13,691,c),
+(2,570,o),
+(0,404,o),
+(0,230,cs),
+(0,141,o),
+(-3,72,o),
+(37,37,cs),
+(74,3,o),
+(102,-4,o),
+(215,-3,cs)
+);
+},
+{
+closed = 1;
+nodes = (
+(288,265,o),
+(282,271,o),
+(282,278,cs),
+(282,284,o),
+(288,290,o),
+(295,290,cs),
+(301,290,o),
+(307,284,o),
+(307,278,cs),
+(307,271,o),
+(301,265,o),
+(295,265,cs)
+);
+}
+);
+visible = 1;
+width = 489;
+}
+);
+metricLeft = "=alef-ar.fina";
+metricRight = "=fehDotless-ar.init";
+script = arabic;
+sortName = arL0403;
+subCategory = Ligature;
+}

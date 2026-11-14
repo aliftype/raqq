@@ -7,7 +7,7 @@ layers = (
 layerId = m01;
 shapes = (
 {
-ref = "reh-ar";
+ref = "reh-ar.isol";
 },
 {
 pos = (146,150);

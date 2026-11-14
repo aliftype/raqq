@@ -16,7 +16,7 @@ layerId = m01;
 shapes = (
 {
 alignment = -1;
-ref = "sad-ar";
+ref = "sad-ar.isol";
 },
 {
 alignment = -1;
@@ -45,7 +45,7 @@ name = "16 May 23 at 18:15";
 shapes = (
 {
 alignment = -1;
-ref = "sad-ar";
+ref = "sad-ar.isol";
 },
 {
 alignment = -1;
@@ -75,7 +75,7 @@ name = "17 May 23 at 13:07";
 shapes = (
 {
 alignment = -1;
-ref = "sad-ar";
+ref = "sad-ar.isol";
 },
 {
 alignment = -1;
@@ -86,7 +86,7 @@ ref = _p.sad;
 width = 521;
 }
 );
-metricLeft = "=sad-ar";
+metricLeft = "=sad-ar.isol";
 metricRight = "=0@110";
 script = arabic;
 sortName = arL0028;

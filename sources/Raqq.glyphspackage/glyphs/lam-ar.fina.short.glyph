@@ -39,7 +39,7 @@ layerId = m01;
 shapes = (
 {
 alignment = -1;
-ref = "lam-ar.short";
+ref = "lam-ar.isol.short";
 },
 {
 alignment = -1;

@@ -134,7 +134,7 @@ ref = _p.lam;
 width = 387;
 }
 );
-metricLeft = "=reh-ar";
+metricLeft = "=reh-ar.isol";
 metricRight = "=-66";
 script = arabic;
 sortName = arL0021;

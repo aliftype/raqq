@@ -16,7 +16,7 @@ shapes = (
 {
 alignment = -1;
 pos = (0,9);
-ref = "kaf-ar";
+ref = "kaf-ar.isol";
 },
 {
 alignment = -1;
@@ -45,7 +45,7 @@ shapes = (
 {
 alignment = -1;
 pos = (0,9);
-ref = "kaf-ar";
+ref = "kaf-ar.isol";
 },
 {
 alignment = -1;
@@ -75,7 +75,7 @@ shapes = (
 {
 alignment = -1;
 pos = (0,9);
-ref = "kaf-ar";
+ref = "kaf-ar.isol";
 },
 {
 alignment = -1;
@@ -87,7 +87,7 @@ visible = 1;
 width = 5993;
 }
 );
-metricLeft = "=kaf-ar";
+metricLeft = "=kaf-ar.isol";
 metricRight = "=0@110";
 script = arabic;
 sortName = arL0047;
