@@ -1,5 +1,5 @@
 {
-.appVersion = "3535";
+.appVersion = "3536";
 .formatVersion = 3;
 axes = (
 {
@@ -13,7 +13,7 @@ tag = MSHQ;
 );
 classes = (
 {
-code = "$[name LIKE \"*-ar.isol*\"]
+code = "$[name LIKE \"*.isol*\" && ! name BEGINSWITH \"_\"]
 
 period
 threedots-ar
