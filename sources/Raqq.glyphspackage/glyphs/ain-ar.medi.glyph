@@ -161,7 +161,7 @@ shapes = (
 {
 alignment = -1;
 pos = (92,0);
-ref = "behDotless-ar.medi";
+ref = "beh-ar.medi";
 }
 );
 visible = 1;

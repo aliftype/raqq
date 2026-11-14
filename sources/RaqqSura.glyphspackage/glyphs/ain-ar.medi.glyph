@@ -114,7 +114,7 @@ width = 202;
 }
 );
 metricLeft = "=-20@50";
-metricRight = "=behDotless-ar.medi";
+metricRight = "=beh-ar.medi";
 script = arabic;
 sortName = arL0037;
 }

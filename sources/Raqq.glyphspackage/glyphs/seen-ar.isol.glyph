@@ -73,13 +73,13 @@ nodes = (
 },
 {
 pos = (0,-81);
-ref = "noonghunna-ar.isol";
+ref = "noon-ar.isol";
 }
 );
 width = 506;
 }
 );
-metricLeft = "=noonghunna-ar.isol";
+metricLeft = "=noon-ar.isol";
 metricRight = "=0";
 script = arabic;
 sortName = arL0023;

@@ -162,8 +162,8 @@ nodes = (
 width = 484;
 }
 );
-metricLeft = "=noonghunna-ar.isol";
-metricRight = "behDotless-ar.medi";
+metricLeft = "=noon-ar.isol";
+metricRight = "beh-ar.medi";
 script = arabic;
 sortName = arL0024;
 }

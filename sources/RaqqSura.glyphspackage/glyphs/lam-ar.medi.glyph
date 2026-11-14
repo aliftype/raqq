@@ -50,7 +50,7 @@ ref = _p.lam;
 width = 100;
 }
 );
-metricRight = "behDotless-ar.medi";
+metricRight = "beh-ar.medi";
 script = arabic;
 sortName = arL0055;
 }

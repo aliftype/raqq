@@ -1,0 +1,107 @@
+{
+category = Letter;
+glyphname = "beh-ar.medi";
+kernRight = beh;
+layers = (
+{
+anchors = (
+{
+name = bottom;
+pos = (18,-38);
+},
+{
+name = damma;
+pos = (-10,170);
+},
+{
+name = entry;
+pos = (100,0);
+},
+{
+name = exit;
+},
+{
+name = fatha;
+pos = (43,414);
+},
+{
+name = kasra;
+pos = (51,-57);
+},
+{
+name = top;
+pos = (59,335);
+}
+);
+attr = {
+colorPalette = 4;
+};
+backgroundImage = {
+alpha = 80;
+imagePath = "images/MS-ADD-01116-000-00008.jpg";
+locked = 1;
+pos = (-3917,-2872);
+scale = (5,5);
+};
+layerId = m01;
+shapes = (
+{
+closed = 1;
+nodes = (
+(100,0,l),
+(100,366,ls),
+(100,380,o),
+(93,382,o),
+(85,370,cs),
+(61,328,o),
+(19,289,o),
+(-10,283,c),
+(-10,110,l),
+(-30,110,l),
+(-30,0,l)
+);
+}
+);
+width = 100;
+},
+{
+associatedMasterId = m01;
+attr = {
+colorPalette = 1;
+};
+backgroundImage = {
+alpha = 80;
+imagePath = "images/MS-ADD-01116-000-00008.jpg";
+locked = 1;
+pos = (-3899,-2872);
+scale = (5,5);
+};
+layerId = "099CF29B-596A-4F11-8DDD-6E94280AFCA9";
+metricLeft = "=0@120";
+metricRight = "=10@120";
+name = "Regular 9 Jan 24 at 21:27";
+shapes = (
+{
+closed = 1;
+nodes = (
+(100,10,l),
+(100,100,l),
+(90,100,l),
+(90,356,l),
+(66,319,o),
+(29,284,o),
+(0,273,c),
+(0,110,l),
+(-32,110,l),
+(-32,10,l)
+);
+}
+);
+width = 100;
+}
+);
+metricLeft = "=-10@120";
+metricRight = "=0@120";
+script = arabic;
+sortName = arL0010a;
+}

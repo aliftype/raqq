@@ -55,22 +55,22 @@ configuration:
   - yehFarsi-ar
   - yehHamzaabove-ar
   - yehbarree-ar
-  - behDotless-ar.medi.l1
+  - beh-ar.medi.l1
   - hah-ar.medi.l1
   - seen-ar.medi.l1
   - sad-ar.medi.l1
   - ain-ar.medi.l1
-  - fehDotless-ar.medi.l1
+  - feh-ar.medi.l1
   - kaf-ar.medi.l1
   - meem-ar.medi.l1
   - heh-ar.medi.l1
   - kashida-ar.l1
-  - behDotless-ar.medi.l2
+  - beh-ar.medi.l2
   - hah-ar.medi.l2
   - seen-ar.medi.l2
   - sad-ar.medi.l2
   - ain-ar.medi.l2
-  - fehDotless-ar.medi.l2
+  - feh-ar.medi.l2
   - kaf-ar.medi.l2
   - meem-ar.medi.l2
   - heh-ar.medi.l2

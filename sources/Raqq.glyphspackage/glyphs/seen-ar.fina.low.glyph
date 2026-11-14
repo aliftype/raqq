@@ -71,7 +71,7 @@ nodes = (
 {
 alignment = -1;
 pos = (0,-83);
-ref = "noonghunna-ar.isol";
+ref = "noon-ar.isol";
 }
 );
 width = 487;
@@ -84,13 +84,13 @@ shapes = (
 {
 alignment = -1;
 pos = (382,0);
-ref = "behDotless-ar.medi";
+ref = "beh-ar.medi";
 }
 );
 width = 510;
 }
 );
-metricLeft = "=noonghunna-ar.isol";
+metricLeft = "=noon-ar.isol";
 metricRight = "=seen-ar.medi.low";
 script = arabic;
 sortName = arL0024.low;

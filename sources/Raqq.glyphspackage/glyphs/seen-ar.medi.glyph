@@ -110,7 +110,7 @@ shapes = (
 {
 alignment = -1;
 pos = (273,0);
-ref = "behDotless-ar.medi";
+ref = "beh-ar.medi";
 }
 );
 visible = 1;

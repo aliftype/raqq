@@ -1,0 +1,180 @@
+{
+category = Letter;
+glyphname = "beh_yeh-ar.fina";
+kernRight = beh;
+layers = (
+{
+anchors = (
+{
+name = bottom_1;
+pos = (23,-38);
+},
+{
+name = bottom_2;
+pos = (348,-230);
+},
+{
+name = damma_1;
+pos = (0,170);
+},
+{
+name = damma_2;
+pos = (-88,-82);
+},
+{
+name = entry;
+pos = (110,0);
+},
+{
+name = fatha_1;
+pos = (53,414);
+},
+{
+name = fatha_2;
+pos = (-83,272);
+},
+{
+name = kasra_1;
+pos = (56,-57);
+},
+{
+name = kasra_2;
+pos = (197,-308);
+},
+{
+name = top_1;
+pos = (69,335);
+}
+);
+attr = {
+colorPalette = 4;
+};
+backgroundImage = {
+alpha = 80;
+angle = 1.8;
+imagePath = "images/MS-ADD-01116-000-00066.jpg";
+locked = 1;
+pos = (-2959,-1894);
+scale = (5,5);
+};
+layerId = m01;
+shapes = (
+{
+closed = 1;
+nodes = (
+(353,-228,o),
+(367,-191,o),
+(355,-136,cs),
+(345,-90,o),
+(335,-62,o),
+(322,-38,cs),
+(314,-24,o),
+(302,-20,o),
+(285,-21,cs),
+(177,-26,o),
+(148,-20,o),
+(129,-17,cs),
+(110,-14,o),
+(110,-5,o),
+(110,0,cs),
+(110,366,ls),
+(110,380,o),
+(103,382,o),
+(95,370,cs),
+(71,328,o),
+(29,289,o),
+(0,283,c),
+(0,0,ls),
+(0,-47,o),
+(4,-86,o),
+(25,-105,c),
+(14,-101,o),
+(5,-95,o),
+(-2,-90,c),
+(-13,-111,o),
+(-53,-172,o),
+(-109,-193,c),
+(-39,-260,o),
+(192,-267,o),
+(313,-238,cs)
+);
+}
+);
+width = 359;
+},
+{
+anchors = (
+{
+name = entry;
+pos = (6,0);
+}
+);
+associatedMasterId = m01;
+attr = {
+colorPalette = 1;
+};
+backgroundImage = {
+alpha = 80;
+angle = 1.8;
+imagePath = "images/MS-ADD-01116-000-00066.jpg";
+locked = 1;
+pos = (-2959,-1894);
+scale = (5,5);
+};
+layerId = "BB5A3033-D661-402A-992B-C63FD966FB46";
+metricLeft = "=10@0";
+metricRight = "=10";
+name = "16 Jan 24 at 19:46";
+shapes = (
+{
+closed = 1;
+nodes = (
+(344,-218,o),
+(356,-189,o),
+(345,-136,cs),
+(336,-94,o),
+(325,-66,o),
+(311,-41,cs),
+(306,-33,o),
+(299,-31,o),
+(289,-31,cs),
+(177,-35,o),
+(146,-30,o),
+(127,-27,cs),
+(104,-23,o),
+(100,-10,o),
+(100,0,cs),
+(100,10,l),
+(110,10,l),
+(110,100,l),
+(100,100,l),
+(100,359,l),
+(77,320,o),
+(40,285,o),
+(10,275,c),
+(10,0,ls),
+(10,-103,o),
+(34,-148,o),
+(236,-127,c),
+(237,-137,l),
+(141,-151,o),
+(50,-138,o),
+(2,-107,c),
+(-24,-149,o),
+(-52,-176,o),
+(-86,-196,c),
+(-5,-248,o),
+(200,-253,o),
+(311,-226,cs)
+);
+}
+);
+width = 359;
+}
+);
+metricLeft = "=0@0";
+metricRight = "=0";
+script = arabic;
+sortName = arL0404;
+subCategory = Ligature;
+}

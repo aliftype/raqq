@@ -1,0 +1,99 @@
+{
+category = Letter;
+glyphname = "beh-ar.medi.high";
+kernRight = beh;
+layers = (
+{
+anchors = (
+{
+name = bottom;
+pos = (24,-38);
+},
+{
+name = damma;
+pos = (-10,172);
+},
+{
+name = entry;
+pos = (100,0);
+},
+{
+name = exit;
+},
+{
+name = fatha;
+pos = (43,499);
+},
+{
+name = kasra;
+pos = (57,-57);
+},
+{
+name = top;
+pos = (59,420);
+}
+);
+attr = {
+colorPalette = 4;
+};
+backgroundImage = {
+alpha = 80;
+angle = -0.4;
+imagePath = "images/MS-ADD-01116-000-00025.jpg";
+locked = 1;
+pos = (-3498,-2714);
+scale = (5,5);
+};
+layerId = m01;
+shapes = (
+{
+closed = 1;
+nodes = (
+(100,0,l),
+(100,451,ls),
+(100,465,o),
+(93,467,o),
+(85,455,cs),
+(61,413,o),
+(19,374,o),
+(-10,368,c),
+(-10,110,l),
+(-30,110,l),
+(-30,0,l)
+);
+}
+);
+width = 100;
+},
+{
+associatedMasterId = m01;
+attr = {
+colorPalette = 1;
+};
+layerId = "092AFF70-9071-4642-A1C1-B33060C04E35";
+name = "Regular 16 Jan 24 at 13:29";
+shapes = (
+{
+closed = 1;
+nodes = (
+(100,10,l),
+(100,100,l),
+(90,100,l),
+(90,441,l),
+(66,404,o),
+(29,369,o),
+(0,358,c),
+(0,110,l),
+(-32,110,l),
+(-32,10,l)
+);
+}
+);
+width = 100;
+}
+);
+metricLeft = "=beh-ar.medi";
+metricRight = "=beh-ar.medi";
+script = arabic;
+sortName = arL0010d;
+}

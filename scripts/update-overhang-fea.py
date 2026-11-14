@@ -52,9 +52,9 @@ def shape(font, text, direction="rtl", script="arab", features=None):
             assert pos.x_advance == 0
             continue
         glyph = font.glyph_to_string(info.codepoint)
-        if glyph.startswith("behDotless-ar.init"):
+        if glyph.startswith("beh-ar.init"):
             glyph = "@beh.init"
-        elif glyph.startswith("behDotless-ar.medi"):
+        elif glyph.startswith("beh-ar.medi"):
             glyph = "@beh.medi"
         elif glyph.startswith("sad-ar.init"):
             glyph = "@sad.init"
@@ -66,7 +66,7 @@ def shape(font, text, direction="rtl", script="arab", features=None):
             glyph = "@hah.medi"
         elif glyph.startswith("seen-ar.medi"):
             glyph = "@seen.medi"
-        elif glyph in ["alefMaksura-ar.fina", "alefMaksura-ar.fina.salt"]:
+        elif glyph in ["yeh-ar.fina", "yeh-ar.fina.salt"]:
             glyph = "@yeh.fina"
         elif glyph in ["hah-ar.fina", "hah-ar.fina.salt"]:
             glyph = "@hah.fina"

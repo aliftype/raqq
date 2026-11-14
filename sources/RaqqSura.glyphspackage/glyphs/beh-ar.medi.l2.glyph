@@ -1,0 +1,17 @@
+{
+category = Placeholder;
+glyphname = "beh-ar.medi.l2";
+layers = (
+{
+layerId = m01;
+shapes = (
+{
+ref = "beh-ar.medi";
+}
+);
+width = 100;
+}
+);
+script = arabic;
+subCategory = "Level 2";
+}

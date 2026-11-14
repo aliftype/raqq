@@ -83,7 +83,7 @@ shapes = (
 {
 alignment = -1;
 pos = (-28,0);
-ref = "behDotless-ar.medi.high";
+ref = "beh-ar.medi.high";
 }
 );
 visible = 1;

@@ -1,0 +1,95 @@
+{
+category = Letter;
+glyphname = "beh-ar.init.hah";
+layers = (
+{
+anchors = (
+{
+name = bottom;
+pos = (141,252);
+},
+{
+name = damma;
+pos = (-9,281);
+},
+{
+name = exit;
+pos = (-63,130);
+},
+{
+name = fatha;
+pos = (41,511);
+},
+{
+name = kasra;
+pos = (109,59);
+},
+{
+name = top;
+pos = (55,432);
+}
+);
+attr = {
+colorPalette = 4;
+};
+backgroundImage = {
+imagePath = "images/MS-ADD-01116-000-00010.jpg";
+locked = 1;
+pos = (-2723,-2714);
+scale = (5,5);
+};
+layerId = m01;
+shapes = (
+{
+closed = 1;
+nodes = (
+(100,142,l),
+(100,466,ls),
+(100,480,o),
+(93,482,o),
+(85,470,cs),
+(61,428,o),
+(19,389,o),
+(-10,383,c),
+(-10,195,l)
+);
+}
+);
+width = 100;
+},
+{
+associatedMasterId = m01;
+attr = {
+colorPalette = 1;
+};
+backgroundImage = {
+imagePath = "images/MS-ADD-01116-000-00010.jpg";
+locked = 1;
+pos = (-2723,-2714);
+scale = (5,5);
+};
+layerId = "1A6FCE8A-4998-48C6-BD83-7428367B4B1A";
+metricLeft = "=0";
+metricRight = "=10";
+name = "3 Jan 26 at 16:34";
+shapes = (
+{
+closed = 1;
+nodes = (
+(90,120,l),
+(90,456,l),
+(66,419,o),
+(29,384,o),
+(0,373,c),
+(0,120,l)
+);
+}
+);
+width = 100;
+}
+);
+metricLeft = "=-10";
+metricRight = "=0";
+script = arabic;
+sortName = arL0012.hah;
+}
