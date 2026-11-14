@@ -327,5 +327,4 @@ metricLeft = "=behDotless-ar.isol";
 metricRight = "=0";
 script = arabic;
 sortName = arL0039;
-unicode = 1697;
 }

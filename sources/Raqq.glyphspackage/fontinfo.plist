@@ -176,34 +176,53 @@ name = Classes;
 },
 {
 code = "lookup ccmp_1 {
+	sub alef-ar by alef-ar.isol;
 	sub alefHamzaabove-ar by alef-ar.isol hamzaabove-ar;
 	sub alefHamzabelow-ar by alef-ar.isol hamzabelow-ar;
 	sub alefMadda-ar by alef-ar.isol madda-ar;
 	sub alefWasla-ar by alef-ar.isol; # wasla-ar
+	sub behDotless-ar by behDotless-ar.isol;
 	sub beh-ar by behDotless-ar.isol dotbelow-ar;
 	sub teh-ar by behDotless-ar.isol twodotsverticalabove-ar;
 	sub theh-ar by behDotless-ar.isol threedotsupabove-ar;
 	sub peh-ar by behDotless-ar.isol threedotsdownbelow-ar;
+	sub hah-ar by hah-ar.isol;
 	sub jeem-ar by hah-ar.isol dotbelow-ar;
 	sub tcheh-ar by hah-ar.isol threedotsdownbelow-ar;
 	sub khah-ar by hah-ar.isol dotabove-ar;
+	sub dal-ar by dal-ar.isol;
 	sub thal-ar by dal-ar.isol dotabove-ar;
+	sub reh-ar by reh-ar.isol;
 	sub zain-ar by reh-ar.isol dotabove-ar.reh;
 	sub jeh-ar by reh-ar.isol threedotsupabove-ar;
+	sub seen-ar by seen-ar.isol;
 	sub sheen-ar by seen-ar.isol threedotshorizontalabove-ar;
+	sub sad-ar by sad-ar.isol;
 	sub dad-ar by sad-ar.isol dotabove-ar;
+	sub tah-ar by tah-ar.isol;
 	sub zah-ar by tah-ar.isol dotabove-ar;
+	sub ain-ar by ain-ar.isol;
 	sub ghain-ar by ain-ar.isol dotabove-ar;
+	sub fehDotless-ar by fehDotless-ar.isol;
 	sub feh-ar by fehDotless-ar.isol dotabove-ar;
 	sub veh-ar by fehDotless-ar.isol threedotsupabove-ar;
+	sub kaf-ar by kaf-ar.isol;
 	sub keheh-ar by kaf-ar.isol;
 	sub gaf-ar by kaf-ar.isol gafsarkashabove-ar;
+	sub qafDotless-ar by qafDotless-ar.isol;
 	sub qaf-ar by qafDotless-ar.isol twodotsverticalabove-ar;
+	sub lam-ar by lam-ar.isol;
+	sub meem-ar by meem-ar.isol;
+	sub noonghunna-ar by noonghunna-ar.isol;
 	sub noon-ar by noonghunna-ar.isol dotabove-ar;
+	sub heh-ar by heh-ar.isol;
 	sub tehMarbuta-ar by heh-ar.isol twodotsverticalabove-ar;
+	sub waw-ar by waw-ar.isol;
 	sub wawHamzaabove-ar by waw-ar.isol hamzaabove-ar;
+	sub alefMaksura-ar by alefMaksura-ar.isol;
 	sub yeh-ar by alefMaksura-ar.isol twodotsverticalbelow-ar;
 	sub yehHamzaabove-ar by alefMaksura-ar.isol hamzaabove-ar;
+	sub yehbarree-ar by yehbarree-ar.isol;
 } ccmp_1;
 
 lookup ccmp_hamza_1 {
@@ -785,7 +804,7 @@ lookup rclt_kasratan {
 	lookupflag UseMarkFilteringSet [kasratan-ar];
 
 	sub [seen-ar.isol $[name LIKE \"seen-ar.fina*\"]
-		 $[name LIKE \"noonghunna-ar*\"]
+		 $[name LIKE \"noonghunna-ar.*\"]
 		 lam-ar.isol $[name LIKE \"lam-ar.fina*\"]
 		 $[name LIKE \"alefMaksura-ar*salt\"]]
 		 kasratan-ar' lookup vertical_vowels;

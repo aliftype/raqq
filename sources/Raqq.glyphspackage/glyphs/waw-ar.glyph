@@ -1,0 +1,18 @@
+{
+category = Placeholder;
+color = 0;
+glyphname = "waw-ar";
+layers = (
+{
+layerId = m01;
+shapes = (
+{
+ref = "waw-ar.isol";
+}
+);
+width = 509;
+}
+);
+script = arabic;
+unicode = 1608;
+}

@@ -549,5 +549,4 @@ metricLeft = "=0";
 metricRight = "=kaf-ar.isol";
 script = arabic;
 sortName = arL0018;
-unicode = 1583;
 }
