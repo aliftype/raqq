@@ -1,4 +1,10 @@
 {
+  "harfbuzz": "15.0.0",
+  "uharfbuzz": "0.57.0",
+  "fonts": {
+    "Raqq.ttf": "3bcb30d3bdafda81eb023b645e315d9e6fd9201a",
+    "RaqqSura.ttf": "5f9eb30236e5a4939caeabf003c6ee2d9e336e84"
+  },
   "tests": [
     {
       "only": "Raqq.ttf",
