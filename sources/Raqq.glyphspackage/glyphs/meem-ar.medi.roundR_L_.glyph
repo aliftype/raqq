@@ -1,6 +1,6 @@
 {
 category = Letter;
-glyphname = "meem-ar.medi.round3";
+glyphname = "meem-ar.medi.roundRL";
 kernLeft = meem.alt;
 layers = (
 {

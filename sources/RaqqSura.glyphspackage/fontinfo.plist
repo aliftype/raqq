@@ -1,5 +1,5 @@
 {
-.appVersion = "3535";
+.appVersion = "3536";
 .formatVersion = 3;
 axes = (
 {
@@ -678,15 +678,15 @@ lookup salt_1 {
 
 lookup rounded {
 	sub meem-ar.init		by meem-ar.init.round;
-	sub meem-ar.medi		by meem-ar.medi.round;
+	sub meem-ar.medi		by meem-ar.medi.roundR;
 	sub meem-ar.fina		by meem-ar.fina.round;
 	sub waw-ar.fina			by waw-ar.fina.round;
 	sub heh-ar.init			by heh-ar.init.round;
 } rounded;
 
 lookup rounded2 {
-	sub meem-ar.medi		by meem-ar.medi.round2;
-	sub meem-ar.medi.round	by meem-ar.medi.round3;
+	sub meem-ar.medi		by meem-ar.medi.roundL;
+	sub meem-ar.medi.roundR	by meem-ar.medi.roundRL;
 	sub heh-ar.medi			by heh-ar.medi.round;
 } rounded2;
 
@@ -741,7 +741,7 @@ lookup rlig_4 {
 		 lam_yeh-ar.fina]' lookup short_lam
 	;
 
-	sub [meem-ar.medi.round]' lookup rounded2
+	sub [meem-ar.medi.roundR]' lookup rounded2
 		 @aftermeem' lookup rounded;
 	;
 } rlig_4;
@@ -846,7 +846,7 @@ code = "@beh = [$[name MATCHES \"beh-ar.(init|medi).*\" && ! name MATCHES \".*\\
 @ain = [ain-ar.init ain-ar.medi];
 @feh = [feh-ar.init feh-ar.medi];
 @lam = [$[name MATCHES \"lam-ar.(init|medi).*\" && ! name MATCHES \".*\\.(round|alt).*\"]];
-@meem = [meem-ar.init meem-ar.medi meem-ar.medi.round];
+@meem = [meem-ar.init meem-ar.medi meem-ar.medi.roundR];
 @heh = [heh-ar.init heh-ar.medi];
 
 @before_beh1 = [@beh @seen @sad @lam @meem];
@@ -945,7 +945,7 @@ lookup rclt_connection {
 		 tah-ar.medi tah-ar.medi.hah1 tah-ar.medi.hah2 tah-ar.fina
 		 kaf-ar.medi kaf-ar.fina
 		 qaf-ar.fina waw-ar.fina
-		 meem-ar.medi meem-ar.medi.round2 meem-ar.fina]
+		 meem-ar.medi meem-ar.medi.roundL meem-ar.fina]
 	;
 
 	sub	 feh-ar.medi' lookup before_reh
@@ -957,7 +957,7 @@ lookup rclt_connection {
 	;
 
 	sub	[@seen @hah @ain feh-ar.medi kashida-ar]' lookup before_meem
-		[qaf-ar.fina meem-ar.medi meem-ar.medi.round2 meem-ar.fina]
+		[qaf-ar.fina meem-ar.medi meem-ar.medi.roundL meem-ar.fina]
 	;
 
 	sub	@before_reh' lookup before_meem
@@ -1146,7 +1146,7 @@ lookup overhang {
 	pos @beh.init' 220 (MSHQ:100) 5138 @beh.medi' @seen.medi' yehbarree-ar.fina';
 	pos @beh.init' 360 (MSHQ:100) 5278 @beh.medi' ain-ar.medi' yehbarree-ar.fina';
 	pos @beh.init' 190 (MSHQ:100) 5108 @beh.medi' feh-ar.medi' yehbarree-ar.fina';
-	pos @beh.init' 170 (MSHQ:100) 5088 @beh.medi' meem-ar.medi.round' yehbarree-ar.fina';
+	pos @beh.init' 170 (MSHQ:100) 5088 @beh.medi' meem-ar.medi.roundR' yehbarree-ar.fina';
 	pos @beh.init' 210 (MSHQ:100) 5128 @beh.medi' heh-ar.medi' yehbarree-ar.fina';
 	pos @beh.init' 220 (MSHQ:100) 5138 @seen.medi' @beh.medi' yehbarree-ar.fina';
 	pos @beh.init' 170 (MSHQ:100) 5088 @seen.medi' @hah.medi' yehbarree-ar.fina';
@@ -1190,7 +1190,7 @@ lookup overhang {
 	pos @beh.init' 120 (MSHQ:100) 5038 @beh.medi' @beh.medi' @seen.medi' yehbarree-ar.fina';
 	pos @beh.init' 260 (MSHQ:100) 5178 @beh.medi' @beh.medi' ain-ar.medi' yehbarree-ar.fina';
 	pos @beh.init' 90 (MSHQ:100) 5008 @beh.medi' @beh.medi' feh-ar.medi' yehbarree-ar.fina';
-	pos @beh.init' 70 (MSHQ:100) 4988 @beh.medi' @beh.medi' meem-ar.medi.round' yehbarree-ar.fina';
+	pos @beh.init' 70 (MSHQ:100) 4988 @beh.medi' @beh.medi' meem-ar.medi.roundR' yehbarree-ar.fina';
 	pos @beh.init' 110 (MSHQ:100) 5028 @beh.medi' @beh.medi' heh-ar.medi' yehbarree-ar.fina';
 	pos @beh.init' 120 (MSHQ:100) 5038 @beh.medi' @seen.medi' @beh.medi' yehbarree-ar.fina';
 	pos @beh.init' 70 (MSHQ:100) 4988 @beh.medi' @seen.medi' @hah.medi' yehbarree-ar.fina';
@@ -1198,7 +1198,7 @@ lookup overhang {
 	pos @beh.init' 210 (MSHQ:100) 5128 @beh.medi' ain-ar.medi' @hah.medi' yehbarree-ar.fina';
 	pos @beh.init' 160 (MSHQ:100) 5078 @beh.medi' ain-ar.medi' ain-ar.medi' yehbarree-ar.fina';
 	pos @beh.init' 90 (MSHQ:100) 5008 @beh.medi' feh-ar.medi' @beh.medi' yehbarree-ar.fina';
-	pos @beh.init' 70 (MSHQ:100) 4988 @beh.medi' meem-ar.medi.round' @beh.medi' yehbarree-ar.fina';
+	pos @beh.init' 70 (MSHQ:100) 4988 @beh.medi' meem-ar.medi.roundR' @beh.medi' yehbarree-ar.fina';
 	pos @beh.init' 110 (MSHQ:100) 5028 @beh.medi' heh-ar.medi' @beh.medi' yehbarree-ar.fina';
 	pos @beh.init' 60 (MSHQ:100) 4978 @beh.medi' heh-ar.medi' @hah.medi' yehbarree-ar.fina';
 	pos @beh.init' 120 (MSHQ:100) 5038 @seen.medi' @beh.medi' @beh.medi' yehbarree-ar.fina';
@@ -1585,14 +1585,14 @@ _c.hah.reh = -131;
 "lam_alef-ar.fina" = -40;
 "meem-ar.fina" = -12;
 "meem-ar.medi" = -5;
-"meem-ar.medi.round2" = -8;
+"meem-ar.medi.roundL" = -8;
 "noon-ar.fina" = -30;
 "qaf-ar.fina" = -7;
 "reh-ar.fina" = -5;
 };
 "@MMK_R_lam" = {
 "@MMK_L_sad" = -23;
-"meem-ar.medi.round2" = -22;
+"meem-ar.medi.roundL" = -22;
 "noon-ar.fina" = -34;
 "waw-ar.fina" = -10;
 };
@@ -1640,7 +1640,7 @@ _c.seen.meem = -36;
 };
 _c.ain.meem = {
 "meem-ar.medi" = 13;
-"meem-ar.medi.round2" = 8;
+"meem-ar.medi.roundL" = 8;
 "noon-ar.isol" = -8;
 "qaf-ar.fina" = 8;
 "waw-ar.fina.round" = -7;
@@ -1652,14 +1652,14 @@ _c.ain.yeh = {
 _c.feh.init.dal = {
 "meem-ar.fina.round" = 9;
 "meem-ar.medi" = 15;
-"meem-ar.medi.round2" = 9;
+"meem-ar.medi.roundL" = 9;
 "qaf-ar.fina" = 9;
 "waw-ar.fina" = 22;
 };
 _c.feh.medi.meem = {
 "@MMK_L_yeh" = -36;
 "meem-ar.medi" = 11;
-"meem-ar.medi.round2" = 7;
+"meem-ar.medi.roundL" = 7;
 "qaf-ar.fina" = 7;
 "waw-ar.fina" = 19;
 };
@@ -1674,7 +1674,7 @@ _c.hah.reh = {
 "@MMK_L_yeh" = -36;
 "@MMK_L_yehbarree" = -21;
 "meem-ar.medi" = 10;
-"meem-ar.medi.round2" = 6;
+"meem-ar.medi.roundL" = 6;
 "qaf-ar.fina" = 7;
 "reh-ar.fina" = -9;
 "waw-ar.fina.round" = -4;
@@ -1682,7 +1682,7 @@ _c.hah.reh = {
 _c.seen.meem = {
 "@MMK_L_yehbarree" = -18;
 "meem-ar.medi" = 11;
-"meem-ar.medi.round2" = 7;
+"meem-ar.medi.roundL" = 7;
 "qaf-ar.fina" = 7;
 };
 "ain-ar.fina" = {

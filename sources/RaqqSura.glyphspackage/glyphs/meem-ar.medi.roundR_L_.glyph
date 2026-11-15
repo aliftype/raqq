@@ -1,17 +1,18 @@
 {
 category = Letter;
-glyphname = "meem-ar.medi.round";
+glyphname = "meem-ar.medi.roundRL";
+kernLeft = meem.alt;
 layers = (
 {
 associatedMasterId = m01;
 attr = {
 colorPalette = 1;
 };
-layerId = "862261EA-9AFB-4C70-965D-CC4805B189CB";
-name = "30 Oct 24 at 01:04";
+layerId = "07637A8A-33D2-412B-A81E-2CF67FE85E9D";
+name = "Color 4 30 Oct 24 at 00:57";
 shapes = (
 {
-ref = "meem-ar.init";
+ref = "meem-ar.init.round";
 }
 );
 width = 398;
@@ -33,14 +34,12 @@ layerId = m01;
 name = Regular;
 shapes = (
 {
-ref = "meem-ar.init";
+ref = "meem-ar.init.round";
 }
 );
 width = 398;
 }
 );
-metricLeft = "=0";
-metricRight = "=0";
 script = arabic;
-sortName = arL0059.round;
+sortName = arL0059.round3;
 }
