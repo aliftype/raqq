@@ -679,6 +679,7 @@ lookup salt_1 {
 lookup rounded {
 	sub meem-ar.init		by meem-ar.init.round;
 	sub meem-ar.medi		by meem-ar.medi.roundR;
+	sub meem-ar.medi.roundL	by meem-ar.medi.roundRL;
 	sub meem-ar.fina		by meem-ar.fina.round;
 	sub waw-ar.fina			by waw-ar.fina.round;
 	sub heh-ar.init			by heh-ar.init.round;
@@ -742,7 +743,7 @@ lookup rlig_4 {
 	;
 
 	sub [meem-ar.medi.roundR]' lookup rounded2
-		 @aftermeem' lookup rounded;
+		[@aftermeem meem-ar.medi.roundL]' lookup rounded;
 	;
 } rlig_4;
 

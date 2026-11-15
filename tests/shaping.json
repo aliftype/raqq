@@ -2,8 +2,8 @@
   "harfbuzz": "15.0.0",
   "uharfbuzz": "0.57.0",
   "fonts": {
-    "Raqq.ttf": "4436d3b698226f0878e063e344a7d23b8f5cd3c3",
-    "RaqqSura.ttf": "72dee06cdda7d4b998436c2d71098742342f350a"
+    "Raqq.ttf": "279491d6a1372db3c719aae2a36811eca9f00a5e",
+    "RaqqSura.ttf": "0ae79dbb7b6eac3b4f75634dbda3f17b40ff56c0"
   },
   "tests": [
     {
@@ -21343,12 +21343,12 @@
     {
       "only": "Raqq.ttf",
       "input": "مممم",
-      "expectation": "meem-ar.fina.round=3+554|meem-ar.medi.roundL=2+398|meem-ar.medi.roundR=1+425|meem-ar.init.round=0+398"
+      "expectation": "meem-ar.fina.round=3+554|meem-ar.medi.roundRL=2+398|meem-ar.medi.roundRL=1+398|meem-ar.init.round=0+398"
     },
     {
       "only": "Raqq.ttf",
       "input": "مممم",
-      "expectation": "meem-ar.fina.round=3+554|meem-ar.medi.roundL=2+398|meem-ar.medi.roundR=1+425|meem-ar.init.round=0+398",
+      "expectation": "meem-ar.fina.round=3+554|meem-ar.medi.roundRL=2+398|meem-ar.medi.roundRL=1+398|meem-ar.init.round=0+398",
       "variations": {
         "SPAC": -100.0,
         "MSHQ": 10.0
@@ -21371,12 +21371,12 @@
     {
       "only": "Raqq.ttf",
       "input": "مممما",
-      "expectation": "alef-ar.fina=4+101|_c.seen.beh=3+0|meem-ar.medi.roundR=3+425|meem-ar.medi.roundL=2+398|meem-ar.medi.roundR=1+425|meem-ar.init.round=0+398"
+      "expectation": "alef-ar.fina=4+101|_c.seen.beh=3+0|meem-ar.medi.roundR=3+425|meem-ar.medi.roundRL=2+398|meem-ar.medi.roundRL=1+398|meem-ar.init.round=0+398"
     },
     {
       "only": "Raqq.ttf",
       "input": "مممما",
-      "expectation": "alef-ar.fina=4+101|_c.seen.beh=3+0|meem-ar.medi.roundR=3+425|meem-ar.medi.roundL=2+398|meem-ar.medi.roundR=1+425|meem-ar.init.round=0+398",
+      "expectation": "alef-ar.fina=4+101|_c.seen.beh=3+0|meem-ar.medi.roundR=3+425|meem-ar.medi.roundRL=2+398|meem-ar.medi.roundRL=1+398|meem-ar.init.round=0+398",
       "variations": {
         "SPAC": -100.0,
         "MSHQ": 10.0
@@ -29268,7 +29268,7 @@
     {
       "only": "RaqqSura.ttf",
       "input": "مممم",
-      "expectation": "meem-ar.fina.round=3+554|meem-ar.medi.roundL=2+398|meem-ar.medi.roundR=1+398|meem-ar.init.round=0+398"
+      "expectation": "meem-ar.fina.round=3+554|meem-ar.medi.roundRL=2+398|meem-ar.medi.roundRL=1+398|meem-ar.init.round=0+398"
     },
     {
       "only": "RaqqSura.ttf",
@@ -29278,7 +29278,7 @@
     {
       "only": "RaqqSura.ttf",
       "input": "مممما",
-      "expectation": "alef-ar.fina=4+90|meem-ar.medi.roundR=3+398|meem-ar.medi.roundL=2+398|meem-ar.medi.roundR=1+398|meem-ar.init.round=0+398"
+      "expectation": "alef-ar.fina=4+90|meem-ar.medi.roundR=3+398|meem-ar.medi.roundRL=2+398|meem-ar.medi.roundRL=1+398|meem-ar.init.round=0+398"
     }
   ],
   "configuration": {
