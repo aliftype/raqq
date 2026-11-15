@@ -3,7 +3,7 @@
   "uharfbuzz": "0.57.0",
   "fonts": {
     "Raqq.ttf": "4436d3b698226f0878e063e344a7d23b8f5cd3c3",
-    "RaqqSura.ttf": "05e707e1ed348325f8dbb9350a5d53633a0bf167"
+    "RaqqSura.ttf": "72dee06cdda7d4b998436c2d71098742342f350a"
   },
   "tests": [
     {
